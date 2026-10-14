@@ -43,6 +43,18 @@ function rParty(){
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
   return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
 }
+function bondsHtml(){
+  const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
+  const row = (a,b) => `<div class="sm" style="display:flex;justify-content:space-between;gap:8px;padding:2px 0;border-bottom:1px solid rgba(212,168,67,.1)"><span>${a}</span><span>${b}</span></div>`;
+  const dy = G.ch>=20 ? row('Ancient bond-spell (ch20)','cast · she feels his emotions')+row('Life-saving ritual','complete (ch32)')+row('Everlasting union / permanent soul bond','<b>not established</b>')+row('Muxue wedding ceremony',dongyue?'held (ch35)':'—')
+         +row('Moonlit Bonding', bondingPaused() ? 'paused: she asked for space' : bondingOpen() ? 'open' : 'closed') : '<div class="sm">Not yet.</div>';
+  const cg = !cang ? '<div class="sm">Not met as a companion yet.</div>' : row('Crimson Thread Resonance',L+'/'+RES_MAX)+row('Dual cultivation', dualCultivationOpen() ? 'open (her choice)' : 'closed until Xiyu chooses it')+row('Permanent soul bond / marriage','none');
+  const benefits = L>0 ? `<div class="sm" style="margin-top:4px">With Cangyuan beside her: paired techniques cost ${5*L}% less MP · her heat gain −${Math.round((.25+.05*L)*100)}% · his Steady cools +${5*L} more · she deals +${8*L}% to barriers, layers and linked foes${L>=2?' · senses severe disturbances':''}${L>=3?' · Thread-Breaker Formation':''}.</div>` : '';
+  const btn = cang ? `<button ${dualCultivationOpen() && G.bondDay.dual!==G.day ? '' : 'disabled'} onclick="act(doDualCultivation)">🌹 Dual cultivation (by her choice)</button>` : '';
+  return `<h4>Bonds</h4><div class="sm" style="font-style:italic;color:var(--gold)">Sharing one's spiritual energy does not mean surrendering one's soul. Sharing intimacy does not mean surrendering one's future.</div>
+   <div class="sm" style="margin:6px 0 2px"><b>Zhan Dongyue</b></div>${dy}<div class="sm" style="margin:8px 0 2px"><b>Shen Cangyuan</b></div>${cg}${benefits}
+   ${cang?`<div class="sm" style="margin-top:4px">The resonance cannot force either to stay, make anyone faithful, reveal thoughts or secrets, cure her corruption, or stop either from leaving.</div>`:''}${btn}`;
+}
 function curseHtml(){
   const h = G.heat||0, L = G.attune||0, ready = bondingOpen() && !bondingPaused() && G.party.includes('dongyue') && !isAway('dongyue') && G.bondDay.rite!==G.day;
   const note = !bondingOpen() ? 'After the ritual and the wedding, Dongyue can share the Moonlit Bonding with her. Until then only rest at the inn cools her.'
@@ -69,7 +81,7 @@ function rSheet(id){
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
    ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>`}
-   ${id==='xiyu'?curseHtml():''}
+   ${id==='xiyu'?curseHtml()+bondsHtml():''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
@@ -282,7 +294,7 @@ function rDev(){
    <input id="devch" type="number" min="0" max="${LAST_CHAPTER}" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;G.flags.bonding_resumed=true;save();toast('Bonding unlocked and resumed');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;G.flags.bonding_resumed=true;save();toast('Bonding unlocked and resumed');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.flags.xiyu_chooses_cangyuan=true;save();toast('Dual cultivation opened (Xiyu chooses)');render()">Open dual cultivation</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

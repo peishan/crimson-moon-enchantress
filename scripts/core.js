@@ -38,7 +38,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, resonance:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -47,7 +47,7 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
     return true;
@@ -107,6 +107,25 @@ const bondMult = id => 1 + .02*bondLevel(id);
 const ATTUNE_MAX = 10;
 const heatMult = h => 1 - clamp(((h||0)-40)/60, 0, 1)*.3;
 const heatLabel = h => h>=80 ? 'Burning' : h>=50 ? 'Flushed' : h>=20 ? 'Warm' : 'Calm';
+/* ---------- CRIMSON THREAD RESONANCE (Xiyu x Cangyuan, Volume 2) — see docs/BOND_SYSTEM.md ----------
+   Intimacy, dual cultivation, a spiritual bond and marriage are four different things. Only dual cultivation and the resulting resonance are mechanics here
+   (intimacy is never shown or tracked). It is VOLUNTARY: it opens only when the story has Xiyu choose it (flag xiyu_chooses_cangyuan; no chapter sets it yet,
+   the Dev tab does), needs both of them, and can be done once a day. It is NOT a soul bond, not marriage, and it cannot force anyone to stay. */
+const RES_MAX = 5;
+const resLv = () => G.resonance||0;
+const dualCultivationOpen = () => !!(G.flags && G.flags.xiyu_chooses_cangyuan) && G.party.includes('cangyuan');
+function doDualCultivation(){
+  if(!dualCultivationOpen()) return ['Dual cultivation is not open: it only begins when Xiyu chooses it.'];
+  if(isAway('cangyuan')) return ['Cangyuan must be with the party.'];
+  if(G.bondDay.dual === G.day) return ['They have already cultivated together today.'];
+  G.bondDay.dual = G.day;
+  const before = G.resonance||0; G.resonance = Math.min(RES_MAX, before+1);
+  const msgs = ['🌹 Xiyu and Cangyuan cultivate together, by her choice. Their spiritual signatures grow more familiar.'];
+  if(G.resonance>before) msgs.push('✦ Crimson Thread Resonance '+G.resonance+'/'+RES_MAX+(G.resonance===3?' · new paired technique: Thread-Breaker Formation':'')+(G.resonance===2?' · resonance awareness: you can sense severe disturbances':'')+'.');
+  else msgs.push('Their resonance is at its limit for now.');
+  const m = addBond('cangyuan', 5); if(m) msgs.push(m);
+  return msgs;
+}
 const bondingOpen = () => hook('dongyue_vows_lifelong_devotion') || !!(G.flags && G.flags.bonding_unlocked);
 /* Volume 2 comic 001: Xiyu asks for a separate residence and time apart ("I don't wish to continue as we were at the Ice Temple"). The bonding is PAUSED until the story
    brings them back together (flag bonding_resumed; no chapter yet: provisional reading, the Dev tab can resume it). Cangyuan's Steady skill is the interim relief. */
@@ -150,6 +169,7 @@ function reqText(r){
   const parts = [];
   if(r.lvl) parts.push('Level '+r.lvl);
   if(r.att) parts.push('Attunement '+r.att);
+  if(r.res) parts.push('Resonance '+r.res);
   if(r.flag) parts.push('Story: '+(FLAG_LABEL[r.flag]||r.flag));
   return parts.join(' + ');
 }
@@ -157,6 +177,7 @@ function reqMet(id, r){
   if(!r) return true;
   if(r.lvl && U(id).lv < r.lvl) return false;
   if(r.att && (G.attune||0) < r.att) return false;
+  if(r.res && (G.resonance||0) < r.res) return false;
   if(r.flag && !G.flags[r.flag]) return false;
   return true;
 }

@@ -33,7 +33,7 @@ function evaOf(u){
   let m = 1; u.bf.forEach(b => { if(b.stat==='eva') m *= b.m; });
   return clamp((0.04 + eff(u,'spd')*0.003) * m, 0, .6);
 }
-const mpCost = (u,s) => Math.round(s.mp * ((u.state && u.state.id==='bloodmoon') ? .5 : 1) * ((u.id==='xining' && (s.kind==='heal'||s.id==='clear_spirit')) ? 1 - Math.min(.3, .05*(u.treats||0)) : 1));   // A Physician's Resolve
+const mpCost = (u,s) => Math.round(s.mp * ((u.state && u.state.id==='bloodmoon') ? .5 : 1) * (s.res ? 1 - .05*resLv() : 1) * ((u.id==='xining' && (s.kind==='heal'||s.id==='clear_spirit')) ? 1 - Math.min(.3, .05*(u.treats||0)) : 1));   // A Physician's Resolve
 function blog(t, cls){ B.log.push({t, cls:cls||''}); if(B.log.length>60) B.log.shift(); }
 
 /* ---------- start ---------- */
@@ -41,6 +41,8 @@ function startBattle(spec){
   const ids = spec.allies || G.active;
   B = { allies:ids.map(id => mkAlly(id, !!spec.rewards)), foes:spec.foes.map((f,i) => mkFoeUnit(f.key, f.lv, i)), queue:[], cur:null, log:[], over:null, round:0, ui:{mode:'menu'}, spec, rewards:null };
   blog('Battle begins!','sys');
+  if(resLv()>=2 && B.allies.some(a => a.id==='xiyu') && B.allies.some(a => a.id==='cangyuan')){   // resonance awareness: limited, only severe disturbances
+    B.foes.filter(f => f.st.layer || f.traits.includes('corrupt')).forEach(f => { f.known = true; blog('🌹 Crimson Thread: a severe disturbance in '+f.name+'.','sys'); }); }
   advance();
 }
 
@@ -101,6 +103,7 @@ function strike(src, tgt, s, opts){
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
   if(tgt.st.expose) d = Math.round(d*1.15);   // Physician's Insight
   if(tgt.st.layer) d = Math.round(d*.5);       // the shadow's outer layer
+  if(src.id==='xiyu' && resLv()>0 && (tgt.st.shield || tgt.st.layer || tgt.st.link) && B.allies.some(a => a.id==='cangyuan' && !a.dead)) d = Math.round(d*(1 + .08*resLv()));   // Crimson transformation: she breaks what his weaving alone cannot
   let crit = false;
   if(s.crit || src.st.crit || Math.random() < .08){ crit = true; d = Math.round(d*1.6); }
   if(Math.random() < evaOf(tgt)){ blog(tgt.name+' evades '+src.name+'\'s '+s.n+'!'); return 0; }
@@ -139,7 +142,7 @@ function applyFx(src, tgt, fx){
     case 'cleanse1': { const k = ['burn','bind','charm','silence','slow'].find(x => tgt.st[x]); if(k){ delete tgt.st[k]; blog('  '+tgt.name+' is cleared of '+k+'.'); } else blog('  Nothing ordinary to clear.'); break; }
     case 'strain': { const d = Math.max(1, Math.round(tgt.mhp*fx.v*(1+.5*(tgt.strain||0)))); tgt.strain = (tgt.strain||0)+1; tgt.hp = Math.max(1, tgt.hp-d); blog('  The strain tears at '+tgt.name+'\'s channels: '+d+'.','bad'); break; }
     case 'heatup': { const x = B.allies.find(a => a.id==='xiyu' && !a.dead); if(x){ x.heat = Math.min(100, (x.heat||0) + fx.v + ((x.heat||0)>=70 ? 10 : 0)); blog('  The resonance stirs Xiyu\'s curse ('+Math.round(x.heat)+').','bad'); } break; }
-    case 'cool': if(tgt.id==='xiyu'){ tgt.heat = Math.max(0, (tgt.heat||0) - fx.v); blog('  '+tgt.name+'\'s heat eases ('+Math.round(tgt.heat)+').','good'); } break;
+    case 'cool': if(tgt.id==='xiyu'){ tgt.heat = Math.max(0, (tgt.heat||0) - fx.v - (src.id==='cangyuan' ? 5*resLv() : 0)); blog('  '+tgt.name+'\'s heat eases ('+Math.round(tgt.heat)+').','good'); } break;
     case 'revive': if(tgt.dead){ tgt.dead = false; tgt.hp = Math.round(tgt.mhp*.4); blog('  '+tgt.name+' is revived!','good'); } break;
     case 'state': tgt.state = {id:fx.id, d:(fx.d||3)+1}; blog('  '+tgt.name+' draws on the Blood Moon!','good'); break;
   }
@@ -176,7 +179,7 @@ function playerAct(kind, sid, tuid){
   if(s.kind==='heal' && u.id==='xining') u.treats = (u.treats||0) + 1;
   if(u.id==='xiyu' && s.kind==='magic'){
     const cg = B.allies.some(a => a.id==='cangyuan' && !a.dead);   // Resonance of Two Currents: he redirects 25% of the energy
-    u.heat = Math.min(100, (u.heat||0) + Math.round((3 + (s.mp||0)*.25) * (1 - .05*(G.attune||0)) * (cg ? .75 : 1)));   // the curse: casting builds heat
+    u.heat = Math.min(100, (u.heat||0) + Math.round((3 + (s.mp||0)*.25) * (1 - .05*(G.attune||0)) * (cg ? Math.max(.4, .75 - .05*resLv()) : 1)));   // the curse: casting builds heat
     const c = B.allies.find(a => a.id==='cangyuan' && !a.dead), f = alive(B.foes)[Math.floor(Math.random()*alive(B.foes).length)];
     if(c && f && Math.random() < .35){ blog('  Cangyuan\'s threads catch the spell\'s echo.','good'); strike(c, f, {n:'Resonant Echo', kind:'magic', pow:.5, mp:0}, {noSpread:false}); }
   }

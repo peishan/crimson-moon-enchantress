@@ -7,16 +7,16 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    JOIN_CH   chapter whose completion puts the hero in the party (from the game script).
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
-   Muxue Yan appears in ch17, has not joined as of comic 022, and is planned to join at ch30 (not playable yet: the game scripts stop at ch20). */
-const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15, yan:30 };   // yan: planned (028 crisis, 029 "The Price of Love" recruitment arc, joins on completing 030); scripts for 021+ not in the game yet   // ya'xing: ch15 confirmed by the author
+   Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
+const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15 };   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
 const INTRO_CH = { xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17 };
-const NO_JOIN_YET = {};
+const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
    chapter, the battle chapter, and the ch20 milestone. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
 const GATE_RATIO = 1;   // gate = chapter number: "reach an average party level equal to the chapter"
-const GATE_CHAPTERS = [11, 13, 14, 15, 20, 30, 39];   // 30 = Yan joins (planned), 39 = Volume 1 finale (planned)
+const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39];   // recruitment chapters, the battle chapter, the ch20 milestone and the Volume 1 finale
 
 /* ---------- THE LEVEL CURVE: Volume 1 = 39 comic chapters, spread evenly over levels ----------
    Story XP is set so a player who only reads the story is level (1 + chapters done): Lv 40 when Volume 1 ends at ch 39.
@@ -31,7 +31,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -40,9 +40,9 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}};
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {};
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
-    G.active = (G.active||['xiyu']).filter(id => G.party.includes(id));
+    G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
     return true;
   }catch(e){ return false; }
 }
@@ -133,14 +133,16 @@ function addBond(id, pts){
 /* ---------- recruiting ---------- */
 const ACTIVE_SLOTS = 4;
 const activeCount = () => G.active.length;
+const isAway = id => !!(G.away && G.away[id]);   // story states: e.g. Ya'Xing recovers at the Ice Temple after ch39
+const ritualActive = () => !!G.ritual && G.ritual.left!==null && !G.ritual.done;
 function recruit(id){
   if(G.party.includes(id)) return false;
   G.party.push(id);
-  if(activeCount() < ACTIVE_SLOTS) G.active.push(id);
+  if(activeCount() < ACTIVE_SLOTS && !isAway(id)) G.active.push(id);
   return true;
 }
 function toggleActive(id){
-  if(id==='xiyu') return;
+  if(id==='xiyu' || isAway(id)) return;
   const i = G.active.indexOf(id);
   if(i>=0) G.active.splice(i,1); else if(activeCount() < ACTIVE_SLOTS) G.active.push(id);
   save();

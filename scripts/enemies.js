@@ -61,6 +61,7 @@ const ITEMS = {
   wolf_pelt:{n:'Wolf Pelt',icon:'🧶',type:'material'}, frost_herb:{n:'Frost Herb',icon:'🌿',type:'material'},
   moon_petal:{n:'Moon Petal',icon:'🌸',type:'material'}, ice_crystal:{n:'Ice Crystal',icon:'💎',type:'material'},
   imp_ash:{n:'Imp Ash',icon:'🌫️',type:'material'}, rift_shard:{n:'Rift Shard',icon:'🔹',type:'material'},
+  white_key:{n:'White Key',icon:'🗝️',type:'quest'}, winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
   herbal_tonic:{n:'Herbal Tonic',icon:'🍵',type:'consumable'}, moonlit_tonic:{n:'Moonlit Tonic',icon:'🌙',type:'consumable'},
   spirit_draught:{n:'Spirit Draught',icon:'🧪',type:'consumable'}, cleansing_salt:{n:'Cleansing Salt',icon:'🧂',type:'consumable'},
 };
@@ -84,7 +85,7 @@ const ZONES = [
   {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:1, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
   {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:1, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
   {id:'temple', n:'Ice Temple · Level 1', icon:'🏯', unlock:18, off:1, pool:['ice_golem','ward_sentinel','frost_stalker'], boss:'frost_warden', desc:'The upper temple of ice.'},
-  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:null, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens when its chapters are added.'},
+  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:26, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens after chapter 26 (the frozen maze; provisional).'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:null, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'Hidden rooms and unexplored areas. Opens when its chapters are added.'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

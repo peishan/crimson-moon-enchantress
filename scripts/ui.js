@@ -9,6 +9,7 @@ const STAT_NAME = {hp:'HP',mp:'MP',atk:'ATK',mag:'MAG',def:'DEF',spd:'SPD'};
 const bar = (v,m,cls) => `<div class="bar ${cls||''}"><i style="width:${clamp(100*v/m,0,100)}%"></i></div>`;
 const SHORT = {xiyu:'Xiyu', dongyue:'Dongyue', yaxing:'Ya\'Xing', xiaotian:'Xiao Tian', yan:'Yan'};
 const first = id => SHORT[id] || CHARACTERS[id].n;
+const ritualPanel = () => G.ritual && G.ritual.left!==null ? `<div class="panel ${G.ritual.done?'good':'bad'}"><b>⏳ The soul-bond ritual</b><div class="sm">${G.ritual.done?'Completed. The deadline no longer applies.':G.ritual.left+' day'+(G.ritual.left===1?'':'s')+' left before the receiver dies. Story-driven: it only changes at the chapters that say so, never with real time or a reload.'}</div></div>` : '';
 
 function toast(t){ const e=$('toast'); e.textContent=t; e.classList.add('on'); clearTimeout(toast.t); toast.t=setTimeout(()=>e.classList.remove('on'),2200); }
 function showTab(t){ tab=t; render(); window.scrollTo(0,0); const m=$('main'); if(m) m.scrollTop=0; }
@@ -19,6 +20,7 @@ function render(){
   $('hgold').textContent = '💰 '+G.gold;
   $('hch').textContent = G.ch===0 ? 'Start' : 'Ch.'+G.ch+' ✓';
   $('hday').textContent = '☀️ Day '+G.day;
+  const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
      TABS.filter(([k]) => k!=='temple' || templeOpen()).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
   const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
@@ -55,7 +57,7 @@ function rSheet(id){
    <div class="sm" style="margin-top:6px">${gateLine(id)} · Elements: ${c.elements}</div>
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
-   ${id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>`}
+   ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>`}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
@@ -67,12 +69,12 @@ function rGates(){
     return `<tr><td><b>${first(id)}</b><div class="sm">${CHARACTERS[id].title}</div></td><td>${j===undefined?'—':'Ch.'+j}</td><td>${INTRO_CH[id]!==undefined?'Ch.'+INTRO_CH[id]:'—'}</td>
       <td>${g?'Avg Lv '+g.lv:j===undefined?'':'none'}</td><td>${isRecruited(id)?'<span class="gate open">✔ joined</span>':j===undefined?'<span class="gate shut">not written</span>':G.ch>=j?'ready':'<span class="gate shut">locked</span>'}</td></tr>`; }).join('');
   const chRows = GATE_CHAPTERS.map(n => { const g = chapterGate(n), why = chapterLevelLock(n);
-    const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':n===30?'planned (not in game yet)':'';
+    const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':n===39?'Volume 1 finale':'';
     return `<tr><td><b>Ch.${n}</b><div class="sm">${CHAPTERS[n-1]?CHAPTERS[n-1].title:'not scripted yet'}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
   const skRows = ROSTER.map(id => `<tr><td><b>${first(id)}</b></td><td>${skillsOf(id).map(s => `${s.icon} ${s.n.replace(/ \(.*/,'')} <span class="gate ${s.ok?'open':'shut'}">${s.req.lvl?'Lv'+s.req.lvl:''}${s.req.flag?'+story':''}</span>`).join('<br>')}</td></tr>`).join('');
   return `<h2>Level gates</h2><div class="sm">Where each party member is gated, from the chapter breakdown. Details: docs/CHAPTER_GATES.md. Your party average is <b>Lv ${gateLv()}</b>.</div>
    <h4>Party members</h4><div class="panel"><table class="gtbl"><tr><th>Hero</th><th>Joins</th><th>Profile</th><th>Gate</th><th></th></tr>${joinRows}</table>
-     <div class="sm" style="margin-top:6px">A new member arrives at (party average − 1). Muxue Yan is planned to join at ch30 (028 crisis, 029 recruitment arc); the game has scripts to ch20 only.</div></div>
+     <div class="sm" style="margin-top:6px">A new member arrives at (party average − 1). Muxue Yan does not join in Volume 1 (he stays at the Ice Temple); Ya'Xing stays behind after ch39.</div></div>
    <h4>Chapter level gates</h4><div class="panel"><table class="gtbl"><tr><th>Chapter</th><th>Needs</th><th>Why</th><th></th></tr>${chRows}</table>
      <div class="sm" style="margin-top:6px">Gated chapters stay locked until the average level of the party is reached. Wilds fights and training give the XP to catch up.</div></div>
    <h4>Skill gates</h4><div class="panel"><table class="gtbl">${skRows}</table></div>`;
@@ -85,9 +87,8 @@ function rJournal(){
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${c.n}. ${avail||next?c.title:'???'}</b>
-      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; }).join('');
-  const pending = `<div class="panel"><b>Chapters 21–${VOLUME1_CHAPTERS}</b><div class="sm">Volume 1 runs to comic ${VOLUME1_CHAPTERS}. These chapters are added as their scripts arrive. Planned: Muxue Yan joins at 30 (028 crisis, 029 recruitment arc).</div></div>`;
-  return `<h2>Chapter Journal</h2><div class="sm">Volume 1 · chapters unlock in order. Each gives story XP; some also need an average party level.</div>${rows}${pending}`;
+      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${c.pending?' · ⚠️ script pending':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; }).join('');
+  return `<h2>Chapter Journal</h2><div class="sm">Volume 1 · chapters unlock in order. Each gives story XP; some also need an average party level.</div>${ritualPanel()}${rows}`;
 }
 function openChapter(n){ openCh = n; render(); if(!G.read[n] && !chapterDone(n)) openStory(n); }
 function closeChapter(){ openCh = null; render(); }
@@ -249,7 +250,7 @@ function rBestiary(){
 /* ---------------- DEV ---------------- */
 function rDev(){
   return `<h2>Dev tools</h2><div class="panel"><div class="sm">Jump the save to a story point (recruits, flags, levels):</div>
-   <input id="devch" type="number" min="0" max="20" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
+   <input id="devch" type="number" min="0" max="39" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
    <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>

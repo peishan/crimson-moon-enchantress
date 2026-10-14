@@ -2502,7 +2502,7 @@ const SCRIPT = {
      },
      {
       "k": "plain",
-      "t": "• Maintain his pain, allergies, impaired speech, and involuntary laughter"
+      "t": "• Xiao Tian's memories only partly return and much stays a blur (ch036 page: he is Feng Xia)"
      },
      {
       "k": "plain",
@@ -2510,7 +2510,7 @@ const SCRIPT = {
      },
      {
       "k": "plain",
-      "t": "• Track Ya'Xing's ongoing recovery from the experiments"
+      "t": "• Ya'Xing: constant itching and allergic reactions, barely able to walk, cannot speak clearly, bursts into insane laughter; his mind is damaged (ch036/039 pages)"
      },
      {
       "k": "plain",
@@ -2547,6 +2547,10 @@ const SCRIPT = {
      {
       "k": "plain",
       "t": "• Record their affectionate interaction and Xiyu's hesitation to disclose everything"
+     },
+     {
+      "k": "plain",
+      "t": "• He is Feng Xia, not the childish Xiao Tian"
      }
     ]
    }

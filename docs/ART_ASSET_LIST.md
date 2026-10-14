@@ -6,8 +6,7 @@ Use PNG or WebP. Comic pages named `chNN.png` are converted to WebP by the Pages
 ## A. Needed to finish Volume 1 (priority order)
 | # | Asset | File | Size / notes |
 |---|---|---|---|
-| 1 | Comic pages for ch 21–24, 26–29, 33, 34, 37, 38, 39 (scripts exist) | `assets/comics/ch21.png` … `ch39.png`; extra pages `ch21_2.png` | 1024×1536 per page. Intimate scenes modest (blankets, steam, petals) |
-| 2 | Comic pages for ch 25, 30, 31, 32, 35, 36 | same | Need approved scripts first. Ch 30 must show Dongyue silver-haired (an earlier image wrongly showed black hair) |
+| 1 | ~~Comic pages 21–39~~ | **DONE**: all 39 chapters have art (ch 28 v2) | Optional: regenerate 031–033 and 036 if you want them more modest |
 | 3 | Portrait cards for new characters | `assets/cast/people/hoko.webp`, `anong.webp`, `yamon.webp`, `commander_west.webp` | 512×512 card in the same style as the 20-card set. Also send a clean no-caption square |
 | 4 | Story variants of the leads | `assets/party/xiyu_unveiled.webp` (veil removed, from ch33), `xiyu_wed.webp` (wedding red, from ch35), `dongyue_wed.webp` (ceremonial robes, from ch35), `yaxing_injured.webp` (bandaged, from ch36) | 320×320, caption-free. Fallback is the base portrait |
 

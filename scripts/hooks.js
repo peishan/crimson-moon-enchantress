@@ -718,6 +718,41 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "ice_library_discovered",
+"d": "Mark the library discovery",
+"t": "event",
+"p": false,
+"s": "hooks"
+},
+{
+"id": "magical_berries_found",
+"d": "Five colours of magical berries: red strength, blue intelligence, green dexterity, orange health, black unknown",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_central_door_locked",
+"d": "The central room's door will not budge; she feels someone she awaits is inside",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "muxue_yunxi_infant_in_ice_learned",
+"d": "The books record Yan and Ao Yun's infant daughter Yunxi, believed frozen in ice",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "muxue_yan_search_started",
+"d": "Find Muxue Yan to exit the temple",
+"t": "state",
+"p": false,
+"s": "art"
 }
 ],
 "24": [
@@ -757,27 +792,76 @@ const HOOKS = {
 "s": "hooks"
 },
 {
-"id": "ice_library_discovered",
-"d": "The Ice Library is discovered (moved from 023: Xiao Tian finds the book there)",
+"id": "ice_maze_door_opened",
+"d": "Dongyue solves the stone arrangement and opens the maze",
 "t": "event",
 "p": false,
-"s": "script"
+"s": "art"
+},
+{
+"id": "horned_beasts_fought",
+"d": "Ice monsters, then two minotaur-like beasts; Xiyu's meteor swarm",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "floor_opens_party_falls",
+"d": "A beast pulls a switch; Xiyu and Dongyue fall to the underground level",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "companions_separated",
+"d": "Xiao Tian and Ya'Xing are separated from them; their fate is unknown",
+"t": "state",
+"p": false,
+"s": "art"
 }
 ],
 "25": [
 {
-"id": "lower_ice_passages_entered",
-"d": "Proposed bridge from library to lower passages",
-"t": "state",
-"p": true,
-"s": "hooks"
+"id": "minami_voice_heard",
+"d": "Minami speaks in Xiyu's mind: she must grow stronger and cannot die",
+"t": "event",
+"p": false,
+"s": "art"
 },
 {
-"id": "frozen_maze_route_suspected",
-"d": "Proposed directional clue toward the maze",
+"id": "dongyue_draws_poison",
+"d": "Dongyue cuts the wound and draws the slow-acting poison out",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_venom_immunity",
+"d": "A childhood encounter gave him immunity to the venom",
 "t": "state",
-"p": true,
-"s": "hooks"
+"p": false,
+"s": "art"
+},
+{
+"id": "green_scrolls_empower_dongyue",
+"d": "The green scrolls vanish once read; his magic is stronger",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_dongyue_agree_to_be_one",
+"d": "\"Yes, us. From now on, we will be one.\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "soul_bond_ten_days_remaining",
+"d": "Ten days left",
+"t": "state",
+"p": false,
+"s": "art"
 }
 ],
 "26": [
@@ -933,50 +1017,93 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "yan_ambitions_revealed",
+"d": "Yan's chambers: Ao Yun's casket, his plan, Yunxi frozen by a spell, \"With her, my ambitions can finally be fulfilled\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_lured_hoko",
+"d": "Yan lured Hoko's crew; the platform needed a Muxue's blood and someone worthy",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ],
-"30": [],
+"30": [
+{
+"id": "xiyu_dreams_of_baby_in_crib",
+"d": "Xiyu dreams of being the baby, with Ao Yun and a younger Yan",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_meets_yan",
+"d": "Dongyue bows to Yan and asks how to save Xiyu",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "bonds_of_life_explained",
+"d": "The Bonds of Life are made from the tendon of one of Yan's sons",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ritual_chamber_found",
+"d": "Ao Yun's ritual chamber, northeast, behind a red jewelled door",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ritual_book_dark_fear_found",
+"d": "The fifth book, Dark Fear, holds the ritual",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_watches_through_mystic_mirror",
+"d": "Yan watches Dongyue through Ao Yun's mystic mirror",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "31": [
 {
 "id": "xiyu_critical_condition",
 "d": "Mark Xiyu's life-threatening condition",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "ritual_summoning_phase_completed",
 "d": "Record completion of the first ritual phase",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "minami_appeared_in_person",
 "d": "Trigger Minami's appearance",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "ritual_second_phase_started",
 "d": "Begin the second phase of the ritual",
 "t": "state",
-"p": true,
-"s": "hooks"
-},
-{
-"id": "ritual_almanac_found",
-"d": "Record Dongyue's discovery of the required ritual information if confirmed in the scene",
-"t": "state",
-"p": true,
-"s": "hooks"
-},
-{
-"id": "muxue_yan_observes_dongyue",
-"d": "Track Yan observing Dongyue through the mystic mirror, if this scene belongs to this chapter",
-"t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 }
 ],
@@ -985,28 +1112,28 @@ const HOOKS = {
 "id": "ritual_second_phase_completed",
 "d": "Mark completion of the second ritual phase",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_health_restored",
 "d": "Update Xiyu's condition after the ritual",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "relationship_stage_deepened",
 "d": "Record the change in Xiyu and Dongyue's bond",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "ritual_aftereffects_pending",
 "d": "Keep lasting effects open for later scenes",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 }
 ],
@@ -1082,6 +1209,27 @@ const HOOKS = {
 "t": "event",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "companions_found_recuperating",
+"d": "Xiao Tian and Ya'Xing are found, recuperating in the rooms",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_announces_marriage_in_three_days",
+"d": "The marriage of his successor Xiyu and Dongyue in three days",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_sees_yan_memory_of_infant",
+"d": "Yan's memory: she realises he is her father and she may be Muxue Yunxi, the infant frozen in time",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ],
 "35": [
@@ -1089,105 +1237,105 @@ const HOOKS = {
 "id": "post_assembly_reflection_started",
 "d": "Begin Xiyu's reflection after the assembly",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_questions_yan_motives",
 "d": "Xiyu asks Dongyue whether he knows something about Yan",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "dongyue_reassures_xiyu",
 "d": "Dongyue promises devotion and protection",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_trusts_dongyue",
 "d": "Record her decision to trust him despite uncertainty",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "muxue_wedding_ceremony_started",
 "d": "Start the Muxue wedding ceremony three days later",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "dongyue_vows_lifelong_devotion",
 "d": "Record his public vow",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "muxue_yan_congratulates_couple",
 "d": "Trigger Yan's congratulation and promise to care for his descendant",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "muxue_yan_dark_intent_hint_seen",
 "d": "Preserve the ominous undertone without confirming his motives",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "wedding_night_scene_started",
 "d": "Transition to the couple's private room",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "mysterious_woman_appears",
 "d": "Trigger the misty woman's appearance and message",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "mysterious_woman_vanishes",
 "d": "End the apparition without identifying her",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_fears_losing_happiness",
 "d": "Record anxiety about her future with Dongyue",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "dongyue_reveals_dream_fragments",
 "d": "Trigger sleep-muttered references to Xiao Tian, Ya'Xing, and revenge",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_recognizes_dongyue_kindness",
 "d": "Record her appreciation of his benevolence",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_experiences_marital_gratification",
 "d": "Mark the emotional significance of receiving sincere affection",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 }
 ],
@@ -1196,68 +1344,68 @@ const HOOKS = {
 "id": "xiao_tian_memory_flashback_started",
 "d": "Enter Xiao Tian's fragmented memories",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_was_swordsman",
 "d": "Establish his former swordsmanship practice",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "masked_assassins_attacked",
 "d": "Trigger the massacre flashback",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_master_and_brothers_killed",
 "d": "Record the deaths of his master and martial brothers",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "masked_assassins_identity_revealed",
 "d": "Describe the black-clad assassins with gold details and iron masks",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_captured_and_tortured",
 "d": "Trigger the bull-demon captivity memory",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "bull_demon_experiments_revealed",
 "d": "Record deprivation, poisons, and demon-energy-infused weapons",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_memories_partially_restored",
 "d": "Update his memory state while keeping much of his past blurred",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_revenge_motivation_revealed",
 "d": "Establish his goals: find the woman in his dreams, locate his master, and avenge the dead",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_recovery_incomplete",
-"d": "Maintain his pain, allergies, impaired speech, and involuntary laughter",
+"d": "Xiao Tian's memories only partly return and much stays a blur (ch036 page: he is Feng Xia)",
 "t": "state",
 "p": false,
 "s": "author"
@@ -1271,7 +1419,7 @@ const HOOKS = {
 },
 {
 "id": "ya_xing_recovery_incomplete",
-"d": "Track Ya'Xing's ongoing recovery from the experiments",
+"d": "Ya'Xing: constant itching and allergic reactions, barely able to walk, cannot speak clearly, bursts into insane laughter; his mind is damaged (ch036/039 pages)",
 "t": "state",
 "p": false,
 "s": "author"
@@ -1280,54 +1428,54 @@ const HOOKS = {
 "id": "commander_west_checks_xiao_tian",
 "d": "Trigger the recovery visit",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "commander_west_provides_elixirs",
 "d": "Record the medicine being provided",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_accepts_medicine",
 "d": "Mark his acceptance and gratitude",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiao_tian_return_requested",
 "d": "Record his question about returning home",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_wakes_beside_dongyue",
 "d": "Begin the following-day scene",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_worries_about_minami",
 "d": "Record her concern about Minami's visit and her father's return",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "xiyu_and_dongyue_discuss_marriage",
 "d": "Trigger their conversation about Dongyue accepting her father's proposal",
 "t": "event",
-"p": true,
+"p": false,
 "s": "hooks"
 },
 {
 "id": "dongyue_reveals_frozen_order",
-"d": "Trigger the Frozen Order discussion",
+"d": "On the 036 page Xiyu threatens Dongyue with the Frozen Order; he does not explain it. Lore wording unverified",
 "t": "event",
 "p": true,
 "s": "hooks"
@@ -1336,8 +1484,15 @@ const HOOKS = {
 "id": "xiyu_and_dongyue_share_affection",
 "d": "Record their affectionate interaction and Xiyu's hesitation to disclose everything",
 "t": "state",
-"p": true,
+"p": false,
 "s": "hooks"
+},
+{
+"id": "xiao_tian_true_name_feng_xia",
+"d": "He is Feng Xia, not the childish Xiao Tian",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ],
 "37": [
@@ -1412,6 +1567,27 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "anong_yamon_pureblooded_demons_revealed",
+"d": "Anong and Yamon are purebloods whose appetite for torture and experimentation is worse than imagined",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_hurt_by_withheld_truth",
+"d": "Dongyue is hurt that Xiyu kept the matter from him, but he is not leaving",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_decides_to_return_to_muxue",
+"d": "Yan calls an emergency assembly: return to Muxue at once; he will seal the temple",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ],
 "39": [

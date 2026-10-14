@@ -85,8 +85,8 @@ const ZONES = [
   {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:1, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
   {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:1, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
   {id:'temple', n:'Ice Temple · Level 1', icon:'🏯', unlock:18, off:1, pool:['ice_golem','ward_sentinel','frost_stalker'], boss:'frost_warden', desc:'The upper temple of ice.'},
-  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:26, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens after chapter 26 (the frozen maze; provisional).'},
-  {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:null, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'Hidden rooms and unexplored areas. Opens when its chapters are added.'},
+  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:24, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens after chapter 24 (the maze and the horned beasts).'},
+  {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 

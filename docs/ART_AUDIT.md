@@ -73,3 +73,32 @@ All 20 chapters now have art in `assets/comics/`.
 - **Ch 12 art** ends with a kiss in bed; the script ends on "Someone who refuses to give up on you."
 - **Art vs script, minor:** the script's ch 17 has Xiyu say "You… are Muxue Yan?" without introducing the party; v2 has her name Master Zhan, Xiao Tian and Ya'Xing.
 - Sleepwear in ch 11, 12 and 20 is a camisole/inner garment, in line with the author's rule.
+
+---
+
+# Third batch: comics 021–039 (20 images)
+
+All 39 chapters now have art in `assets/comics/`.
+
+| Image | Label | Game ch | Verdict |
+|---|---|---|---|
+| 1–7 | 021 Warming Up to Him · 022 Bonded · 023 Exploring the Ice Temple · 024 Accepting Fate · **025 His Magic** · 026 Teleportation · 027 The Glass Casket | 21–27 | ✅ labels correct. 025 has a real title (was a placeholder "The Frozen Passage") |
+| 8, 9 | 028 Deeply Weakened (two versions) | 28 | **v2 chosen**: its Dongyue line ("Let me be your companion… only that you tell me the secret behind the ritual") matches the script; layout slightly cleaner. v1 not used (low-confidence pick, swap if you prefer it) |
+| 10 | 029 The Price of Love | 29 | ✅ |
+| 11 | **030 Malicious** | 30 | ✅ title now known. Dongyue is silver-haired throughout |
+| 12–14 | 031 The Ritual Chamber · 032 Embracing Her Feelings · 033 Rainbow Dream | 31–33 | ✅ |
+| 15 | **033** Heinous Intent | **34** | ⚠️ label says 033, should be **034** |
+| 16–20 | 035 Gratification · 036 Xiao Tian's Memories · 037 The Duty of a Lesser Male · 038 Communication · 039 Return to the Island | 35–39 | ✅ |
+
+## What the pages change in the game
+1. **ch23 shows the Ice Library** (and the locked central door, the five magical berries, the frozen infant Yunxi). I had moved the library to 024 from the script; the hook file was right. Restored.
+2. **ch24 shows Levels 2 and 3 of your Ice Temple map**: maze door, stone puzzle, two minotaur-like beasts, the floor opening, the haystack landing, red potions, locked chests, a dark door. Those rooms and the two hunting zones now unlock at ch24 (was 26 / unscheduled).
+3. **Xiao Tian and Ya'Xing are separated from ch24** ("wondering about the fate of Xiao Tian and Ya'Xing") and found "recuperating in the rooms" in **ch34**. They are now unavailable in 24–33; Ya'Xing is unavailable again after 39. This answers my earlier question.
+4. **Ritual countdown** from the pages: 14 (22) → 11 (23–24, "only six before the worst effects") → **10 (25)** → 7 (28). Completed at 32 (second phase starts at the end of 31, she wakes restored in 32).
+5. **ch036 conflicts with the summary you gave me.** On the page, the itching, allergic reactions, difficulty walking and speaking and insane laughter are **Ya'Xing's**; Xiao Tian's page text is that his memories partly return, much still a blur, and that he is **Feng Xia, not the childish Xiao Tian**. I followed the page: Xiao Tian's hook text no longer lists those symptoms.
+6. **Xiyu's origin is on the pages in Volume 1** (027 "Is that child… me?", 029 Yan's chambers, 030 her dream, 034 she realises he is her father and may be Yunxi, 038 "her biological father", Xiyu calls him Father). `STORY_NOTES.md` said to keep this out of Volume 1; that is corrected there.
+
+## Content notes
+- Ch031–033 and 036 captions say "bare", "naked beneath the sheets" and show a ritual circle and bedding scenes more revealing than the "blankets, wraps, steam, petals" rule. Installed as supplied; your call whether to regenerate.
+- Ch025 says Dongyue "can treat you as my wife now" before the ch35 wedding, and ch033's dream is the proposal.
+- Ch034's page text is "Heinous Intent" under a "033" label (see above); a typo in 036 ("There was no falseness…") overlaps a caption.

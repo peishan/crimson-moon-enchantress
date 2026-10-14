@@ -149,7 +149,7 @@ const zoneThumb = z => artOrIcon('assets/areas/'+z.id+'.webp', z.icon, 'zthumb')
 function wildFight(zid, boss){
   const z = ZONES.find(x => x.id===zid); if(!z || !zoneOpen(z)) return;
   const lv = Math.max(1, avgPartyLv() + z.off + (boss?1:0));
-  const foes = boss ? [].concat(z.boss).map(k => ({key:k, lv})) : Array.from({length:2+Math.floor(Math.random()*2)}, () => ({key:AR(z.pool), lv:Math.max(1, lv+Math.floor(Math.random()*3)-1)}));
+  const foes = boss ? [].concat(z.boss).map(k => ({key:k, lv})) : Array.from({length:Math.max(1,Math.min(2+Math.floor(Math.random()*2), G.active.length+1))}, () => ({key:AR(z.pool), lv:Math.max(1, lv+Math.floor(Math.random()*3)-1)}));
   origin = 'wilds'; startBattle({foes, rewards:true, firstClear:boss && !G.bestiary[[].concat(z.boss)[0]]}); tab='battle'; render();
 }
 

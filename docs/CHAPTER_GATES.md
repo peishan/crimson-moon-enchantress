@@ -58,7 +58,7 @@ Story-driven (`CH_RITUAL` in `scripts/chapters.js`), stored in the save, shown i
 ch 22 she learns it (14 days) · ch 23 three days pass (11) · ch 24 "eleven days remained" · ch 28 "seven days left" · completed at ch 32 (second ritual phase, from the hook list; provisional).
 Dongyue's promise in ch 29 and "husband" in ch 39 do **not** complete it.
 
-## Chapters with no approved script yet
+## Chapters with no approved script (all now have art)
 25 (placeholder bridge "The Frozen Passage"), 30, 31, 32, 35, 36 have no approved script and can be completed so the story is not blocked. 31 The Ritual Chamber, 32 Embracing Her Feelings, 35 Gratification and 36 Xiao Tian's Memories show an outline taken from the author's hook list (see `HOOKS_REVIEW.md`); 25 and 30 show a pending notice. 38 is a reconstructed bridge.
 Ch 30 note: two panels of its earlier image wrongly showed Dongyue with black hair; the final art must show him silver-haired.
 

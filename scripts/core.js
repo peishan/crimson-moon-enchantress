@@ -15,8 +15,14 @@ const NO_JOIN_YET = {};
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
    chapter, the battle chapter, and the ch20 milestone. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
-const GATE_RATIO = .8;
-const GATE_CHAPTERS = [11, 13, 14, 15, 20, 30];
+const GATE_RATIO = 1;   // gate = chapter number: "reach an average party level equal to the chapter"
+const GATE_CHAPTERS = [11, 13, 14, 15, 20, 30, 39];   // 30 = Yan joins (planned), 39 = Volume 1 finale (planned)
+
+/* ---------- THE LEVEL CURVE: Volume 1 = 39 comic chapters, spread evenly over levels ----------
+   Story XP is set so a player who only reads the story is level (1 + chapters done): Lv 40 when Volume 1 ends at ch 39.
+   STORY_PACE = levels gained per chapter (1 = one level per chapter). Wilds/Temple hunting is the optional way to get ahead. */
+const VOLUME1_CHAPTERS = 39;
+const STORY_PACE = 1;
 
 let G = null;
 const $ = id => document.getElementById(id);
@@ -25,7 +31,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0 };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -34,7 +40,7 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d);
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}};
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id));
     return true;
@@ -58,7 +64,24 @@ function chapterLevelLock(n){   // '' when open
 }
 
 /* ---------- levels & stats ---------- */
-const xpToNext = lv => Math.round(40 + lv*22 + lv*lv*1.2);
+/* Per-class XP tables: xp to next level = a + b*lv + c*lv^2. The same XP therefore gives different levels per class:
+   martial fighters climb a little faster, support and casters a little slower, the ancient sage slowest (from Tribute). */
+const XP_TABLES = {
+  standard:{a:40, b:22, c:1.2},
+  fighter:{a:36, b:20, c:1.1},     // Xiao Tian: martial striker
+  ranger:{a:38, b:21, c:1.15},     // Ya'Xing: scout / archer
+  support:{a:44, b:24, c:1.3},     // Dongyue: battle cleric
+  scholar:{a:46, b:25, c:1.35},    // Yan: ancient sage
+};
+const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', xiaotian:'fighter', yan:'scholar' };
+const xpToNext = (lv, id) => { const t = XP_TABLES[XP_CLASS[id] || 'standard']; return Math.round(t.a + lv*t.b + lv*lv*t.c); };
+/* Story XP for chapter n on the standard curve, so the story-only level after n chapters is 1 + n*STORY_PACE (continuous cumulative curve). */
+const cumXp = L => 40*(L-1) + 11*(L-1)*L + .2*(L-1)*L*(2*L-1);
+const storyXp = n => Math.max(1, Math.round(cumXp(1 + n*STORY_PACE) - cumXp(1 + (n-1)*STORY_PACE)));
+/* Level a joining hero arrives at, relative to the party average. Everyone arrives one level behind; Muxue Yan (an ancient sage whose power
+   is returning) arrives AT the average, with his own skills gated higher so his power comes back as the party levels. */
+const JOIN_LEVEL_OFFSET = { yan:0 };
+const joinLevel = id => Math.max(1, avgPartyLv() + (JOIN_LEVEL_OFFSET[id]!==undefined ? JOIN_LEVEL_OFFSET[id] : -1));
 const bondMult = id => 1 + .02*bondLevel(id);
 function statsOf(id){
   const c = CHARACTERS[id], lv = U(id).lv, bm = bondMult(id), out = {};
@@ -69,8 +92,8 @@ function gainXp(amount, ids){
   const msgs = [];
   (ids || G.party).forEach(id => {
     const u = U(id); u.xp += amount;
-    while(u.xp >= xpToNext(u.lv)){
-      u.xp -= xpToNext(u.lv); u.lv++;
+    while(u.xp >= xpToNext(u.lv, id)){
+      u.xp -= xpToNext(u.lv, id); u.lv++;
       msgs.push(CHARACTERS[id].n+' reached Lv'+u.lv+'!');
       skillsOf(id).filter(s => s.req && s.req.lvl === u.lv && reqMet(id, s.req)).forEach(s => msgs.push('  ✦ New skill: '+s.n));
     }

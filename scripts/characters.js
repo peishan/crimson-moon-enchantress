@@ -33,6 +33,7 @@ const CHARACTERS = {
    {id:'crimson_moon',n:'Crimson Moon',icon:'🌙',mp:9,kind:'magic',tgt:'foes',pow:1.0,fx:[{k:'slow',d:2}],req:{lvl:3},sig:true,desc:'The Blood Moon\'s light washes over every foe, bruising and slowing them.'},
    {id:'illusion_veil',n:'Illusion Veil',icon:'🪭',mp:7,kind:'support',tgt:'foe',fx:[{k:'charm',d:2}],req:{lvl:6},sig:true,desc:'A veil of enchantment: the foe is charmed and loses its turns.'},
    {id:'meteor_shower',n:'Meteor Shower',icon:'☄️',mp:16,kind:'magic',tgt:'foes',pow:1.9,fx:[{k:'burn',d:2}],req:{lvl:10},sig:true,desc:'Fire rains from the sky onto every enemy.'},
+   {id:'eclipse_barrage',n:'Eclipse Barrage',icon:'🌑',mp:28,kind:'magic',tgt:'foes',pow:2.8,fx:[{k:'burn',d:3},{k:'slow',d:2}],req:{lvl:32},desc:'PLACEHOLDER (gameplay). A late-game blast of eclipse fire and frost-dark light across every foe.'},
    {id:'blood_moon_surge',n:'Blood Moon Surge',icon:'🩸',mp:0,kind:'support',tgt:'self',once:true,fx:[{k:'state',id:'bloodmoon',d:4}],req:{lvl:20},desc:'The eclipse she was born beneath answers her: MAG +30% and spells cost half for 4 turns. Once per battle.'},
   ]},
  dongyue:{
@@ -49,6 +50,7 @@ const CHARACTERS = {
    {id:'restoration',n:'Restoration',icon:'✨',mp:14,kind:'heal',tgt:'allies',pow:.8,fx:[{k:'cleanse'}],req:{lvl:9},sig:true,desc:'Heals the whole party and clears ailments.'},
    {id:'spirit_expulsion',n:'Spirit Expulsion',icon:'👁️',mp:9,kind:'magic',tgt:'foe',pow:1.2,antiMagic:2.2,req:{lvl:8,flag:'imp_expelled'},desc:'Learned by driving the imp out of Wang Xi\'er (Chapter 13). Devastating against imps and spirits.'},
    {id:'soul_link',n:'Soul Link',icon:'💞',mp:12,kind:'support',tgt:'ally',fx:[{k:'regen',v:.08,d:3},{k:'buff',stat:'mag',m:1.25,d:3},{k:'cleanse'}],req:{lvl:12,flag:'soul_bond'},desc:'The bond of Chapter 20: he lends an ally his strength. Steady regeneration, MAG up, ailments cleared.'},
+   {id:'radiant_sanctuary',n:'Radiant Sanctuary',icon:'🌟',mp:26,kind:'heal',tgt:'allies',pow:1.5,fx:[{k:'shield',v:.2,d:3},{k:'cleanse'}],req:{lvl:30},desc:'PLACEHOLDER (gameplay). A sanctuary of light: heals the whole party, shields them and clears ailments.'},
    {id:'ancient_rite',n:'Ancient Healing Rite',icon:'📜',mp:22,kind:'heal',tgt:'allyDown',pow:1.4,fx:[{k:'revive'}],req:{lvl:16,flag:'ancient_rite'},desc:'The ancient incantation he used to save Xiyu (Chapter 18): raises a fallen ally.'},
   ]},
  yaxing:{
@@ -63,6 +65,7 @@ const CHARACTERS = {
    {id:'binding_trap',n:'Binding Trap',icon:'🪤',mp:6,kind:'phys',tgt:'foe',pow:.6,fx:[{k:'bind',d:2}],req:{lvl:4},sig:true,desc:'A snare that holds the foe in place.'},
    {id:'eagle_eye',n:'Eagle Eye',icon:'🦅',mp:5,kind:'support',tgt:'self',fx:[{k:'crit',d:3},{k:'analyze'}],req:{lvl:7},sig:true,desc:'A scout\'s focus: guaranteed crits for 3 turns, and reveals an enemy.'},
    {id:'survival_instinct',n:'Survival Instinct',icon:'🧭',mp:11,kind:'support',tgt:'allies',fx:[{k:'regen',v:.05,d:3},{k:'cleanse'}],req:{lvl:12},sig:true,desc:'Practical know-how: the party recovers steadily and shakes off ailments.'},
+   {id:'arrow_storm',n:'Arrow Storm',icon:'🌧️',mp:24,kind:'phys',tgt:'foes',pow:1.9,req:{lvl:28},desc:'PLACEHOLDER (gameplay). A storm of arrows and knives on every enemy.'},
    {id:'knife_volley',n:'Knife Volley',icon:'🔪',mp:10,kind:'phys',tgt:'foes',pow:1.1,req:{lvl:16},desc:'A fan of throwing knives that hits every enemy.'},
   ]},
  xiaotian:{
@@ -77,6 +80,7 @@ const CHARACTERS = {
    {id:'heaven_step',n:'Heaven Step',icon:'🌬️',mp:5,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.3,d:3},{k:'buff',stat:'eva',m:1.5,d:3}],req:{lvl:4},sig:true,desc:'Light-footed: SPD up and much harder to hit.'},
    {id:'counter_surge',n:'Counter Surge',icon:'🔁',mp:7,kind:'support',tgt:'self',fx:[{k:'oath',d:2}],req:{lvl:8},sig:true,desc:'Draws attacks and strikes back at whoever lands a blow.'},
    {id:'lotus_burst',n:'Lotus Burst',icon:'🪷',mp:14,kind:'phys',tgt:'foes',pow:1.6,req:{lvl:13},sig:true,desc:'A blossoming burst of force hitting every enemy.'},
+   {id:'thousand_petals',n:'Thousand Petals',icon:'🌸',mp:26,kind:'phys',tgt:'foes',pow:2.2,req:{lvl:30},desc:'PLACEHOLDER (gameplay). A thousand strikes in one breath, hitting every enemy.'},
    {id:'silent_edge',n:'Silent Edge',icon:'🗡️',mp:10,kind:'phys',tgt:'foe',pow:2.3,crit:true,req:{lvl:18},desc:'The short blade, drawn without a sound. Always a critical hit.'},
   ]},
  yan:{
@@ -88,10 +92,10 @@ const CHARACTERS = {
   base:{hp:90,mp:50,atk:6,mag:16,def:9,spd:8}, grow:{hp:8.5,mp:4.5,atk:.6,mag:2.3,def:1.1,spd:.7},
   skills:[
    {id:'ice_shard',n:'Ice Shard',icon:'🧊',mp:4,kind:'magic',tgt:'foe',pow:1.5,req:{lvl:1},desc:'A lance of ice.'},
-   {id:'frost_domain',n:'Frost Domain',icon:'❄️',mp:11,kind:'magic',tgt:'foes',pow:.9,fx:[{k:'slow',d:3}],req:{lvl:16},sig:true,desc:'Freezes the ground itself: every foe takes frost damage and is slowed.'},
-   {id:'sealing_chains',n:'Sealing Chains',icon:'⛓️',mp:9,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2},{k:'silence',d:2}],req:{lvl:18},sig:true,desc:'Ancient chains bind and silence a single foe.'},
-   {id:'time_ward',n:'Time Ward',icon:'⏳',mp:13,kind:'support',tgt:'allies',fx:[{k:'shield',v:.2,d:3},{k:'buff',stat:'spd',m:1.2,d:3}],req:{lvl:22},sig:true,desc:'Time itself shields the party: a barrier and SPD up.'},
-   {id:'celestial_art',n:'Celestial Art',icon:'🌌',mp:22,kind:'magic',tgt:'foes',pow:2.1,fx:[{k:'slow',d:2}],req:{lvl:26},sig:true,desc:'Ancient magic of the heavens, striking every foe.'},
+   {id:'frost_domain',n:'Frost Domain',icon:'❄️',mp:11,kind:'magic',tgt:'foes',pow:.9,fx:[{k:'slow',d:3}],req:{lvl:28},sig:true,desc:'Freezes the ground itself: every foe takes frost damage and is slowed.'},
+   {id:'sealing_chains',n:'Sealing Chains',icon:'⛓️',mp:9,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2},{k:'silence',d:2}],req:{lvl:31},sig:true,desc:'Ancient chains bind and silence a single foe.'},
+   {id:'time_ward',n:'Time Ward',icon:'⏳',mp:13,kind:'support',tgt:'allies',fx:[{k:'shield',v:.2,d:3},{k:'buff',stat:'spd',m:1.2,d:3}],req:{lvl:34},sig:true,desc:'Time itself shields the party: a barrier and SPD up.'},
+   {id:'celestial_art',n:'Celestial Art',icon:'🌌',mp:22,kind:'magic',tgt:'foes',pow:2.1,fx:[{k:'slow',d:2}],req:{lvl:38},sig:true,desc:'Ancient magic of the heavens, striking every foe.'},
   ]},
 };
 const ROSTER = Object.keys(CHARACTERS);

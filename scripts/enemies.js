@@ -20,8 +20,21 @@ const ENEMIES = {
     moves:[{n:'Stone Fist',pow:1.2},{n:'Warding Pulse',pow:.9,spell:true,all:true}],drops:[{id:'rift_shard',chance:.25}],desc:'A construct left to guard old Muxue vaults.'},
   rift_wraith:{n:'Rift Wraith',icon:'👻',hp:95,atk:7,mag:17,def:6,spd:12,xp:50,gold:24,traits:['magic'],
     moves:[{n:'Void Touch',pow:1.1,spell:true},{n:'Wail',pow:.8,spell:true,all:true,fx:[{k:'slow',d:2}]}],drops:[{id:'rift_shard',chance:.4}],desc:'Something that slipped through when the gates opened.'},
-  ice_golem:{n:'Ice Golem',icon:'🧊',elite:true,hp:210,atk:18,mag:0,def:15,spd:5,xp:80,gold:40,
+  ice_golem:{n:'Ice Golem',icon:'🧊',elite:true,hp:170,atk:16,mag:0,def:15,spd:5,xp:80,gold:40,
     moves:[{n:'Glacial Smash',pow:1.3},{n:'Frozen Grip',pow:.8,fx:[{k:'bind',d:1}]}],drops:[{id:'ice_crystal',chance:.7}],desc:'A walking slab of mountain ice.'},
+  /* ---- Ice Temple depths (gameplay filler tied to the temple map's levels; NOT story events) ---- */
+  frost_stalker:{n:'Frost Stalker',icon:'🐆',hp:110,atk:17,mag:0,def:8,spd:17,xp:52,gold:26,
+    moves:[{n:'Ice Fang',pow:1.1},{n:'Pounce',pow:1.6},{n:'Stalking Chill',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'ice_crystal',chance:.35}],desc:'A pale hunter that prowls the temple corridors.'},
+  icicle_snare:{n:'Icicle Snare',icon:'🪤',hp:90,atk:14,mag:6,def:14,spd:6,xp:46,gold:22,
+    moves:[{n:'Falling Icicles',pow:1.2,all:true},{n:'Frozen Trap',pow:.8,fx:[{k:'bind',d:1}]}],drops:[{id:'ice_crystal',chance:.4}],desc:'A trap mechanism that fights back.'},
+  maze_wraith:{n:'Maze Wraith',icon:'💨',hp:105,atk:8,mag:19,def:7,spd:13,xp:56,gold:28,traits:['magic'],
+    moves:[{n:'Cold Drain',pow:1.1,spell:true,fx:[{k:'silence',d:1}]},{n:'Wail',pow:.8,spell:true,all:true}],drops:[{id:'rift_shard',chance:.3}],desc:'A restless chill that wanders the sealed corridors.'},
+  horned_beast:{n:'Horned Beast',icon:'🦬',elite:true,hp:210,atk:19,mag:0,def:14,spd:8,xp:96,gold:50,
+    moves:[{n:'Horn Charge',pow:1.5},{n:'Ground Slam',pow:.9,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.8},{id:'ice_crystal',chance:.5}],desc:'One of the arena\'s two horned beasts.'},
+  cave_crawler:{n:'Cave Crawler',icon:'🕷️',hp:120,atk:18,mag:0,def:10,spd:12,xp:60,gold:30,
+    moves:[{n:'Venom Bite',pow:1.1,fx:[{k:'burn',d:2}]},{n:'Web Shot',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'frost_herb',chance:.4}],desc:'Lives in the dark below the temple.'},
+  hoard_mimic:{n:'Hoard Mimic',icon:'📦',elite:true,hp:180,atk:18,mag:8,def:16,spd:7,xp:90,gold:90,
+    moves:[{n:'Snapping Lid',pow:1.4},{n:'Gold Lure',pow:.8,fx:[{k:'charm',d:1}]}],drops:[{id:'spirit_draught',chance:.4},{id:'moonlit_tonic',chance:.4}],desc:'It was never a chest.'},
   imp:{n:'Imp',icon:'👺',hp:60,atk:10,mag:11,def:5,spd:13,xp:32,gold:15,traits:['magic'],
     moves:[{n:'Claw',pow:1},{n:'Hex Spark',pow:1.2,spell:true}],drops:[{id:'imp_ash',chance:.5}],desc:'A lesser demon that clings to the sick.'},
   /* STORY (chapter 13): the imp afflicting Wang Xi'er */
@@ -34,10 +47,12 @@ const ENEMIES = {
     phases:[{at:.5,msg:'The temple chills: the Warden\'s eyes turn white.',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'moonlit_tonic',chance:.5}],desc:'A guardian of the Ice Temple. Wilds challenge, not part of the story.'},
 };
 function mkEnemy(key, lv){
-  const e = ENEMIES[key], m = 1 + (lv-1)*0.12, x = 1 + (lv-1)*0.08;
+  /* Enemy scaling steepens past the early levels so Volume 1's whole range (Lv 1-40) stays a fight: heroes grow faster than a straight line.
+     hp: 1 + 0.12*(lv-1) + 0.003*(lv-1)^2 ; attack stats: 1 + 0.12*(lv-1) + 0.004*(lv-1)^2 ; def: 1 + 0.13*(lv-1) (kept linear, like hero ATK, so high-level elites stay hittable); xp/gold follow hp. */
+  const e = ENEMIES[key], d = lv-1, mh = 1 + d*0.12 + d*d*0.003, ma = 1 + d*0.12 + d*d*0.004, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
   return { key, name:e.n, icon:e.icon, boss:!!e.boss, elite:!!e.elite, traits:e.traits||[], moves:e.moves, drops:e.drops||[],
-    hp:Math.round(e.hp*m), mhp:Math.round(e.hp*m), mp:0, mmp:0,
-    atk:Math.round(e.atk*m), mag:Math.round(e.mag*m), def:Math.round(e.def*m), spd:Math.round(e.spd*(1+(lv-1)*.02)),
+    hp:Math.round(e.hp*mh), mhp:Math.round(e.hp*mh), mp:0, mmp:0,
+    atk:Math.round(e.atk*ma), mag:Math.round(e.mag*ma), def:Math.round(e.def*md), spd:Math.round(e.spd*(1+d*.02)),
     xp:Math.round(e.xp*x), gold:Math.round(e.gold*x), phases:e.phases ? e.phases.map(p => Object.assign({}, p)) : null };
 }
 
@@ -64,13 +79,15 @@ function addItems(list){ list.forEach(d => G.inv[d.id] = (G.inv[d.id]||0) + (d.q
 /* ---- Wilds zones. unlock = chapter that must be complete. Foes are level (party average + off). ---- */
 const ZONES = [
   {id:'forest', n:'Muxue Forest', icon:'🌲', unlock:1, off:0, pool:['frost_wolf','snowcap_boar','moon_wisp'], boss:null, desc:'Where Xiyu went to find what shook the island.'},
-  {id:'stream', n:'The Moonlit Stream', icon:'💧', unlock:6, off:1, pool:['ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The stream beside the Crimson Fairy.'},
-  {id:'chambers', n:'The Hidden Chambers', icon:'🗝️', unlock:15, off:2, pool:['ward_sentinel','imp','moon_wisp'], boss:null, desc:'Secret vaults beneath the Crimson Fairy.'},
-  {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:3, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
-  {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:3, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
-  {id:'temple', n:'The Ice Temple', icon:'🏯', unlock:18, off:4, pool:['ice_golem','ward_sentinel','rift_wraith'], boss:'frost_warden', desc:'The hidden temple of ice.'},
+  {id:'stream', n:'The Moonlit Stream', icon:'💧', unlock:6, off:0, pool:['ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The stream beside the Crimson Fairy.'},
+  {id:'chambers', n:'The Hidden Chambers', icon:'🗝️', unlock:15, off:1, pool:['ward_sentinel','imp','moon_wisp'], boss:null, desc:'Secret vaults beneath the Crimson Fairy.'},
+  {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:1, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
+  {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:1, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
+  {id:'temple', n:'Ice Temple · Level 1', icon:'🏯', unlock:18, off:1, pool:['ice_golem','ward_sentinel','frost_stalker'], boss:'frost_warden', desc:'The upper temple of ice.'},
+  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:null, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens when its chapters are added.'},
+  {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:null, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'Hidden rooms and unexplored areas. Opens when its chapters are added.'},
 ];
-const zoneOpen = z => G.ch >= z.unlock;
+const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 
 /* ---- loot ---- */
 const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'cleansing_salt',qty:[2,2]}]},

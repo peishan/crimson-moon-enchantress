@@ -4,7 +4,7 @@
    Comic art: assets/comics/chNN.webp, extra pages chNN_2.webp, chNN_3.webp ... (see README).
    ===================================================================== */
 const CHAPTERS = [];
-for(let n=1;n<=20;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:60 + 15*n, battle:null });
+for(let n=1;n<=20;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:storyXp(n), battle:null });   // chapters 21-39 are added when their scripts arrive
 const chapterOf = n => CHAPTERS[n-1];
 
 /* Chapter battles. Only one is in the script: ch13, Dongyue expels the imp afflicting Wang Xi'er.
@@ -32,7 +32,7 @@ function completeChapter(n){
   G.ch = n;
   const c = chapterOf(n);
   recruitsAtChapter(n).forEach(id => {
-    const lv = Math.max(1, avgPartyLv()-1);
+    const lv = joinLevel(id);
     if(recruit(id)){ U(id).lv = Math.max(U(id).lv, lv); msgs.push('★ '+CHARACTERS[id].n+' joins the party!'); }
   });
   Object.keys(CH_BOND[n]||{}).forEach(id => { if(isRecruited(id)){ U(id).bp += CH_BOND[n][id]; msgs.push('💞 Bond with Xiyu ('+CHARACTERS[id].n.split(' ')[0]+'): +'+CH_BOND[n][id]); } });
@@ -48,7 +48,7 @@ function devSetChapter(n){
   G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu'];
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); }
   G.ch = n;
-  const target = Math.max(1, Math.round(n*.8));
+  const target = Math.max(1, Math.round(1 + n*STORY_PACE));
   G.party.forEach(id => { U(id).lv = Math.max(U(id).lv, target); U(id).xp = 0; });
   save();
 }

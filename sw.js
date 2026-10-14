@@ -1,8 +1,8 @@
 /* Crimson Moon service worker: app shell cached for offline play; images/comics cached as you play. */
-const VERSION = 'crimson-moon-v1';
+const VERSION = 'crimson-moon-v2';
 const SHELL = ['./', './index.html', './styles.css', './manifest.webmanifest',
-  './scripts/characters.js','./scripts/chapters.js','./scripts/script.js','./scripts/people.js','./scripts/core.js','./scripts/enemies.js','./scripts/battle.js','./scripts/journal.js',
-  './scripts/savedata.js','./scripts/storypopup.js','./scripts/ui.js','./assets/splash.webp','./assets/icons/icon-192.png'];
+  './scripts/characters.js','./scripts/chapters.js','./scripts/script.js','./scripts/people.js','./scripts/core.js','./scripts/enemies.js','./scripts/battle.js','./scripts/journal.js','./scripts/temple.js','./assets/maps/ice_temple.webp',
+  './scripts/savedata.js','./scripts/storypopup.js','./scripts/ui.js','./assets/splash.webp','./assets/volume1_cover.webp','./assets/icons/icon-192.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {

@@ -1,5 +1,5 @@
 THE CRIMSON MOON'S ENCHANTRESS (绯月妖姬) — a game adaptation by Yuchen Sky
-Season 1: comic chapters 1-20 scripted and illustrated so far (comic art exists to at least 022). Mobile-first static site (GitHub Pages), no build step.
+Volume 1 = 39 comic chapters; 1-20 are scripted and illustrated so far (art exists to at least 022). Mobile-first static site (GitHub Pages), no build step.
 Open index.html. Save key: crimson_moon_v1 (localStorage).
 
 Built on the Tribute / Daybreak: Crimson Tide layout (multi-script, no framework).
@@ -13,8 +13,10 @@ scripts/battle.js      turn-based engine
 scripts/journal.js     chapters, completion, chapter battle (ch13), dev jump
 scripts/storypopup.js  full-screen reader (comic art, or script text if art is missing)
 scripts/savedata.js    Save tab: export/import, GitHub Gist backup, auto backup
-scripts/ui.js          tabs: Journal, Party, Gates, Wilds, Cast, Training, Items, Bestiary, Save, Dev
+scripts/temple.js      Ice Temple rooms from the author's map (assets/maps/ice_temple.webp)
+scripts/ui.js          tabs: Journal, Party, Gates, Wilds, Temple, Cast, Training, Items, Bestiary, Save, Dev
 docs/CHAPTER_GATES.md  which chapter / level gates each party member  (READ THIS)
+docs/LEVEL_CURVE.md    39-chapter level curve, class curves, Yan decision, enemy scaling
 
 COMIC ART: put PNG/JPG files in assets/comics/ named by chapter: ch01.png, ch02.png ... ch20.png
 (extra pages: ch01_2.png, ch01_3.png). The Pages workflow converts them to WebP on push (images taller than

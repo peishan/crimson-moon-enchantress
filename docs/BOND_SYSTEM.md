@@ -39,3 +39,6 @@ The formal deeper rite, any romance or intimacy mechanic for Cangyuan, comics sh
 
 ### Comic 033 edit (author)
 Dongyue's "You and I are bonded for life" is now "We shared the ritual. How could I ever leave you?", and the dream caption is a red thread binding their hands beneath a moonlit sky. The red thread now foreshadows Crimson Thread Resonance (Volume 2). The page still has the "naked beneath the sheets" caption and "skilful fingers explored... desire in her veins"; in-game text stays non-explicit.
+
+### Comics 038 and 039 (author edits)
+038: Xiyu says "Perhaps I was foolish to believe that being bound together meant we would always understand each other" and Dongyue answers "That doesn't mean I'm leaving you." 039: the narrator now states "The ritual had joined their spiritual energies, but not their souls. Its final stage, the everlasting union, remained incomplete," and Xiyu asks for time. This is the canon in one line. Remaining: the closing 038 caption "Fate had bound their souls" (loose, reads as poetic) and an unrevised line in the 022 script fallback text ("The bond had joined their souls").

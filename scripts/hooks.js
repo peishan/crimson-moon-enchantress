@@ -1695,6 +1695,20 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "ritual_joined_energies_not_souls",
+"d": "Xiyu tells Dongyue the ritual joined their spiritual energies but not their souls; the everlasting union is incomplete (author-edited page)",
+"t": "state",
+"p": false,
+"s": "author"
+},
+{
+"id": "dongyue_keeps_choosing_her",
+"d": "Dongyue agrees to give her time and keeps choosing her every day",
+"t": "state",
+"p": false,
+"s": "author"
 }
 ],
 "40": [

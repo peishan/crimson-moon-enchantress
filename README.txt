@@ -19,6 +19,7 @@ scripts/ui.js          tabs: Journal, Party, Gates, Wilds, Temple, Cast, Trainin
 docs/CHAPTER_GATES.md  which chapter / level gates each party member  (READ THIS)
 docs/ART_ASSET_LIST.md   every art slot with exact filenames (drop-in, safe fallbacks)
 docs/BONDING_AND_CURSE.md  Moon-Heat, Attunement and the Moonlit Bonding
+docs/VOLUME2_PARTY.md    Shen Cangyuan and Lu Xining: classes, skills, combinations (data only, not joinable in Volume 1)
 docs/STORY_NOTES.md     SPOILERS: author's clarifications (Xiyu's origin). Not shown in the game
 docs/HOOKS_REVIEW.md   the hook list checked against the scripts: corrections and open conflicts
 docs/LEVEL_CURVE.md    39-chapter level curve, class curves, Yan decision, enemy scaling

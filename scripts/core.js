@@ -10,7 +10,7 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
 const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15 };   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
 const INTRO_CH = { xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17 };
-const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
+const NO_JOIN_YET = { cangyuan:'Volume 2: joining chapter to be decided (first appears in Volume 2 chapter 2).', xining:'Volume 2: joining chapter to be decided.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
@@ -82,7 +82,7 @@ const XP_TABLES = {
   support:{a:44, b:24, c:1.3},     // Dongyue: battle cleric
   scholar:{a:46, b:25, c:1.35},    // Yan: ancient sage
 };
-const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', xiaotian:'fighter', yan:'scholar' };
+const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
 const xpToNext = (lv, id) => { const t = XP_TABLES[XP_CLASS[id] || 'standard']; return Math.round(t.a + lv*t.b + lv*lv*t.c); };
 /* Story XP for chapter n on the standard curve, so the story-only level after n chapters is 1 + n*STORY_PACE (continuous cumulative curve). */
 const cumXp = L => 40*(L-1) + 11*(L-1)*L + .2*(L-1)*L*(2*L-1);

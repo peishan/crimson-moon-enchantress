@@ -3,11 +3,11 @@
    ===================================================================== */
 const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
-let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = false;
+let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
 const STAT_NAME = {hp:'HP',mp:'MP',atk:'ATK',mag:'MAG',def:'DEF',spd:'SPD'};
 const bar = (v,m,cls) => `<div class="bar ${cls||''}"><i style="width:${clamp(100*v/m,0,100)}%"></i></div>`;
-const SHORT = {xiyu:'Xiyu', dongyue:'Dongyue', yaxing:'Ya\'Xing', xiaotian:'Xiao Tian', yan:'Yan'};
+const SHORT = {xiyu:'Xiyu', dongyue:'Dongyue', yaxing:'Ya\'Xing', xiaotian:'Xiao Tian', yan:'Yan', cangyuan:'Cangyuan', xining:'Xining'};
 const first = id => SHORT[id] || CHARACTERS[id].n;
 const ritualPanel = () => G.ritual && G.ritual.left!==null ? `<div class="panel ${G.ritual.done?'good':'bad'}"><b>⏳ The soul-bond ritual</b><div class="sm">${G.ritual.done?'Completed. The deadline no longer applies.':G.ritual.left+' day'+(G.ritual.left===1?'':'s')+' left before the receiver dies. Story-driven: it only changes at the chapters that say so, never with real time or a reload.'}</div></div>` : '';
 
@@ -38,7 +38,7 @@ function gateLine(id){
 function rParty(){
   const slots = Array.from({length:ACTIVE_SLOTS}, (_,i) => i).map(i => { const id = G.active[i];
     return id ? `<div class="slot on" onclick="sel='${id}';render()"><img src="${portrait(id)}"><b>${first(id)}</b><span class="sm">Lv${U(id).lv}</span></div>` : `<div class="slot"><span class="sm">empty</span></div>`; }).join('');
-  const roster = ROSTER.map(id => {
+  const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id)).map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
   return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
@@ -78,7 +78,7 @@ function rSheet(id){
 function rGates(){
   const joinRows = ROSTER.map(id => { const j = JOIN_CH[id], g = j!==undefined ? chapterGate(j) : null;
     return `<tr><td><b>${first(id)}</b><div class="sm">${CHARACTERS[id].title}</div></td><td>${j===undefined?'—':'Ch.'+j}</td><td>${INTRO_CH[id]!==undefined?'Ch.'+INTRO_CH[id]:'—'}</td>
-      <td>${g?'Avg Lv '+g.lv:j===undefined?'':'none'}</td><td>${isRecruited(id)?'<span class="gate open">✔ joined</span>':j===undefined?'<span class="gate shut">not written</span>':G.ch>=j?'ready':'<span class="gate shut">locked</span>'}</td></tr>`; }).join('');
+      <td>${g?'Avg Lv '+g.lv:j===undefined?'':'none'}</td><td>${isRecruited(id)?'<span class="gate open">✔ joined</span>':j===undefined?'<span class="gate shut">'+(CHARACTERS[id].vol2?'Volume 2 · TBD':'not written')+'</span>':G.ch>=j?'ready':'<span class="gate shut">locked</span>'}</td></tr>`; }).join('');
   const chRows = GATE_CHAPTERS.map(n => { const g = chapterGate(n), why = chapterLevelLock(n);
     const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':n===39?'Volume 1 finale':'';
     return `<tr><td><b>Ch.${n}</b><div class="sm">${CHAPTERS[n-1]?CHAPTERS[n-1].title:'not scripted yet'}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
@@ -170,15 +170,22 @@ function rTemple(){
 
 /* ---------------- CAST ---------------- */
 let personOpen = null;
+/* Cast pages: unlock by chapter; the Volume 2 page stays locked (no names shown) until Volume 2. */
+const CAST_SHEETS = [
+  {id:'main',    n:'Main Characters', sub:'Muxue Xiyu and Zhan Dongyue: expressions, wardrobe, palette', img:'assets/cast/main_characters.webp', ch:2},
+  {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
+  {id:'vol2',    n:'Volume 2 Cast', sub:'', img:'assets/cast/volume2.webp', ch:null},
+];
 function rCast(){
   if(personOpen){ const p = PEOPLE.find(x => x.id===personOpen);
     return `<button onclick="personOpen=null;render()">◀ Cast</button><h2>${p.n} <span class="sm">${p.zh||''}</span></h2><img class="pg" src="assets/cast/people/${p.id}.webp" alt="${p.n}"><div class="sm">${p.role} · first appears in chapter ${p.intro}</div>`; }
-  const sheet = G.ch >= 17 ? `<div class="card" onclick="castOpen=true;render()"><div class="fl"><b>Season 1 · Active Cast</b><div class="sm">Xiyu, Dongyue, Ya'Xing, Xiao Tian and Muxue Yan</div></div><span class="sm">View</span></div>`
-                           : `<div class="card lock"><div class="fl"><b>Season 1 · Active Cast</b><div class="sm">🔒 Unlocks at chapter 17</div></div></div>`;
-  if(castOpen && G.ch >= 17) return `<button onclick="castOpen=false;render()">◀ Cast</button><h2>Season 1 · Active Cast</h2><img class="pg" src="assets/cast/season1.webp" alt="Season 1 Active Cast">`;
+  const open = x => x.ch!==null && G.ch >= x.ch;
+  if(castOpen){ const x = CAST_SHEETS.find(y => y.id===castOpen); if(x && open(x)) return `<button onclick="castOpen=null;render()">◀ Cast</button><h2>${x.n}</h2><img class="pg" src="${x.img}" alt="${x.n}">`; castOpen = null; }
+  const sheets = CAST_SHEETS.map(x => open(x) ? `<div class="card" onclick="castOpen='${x.id}';render()"><div class="fl"><b>${x.n}</b><div class="sm">${x.sub}</div></div><span class="sm">View</span></div>`
+     : `<div class="card lock"><div class="fl"><b>${x.ch===null?'Volume 2 Cast':x.n}</b><div class="sm">🔒 ${x.ch===null?'Unlocks in Volume 2':'Unlocks at chapter '+x.ch}</div></div></div>`).join('');
   const people = PEOPLE.map(p => { const k = personKnown(p);
     return `<div class="rc ${k?'':'lock'}" ${k?`onclick="personOpen='${p.id}';render()"`:''}><img src="assets/cast/people/${p.id}.webp"><div><b>${k?p.n:'???'}</b><div class="sm">${k?p.role:p.intro>=99?'Not in Season 1 yet':'Appears ch.'+p.intro}</div></div></div>`; }).join('');
-  return `<h2>Cast</h2><div class="sm">Character profile sheets and portraits. Each unlocks as the story introduces them.</div>${sheet}<h4>People</h4><div class="rcs">${people}</div>`;
+  return `<h2>Cast</h2><div class="sm">Character profile sheets and portraits. Each unlocks as the story introduces them.</div>${sheets}<h4>People</h4><div class="rcs">${people}</div>`;
 }
 
 /* ---------------- TRAINING ---------------- */

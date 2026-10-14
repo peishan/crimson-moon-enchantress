@@ -14,6 +14,8 @@ something, the gate below is marked **provisional**.
 | **Ya'Xing** 亚星 · Steady Sailor | Ch 2 | **Ch 15 "Privacy"** *(confirmed by the author)* | Part of the expedition group from ch 15 | avg Lv 15 |
 | **Muxue Yan** 慕雪岩 · Ancient Sage | Ch 17 | **none in Volume 1** | Appears and vanishes in ch 17, hosts the Red Assembly (ch 34) and bids the party farewell at the temple (ch 39), but never travels with them. His earlier "joins at ch 30" plan (028 crisis, 029 setup) is **retracted**: scripts 028–030 are about Xiyu's decline and Dongyue's confession. Dev-tab recruitable only | – |
 
+Volume 2 heroes **Shen Cangyuan** and **Lu Xining** are defined (skills, `docs/VOLUME2_PARTY.md`) but have no join chapter yet and are hidden in Volume 1.
+
 A hero who joins starts at (party average level − 1). If Yan joins in Volume 2 he arrives at exactly the party average (see LEVEL_CURVE.md).
 
 **Leaving the party:** Ya'Xing stays at the Ice Temple to recover in Yan's care when ch 39 completes ("Ya'Xing remains at the temple"). He is shown as "staying behind" and cannot be put in the active party. Xiyu, Dongyue and Xiao Tian return to Muxue.

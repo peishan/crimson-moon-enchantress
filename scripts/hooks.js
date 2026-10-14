@@ -1105,6 +1105,20 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "xiyu_knows_union_incomplete",
+"d": "Xiyu tells him the spell joined their energies but the union is not complete (author-edited page)",
+"t": "state",
+"p": false,
+"s": "author"
+},
+{
+"id": "dongyue_believes_bonded_for_life",
+"d": "Dongyue does not understand the bond and believes they are bonded for life (author-confirmed)",
+"t": "state",
+"p": false,
+"s": "author"
 }
 ],
 "32": [

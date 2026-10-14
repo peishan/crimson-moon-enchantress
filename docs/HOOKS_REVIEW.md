@@ -29,7 +29,7 @@ Also fixed in the game, not the hook file: I had given the party a **White Key**
 - **Ritual completes at ch32** (second phase completed, health restored), not 33 as I had inferred. Still provisional. The countdown is 14 (ch22) → 11 (23–24) → 7 (28).
 
 ## Unresolved conflicts (need the author)
-1. **"Her father"** — resolved by the author: Xiyu was frozen in time and raised by people who believed they were her parents but were her descendants, so she is *supposed* to be a descendant but is not. Kept out of the game (spoiler); see `STORY_NOTES.md`. Still to confirm: whether Yan is the father and whether Xiyu is Muxue Yunxi.
+1. **"Her father"** — resolved by the author: Xiyu was frozen in time and raised by people who believed they were her parents but were her descendants, so she is *supposed* to be a descendant but is not. Kept out of the game (spoiler); see `STORY_NOTES.md`. Also confirmed: Muxue Yan is her father and she is Muxue Yunxi.
 2. **Who recovers from the bull-demon experiments?** Hook 036 puts the captivity and experiments on **Xiao Tian**, but hook 039 says **Ya'Xing** stays to recover "from the bull-demon experiments", while Xiao Tian walks to the portal. One of them is wrong, or both were captured. The game says only "Recovering at the Ice Temple under Muxue Yan's care".
 3. **Xiao Tian's condition in 036** (impaired speech, involuntary laughter, incomplete recovery) vs the ch39 portal walk. Fine if he improves, but not stated.
 4. **Minami "appears in person" (031)** and "Minami's visit" (036). No script. The conventions say not to explain it; the game does not.

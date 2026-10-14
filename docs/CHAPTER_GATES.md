@@ -65,7 +65,7 @@ Ch 30 note: two panels of its earlier image wrongly showed Dongyue with black ha
 ## Open questions for the author
 1. **Approved scripts** for 25, 30, 31, 32, 35, 36 (titles for 31, 32, 35, 36 come from the hook list) (and the verdict at the Red Assembly in 34, and the final text of 38).
 2. **Ya'Xing's and Xiao Tian's whereabouts in 26–38.** The scripts show only Xiyu and Dongyue (with Hoko) after 25 and mention "injured companions". The game currently leaves both available for gameplay; say if they should be unavailable.
-3. **Is Muxue Yan Xiyu's father?** Panel 5 of ch 39 is titled "A Father She Barely Knows". Ch 24 calls Yunxi his lost daughter and ch 28 has him doubt she is his descendant. Not asserted anywhere in the game yet.
+3. **Xiyu's origin** — answered by the author (frozen in time, raised by her own descendants); kept as spoiler notes in `STORY_NOTES.md`, not shown in the game. Still to confirm: Yan as father, and Xiyu = Muxue Yunxi.
 4. **Muxue Yan in Volume 2** — does he join, and where?
 5. **Which casket/chamber is Ao Yun's Resting Place** on the map (matched provisionally to the ch 27 casket chamber).
 6. Gate strictness (avg level = chapter) and the amount of story XP are first-pass.

@@ -31,7 +31,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0 };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -40,7 +40,7 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {};
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
     return true;
@@ -49,7 +49,16 @@ function load(){
 const U = id => G.units[id];
 const isRecruited = id => G.party.includes(id);
 const profileKnown = id => isRecruited(id) || (INTRO_CH[id]!==undefined && G.ch >= INTRO_CH[id]);
-const portrait = id => 'assets/party/'+id+'.webp';
+/* Portraits: a story variant is used once its hook has fired; a missing variant file falls back to the base portrait (see index.html).
+   assets/party/xiyu_unveiled.webp (veil removed, ch33) · xiyu_wed.webp and dongyue_wed.webp (after the wedding, ch35) · yaxing_injured.webp (after ch36). */
+function portraitVariant(id){
+  if(!G || !G.hooks) return '';
+  if(id==='xiyu') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : hook('xiyu_veil_removed') ? '_unveiled' : '';
+  if(id==='dongyue') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : '';
+  if(id==='yaxing') return hook('ya_xing_bull_demon_injuries_revealed') ? '_injured' : '';
+  return '';
+}
+const portrait = id => 'assets/party/'+id+portraitVariant(id)+'.webp';
 
 /* ---------- chapter level gates ---------- */
 function gateLv(){   // mean level of the real party members
@@ -83,9 +92,32 @@ const storyXp = n => Math.max(1, Math.round(cumXp(1 + n*STORY_PACE) - cumXp(1 + 
 const JOIN_LEVEL_OFFSET = { yan:0 };
 const joinLevel = id => Math.max(1, avgPartyLv() + (JOIN_LEVEL_OFFSET[id]!==undefined ? JOIN_LEVEL_OFFSET[id] : -1));
 const bondMult = id => 1 + .02*bondLevel(id);
+/* ---------- THE CURSE (Moon-Heat) and ATTUNEMENT ----------
+   Xiyu's magic builds Heat (0-100) as she casts. High Heat dulls her magic (up to -30% MAG). Resting at the inn cools 40.
+   After the ritual and the wedding (hook dongyue_vows_lifelong_devotion, ch35) Dongyue can share the Moonlit Bonding once per day:
+   Heat clears, Attunement rises (max 10), and Xiyu keeps a short Afterglow. Attunement is permanent: +2% MAG, +3% MP and -5% Heat gain per level,
+   and it opens the bond skills. Intimacy is never shown: the game says only that he stays beside her through the night. */
+const ATTUNE_MAX = 10;
+const heatMult = h => 1 - clamp(((h||0)-40)/60, 0, 1)*.3;
+const heatLabel = h => h>=80 ? 'Burning' : h>=50 ? 'Flushed' : h>=20 ? 'Warm' : 'Calm';
+const bondingOpen = () => hook('dongyue_vows_lifelong_devotion') || !!(G.flags && G.flags.bonding_unlocked);   // provisional: ch35 has no approved script
+function doBonding(){
+  if(!bondingOpen()) return ['The Moonlit Bonding is not open yet.'];
+  if(!G.party.includes('dongyue') || isAway('dongyue')) return ['Dongyue must be with the party.'];
+  if(G.bondDay.rite === G.day) return ['They have already shared the night. They can bond again after the next day passes.'];
+  G.bondDay.rite = G.day; G.heat = 0; G.afterglow = 3;
+  const before = G.attune; G.attune = Math.min(ATTUNE_MAX, G.attune+1);
+  const msgs = ['🌙 Dongyue stays beside her through the night. Her heat settles, and the bond between them deepens.'];
+  if(G.attune>before){ msgs.push('✦ Attunement '+G.attune+'/'+ATTUNE_MAX+': her magic grows steadier and stronger.'); skillsOf('xiyu').concat(skillsOf('dongyue')).filter(s => s.req && s.req.att===G.attune && reqMet(s.owner||'xiyu', s.req)).forEach(s => msgs.push('  ✦ New skill: '+s.n)); }
+  else msgs.push('Attunement is at its limit for now.');
+  const m = addBond('dongyue', 5); if(m) msgs.push(m);
+  msgs.push('✨ Afterglow: Xiyu\'s magic is a little stronger for her next 3 battles.');
+  return msgs;
+}
 function statsOf(id){
   const c = CHARACTERS[id], lv = U(id).lv, bm = bondMult(id), out = {};
   STATS.forEach(s => { out[s] = Math.round((c.base[s] + c.grow[s]*(lv-1)) * bm); });
+  if(id==='xiyu'){ const L = G.attune||0; out.mag = Math.round(out.mag*(1+.02*L)); out.mp = Math.round(out.mp*(1+.03*L)); }
   return out;
 }
 function gainXp(amount, ids){
@@ -106,16 +138,18 @@ function reqText(r){
   if(!r) return '';
   const parts = [];
   if(r.lvl) parts.push('Level '+r.lvl);
+  if(r.att) parts.push('Attunement '+r.att);
   if(r.flag) parts.push('Story: '+(FLAG_LABEL[r.flag]||r.flag));
   return parts.join(' + ');
 }
 function reqMet(id, r){
   if(!r) return true;
   if(r.lvl && U(id).lv < r.lvl) return false;
+  if(r.att && (G.attune||0) < r.att) return false;
   if(r.flag && !G.flags[r.flag]) return false;
   return true;
 }
-const skillsOf = id => CHARACTERS[id].skills.map(s => Object.assign({}, s, { ok:reqMet(id,s.req), why:reqText(s.req) }));
+const skillsOf = id => CHARACTERS[id].skills.map(s => Object.assign({}, s, { owner:id, ok:reqMet(id,s.req), why:reqText(s.req) }));
 
 /* ---------- bond (with Xiyu) ---------- */
 function bondLevel(id){
@@ -159,11 +193,12 @@ function healUnit(id, hp, mp){ const s = statsOf(id); U(id).hp = clamp(curHp(id)
 function restoreParty(){ G.party.forEach(id => { U(id).hp = undefined; U(id).mp = undefined; }); }
 function persistBattle(){
   if(!B || !B.spec.rewards) return;
-  B.allies.forEach(a => { const u = U(a.id); if(!u || !G.party.includes(a.id)) return; u.hp = a.dead ? Math.max(1, Math.round(a.mhp*.2)) : a.hp; u.mp = a.mp; });
+  B.allies.forEach(a => { const u = U(a.id); if(!u || !G.party.includes(a.id)) return; u.hp = a.dead ? Math.max(1, Math.round(a.mhp*.2)) : a.hp; u.mp = a.mp;
+    if(a.id==='xiyu'){ G.heat = Math.round(a.heat||0); if(a.glow && G.afterglow>0) G.afterglow--; } });
 }
 const REST_COST = () => 10 + avgPartyLv()*2;
 function restAtInn(){
   const c = REST_COST(); if(G.gold < c) return ['A bed at the Crimson Fairy costs '+c+' gold.'];
-  G.gold -= c; G.day++; restoreParty(); save();
+  G.gold -= c; G.day++; restoreParty(); G.heat = Math.max(0, (G.heat||0)-40); save();
   return ['🛏️ The party sleeps beneath the eight moons. HP and MP fully restored. (-'+c+'g)'];
 }

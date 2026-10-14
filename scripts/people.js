@@ -26,5 +26,10 @@ const PEOPLE = [
   {id:'zhan_yihai',    n:'Zhan Yihai',    zh:'展逸海',   role:'Dongyue\'s Father',     intro:99},
   {id:'ming_yue',      n:'Ming Yue',      zh:'明月',     role:'Dongyue\'s Mother',     intro:99},
   {id:'ao_yun',        n:'Ao Yun',        zh:'敖云',     role:'Beloved of Muxue Yan',  intro:99},
+  // portraits still to be generated (assets/cast/people/<id>.webp); until then a placeholder is shown. Chinese names to be confirmed.
+  {id:'hoko',          n:'Hoko',          zh:'',         role:'Explorer of Luiterra',  intro:26, todo:true},
+  {id:'anong',         n:'Anong',         zh:'',         role:'Captured Rebel',        intro:34, todo:true},
+  {id:'yamon',         n:'Yamon',         zh:'',         role:'Captured Rebel',        intro:34, todo:true},
+  {id:'commander_west',n:'Commander West',zh:'',         role:'Commander',             intro:34, todo:true},
 ];
 const personKnown = p => G.ch >= p.intro;

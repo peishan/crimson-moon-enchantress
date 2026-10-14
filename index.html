@@ -32,11 +32,17 @@
 <div id="toast"></div>
 <script>
 if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
-/* a missing party portrait shows the character's emoji instead of a broken image */
+/* a missing image never breaks the game: a story variant (xiyu_unveiled.webp...) falls back to the base portrait, then to the character's emoji;
+   a missing People card shows a placeholder until its art is uploaded */
 window.addEventListener("error", e => { const t = e.target;
-  if(!t || t.tagName!=="IMG" || t.dataset.fb || !/assets\/party\/[a-z]+\.webp/.test(t.src)) return;
-  const id = t.src.match(/assets\/party\/([a-z]+)\.webp/)[1], c = (typeof CHARACTERS!=="undefined" && CHARACTERS[id]) || {icon:"?"};
-  t.dataset.fb = 1; t.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#2a1418"/><text x="32" y="43" font-size="34" text-anchor="middle">'+c.icon+'</text></svg>'); }, true);
+  if(!t || t.tagName!=="IMG") return;
+  let m = t.src.match(/assets\/party\/([a-z]+)_([a-z]+)\.webp/);
+  if(m && !t.dataset.vb){ t.dataset.vb = "1"; t.src = t.src.replace(/assets\/party\/[a-z]+_[a-z]+\.webp/, "assets/party/"+m[1]+".webp"); return; }
+  if(/assets\/party\/[a-z]+\.webp/.test(t.src) && !t.dataset.fb){
+    const id = t.src.match(/assets\/party\/([a-z]+)\.webp/)[1], c = (typeof CHARACTERS!=="undefined" && CHARACTERS[id]) || {icon:"?"};
+    t.dataset.fb = 1; t.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#2a1418"/><text x="32" y="43" font-size="34" text-anchor="middle">'+c.icon+'</text></svg>'); return; }
+  if(/assets\/cast\/people\//.test(t.src) && !t.dataset.fb){ t.dataset.fb = 1;
+    t.src = "data:image/svg+xml," + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#2a1418"/><text x="32" y="42" font-size="30" text-anchor="middle">🎴</text></svg>'); } }, true);
 /* cache version shown at the bottom of the page (the service worker's cache name) */
 function showCacheVersion(){
   const set = t => document.querySelectorAll(".ver").forEach(e => e.textContent = t);

@@ -40,6 +40,7 @@ function completeChapter(n){
   applyStoryStates(n).forEach(m => msgs.push(m));
   setHooks(n);
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
+  G.day++;   // story time passes between chapters
   msgs.push('Story XP +'+c.sxp);
   gainXp(c.sxp, G.party).forEach(m => msgs.push(m));
   save();

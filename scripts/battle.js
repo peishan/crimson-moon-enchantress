@@ -11,7 +11,8 @@ function mkAlly(id, persist){
   const s = statsOf(id), c = CHARACTERS[id], hp = persist && G.party.includes(id) ? curHp(id) : s.hp, mp = persist && G.party.includes(id) ? curMp(id) : s.mp;
   return { uid:id, id, ally:true, name:c.n, icon:c.icon, img:portrait(id), traits:[],
     hp:Math.max(hp,1), mhp:s.hp, mp, mmp:s.mp, atk:s.atk, mag:s.mag, def:s.def, spd:s.spd,
-    st:{}, bf:[], state:null, used:{}, dead:false, guard:false };
+    st:{}, bf:[], state:null, used:{}, dead:false, guard:false,
+    heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0 };
 }
 function mkFoeUnit(key, lv, i){
   return Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
@@ -22,6 +23,7 @@ function eff(u, stat){
   let v = u[stat];
   u.bf.forEach(b => { if(b.stat===stat) v *= b.m; });
   if(u.state && u.state.id==='bloodmoon' && stat==='mag') v *= 1.3;
+  if(u.id==='xiyu' && stat==='mag'){ v *= heatMult(u.heat); if(u.glow) v *= 1.1; }
   if(stat==='spd' && u.st.slow) v *= .6;
   return v;
 }
@@ -89,6 +91,7 @@ function strike(src, tgt, s, opts){
   opts = opts || {};
   const magic = s.kind==='magic', stat = magic?'mag':'atk';
   let raw = eff(src, stat) * (s.pow||1) * (0.9 + Math.random()*.2) * (opts.decay||1);
+  if(s.withAlly && B.allies.some(a => a.id===s.withAlly && !a.dead)) raw *= (s.boost||1.3);   // bond skills hit harder with the partner beside her
   raw -= eff(tgt,'def') * (magic ? .35 : .6);
   let d = Math.max(1, Math.round(raw));
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
@@ -115,6 +118,7 @@ function applyFx(src, tgt, fx){
     case 'oath': tgt.st.oath = {d:(fx.d||3)+1}; blog('  '+tgt.name+' stands ready: foes will target '+tgt.name+' and are struck back.','good'); break;
     case 'cleanse': ['burn','slow','bind','charm','silence'].forEach(k => delete tgt.st[k]); blog('  '+tgt.name+' is cleansed.'); break;
     case 'analyze': { const f = tgt.ally ? alive(B.foes)[0] : tgt; if(f){ f.known = true; blog('  Analysed '+f.name+': HP '+f.hp+'/'+f.mhp+', DEF '+f.def+(f.traits.includes('magic')?', magical':'')+'.'); } break; }
+    case 'cool': if(tgt.id==='xiyu'){ tgt.heat = Math.max(0, (tgt.heat||0) - fx.v); blog('  '+tgt.name+'\'s heat eases ('+Math.round(tgt.heat)+').','good'); } break;
     case 'revive': if(tgt.dead){ tgt.dead = false; tgt.hp = Math.round(tgt.mhp*.4); blog('  '+tgt.name+' is revived!','good'); } break;
     case 'state': tgt.state = {id:fx.id, d:(fx.d||3)+1}; blog('  '+tgt.name+' draws on the Blood Moon!','good'); break;
   }
@@ -146,6 +150,7 @@ function playerAct(kind, sid, tuid){
   u.mp -= (s.cost!==undefined ? s.cost : s.mp);
   if(s.once) u.used[s.id] = true;
   resolve(u, s, t);
+  if(u.id==='xiyu' && s.kind==='magic') u.heat = Math.min(100, (u.heat||0) + Math.round((3 + (s.mp||0)*.25) * (1 - .05*(G.attune||0))));   // the curse: casting builds heat
   endTurn(u);
   advance();
 }

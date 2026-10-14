@@ -41,7 +41,17 @@ function rParty(){
   const roster = ROSTER.map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
-  return `<h2>Party</h2><div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
+  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
+}
+function curseHtml(){
+  const h = G.heat||0, L = G.attune||0, ready = bondingOpen() && G.party.includes('dongyue') && !isAway('dongyue') && G.bondDay.rite!==G.day;
+  const note = !bondingOpen() ? 'After the ritual and the wedding, Dongyue can share the Moonlit Bonding with her. Until then only rest at the inn cools her.'
+    : G.bondDay.rite===G.day ? 'They have shared the night. They can bond again after the next day passes.'
+    : 'Once a day Dongyue can stay beside her through the night: the heat clears and her attunement deepens.';
+  return `<h4>The Curse · Moon-Heat</h4><div class="sm">🔥 ${heatLabel(h)} (${Math.round(h)}/100)${h>40?' · magic dulled '+Math.round((1-heatMult(h))*100)+'%':''}. Casting builds heat; resting at the inn cools 40.</div>${bar(h,100,'e')}
+   <div class="sm">🌙 Attunement ${L}/${ATTUNE_MAX}: +${2*L}% MAG, +${3*L}% MP, −${5*L}% heat gain${G.afterglow>0?' · ✨ Afterglow ('+G.afterglow+' battles)':''}</div>${bar(L,ATTUNE_MAX,'bond')}
+   ${bondingOpen()&&G.bondDay.rite===G.day?`<img class="pg" src="assets/events/moonlit_bonding.webp" alt="Moonlit Bonding" onerror="this.style.display='none'">`:''}
+   <div class="sm" style="margin:4px 0">${note}</div><button class="pri" ${ready?'':'disabled'} onclick="act(doBonding)">🌙 Moonlit Bonding</button>`;
 }
 function rSheet(id){
   const c = CHARACTERS[id], rec = isRecruited(id);
@@ -58,6 +68,7 @@ function rSheet(id){
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
    ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>`}
+   ${id==='xiyu'?curseHtml():''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
@@ -126,12 +137,15 @@ function chapterFight(n){ origin='journal'; startBattle(battleSpecFor(n)); tab='
 /* ---------------- WILDS ---------------- */
 function rWilds(){
   const zones = ZONES.map(z => { const open = zoneOpen(z);
-    return `<div class="card ${open?'':'lock'}" style="cursor:default"><span class="big">${z.icon}</span><div class="fl"><b>${open?z.n:'???'}</b><div class="sm">${open?z.desc+' · foes Lv ~'+Math.max(1,avgPartyLv()+z.off):z.unlock===null?'🔒 Not scheduled yet':'🔒 Opens after chapter '+z.unlock}</div></div>
+    return `<div class="card ${open?'':'lock'}" style="cursor:default">${open?zoneThumb(z):`<span class="big">${z.icon}</span>`}<div class="fl"><b>${open?z.n:'???'}</b><div class="sm">${open?z.desc+' · foes Lv ~'+Math.max(1,avgPartyLv()+z.off):z.unlock===null?'🔒 Not scheduled yet':'🔒 Opens after chapter '+z.unlock}</div></div>
       ${open?`<div><button onclick="wildFight('${z.id}')">Hunt</button>${z.boss?`<button onclick="wildFight('${z.id}',true)">${z.bossName?'Arena':'Boss'}</button>`:''}</div>`:''}</div>`; }).join('');
   const heroes = G.party.map(id => `<div class="sm">${CHARACTERS[id].icon} ${first(id)} — ❤️ ${curHp(id)}/${statsOf(id).hp} · 🔷 ${curMp(id)}/${statsOf(id).mp}</div>`).join('');
   return `<h2>The Wilds</h2><div class="sm">Gameplay hunting for XP, gold and herbs. These fights are not story events.</div>${flashHtml()}
    <div class="panel"><b>The Crimson Fairy</b><div class="sm">${heroes}</div><button onclick="act(restAtInn)">🛏️ Rest (${REST_COST()}g)</button></div>${zones}`;
 }
+/* Art slots with safe fallbacks: a missing file shows the emoji instead. assets/areas/<zone>.webp, assets/enemies/<key>.webp */
+const artOrIcon = (src, icon, cls) => `<img class="${cls}" src="${src}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'big',textContent:'${icon}'}))">`;
+const zoneThumb = z => artOrIcon('assets/areas/'+z.id+'.webp', z.icon, 'zthumb');
 function wildFight(zid, boss){
   const z = ZONES.find(x => x.id===zid); if(!z || !zoneOpen(z)) return;
   const lv = Math.max(1, avgPartyLv() + z.off + (boss?1:0));
@@ -158,7 +172,7 @@ function rTemple(){
 let personOpen = null;
 function rCast(){
   if(personOpen){ const p = PEOPLE.find(x => x.id===personOpen);
-    return `<button onclick="personOpen=null;render()">◀ Cast</button><h2>${p.n} <span class="sm">${p.zh}</span></h2><img class="pg" src="assets/cast/people/${p.id}.webp" alt="${p.n}"><div class="sm">${p.role} · first appears in chapter ${p.intro}</div>`; }
+    return `<button onclick="personOpen=null;render()">◀ Cast</button><h2>${p.n} <span class="sm">${p.zh||''}</span></h2><img class="pg" src="assets/cast/people/${p.id}.webp" alt="${p.n}"><div class="sm">${p.role} · first appears in chapter ${p.intro}</div>`; }
   const sheet = G.ch >= 17 ? `<div class="card" onclick="castOpen=true;render()"><div class="fl"><b>Season 1 · Active Cast</b><div class="sm">Xiyu, Dongyue, Ya'Xing, Xiao Tian and Muxue Yan</div></div><span class="sm">View</span></div>`
                            : `<div class="card lock"><div class="fl"><b>Season 1 · Active Cast</b><div class="sm">🔒 Unlocks at chapter 17</div></div></div>`;
   if(castOpen && G.ch >= 17) return `<button onclick="castOpen=false;render()">◀ Cast</button><h2>Season 1 · Active Cast</h2><img class="pg" src="assets/cast/season1.webp" alt="Season 1 Active Cast">`;
@@ -198,8 +212,8 @@ function chips(u){
 function rBattle(){
   if(!B) return '<div class="sm">No battle in progress.</div>';
   const tgtMode = B.ui.mode==='target', cand = tgtMode ? B.ui.cands.map(u=>u.uid) : [];
-  const foes = B.foes.map(f => `<div class="unit foe ${f.dead?'dead':''} ${cand.includes(f.uid)?'tg':''}" ${cand.includes(f.uid)?`onclick="pickTarget('${f.uid}')"`:''}><div class="ic">${f.icon}</div><b>${f.name}</b>${bar(f.hp,f.mhp,'e')}<div class="sm">${f.hp}/${f.mhp}${f.known?' · DEF '+f.def:''}</div><div class="ch">${chips(f)}</div></div>`).join('');
-  const allies = B.allies.map(a => `<div class="unit ally ${a.dead?'dead':''} ${B.cur===a&&!B.over?'cur':''} ${cand.includes(a.uid)?'tg':''}" ${cand.includes(a.uid)?`onclick="pickTarget('${a.uid}')"`:''}><img src="${a.img}"><div><b>${first(a.id)}</b>${bar(a.hp,a.mhp,'hp')}<div class="sm">${a.hp}/${a.mhp} · MP ${a.mp}</div><div class="ch">${chips(a)}</div></div></div>`).join('');
+  const foes = B.foes.map(f => `<div class="unit foe ${f.dead?'dead':''} ${cand.includes(f.uid)?'tg':''}" ${cand.includes(f.uid)?`onclick="pickTarget('${f.uid}')"`:''}><div class="ic">${artOrIcon('assets/enemies/'+f.key+'.webp', f.icon, 'ethumb')}</div><b>${f.name}</b>${bar(f.hp,f.mhp,'e')}<div class="sm">${f.hp}/${f.mhp}${f.known?' · DEF '+f.def:''}</div><div class="ch">${chips(f)}</div></div>`).join('');
+  const allies = B.allies.map(a => `<div class="unit ally ${a.dead?'dead':''} ${B.cur===a&&!B.over?'cur':''} ${cand.includes(a.uid)?'tg':''}" ${cand.includes(a.uid)?`onclick="pickTarget('${a.uid}')"`:''}><img src="${a.img}"><div><b>${first(a.id)}</b>${bar(a.hp,a.mhp,'hp')}<div class="sm">${a.hp}/${a.mhp} · MP ${a.mp}</div>${a.id==='xiyu'?`<div class="sm">🔥 ${heatLabel(a.heat)} ${Math.round(a.heat||0)}${a.glow?' · ✨':''}</div>`:''}<div class="ch">${chips(a)}</div></div></div>`).join('');
   const log = B.log.slice(-9).map(l => `<div class="lg ${l.cls}">${l.t}</div>`).join('');
   let act = '';
   if(B.over==='win'){
@@ -257,7 +271,7 @@ function rDev(){
    <input id="devch" type="number" min="0" max="39" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;save();toast('Bonding unlocked');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

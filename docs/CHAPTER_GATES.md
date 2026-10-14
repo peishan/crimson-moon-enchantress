@@ -55,15 +55,15 @@ Ice Temple Level 2 (Sealed Maze, arena: two Horned Beasts) opens after ch 26 (th
 
 ## The soul-bond ritual countdown
 Story-driven (`CH_RITUAL` in `scripts/chapters.js`), stored in the save, shown in the header and Journal, and **never reset by reloading or by real time**:
-ch 22 she learns it (14 days) · ch 23 three days pass (11) · ch 24 "eleven days remained" · ch 28 "seven days left" · done at ch 33 ("After the Ritual", inferred).
+ch 22 she learns it (14 days) · ch 23 three days pass (11) · ch 24 "eleven days remained" · ch 28 "seven days left" · completed at ch 32 (second ritual phase, from the hook list; provisional).
 Dongyue's promise in ch 29 and "husband" in ch 39 do **not** complete it.
 
 ## Chapters with no approved script yet
-25 (placeholder bridge "The Frozen Passage"), 30, 31, 32, 35, 36 show a "script pending" notice and can be completed so the story is not blocked. 38 is a reconstructed bridge.
+25 (placeholder bridge "The Frozen Passage"), 30, 31, 32, 35, 36 have no approved script and can be completed so the story is not blocked. 31 The Ritual Chamber, 32 Embracing Her Feelings, 35 Gratification and 36 Xiao Tian's Memories show an outline taken from the author's hook list (see `HOOKS_REVIEW.md`); 25 and 30 show a pending notice. 38 is a reconstructed bridge.
 Ch 30 note: two panels of its earlier image wrongly showed Dongyue with black hair; the final art must show him silver-haired.
 
 ## Open questions for the author
-1. **Scripts and titles** for 25, 30, 31, 32, 35, 36 (and the verdict at the Red Assembly in 34, and the final text of 38).
+1. **Approved scripts** for 25, 30, 31, 32, 35, 36 (titles for 31, 32, 35, 36 come from the hook list) (and the verdict at the Red Assembly in 34, and the final text of 38).
 2. **Ya'Xing's and Xiao Tian's whereabouts in 26–38.** The scripts show only Xiyu and Dongyue (with Hoko) after 25 and mention "injured companions". The game currently leaves both available for gameplay; say if they should be unavailable.
 3. **Is Muxue Yan Xiyu's father?** Panel 5 of ch 39 is titled "A Father She Barely Knows". Ch 24 calls Yunxi his lost daughter and ch 28 has him doubt she is his descendant. Not asserted anywhere in the game yet.
 4. **Muxue Yan in Volume 2** — does he join, and where?

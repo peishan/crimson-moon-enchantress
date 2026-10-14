@@ -61,7 +61,7 @@ const ITEMS = {
   wolf_pelt:{n:'Wolf Pelt',icon:'🧶',type:'material'}, frost_herb:{n:'Frost Herb',icon:'🌿',type:'material'},
   moon_petal:{n:'Moon Petal',icon:'🌸',type:'material'}, ice_crystal:{n:'Ice Crystal',icon:'💎',type:'material'},
   imp_ash:{n:'Imp Ash',icon:'🌫️',type:'material'}, rift_shard:{n:'Rift Shard',icon:'🔹',type:'material'},
-  white_key:{n:'White Key',icon:'🗝️',type:'quest'}, winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
+  winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
   herbal_tonic:{n:'Herbal Tonic',icon:'🍵',type:'consumable'}, moonlit_tonic:{n:'Moonlit Tonic',icon:'🌙',type:'consumable'},
   spirit_draught:{n:'Spirit Draught',icon:'🧪',type:'consumable'}, cleansing_salt:{n:'Cleansing Salt',icon:'🧂',type:'consumable'},
 };

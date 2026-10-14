@@ -114,7 +114,11 @@ function rChapter(n){
    <div class="panel"><div class="sm">📍 ${d.loc} · Book chapter ${d.book}</div><div style="margin:6px 0">${d.sum}</div>
     <button class="pri" onclick="openStory(${n})">📖 ${G.read[n]?'Read again':'Read story'}</button>
     <details><summary class="sm">Key events · introduced · opens</summary>${d.events.length?'<h4>Key events</h4>'+li(d.events):''}${d.intro.length?'<h4>Introduced</h4>'+li(d.intro):''}${d.unlocks.length?'<h4>Opens</h4>'+li(d.unlocks.map(x=>'✅ '+x)):''}
-    <div class="sm" style="margin-top:6px">On the page: ${d.chars.map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')}</div></details></div>${flashHtml()}${foot}${nextChapterBtn(n)}`;
+    <div class="sm" style="margin-top:6px">On the page: ${d.chars.map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')}</div>${hooksHtml(n)}</details></div>${flashHtml()}${foot}${nextChapterBtn(n)}`;
+}
+function hooksHtml(n){
+  const hs = HOOKS[n]||[]; if(!hs.length) return '';
+  return `<h4>Story hooks <span class="sm">· ${hs.filter(h=>hook(h.id)).length}/${hs.length} fired</span></h4>`+hs.map(h=>`<div class="li">${hook(h.id)?'✔':'○'} <code>${h.id}</code> <span class="sm">${h.t==='state'?'(state)':'(event)'}${h.p?' · provisional':''}</span><div class="sm">${h.d}</div></div>`).join('');
 }
 function finishChapter(n){ S = {n, mode:'result', msgs:completeChapter(n), units:[]}; drawStory(); }
 function chapterFight(n){ origin='journal'; startBattle(battleSpecFor(n)); tab='battle'; render(); }
@@ -253,7 +257,7 @@ function rDev(){
    <input id="devch" type="number" min="0" max="39" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

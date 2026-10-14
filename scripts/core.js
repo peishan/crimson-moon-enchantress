@@ -31,7 +31,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -40,7 +40,7 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {};
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {};
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
     return true;
@@ -133,6 +133,8 @@ function addBond(id, pts){
 /* ---------- recruiting ---------- */
 const ACTIVE_SLOTS = 4;
 const activeCount = () => G.active.length;
+/* Chapter hooks (scripts/hooks.js): events fire once (never replay), states persist so later chapters can check them: hook('soul_bond_fourteen_day_deadline_active'). */
+const hook = id => !!(G && G.hooks && G.hooks[id]);
 const isAway = id => !!(G.away && G.away[id]);   // story states: e.g. Ya'Xing recovers at the Ice Temple after ch39
 const ritualActive = () => !!G.ritual && G.ritual.left!==null && !G.ritual.done;
 function recruit(id){

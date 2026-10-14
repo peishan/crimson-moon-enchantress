@@ -2193,15 +2193,35 @@ const SCRIPT = {
   "src": "Script comic 031 (Exact title and scene sequence unavailable.)",
   "scenes": [
    {
-    "h": "Script pending",
+    "h": "Outline (hook list)",
     "l": [
      {
       "k": "plain",
-      "t": "The surviving record does not include this chapter's approved script."
+      "t": "OUTLINE from the author's hook list. There is no approved script for this chapter yet."
      },
      {
       "k": "plain",
-      "t": "Exact title and scene sequence unavailable. Continuity: Xiyu and Dongyue remain inside the Ice Temple; the soul-bond deadline and Xiyu's weakening condition are active concerns. Do not add a new major event without checking the original source material. ------------------------------------------------------------------------"
+      "t": "• Mark Xiyu's life-threatening condition"
+     },
+     {
+      "k": "plain",
+      "t": "• Record completion of the first ritual phase"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger Minami's appearance"
+     },
+     {
+      "k": "plain",
+      "t": "• Begin the second phase of the ritual"
+     },
+     {
+      "k": "plain",
+      "t": "• Record Dongyue's discovery of the required ritual information if confirmed in the scene"
+     },
+     {
+      "k": "plain",
+      "t": "• Track Yan observing Dongyue through the mystic mirror, if this scene belongs to this chapter"
      }
     ]
    }
@@ -2213,15 +2233,27 @@ const SCRIPT = {
   "src": "Script comic 032 (Exact title and scene sequence unavailable.)",
   "scenes": [
    {
-    "h": "Script pending",
+    "h": "Outline (hook list)",
     "l": [
      {
       "k": "plain",
-      "t": "The surviving record does not include this chapter's approved script."
+      "t": "OUTLINE from the author's hook list. There is no approved script for this chapter yet."
      },
      {
       "k": "plain",
-      "t": "Exact title and scene sequence unavailable. This chapter precedes Comic Chapter 033, *Rainbow Dream*. Restore its original scene order and dialogue from the source chapter or original script if available. ------------------------------------------------------------------------"
+      "t": "• Mark completion of the second ritual phase"
+     },
+     {
+      "k": "plain",
+      "t": "• Update Xiyu's condition after the ritual"
+     },
+     {
+      "k": "plain",
+      "t": "• Record the change in Xiyu and Dongyue's bond"
+     },
+     {
+      "k": "plain",
+      "t": "• Keep lasting effects open for later scenes"
      }
     ]
    }
@@ -2350,15 +2382,71 @@ const SCRIPT = {
   "src": "Script comic 035 (Exact title and full script unavailable in the retrievable r)",
   "scenes": [
    {
-    "h": "Script pending",
+    "h": "Outline (hook list)",
     "l": [
      {
       "k": "plain",
-      "t": "The surviving record does not include this chapter's approved script."
+      "t": "OUTLINE from the author's hook list. There is no approved script for this chapter yet."
      },
      {
       "k": "plain",
-      "t": "Exact title and full script unavailable in the retrievable record. This chapter belongs to the later Ice Temple sequence after the assembly and before the final return preparations. Keep it unfilled until the corresponding source material is available. ------------------------------------------------------------------------"
+      "t": "• Begin Xiyu's reflection after the assembly"
+     },
+     {
+      "k": "plain",
+      "t": "• Xiyu asks Dongyue whether he knows something about Yan"
+     },
+     {
+      "k": "plain",
+      "t": "• Dongyue promises devotion and protection"
+     },
+     {
+      "k": "plain",
+      "t": "• Record her decision to trust him despite uncertainty"
+     },
+     {
+      "k": "plain",
+      "t": "• Start the Muxue wedding ceremony three days later"
+     },
+     {
+      "k": "plain",
+      "t": "• Record his public vow"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger Yan's congratulation and promise to care for his descendant"
+     },
+     {
+      "k": "plain",
+      "t": "• Preserve the ominous undertone without confirming his motives"
+     },
+     {
+      "k": "plain",
+      "t": "• Transition to the couple's private room"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger the misty woman's appearance and message"
+     },
+     {
+      "k": "plain",
+      "t": "• End the apparition without identifying her"
+     },
+     {
+      "k": "plain",
+      "t": "• Record anxiety about her future with Dongyue"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger sleep-muttered references to Xiao Tian, Ya'Xing, and revenge"
+     },
+     {
+      "k": "plain",
+      "t": "• Record her appreciation of his benevolence"
+     },
+     {
+      "k": "plain",
+      "t": "• Mark the emotional significance of receiving sincere affection"
      }
     ]
    }
@@ -2370,15 +2458,87 @@ const SCRIPT = {
   "src": "Script comic 036 (Exact title and full script unavailable in the retrievable r)",
   "scenes": [
    {
-    "h": "Script pending",
+    "h": "Outline (hook list)",
     "l": [
      {
       "k": "plain",
-      "t": "The surviving record does not include this chapter's approved script."
+      "t": "OUTLINE from the author's hook list. There is no approved script for this chapter yet."
      },
      {
       "k": "plain",
-      "t": "Exact title and full script unavailable in the retrievable record. The exact events and title should be recovered from the original book chapter before this entry is treated as final. ------------------------------------------------------------------------"
+      "t": "• Enter Xiao Tian's fragmented memories"
+     },
+     {
+      "k": "plain",
+      "t": "• Establish his former swordsmanship practice"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger the massacre flashback"
+     },
+     {
+      "k": "plain",
+      "t": "• Record the deaths of his master and martial brothers"
+     },
+     {
+      "k": "plain",
+      "t": "• Describe the black-clad assassins with gold details and iron masks"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger the bull-demon captivity memory"
+     },
+     {
+      "k": "plain",
+      "t": "• Record deprivation, poisons, and demon-energy-infused weapons"
+     },
+     {
+      "k": "plain",
+      "t": "• Update his memory state while keeping much of his past blurred"
+     },
+     {
+      "k": "plain",
+      "t": "• Establish his goals: find the woman in his dreams, locate his master, and avenge the dead"
+     },
+     {
+      "k": "plain",
+      "t": "• Maintain his pain, allergies, impaired speech, and involuntary laughter"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger the recovery visit"
+     },
+     {
+      "k": "plain",
+      "t": "• Record the medicine being provided"
+     },
+     {
+      "k": "plain",
+      "t": "• Mark his acceptance and gratitude"
+     },
+     {
+      "k": "plain",
+      "t": "• Record his question about returning home"
+     },
+     {
+      "k": "plain",
+      "t": "• Begin the following-day scene"
+     },
+     {
+      "k": "plain",
+      "t": "• Record her concern about Minami's visit and her father's return"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger their conversation about Dongyue accepting her father's proposal"
+     },
+     {
+      "k": "plain",
+      "t": "• Trigger the Frozen Order discussion"
+     },
+     {
+      "k": "plain",
+      "t": "• Record their affectionate interaction and Xiyu's hesitation to disclose everything"
      }
     ]
    }

@@ -127,26 +127,26 @@ const CHAPTER_DESIGN = {
  30:{title:'Chapter 30', book:'—', loc:'The Ice Temple',
   sum:'SCRIPT PENDING. The record confirms a chapter image was made but not its approved script. Continuity: Dongyue must have long silvery-white hair in every panel (two panels in an earlier image wrongly showed black hair).',
   events:[], chars:['xiyu','dongyue'], intro:[], unlocks:[], pending:true},
- 31:{title:'Chapter 31', book:'—', loc:'The Ice Temple',
-  sum:'SCRIPT PENDING. Exact title and scene sequence unavailable. Xiyu and Dongyue remain in the Ice Temple; the soul-bond deadline and her weakening are active concerns.',
-  events:[], chars:['xiyu','dongyue'], intro:[], unlocks:[], pending:true},
- 32:{title:'Chapter 32', book:'—', loc:'The Ice Temple',
-  sum:'SCRIPT PENDING. Exact title and scene sequence unavailable. It precedes comic 033, Rainbow Dream.',
-  events:[], chars:['xiyu','dongyue'], intro:[], unlocks:[], pending:true},
+ 31:{title:'The Ritual Chamber', book:'—', loc:'The Ice Temple · the ritual chamber',
+  sum:'OUTLINE FROM THE HOOK LIST (no approved script yet; verify). Xiyu\'s life-threatening condition leads into the ritual. The first (summoning) phase is completed and Minami appears in person; the second phase begins. Dongyue may find the required ritual information, and Muxue Yan may be observing Dongyue through a mystic mirror.',
+  events:['The first ritual phase is completed.','Minami appears in person.','The second phase begins.'], chars:['xiyu','dongyue'], intro:['Minami (appears in person)'], unlocks:[], pending:true, fromHooks:true},
+ 32:{title:'Embracing Her Feelings', book:'—', loc:'The Ice Temple',
+  sum:'OUTLINE FROM THE HOOK LIST (no approved script yet; verify). The second ritual phase is completed and Xiyu\'s health is restored. Her bond with Dongyue deepens; lasting aftereffects of the ritual stay open for later scenes.',
+  events:['The second ritual phase is completed.','Xiyu\'s health is restored.','The relationship deepens.'], chars:['xiyu','dongyue'], intro:[], unlocks:['Story: the ritual is completed (provisional)'], pending:true, fromHooks:true},
  33:{title:'Rainbow Dream', book:'—', loc:'The Ice Temple',
   sum:'After the ritual Xiyu\'s strength returns and the pain fades. She realises Dongyue has removed her veil and finds being seen without it more exposing than resting beneath blankets. He feels different from the men she has known: clean, familiar, reassuring. Dongyue admits he lost control earlier; flustered, she tells him to leave if he will not act like a man around her. A rainbow-bridge dream blurs memory, hope and desire; a drum calls her back.',
   events:['The ritual is behind them.','Without the veil.','The rainbow dream.','A drum sounds.'],
-  chars:['xiyu','dongyue'], intro:[], unlocks:['Story: the ritual is completed (inferred from "After the Ritual")']},
+  chars:['xiyu','dongyue'], intro:[], unlocks:['Story: the ritual is behind them']},
  34:{title:'Heinous Intent', book:'—', loc:'The Ice Temple · the Red Assembly Hall',
   sum:'The once-plain hall is hung with red banners. Xiyu, in a bright commemorative red dress, stands beside Dongyue in matching ceremonial robes. Muxue Yan addresses the assembly. Anong and Yamon are brought in chained; Commander West reports their capture and bows to Yan, Xiyu and Dongyue. Xiyu recognises the captives and is shaken. The assembly confronts the rebels\' actions; the verdict is not recorded.',
   events:['The Red Assembly Hall.','Yan\'s announcement.','Anong and Yamon captured; Commander West.','Xiyu recognises them.'],
   chars:['xiyu','dongyue','yan'], intro:['Anong','Yamon','Commander West'], unlocks:['Temple: the Audience Hall (provisional)']},
- 35:{title:'Chapter 35', book:'—', loc:'The Ice Temple',
-  sum:'SCRIPT PENDING. Exact title and full script unavailable. It belongs to the later Ice Temple sequence after the assembly and before the final return preparations.',
-  events:[], chars:['xiyu','dongyue'], intro:[], unlocks:[], pending:true},
- 36:{title:'Chapter 36', book:'—', loc:'The Ice Temple',
-  sum:'SCRIPT PENDING. Exact title and full script unavailable.',
-  events:[], chars:['xiyu','dongyue'], intro:[], unlocks:[], pending:true},
+ 35:{title:'Gratification', book:'—', loc:'The Ice Temple · the Muxue wedding',
+  sum:'OUTLINE FROM THE HOOK LIST (no approved script yet; verify). After the assembly Xiyu reflects and asks Dongyue whether he knows something about Yan; he promises devotion and protection and she decides to trust him. Three days later the Muxue wedding ceremony takes place: Dongyue vows lifelong devotion and Yan congratulates the couple and promises to care for his descendant, with an ominous undertone. On the wedding night a misty woman appears with a message and vanishes unnamed; Xiyu fears losing her happiness; Dongyue mutters in his sleep about Xiao Tian, Ya\'Xing and revenge.',
+  events:['Xiyu decides to trust Dongyue.','The Muxue wedding; Yan congratulates the couple.','A misty woman appears and vanishes.','Dongyue\'s sleep-muttering.'], chars:['xiyu','dongyue','yan'], intro:[], unlocks:[], pending:true, fromHooks:true},
+ 36:{title:'Xiao Tian\'s Memories', book:'—', loc:'The Ice Temple',
+  sum:'OUTLINE FROM THE HOOK LIST (no approved script yet; verify). Xiao Tian\'s fragmented memories: a swordsman whose master and martial brothers were killed by black-clad, iron-masked assassins; later captured and tortured by a bull demon (deprivation, poisons, demon-energy weapons). His memories only partly return and his recovery is incomplete (pain, allergies, impaired speech, involuntary laughter). Commander West brings elixirs. Next day Xiyu wakes beside Dongyue, worries about Minami\'s visit and her father\'s return, and they discuss the proposal and the Frozen Order.',
+  events:['The massacre flashback.','The bull-demon captivity.','His goals: the woman in his dreams, his master, revenge.','Commander West\'s elixirs.','The Frozen Order discussion.'], chars:['xiaotian','xiyu','dongyue'], intro:[], unlocks:[], pending:true, fromHooks:true},
  37:{title:'The Duty of a Lesser Male', book:'36', loc:'The Ice Temple · Xiyu\'s room, the Enchanted Bath Chamber',
   sum:'Dongyue finds a small lever in Xiyu\'s room; the wall shifts to reveal a concealed passage. It opens into an enchanted bathing chamber of waterfalls, blossoms and lanterns whose magic changes with the emotions of those inside ("It feels like home"). Xiyu rests in a modest bath wrap while Dongyue gently washes her hair, learning to care for her. The chamber\'s warmth and magic begin to affect Xiyu; Dongyue stays attentive and gives her space.',
   events:['The hidden lever and passage.','The Enchanted Bath Chamber.','"I can heal wounds. No one taught me how to care for someone\'s hair." / "Then learn."'],
@@ -173,7 +173,7 @@ const CH_BOND = { 8:{dongyue:10}, 10:{dongyue:10}, 11:{dongyue:15}, 14:{xiaotian
 const CH_FLAGS = { 13:['imp_expelled'], 18:['ancient_rite'], 20:['soul_bond'],
                    21:['dongyue_barrier'], 22:['ritual_known'], 23:['temple_exploration'], 24:['yan_key_to_leaving','yunxi_known'],
                    26:['hoko_met','teleport_platform'], 27:['yuner_heard'], 28:['xiyu_weakened'], 29:['lifelong_companionship_promised'],
-                   33:['ritual_completed'], 34:['red_assembly_held'], 37:['bath_chamber_found'], 38:['communication_promise'], 39:['volume1_complete'] };
+                   32:['ritual_completed'], 34:['red_assembly_held'], 37:['bath_chamber_found'], 38:['communication_promise'], 39:['volume1_complete'] };
 const FLAG_LABEL = { imp_expelled:'Dongyue learns Spirit Expulsion', ancient_rite:'Dongyue learns the Ancient Healing Rite', soul_bond:'Xiyu and Dongyue\'s souls are bonded',
   dongyue_barrier:'Dongyue\'s shamanic barrier', ritual_known:'The fourteen-day ritual deadline begins', temple_exploration:'Ice Temple exploration begins',
   yan_key_to_leaving:'Muxue Yan is the key to leaving', yunxi_known:'Muxue Yunxi, Yan\'s lost daughter', hoko_met:'Hoko of Luiterra', teleport_platform:'The teleportation platform',
@@ -182,9 +182,9 @@ const FLAG_LABEL = { imp_expelled:'Dongyue learns Spirit Expulsion', ancient_rit
   communication_promise:'A promise to communicate', volume1_complete:'Volume 1 complete' };
 
 /* The soul-bond ritual deadline is STORY-DRIVEN (not real time, never reset by reloading a save): days left are set at these chapters.
-   22 she learns it (14), 23 three days pass (11), 24 "eleven days remained", 28 "seven days left". Completed by ch33 ("After the Ritual", inferred). */
+   22 she learns it (14), 23 three days pass (11), 24 "eleven days remained", 28 "seven days left". Completed at ch32 (the hook list's second ritual phase; ch33 opens "After the Ritual"). */
 const CH_RITUAL = { 22:14, 23:11, 24:11, 28:7 };
-const RITUAL_DONE_CH = 33;
+const RITUAL_DONE_CH = 32;   // provisional: from the hook list (ch31 phase 1, ch32 phase 2 completed); ch33 is "After the Ritual"
 
 /* Heroes who stop being available when a chapter completes. */
 const CH_AWAY = { 39:{ yaxing:'Recovering at the Ice Temple under Muxue Yan\'s care.' } };

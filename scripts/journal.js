@@ -38,6 +38,7 @@ function completeChapter(n){
   Object.keys(CH_BOND[n]||{}).forEach(id => { if(isRecruited(id)){ U(id).bp += CH_BOND[n][id]; msgs.push('💞 Bond with Xiyu ('+CHARACTERS[id].n.split(' ')[0]+'): +'+CH_BOND[n][id]); } });
   (CH_FLAGS[n]||[]).forEach(f => { G.flags[f] = true; msgs.push('✦ Story: '+(FLAG_LABEL[f]||f)); });
   applyStoryStates(n).forEach(m => msgs.push(m));
+  setHooks(n);
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   msgs.push('Story XP +'+c.sxp);
   gainXp(c.sxp, G.party).forEach(m => msgs.push(m));
@@ -54,12 +55,14 @@ function applyStoryStates(n){
   Object.keys(CH_AWAY[n]||{}).forEach(id => { G.away[id] = CH_AWAY[n][id]; G.active = G.active.filter(x => x!==id); msgs.push('⚓ '+CHARACTERS[id].n+' stays behind: '+CH_AWAY[n][id]); });
   return msgs;
 }
-const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}], 26:[{id:'white_key',qty:1}] };
+const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
+/* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
+function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
 
 // DEV: jump the save to "story at chapter n" (recruits, flags, levels, ritual, away heroes)
 function devSetChapter(n){
-  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {};
-  for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); }
+  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {};
+  for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); }
   G.ch = n;
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));
   G.party.forEach(id => { U(id).lv = Math.max(U(id).lv, target); U(id).xp = 0; });

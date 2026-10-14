@@ -1685,6 +1685,13 @@ const HOOKS = {
 ],
 "40": [
 {
+"id": "wedding_ceremonial_no_papers_filed",
+"d": "Back in Muxue no papers were filed: the wedding stays a ceremony Yan arranged for his daughter's happiness, not a binding union (author-confirmed)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
 "id": "volume_2_started",
 "d": "Volume 2 begins: the return to Muxue",
 "t": "event",

@@ -31,7 +31,7 @@ COMIC ART: Volume 2 goes in assets/comics/v2/ (ch01.png = Volume 2 comic 001). V
 (extra pages: ch01_2.png, ch01_3.png). The Pages workflow converts them to WebP on push (images taller than
 15000px are sliced into pages). Until a chapter's art exists, the reader shows its script text instead.
 
-Assets: assets/splash.webp (cover), assets/cast/season1.webp (Active Cast sheet), assets/cast/people/*.webp (20 portrait cards, scripts/people.js),
+Assets: assets/splash.webp (title splash on the landing screen), assets/volume1_cover.webp (shown when Volume 1 is COMPLETED, ch39, and kept in Cast), assets/cast/season1.webp (Active Cast sheet), assets/cast/people/*.webp (20 portrait cards, scripts/people.js),
 assets/party/<id>.webp (caption-free avatars cropped from the portrait set: replace with finals any time).
 
 NOT BUILT YET (carried over from the sibling games when wanted): auto-battle, skill trees / evolution, gear,

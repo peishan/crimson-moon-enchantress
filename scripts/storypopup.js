@@ -41,6 +41,9 @@ function storyGo(d){
   if(S.i === S.units.length){ G.read[S.n] = true; save(); }
   drawStory();
 }
+/* Volume covers are shown when a volume is COMPLETED (not at the start). Key = the chapter that completes the volume. */
+const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' } };
+function openVolumeCover(n){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c}; drawStory(); }
 function storyBeginBattle(){ const n = S.n; closeStory(); chapterFight(n); }
 function storyComplete(){ const n = S.n, msgs = completeChapter(n); S = {n, mode:'result', msgs, units:[]}; drawStory(); }
 
@@ -56,6 +59,7 @@ function sceneHtml(sc){
 
 function drawStory(){
   const e = storyEl(); e.classList.add('on');
+  if(S.mode==='cover'){ const cv = S.cover; e.innerHTML = `<div class="story-shell"><div class="story-top"><div><div class="story-kicker">${cv.n} · Complete</div><div class="story-title">The Long Awaited Love Is Not a Dream</div></div><div class="story-top-r"><button class="story-x" onclick="closeStory()" aria-label="Close">✕</button></div></div><div class="story-body"><div class="story-page"><img src="${cv.img}" alt="${cv.n} cover"></div></div><div class="story-bar"><button class="pri" onclick="closeStory()">Continue</button></div></div>`; return; }
   const c = chapterOf(S.n), d = CHAPTER_DESIGN[S.n], total = S.units.length;
   const head = `<div class="story-top"><div><div class="story-kicker">${chName(S.n)}${S.mode==='result'?' · Complete':''}</div><div class="story-title">${c.title}</div></div>
     <div class="story-top-r">${S.mode==='read' && !S.loading?`<span class="story-count">${Math.min(S.i+1,total)} / ${total}</span>`:''}<button class="story-x" onclick="closeStory()" aria-label="Close">✕</button></div></div>`;
@@ -80,7 +84,7 @@ function drawStory(){
     body = `<div class="story-end"><h2>Chapter complete</h2>
       <div class="panel good">${S.msgs.map(m=>`<div>${m}</div>`).join('')}</div>
       ${d.unlocks.length?`<div class="panel"><h4 style="margin-top:0">Opens</h4>${d.unlocks.map(u=>`<div class="li">✅ ${u}</div>`).join('')}</div>`:''}</div>`;
-    bar = `<button onclick="closeStory()">Close</button>${nextChapterBtn(S.n)}`;
+    bar = (VOLUME_COVERS[S.n] ? `<button class="pri" onclick="openVolumeCover(${S.n})">🏆 ${VOLUME_COVERS[S.n].n} complete: view the cover</button>` : '') + `<button onclick="closeStory()">Close</button>${nextChapterBtn(S.n)}`;
   }
   e.innerHTML = `<div class="story-shell">${head}<div class="story-body">${body}</div><div class="story-bar">${bar}</div></div>`;
   const b = e.querySelector('.story-body'); if(b) b.scrollTop = 0;

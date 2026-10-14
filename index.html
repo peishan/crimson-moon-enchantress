@@ -9,14 +9,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
 <link rel="stylesheet" href="styles.css"></head><body>
-<div id="intro" onclick="skipIntro()" aria-label="The Crimson Moon's Enchantress — tap to skip">
-  <img class="intro-art" src="assets/splash.webp" alt="The Crimson Moon's Enchantress — 绯月妖姬. A game adaptation by Yuchen Sky">
-  <span class="intro-skip">tap to continue</span>
-</div>
 <div id="landing">
-  <img class="landing-cover" src="assets/volume1_cover.webp" alt="The Long Awaited Love Is Not a Dream — Volume 1">
-  <p class="landing-sub">The Crimson Moon's Enchantress · 绯月妖姬</p>
-  <p class="landing-quote">"Fate bound by moons, trials, and a love beyond time."</p>
+  <img class="landing-cover" src="assets/splash.webp" alt="The Crimson Moon's Enchantress — 绯月妖姬. A game adaptation by Yuchen Sky">
   <button id="contbtn" class="btn-begin" style="display:none" onclick="enter(false)">Continue Journey</button>
   <button id="newbtn" class="btn-begin" onclick="enter(true)">New Journey</button>
   <input type="file" id="landingImport" accept=".json,application/json" style="display:none" onchange="importSave(event,true)">
@@ -49,9 +43,7 @@ function showCacheVersion(){
   if(!window.caches){ set(""); return; }
   caches.keys().then(ks => { const v = ks.filter(k => k.indexOf("crimson-moon-")===0).sort().pop(); set(v ? "Cache version: "+v : "Cache version: none yet (reload once)"); }).catch(() => set(""));
 }
-window.addEventListener("load", () => { showCacheVersion(); setTimeout(showCacheVersion, 2500); setTimeout(skipIntro, 2800); });
-/* the game-title splash plays first, then the Volume 1 cover; tap to skip */
-function skipIntro(){ const i = document.getElementById("intro"); if(!i || i.classList.contains("out")) return; i.classList.add("out"); setTimeout(() => i.remove(), 700); }
+window.addEventListener("load", () => { showCacheVersion(); setTimeout(showCacheVersion, 2500); });
 </script>
 <script src="scripts/characters.js"></script>
 <script src="scripts/chapters.js"></script>

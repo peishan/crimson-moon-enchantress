@@ -176,6 +176,7 @@ let personOpen = null;
 /* Cast pages: unlock by chapter; the Volume 2 page stays locked (no names shown) until Volume 2. */
 const CAST_SHEETS = [
   {id:'main',    n:'Main Characters', sub:'Muxue Xiyu and Zhan Dongyue: expressions, wardrobe, palette', img:'assets/cast/main_characters.webp', ch:2},
+  {id:'cover1', n:'Volume 1 Cover', sub:'The Long Awaited Love Is Not a Dream', img:'assets/volume1_cover.webp', ch:39},
   {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];

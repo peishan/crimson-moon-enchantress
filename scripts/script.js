@@ -1,5 +1,7 @@
-/* Generated from docs/GAME_ADAPTATION_SCRIPT.md (short-form game adaptation by Yuchen Sky).
-   Used as the in-game text reader when a chapter's comic art has not been uploaded yet. */
+/* Story text per chapter, in COMIC ORDER (the order of the comic pages).
+   Chapters 1 and 7-20 come from docs/GAME_ADAPTATION_SCRIPT.md. Chapters 4-6 are that script's comic 002-005 text re-sequenced to match the art
+   (see docs/ART_AUDIT.md); chapters 2 and 3 have no script text and are transcribed from the comic pages.
+   Used as the in-game text reader when a chapter's comic art is not uploaded. */
 const SCRIPT = {
  "1": {
   "title": "The Witch Beneath Eight Moons",
@@ -69,7 +71,220 @@ const SCRIPT = {
  },
  "2": {
   "title": "The Intruders of Muxue",
-  "src": "Book Chapter 2: \"Welcome to Muxue\"",
+  "src": "Comic art (transcribed from the comic page; no script text)",
+  "scenes": [
+   {
+    "h": "The Disturbance",
+    "l": [
+     {
+      "k": "nar",
+      "t": "After the earthquake, Xiyu followed the source of the disturbance, venturing deeper into the forest of Muxue."
+     },
+     {
+      "k": "nar",
+      "t": "She had no idea that this journey would bring strangers to her island..."
+     }
+    ]
+   },
+   {
+    "h": "Strangers in the Forest",
+    "l": [
+     {
+      "k": "nar",
+      "t": "As she approached the source, she saw something unusual—figures in foreign clothes, not from Muxue."
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Who are they? And how did they get here?\""
+     },
+     {
+      "k": "nar",
+      "t": "She concealed her identity behind her veil and watched from the shadows. They didn't seem to notice her. At least, not yet."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"This place is even more breathtaking than the maps described.\""
+     },
+     {
+      "k": "say",
+      "w": "Companion",
+      "t": "\"Keep your guard up. We don't know what kind of place this is.\""
+     }
+    ]
+   },
+   {
+    "h": "The Cursed Mark",
+    "l": [
+     {
+      "k": "nar",
+      "t": "The man at the front had an air of authority, his gaze calm yet sharp. There was something familiar about him... though she couldn't say what it was."
+     },
+     {
+      "k": "nar",
+      "t": "What caught her attention was the faint, otherworldly mark on his face. It wasn't a birthmark. It felt like a curse..."
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"A cursed man...\""
+     },
+     {
+      "k": "nar",
+      "t": "She had seen many cultivators, but this man was different. His aura was neither pure nor entirely corrupted."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"The forest ahead looks unstable. Let's set up camp here for the night.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"They plan to stay here... on Muxue? Just how long are they planning to remain?\""
+     }
+    ]
+   },
+   {
+    "h": "The Night Watch",
+    "l": [
+     {
+      "k": "nar",
+      "t": "As the night fell, she remained hidden in the trees, watching them from afar. They spoke in low voices, seemed cautious, and carried weapons unlike anything she had seen before."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"...This island is like no other. The energy here is too dense. It's as if something is protecting it.\""
+     },
+     {
+      "k": "nar",
+      "t": "Xiyu's heart tightened. Who were they? Why were they here? And what did they want with Muxue?"
+     }
+    ]
+   },
+   {
+    "h": "Dawn",
+    "l": [
+     {
+      "k": "nar",
+      "t": "At dawn, they began to explore the island. Xiyu followed them silently, keeping her distance."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"This place is truly extraordinary. No wonder it's not on any map.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Even if this island is hidden from the world... there must be a reason for its existence.\""
+     },
+     {
+      "k": "nar",
+      "t": "Xiyu knew she had to find out what they were after. Because if they were here for the island... then they might also be a threat to everything she had sworn to protect."
+     },
+     {
+      "k": "nar",
+      "t": "She would discover the truth... no matter what it cost."
+     }
+    ]
+   }
+  ]
+ },
+ "3": {
+  "title": "The First Encounter",
+  "src": "Comic art (transcribed from the comic page; no script text)",
+  "scenes": [
+   {
+    "h": "The Strangers",
+    "l": [
+     {
+      "k": "nar",
+      "t": "After the earthquake, Xiyu followed the source of the disturbance deeper into the forest of Muxue… There, she found strangers who did not belong to this island."
+     },
+     {
+      "k": "nar",
+      "t": "From the shadows, Xiyu watched the strangers. Their clothing, weapons, and aura were unlike those from Muxue."
+     }
+    ]
+   },
+   {
+    "h": "The Man at the Front",
+    "l": [
+     {
+      "k": "nar",
+      "t": "The man at the front caught her attention. His presence was unsettling, as if light and darkness coexisted within him."
+     },
+     {
+      "k": "nar",
+      "t": "He was handsome, yet there was something in his eyes that made her feel uneasy."
+     },
+     {
+      "k": "nar",
+      "t": "The strangers made camp, completely unaware that they were being watched. Even here, after the turbulence, the young master remained calm. He studied the island's strange spiritual energy with quiet focus."
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Why does he look at the island with such familiarity... as if he already knows something about it?\""
+     }
+    ]
+   },
+   {
+    "h": "Eyes Meet",
+    "l": [
+     {
+      "k": "nar",
+      "t": "Then, his gaze suddenly lifted— —and their eyes met."
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You are not from this place, are you? This island is not on any map.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"That is correct. But I should ask you the same question… Who are you? And why are you watching us?\""
+     }
+    ]
+   },
+   {
+    "h": "A Strange Energy",
+    "l": [
+     {
+      "k": "nar",
+      "t": "He speaks without fear."
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Does he not realize who I am?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"There is a strange energy here. No wonder the compass lost its direction. We were supposed to be heading northeast, but somehow we ended up here in the southwest.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Someone has disturbed the balance of this island. This place... is far beyond any recorded charts.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"If they have disturbed Muxue's balance... ...I must discover their true intentions.\""
+     }
+    ]
+   }
+  ]
+ },
+ "4": {
+  "title": "Welcome to Muxue",
+  "src": "Script comic 002 text, placed here to match the comic order",
   "scenes": [
    {
     "h": "A Violent Sea",
@@ -142,9 +357,9 @@ const SCRIPT = {
    }
   ]
  },
- "3": {
-  "title": "The First Encounter",
-  "src": "the arrival sequence",
+ "5": {
+  "title": "The Crimson Fairy",
+  "src": "Script comics 003 + 004 text, placed here to match the comic order",
   "scenes": [
    {
     "h": "The Mayor",
@@ -211,13 +426,7 @@ const SCRIPT = {
       "t": "\"Now I certainly want to meet her.\""
      }
     ]
-   }
-  ]
- },
- "4": {
-  "title": "Welcome to Muxue",
-  "src": "the transition into the village",
-  "scenes": [
+   },
    {
     "h": "The Crimson Fairy",
     "l": [
@@ -290,9 +499,9 @@ const SCRIPT = {
    }
   ]
  },
- "5": {
-  "title": "The Crimson Fairy",
-  "src": "Book Chapter 3: \"The Crimson Fairy\"",
+ "6": {
+  "title": "Rage",
+  "src": "Script comics 005 + 006 text, placed here to match the comic order",
   "scenes": [
    {
     "h": "A Strange Welcome",
@@ -344,13 +553,7 @@ const SCRIPT = {
       "t": "He was unlike the men she had known. That did not mean she trusted him."
      }
     ]
-   }
-  ]
- },
- "6": {
-  "title": "Rage",
-  "src": "Book Chapter 4: \"Rage\"",
-  "scenes": [
+   },
    {
     "h": "A Restless Night",
     "l": [

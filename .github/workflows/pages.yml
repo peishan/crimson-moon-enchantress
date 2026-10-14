@@ -1,0 +1,101 @@
+name: Deploy static site to Pages
+
+on:
+  push:
+    branches: [ main ]   # change if your default branch is different
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Drop comic art into assets/comics/ as PNG/JPG named by chapter number and this step turns it into the
+      # WebP the game loads (same approach as Crimson Tide):
+      #   ch01.png            -> ch01.webp          (chapter 1, page 1)
+      #   ch01_2.png          -> ch01_2.webp        (chapter 1, page 2; pages are discovered automatically)
+      # A vertical-scroll image taller than WebP's 16383px limit is sliced into pages ch01.webp, ch01_2.webp, ...
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Pillow
+        run: pip install --quiet Pillow
+
+      - name: Convert new comic art to WebP
+        run: |
+          python3 - <<'PY'
+          import os, re, glob
+          from PIL import Image
+          Image.MAX_IMAGE_PIXELS = None
+          MAXH = 15000
+          pat = re.compile(r'^ch(\d{2})(?:_(\d+))?\.(png|jpe?g)$', re.IGNORECASE)
+          for f in sorted(glob.glob('assets/comics/*')):
+              name = os.path.basename(f)
+              m = pat.match(name)
+              if not m:
+                  continue
+              chap, page = m.group(1), int(m.group(2) or 1)
+              try:
+                  im = Image.open(f).convert('RGB')
+                  if im.height <= MAXH:
+                      out = f'assets/comics/ch{chap}' + (f'_{page}' if page > 1 else '') + '.webp'
+                      im.save(out, 'WEBP', quality=82, method=5)
+                      print('Converted', f, '->', out)
+                  else:
+                      parts = -(-im.height // MAXH)
+                      step = -(-im.height // parts)
+                      for i in range(parts):
+                          piece = im.crop((0, i*step, im.width, min(im.height, (i+1)*step)))
+                          n = page + i
+                          out = f'assets/comics/ch{chap}' + (f'_{n}' if n > 1 else '') + '.webp'
+                          piece.save(out, 'WEBP', quality=82, method=5)
+                          print('Sliced', f, '->', out)
+                  os.remove(f)
+              except Exception as e:
+                  print('Warning: could not convert', f, e)
+          PY
+
+      - name: Commit converted art, if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/comics/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Auto-convert new comic art to WebP"
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:${{ github.ref_name }}; then pushed=true; break; fi
+              echo "Push rejected (attempt $attempt), rebasing and retrying..."
+              sleep $((attempt * 3))
+              git fetch origin ${{ github.ref_name }}
+              if ! git rebase origin/${{ github.ref_name }}; then git rebase --abort; break; fi
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Could not push converted art."
+              exit 1
+            fi
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

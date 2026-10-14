@@ -72,7 +72,8 @@ function drawStory(){
     body = `<div class="story-end"><h2>End of ${chName(S.n).toLowerCase()}</h2><p>${d.sum.split('. ').slice(0,2).join('. ')}${/[.!?]$/.test(d.sum.split('. ').slice(0,2).join('. '))?'':'.'}</p>
       ${c.battle?`<div class="panel"><b>⚔️ Battle ahead</b><div class="sm">${c.battle.map(f=>ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(' · ')}</div></div>`:''}</div>`;
     bar = `<button onclick="S.i=0;drawStory()">↺ Read again</button>`+
-      (c.battle ? `<button class="pri" onclick="storyBeginBattle()">${done?'Replay battle':'Begin battle'}</button>`
+      (c.bounty ? (done ? `<button onclick="closeStory()">Close</button>${nextChapterBtn(S.n)}` : `<button class="pri" onclick="closeStory();showTab('bounties')">Open the bounty board</button>`)
+      : c.battle ? `<button class="pri" onclick="storyBeginBattle()">${done?'Replay battle':'Begin battle'}</button>`
                 : done ? `<button onclick="closeStory()">Close</button>${nextChapterBtn(S.n)}`
                        : `<button class="pri" onclick="storyComplete()">Complete chapter (+${c.sxp} XP)</button>`);
   } else {   // result

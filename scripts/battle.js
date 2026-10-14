@@ -15,7 +15,9 @@ function mkAlly(id, persist){
     heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0 };
 }
 function mkFoeUnit(key, lv, i){
-  return Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
+  const u = Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
+  if(u.traits.includes('layered')) u.st.layer = {d:99};   // outer layer: halves damage until stripped
+  return u;
 }
 
 /* ---------- effective stats ---------- */
@@ -53,7 +55,7 @@ function advance(){
   let guard = 400;
   while(guard-- > 0){
     if(checkEnd()) return;
-    if(!B.queue.length){ B.round++; buildQueue(); blog('— Round '+B.round+' —','sys'); }
+    if(!B.queue.length){ B.round++; buildQueue(); blog('— Round '+B.round+' —','sys'); B.foes.forEach(f => { if(f.st.layer && B.round>=3 && !f.dead){ delete f.st.layer; blog('The '+f.name+'\'s outer layer cracks on its own: the core is exposed.','good'); } }); }
     const u = B.queue.shift(); if(u.dead) continue;
     B.cur = u;
     if(u.st.burn){ const d = Math.max(1, Math.round(u.mhp*.06)); hurt(u,d,true); blog(u.name+' burns for '+d+'.','bad'); if(u.dead) continue; }
@@ -98,6 +100,7 @@ function strike(src, tgt, s, opts){
   let d = Math.max(1, Math.round(raw));
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
   if(tgt.st.expose) d = Math.round(d*1.15);   // Physician's Insight
+  if(tgt.st.layer) d = Math.round(d*.5);       // the shadow's outer layer
   let crit = false;
   if(s.crit || src.st.crit || Math.random() < .08){ crit = true; d = Math.round(d*1.6); }
   if(Math.random() < evaOf(tgt)){ blog(tgt.name+' evades '+src.name+'\'s '+s.n+'!'); return 0; }
@@ -109,9 +112,10 @@ function strike(src, tgt, s, opts){
 }
 
 /* ---------- effects ---------- */
-const FOE_FX = ['burn','slow','bind','charm','silence'];
+const FOE_FX = ['burn','slow','bind','charm','silence','drain'];
 function applyFx(src, tgt, fx){
   if(fx.self && tgt!==src){ applyFx(src, src, fx); return; }   // effects aimed at the caster (strain, a self DEF drop)
+  if(tgt.st && tgt.st.layer && ['expose','strip','cleanse','cleanse1'].includes(fx.k)){ delete tgt.st.layer; blog('  '+tgt.name+'\'s outer layer is stripped: the core is exposed!','good'); }
   switch(fx.k){
     case 'burn': case 'slow': case 'bind': case 'charm': case 'silence':
       if(tgt.ally && tgt.st.ward && Math.random()<.7){ blog('  '+tgt.name+' is protected by Still Waters.','good'); return; }
@@ -126,6 +130,7 @@ function applyFx(src, tgt, fx){
     case 'oath': tgt.st.oath = {d:(fx.d||3)+1}; blog('  '+tgt.name+' stands ready: foes will target '+tgt.name+' and are struck back.','good'); break;
     case 'cleanse': ['burn','slow','bind','charm','silence'].forEach(k => delete tgt.st[k]); blog('  '+tgt.name+' is cleansed.'); break;
     case 'analyze': { const f = tgt.ally ? alive(B.foes)[0] : tgt; if(f){ f.known = true; blog('  Analysed '+f.name+': HP '+f.hp+'/'+f.mhp+', DEF '+f.def+(f.traits.includes('magic')?', magical':'')+'.'); } break; }
+    case 'drain': { const m = Math.round(tgt.mmp*fx.v); tgt.mp = Math.max(0, tgt.mp - m); B.drained = true; blog('  '+tgt.name+'\'s spiritual energy is drained (−'+m+' MP).','bad'); break; }
     case 'thread': { const n = Math.min(3, ((tgt.st.thread && tgt.st.thread.n)||0) + (fx.v||1)); tgt.st.thread = {n, d:4}; blog('  '+tgt.name+' is Threadbound ×'+n+'.'); break; }
     case 'link': tgt.st.link = {d:fx.d||3}; blog('  '+tgt.name+' is linked into the formation.'); break;
     case 'strip': { if(tgt.st.shield){ delete tgt.st.shield; blog('  '+tgt.name+'\'s barrier shatters.'); } const n = tgt.bf.filter(b => b.m>1).length; tgt.bf = tgt.bf.filter(b => b.m<=1); if(n) blog('  '+tgt.name+'\'s enhancements are unravelled.'); break; }
@@ -158,7 +163,7 @@ function playerAct(kind, sid, tuid){
   if(B.over) return;
   const u = B.cur; if(!u || !u.ally) return;
   if(kind==='guard'){ u.guard = true; u.mp = Math.min(u.mmp, u.mp+4); blog(u.name+' guards (+4 MP).'); endTurn(u); u.guard = true; advance(); return; }
-  if(kind==='item'){ if(!battleUseItem(u, sid, B.allies.find(x => x.uid===tuid))) return; endTurn(u); advance(); return; }
+  if(kind==='item'){ if(!battleUseItem(u, sid, [].concat(B.allies,B.foes).find(x => x.uid===tuid))) return; endTurn(u); advance(); return; }
   let s;
   if(kind==='attack') s = { id:'attack', n:'Attack', kind:'phys', tgt:'foe', pow:1, mp:0 };
   else { s = skillList(u).find(x => x.id===sid); if(!s || !s.usable) return; }
@@ -230,6 +235,7 @@ function battleItems(){ return Object.keys(USE).filter(k => (G.inv[k]||0) > 0 ||
 function battleUseItem(u, k, t){
   const e = USE[k]; if(!e || !t) return false;
   if(B.spec.rewards){ if(!(G.inv[k] > 0)) return false; G.inv[k]--; }
+  if(!t.ally){ if(e.cleanse){ blog(u.name+' scatters '+ITEMS[k].n+' over '+t.name+'.'); applyFx(u, t, {k:'cleanse'}); } return true; }   // cleansing powder on a foe: strips a layered shadow
   if(e.hp){ const h = Math.min(e.hp, t.mhp - t.hp); t.hp += h; blog(u.name+' uses '+ITEMS[k].n+' on '+t.name+': +'+h+' HP.','good'); }
   if(e.mp){ const m = Math.min(e.mp, t.mmp - t.mp); t.mp += m; blog('  '+t.name+' regains '+m+' MP.','good'); }
   if(e.cleanse) applyFx(u, t, {k:'cleanse'});

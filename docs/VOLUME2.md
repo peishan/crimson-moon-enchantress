@@ -1,6 +1,6 @@
 # Volume 2: *The Island That No Longer Feels Like Home*
 
-Built so far: **comics 001–009** (art in `assets/comics/v2/ch01.webp`…`ch09.webp`). The game keeps counting across volumes: Volume 2 comic *n* is **internal chapter 39 + n**
+Built so far: **comics 001–009 and 015** (010–014 are placeholders) (art in `assets/comics/v2/ch01.webp`…`ch09.webp`). The game keeps counting across volumes: Volume 2 comic *n* is **internal chapter 39 + n**
 (40–48), shown as "Volume 2 · Chapter n" / "V2·n". So the level curve, gates, hooks and saves continue unchanged (story pace one level per chapter, so Volume 2 starts at about Lv 40).
 All nine pages are correctly labelled (001–009); no duplicates or misnumbered pages in this batch.
 
@@ -15,6 +15,9 @@ All nine pages are correctly labelled (001–009); no duplicates or misnumbered 
 | 007 | 46 | A Dangerous Kind of Harmony | Cangyuan teaches Spirit Weaving; a black filament is sealed in a jade vessel. **Cangyuan joins** |
 | 008 | 47 | The Spell That Reached Back | The vessel reacts to Xiyu; plan to compare with the original formation; Yan: "She has already begun to answer" |
 | 009 | 48 | Echoes Beneath the Sanctuary | The original formation shows her birth memories; "You are the key"; "what they sealed was a truth"; the filament speaks |
+
+| 010–014 | 49–53 | *(placeholders)* | Not written yet. **Ch 53 (comic 014) recruits Xining** and opens the bounty board |
+| 015 | 54 | The Bounty Beneath the Red Lantern | Script only (no art yet): the first bounty, *The Red Lantern Road*. See `BOUNTIES.md` |
 
 ## Party in Volume 2
 - **Shen Cangyuan joins at V2 comic 007 (ch 46)**, author-confirmed. First appears in 002 (profile visible from ch 41). Joins at party average − 1 (about Lv 47). Chapter level gate for ch 46: average Lv 46.

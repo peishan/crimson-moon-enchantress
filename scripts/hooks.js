@@ -1952,6 +1952,80 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"53": [
+{
+"id": "xining_joins_party",
+"d": "Lu Xining joins the party (author-confirmed: V2 comic 014; chapter itself not written yet)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_lantern_bounty_available",
+"d": "The first bounty becomes available",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"54": [
+{
+"id": "red_lantern_notice_read",
+"d": "A ward has failed; travellers vanish after sunset",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "survivor_interviewed",
+"d": "The survivor: \"It took something away\"; his meridians are not damaged in the usual way",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ward_corruption_found_inside_formation",
+"d": "The corruption was already inside the ward",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_lantern_shadow_defeated",
+"d": "The shadow is defeated and its anchor severed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "corrupted_fragment_obtained",
+"d": "A small black-red fragment is left in the road",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_bounty_reward_claimed",
+"d": "The guard pays the reward",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "island_wards_being_tested",
+"d": "\"Someone, or something, is testing the island's wards\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "unknown_voice_trail_followed",
+"d": "\"They have begun to follow the trail.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

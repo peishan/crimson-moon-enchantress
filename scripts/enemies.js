@@ -35,6 +35,13 @@ const ENEMIES = {
     moves:[{n:'Venom Bite',pow:1.1,fx:[{k:'burn',d:2}]},{n:'Web Shot',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'frost_herb',chance:.4}],desc:'Lives in the dark below the temple.'},
   hoard_mimic:{n:'Hoard Mimic',icon:'📦',elite:true,hp:180,atk:18,mag:8,def:16,spd:7,xp:90,gold:90,
     moves:[{n:'Snapping Lid',pow:1.4},{n:'Gold Lure',pow:.8,fx:[{k:'charm',d:1}]}],drops:[{id:'spirit_draught',chance:.4},{id:'moonlit_tonic',chance:.4}],desc:'It was never a chest.'},
+  /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
+  red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
+    moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},
+  corrupted_anchor:{n:'Corrupted Anchor',icon:'🔻',hp:70,atk:4,mag:8,def:8,spd:4,xp:60,gold:30,traits:['magic'],
+    moves:[{n:'Black Filament',pow:.5,spell:true}],drops:[],desc:'The corrupted anchor buried beneath the road that feeds the shadow.'},
+  road_shade:{n:'Road Shade',icon:'👤',hp:80,atk:11,mag:10,def:6,spd:10,xp:40,gold:20,traits:['magic'],
+    moves:[{n:'Chill Touch',pow:1,spell:true},{n:'Thread Snare',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'imp_ash',chance:.4}],desc:'A smaller road disturbance: a flicker of cold that follows travellers after dark.'},
   imp:{n:'Imp',icon:'👺',hp:60,atk:10,mag:11,def:5,spd:13,xp:32,gold:15,traits:['magic'],
     moves:[{n:'Claw',pow:1},{n:'Hex Spark',pow:1.2,spell:true}],drops:[{id:'imp_ash',chance:.5}],desc:'A lesser demon that clings to the sick.'},
   /* STORY (chapter 13): the imp afflicting Wang Xi'er */
@@ -62,6 +69,7 @@ const ITEMS = {
   moon_petal:{n:'Moon Petal',icon:'🌸',type:'material'}, ice_crystal:{n:'Ice Crystal',icon:'💎',type:'material'},
   imp_ash:{n:'Imp Ash',icon:'🌫️',type:'material'}, rift_shard:{n:'Rift Shard',icon:'🔹',type:'material'},
   winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
+  corrupted_fragment:{n:'Corrupted Fragment',icon:'🖤',type:'quest'}, ward_silk:{n:'Ward Silk',icon:'🧶',type:'material'},
   herbal_tonic:{n:'Herbal Tonic',icon:'🍵',type:'consumable'}, moonlit_tonic:{n:'Moonlit Tonic',icon:'🌙',type:'consumable'},
   spirit_draught:{n:'Spirit Draught',icon:'🧪',type:'consumable'}, cleansing_salt:{n:'Cleansing Salt',icon:'🧂',type:'consumable'},
 };

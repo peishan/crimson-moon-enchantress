@@ -10,6 +10,7 @@ const chapterOf = n => CHAPTERS[n-1];
 /* Chapter battles. Only one is in the script: ch13, Dongyue expels the imp afflicting Wang Xi'er.
    Fighters are listed explicitly: Xiyu is not at Hanshan's home, and Xiao Tian / Ya'Xing are his companions (guests until they join). */
 chapterOf(13).battle = [{key:'afflicting_imp'}];
+chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;
@@ -66,6 +67,7 @@ function devSetChapter(n){
   G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); }
   G.ch = n;
+  G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0};
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));
   G.party.forEach(id => { U(id).lv = Math.max(U(id).lv, target); U(id).xp = 0; });
   save();

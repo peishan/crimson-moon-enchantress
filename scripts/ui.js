@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
+const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['bounties','📜 Bounties'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
@@ -22,8 +22,8 @@ function render(){
   $('hday').textContent = '☀️ Day '+G.day;
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => k!=='temple' || templeOpen()).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
+  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, bounties:rBounties, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 
@@ -121,6 +121,8 @@ function rChapter(n){
     foot = `<div class="panel"><b>⚔️ Battle</b><div class="sm">${c.battle.map(f=>ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(' · ')}</div>
       <div class="sm">Fighting: ${fighterIds(n).map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')} (Lv ${fightersLv(n)} average)</div>
       <button class="pri" onclick="chapterFight(${n})">${done?'Replay battle':'Begin battle'}</button></div>`;
+  } else if(c.bounty && !done){
+    foot = `<div class="panel"><b>📜 Bounty chapter</b><div class="sm">This chapter is completed by clearing the bounty and reporting back.</div>${bountyBoardOpen()?`<button class="pri" onclick="showTab('bounties')">Open the bounty board</button>`:'<div class="sm">The board opens after Volume 2, comic 014.</div>'}</div>`;
   } else if(!done) foot = `<button class="pri" onclick="finishChapter(${n})">Complete chapter (+${c.sxp} XP)</button>`;
   return `<button onclick="closeChapter()">◀ Journal</button><h2>${chName(n)} · ${c.title}</h2>
    <div class="panel"><div class="sm">📍 ${d.loc}${volOf(n)===1?' · Book chapter '+d.book:''}</div><div style="margin:6px 0">${d.sum}</div>
@@ -244,7 +246,7 @@ function pickSkill(sid){
   if(['foe','ally','allyDown'].includes(s.tgt)){ B.ui={mode:'target',kind:'skill',sid,cands:targetsFor(s)}; render(); }
   else { playerAct('skill', sid, null); }
 }
-function pickItem(k){ B.ui={mode:'target',kind:'item',sid:k,cands:alive(B.allies)}; render(); }
+function pickItem(k){ B.ui={mode:'target',kind:'item',sid:k,cands:alive(B.allies).concat(k==='cleansing_salt' ? alive(B.foes).filter(f => f.st.layer) : [])}; render(); }
 function pickTarget(uid){ const u = B.ui; playerAct(u.kind, u.sid, uid); }
 function battleDone(){
   if(B && B.spec.rewards && typeof afterBattleBackup==='function') setTimeout(afterBattleBackup, 0);

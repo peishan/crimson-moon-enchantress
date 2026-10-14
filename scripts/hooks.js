@@ -1324,6 +1324,20 @@ const HOOKS = {
 "t": "state",
 "p": true,
 "s": "hooks"
+},
+{
+"id": "ya_xing_bull_demon_injuries_revealed",
+"d": "Ya'Xing was also experimented on by the bull demons: extensive bandaging over his lower body, difficulty walking, physical and mental effects",
+"t": "event",
+"p": false,
+"s": "author"
+},
+{
+"id": "ya_xing_recovery_incomplete",
+"d": "Ya'Xing's recovery is incomplete, more severe than Xiao Tian's",
+"t": "state",
+"p": false,
+"s": "author"
 }
 ],
 "37": [
@@ -1477,6 +1491,20 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "ya_xing_recovery_continues",
+"d": "Ya'Xing keeps recovering at the Ice Temple under Yan's care",
+"t": "state",
+"p": false,
+"s": "author"
+},
+{
+"id": "xiao_tian_returns_with_party",
+"d": "Xiao Tian goes home to Muxue with Xiyu and Dongyue",
+"t": "event",
+"p": false,
+"s": "author"
 }
 ]
 };

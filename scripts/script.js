@@ -2539,6 +2539,14 @@ const SCRIPT = {
      {
       "k": "plain",
       "t": "• Record their affectionate interaction and Xiyu's hesitation to disclose everything"
+     },
+     {
+      "k": "plain",
+      "t": "• Ya'Xing was also experimented on by the bull demons: extensive bandaging over his lower body, difficulty walking, physical and mental effects"
+     },
+     {
+      "k": "plain",
+      "t": "• Ya'Xing's recovery is incomplete, more severe than Xiao Tian's"
      }
     ]
    }

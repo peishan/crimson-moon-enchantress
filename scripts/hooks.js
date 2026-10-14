@@ -681,6 +681,13 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
+},
+{
+"id": "scroll_final_union_is_separate",
+"d": "The scroll: after the final stage the pair are united as mates for life; the ritual can preserve her life but the final union is a separate matter (author-edited page)",
+"t": "state",
+"p": false,
+"s": "author"
 }
 ],
 "23": [

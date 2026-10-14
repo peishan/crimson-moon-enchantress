@@ -42,3 +42,6 @@ Dongyue's "You and I are bonded for life" is now "We shared the ritual. How coul
 
 ### Comics 038 and 039 (author edits)
 038: Xiyu says "Perhaps I was foolish to believe that being bound together meant we would always understand each other" and Dongyue answers "That doesn't mean I'm leaving you." 039: the narrator now states "The ritual had joined their spiritual energies, but not their souls. Its final stage, the everlasting union, remained incomplete," and Xiyu asks for time. This is the canon in one line. Remaining: the closing 038 caption "Fate had bound their souls" (loose, reads as poetic) and an unrevised line in the 022 script fallback text ("The bond had joined their souls").
+
+### Comic 022 (author edit)
+Replaced with "The Ritual's Warning". The scroll says that after the final stage of soul-binding the pair are united as mates for life, and that if the ritual is incomplete after fourteen days the receiver's life is lost. Narration: "The ritual could preserve her life, but its intended final union remained a separate matter" and "Their spiritual energies had begun to connect, but their souls — and their futures — remained their own." With this, no page states the soul-bond as established except the closing 038 line "Fate had bound their souls".

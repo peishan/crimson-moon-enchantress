@@ -57,34 +57,68 @@ could.
 
 ------------------------------------------------------------------------
 
-# Comic Chapter 022 --- Bonded
+# Comic Chapter 022 --- The Ritual's Warning
 
-**Status:** Reconstructed from the surviving page description.
+**Status:** Matches the author-edited page (replaces the reconstruction).
 
 ### Scene 1 --- A Sleeping Guardian
 
-Xiyu wakes to find Dongyue asleep in an uncomfortable corner rather than
-leave her alone.
+**Narration:** Hours had passed since she last opened her eyes.
 
-### Scene 2 --- An Unexpected Kiss
-
-Moved by his care, Xiyu lifts her veil and gives the sleeping Dongyue a
-light kiss.
+**Narration:** Accustomed to a privileged life, the young master had
+willingly endured discomfort rather than leave her alone.
 
 **Xiyu (thought):** "Why do you have to be so kind to me?"
 
-### Scene 3 --- The Soul-Bond Scroll
+### Scene 2 --- An Unexpected Kiss
 
-She studies the ancient scroll and learns that the soul-bond has bound
-them together. The ritual must be completed within fourteen days, or the
-receiver will die.
+**Narration:** She had spent years guarding her heart. Yet his quiet
+concern was beginning to reach places she had kept hidden.
 
-**Xiyu (thought):** "Fourteen days...? Then I have to find a way out."
+**Narration:** Without thinking too deeply, she let herself express a
+tenderness she barely understood.
+
+**Dongyue (sleeping thought):** "Don't worry, Xiyu... I won't leave."
+
+**Narration:** Was it a promise he would make while awake --- or merely
+the words she longed to hear?
+
+**Xiyu (thought):** "No, Muxue Xiyu. Don't fall in love again. You know
+what happens when you trust someone."
+
+### Scene 3 --- The Ritual's Warning
+
+**Narration:** She had barely understood the scroll when the ritual
+began. Now, with a clearer mind, she could no longer ignore its warning.
+
+**Scroll:** "After the final stage of soul-binding, the initiator and
+receiver shall be united as mates for life. Their spiritual states may
+influence one another, and visions of the other may occur during the
+ritual."
+
+**Scroll (red):** "If the ritual remains incomplete after fourteen
+days, the receiver's life will be lost."
+
+**Xiyu (thought):** "Fourteen days...?" / "Then I have to find a way
+out. I can't die here."
+
+**Narration:** The ritual could preserve her life, but its intended
+final union remained a separate matter.
 
 ### Scene 4 --- Fear of Attachment
 
-**Narration:** The bond had joined their souls. It had not erased her
-fear of being abandoned.
+**Narration:** Their spiritual energies had begun to connect, but their
+souls --- and their futures --- remained their own.
+
+**Xiyu (thought):** "Why does it feel so difficult to keep my distance
+from you?"
+
+**Narration:** The ritual could threaten her life. Trust, however, was
+something no ritual could command.
+
+**Narration:** Fourteen days remained. And Xiyu still had to decide what
+they was willing to risk --- not only to survive, but to let someone
+close.
 
 ------------------------------------------------------------------------
 

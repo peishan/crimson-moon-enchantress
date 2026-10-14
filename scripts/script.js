@@ -1739,24 +1739,19 @@ const SCRIPT = {
   "pending": false
  },
  "22": {
-  "title": "Bonded",
-  "src": "Script comic 022 (Reconstructed from the surviving page description.)",
+  "title": "The Ritual's Warning",
+  "src": "Script comic 022 (Matches the author-edited page (replaces the reconstruction))",
   "scenes": [
    {
     "h": "A Sleeping Guardian",
     "l": [
      {
-      "k": "plain",
-      "t": "Xiyu wakes to find Dongyue asleep in an uncomfortable corner rather than leave her alone."
-     }
-    ]
-   },
-   {
-    "h": "An Unexpected Kiss",
-    "l": [
+      "k": "nar",
+      "t": "Hours had passed since she last opened her eyes."
+     },
      {
-      "k": "plain",
-      "t": "Moved by his care, Xiyu lifts her veil and gives the sleeping Dongyue a light kiss."
+      "k": "nar",
+      "t": "Accustomed to a privileged life, the young master had willingly endured discomfort rather than leave her alone."
      },
      {
       "k": "thought",
@@ -1766,16 +1761,57 @@ const SCRIPT = {
     ]
    },
    {
-    "h": "The Soul-Bond Scroll",
+    "h": "An Unexpected Kiss",
     "l": [
      {
-      "k": "plain",
-      "t": "She studies the ancient scroll and learns that the soul-bond has bound them together. The ritual must be completed within fourteen days, or the receiver will die."
+      "k": "nar",
+      "t": "She had spent years guarding her heart. Yet his quiet concern was beginning to reach places she had kept hidden."
+     },
+     {
+      "k": "nar",
+      "t": "Without thinking too deeply, she let herself express a tenderness she barely understood."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue (sleeping thought)",
+      "t": "\"Don't worry, Xiyu... I won't leave.\""
+     },
+     {
+      "k": "nar",
+      "t": "Was it a promise he would make while awake --- or merely the words she longed to hear?"
      },
      {
       "k": "thought",
       "w": "Xiyu",
-      "t": "\"Fourteen days...? Then I have to find a way out.\""
+      "t": "\"No, Muxue Xiyu. Don't fall in love again. You know what happens when you trust someone.\""
+     }
+    ]
+   },
+   {
+    "h": "The Ritual's Warning",
+    "l": [
+     {
+      "k": "nar",
+      "t": "She had barely understood the scroll when the ritual began. Now, with a clearer mind, she could no longer ignore its warning."
+     },
+     {
+      "k": "say",
+      "w": "Scroll",
+      "t": "\"After the final stage of soul-binding, the initiator and receiver shall be united as mates for life. Their spiritual states may influence one another, and visions of the other may occur during the ritual.\""
+     },
+     {
+      "k": "say",
+      "w": "Scroll (red)",
+      "t": "\"If the ritual remains incomplete after fourteen days, the receiver's life will be lost.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Fourteen days...?\" / \"Then I have to find a way out. I can't die here.\""
+     },
+     {
+      "k": "nar",
+      "t": "The ritual could preserve her life, but its intended final union remained a separate matter."
      }
     ]
    },
@@ -1784,7 +1820,20 @@ const SCRIPT = {
     "l": [
      {
       "k": "nar",
-      "t": "The bond had joined their souls. It had not erased her fear of being abandoned."
+      "t": "Their spiritual energies had begun to connect, but their souls --- and their futures --- remained their own."
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Why does it feel so difficult to keep my distance from you?\""
+     },
+     {
+      "k": "nar",
+      "t": "The ritual could threaten her life. Trust, however, was something no ritual could command."
+     },
+     {
+      "k": "nar",
+      "t": "Fourteen days remained. And Xiyu still had to decide what they was willing to risk --- not only to survive, but to let someone close."
      }
     ]
    }
@@ -2217,11 +2266,11 @@ const SCRIPT = {
      },
      {
       "k": "plain",
-      "t": "• Record Dongyue's discovery of the required ritual information if confirmed in the scene"
+      "t": "• Xiyu tells him the spell joined their energies but the union is not complete (author-edited page)"
      },
      {
       "k": "plain",
-      "t": "• Track Yan observing Dongyue through the mystic mirror, if this scene belongs to this chapter"
+      "t": "• Dongyue does not understand the bond and believes they are bonded for life (author-confirmed)"
      }
     ]
    }
@@ -2542,7 +2591,7 @@ const SCRIPT = {
      },
      {
       "k": "plain",
-      "t": "• Trigger the Frozen Order discussion"
+      "t": "• On the 036 page Xiyu threatens Dongyue with the Frozen Order; he does not explain it. Lore wording unverified"
      },
      {
       "k": "plain",

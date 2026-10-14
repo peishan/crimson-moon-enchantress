@@ -22,7 +22,7 @@ Once per day (story chapters and inn rests advance the day), with Dongyue in the
 Dev tab: **Unlock bonding**, **Heat 80**, **+1 day**.
 
 ## Open questions
-1. Is the Moonlit Bonding open from the ritual (ch32) or only after the wedding (ch35)? It is ch35 now.
+1. ~~Open from the ritual (ch32) or after the wedding (ch35)?~~ Author decided: **after the wedding, ch35**.
 2. Should bonding also be required, or only helpful? It is helpful only (nothing is lost if skipped, but heat dulls her magic).
 3. Does the curse matter before the bonding? Yes, lightly (heat from ch1); say if it should start only after a story beat.
 4. Pacing: one bonding per day gives about one attunement per rest. Tune `ATTUNE_MAX` and the daily limit in `core.js`.

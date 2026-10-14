@@ -19,12 +19,13 @@ scripts/ui.js          tabs: Journal, Party, Gates, Wilds, Temple, Cast, Trainin
 docs/CHAPTER_GATES.md  which chapter / level gates each party member  (READ THIS)
 docs/ART_ASSET_LIST.md   every art slot with exact filenames (drop-in, safe fallbacks)
 docs/BONDING_AND_CURSE.md  Moon-Heat, Attunement and the Moonlit Bonding
+docs/VOLUME2.md          Volume 2 so far (comics 001-009 = chapters 40-48), the bonding pause, content notes
 docs/VOLUME2_PARTY.md    Shen Cangyuan and Lu Xining: classes, skills, combinations (data only, not joinable in Volume 1)
 docs/STORY_NOTES.md     SPOILERS: author's clarifications (Xiyu's origin). Not shown in the game
 docs/HOOKS_REVIEW.md   the hook list checked against the scripts: corrections and open conflicts
 docs/LEVEL_CURVE.md    39-chapter level curve, class curves, Yan decision, enemy scaling
 
-COMIC ART: put PNG/JPG files in assets/comics/ named by chapter: ch01.png, ch02.png ... ch20.png
+COMIC ART: Volume 2 goes in assets/comics/v2/ (ch01.png = Volume 2 comic 001). Volume 1: put PNG/JPG files in assets/comics/ named by chapter: ch01.png, ch02.png ... ch20.png
 (extra pages: ch01_2.png, ch01_3.png). The Pages workflow converts them to WebP on push (images taller than
 15000px are sliced into pages). Until a chapter's art exists, the reader shows its script text instead.
 

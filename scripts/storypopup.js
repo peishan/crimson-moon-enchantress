@@ -15,7 +15,7 @@ async function comicPages(n){
   if(PAGE_CACHE[n]) return PAGE_CACHE[n];
   const pages = [];
   for(let i=1;i<=40;i++){
-    const src = 'assets/comics/ch'+pad2(n)+(i>1?'_'+i:'')+'.webp';
+    const src = (n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
     if(!(await probeImage(src))) break;
     pages.push(src);
   }
@@ -57,7 +57,7 @@ function sceneHtml(sc){
 function drawStory(){
   const e = storyEl(); e.classList.add('on');
   const c = chapterOf(S.n), d = CHAPTER_DESIGN[S.n], total = S.units.length;
-  const head = `<div class="story-top"><div><div class="story-kicker">Chapter ${S.n}${S.mode==='result'?' · Complete':''}</div><div class="story-title">${c.title}</div></div>
+  const head = `<div class="story-top"><div><div class="story-kicker">${chName(S.n)}${S.mode==='result'?' · Complete':''}</div><div class="story-title">${c.title}</div></div>
     <div class="story-top-r">${S.mode==='read' && !S.loading?`<span class="story-count">${Math.min(S.i+1,total)} / ${total}</span>`:''}<button class="story-x" onclick="closeStory()" aria-label="Close">✕</button></div></div>`;
   let body = '', bar = '';
   if(S.mode==='read' && S.loading){
@@ -69,7 +69,7 @@ function drawStory(){
     if(S.units[S.i+1] && S.units[S.i+1].art){ const pre = new Image(); pre.src = S.units[S.i+1].art; }
   } else if(S.mode==='read'){
     const done = chapterDone(S.n);
-    body = `<div class="story-end"><h2>End of chapter ${S.n}</h2><p>${d.sum.split('. ').slice(0,2).join('. ')}${/[.!?]$/.test(d.sum.split('. ').slice(0,2).join('. '))?'':'.'}</p>
+    body = `<div class="story-end"><h2>End of ${chName(S.n).toLowerCase()}</h2><p>${d.sum.split('. ').slice(0,2).join('. ')}${/[.!?]$/.test(d.sum.split('. ').slice(0,2).join('. '))?'':'.'}</p>
       ${c.battle?`<div class="panel"><b>⚔️ Battle ahead</b><div class="sm">${c.battle.map(f=>ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(' · ')}</div></div>`:''}</div>`;
     bar = `<button onclick="S.i=0;drawStory()">↺ Read again</button>`+
       (c.battle ? `<button class="pri" onclick="storyBeginBattle()">${done?'Replay battle':'Begin battle'}</button>`

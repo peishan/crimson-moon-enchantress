@@ -18,7 +18,7 @@ const flashHtml = () => { const f = flash; flash = []; return f.length ? `<div c
 
 function render(){
   $('hgold').textContent = '💰 '+G.gold;
-  $('hch').textContent = G.ch===0 ? 'Start' : 'Ch.'+G.ch+' ✓';
+  $('hch').textContent = G.ch===0 ? 'Start' : chShort(G.ch)+' ✓';
   $('hday').textContent = '☀️ Day '+G.day;
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
@@ -33,19 +33,20 @@ function gateLine(id){
   if(isRecruited(id)) return `<span class="gate open">✔ In the party</span>`;
   if(j===undefined) return `<span class="gate shut">🔒 ${NO_JOIN_YET[id]||'Join chapter not decided'}</span>`;
   const g = chapterGate(j);
-  return `<span class="gate shut">🔒 Joins when chapter ${j} is completed${g?' (needs average party Lv '+g.lv+')':''}</span>`;
+  return `<span class="gate shut">🔒 Joins when ${chName(j).toLowerCase()} is completed${g?' (needs average party Lv '+g.lv+')':''}</span>`;
 }
 function rParty(){
   const slots = Array.from({length:ACTIVE_SLOTS}, (_,i) => i).map(i => { const id = G.active[i];
     return id ? `<div class="slot on" onclick="sel='${id}';render()"><img src="${portrait(id)}"><b>${first(id)}</b><span class="sm">Lv${U(id).lv}</span></div>` : `<div class="slot"><span class="sm">empty</span></div>`; }).join('');
-  const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id)).map(id => {
+  const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id) || profileKnown(id)).map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
   return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
 }
 function curseHtml(){
-  const h = G.heat||0, L = G.attune||0, ready = bondingOpen() && G.party.includes('dongyue') && !isAway('dongyue') && G.bondDay.rite!==G.day;
+  const h = G.heat||0, L = G.attune||0, ready = bondingOpen() && !bondingPaused() && G.party.includes('dongyue') && !isAway('dongyue') && G.bondDay.rite!==G.day;
   const note = !bondingOpen() ? 'After the ritual and the wedding, Dongyue can share the Moonlit Bonding with her. Until then only rest at the inn cools her.'
+    : bondingPaused() ? 'Xiyu has asked for time apart (Volume 2). The bonding is paused until the story brings them back together. Cangyuan\'s Steady the Current can cool her heat meanwhile.'
     : G.bondDay.rite===G.day ? 'They have shared the night. They can bond again after the next day passes.'
     : 'Once a day Dongyue can stay beside her through the night: the heat clears and her attunement deepens.';
   return `<h4>The Curse · Moon-Heat</h4><div class="sm">🔥 ${heatLabel(h)} (${Math.round(h)}/100)${h>40?' · magic dulled '+Math.round((1-heatMult(h))*100)+'%':''}. Casting builds heat; resting at the inn cools 40.</div>${bar(h,100,'e')}
@@ -77,11 +78,11 @@ function rSheet(id){
 /* ---------------- GATES (party join gates + chapter level gates + skill gates) ---------------- */
 function rGates(){
   const joinRows = ROSTER.map(id => { const j = JOIN_CH[id], g = j!==undefined ? chapterGate(j) : null;
-    return `<tr><td><b>${first(id)}</b><div class="sm">${CHARACTERS[id].title}</div></td><td>${j===undefined?'—':'Ch.'+j}</td><td>${INTRO_CH[id]!==undefined?'Ch.'+INTRO_CH[id]:'—'}</td>
+    return `<tr><td><b>${first(id)}</b><div class="sm">${CHARACTERS[id].title}</div></td><td>${j===undefined?'—':chShort(j)}</td><td>${INTRO_CH[id]!==undefined?'Ch.'+INTRO_CH[id]:'—'}</td>
       <td>${g?'Avg Lv '+g.lv:j===undefined?'':'none'}</td><td>${isRecruited(id)?'<span class="gate open">✔ joined</span>':j===undefined?'<span class="gate shut">'+(CHARACTERS[id].vol2?'Volume 2 · TBD':'not written')+'</span>':G.ch>=j?'ready':'<span class="gate shut">locked</span>'}</td></tr>`; }).join('');
   const chRows = GATE_CHAPTERS.map(n => { const g = chapterGate(n), why = chapterLevelLock(n);
     const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':n===39?'Volume 1 finale':'';
-    return `<tr><td><b>Ch.${n}</b><div class="sm">${CHAPTERS[n-1]?CHAPTERS[n-1].title:'not scripted yet'}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
+    return `<tr><td><b>${chShort(n)}</b><div class="sm">${CHAPTERS[n-1]?CHAPTERS[n-1].title:'not scripted yet'}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
   const skRows = ROSTER.map(id => `<tr><td><b>${first(id)}</b></td><td>${skillsOf(id).map(s => `${s.icon} ${s.n.replace(/ \(.*/,'')} <span class="gate ${s.ok?'open':'shut'}">${s.req.lvl?'Lv'+s.req.lvl:''}${s.req.flag?'+story':''}</span>`).join('<br>')}</td></tr>`).join('');
   return `<h2>Level gates</h2><div class="sm">Where each party member is gated, from the chapter breakdown. Details: docs/CHAPTER_GATES.md. Your party average is <b>Lv ${gateLv()}</b>.</div>
    <h4>Party members</h4><div class="panel"><table class="gtbl"><tr><th>Hero</th><th>Joins</th><th>Profile</th><th>Gate</th><th></th></tr>${joinRows}</table>
@@ -94,12 +95,12 @@ function rGates(){
 /* ---------------- JOURNAL ---------------- */
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.map(c => {
+  const rows = CHAPTERS.map(c => (c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
-    return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${c.n}. ${avail||next?c.title:'???'}</b>
-      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${c.pending?' · ⚠️ script pending':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; }).join('');
-  return `<h2>Chapter Journal</h2><div class="sm">Volume 1 · chapters unlock in order. Each gives story XP; some also need an average party level.</div>${ritualPanel()}${rows}`;
+    return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>
+      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${c.pending?' · ⚠️ script pending':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; })()).join('');
+  return `<h2>Chapter Journal</h2><div class="sm">Chapters unlock in order. Each gives story XP; some also need an average party level.</div>${ritualPanel()}${rows}`;
 }
 function openChapter(n){ openCh = n; render(); if(!G.read[n] && !chapterDone(n)) openStory(n); }
 function closeChapter(){ openCh = null; render(); }
@@ -110,7 +111,7 @@ function nextChapterBtn(n){
   const m = n+1;
   if(chapterAvailable(m)) return `<button class="pri" onclick="goNextChapter(${m})">Next chapter ▶ ${m}. ${CHAPTERS[m-1].title}</button>`;
   const lock = chapterLevelLock(m);
-  return lock ? `<div class="panel"><b>🔒 Chapter ${m}: ${CHAPTERS[m-1].title}</b><div class="sm">${lock}. Hunt in the Wilds or train to catch up.</div></div>` : '';
+  return lock ? `<div class="panel"><b>🔒 ${chName(m)}: ${CHAPTERS[m-1].title}</b><div class="sm">${lock}. Hunt in the Wilds or train to catch up.</div></div>` : '';
 }
 function rChapter(n){
   const c = chapterOf(n), d = CHAPTER_DESIGN[n], done = chapterDone(n);
@@ -121,8 +122,8 @@ function rChapter(n){
       <div class="sm">Fighting: ${fighterIds(n).map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')} (Lv ${fightersLv(n)} average)</div>
       <button class="pri" onclick="chapterFight(${n})">${done?'Replay battle':'Begin battle'}</button></div>`;
   } else if(!done) foot = `<button class="pri" onclick="finishChapter(${n})">Complete chapter (+${c.sxp} XP)</button>`;
-  return `<button onclick="closeChapter()">◀ Journal</button><h2>Chapter ${n} · ${c.title}</h2>
-   <div class="panel"><div class="sm">📍 ${d.loc} · Book chapter ${d.book}</div><div style="margin:6px 0">${d.sum}</div>
+  return `<button onclick="closeChapter()">◀ Journal</button><h2>${chName(n)} · ${c.title}</h2>
+   <div class="panel"><div class="sm">📍 ${d.loc}${volOf(n)===1?' · Book chapter '+d.book:''}</div><div style="margin:6px 0">${d.sum}</div>
     <button class="pri" onclick="openStory(${n})">📖 ${G.read[n]?'Read again':'Read story'}</button>
     <details><summary class="sm">Key events · introduced · opens</summary>${d.events.length?'<h4>Key events</h4>'+li(d.events):''}${d.intro.length?'<h4>Introduced</h4>'+li(d.intro):''}${d.unlocks.length?'<h4>Opens</h4>'+li(d.unlocks.map(x=>'✅ '+x)):''}
     <div class="sm" style="margin-top:6px">On the page: ${d.chars.map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')}</div>${hooksHtml(n)}</details></div>${flashHtml()}${foot}${nextChapterBtn(n)}`;
@@ -174,7 +175,7 @@ let personOpen = null;
 const CAST_SHEETS = [
   {id:'main',    n:'Main Characters', sub:'Muxue Xiyu and Zhan Dongyue: expressions, wardrobe, palette', img:'assets/cast/main_characters.webp', ch:2},
   {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
-  {id:'vol2',    n:'Volume 2 Cast', sub:'', img:'assets/cast/volume2.webp', ch:null},
+  {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
 function rCast(){
   if(personOpen){ const p = PEOPLE.find(x => x.id===personOpen);
@@ -182,7 +183,7 @@ function rCast(){
   const open = x => x.ch!==null && G.ch >= x.ch;
   if(castOpen){ const x = CAST_SHEETS.find(y => y.id===castOpen); if(x && open(x)) return `<button onclick="castOpen=null;render()">◀ Cast</button><h2>${x.n}</h2><img class="pg" src="${x.img}" alt="${x.n}">`; castOpen = null; }
   const sheets = CAST_SHEETS.map(x => open(x) ? `<div class="card" onclick="castOpen='${x.id}';render()"><div class="fl"><b>${x.n}</b><div class="sm">${x.sub}</div></div><span class="sm">View</span></div>`
-     : `<div class="card lock"><div class="fl"><b>${x.ch===null?'Volume 2 Cast':x.n}</b><div class="sm">🔒 ${x.ch===null?'Unlocks in Volume 2':'Unlocks at chapter '+x.ch}</div></div></div>`).join('');
+     : `<div class="card lock"><div class="fl"><b>${x.n}</b><div class="sm">🔒 Unlocks at ${chName(x.ch).toLowerCase()}</div></div></div>`).join('');
   const people = PEOPLE.map(p => { const k = personKnown(p);
     return `<div class="rc ${k?'':'lock'}" ${k?`onclick="personOpen='${p.id}';render()"`:''}><img src="assets/cast/people/${p.id}.webp"><div><b>${k?p.n:'???'}</b><div class="sm">${k?p.role:p.intro>=99?'Not in Season 1 yet':'Appears ch.'+p.intro}</div></div></div>`; }).join('');
   return `<h2>Cast</h2><div class="sm">Character profile sheets and portraits. Each unlocks as the story introduces them.</div>${sheets}<h4>People</h4><div class="rcs">${people}</div>`;
@@ -275,10 +276,10 @@ function rBestiary(){
 /* ---------------- DEV ---------------- */
 function rDev(){
   return `<h2>Dev tools</h2><div class="panel"><div class="sm">Jump the save to a story point (recruits, flags, levels):</div>
-   <input id="devch" type="number" min="0" max="39" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
+   <input id="devch" type="number" min="0" max="${LAST_CHAPTER}" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;save();toast('Bonding unlocked');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;G.flags.bonding_resumed=true;save();toast('Bonding unlocked and resumed');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

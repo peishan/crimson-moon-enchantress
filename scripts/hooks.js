@@ -1682,6 +1682,276 @@ const HOOKS = {
 "p": false,
 "s": "hooks"
 }
+],
+"40": [
+{
+"id": "volume_2_started",
+"d": "Volume 2 begins: the return to Muxue",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_asks_for_separate_residence",
+"d": "Xiyu asks for a separate residence and time apart",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_dark_energy_beneath_skin",
+"d": "Dark energy creeps beneath Yan's skin; his eyes briefly change",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_spell_twists_once",
+"d": "Her spell twists into a shape she did not intend, once",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"41": [
+{
+"id": "cangyuan_met",
+"d": "Xiyu meets Shen Cangyuan in the market",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "talisman_wisps_released",
+"d": "A merchant's talisman splits and releases spirit wisps",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_offer_terms_agreed",
+"d": "His terms: no secrets about the technique, no experiments without consent, tell her of dangers",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"42": [
+{
+"id": "spirit_weaving_test_held",
+"d": "The courtyard test",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "black_vein_beneath_island_seen",
+"d": "A black vein runs through the stone beneath the island",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_hurt_xiyu_withheld_strangeness",
+"d": "Dongyue is hurt she did not tell him",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ancient_formation_cracks",
+"d": "The ancient formation far below cracks",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"43": [
+{
+"id": "xiyu_visits_yan_sanctuary",
+"d": "Xiyu visits her father in the sanctuary",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "blood_answers_blood",
+"d": "Her touch makes the formation vibrate",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sealed_chamber_memory_seen",
+"d": "She sees a sealed chamber wrapped in chains and crimson light",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_forbids_her_to_seek_it",
+"d": "\"Whatever you saw, do not seek it again\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"44": [
+{
+"id": "yan_reinforces_seal_alone",
+"d": "Yan tries to reinforce the seal alone",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "voice_answers_through_yan",
+"d": "A voice answers through Yan: \"You never asked what was standing on the other side\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "broken_jade_seal_found",
+"d": "Xiyu notices a broken jade seal",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "door_she_was_born_to_open",
+"d": "\"A door she was born to open\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"45": [
+{
+"id": "jade_fragment_shown_to_cangyuan",
+"d": "Xiyu shows Cangyuan the fragment",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "older_binding_system_identified",
+"d": "An older system of spiritual binding",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_has_seen_pattern_before",
+"d": "He has seen the pattern once, not here",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_offers_to_investigate_records",
+"d": "He offers to investigate the old records; she asks to be told about her family",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"46": [
+{
+"id": "spirit_weaving_taught",
+"d": "Cangyuan teaches Xiyu Spirit Weaving",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "black_filament_separated_and_sealed",
+"d": "A black filament is separated from her spell and sealed in a jade vessel",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_joins_party",
+"d": "Shen Cangyuan joins the party (author-confirmed: V2 comic 007)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "filament_is_learning",
+"d": "\"It isn't merely waking. It's learning.\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"47": [
+{
+"id": "vessel_reacts_to_xiyu",
+"d": "The sealed vessel reacts to Xiyu",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "sanctuary_comparison_planned",
+"d": "They plan to compare the filament with the original formation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_past_people_died",
+"d": "He met a similar formation where people died",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_says_she_has_begun_to_answer",
+"d": "\"She has already begun to answer.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"48": [
+{
+"id": "sanctuary_enters_original_formation",
+"d": "They enter the original formation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_birth_memories_seen",
+"d": "Memories of her birth: the blood moon, the elders' foresight, her parents leaving her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_is_the_key",
+"d": "\"You are the key. Your blood can open it. Or keep it shut.\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "sealed_thing_was_a_truth",
+"d": "\"What they sealed wasn't just a monster. It was a truth.\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "filament_speaks_open",
+"d": "The filament speaks: \"You remember... Open...\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

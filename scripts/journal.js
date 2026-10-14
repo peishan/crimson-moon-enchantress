@@ -4,7 +4,7 @@
    Comic art: assets/comics/chNN.webp, extra pages chNN_2.webp, chNN_3.webp ... (see README).
    ===================================================================== */
 const CHAPTERS = [];
-for(let n=1;n<=VOLUME1_CHAPTERS;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:storyXp(n), battle:null, pending:!!CHAPTER_DESIGN[n].pending });   // pending = no approved script yet
+for(let n=1;n<=LAST_CHAPTER;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:storyXp(n), battle:null, pending:!!CHAPTER_DESIGN[n].pending });   // pending = no approved script yet
 const chapterOf = n => CHAPTERS[n-1];
 
 /* Chapter battles. Only one is in the script: ch13, Dongyue expels the imp afflicting Wang Xi'er.

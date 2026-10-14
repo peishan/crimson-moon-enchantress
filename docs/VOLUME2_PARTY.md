@@ -1,7 +1,6 @@
 # Volume 2 party members: Shen Cangyuan and Lu Xining
 
-Data and combat only. They are **not joinable in Volume 1**: they are hidden from the Volume 1 party screen, Cast shows only a locked "Volume 2 Cast" page (no names),
-and the Gates tab lists them as "Volume 2 · TBD". Cangyuan first appears in Volume 2 chapter 2; joining chapters are the author's to set (`JOIN_CH` in `scripts/core.js`).
+**Joining chapters (author): Cangyuan at Volume 2 comic 007 (chapter 46), Xining at comic 014 (chapter 53).** Not joinable in Volume 1; Cangyuan's profile appears when he first appears (V2 comic 002), Xining stays hidden until she joins. The Cast page for both unlocks at ch 53.
 Dev tab → "Recruit everyone" adds them for testing.
 Art: `assets/party/cangyuan.webp`, `xining.webp` (cropped from the author's sheets), `assets/cast/main_characters.webp` (Xiyu and Dongyue page, unlocks at ch 2), `assets/cast/volume2.webp` (hidden until Volume 2).
 
@@ -18,24 +17,24 @@ XP curves: Cangyuan "scholar" (slow), Xining "support". Stats at Lv 40: Cangyuan
 ## Shen Cangyuan 沈沧渊 (the sheet's characters; the brief wrote 沈苍渊: please confirm which)
 | Skill | Unlock (placeholder) | Effect |
 |---|---|---|
-| Spirit Thread | Lv 40 | moderate magic damage; marks **Threadbound** (stacks to 3): control on that foe lasts +1 turn and bosses resist it less (50% → 35% → 20% → 10%) |
-| Binding Seal | Lv 40 | bind 2 turns + slow 3; bosses can still resist the bind but are always slowed |
-| Inverted Meridian | Lv 44 | FORBIDDEN: silences a foe, shatters its barrier and buffs; **strain** costs him 10% max HP, +50% per use this battle |
-| Inverted Meridian: Steady | Lv 44 | the same technique inward: cools 40 heat and cleanses an ally; same strain |
-| Crimson Resonance (with Xiyu) | Lv 46 | all foes, strong damage (×1.35 with Xiyu), links them; adds 8 heat to Xiyu (+10 more if she is at 70+) |
-| Ten Thousand Threads Formation | Lv 50 | ultimate: links all foes; 35% of damage and 50% of control spreads between linked foes. Useless against one foe |
+| Spirit Thread | Lv 46 | moderate magic damage; marks **Threadbound** (stacks to 3): control on that foe lasts +1 turn and bosses resist it less (50% → 35% → 20% → 10%) |
+| Binding Seal | Lv 46 | bind 2 turns + slow 3; bosses can still resist the bind but are always slowed |
+| Inverted Meridian | Lv 48 | FORBIDDEN: silences a foe, shatters its barrier and buffs; **strain** costs him 10% max HP, +50% per use this battle |
+| Inverted Meridian: Steady | Lv 48 | the same technique inward: cools 40 heat and cleanses an ally; same strain |
+| Crimson Resonance (with Xiyu) | Lv 50 | all foes, strong damage (×1.35 with Xiyu), links them; adds 8 heat to Xiyu (+10 more if she is at 70+) |
+| Ten Thousand Threads Formation | Lv 54 | ultimate: links all foes; 35% of damage and 50% of control spreads between linked foes. Useless against one foe |
 | *Passive: Resonance of Two Currents* | – | with Xiyu fighting: her heat gain −25%, and 35% of her spells echo through his threads for extra damage |
 
 ## Lu Xining 陆惜宁
 | Skill | Unlock (placeholder) | Effect |
 |---|---|---|
-| Gentle Meridian | Lv 40 | heal one ally, then regen 6% for 3 turns |
-| Clear Spirit | Lv 40 | removes one ordinary status (not all). Severe curses need a story answer or Cangyuan |
-| Physician's Insight | Lv 42 | reveals the foe and exposes it (+15% damage taken, 3 turns). Outside combat clue use is planned (see below) |
-| Herb Pouch | Lv 40 | no mana: modest heal that uses one Frost Herb (her answer to running dry) |
-| Quiet Sanctuary (with Dongyue) | Lv 46 | party heal + 15% shield, ×1.3 with Dongyue standing. Passive: he guards her (−20% damage to her) |
-| Diagnosis and Severance (with Cangyuan) | Lv 48 | magic damage, analyses, strips barrier/buffs, binds: needs Cangyuan alive |
-| Sanctuary of Still Waters | Lv 50 | ultimate: heal over 4 turns, 70% resist to statuses, cleanse; her own DEF −30% while it holds |
+| Gentle Meridian | Lv 53 | heal one ally, then regen 6% for 3 turns |
+| Clear Spirit | Lv 53 | removes one ordinary status (not all). Severe curses need a story answer or Cangyuan |
+| Physician's Insight | Lv 55 | reveals the foe and exposes it (+15% damage taken, 3 turns). Outside combat clue use is planned (see below) |
+| Herb Pouch | Lv 53 | no mana: modest heal that uses one Frost Herb (her answer to running dry) |
+| Quiet Sanctuary (with Dongyue) | Lv 57 | party heal + 15% shield, ×1.3 with Dongyue standing. Passive: he guards her (−20% damage to her) |
+| Diagnosis and Severance (with Cangyuan) | Lv 58 | magic damage, analyses, strips barrier/buffs, binds: needs Cangyuan alive |
+| Sanctuary of Still Waters | Lv 61 | ultimate: heal over 4 turns, 70% resist to statuses, cleanse; her own DEF −30% while it holds |
 | *Passive: A Physician's Resolve* | – | each heal cuts her healing MP costs 5% this battle (max 30%); Herb Pouch works at 0 MP |
 
 Weaknesses are built in: Cangyuan's damage is moderate and his forbidden techniques hurt him; Xining deals little damage, is fragile without Dongyue, and cannot remove severe curses.

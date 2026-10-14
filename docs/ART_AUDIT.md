@@ -102,3 +102,8 @@ All 39 chapters now have art in `assets/comics/`.
 - Ch031–033 and 036 captions say "bare", "naked beneath the sheets" and show a ritual circle and bedding scenes more revealing than the "blankets, wraps, steam, petals" rule. Installed as supplied; your call whether to regenerate.
 - Ch025 says Dongyue "can treat you as my wife now" before the ch35 wedding, and ch033's dream is the proposal.
 - Ch034's page text is "Heinous Intent" under a "033" label (see above); a typo in 036 ("There was no falseness…") overlaps a caption.
+
+---
+
+# Volume 2 art: comics 001–009 (9 images)
+All correctly labelled 001–009, no duplicates. Installed as `assets/comics/v2/ch01.webp`…`ch09.webp` (internal chapters 40–48). Details and content notes: `VOLUME2.md`.

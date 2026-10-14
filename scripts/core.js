@@ -8,20 +8,27 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
-const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15 };   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
-const INTRO_CH = { xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17 };
-const NO_JOIN_YET = { cangyuan:'Volume 2: joining chapter to be decided (first appears in Volume 2 chapter 2).', xining:'Volume 2: joining chapter to be decided.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
+const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
+const INTRO_CH = { xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
+const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
    chapter, the battle chapter, and the ch20 milestone. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
 const GATE_RATIO = 1;   // gate = chapter number: "reach an average party level equal to the chapter"
-const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39];   // recruitment chapters, the battle chapter, the ch20 milestone and the Volume 1 finale
+const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46];   // recruitment chapters, the battle chapter, the ch20 milestone and the Volume 1 finale
 
 /* ---------- THE LEVEL CURVE: Volume 1 = 39 comic chapters, spread evenly over levels ----------
    Story XP is set so a player who only reads the story is level (1 + chapters done): Lv 40 when Volume 1 ends at ch 39.
    STORY_PACE = levels gained per chapter (1 = one level per chapter). Wilds/Temple hunting is the optional way to get ahead. */
 const VOLUME1_CHAPTERS = 39;
+/* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
+   Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009. */
+const VOL2_START = 40, LAST_CHAPTER = 48;
+const volOf = n => n >= VOL2_START ? 2 : 1;
+const vnum = n => n >= VOL2_START ? n - (VOL2_START-1) : n;
+const chName = n => volOf(n)===2 ? 'Volume 2 · Chapter '+vnum(n) : 'Chapter '+n;
+const chShort = n => volOf(n)===2 ? 'V2·'+vnum(n) : 'Ch.'+n;
 const STORY_PACE = 1;
 
 let G = null;
@@ -100,9 +107,13 @@ const bondMult = id => 1 + .02*bondLevel(id);
 const ATTUNE_MAX = 10;
 const heatMult = h => 1 - clamp(((h||0)-40)/60, 0, 1)*.3;
 const heatLabel = h => h>=80 ? 'Burning' : h>=50 ? 'Flushed' : h>=20 ? 'Warm' : 'Calm';
-const bondingOpen = () => hook('dongyue_vows_lifelong_devotion') || !!(G.flags && G.flags.bonding_unlocked);   // provisional: ch35 has no approved script
+const bondingOpen = () => hook('dongyue_vows_lifelong_devotion') || !!(G.flags && G.flags.bonding_unlocked);
+/* Volume 2 comic 001: Xiyu asks for a separate residence and time apart ("I don't wish to continue as we were at the Ice Temple"). The bonding is PAUSED until the story
+   brings them back together (flag bonding_resumed; no chapter yet: provisional reading, the Dev tab can resume it). Cangyuan's Steady skill is the interim relief. */
+const bondingPaused = () => !!(G.flags && G.flags.xiyu_separate_residence && !G.flags.bonding_resumed);
 function doBonding(){
   if(!bondingOpen()) return ['The Moonlit Bonding is not open yet.'];
+  if(bondingPaused()) return ['Xiyu has asked for time apart. The bonding is paused until they find their way back to each other.'];
   if(!G.party.includes('dongyue') || isAway('dongyue')) return ['Dongyue must be with the party.'];
   if(G.bondDay.rite === G.day) return ['They have already shared the night. They can bond again after the next day passes.'];
   G.bondDay.rite = G.day; G.heat = 0; G.afterglow = 3;

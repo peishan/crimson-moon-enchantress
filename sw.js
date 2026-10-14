@@ -1,5 +1,5 @@
 /* Crimson Moon service worker: app shell cached for offline play; images/comics cached as you play. */
-const VERSION = 'crimson-moon-v2';
+const VERSION = 'crimson-moon-v3';
 const SHELL = ['./', './index.html', './styles.css', './manifest.webmanifest',
   './scripts/characters.js','./scripts/chapters.js','./scripts/script.js','./scripts/hooks.js','./scripts/people.js','./scripts/core.js','./scripts/enemies.js','./scripts/battle.js','./scripts/journal.js','./scripts/temple.js','./assets/maps/ice_temple.webp',
   './scripts/savedata.js','./scripts/storypopup.js','./scripts/ui.js','./assets/splash.webp','./assets/volume1_cover.webp','./assets/icons/icon-192.png'];

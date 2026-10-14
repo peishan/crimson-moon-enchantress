@@ -12,7 +12,7 @@ something, the gate below is marked **provisional**.
 | **Zhan Dongyue** 展东悦 · Cursed Wanderer | Ch 2 | **Ch 11 "A Quest"** | "I'll go. I won't let you face it alone." | avg Lv 9 |
 | **Xiao Tian** 萧天 · Silent Blade | Ch 2 | **Ch 14 "Xiao Tian's Dream"** | "Then I'll go with you, brother." | avg Lv 11 |
 | **Ya'Xing** 亚星 · Steady Sailor | Ch 2 | **Ch 15 "Privacy"** *(confirmed by the author)* | Part of the expedition group from ch 15 | avg Lv 12 |
-| **Muxue Yan** 慕雪岩 · Ancient Sage | Ch 17 | **none yet** | Appears and vanishes in ch 17; author: still not joined as of comic 022. Script exists only to ch 20. Recruitable via Dev tab for now | – |
+| **Muxue Yan** 慕雪岩 · Ancient Sage | Ch 17 | **Ch 30** *(planned)* | Appears and vanishes in ch 17; not joined as of comic 022. Planned arc: 028 crisis (Xiyu worsens, Dongyue finds the ritual deadline, goes to seek Yan), 029 "The Price of Love" (recruitment setup: Yan's ambitions, a negotiation or trial), 030 he agrees to travel with the party, motives unresolved. Scripts for 021+ are not in the game yet, so he is recruitable only via the Dev tab | avg Lv 24 |
 
 A hero who joins starts at (party average level − 1).
 
@@ -29,6 +29,7 @@ Gated chapters = every recruitment chapter, the one battle chapter, and the ch 2
 | 14 Xiao Tian's Dream | avg Lv 11 | Xiao Tian joins |
 | 15 Privacy | avg Lv 12 | Ya'Xing joins |
 | 20 A Deep Bond | avg Lv 16 | Milestone (the season continues past ch 20: art exists to at least comic 022) |
+| 30 (planned) | avg Lv 24 | Muxue Yan joins. Not playable until scripts for 021–030 are added |
 
 Story XP per chapter is `60 + 15·n`. A story-only player reaches ch 14 unaided and needs a few Wilds
 fights to open ch 15 and ch 20. Tune `GATE_RATIO` (higher = stricter).
@@ -53,6 +54,6 @@ Icy Mountain Steps ch 17 · Ice Temple ch 18 (boss: Frost Warden). Each matches 
 
 ## Open questions for the author
 1. **Scripts for comics 21+** — art exists to at least 022, but only 1–20 are scripted, so the game stops at ch 20.
-2. **Muxue Yan** — which chapter does he join (after 22)?
+2. **Muxue Yan** — planned ch 30; 028/029 details are unverified until I see their scripts. His late skills (Time Ward Lv 22, Celestial Art Lv 26) unlock soon after he joins at about Lv 23.
 3. **Chinese names marked provisional** (萧天, 慕雪岩) — confirm.
 4. Gate strictness (`GATE_RATIO` 0.8) and the amount of story XP are first-pass.

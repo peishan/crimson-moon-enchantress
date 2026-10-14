@@ -35,3 +35,7 @@ Dongyue did not really understand the bond, so he believes they are **bonded for
 
 ## Not built
 The formal deeper rite, any romance or intimacy mechanic for Cangyuan, comics showing their first kiss or encounter, and Xining's relationships. Resonance is capped at 5 until Volume 2's story is known.
+
+
+### Comic 033 edit (author)
+Dongyue's "You and I are bonded for life" is now "We shared the ritual. How could I ever leave you?", and the dream caption is a red thread binding their hands beneath a moonlit sky. The red thread now foreshadows Crimson Thread Resonance (Volume 2). The page still has the "naked beneath the sheets" caption and "skilful fingers explored... desire in her veins"; in-game text stays non-explicit.

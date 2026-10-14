@@ -289,7 +289,9 @@
 - `bull_demon_experiments_revealed` — Record deprivation, poisons, and demon-energy-infused weapons. *(one-time)*
 - `xiao_tian_memories_partially_restored` — Update his memory state while keeping much of his past blurred. *(persistent state)*
 - `xiao_tian_revenge_motivation_revealed` — Establish his goals: find the woman in his dreams, locate his master, and avenge the dead. *(persistent quest state)*
-- `xiao_tian_recovery_incomplete` — Maintain his pain, allergies, impaired speech, and involuntary laughter. *(persistent health state)*
+- `xiao_tian_recovery_incomplete` — Maintain his pain, allergies, impaired speech, and involuntary laughter. *(persistent health state; author-confirmed)*
+- `ya_xing_bull_demon_injuries_revealed` — Establish that Ya'Xing was also captured and experimented on by the bull demons; his injuries are more severe. *(author-confirmed; persistent backstory/health state)*
+- `ya_xing_recovery_incomplete` — Track Ya'Xing's ongoing recovery from the experiments. *(author-confirmed; persistent health state)*
 - `commander_west_checks_xiao_tian` — Trigger the recovery visit. *(one-time)*
 - `commander_west_provides_elixirs` — Record the medicine being provided. *(inventory/health state)*
 - `xiao_tian_accepts_medicine` — Mark his acceptance and gratitude. *(one-time)*
@@ -322,7 +324,9 @@
 **Status:** Reconstructed from the approved 16-panel finale draft.  
 - `ice_temple_farewell_started` — Begin the farewell to the temple. *(one-time)*
 - `muxue_yan_bids_ao_yun_farewell` — Record Yan beside Ao Yun's glass casket. *(one-time)*
-- `ya_xing_remains_at_temple` — Keep Ya'Xing behind to recover from the bull-demon experiments. *(persistent party/location state)*
+- `ya_xing_remains_at_temple` — Keep Ya'Xing behind to recover from the bull-demon experiments. *(persistent party/location state; author-confirmed)*
+- `ya_xing_recovery_continues` — Track Ya'Xing's ongoing recovery at the Ice Temple under Muxue Yan's care. *(author-confirmed; persistent health state)*
+- `xiao_tian_returns_with_party` — Record Xiao Tian returning to Muxue with Xiyu and Dongyue. *(author-confirmed; persistent party/location state)*
 - `ao_yun_casket_protected` — Record that Ao Yun's remains/casket remain under protection. *(persistent world state)*
 - `xiyu_questions_yan_motives` — Keep Xiyu's doubts about her father active. *(persistent mystery state)*
 - `dongyue_promises_patience` — Record his promise to give Xiyu time and keep choosing her. *(relationship milestone)*
@@ -344,7 +348,9 @@ Use event flags for scenes that should not replay automatically, such as `myster
 - Xiyu's critical condition leads into the ritual arc; do not treat the later recovery state as active before the ritual resolves.
 - Chapter 035's wedding follows the assembly material from Chapter 034.
 - Chapter 036's Xiao Tian recovery scene should preserve the consequences of his earlier captivity.
-- Chapter 039 ends Volume 1; Ya'Xing remains at the temple and the homecoming introduces new danger rather than resolving every mystery.
+- Both Xiao Tian and Ya'Xing were captured and experimented on by the bull demons. Xiao Tian has partially recovered memories and continues to suffer symptoms; Ya'Xing's injuries are more severe.
+- Chapter 039 ends Volume 1. Ya'Xing stays behind at the Ice Temple to recover from the bull demons' experiments under Muxue Yan's care, while Xiao Tian returns to Muxue with the party. The homecoming introduces new danger rather than resolving every mystery.
+- Hook review status: the Xiao Tian / Ya'Xing bull-demon injury issue is resolved and author-confirmed.
 
 ### Open source-recovery checklist
 - Chapters 002–004: recover exact titles and scenes.

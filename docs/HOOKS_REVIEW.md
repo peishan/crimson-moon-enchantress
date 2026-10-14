@@ -23,6 +23,8 @@ Events fire once and never replay; states persist and can be checked with `hook(
 | 027 | "Title to Confirm" | The Glass Casket: new chamber, Dongyue heals her hand, coloured blossoms, "Yun'er" | added script hooks; casket hook kept provisional |
 | 035, 039 | same id `xiyu_questions_yan_motives` used for a one-time event and a persistent state | would collide, so the event would never fire the state | ch39's renamed `xiyu_doubts_about_yan_persist` |
 
+The author's updated hook file (`docs/CHAPTER_HOOKS.md`, with the four Ya'Xing / Xiao Tian hooks tagged author-confirmed) is now the build source. It still contains the id collision and the 023/026 items above, which the build corrects, so keep the corrections in `tools/build_hooks.py` or fix them in the file.
+
 Also fixed in the game, not the hook file: I had given the party a **White Key** item at 026. The script has **Hoko** unlock the platform, so the item is removed.
 
 ## Changes to game state from the hook file

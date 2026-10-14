@@ -16,7 +16,7 @@ for i in range(0,len(secs),2):
         hid,desc,typ=m.group(1),m.group(2).strip(),(m.group(3) or '')
         if hid.endswith('_source_pending'): continue                       # editorial marker, not a gameplay event
         kind='event' if re.search(r'one-time|chapter transition',typ) else 'state'
-        out.append({'id':hid,'d':desc.rstrip('.'),'t':kind,'p':bool(re.search(r'provisional',typ,re.I)) or (chap_prov and 'one-time' not in typ and False),'s':'hooks'})
+        out.append({'id':hid,'d':desc.rstrip('.'),'t':kind,'p':bool(re.search(r'provisional',typ,re.I)) and 'author-confirmed' not in typ,'s':'author' if 'author-confirmed' in typ else 'hooks'})
     H[n]=out
 
 # ---- corrections: the approved scripts / author confirmations win ----
@@ -40,10 +40,6 @@ ADD={
      A('glass_enclosure_broken','Xiyu breaks the glass enclosure with magic'),
      A('hoko_rescued','Hoko, an explorer of Luiterra trapped for about a month, is freed'),
      A('teleport_platform_unlocked','Hoko unlocks a teleportation platform with a white key')],
- 36:[A('ya_xing_bull_demon_injuries_revealed','Ya\'Xing was also experimented on by the bull demons: extensive bandaging over his lower body, difficulty walking, physical and mental effects',s='author'),
-     A('ya_xing_recovery_incomplete','Ya\'Xing\'s recovery is incomplete, more severe than Xiao Tian\'s','state',s='author')],
- 39:[A('ya_xing_recovery_continues','Ya\'Xing keeps recovering at the Ice Temple under Yan\'s care','state',s='author'),
-     A('xiao_tian_returns_with_party','Xiao Tian goes home to Muxue with Xiyu and Dongyue',s='author')],
  27:[A('teleport_arrival_chamber_reached','Xiyu, Dongyue and Hoko arrive in a brighter chamber'),A('dongyue_heals_xiyu_hand','Dongyue heals Xiyu\'s injured hand'),
      A('coloured_blossoms_seen','Blossoms of many colours ring the casket, each with a different magical property'),A('yuner_name_heard','Xiyu hears a melody and the name "Yun\'er"','state')],
 }

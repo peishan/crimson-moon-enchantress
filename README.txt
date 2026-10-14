@@ -1,5 +1,5 @@
 THE CRIMSON MOON'S ENCHANTRESS (绯月妖姬) — a game adaptation by Yuchen Sky
-Season 1: comic chapters 1-20 scripted so far (comic art exists to at least 022). Mobile-first static site (GitHub Pages), no build step.
+Season 1: comic chapters 1-20 scripted and illustrated so far (comic art exists to at least 022). Mobile-first static site (GitHub Pages), no build step.
 Open index.html. Save key: crimson_moon_v1 (localStorage).
 
 Built on the Tribute / Daybreak: Crimson Tide layout (multi-script, no framework).

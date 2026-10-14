@@ -7,14 +7,14 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    JOIN_CH   chapter whose completion puts the hero in the party (from the game script).
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
-   Muxue Yan appears in ch17 and the script ends (ch20) before he joins: no join chapter is written yet. */
-const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15 };   // ya'xing: provisional (first "in the group" ch15, never explicitly asked)
+   Muxue Yan appears in ch17 and has still not joined as of comic 022 (author): no join chapter is written yet. */
+const JOIN_CH  = { xiyu:1, dongyue:11, xiaotian:14, yaxing:15 };   // ya'xing: ch15 confirmed by the author
 const INTRO_CH = { xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17 };
-const NO_JOIN_YET = { yan:'His joining chapter is not written yet (Season 1 ends at chapter 20).' };
+const NO_JOIN_YET = { yan:'He has not joined as of comic 022; his joining chapter is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
-   chapter, the battle chapter, and the season finale. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
+   chapter, the battle chapter, and the ch20 milestone. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
 const GATE_RATIO = .8;
 const GATE_CHAPTERS = [11, 13, 14, 15, 20];
 

@@ -67,7 +67,7 @@ const CHAPTER_DESIGN = {
  15:{title:'Privacy', book:'13', loc:'The hidden chambers beneath the Crimson Fairy',
   sum:'Xiyu leads the group down a spiral staircase to secret chambers. Her blood on a kirin statuette opens a golden stone door onto a chamber of devices, maps and records. The red-clad woman is her cousin Pei Xinyi, who wants the family\'s secret of youth. The group prepares the magical boat: "We leave before sunrise."',
   events:['The kirin door opened with blood.','The hidden archive.','Pei Xinyi.','Departure before sunrise.'],
-  chars:['xiyu','dongyue','xiaotian','yaxing'], intro:['Pei Xinyi'], unlocks:['Party: Ya\'Xing joins the quest (provisional)','Wilds: the Hidden Chambers']},
+  chars:['xiyu','dongyue','xiaotian','yaxing'], intro:['Pei Xinyi'], unlocks:['Party: Ya\'Xing joins the quest','Wilds: the Hidden Chambers']},
  16:{title:'The Gates of Muxue Have Opened', book:'14', loc:'The magical boat',
   sum:'A brilliant light breaks the sky and the travellers freeze. Xiyu recalls her granduncle Muxue Fangyi, who vanished when she was eight; the gates may open once every ten years. Dongyue confesses he dreamed of her before he came and gives her a scroll bearing a portrait of a veiled woman. A rift opens beneath the boat.',
   events:['The gates open.','Fangyi\'s disappearance and the ten-year cycle.','"I dreamed of you before I ever came here."','The rift.'],

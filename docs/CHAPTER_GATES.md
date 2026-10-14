@@ -11,15 +11,15 @@ something, the gate below is marked **provisional**.
 | **Muxue Xiyu** 慕雪细雨 · Moon Witch | Ch 1 | Ch 1 (starts in party, always leads) | Protagonist | – |
 | **Zhan Dongyue** 展东悦 · Cursed Wanderer | Ch 2 | **Ch 11 "A Quest"** | "I'll go. I won't let you face it alone." | avg Lv 9 |
 | **Xiao Tian** 萧天 · Silent Blade | Ch 2 | **Ch 14 "Xiao Tian's Dream"** | "Then I'll go with you, brother." | avg Lv 11 |
-| **Ya'Xing** 亚星 · Steady Sailor | Ch 2 | **Ch 15 "Privacy"** *(provisional)* | First chapter where he is part of the expedition group; the script never has him explicitly agree | avg Lv 12 |
-| **Muxue Yan** 慕雪岩 · Ancient Sage | Ch 17 | **none written yet** | Appears and vanishes in ch 17; Season 1 ends at ch 20 without him joining. Recruitable only via Dev tab for now | – |
+| **Ya'Xing** 亚星 · Steady Sailor | Ch 2 | **Ch 15 "Privacy"** *(confirmed by the author)* | Part of the expedition group from ch 15 | avg Lv 12 |
+| **Muxue Yan** 慕雪岩 · Ancient Sage | Ch 17 | **none yet** | Appears and vanishes in ch 17; author: still not joined as of comic 022. Script exists only to ch 20. Recruitable via Dev tab for now | – |
 
 A hero who joins starts at (party average level − 1).
 
 ## 2. Chapter level gates (Crimson-Tide-style `gate:{type:'level'}`)
 
 The chapter stays locked until the **average level of the party** reaches `round(chapter × 0.8)`.
-Gated chapters = every recruitment chapter, the one battle chapter, and the finale
+Gated chapters = every recruitment chapter, the one battle chapter, and the ch 20 milestone
 (`GATE_CHAPTERS` / `GATE_RATIO` in `scripts/core.js`).
 
 | Chapter | Gate | Reason |
@@ -28,7 +28,7 @@ Gated chapters = every recruitment chapter, the one battle chapter, and the fina
 | 13 Goodbye Hanshan | avg Lv 10 | Battle: the Afflicting Imp (Dongyue + Xiao Tian + Ya'Xing) |
 | 14 Xiao Tian's Dream | avg Lv 11 | Xiao Tian joins |
 | 15 Privacy | avg Lv 12 | Ya'Xing joins |
-| 20 A Deep Bond | avg Lv 16 | Season finale |
+| 20 A Deep Bond | avg Lv 16 | Milestone (the season continues past ch 20: art exists to at least comic 022) |
 
 Story XP per chapter is `60 + 15·n`. A story-only player reaches ch 14 unaided and needs a few Wilds
 fights to open ch 15 and ch 20. Tune `GATE_RATIO` (higher = stricter).
@@ -52,7 +52,7 @@ Muxue Forest ch 1 · Moonlit Stream ch 6 · Hidden Chambers ch 15 · Rift Waters
 Icy Mountain Steps ch 17 · Ice Temple ch 18 (boss: Frost Warden). Each matches a place in the script.
 
 ## Open questions for the author
-1. **Ya'Xing's join chapter** — ch 15 is a guess. Which chapter?
-2. **Muxue Yan** — which chapter does he join (after ch 20)?
+1. **Scripts for comics 21+** — art exists to at least 022, but only 1–20 are scripted, so the game stops at ch 20.
+2. **Muxue Yan** — which chapter does he join (after 22)?
 3. **Chinese names marked provisional** (萧天, 慕雪岩) — confirm.
 4. Gate strictness (`GATE_RATIO` 0.8) and the amount of story XP are first-pass.

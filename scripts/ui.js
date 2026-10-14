@@ -67,12 +67,12 @@ function rGates(){
     return `<tr><td><b>${first(id)}</b><div class="sm">${CHARACTERS[id].title}</div></td><td>${j===undefined?'—':'Ch.'+j}</td><td>${INTRO_CH[id]!==undefined?'Ch.'+INTRO_CH[id]:'—'}</td>
       <td>${g?'Avg Lv '+g.lv:j===undefined?'':'none'}</td><td>${isRecruited(id)?'<span class="gate open">✔ joined</span>':j===undefined?'<span class="gate shut">not written</span>':G.ch>=j?'ready':'<span class="gate shut">locked</span>'}</td></tr>`; }).join('');
   const chRows = GATE_CHAPTERS.map(n => { const g = chapterGate(n), why = chapterLevelLock(n);
-    const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'season finale':'';
+    const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':'';
     return `<tr><td><b>Ch.${n}</b><div class="sm">${CHAPTERS[n-1].title}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
   const skRows = ROSTER.map(id => `<tr><td><b>${first(id)}</b></td><td>${skillsOf(id).map(s => `${s.icon} ${s.n.replace(/ \(.*/,'')} <span class="gate ${s.ok?'open':'shut'}">${s.req.lvl?'Lv'+s.req.lvl:''}${s.req.flag?'+story':''}</span>`).join('<br>')}</td></tr>`).join('');
   return `<h2>Level gates</h2><div class="sm">Where each party member is gated, from the chapter breakdown. Details: docs/CHAPTER_GATES.md. Your party average is <b>Lv ${gateLv()}</b>.</div>
    <h4>Party members</h4><div class="panel"><table class="gtbl"><tr><th>Hero</th><th>Joins</th><th>Profile</th><th>Gate</th><th></th></tr>${joinRows}</table>
-     <div class="sm" style="margin-top:6px">A new member arrives at (party average − 1). Ya'Xing's chapter is provisional; Muxue Yan has no join chapter in the script yet.</div></div>
+     <div class="sm" style="margin-top:6px">A new member arrives at (party average − 1). Muxue Yan has not joined as of comic 022, and no join chapter is written yet.</div></div>
    <h4>Chapter level gates</h4><div class="panel"><table class="gtbl"><tr><th>Chapter</th><th>Needs</th><th>Why</th><th></th></tr>${chRows}</table>
      <div class="sm" style="margin-top:6px">Gated chapters stay locked until the average level of the party is reached. Wilds fights and training give the XP to catch up.</div></div>
    <h4>Skill gates</h4><div class="panel"><table class="gtbl">${skRows}</table></div>`;

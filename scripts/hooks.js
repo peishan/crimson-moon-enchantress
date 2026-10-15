@@ -2331,6 +2331,73 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"60": [
+{
+"id": "formation_reacts_to_cangyuan",
+"d": "The sealed door and its formation react whenever Cangyuan approaches",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_restriction_inscription_found",
+"d": "Xining finds a later-added inscription: a restriction placed on whoever enters",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_asks_if_ruyue_mattered",
+"d": "Xiyu asks if the woman was important to him: \"Yes... it's remembering what I believed about her\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_wont_pretend_to_know",
+"d": "\"This time, I won't pretend I know what awaits us.\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "voice_says_he_took_too_long",
+"d": "\"You always did take too long to understand.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"61": [
+{
+"id": "secondary_passage_found",
+"d": "An inscription describes a secondary passage that predates the alteration",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "closeness_worth_choosing",
+"d": "Cangyuan: closeness gives people something to lose, and something worth choosing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_kisses_cangyuan",
+"d": "Xiyu chooses to kiss Cangyuan; she tells him not to mistake it for a promise",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_cangyuan_relationship_changed",
+"d": "Something between Xiyu and Cangyuan has changed, and neither wishes to undo it",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

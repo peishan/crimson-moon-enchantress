@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['bounties','📜 Bounties'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
+const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
@@ -22,8 +22,8 @@ function render(){
   $('hday').textContent = '☀️ Day '+G.day;
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, bounties:rBounties, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen()) && (k!=='confidants' || relationsOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
+  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, bounties:rBounties, confidants:rConfidants, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 

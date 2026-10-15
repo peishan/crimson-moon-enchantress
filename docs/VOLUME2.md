@@ -52,3 +52,9 @@ V2 010 "The Mark That Hid Her", 011 "The First Breach", 012 "The First Flutter" 
 - **Flags:** `portrait_gallery_examined`, `departure_record_fragment_found`, `cangyuan_past_clue_found` are set as objectives are done. `second_door_open` stays false and `ruyue_identity_confirmed` stays false.
 - **Continuity safeguards followed:** Shen Ruyue is not identified as Cangyuan's former lover; the voice is not identified; no Crimson Thread Resonance, soul bond or forced attraction occurs; the second door stays closed.
 - **New art assets implied:** Xiyu's pale ivory-and-light-blue outfit with white or pale-blue ribbons and plum-white flowers, a more mature Cangyuan with dark layered hanfu (portrait variants), and an icon for the Torn Departure Record.
+
+## Comics 020-022 (author)
+- 020 "The Portrait Without a Face" art installed (the investigation already built; the page labels one of Xiyu's lines "Voice" in panel 6).
+- 021 "The Truth Beneath the Silence" (chapter 60) and 022 "The Kiss She Chose" (chapter 61); `LAST_CHAPTER` is now 61. In 021-022 Xining wears pale yellow-green with a yellow flower rather than her earlier blue-white.
+- 022: Xiyu kisses Cangyuan ("If I kiss you, don't mistake it for a promise."). This does **not** set `xiyu_chooses_cangyuan`, so Crimson Thread Resonance (dual cultivation) stays closed; it is for the author to decide when that gate opens.
+- Relationships: see docs/RELATIONSHIPS.md (Confidants tab).

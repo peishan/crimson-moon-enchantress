@@ -44,3 +44,11 @@ Ya'Xing stays away from the party after ch39 (recovering). The new comic 039 no 
 
 ## Comics 010-015 uploaded (author)
 V2 010 "The Mark That Hid Her", 011 "The First Breach", 012 "The First Flutter" (panel numbers on the page repeat 2 and 5), 013 "The Kindness He Remembered", 014 "The Choice to Stay" (Xining joins), 015 "The Bounty Beneath the Red Lantern". Internal chapters 49-54 now have real titles, summaries, events and hooks; the placeholder flag is removed. Relationship threads on the pages: Xiyu and Cangyuan (012, 014), Dongyue and Xining (013, 014).
+
+## Comics 016-020 (author) and the new questline
+- **Art installed:** V2 016 "The Distance Between Heartbeats" (Arc 3 finale), 017 "The Technique He Buried", 018 "The Name Behind the Seal", 019 "The Woman Behind the Door" (Arc 4: The Silence After the Spell). **020 "The Portrait Without a Face" has the author's script but no art yet** (script in `scripts/script_v2.js` as chapter 59, read in the story reader until the page is uploaded as `assets/comics/v2/ch20.webp`).
+- Internal chapters 55-59 (`LAST_CHAPTER` is now 59).
+- **Questline: The Broken Ward Network** (Bounties tab, unlocked by comic 016). Steps 55-58 follow the story. The last step, **The Portrait Without a Face**, has four objectives (examine the portrait gallery; recover the damaged departure record; investigate the second seal; determine whether the corridor is safe), needs Xiyu, Cangyuan, Xining and Dongyue as noted on each button, and completes chapter 59.
+- **Flags:** `portrait_gallery_examined`, `departure_record_fragment_found`, `cangyuan_past_clue_found` are set as objectives are done. `second_door_open` stays false and `ruyue_identity_confirmed` stays false.
+- **Continuity safeguards followed:** Shen Ruyue is not identified as Cangyuan's former lover; the voice is not identified; no Crimson Thread Resonance, soul bond or forced attraction occurs; the second door stays closed.
+- **New art assets implied:** Xiyu's pale ivory-and-light-blue outfit with white or pale-blue ribbons and plum-white flowers, a more mature Cangyuan with dark layered hanfu (portrait variants), and an icon for the Torn Departure Record.

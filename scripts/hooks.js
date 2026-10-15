@@ -2132,6 +2132,205 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"55": [
+{
+"id": "fragment_residue_still_active",
+"d": "The fragment is secured but its residue stays active",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_questions_her_heart",
+"d": "Xiyu admits she was disappointed when he let go: \"Why is my heart so difficult to control?\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_does_not_ask",
+"d": "Cangyuan finds Xiyu in the garden and does not ask what is wrong",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ward_network_lines_converge",
+"d": "Lines on the fragment converge on places where the island's wards have failed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "broken_ward_network_unlocked",
+"d": "Investigation unlocked: The Broken Ward Network",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"56": [
+{
+"id": "spirit_weaving_signature_recognised",
+"d": "Cangyuan recognises the technique: Spirit Weaving leaves a signature",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_remembers_teacher",
+"d": "A memory of a woman patiently teaching him to guide spiritual threads",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_linked_to_network",
+"d": "Xining: the fragment is linked to multiple locations; it is part of a network",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "eastern_shrine_old_name_found",
+"d": "An abandoned shrine in the eastern reaches carries an old, almost erased name",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"57": [
+{
+"id": "abandoned_shrine_reached",
+"d": "The group reaches the abandoned shrine; its gate bears the hooked symbol",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "shrine_inscription_is_a_record",
+"d": "The inscription is a record, not a ward",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "shen_ruyue_name_found",
+"d": "A name is carved beneath the first pattern: Shen Ruyue",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "record_deliberately_altered",
+"d": "Part of the record was deliberately altered by someone who knows the original technique",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "voice_greets_cangyuan",
+"d": "\"Cangyuan. You took your time coming home.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_opens_slightly",
+"d": "The seal opens only slightly",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"58": [
+{
+"id": "seal_recognises_cangyuan",
+"d": "The second seal responds to Cangyuan's spiritual signature",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_crimson_markings_added",
+"d": "Crimson markings were added to the formation after the original seal",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "techniques_react_on_touch",
+"d": "Xiyu's and Cangyuan's techniques react when their hands touch",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "corridor_entered",
+"d": "The party enters the corridor beyond the second door",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "scratched_portrait_seen",
+"d": "A row of faded portraits, one deliberately scratched away",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "unknown_woman_speaks",
+"d": "\"Ask the man beside you what he left here.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"59": [
+{
+"id": "portrait_gallery_examined",
+"d": "The portrait gallery is examined",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "departure_record_fragment_found",
+"d": "A torn departure record is found behind the empty frame",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_past_clue_found",
+"d": "A clue to Cangyuan's past: his hand hovers over the frame as in his memory",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_door_stays_closed",
+"d": "The second door stays closed (second_door_open = false)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ruyue_identity_unconfirmed",
+"d": "Shen Ruyue's identity and her relationship with Cangyuan remain unconfirmed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_respects_cangyuan_privacy",
+"d": "Xiyu is curious without being cruel; she does not demand his secrets",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

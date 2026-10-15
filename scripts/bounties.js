@@ -58,7 +58,7 @@ function redReport(){
   completeChapter(54).forEach(m => msgs.push(m));   // sets red_lantern_road_cleared; the chapter's own XP and bond
   return msgs;
 }
-function markHook(id){ if(!G.hooks[id]) G.hooks[id] = 54; }
+function markHook(id, ch){ if(!G.hooks[id]) G.hooks[id] = ch || 54; }
 
 /* ---------- repeatable road bounties ---------- */
 const REP_TEMPLATES = [
@@ -81,6 +81,69 @@ function repFight(i){
   tab = 'battle'; render();
 }
 
+/* ---------- investigation: THE BROKEN WARD NETWORK (Arc 4) ----------
+   Unlocked by Volume 2 comic 016 (chapter 55). Steps 55-58 follow the story; the last step, THE PORTRAIT WITHOUT A FACE (comic 020 = chapter 59),
+   has four objectives and completes chapter 59. Flags: portrait_gallery_examined, departure_record_fragment_found, cangyuan_past_clue_found
+   are set as they are done; second_door_open stays false and ruyue_identity_confirmed stays false (the party does not learn who she is yet). */
+const WQ = () => G.quest.ward;
+const WARD_STORY = [
+  [55, 'Notice that the fragment\'s lines converge on failed wards (comic 016)'],
+  [56, 'Trace the technique and the network on the map (comic 017)'],
+  [57, 'Reach the abandoned eastern shrine and read the name carved there (comic 018)'],
+  [58, 'Stand before the second sealed door (comic 019)'],
+];
+const PORTRAIT_OBJ = [
+  {k:'gallery', t:'Examine the portrait gallery', who:['xiyu','cangyuan'], all:true, need:[], btn:'🖼️ Examine the portraits'},
+  {k:'record',  t:'Recover the damaged departure record', who:['xining'], all:true, need:['gallery'], btn:'📜 Search behind the empty frame'},
+  {k:'seal',    t:'Investigate the second seal', who:['cangyuan','xiyu'], all:false, need:['gallery'], btn:'🧵 Study the second seal'},
+  {k:'safe',    t:'Determine whether the corridor is safe', who:['dongyue','xining'], all:false, need:['record','seal'], btn:'🔦 Judge the corridor'},
+];
+function portraitBlock(o){
+  const missing = o.who.filter(id => !G.party.includes(id)).map(id => first(id));
+  if(o.all ? missing.length : missing.length === o.who.length) return (o.all ? missing.join(' and ') : o.who.map(first).join(' or ')) + ' must be in the party.';
+  const prior = o.need.filter(k => !WQ()[k]); if(prior.length) return 'Finish the earlier objectives first.';
+  return '';
+}
+function portraitDo(k){
+  const o = PORTRAIT_OBJ.find(x => x.k === k); if(!o || G.ch < 58 || WQ()[k]) return [];
+  const why = portraitBlock(o); if(why) return [why];
+  WQ()[k] = true; const msgs = [];
+  if(k === 'gallery'){
+    G.flags.portrait_gallery_examined = G.flags.cangyuan_past_clue_found = true; markHook('portrait_gallery_examined', 59); markHook('cangyuan_past_clue_found', 59);
+    msgs.push('🖼️ Faded portraits of cultivators in ceremonial robes line the walls. One is slashed beyond recognition; another was taken down, leaving a clean rectangle in the dust. "Someone took this one down recently." "Or someone never wanted it seen."',
+              '🤚 Cangyuan\'s fingers stop above the frame in the same precise position as in his memory. "Someone once taught me not to touch what I didn\'t understand." "Did you listen?" "Not always."',
+              '✦ Clue found: Cangyuan\'s past (he once belonged to the place that built this formation).');
+  } else if(k === 'record'){
+    G.flags.departure_record_fragment_found = true; markHook('departure_record_fragment_found', 59); addItems([{id:'departure_record', qty:1}]);
+    msgs.push('📜 Behind the empty frame Xining finds a narrow compartment and a brittle strip of paper, its lower half torn away. "This isn\'t a personal letter. It looks like part of a departure record. One name has been erased; the rest mentions a departure from the sect."',
+              '"Is it yours?" "I don\'t know." He answers too quickly. Xiyu notices, and does not challenge him.', 'Received 📜 Torn Departure Record.');
+  } else if(k === 'seal'){
+    markHook('seal_recognises_cangyuan', 59);
+    msgs.push('🧵 The second door\'s hooked symbol glows. Golden Spirit Weaving patterns rise beneath the stone while the black-red corruption retreats into narrow cracks. From behind the door a quiet, almost amused voice: "Still cautious, Cangyuan? You weren\'t always so careful."',
+              '"Something has disturbed the formation." "From the other side?" "Possibly."');
+  } else {
+    msgs.push('🔦 Dongyue and Xining read the corridor: the formation is unstable and something on the other side has disturbed it. "Then we shouldn\'t proceed until we understand what changed." Cangyuan: "We shouldn\'t mistake a familiar voice for a trustworthy one." The door\'s symbol dims, leaving a thin line of crimson light beneath its edge.',
+              '✦ The corridor is not yet safe. The second door stays closed.');
+  }
+  gainXp(Math.round(storyXp(59)*.1), G.party).forEach(m => msgs.push(m));
+  if(PORTRAIT_OBJ.every(x => WQ()[x.k])){
+    G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false;
+    msgs.push('Some doors preserve what was lost. Others preserve what someone was afraid to remember.');
+    completeChapter(59).forEach(m => msgs.push(m));
+  }
+  return msgs;
+}
+function wardQuestHtml(){
+  if(G.ch < 55) return '';
+  const story = WARD_STORY.map(([n,t]) => `<div class="li">${G.ch>=n?'✔':'○'} ${t}</div>`).join('');
+  const portraitOpen = G.ch >= 58, done = PORTRAIT_OBJ.every(o => WQ()[o.k]);
+  const objs = PORTRAIT_OBJ.map(o => { const d = !!WQ()[o.k], why = portraitOpen && !d ? portraitBlock(o) : '';
+    return `<div class="li">${d?'✔':portraitOpen&&!why?'▶':'○'} ${o.t}${portraitOpen&&!d?`<div><button class="pri" ${why?'disabled':''} onclick="act(()=>portraitDo('${o.k}'))">${o.btn}</button>${why?`<span class="sm" style="color:#e88a8a"> ${why}</span>`:''}</div>`:''}</div>`; }).join('');
+  return `<div class="panel ${done?'good':''}"><h3>🔎 The Broken Ward Network</h3><div class="sm">Arc 4 investigation · the Red Lantern Road was only one point on the map.</div>${story}
+    <h4 style="margin:8px 0 2px">The Portrait Without a Face ${done?'· complete':''}</h4>${portraitOpen?'':'<div class="sm">Opens after Volume 2, comic 019.</div>'}${objs}
+    ${done?'<div class="sm">The second door is still closed. Who the voice is has not been learned.</div>':''}</div>`;
+}
+
 /* ---------- the Bounties tab ---------- */
 function rBounties(){
   if(!bountyBoardOpen()) return '<h2>Bounties</h2><div class="sm">🔒 The bounty board opens after Volume 2, comic 014.</div>';
@@ -98,5 +161,5 @@ function rBounties(){
   const rep = st>=5 ? repBoard().map(b => { const done = G.bounty.rep.done.includes(b.idx);
       return `<div class="card ${done?'lock':''}" style="cursor:default"><span class="big">📜</span><div class="fl"><b>${b.n}</b><div class="sm">${b.text}</div><div class="sm">💰 ${b.gold} + crafting materials · foes Lv ${b.lv}</div></div>${done?'<span class="sm">✔ done</span>':`<button onclick="repFight(${b.idx})">Take it</button>`}</div>`; }).join('')
       + `<div class="sm">New road disturbances appear each in-game day. ${G.bounty.count} completed.</div>` : '<div class="sm">Smaller road bounties appear on the board once the Red Lantern Road is cleared.</div>';
-  return `<h2>Bounties</h2>${flashHtml()}${story}<h4>Road disturbances (repeatable)</h4>${rep}`;
+  return `<h2>Bounties</h2>${flashHtml()}${story}${wardQuestHtml()}<h4>Road disturbances (repeatable)</h4>${rep}`;
 }

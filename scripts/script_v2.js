@@ -215,5 +215,278 @@ Object.assign(SCRIPT, {
     ]
    }
   ]
+ },
+
+ "59": {
+  "title": "The Portrait Without a Face",
+  "src": "Volume 2 comic 020 (author's script; no art yet)",
+  "scenes": [
+   {
+    "h": "The Question",
+    "l": [
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You heard her. What did you leave behind?\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"A great many things.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"That isn't an answer.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"No. It isn't.\""
+     },
+     {
+      "k": "plain",
+      "t": "His usual teasing smile is absent."
+     }
+    ]
+   },
+   {
+    "h": "The Name He Won't Give",
+    "l": [
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"If she knows you, she may know how to open the seal. But that doesn't mean we should trust her.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"You shouldn't.\""
+     },
+     {
+      "k": "say",
+      "w": "Xining",
+      "t": "\"Then why does the formation respond to you?\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Because I once belonged to the place that created it.\""
+     },
+     {
+      "k": "plain",
+      "t": "The others exchange glances. He offers no further explanation."
+     }
+    ]
+   },
+   {
+    "h": "The Portrait Gallery",
+    "l": [
+     {
+      "k": "plain",
+      "t": "Old portraits line the walls, depicting cultivators in ceremonial robes. One portrait has been slashed beyond recognition; another has been removed, leaving a clean rectangle amid centuries of dust."
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Someone took this one down recently.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Or someone never wanted it seen.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You keep giving me two possibilities.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"The truth rarely announces which one it is.\""
+     }
+    ]
+   },
+   {
+    "h": "A Familiar Gesture",
+    "l": [
+     {
+      "k": "plain",
+      "t": "Cangyuan reaches past her to examine the frame, then stops before touching it. His fingers hover in the same precise position shown in the memory of his former cultivation hall."
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You did that before.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Did what?\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Held your hand as though someone were correcting your technique.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Someone once taught me not to touch what I didn't understand.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Did you listen?\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Not always.\""
+     }
+    ]
+   },
+   {
+    "h": "A Record of Departure",
+    "l": [
+     {
+      "k": "plain",
+      "t": "Xining discovers a narrow compartment behind the empty frame. Inside lies a brittle strip of paper, its ink faded and its lower half torn away."
+     },
+     {
+      "k": "say",
+      "w": "Xining",
+      "t": "\"This isn't a personal letter. It looks like part of a departure record.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Can you read it?\""
+     },
+     {
+      "k": "say",
+      "w": "Xining",
+      "t": "\"Only fragments. One name has been erased. The remaining words mention a departure from the sect.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Is it yours?\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"I don't know.\""
+     },
+     {
+      "k": "plain",
+      "t": "He answers too quickly. Xiyu notices, but doesn't challenge him."
+     }
+    ]
+   },
+   {
+    "h": "The Cost of Silence",
+    "l": [
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You don't have to tell me everything.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"That sounds unlike you.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"I can be curious without being cruel.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"And if the truth changes how you see me?\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Then I'll decide what it means after I hear it.\""
+     },
+     {
+      "k": "plain",
+      "t": "For a brief moment, neither looks away."
+     }
+    ]
+   },
+   {
+    "h": "The Seal Stirs",
+    "l": [
+     {
+      "k": "plain",
+      "t": "A low vibration travels through the corridor. The second door's hooked symbol glows faintly. Golden Spirit Weaving patterns appear beneath the stone, while the black-red corruption retreats into narrow cracks."
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Something has disturbed the formation.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"From the other side?\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Possibly.\""
+     },
+     {
+      "k": "say",
+      "w": "Xining",
+      "t": "\"Then we shouldn't proceed until we understand what changed.\""
+     },
+     {
+      "k": "say",
+      "w": "Voice",
+      "t": "\"Still cautious, Cangyuan? You weren't always so careful.\""
+     }
+    ]
+   },
+   {
+    "h": "The Unfinished Past",
+    "l": [
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"She remembers who you were.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"Perhaps.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"And you remember her.\""
+     },
+     {
+      "k": "say",
+      "w": "Cangyuan",
+      "t": "\"I remember enough to know that we shouldn't mistake a familiar voice for a trustworthy one.\""
+     },
+     {
+      "k": "plain",
+      "t": "The door's symbol dims, leaving a thin line of crimson light beneath its edge."
+     },
+     {
+      "k": "plain",
+      "t": "Some doors preserve what was lost. Others preserve what someone was afraid to remember."
+     }
+    ]
+   }
+  ]
  }
+
 });

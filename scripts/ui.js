@@ -133,6 +133,8 @@ function rChapter(n){
     foot = `<div class="panel"><b>⚔️ Battle</b><div class="sm">${c.battle.map(f=>ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(' · ')}</div>
       <div class="sm">Fighting: ${fighterIds(n).map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')} (Lv ${fightersLv(n)} average)</div>
       <button class="pri" onclick="chapterFight(${n})">${done?'Replay battle':'Begin battle'}</button></div>`;
+  } else if(c.quest && !done){
+    foot = `<div class="panel"><b>🔎 Investigation chapter</b><div class="sm">This chapter is completed by finishing the investigation: The Portrait Without a Face.</div>${G.ch>=58?`<button class="pri" onclick="showTab('bounties')">Open the investigation</button>`:'<div class="sm">Complete the previous chapter first.</div>'}</div>`;
   } else if(c.bounty && !done){
     foot = `<div class="panel"><b>📜 Bounty chapter</b><div class="sm">This chapter is completed by clearing the bounty and reporting back.</div>${bountyBoardOpen()?`<button class="pri" onclick="showTab('bounties')">Open the bounty board</button>`:'<div class="sm">The board opens after Volume 2, comic 014.</div>'}</div>`;
   } else if(!done) foot = `<button class="pri" onclick="finishChapter(${n})">Complete chapter (+${c.sxp} XP)</button>`;

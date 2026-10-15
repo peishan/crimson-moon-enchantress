@@ -38,3 +38,6 @@ Comic 001 has Xiyu declining to "continue as we were at the Ice Temple". I read 
 - Xiyu learning Spirit Weaving as a skill (comic 007 teaches it; flag `spirit_weaving_learned` is set at ch 46, no skill yet).
 - Volume 2 hunting zones, enemies and place art (the sanctuary, the pavilion, the market).
 - Bond beats for Cangyuan beyond small gains at 46–48; Xining's chapters.
+
+## Open thread: Ya'Xing (author, to revisit in Volume 3)
+Ya'Xing stays away from the party after ch39 (recovering). The new comic 039 no longer shows this on the page; the author will revisit him in Volume 3, so the game keeps him away until then.

@@ -27,7 +27,7 @@ A conversation can unlock (1) something a character has never told the group (a 
 | `xiyu_cangyuan_cost` | Xiyu asks Cangyuan what it cost him (does not name Ruyue as a lover) | ch61, trust 25 |
 | `cangyuan_xiyu_past` | Cangyuan asks about Xiyu's past (Xu Hanshan, Dongyue, still deciding) | ch61, trust 25 |
 
-The facts in these conversations (Dongyue's parents' fear becoming control, his leaving Yilong to decide for himself, Xining's master's unanswered questions, Xiyu's history with Hanshan) come from the proposal's illustrative examples. Confirm or revise them against the author's canon.
+The facts in these conversations (Dongyue's parents' fear becoming control, his leaving Yilong to decide for himself, Xining's master's unanswered questions, Xiyu's history with Hanshan) come from the proposal's illustrative examples. **Confirmed by the author as canon.**
 
 ## Next
 Xiyu-Dongyue conversations (the wedding, her need for time), Xiyu-Xining, Dongyue-Cangyuan; scenes unlocked by trust and affection; consequences in later arguments and investigations.

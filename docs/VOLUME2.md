@@ -55,6 +55,6 @@ V2 010 "The Mark That Hid Her", 011 "The First Breach", 012 "The First Flutter" 
 
 ## Comics 020-022 (author)
 - 020 "The Portrait Without a Face" art installed (the investigation already built; the page labels one of Xiyu's lines "Voice" in panel 6).
-- 021 "The Truth Beneath the Silence" (chapter 60) and 022 "The Kiss She Chose" (chapter 61); `LAST_CHAPTER` is now 61. In 021-022 Xining wears pale yellow-green with a yellow flower rather than her earlier blue-white.
-- 022: Xiyu kisses Cangyuan ("If I kiss you, don't mistake it for a promise."). This does **not** set `xiyu_chooses_cangyuan`, so Crimson Thread Resonance (dual cultivation) stays closed; it is for the author to decide when that gate opens.
+- 021 "The Truth Beneath the Silence" (chapter 60) and 022 "The Kiss She Chose" (chapter 61); `LAST_CHAPTER` is now 61. In 021-022 Xining wears pale yellow-green with a yellow flower rather than her earlier blue-white. **Intended:** the author planned a broad wardrobe for every character (Xiyu, Cangyuan, Dongyue and Xining all have options), so outfit changes are normal and are not continuity errors.
+- 022: Xiyu kisses Cangyuan ("If I kiss you, don't mistake it for a promise."). This does **not** set `xiyu_chooses_cangyuan`, so Crimson Thread Resonance (dual cultivation) stays closed; the author says that comes later (not decided yet).
 - Relationships: see docs/RELATIONSHIPS.md (Confidants tab).

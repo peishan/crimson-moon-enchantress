@@ -2238,44 +2238,128 @@ const SCRIPT = {
   "pending": true
  },
  "31": {
-  "title": "Script to Recover",
-  "src": "Script comic 031 (Exact title and scene sequence unavailable.)",
+  "title": "The Ritual Chamber",
+  "src": "Script comic 031 (Matches the author-edited page.)",
   "scenes": [
    {
-    "h": "Outline (hook list)",
+    "h": "The Ancient Chamber",
     "l": [
      {
-      "k": "plain",
-      "t": "OUTLINE from the author's hook list. There is no approved script for this chapter yet."
+      "k": "nar",
+      "t": "The ancient ritual chamber was filled, her once glow of a formation long left undisturbed."
      },
      {
-      "k": "plain",
-      "t": "• Mark Xiyu's life-threatening condition"
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Xiyu, Xiyu. You mustn't give up on me.\""
      },
      {
-      "k": "plain",
-      "t": "• Record completion of the first ritual phase"
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Xiyu... please don't sleep...\""
      },
      {
-      "k": "plain",
-      "t": "• Trigger Minami's appearance"
+      "k": "nar",
+      "t": "Pain shot through him, mirroring what she was enduring. He had not much time left."
      },
      {
-      "k": "plain",
-      "t": "• Begin the second phase of the ritual"
+      "k": "nar",
+      "t": "He prayed to the deities he knew in Yilong, but to no avail."
      },
      {
-      "k": "plain",
-      "t": "• Xiyu tells him the spell joined their energies but the union is not complete (author-edited page)"
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Please, Muxue Yan... Ao Yun... Save her!\""
+     }
+    ]
+   },
+   {
+    "h": "The Goddess",
+    "l": [
+     {
+      "k": "nar",
+      "t": "At his third plea, the room rustled with the sound of leaves, and a dark purple light descended over her."
      },
      {
-      "k": "plain",
-      "t": "• Dongyue does not understand the bond and believes they are bonded for life (author-confirmed)"
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Goddess... Minami?\""
+     },
+     {
+      "k": "say",
+      "w": "Minami",
+      "t": "\"Xiyu, you need to embrace your feelings and accept who you are.\""
+     },
+     {
+      "k": "nar",
+      "t": "With that, the goddess vanished, leaving Xiyu in awe."
+     },
+     {
+      "k": "nar",
+      "t": "Perhaps the dark moon goddess had answered her prayers."
+     }
+    ]
+   },
+   {
+    "h": "I Choose You",
+    "l": [
+     {
+      "k": "nar",
+      "t": "She found her strength returning, though she remained weak."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Xiyu, my love. It's time for us to start the ritual.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Dongyue... are you sure?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"I've already completed the first phase --- the summoning. Now it's time ---\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"I'm here because I choose you, Xiyu. Not because of a bond. I don't want to lose you. But I won't claim your future belongs to me.\""
+     },
+     {
+      "k": "nar",
+      "t": "She remembered the goddess's words... and wondered what it meant to accept her own feelings."
+     }
+    ]
+   },
+   {
+    "h": "The Second Phase",
+    "l": [
+     {
+      "k": "nar",
+      "t": "He carefully lifted her veil away from her face, giving her time to object."
+     },
+     {
+      "k": "nar",
+      "t": "This time, she answered him of her own accord."
+     },
+     {
+      "k": "nar",
+      "t": "The candles wavered, and a gust of wind formed inside the room."
+     },
+     {
+      "k": "nar",
+      "t": "The second phase of the ritual had begun."
+     },
+     {
+      "k": "nar",
+      "t": "Neither knew what the next phase would demand of them."
      }
     ]
    }
   ],
-  "pending": true
+  "pending": false
  },
  "32": {
   "title": "Script to Recover",
@@ -2311,14 +2395,29 @@ const SCRIPT = {
  },
  "33": {
   "title": "Rainbow Dream",
-  "src": "Script comic 033 (Reconstructed from the surviving chapter description.)",
+  "src": "Script comic 033 (Matches the author-edited page.)",
   "scenes": [
    {
-    "h": "After the Ritual",
+    "h": "The Pain Fades",
     "l": [
      {
-      "k": "plain",
-      "t": "Xiyu's strength returns, and the pain begins to fade. Resting close to Dongyue, she experiences a warmth she has rarely known."
+      "k": "nar",
+      "t": "At last, the pain began to fade."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Xiyu? How are you feeling?\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Like I've been trampled by a stampede.\""
+     },
+     {
+      "k": "thought",
+      "w": "Dongyue",
+      "t": "\"He really was afraid of losing me.\""
      }
     ]
    },
@@ -2326,26 +2425,63 @@ const SCRIPT = {
     "h": "Without the Veil",
     "l": [
      {
-      "k": "plain",
-      "t": "Xiyu realises Dongyue has removed her veil. Being seen without it feels strangely more exposing than resting beneath the blankets."
-     }
-    ]
-   },
-   {
-    "h": "A Different Kind of Comfort",
-    "l": [
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"My veil...\""
+     },
      {
-      "k": "plain",
-      "t": "She reflects that Dongyue feels different from the men she has known. His presence is clean, familiar, and reassuring."
-     }
-    ]
-   },
-   {
-    "h": "Embarrassment and Anger",
-    "l": [
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"It was in the way while I was helping you. I should have told you.\""
+     },
      {
-      "k": "plain",
-      "t": "Dongyue admits that he lost control earlier. Xiyu, flustered and defensive, tells him to leave if he will not act like a man around her."
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"I'm not used to people seeing me like this.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Then I won't look unless you want me to.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"He makes it difficult to keep thinking the worst of him.\""
+     },
+     {
+      "k": "nar",
+      "t": "She had known men who wanted something from her. His quiet presence felt different."
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Why are you still here?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Because you shouldn't have to wake up alone.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"It's only kindness. So why does it unsettle me so much?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Earlier, I let my emotions get the better of me. I'm sorry if I made you uncomfortable.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"If you're going to sit there looking so awkward, you may as well leave!\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"All right. I'll be just outside if you need anything.\""
      }
     ]
    },
@@ -2353,8 +2489,22 @@ const SCRIPT = {
     "h": "The Rainbow Dream",
     "l": [
      {
-      "k": "plain",
-      "t": "In a dreamlike vision, a rainbow bridge and tender words blur the boundary between memory, hope, and desire. Xiyu wonders what a future with Dongyue might mean."
+      "k": "nar",
+      "t": "Between waking and sleep, her thoughts drifted somewhere beyond the temple."
+     },
+     {
+      "k": "say",
+      "w": "Dongyue (dream)",
+      "t": "\"Will you walk beside me?\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Is this a promise... or merely a wish?\""
+     },
+     {
+      "k": "nar",
+      "t": "The dream offered no prophecy. Only a question her waking heart was not yet ready to answer."
      }
     ]
    },
@@ -2362,12 +2512,22 @@ const SCRIPT = {
     "h": "The Drum",
     "l": [
      {
-      "k": "plain",
-      "t": "A drum sounds and pulls her back toward the waking world."
+      "k": "nar",
+      "t": "A sudden drumbeat echoed through the dream. DOOM..."
      },
      {
-      "k": "plain",
-      "t": "covered shoulders, and expressions rather than nudity."
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"It was only a dream.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Then why do I still wonder what it would be like to walk beside him?\""
+     },
+     {
+      "k": "nar",
+      "t": "No thread of fate could answer for her. Whatever grew between them would have to be discovered --- one choice at a time."
      }
     ]
    }
@@ -2694,55 +2854,136 @@ const SCRIPT = {
  },
  "38": {
   "title": "Communication",
-  "src": "Script comic 038 (Reconstructed from the surviving chapter title and surroundi)",
+  "src": "Script comic 038 (Matches the author-edited page.)",
   "scenes": [
    {
-    "h": "What Remains Unsaid",
+    "h": "The Hardest Truths",
     "l": [
      {
-      "k": "plain",
-      "t": "Xiyu and Dongyue reflect on the trials inside the Ice Temple and the truths they have not fully shared."
-     }
-    ]
-   },
-   {
-    "h": "A Difficult Conversation",
-    "l": [
+      "k": "nar",
+      "t": "The trials were nearing their end. Yet the hardest truths remained unspoken."
+     },
      {
-      "k": "plain",
-      "t": "Dongyue asks Xiyu not to bear every burden alone. Xiyu struggles to explain her fear of trusting someone who might leave her."
-     }
-    ]
-   },
-   {
-    "h": "A Promise to Speak",
-    "l": [
-     {
-      "k": "plain",
-      "t": "They agree that their bond cannot replace honest communication."
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Why is it so difficult to tell him what I truly feel?\""
      },
      {
       "k": "say",
       "w": "Dongyue",
-      "t": "\"You don't have to tell me everything at once. Just don't shut me out forever.\""
+      "t": "\"Xiyu. May I speak with you?\""
      },
      {
       "k": "say",
       "w": "Xiyu",
-      "t": "\"I will try.\""
+      "t": "\"You don't need my permission to speak.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Perhaps. But I would rather you wanted to hear me.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"You already know what happened. The ritual, the scroll... all of it.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"I know what we went through. I don't know everything you are afraid to tell me.\""
      }
     ]
    },
    {
-    "h": "The Journey Nears Its End",
+    "h": "The Scroll",
     "l": [
      {
-      "k": "plain",
-      "t": "The temple's trials are drawing to a close, but Xiyu's questions about her father and her identity remain unresolved."
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"I used that spell because I couldn't bear to watch you die. I never meant to decide your future for you.\""
      },
      {
-      "k": "plain",
-      "t": "Replace dialogue and scene details if the original Chapter 038 script is recovered."
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"And if I don't want the future you imagined?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Then I need to listen.\""
+     },
+     {
+      "k": "nar",
+      "t": "Their spiritual energies had touched through the ritual. What that connection meant for their future was not written in the scroll."
+     }
+    ]
+   },
+   {
+    "h": "Magic Is Not Understanding",
+    "l": [
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Being connected by magic doesn't mean we understand each other.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"No. And it doesn't give me the right to ask you to feel something you don't.\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"He could demand an answer. Instead, he is waiting for mine.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"People leave. They make promises, then find a reason to abandon them.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"I can't promise that we will never hurt each other. But I can promise to speak honestly with you.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"And if the truth changes everything?\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Then we face the truth. Not a future chosen for us by fear --- or by magic.\""
+     }
+    ]
+   },
+   {
+    "h": "Take My Hand",
+    "l": [
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"You don't have to tell me everything today. Just don't shut me out forever.\""
+     },
+     {
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"I will try. But I need time.\""
+     },
+     {
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Then take it.\""
+     },
+     {
+      "k": "nar",
+      "t": "For once, Xiyu allowed herself to take a step without knowing where the path would lead."
+     },
+     {
+      "k": "nar",
+      "t": "Their paths had brought them together. Love would require something more; the courage to speak, the patience to listen, and the willingness to understand."
      }
     ]
    }
@@ -2751,74 +2992,46 @@ const SCRIPT = {
  },
  "39": {
   "title": "Return to the Island",
-  "src": "Script comic 039 (Reconstructed from the approved 16-panel finale draft.)",
+  "src": "Script comic 039 (**Volume 1 / Arc 1 Finale** Matches the author-edited page.)",
   "scenes": [
    {
-    "h": "A Farewell to the Temple",
+    "h": "Return",
     "l": [
      {
-      "k": "plain",
-      "t": "The crystalline Ice Temple rises around the travellers."
+      "k": "nar",
+      "t": "The trials were nearing their end. Yet the hardest truths remained unspoken."
      },
      {
       "k": "thought",
       "w": "Xiyu",
-      "t": "\"Will we ever be able to return here again, if we wished?\""
-     }
-    ]
-   },
-   {
-    "h": "The Final Preparations",
-    "l": [
+      "t": "\"Will we ever return here, if we wish to?\""
+     },
      {
-      "k": "plain",
-      "t": "Xiyu asks whether everyone is ready. Dongyue says they will leave as soon as Muxue Yan is prepared."
-     }
-    ]
-   },
-   {
-    "h": "A Final Goodbye",
-    "l": [
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"Is everyone ready?\""
+     },
      {
-      "k": "plain",
-      "t": "Muxue Yan, with his established long white hair, stands beside Ao Yun's glass casket to bid farewell."
-     }
-    ]
-   },
-   {
-    "h": "The Cost of Survival",
-    "l": [
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"We can leave once your father is prepared.\""
+     },
      {
-      "k": "plain",
-      "t": "Dongyue remembers their injured companions and regrets that he could not protect them all."
-     }
-    ]
-   },
-   {
-    "h": "A Father She Barely Knows",
-    "l": [
+      "k": "nar",
+      "t": "They had survived the temple. But the answers waiting at home might prove harder to face."
+     },
      {
-      "k": "plain",
-      "t": "Xiyu wonders whether Yan loves her or needs her for a purpose."
+      "k": "nar",
+      "t": "Some farewells lasted far longer than a lifetime."
      },
      {
       "k": "thought",
       "w": "Xiyu",
       "t": "\"Does he love me... or does he need me for something?\""
-     }
-    ]
-   },
-   {
-    "h": "Husband and Wife",
-    "l": [
-     {
-      "k": "plain",
-      "t": "In private, Dongyue tells Xiyu he is not angry that she concealed the truth to spare him pain."
      },
      {
-      "k": "say",
-      "w": "Dongyue",
-      "t": "\"I want us to talk. I'm not a stranger. I'm your husband.\""
+      "k": "nar",
+      "t": "Blood had given them a connection. Trust would have to be built."
      }
     ]
    },
@@ -2826,128 +3039,71 @@ const SCRIPT = {
     "h": "Give Me Time",
     "l": [
      {
-      "k": "plain",
-      "t": "Xiyu admits that she needs time to believe their relationship is real."
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Are you still angry with me?\""
      },
      {
       "k": "say",
       "w": "Xiyu",
-      "t": "\"I can't just accept you.\""
-     }
-    ]
-   },
-   {
-    "h": "His Promise",
-    "l": [
-     {
-      "k": "plain",
-      "t": "Dongyue takes her hand."
+      "t": "\"I don't know what I feel.\""
      },
      {
       "k": "say",
       "w": "Dongyue",
-      "t": "\"Then I'll give you that time. I'll keep choosing you, every day.\""
-     }
-    ]
-   },
-   {
-    "h": "The Night Before Home",
-    "l": [
-     {
-      "k": "plain",
-      "t": "Xiyu lies awake beneath the blanket, troubled by an inexplicable dread about returning to Muxue."
-     }
-    ]
-   },
-   {
-    "h": "A Small Flame",
-    "l": [
-     {
-      "k": "plain",
-      "t": "She conjures a tiny flame and looks at Dongyue as he sleeps."
-     },
-     {
-      "k": "thought",
-      "w": "Xiyu",
-      "t": "\"Why am I still afraid to trust you?\""
-     }
-    ]
-   },
-   {
-    "h": "Still Beside Her",
-    "l": [
-     {
-      "k": "plain",
-      "t": "Dongyue wakes and draws her close, keeping the scene modest beneath the blanket."
-     },
-     {
-      "k": "say",
-      "w": "Dongyue",
-      "t": "\"Are you happy to be going home?\""
+      "t": "\"I want us to talk. I'm not a stranger, Xiyu. I'm your husband.\""
      },
      {
       "k": "say",
       "w": "Xiyu",
-      "t": "\"I'm tired, Dongyue.\""
-     }
-    ]
-   },
-   {
-    "h": "At Last, Sleep",
-    "l": [
-     {
-      "k": "plain",
-      "t": "Xiyu falls asleep against him. Dongyue quietly watches over her."
+      "t": "\"I can't simply accept everything because we went through that ritual... or because we had a wedding.\""
      },
      {
-      "k": "thought",
+      "k": "say",
       "w": "Dongyue",
-      "t": "\"Even if I can't give you eternity, I will give you my utmost.\""
-     }
-    ]
-   },
-   {
-    "h": "The Temple Awaits",
-    "l": [
+      "t": "\"I wouldn't ask you to.\""
+     },
      {
-      "k": "plain",
-      "t": "At dawn, some followers prepare to leave while others pledge to remain and guard Ao Yun's remains and the temple."
-     }
-    ]
-   },
-   {
-    "h": "The Way Home",
-    "l": [
+      "k": "say",
+      "w": "Xiyu",
+      "t": "\"I need time to understand what I want. I can't promise you the future you might hope for.\""
+     },
      {
-      "k": "plain",
-      "t": "Xiyu, Dongyue, and Xiao Tian approach the departure portal."
+      "k": "say",
+      "w": "Dongyue",
+      "t": "\"Then I'll give you that time. I'll keep choosing to stand beside you, as long as you want me there.\""
      },
      {
       "k": "thought",
       "w": "Xiyu",
-      "t": "\"Muxue... I'm coming home.\""
-     }
-    ]
-   },
-   {
-    "h": "A Shadow Over Muxue",
-    "l": [
-     {
-      "k": "plain",
-      "t": "The island appears beautiful and familiar, but ominous clouds gather over the mountains beneath the shifting moons."
-     }
-    ]
-   },
-   {
-    "h": "End of Volume 1",
-    "l": [
-     {
-      "k": "plain",
-      "t": "The couple steps toward the light as crimson petals sweep across the scene."
+      "t": "\"Why is it so difficult to tell him what I truly feel?\""
      },
      {
       "k": "nar",
-      "t": "\"Their journey through the Ice Temple had ended. Their true trials were only beginning.\""
+      "t": "His promise could not erase her doubts. But he had left the choice in her hands."
+     }
+    ]
+   },
+   {
+    "h": "Home",
+    "l": [
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"Why do I dread returning home?\""
+     },
+     {
+      "k": "thought",
+      "w": "Xiyu",
+      "t": "\"My father is waiting for me. My home is waiting for me. So why does it feel as though everything is about to change?\""
+     },
+     {
+      "k": "nar",
+      "t": "She had spent so long longing for a place to belong. Now that home was within reach, she feared what it might ask of her."
+     },
+     {
+      "k": "nar",
+      "t": "The ritual had brought them through the darkness. Their wedding had given them a name for what they were to each other. But neither magic nor ceremony could decide what their hearts would become. Ahead lay Muxue --- and the father Xiyu was still learning to understand."
      }
     ]
    }

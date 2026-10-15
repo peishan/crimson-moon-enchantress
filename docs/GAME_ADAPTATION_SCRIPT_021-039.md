@@ -353,13 +353,61 @@ every panel. Do not treat the erroneous hair colour as canon.
 
 ------------------------------------------------------------------------
 
-# Comic Chapter 031 --- Script to Recover
+# Comic Chapter 031 --- The Ritual Chamber
 
-**Status:** Exact title and scene sequence unavailable.
+**Status:** Matches the author-edited page.
 
-Continuity: Xiyu and Dongyue remain inside the Ice Temple; the soul-bond
-deadline and Xiyu's weakening condition are active concerns. Do not add
-a new major event without checking the original source material.
+### Scene 1 --- The Ancient Chamber
+
+**Narration:** The ancient ritual chamber was filled, her once glow of a formation long left undisturbed.
+
+**Dongyue:** "Xiyu, Xiyu. You mustn't give up on me."
+
+**Xiyu:** "Xiyu... please don't sleep..."
+
+**Narration:** Pain shot through him, mirroring what she was enduring. He had not much time left.
+
+**Narration:** He prayed to the deities he knew in Yilong, but to no avail.
+
+**Dongyue:** "Please, Muxue Yan... Ao Yun... Save her!"
+
+### Scene 2 --- The Goddess
+
+**Narration:** At his third plea, the room rustled with the sound of leaves, and a dark purple light descended over her.
+
+**Xiyu:** "Goddess... Minami?"
+
+**Minami:** "Xiyu, you need to embrace your feelings and accept who you are."
+
+**Narration:** With that, the goddess vanished, leaving Xiyu in awe.
+
+**Narration:** Perhaps the dark moon goddess had answered her prayers.
+
+### Scene 3 --- I Choose You
+
+**Narration:** She found her strength returning, though she remained weak.
+
+**Dongyue:** "Xiyu, my love. It's time for us to start the ritual."
+
+**Xiyu:** "Dongyue... are you sure?"
+
+**Dongyue:** "I've already completed the first phase --- the summoning. Now it's time ---"
+
+**Dongyue:** "I'm here because I choose you, Xiyu. Not because of a bond. I don't want to lose you. But I won't claim your future belongs to me."
+
+**Narration:** She remembered the goddess's words... and wondered what it meant to accept her own feelings.
+
+### Scene 4 --- The Second Phase
+
+**Narration:** He carefully lifted her veil away from her face, giving her time to object.
+
+**Narration:** This time, she answered him of her own accord.
+
+**Narration:** The candles wavered, and a gust of wind formed inside the room.
+
+**Narration:** The second phase of the ritual had begun.
+
+**Narration:** Neither knew what the next phase would demand of them.
 
 ------------------------------------------------------------------------
 
@@ -375,40 +423,63 @@ script if available.
 
 # Comic Chapter 033 --- Rainbow Dream
 
-**Status:** Reconstructed from the surviving chapter description.
+**Status:** Matches the author-edited page.
 
-### Scene 1 --- After the Ritual
+### Scene 1 --- The Pain Fades
 
-Xiyu's strength returns, and the pain begins to fade. Resting close to
-Dongyue, she experiences a warmth she has rarely known.
+**Narration:** At last, the pain began to fade.
+
+**Dongyue:** "Xiyu? How are you feeling?"
+
+**Xiyu:** "Like I've been trampled by a stampede."
+
+**Dongyue (thought):** "He really was afraid of losing me."
 
 ### Scene 2 --- Without the Veil
 
-Xiyu realises Dongyue has removed her veil. Being seen without it feels
-strangely more exposing than resting beneath the blankets.
+**Xiyu:** "My veil..."
 
-### Scene 3 --- A Different Kind of Comfort
+**Dongyue:** "It was in the way while I was helping you. I should have told you."
 
-She reflects that Dongyue feels different from the men she has known.
-His presence is clean, familiar, and reassuring.
+**Xiyu:** "I'm not used to people seeing me like this."
 
-### Scene 4 --- Embarrassment and Anger
+**Dongyue:** "Then I won't look unless you want me to."
 
-Dongyue admits that he lost control earlier. Xiyu, flustered and
-defensive, tells him to leave if he will not act like a man around her.
+**Xiyu (thought):** "He makes it difficult to keep thinking the worst of him."
 
-### Scene 5 --- The Rainbow Dream
+**Narration:** She had known men who wanted something from her. His quiet presence felt different.
 
-In a dreamlike vision, a rainbow bridge and tender words blur the
-boundary between memory, hope, and desire. Xiyu wonders what a future
-with Dongyue might mean.
+**Xiyu:** "Why are you still here?"
 
-### Scene 6 --- The Drum
+**Dongyue:** "Because you shouldn't have to wake up alone."
 
-A drum sounds and pulls her back toward the waking world.
+**Xiyu (thought):** "It's only kindness. So why does it unsettle me so much?"
 
-**Production note:** Keep this romantic but non-explicit; use blankets,
-covered shoulders, and expressions rather than nudity.
+**Dongyue:** "Earlier, I let my emotions get the better of me. I'm sorry if I made you uncomfortable."
+
+**Xiyu:** "If you're going to sit there looking so awkward, you may as well leave!"
+
+**Dongyue:** "All right. I'll be just outside if you need anything."
+
+### Scene 3 --- The Rainbow Dream
+
+**Narration:** Between waking and sleep, her thoughts drifted somewhere beyond the temple.
+
+**Dongyue (dream):** "Will you walk beside me?"
+
+**Xiyu (thought):** "Is this a promise... or merely a wish?"
+
+**Narration:** The dream offered no prophecy. Only a question her waking heart was not yet ready to answer.
+
+### Scene 4 --- The Drum
+
+**Narration:** A sudden drumbeat echoed through the dream. DOOM...
+
+**Xiyu:** "It was only a dream."
+
+**Xiyu (thought):** "Then why do I still wonder what it would be like to walk beside him?"
+
+**Narration:** No thread of fate could answer for her. Whatever grew between them would have to be discovered --- one choice at a time.
 
 ------------------------------------------------------------------------
 
@@ -514,147 +585,115 @@ nudity.
 
 # Comic Chapter 038 --- Communication
 
-**Status:** Reconstructed from the surviving chapter title and
-surrounding continuity.
+**Status:** Matches the author-edited page.
 
-### Scene 1 --- What Remains Unsaid
+### Scene 1 --- The Hardest Truths
 
-Xiyu and Dongyue reflect on the trials inside the Ice Temple and the
-truths they have not fully shared.
+**Narration:** The trials were nearing their end. Yet the hardest truths remained unspoken.
 
-### Scene 2 --- A Difficult Conversation
+**Xiyu (thought):** "Why is it so difficult to tell him what I truly feel?"
 
-Dongyue asks Xiyu not to bear every burden alone. Xiyu struggles to
-explain her fear of trusting someone who might leave her.
+**Dongyue:** "Xiyu. May I speak with you?"
 
-### Scene 3 --- A Promise to Speak
+**Xiyu:** "You don't need my permission to speak."
 
-They agree that their bond cannot replace honest communication.
+**Dongyue:** "Perhaps. But I would rather you wanted to hear me."
 
-**Dongyue:** "You don't have to tell me everything at once. Just don't
-shut me out forever."\
-**Xiyu:** "I will try."
+**Xiyu:** "You already know what happened. The ritual, the scroll... all of it."
 
-### Scene 4 --- The Journey Nears Its End
+**Dongyue:** "I know what we went through. I don't know everything you are afraid to tell me."
 
-The temple's trials are drawing to a close, but Xiyu's questions about
-her father and her identity remain unresolved.
+### Scene 2 --- The Scroll
 
-**Note:** This is a reconstructed bridge, not a verbatim recovery.
-Replace dialogue and scene details if the original Chapter 038 script is
-recovered.
+**Dongyue:** "I used that spell because I couldn't bear to watch you die. I never meant to decide your future for you."
+
+**Xiyu:** "And if I don't want the future you imagined?"
+
+**Dongyue:** "Then I need to listen."
+
+**Narration:** Their spiritual energies had touched through the ritual. What that connection meant for their future was not written in the scroll.
+
+### Scene 3 --- Magic Is Not Understanding
+
+**Xiyu:** "Being connected by magic doesn't mean we understand each other."
+
+**Dongyue:** "No. And it doesn't give me the right to ask you to feel something you don't."
+
+**Xiyu (thought):** "He could demand an answer. Instead, he is waiting for mine."
+
+**Xiyu:** "People leave. They make promises, then find a reason to abandon them."
+
+**Dongyue:** "I can't promise that we will never hurt each other. But I can promise to speak honestly with you."
+
+**Xiyu:** "And if the truth changes everything?"
+
+**Dongyue:** "Then we face the truth. Not a future chosen for us by fear --- or by magic."
+
+### Scene 4 --- Take My Hand
+
+**Dongyue:** "You don't have to tell me everything today. Just don't shut me out forever."
+
+**Xiyu:** "I will try. But I need time."
+
+**Dongyue:** "Then take it."
+
+**Narration:** For once, Xiyu allowed herself to take a step without knowing where the path would lead.
+
+**Narration:** Their paths had brought them together. Love would require something more; the courage to speak, the patience to listen, and the willingness to understand.
 
 ------------------------------------------------------------------------
 
 # Comic Chapter 039 --- Return to the Island
 
-**Volume 1 / Arc 1 Finale**\
-**Status:** Reconstructed from the approved 16-panel finale draft.
+**Status:** **Volume 1 / Arc 1 Finale** Matches the author-edited page.
 
-### Panel 1 --- A Farewell to the Temple
+### Scene 1 --- Return
 
-The crystalline Ice Temple rises around the travellers.
+**Narration:** The trials were nearing their end. Yet the hardest truths remained unspoken.
 
-**Xiyu (thought):** "Will we ever be able to return here again, if we
-wished?"
+**Xiyu (thought):** "Will we ever return here, if we wish to?"
 
-### Panel 2 --- The Final Preparations
+**Xiyu:** "Is everyone ready?"
 
-Xiyu asks whether everyone is ready. Dongyue says they will leave as
-soon as Muxue Yan is prepared.
+**Dongyue:** "We can leave once your father is prepared."
 
-### Panel 3 --- A Final Goodbye
+**Narration:** They had survived the temple. But the answers waiting at home might prove harder to face.
 
-Muxue Yan, with his established long white hair, stands beside Ao Yun's
-glass casket to bid farewell.
+**Narration:** Some farewells lasted far longer than a lifetime.
 
-### Panel 4 --- The Cost of Survival
+**Xiyu (thought):** "Does he love me... or does he need me for something?"
 
-Dongyue remembers their injured companions and regrets that he could not
-protect them all.
+**Narration:** Blood had given them a connection. Trust would have to be built.
 
-### Panel 5 --- A Father She Barely Knows
+### Scene 2 --- Give Me Time
 
-Xiyu wonders whether Yan loves her or needs her for a purpose.
+**Dongyue:** "Are you still angry with me?"
 
-**Xiyu (thought):** "Does he love me... or does he need me for
-something?"
+**Xiyu:** "I don't know what I feel."
 
-### Panel 6 --- Husband and Wife
+**Dongyue:** "I want us to talk. I'm not a stranger, Xiyu. I'm your husband."
 
-In private, Dongyue tells Xiyu he is not angry that she concealed the
-truth to spare him pain.
+**Xiyu:** "I can't simply accept everything because we went through that ritual... or because we had a wedding."
 
-**Dongyue:** "I want us to talk. I'm not a stranger. I'm your husband."
+**Dongyue:** "I wouldn't ask you to."
 
-### Panel 7 --- Give Me Time
+**Xiyu:** "I need time to understand what I want. I can't promise you the future you might hope for."
 
-Xiyu admits that she needs time to believe their relationship is real.
+**Dongyue:** "Then I'll give you that time. I'll keep choosing to stand beside you, as long as you want me there."
 
-**Xiyu:** "I can't just accept you."
+**Xiyu (thought):** "Why is it so difficult to tell him what I truly feel?"
 
-### Panel 8 --- His Promise
+**Narration:** His promise could not erase her doubts. But he had left the choice in her hands.
 
-Dongyue takes her hand.
+### Scene 3 --- Home
 
-**Dongyue:** "Then I'll give you that time. I'll keep choosing you,
-every day."
+**Xiyu (thought):** "Why do I dread returning home?"
 
-### Panel 9 --- The Night Before Home
+**Xiyu (thought):** "My father is waiting for me. My home is waiting for me. So why does it feel as though everything is about to change?"
 
-Xiyu lies awake beneath the blanket, troubled by an inexplicable dread
-about returning to Muxue.
+**Narration:** She had spent so long longing for a place to belong. Now that home was within reach, she feared what it might ask of her.
 
-### Panel 10 --- A Small Flame
-
-She conjures a tiny flame and looks at Dongyue as he sleeps.
-
-**Xiyu (thought):** "Why am I still afraid to trust you?"
-
-### Panel 11 --- Still Beside Her
-
-Dongyue wakes and draws her close, keeping the scene modest beneath the
-blanket.
-
-**Dongyue:** "Are you happy to be going home?"\
-**Xiyu:** "I'm tired, Dongyue."
-
-### Panel 12 --- At Last, Sleep
-
-Xiyu falls asleep against him. Dongyue quietly watches over her.
-
-**Dongyue (thought):** "Even if I can't give you eternity, I will give
-you my utmost."
-
-### Panel 13 --- The Temple Awaits
-
-At dawn, some followers prepare to leave while others pledge to remain
-and guard Ao Yun's remains and the temple.
-
-### Panel 14 --- The Way Home
-
-Xiyu, Dongyue, and Xiao Tian approach the departure portal.
-
-**Xiyu (thought):** "Muxue... I'm coming home."
-
-### Panel 15 --- A Shadow Over Muxue
-
-The island appears beautiful and familiar, but ominous clouds gather
-over the mountains beneath the shifting moons.
-
-### Panel 16 --- End of Volume 1
-
-The couple steps toward the light as crimson petals sweep across the
-scene.
-
-**Narration:** "Their journey through the Ice Temple had ended. Their
-true trials were only beginning."
-
-**Footer:**\
-**END OF VOLUME 1**\
-*The Long Awaited Love Is Not a Dream*
-
-------------------------------------------------------------------------
+**Narration:** The ritual had brought them through the darkness. Their wedding had given them a name for what they were to each other. But neither magic nor ceremony could decide what their hearts would become. Ahead lay Muxue --- and the father Xiyu was still learning to understand.
 
 ## End-of-Volume-1 continuity checklist
 

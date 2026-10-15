@@ -71,7 +71,7 @@ for n in range(21,40):
     out[n]={'title':c['title'],'src':'Script comic %03d (%s)'%(n,c['status'][:60]),'scenes':sc,'pending':not c['scenes']}
 # pending chapters that the hook file outlines get an OUTLINE scene (clearly not an approved script)
 hk=open('scripts/hooks.js',encoding='utf-8').read(); hk=json.loads(hk[hk.index('const HOOKS = ')+len('const HOOKS = '):hk.index(';\nconst HOOK_TITLES')])
-for n in (31,32,35,36):
+for n in (32,35,36):
     lines=[{'k':'plain','t':'OUTLINE from the author\'s hook list. There is no approved script for this chapter yet.'}]+[{'k':'plain','t':'• '+h['d']} for h in hk[str(n)]]
     out[n]['scenes']=[{'h':'Outline (hook list)','l':lines}]
 js=("/* Story text per chapter, in COMIC ORDER (the order of the comic pages).\n"

@@ -1114,15 +1114,8 @@ const HOOKS = {
 "s": "hooks"
 },
 {
-"id": "xiyu_knows_union_incomplete",
-"d": "Xiyu tells him the spell joined their energies but the union is not complete (author-edited page)",
-"t": "state",
-"p": false,
-"s": "author"
-},
-{
-"id": "dongyue_believes_bonded_for_life",
-"d": "Dongyue does not understand the bond and believes they are bonded for life (author-confirmed)",
+"id": "dongyue_chooses_her_not_the_bond",
+"d": "Dongyue: \"I'm here because I choose you. Not because of a bond.\" (author-edited page)",
 "t": "state",
 "p": false,
 "s": "author"
@@ -1588,27 +1581,6 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
-},
-{
-"id": "anong_yamon_pureblooded_demons_revealed",
-"d": "Anong and Yamon are purebloods whose appetite for torture and experimentation is worse than imagined",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "dongyue_hurt_by_withheld_truth",
-"d": "Dongyue is hurt that Xiyu kept the matter from him, but he is not leaving",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "yan_decides_to_return_to_muxue",
-"d": "Yan calls an emergency assembly: return to Muxue at once; he will seal the temple",
-"t": "event",
-"p": false,
-"s": "art"
 }
 ],
 "39": [
@@ -1702,13 +1674,6 @@ const HOOKS = {
 "t": "state",
 "p": false,
 "s": "hooks"
-},
-{
-"id": "ritual_joined_energies_not_souls",
-"d": "Xiyu tells Dongyue the ritual joined their spiritual energies but not their souls; the everlasting union is incomplete (author-edited page)",
-"t": "state",
-"p": false,
-"s": "author"
 },
 {
 "id": "dongyue_keeps_choosing_her",

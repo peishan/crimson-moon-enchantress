@@ -45,3 +45,13 @@ Dongyue's "You and I are bonded for life" is now "We shared the ritual. How coul
 
 ### Comic 022 (author edit)
 Replaced with "The Ritual's Warning". The scroll says that after the final stage of soul-binding the pair are united as mates for life, and that if the ritual is incomplete after fourteen days the receiver's life is lost. Narration: "The ritual could preserve her life, but its intended final union remained a separate matter" and "Their spiritual energies had begun to connect, but their souls — and their futures — remained their own." With this, no page states the soul-bond as established except the closing 038 line "Fate had bound their souls".
+
+### Pages 022, 031, 033, 038, 039 replaced (author, latest)
+The author replaced these five pages. They supersede the earlier "Dongyue believes they are bonded for life" reading:
+- **031** Dongyue: "I'm here because I choose you, Xiyu. Not because of a bond. I don't want to lose you. But I won't claim your future belongs to me."
+- **033** No proposal and no "bonded for life". Rainbow dream: "Will you walk beside me?" The drum breaks it. "No thread of fate could answer for her."
+- **038** Dongyue: "I used that spell because I couldn't bear to watch you die. I never meant to decide your future for you." Xiyu: "Being connected by magic doesn't mean we understand each other."
+- **039** "I'm your husband" and "because we had a wedding" stay. "Blood had given them a connection. Trust would have to be built." Ya'Xing staying at the temple, Yan's farewell and the portal are no longer on the page.
+- **022** unchanged from the previous edit (scroll: final union is a separate matter).
+
+Removed from the game: the "What Dongyue believes" row on the Bonds panel and the hooks `xiyu_knows_union_incomplete`, `dongyue_believes_bonded_for_life`, `ritual_joined_energies_not_souls` and the three art hooks on 038 (Anong and Yamon revealed, Dongyue hurt, Yan's assembly). Added: `dongyue_chooses_her_not_the_bond` (031).

@@ -25,7 +25,7 @@ RENAME={(39,'xiyu_questions_yan_motives'):'xiyu_doubts_about_yan_persist'}
 for (n,old),new in RENAME.items():
     for h in H[n]:
         if h['id']==old: h['id']=new
-REMOVE={(26,'teleportation_event_started'),(26,'party_location_changed'),(25,'lower_ice_passages_entered'),(25,'frozen_maze_route_suspected'),   # 025 is "His Magic" (page), not a frozen-passage bridge
+REMOVE={(38,'anong_yamon_pureblooded_demons_revealed'),(38,'dongyue_hurt_by_withheld_truth'),(38,'yan_decides_to_return_to_muxue'),(26,'teleportation_event_started'),(26,'party_location_changed'),(25,'lower_ice_passages_entered'),(25,'frozen_maze_route_suspected'),   # 025 is "His Magic" (page), not a frozen-passage bridge
         (31,'ritual_almanac_found'),(31,'muxue_yan_observes_dongyue')}   # both are in 030 on the page   # (the ch23 library hook is right: the page shows the library found in 023)   # script 026 is the glass room, Hoko and the platform
 def A(i,d,t='event',p=False,s='script'): return {'id':i,'d':d,'t':t,'p':p,'s':s}
 ADD={
@@ -52,9 +52,9 @@ ADD={
      A('xiyu_sees_yan_memory_of_infant','Yan\'s memory: she realises he is her father and she may be Muxue Yunxi, the infant frozen in time',s='art')],
  36:[A('xiao_tian_true_name_feng_xia','He is Feng Xia, not the childish Xiao Tian',s='art')],
  38:[A('anong_yamon_pureblooded_demons_revealed','Anong and Yamon are purebloods whose appetite for torture and experimentation is worse than imagined',s='art'),A('dongyue_hurt_by_withheld_truth','Dongyue is hurt that Xiyu kept the matter from him, but he is not leaving',s='art'),A('yan_decides_to_return_to_muxue','Yan calls an emergency assembly: return to Muxue at once; he will seal the temple',s='art')],
- 39:[A('ritual_joined_energies_not_souls','Xiyu tells Dongyue the ritual joined their spiritual energies but not their souls; the everlasting union is incomplete (author-edited page)','state',s='author'),A('dongyue_keeps_choosing_her','Dongyue agrees to give her time and keeps choosing her every day','state',s='author')],
+ 39:[A('dongyue_keeps_choosing_her','Dongyue agrees to give her time and keeps choosing her every day','state',s='author')],
  22:[A('scroll_final_union_is_separate','The scroll: after the final stage the pair are united as mates for life; the ritual can preserve her life but the final union is a separate matter (author-edited page)','state',s='author')],
- 31:[A('xiyu_knows_union_incomplete','Xiyu tells him the spell joined their energies but the union is not complete (author-edited page)','state',s='author'),A('dongyue_believes_bonded_for_life','Dongyue does not understand the bond and believes they are bonded for life (author-confirmed)','state',s='author')],
+ 31:[A('dongyue_chooses_her_not_the_bond','Dongyue: "I\'m here because I choose you. Not because of a bond." (author-edited page)','state',s='author')],
  26:[A('white_robed_group_flees_from_xiyu','White-robed priests with polar bears and white wolves flee when they recognise Xiyu'),
      A('glass_enclosure_broken','Xiyu breaks the glass enclosure with magic'),
      A('hoko_rescued','Hoko, an explorer of Luiterra trapped for about a month, is freed'),

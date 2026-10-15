@@ -32,6 +32,11 @@ const REL_CH = {
   57:[['cangyuan','xiyu',{t:5,u:4}]], 58:[['cangyuan','xiyu',{t:3}]], 59:[['cangyuan','xiyu',{t:5,u:3}]], 60:[['cangyuan','xiyu',{t:5,a:3,u:4}],['xining','dongyue',{t:2,u:2,a:2}]],
   61:[['cangyuan','xiyu',{t:4,a:15,u:3}]],
 };
+/* Consequences that apply when a story flag is SET (so a hidden event and its discovery can be separate): e.g. when comic 031's enchantment is
+   written in, the chapter sets xiyu_enchanted_dongyue (hidden, no effect) and, only when Dongyue learns the truth, dongyue_learned_of_enchantment.
+   Applied once per flag (G.convo['_f_'+flag]). Dongyue's memory is not touched here. Chapters 70-71 are not in the game yet. */
+const REL_FLAG = { dongyue_learned_of_enchantment: [['dongyue','xiyu',{t:-25,u:-8}]] };
+function relOnFlag(f){ if(!REL_FLAG[f]) return; G.convo = G.convo || {}; if(G.convo['_f_'+f]) return; G.convo['_f_'+f] = true; REL_FLAG[f].forEach(([a,b,d]) => relAdd(a,b,d)); }
 function relStory(n){ (REL_CH[n] || []).forEach(([a,b,d]) => relAdd(a,b,d)); }
 
 /* ---------- conversations ----------

@@ -31,3 +31,6 @@ The facts in these conversations (Dongyue's parents' fear becoming control, his 
 
 ## Next
 Xiyu-Dongyue conversations (the wedding, her need for time), Xiyu-Xining, Dongyue-Cangyuan; scenes unlocked by trust and affection; consequences in later arguments and investigations.
+
+## Story-flag consequences
+`REL_FLAG` (scripts/relations.js) applies a relationship change once when a story flag is set via a chapter's `CH_FLAGS` (hidden flags without a `FLAG_LABEL` are silent). Planned use: the comic 031 enchantment is recorded as a hidden event at once and costs Xiyu-Dongyue trust only when `dongyue_learned_of_enchantment` is set (see docs/VOLUME2.md).

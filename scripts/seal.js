@@ -52,23 +52,31 @@ function sealSvg(){
   </svg>`;
 }
 
-/* ---------- investigation tracker ---------- */
-const TRACK_FOUND = [
-  ['first_breach_beneath_sanctuary', 'The hidden eye closed beneath the sanctuary and the first ward broke'],
-  ['formation_three_rings_revealed', 'The formation has three functions: concealment, regulation, containment'],
-  ['formation_hides_the_inner_ring', 'The outer structure may be hiding the inner one'],
-  ['eastern_shrine_inscription_erased_from_inside', 'The eastern shrine\'s inscription was erased from the inside; its mark matches the sanctuary\'s'],
-  ['corrupted_fragment_obtained', 'A corrupted fragment was recovered from the Red Lantern Road'],
-  ['ward_network_lines_converge', 'The fragment\'s lines converge on places where the island\'s wards have failed'],
-  ['spirit_weaving_signature_recognised', 'Spirit Weaving leaves a signature, and Cangyuan recognises it'],
-  ['shen_ruyue_name_found', 'The name Shen Ruyue is carved at the abandoned shrine'],
-  ['record_deliberately_altered', 'Part of the shrine\'s record was deliberately altered'],
-  ['seal_crimson_markings_added', 'Crimson markings were added to the second seal; they are not part of the original'],
-  ['hidden_restriction_inscription_found', 'A later-added inscription describes a restriction on whoever enters'],
-  ['departure_record_fragment_found', 'A torn departure record behind the empty portrait frame'],
-  ['secondary_passage_found', 'An inscription describes a secondary passage that predates the alteration'],
+/* ---------- clue journal + investigation stages ----------
+   A record of discoveries and quest states, not a puzzle system. Every entry is a clue the pages have shown (src = the comic). Categories:
+   formation / records / people. Stages follow the master document's investigation structure, but only stages the pages support are shown;
+   later stages (anchors, restoring channels, the relay, the missing interval) stay roadmap material until their comics are integrated:
+   add them to STAGES (and their clues to CLUES) then. */
+const CLUES = [   // [hook id, category, comic, text]
+  ['first_breach_beneath_sanctuary', 'formation', '011', 'The hidden eye closed beneath the sanctuary and the first ward broke'],
+  ['island_wards_failing', 'formation', '011', 'Protective wards are failing outward from the sanctuary along the eastern route'],
+  ['formation_three_rings_revealed', 'formation', '010', 'The formation has three functions: concealment, regulation, containment'],
+  ['formation_hides_the_inner_ring', 'formation', '010', 'The outer structure may be hiding the inner one'],
+  ['eastern_shrine_inscription_erased_from_inside', 'records', '011', 'The eastern shrine\'s inscription was erased from the inside; its mark matches the sanctuary\'s'],
+  ['corrupted_fragment_obtained', 'records', '015', 'A corrupted fragment was recovered from the Red Lantern Road'],
+  ['ward_network_lines_converge', 'formation', '016', 'The fragment\'s lines converge on places where the island\'s wards have failed: it is one network'],
+  ['spirit_weaving_signature_recognised', 'people', '017', 'Spirit Weaving leaves a signature, and Cangyuan recognises this one'],
+  ['shen_ruyue_name_found', 'people', '018', 'The name Shen Ruyue is carved beneath the first pattern at the abandoned shrine'],
+  ['record_deliberately_altered', 'records', '018', 'Part of the shrine\'s record was deliberately altered by someone who knows the original technique'],
+  ['seal_crimson_markings_added', 'formation', '019', 'Crimson markings were added to the second seal; they are not part of the original'],
+  ['scratched_portrait_seen', 'records', '019', 'In the corridor beyond, a row of portraits hangs, one deliberately scratched away'],
+  ['departure_record_fragment_found', 'records', '020', 'A torn departure record was hidden behind the empty portrait frame (one name erased)'],
+  ['cangyuan_past_clue_found', 'people', '020', 'Cangyuan\'s hand hovers over the frame as in his memory: he once belonged to the place that built this'],
+  ['hidden_restriction_inscription_found', 'formation', '021', 'A later-added inscription describes a restriction placed on whoever enters'],
+  ['secondary_passage_found', 'formation', '022', 'An inscription describes a secondary passage that predates the alteration'],
 ];
-const TRACK_OPEN = [   // [shown once this hook exists, question]
+const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People']];
+const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it
   ['hidden_eye_symbol_reached', 'What is the formation concealing, and from whom?'],
   ['record_deliberately_altered', 'Who altered the record?'],
   ['unknown_woman_speaks', 'Who is the woman behind the second door?'],
@@ -76,16 +84,23 @@ const TRACK_OPEN = [   // [shown once this hook exists, question]
   ['seal_crimson_markings_added', 'Who added the crimson markings to the seal?'],
   ['shen_ruyue_name_found', 'What was Shen Ruyue to the place that built this?'],
 ];
+/* Stages of The Broken Ward Network. done/active read story hooks; only stages the pages support are listed. */
+const STAGES = [
+  {t:'Detect', d:'Identify the failed wards and establish that the problem is connected.', done:() => sealHook('ward_network_lines_converge'), active:() => sealHook('first_breach_beneath_sanctuary')},
+  {t:'Investigate', d:'Collect inscriptions, records and other clues about the formation and the second seal.', done:() => false, active:() => sealHook('ward_network_lines_converge')},
+];
 function rSeal(){
   if(!sealOpen()) return '<h2>Seal & Sites</h2><div class="sm">🔒 Opens once the investigation of the sanctuary begins (Volume 2).</div>';
-  const found = TRACK_FOUND.filter(([id]) => sealHook(id)), open = TRACK_OPEN.filter(([id]) => sealHook(id));
+  const found = CLUES.filter(([id]) => sealHook(id)), open = QUESTIONS.filter(([id]) => sealHook(id));
   const sites = SITES.filter(s => s.shown()).map(s => `<div class="li"><b>${s.n}</b><div class="sm">${s.note}</div></div>`).join('');
-  return `<h2>Seal & Sites</h2><div class="sm">Volume 2 stays close to home, so there is no world map: a small schematic of the places that matter, the seal as far as it is understood, and what is still unresolved.</div>
+  const stages = STAGES.map(st => `<div class="li">${st.done()?'✔':st.active()?'▶':'○'} <b>${st.t}</b><div class="sm">${st.d}</div></div>`).join('');
+  const cats = CLUE_CATS.map(([k,label]) => { const rows = found.filter(c => c[1] === k); return rows.length ? `<h4 style="margin:8px 0 2px">${label}</h4>${rows.map(c => `<div class="li">✔ ${c[3]} <span class="sm">· comic ${c[2]}</span></div>`).join('')}` : ''; }).join('');
+  return `<h2>Seal & Sites</h2><div class="sm">Volume 2 stays close to home, so there is no world map: a small schematic of the places that matter, the seal as far as it is understood, and a journal of what has been found.</div>
     <div class="panel"><h3>📍 Sites</h3>${sitesSvg()}${sites}</div>
     <div class="panel"><h3>🌀 The seal</h3>${sealSvg()}<div class="sm">Solid lines are confirmed connections; dotted lines are not yet resolved. The diagram only shows what the party has actually seen.</div>
       ${sealHook('formation_three_rings_revealed')?'<div class="li sm">Outer ring: concealment (hides from outside) · middle ring: regulation (balances and monitors) · inner ring: containment (seals the filament)</div>':''}
       ${sealHook('formation_hides_the_inner_ring')?'<div class="li sm">Dotted line from the outer ring: the outer structure may be hiding the inner one</div>':''}
       ${sealHook('seal_crimson_markings_added')?'<div class="li sm">Red ticks at the second door: crimson markings added later, not part of the original seal</div>':''}</div>
-    <div class="panel"><h3>🔎 Investigation</h3><div class="sm">${found.length} clues found</div>${found.map(([,t]) => `<div class="li">✔ ${t}</div>`).join('') || '<div class="sm">Nothing yet.</div>'}
+    <div class="panel"><h3>🔎 Clue Journal · The Broken Ward Network</h3>${stages}<div class="sm" style="margin:4px 0">More stages appear as the story reaches them. ${found.length} clues recorded.</div>${cats || '<div class="sm">Nothing recorded yet.</div>'}
       <h4 style="margin:8px 0 2px">Still unresolved</h4>${open.map(([,q]) => `<div class="li">○ ${q}</div>`).join('') || '<div class="sm">Nothing is in question yet.</div>'}</div>`;
 }

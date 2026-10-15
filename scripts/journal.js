@@ -38,7 +38,7 @@ function completeChapter(n){
     if(recruit(id)){ U(id).lv = Math.max(U(id).lv, lv); msgs.push('★ '+CHARACTERS[id].n+' joins the party!'); }
   });
   Object.keys(CH_BOND[n]||{}).forEach(id => { if(isRecruited(id)){ U(id).bp += CH_BOND[n][id]; msgs.push('💞 Bond with Xiyu ('+CHARACTERS[id].n.split(' ')[0]+'): +'+CH_BOND[n][id]); } });
-  (CH_FLAGS[n]||[]).forEach(f => { G.flags[f] = true; msgs.push('✦ Story: '+(FLAG_LABEL[f]||f)); });
+  (CH_FLAGS[n]||[]).forEach(f => { G.flags[f] = true; relOnFlag(f); if(FLAG_LABEL[f]) msgs.push('✦ Story: '+FLAG_LABEL[f]); });
   applyStoryStates(n).forEach(m => msgs.push(m));
   setHooks(n);
   relStory(n);

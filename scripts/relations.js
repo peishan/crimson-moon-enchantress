@@ -106,10 +106,10 @@ const CONVOS = [
        reply:['Xiao Tian: "If I could, I would! Stop it, it hurts."','The silence afterwards is not a kind one.']},
     ]},
   { id:'dongyue_xiaotian_master', a:'dongyue', b:'xiaotian', ch:40, trust:50, title:'Xiao Tian tells him about his master', who:'Xiao Tian → Dongyue',
-    lead:'After a hard fight Xiao Tian sits apart from the others. Dongyue joins him, and he finally speaks about the mountain, his martial brothers and his missing master.',
+    lead:'After a hard fight Xiao Tian sits apart from the others. Dongyue joins him, and he finally speaks about the mountain, his martial brothers and his master, all killed.',
     options:[
       {id:'listen', kind:'listen', t:'Listen.', fx:{t:10,u:10}, flags:['xiao_tian_shared_his_loss'],
-       reply:['Xiao Tian: "They were my brothers. They died over gold, and the ones who did it wore iron masks. My master is somewhere, or nowhere. I have to get stronger before I find out which."','Dongyue: "You are not doing it alone."'],
+       reply:['Xiao Tian: "They were my brothers, and my master. They were killed over gold by people in iron masks. I have to get stronger before I find them."','Dongyue: "You are not doing it alone."'],
        learned:'Dongyue understands why Xiao Tian trains so hard, and will fight beside him rather than for him.'},
       {id:'notnow', kind:'notnow', t:'Sit beside him in silence.', fx:{t:2},
        reply:['Xiao Tian does not say anything either. After a while he leans against Dongyue\'s shoulder, and neither remarks on it.']},

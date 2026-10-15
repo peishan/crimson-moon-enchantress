@@ -2707,7 +2707,7 @@ const SCRIPT = {
      },
      {
       "k": "plain",
-      "t": "• Establish his goals: find the woman in his dreams, locate his master, and avenge the dead"
+      "t": "• Xiao Tian's goals: find the woman in his dreams, and avenge his master and martial brothers, who were killed (author-confirmed)"
      },
      {
       "k": "plain",

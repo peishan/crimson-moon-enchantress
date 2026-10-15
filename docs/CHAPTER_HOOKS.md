@@ -288,7 +288,7 @@
 - `xiao_tian_captured_and_tortured` — Trigger the bull-demon captivity memory. *(one-time)*
 - `bull_demon_experiments_revealed` — Record deprivation, poisons, and demon-energy-infused weapons. *(one-time)*
 - `xiao_tian_memories_partially_restored` — Update his memory state while keeping much of his past blurred. *(persistent state)*
-- `xiao_tian_revenge_motivation_revealed` — Establish his goals: find the woman in his dreams, locate his master, and avenge the dead. *(persistent quest state)*
+- `xiao_tian_revenge_motivation_revealed` — Establish his goals: find the woman in his dreams, and avenge his master and martial brothers (killed by the iron-masked assassins). *(persistent quest state)*
 - `xiao_tian_recovery_incomplete` — Maintain his pain, allergies, impaired speech, and involuntary laughter. *(persistent health state; author-confirmed)*
 - `ya_xing_bull_demon_injuries_revealed` — Establish that Ya'Xing was also captured and experimented on by the bull demons; his injuries are more severe. *(author-confirmed; persistent backstory/health state)*
 - `ya_xing_recovery_incomplete` — Track Ya'Xing's ongoing recovery from the experiments. *(author-confirmed; persistent health state)*

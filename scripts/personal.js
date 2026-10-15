@@ -31,14 +31,13 @@ function personalOnWin(ids){   // called by battle.js after a rewarded victory
    add an entry with the hook that unlocks it. A fragment is a short journal scene; it does not restore his old personality. ---------- */
 const XT_FRAGMENTS = [
   {id:'mountain', hook:'xiao_tian_was_swordsman', title:'The Mountain Practice', comic:'036', text:'He was a swordsman, practising in the mountains among his martial brothers.'},
-  {id:'masks', hook:'masked_assassins_identity_revealed', title:'The Masked Invaders', comic:'036', text:'Black-clad invaders with gold details and iron masks, buckled in gold, killed his martial brothers over gold. His master is missing.'},
+  {id:'masks', hook:'masked_assassins_identity_revealed', title:'The Masked Invaders', comic:'036', text:'Black-clad invaders with gold details and iron masks, buckled in gold, killed his master and his martial brothers over gold.'},
   {id:'torment', hook:'xiao_tian_captured_and_tortured', title:'The Bull Demons\' Torment', comic:'036', text:'Starved, fed poisoned food, dosed with the poisons of the Xuancang Mountains and cut with small knives infused with demonic energy. Part of his memory came back afterwards, and the rest stays blurred.'},
 ];
 /* Leads are tracked separately; nothing links any of them to the seal or to each other unless a page does. */
 const XT_LEADS = [
-  {id:'master', t:'Find his missing master', hook:'xiao_tian_revenge_motivation_revealed', clue:'His master is missing. He wants to find him, and first he must get stronger.', state:'No trail yet.'},
   {id:'dream',  t:'The woman in his dreams', hook:'xiao_tian_mother_dream_seen', clue:'He dreams of a woman in grey who calls him "son".', state:'She is not identified.'},
-  {id:'masks',  t:'The iron-masked assassins', hook:'masked_assassins_identity_revealed', clue:'Black-clad, gold-trimmed, iron masks with golden buckles. They killed his martial brothers over gold, and he wants to avenge them.', state:'Their identity and purpose are unknown. No connection to the seal is established.'},
+  {id:'masks',  t:'Avenge his master and martial brothers', hook:'masked_assassins_identity_revealed', clue:'Black-clad, gold-trimmed assassins in iron masks with golden buckles killed his master and his martial brothers over gold. He wants to avenge them, and first he must get stronger.', state:'Their identity and purpose are unknown. No connection to the seal is established.'},
 ];
 const personalOpen = () => G.ch >= 36 && isRecruited('xiaotian');
 

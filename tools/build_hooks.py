@@ -62,7 +62,8 @@ ADD={
  27:[A('teleport_arrival_chamber_reached','Xiyu, Dongyue and Hoko arrive in a brighter chamber'),A('dongyue_heals_xiyu_hand','Dongyue heals Xiyu\'s injured hand'),
      A('coloured_blossoms_seen','Blossoms of many colours ring the casket, each with a different magical property'),A('yuner_name_heard','Xiyu hears a melody and the name "Yun\'er"','state')],
 }
-DESC={'xiao_tian_recovery_incomplete':'Xiao Tian\'s memories only partly return and much stays a blur (ch036 page: he is Feng Xia)',
+DESC={'xiao_tian_revenge_motivation_revealed':'Xiao Tian\'s goals: find the woman in his dreams, and avenge his master and martial brothers, who were killed (author-confirmed)',
+      'xiao_tian_recovery_incomplete':'Xiao Tian\'s memories only partly return and much stays a blur (ch036 page: he is Feng Xia)',
       'ya_xing_recovery_incomplete':'Ya\'Xing: constant itching and allergic reactions, barely able to walk, cannot speak clearly, bursts into insane laughter; his mind is damaged (ch036/039 pages)'}
 for n,lst in H.items():
     for h in lst:

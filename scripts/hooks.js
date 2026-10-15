@@ -1412,10 +1412,10 @@ const HOOKS = {
 },
 {
 "id": "xiao_tian_revenge_motivation_revealed",
-"d": "Establish his goals: find the woman in his dreams, locate his master, and avenge the dead",
+"d": "Xiao Tian's goals: find the woman in his dreams, and avenge his master and martial brothers, who were killed (author-confirmed)",
 "t": "state",
 "p": false,
-"s": "hooks"
+"s": "author"
 },
 {
 "id": "xiao_tian_recovery_incomplete",

@@ -43,9 +43,17 @@ function storyGo(d){
 }
 /* Volume covers are shown when a volume is COMPLETED (not at the start). Key = the chapter that completes the volume. */
 const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' } };
-function openVolumeCover(n){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c}; drawStory(); }
+function openVolumeCover(n, after){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c, after:after || null}; drawStory(); }
+/* closing the finale splash: Volume 2's closes into the unlocking of the relationship option, then the chapter result */
+function closeCover(){
+  if(!S || S.mode!=='cover'){ closeStory(); return; }
+  const n = S.n, after = S.after;
+  if(!after){ closeStory(); return; }
+  const msgs = after.concat(n === 78 ? relationshipUnlock() : []);
+  S = {n, mode:'result', msgs, units:[]}; drawStory();
+}
 function storyBeginBattle(){ const n = S.n; closeStory(); chapterFight(n); }
-function storyComplete(){ const n = S.n, msgs = completeChapter(n); S = {n, mode:'result', msgs, units:[]}; drawStory(); }
+function storyComplete(){ const n = S.n, msgs = completeChapter(n); if(VOLUME_COVERS[n]){ openVolumeCover(n, msgs); return; } S = {n, mode:'result', msgs, units:[]}; drawStory(); }
 
 function sceneHtml(sc){
   const lines = sc.l.map(l => {
@@ -59,7 +67,7 @@ function sceneHtml(sc){
 
 function drawStory(){
   const e = storyEl(); e.classList.add('on');
-  if(S.mode==='cover'){ const cv = S.cover; e.innerHTML = `<div class="story-shell"><div class="story-top"><div><div class="story-kicker">${cv.n} · Complete</div><div class="story-title">The Long Awaited Love Is Not a Dream</div></div><div class="story-top-r"><button class="story-x" onclick="closeStory()" aria-label="Close">✕</button></div></div><div class="story-body"><div class="story-page"><img src="${cv.img}" alt="${cv.n} cover"></div></div><div class="story-bar"><button class="pri" onclick="closeStory()">Continue</button></div></div>`; return; }
+  if(S.mode==='cover'){ const cv = S.cover; e.innerHTML = `<div class="story-shell"><div class="story-top"><div><div class="story-kicker">${cv.n} · Complete</div><div class="story-title">The Long Awaited Love Is Not a Dream</div></div><div class="story-top-r"><button class="story-x" onclick="closeCover()" aria-label="Close">✕</button></div></div><div class="story-body"><div class="story-page"><img src="${cv.img}" alt="${cv.n} cover"></div></div><div class="story-bar"><button class="pri" onclick="closeCover()">Continue</button></div></div>`; return; }
   const c = chapterOf(S.n), d = CHAPTER_DESIGN[S.n], total = S.units.length;
   const head = `<div class="story-top"><div><div class="story-kicker">${chName(S.n)}${S.mode==='result'?' · Complete':''}</div><div class="story-title">${c.title}</div></div>
     <div class="story-top-r">${S.mode==='read' && !S.loading?`<span class="story-count">${Math.min(S.i+1,total)} / ${total}</span>`:''}<button class="story-x" onclick="closeStory()" aria-label="Close">✕</button></div></div>`;

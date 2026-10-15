@@ -50,11 +50,12 @@ function bondsHtml(){
   const dy = G.ch>=20 ? row('Ancient bond-spell (ch20)','cast · she feels his emotions')+row('Life-saving ritual','complete (ch32)')+row('Everlasting union / permanent soul bond','<b>not established</b>')+row('Muxue wedding ceremony',dongyue?(G.ch>=40?'ceremonial only: no papers filed':'held (ch35)'):'—')+(G.ch>=70 ? row('Romance', G.ch>=78 ? 'not an option: friend, crewmate and ally' : 'ended honestly (ch70)') : '')
          : '<div class="sm">Not yet.</div>';
   const cg = !cang ? '<div class="sm">Not met as a companion yet.</div>' : row('Crimson Thread Resonance',L+'/'+RES_MAX)+row('Relationship option', dualCultivationOpen() ? 'open (her choice)' : 'opens when Xiyu chooses him (end of Volume 2)')+row('Permanent soul bond / marriage','none');
+  const syn = relationshipOpen() && cang ? `<div class="sm" style="margin-top:4px">🌹 Bond of Choice: when Xiyu and Cangyuan fight together both gain +${Math.round((4+2*L))}% to ATK, MAG, DEF and SPD (+4%, and +2% per Resonance level).</div>` : '';
   const benefits = L>0 ? `<div class="sm" style="margin-top:4px">With Cangyuan beside her: paired techniques cost ${5*L}% less MP · her heat gain −${Math.round((.25+.05*L)*100)}% · his Steady cools +${5*L} more · she deals +${8*L}% to barriers, layers and linked foes${L>=2?' · senses severe disturbances':''}${L>=3?' · Thread-Breaker Formation':''}.</div>` : '';
   const btn = cang ? `<button ${dualCultivationOpen() && G.bondDay.dual!==G.day ? '' : 'disabled'} onclick="act(doDualCultivation)">🌹 Relationship bonding (by her choice)</button>${G.bondDay.dual===G.day?`<img class="pg" src="assets/events/relationship_cangyuan.webp" alt="Xiyu and Cangyuan beneath the crimson moon" onerror="this.style.display='none'">`:''}` : '';
   return `<h4>Bonds</h4><div class="sm" style="font-style:italic;color:var(--gold)">Sharing one's spiritual energy does not mean surrendering one's soul. Sharing intimacy does not mean surrendering one's future.</div>
    <div class="sm" style="margin:6px 0 2px"><b>Zhan Dongyue</b></div>${dy}<div class="sm" style="margin:8px 0 2px"><b>Shen Cangyuan</b></div>${cg}${benefits}
-   ${cang?`<div class="sm" style="margin-top:4px">The resonance cannot force either to stay, make anyone faithful, reveal thoughts or secrets, cure her corruption, or stop either from leaving.</div>`:''}${btn}`;
+   ${syn}${cang?`<div class="sm" style="margin-top:4px">The resonance cannot force either to stay, make anyone faithful, reveal thoughts or secrets, cure her corruption, or stop either from leaving.</div>`:''}${btn}`;
 }
 function curseHtml(){
   const h = G.heat||0, L = attuneLv(), cos = G.party.filter(id => id!=='xiyu');
@@ -136,6 +137,7 @@ function rChapter(n){
   } else if(c.bounty && !done){
     foot = `<div class="panel"><b>📜 Bounty chapter</b><div class="sm">This chapter is completed by clearing the bounty and reporting back.</div>${bountyBoardOpen()?`<button class="pri" onclick="showTab('bounties')">Open the bounty board</button>`:'<div class="sm">The board opens after Volume 2, comic 014.</div>'}</div>`;
   } else if(!done) foot = `<button class="pri" onclick="finishChapter(${n})">Complete chapter (+${c.sxp} XP)</button>`;
+  else if(n===78 && !relationshipOpen()) foot = `<div class="panel"><b>🌹 The finale splash</b><div class="sm">The relationship option opens after the Volume 2 splash.</div><button class="pri" onclick="openVolumeCover(78, [])">View the splash</button></div>`;
   return `<button onclick="closeChapter()">◀ Journal</button><h2>${chName(n)} · ${c.title}</h2>
    <div class="panel"><div class="sm">📍 ${d.loc}${volOf(n)===1?' · Book chapter '+d.book:''}</div><div style="margin:6px 0">${d.sum}</div>
     <button class="pri" onclick="openStory(${n})">📖 ${G.read[n]?'Read again':'Read story'}</button>
@@ -146,7 +148,7 @@ function hooksHtml(n){
   const hs = HOOKS[n]||[]; if(!hs.length) return '';
   return `<h4>Story hooks <span class="sm">· ${hs.filter(h=>hook(h.id)).length}/${hs.length} fired</span></h4>`+hs.map(h=>`<div class="li">${hook(h.id)?'✔':'○'} <code>${h.id}</code> <span class="sm">${h.t==='state'?'(state)':'(event)'}${h.p?' · provisional':''}</span><div class="sm">${h.d}</div></div>`).join('');
 }
-function finishChapter(n){ S = {n, mode:'result', msgs:completeChapter(n), units:[]}; drawStory(); }
+function finishChapter(n){ const msgs = completeChapter(n); if(VOLUME_COVERS[n]){ openVolumeCover(n, msgs); return; } S = {n, mode:'result', msgs, units:[]}; drawStory(); }
 function chapterFight(n){ origin='journal'; startBattle(battleSpecFor(n)); tab='battle'; render(); }
 
 /* ---------------- WILDS ---------------- */

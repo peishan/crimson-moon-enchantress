@@ -2909,20 +2909,6 @@ const HOOKS = {
 ],
 "78": [
 {
-"id": "xiyu_chooses_cangyuan",
-"d": "Xiyu freely chooses Cangyuan (no spell, no promise made for her)",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "relationship_option_unlocked",
-"d": "The relationship option opens: Xiyu and Cangyuan (Crimson Thread Resonance)",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
 "id": "dongyue_friend_crewmate_ally",
 "d": "Dongyue stays Xiyu's friend, crewmate and ally (author decision)",
 "t": "state",

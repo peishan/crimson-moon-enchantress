@@ -340,7 +340,7 @@ const CH_FLAGS = { 13:['imp_expelled'], 18:['ancient_rite'], 20:['soul_bond'],
                    40:['volume2_started','xiyu_separate_residence'], 41:['cangyuan_met'], 42:['black_vein_seen'], 43:['sanctuary_memory_seen'], 44:['yan_possessed_seen'], 45:['older_binding_known'], 46:['spirit_weaving_learned'], 47:['original_formation_plan'], 48:['xiyu_is_the_key'],
                    53:['xining_recruited','red_lantern_bounty_available'], 54:['red_lantern_road_cleared'],
                    62:['inverted_meridian_named'], 66:['channels_restored'], 70:['xiyu_confesses_feelings_for_cangyuan','xiyu_enchanted_dongyue'], 71:['dongyue_night_unresolved'],
-                   78:['volume2_complete','xiyu_chooses_cangyuan','relationship_option_unlocked','dongyue_friend_and_ally'] };
+                   78:['volume2_complete','dongyue_friend_and_ally'] };
 const FLAG_LABEL = { imp_expelled:'Dongyue learns Spirit Expulsion', ancient_rite:'Dongyue learns the Ancient Healing Rite', soul_bond:'The ancient bond-spell links Xiyu and Dongyue (not a permanent soul bond)',
   channels_restored:'The divided channels are restored: the drain stops increasing (the keeper is still bound)', xiyu_confesses_feelings_for_cangyuan:'Xiyu tells Dongyue she has feelings for Cangyuan',
   volume2_complete:'Volume 2 complete', xiyu_chooses_cangyuan:'Xiyu chooses Cangyuan', relationship_option_unlocked:'The relationship option opens: Xiyu and Cangyuan (Crimson Thread Resonance)', dongyue_friend_and_ally:'Dongyue stays her friend, crewmate and ally',

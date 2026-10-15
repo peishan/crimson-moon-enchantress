@@ -41,6 +41,11 @@ function startBattle(spec){
   const ids = spec.allies || G.active;
   B = { allies:ids.map(id => mkAlly(id, !!spec.rewards)), foes:spec.foes.map((f,i) => mkFoeUnit(f.key, f.lv, i)), queue:[], cur:null, log:[], over:null, round:0, ui:{mode:'menu'}, spec, rewards:null };
   blog('Battle begins!','sys');
+  const aids = B.allies.map(a => a.id);
+  B.allies.forEach(a => { const sy = synergyOf(a.id, aids); if(sy.total > 0){ ['atk','mag','def','spd'].forEach(k => a[k] = Math.round(a[k]*(1+sy.total))); a.syn = sy; } });
+  const pairA = B.allies.find(a => a.id==='xiyu' && a.syn && a.syn.bond), cg = B.allies.find(a => a.id==='cangyuan' && a.syn && a.syn.bond);
+  if(pairA && cg) blog('🌹 Bond of Choice: Xiyu and Cangyuan fight with +'+Math.round(pairA.syn.total*100)+'% to ATK, MAG, DEF and SPD.','sys');
+  else if(B.allies.some(a => a.syn && a.syn.comrade > 0)) blog('🤝 Comradeship: allies who trust each other fight a little better together.','sys');
   if(resLv()>=2 && B.allies.some(a => a.id==='xiyu') && B.allies.some(a => a.id==='cangyuan')){   // resonance awareness: limited, only severe disturbances
     B.foes.filter(f => f.st.layer || f.traits.includes('corrupt')).forEach(f => { f.known = true; blog('🌹 Crimson Thread: a severe disturbance in '+f.name+'.','sys'); }); }
   advance();

@@ -115,7 +115,25 @@ const heatLabel = h => h>=80 ? 'Burning' : h>=50 ? 'Flushed' : h>=20 ? 'Warm' : 
    the Dev tab does), needs both of them, and can be done once a day. It is NOT a soul bond, not marriage, and it cannot force anyone to stay. */
 const RES_MAX = 5;
 const resLv = () => G.resonance||0;
-const dualCultivationOpen = () => !!(G.flags && G.flags.xiyu_chooses_cangyuan) && G.party.includes('cangyuan');
+/* The finale splash plays BEFORE the relationship option unlocks (author): closing it calls relationshipUnlock(). */
+const relationshipOpen = () => !!(G && G.flags && G.flags.relationship_option_unlocked && G.flags.xiyu_chooses_cangyuan);
+function relationshipUnlock(){
+  if(relationshipOpen()) return [];
+  G.flags.xiyu_chooses_cangyuan = true; G.flags.relationship_option_unlocked = true; G.hooks.xiyu_chooses_cangyuan = G.hooks.relationship_option_unlocked = G.ch || 78;
+  save();
+  return ['✦ Story: Xiyu chooses Cangyuan','✦ The relationship option opens: relationship bonding with Cangyuan (Crimson Thread Resonance), and a party synergy whenever they fight together.'];
+}
+/* PARTY SYNERGY: stat bonuses for allies who fight in the same battle.
+   Comradeship: each ally you trust (trust 40/60/80 with them) gives +1/+2/+3% to ATK, MAG, DEF and SPD, up to +5% in all.
+   Bond of Choice (Xiyu and Cangyuan, after the relationship option opens): +4% plus 2% per Resonance level (up to +14%) for both. */
+function synergyOf(id, ids){
+  let b = 0, bond = 0;
+  ids.forEach(o => { if(o === id) return; const r = G.rel && G.rel[relKey(id,o)]; if(r) b += r.t >= 80 ? .03 : r.t >= 60 ? .02 : r.t >= 40 ? .01 : 0; });
+  b = Math.min(b, .05);
+  if(relationshipOpen() && ((id==='xiyu' && ids.includes('cangyuan')) || (id==='cangyuan' && ids.includes('xiyu')))) bond = .04 + .02*resLv();
+  return {comrade:b, bond, total:b+bond};
+}
+const dualCultivationOpen = () => relationshipOpen() && G.party.includes('cangyuan');
 function doDualCultivation(){
   if(!dualCultivationOpen()) return ['Dual cultivation is not open: it only begins when Xiyu chooses it.'];
   if(isAway('cangyuan')) return ['Cangyuan must be with the party.'];

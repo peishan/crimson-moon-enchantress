@@ -38,7 +38,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, resonance:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0}, quest:{ward:{}}, rel:{}, convo:{} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, resonance:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0}, quest:{ward:{}}, rel:{}, convo:{}, board:{active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -47,7 +47,7 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.quest = G.quest || {ward:{}}; G.rel = G.rel || {}; G.convo = G.convo || {}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.quest = G.quest || {ward:{}}; G.rel = G.rel || {}; G.convo = G.convo || {}; G.board = G.board || {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
     return true;

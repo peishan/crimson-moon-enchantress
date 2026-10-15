@@ -261,5 +261,6 @@ function finishWin(){
   act.forEach(id => { const m = addBond(id, boss ? 8 : 3); if(m) B.rewards.msgs.push(m); });
   G.gold += gold; addItems(drops); G.wins = (G.wins||0)+1;
   if(spec.onWin) B.rewards.msgs = B.rewards.msgs.concat(spec.onWin() || []);
+  if(typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
   save();
 }

@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
+const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
@@ -20,10 +20,11 @@ function render(){
   $('hgold').textContent = '💰 '+G.gold;
   $('hch').textContent = G.ch===0 ? 'Start' : chShort(G.ch)+' ✓';
   $('hday').textContent = '☀️ Day '+G.day;
+  if(typeof renderTracker === 'function') renderTracker();
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen()) && (k!=='confidants' || relationsOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, bounties:rBounties, confidants:rConfidants, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen()) && (k!=='confidants' || relationsOpen()) && (k!=='board' || boardOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
+  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 
@@ -167,7 +168,7 @@ function wildFight(zid, boss){
   const z = ZONES.find(x => x.id===zid); if(!z || !zoneOpen(z)) return;
   const lv = Math.max(1, avgPartyLv() + z.off + (boss?1:0));
   const foes = boss ? [].concat(z.boss).map(k => ({key:k, lv})) : Array.from({length:Math.max(1,Math.min(2+Math.floor(Math.random()*2), G.active.length+1))}, () => ({key:AR(z.pool), lv:Math.max(1, lv+Math.floor(Math.random()*3)-1)}));
-  origin = 'wilds'; startBattle({foes, rewards:true, firstClear:boss && !G.bestiary[[].concat(z.boss)[0]]}); tab='battle'; render();
+  origin = 'wilds'; startBattle({foes, rewards:true, zone:boss ? null : zid, firstClear:boss && !G.bestiary[[].concat(z.boss)[0]]}); tab='battle'; render();
 }
 
 /* ---------------- TEMPLE ---------------- */

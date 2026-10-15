@@ -19,10 +19,11 @@
   <div class="ver"></div>
 </div>
 <div id="app">
-  <div id="top"><span class="brand">CRIMSON MOON</span><span class="pill" id="hch"></span><span class="pill day" id="hday"></span><span class="pill" id="hrit" style="display:none;border-color:#e88a8a;color:#e88a8a"></span><span class="pill gold" id="hgold"></span><button onclick="save();toast('Saved')" title="Save">💾</button></div>
+  <div id="top"><span class="brand">CRIMSON MOON</span><span class="pill" id="hch"></span><span class="pill day" id="hday"></span><span class="pill" id="hrit" style="display:none;border-color:#e88a8a;color:#e88a8a"></span><span class="pill gold" id="hgold"></span><button id="trkbtn" onclick="toggleTracker()" title="Quest log" style="display:none">📋</button><button onclick="save();toast('Saved')" title="Save">💾</button></div>
   <div id="nav"></div><div id="main"></div><div class="ver"></div>
 </div>
 <div id="story" aria-modal="true"></div>
+<div id="tracker"></div>
 <div id="toast"></div>
 <script>
 if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
@@ -57,6 +58,7 @@ window.addEventListener("load", () => { showCacheVersion(); setTimeout(showCache
 <script src="scripts/journal.js"></script>
 <script src="scripts/bounties.js"></script>
 <script src="scripts/relations.js"></script>
+<script src="scripts/board.js"></script>
 <script src="scripts/temple.js"></script>
 <script src="scripts/savedata.js"></script>
 <script src="scripts/storypopup.js"></script>

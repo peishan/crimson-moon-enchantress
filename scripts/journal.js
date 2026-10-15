@@ -66,7 +66,7 @@ function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(
 
 // DEV: jump the save to "story at chapter n" (recruits, flags, levels, ritual, away heroes)
 function devSetChapter(n){
-  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {};
+  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
   G.ch = n;
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};

@@ -11,7 +11,8 @@
    Save: G.rel = { 'a|b': {t,a,u} } (ids sorted) · G.convo = { conversationId: {done, opt, retry, nn} }
    ===================================================================== */
 const REL_STAGES = [[0,'Guarded'],[20,'Growing trust'],[40,'Confided in you'],[60,'Deep understanding'],[80,'Established intimacy']];
-const REL_ROMANTIC = ['dongyue|xiyu','cangyuan|xiyu','dongyue|xining'];   // pairs where affection is shown
+const REL_ROMANTIC = ['dongyue|xiyu','cangyuan|xiyu','dongyue|xining'];   // pairs where affection is shown (Xiyu and Dongyue stop being one from chapter 70: author decision)
+const relRomantic = k => REL_ROMANTIC.includes(k) && !(k === 'dongyue|xiyu' && G.ch >= 70);
 const relKey = (a,b) => [a,b].sort().join('|');
 const relGet = (a,b) => { G.rel = G.rel || {}; const k = relKey(a,b); return G.rel[k] || (G.rel[k] = {t:0, a:0, u:0}); };
 const relClamp = v => Math.max(0, Math.min(100, Math.round(v)));
@@ -31,6 +32,13 @@ const REL_CH = {
   55:[['cangyuan','xiyu',{a:4,u:3}],['xining','dongyue',{t:3,u:3}],['xining','xiyu',{t:3}]], 56:[['cangyuan','xiyu',{t:5,u:5}],['cangyuan','dongyue',{t:2}],['xining','dongyue',{t:2}]],
   57:[['cangyuan','xiyu',{t:5,u:4}]], 58:[['cangyuan','xiyu',{t:3}]], 59:[['cangyuan','xiyu',{t:5,u:3}]], 60:[['cangyuan','xiyu',{t:5,a:3,u:4}],['xining','dongyue',{t:2,u:2,a:2}]],
   61:[['cangyuan','xiyu',{t:4,a:15,u:3}]],
+  62:[['cangyuan','xiyu',{t:4,a:6,u:3}]], 63:[['cangyuan','xiyu',{t:3,u:3}]], 64:[['cangyuan','xiyu',{t:4,u:4}],['dongyue','xining',{t:2,u:2}]], 65:[['cangyuan','xiyu',{t:3,u:2}]],
+  66:[['cangyuan','xiyu',{t:6,a:4,u:4}],['cangyuan','dongyue',{t:3}],['cangyuan','xining',{t:3}]], 67:[['cangyuan','xiyu',{t:3,a:8}],['xining','dongyue',{t:4,u:4,a:3}]],
+  68:[['cangyuan','xiyu',{t:2,u:2}]], 69:[['cangyuan','xiyu',{t:2,u:2}]],
+  70:[['dongyue','xiyu',{t:3,u:6,a:-20}]],   // an honest end to the romance: the hurt is real, and so is the friendship
+  72:[['xiaotian','dongyue',{t:2}],['cangyuan','xiyu',{u:2}]], 73:[['xiaotian','xiyu',{t:2}]], 74:[['xiaotian','cangyuan',{t:3}]], 75:[['cangyuan','xiyu',{t:2,u:2}]],
+  76:[['cangyuan','xiyu',{t:3,u:3}],['xiaotian','dongyue',{t:2}]], 77:[['xiyu','xining',{t:2}],['dongyue','xiyu',{t:2,u:2}]],
+  78:[['cangyuan','xiyu',{t:6,a:15,u:5}],['dongyue','xiyu',{t:3,u:3}]],
 };
 /* Consequences that apply when a story flag is SET (so a hidden event and its discovery can be separate): e.g. when comic 031's enchantment is
    written in, the chapter sets xiyu_enchanted_dongyue (hidden, no effect) and, only when Dongyue learns the truth, dongyue_learned_of_enchantment.
@@ -143,7 +151,7 @@ function pickConvo(id, optId){
   const notes = [];
   if(fx.t > 0 && o.kind !== 'notnow') notes.push('Trust deepened.'); else if(fx.t < 0) notes.push('Trust strained.');
   if(fx.u > 0 && o.kind !== 'notnow') notes.push('Understanding grew.');
-  if(fx.a > 0 && REL_ROMANTIC.includes(relKey(c.a,c.b)) && o.kind !== 'notnow') notes.push('Something warmer stirred.');
+  if(fx.a > 0 && relRomantic(relKey(c.a,c.b)) && o.kind !== 'notnow') notes.push('Something warmer stirred.');
   if(o.kind === 'notnow') notes.push('Respecting the answer costs nothing. You can ask again later.');
   if(o.kind === 'press') notes.push('This topic is closed until the next chapter.');
   CV = {id, res:{opt:o, notes, learned:o.learned || ''}}; save(); render();
@@ -156,7 +164,8 @@ function relPairsHtml(){
   for(let i=0;i<ids.length;i++) for(let j=i+1;j<ids.length;j++){
     const a = ids[i], b = ids[j], k = relKey(a,b), r = G.rel && G.rel[k]; if(!r || (!r.t && !r.a && !r.u)) continue;
     const bits = [`<b>${relStage(r.t)}</b>`, relUnderstanding(r.u)];
-    if(REL_ROMANTIC.includes(k) && r.a > 0) bits.push('Affection: '+relAffection(r.a));
+    if(k === 'dongyue|xiyu' && G.ch >= 70) bits.push(G.ch >= 78 ? 'Friend, crewmate and ally' : 'Close, but not romantic');
+    else if(relRomantic(k) && r.a > 0) bits.push('Affection: '+relAffection(r.a));
     rows.push(`<div class="li">${CHARACTERS[a].icon||''} ${first(a)} ↔ ${CHARACTERS[b].icon||''} ${first(b)}<div class="sm">${bits.join(' · ')}</div></div>`);
   }
   return rows.join('') || '<div class="sm">Nobody has opened up to anyone yet.</div>';

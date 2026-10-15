@@ -34,3 +34,6 @@ Xiyu-Dongyue conversations (the wedding, her need for time), Xiyu-Xining, Dongyu
 
 ## Story-flag consequences
 `REL_FLAG` (scripts/relations.js) applies a relationship change once when a story flag is set via a chapter's `CH_FLAGS` (hidden flags without a `FLAG_LABEL` are silent). Planned use: the comic 031 enchantment is recorded as a hidden event at once and costs Xiyu-Dongyue trust only when `dongyue_learned_of_enchantment` is set (see docs/VOLUME2.md).
+
+## Volume 2 end state (author)
+Xiyu's only romantic route is **Cangyuan**; the relationship option opens at the end of Volume 2. **Dongyue stays a friend, crewmate and ally.** From chapter 70 the Xiyu-Dongyue pair no longer shows affection ("Close, but not romantic"; from chapter 78 "Friend, crewmate and ally"). Dongyue and Xining's gradual connection (chapters 52, 67) is unchanged.

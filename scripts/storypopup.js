@@ -42,7 +42,7 @@ function storyGo(d){
   drawStory();
 }
 /* Volume covers are shown when a volume is COMPLETED (not at the start). Key = the chapter that completes the volume. */
-const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' } };
+const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' } };
 function openVolumeCover(n){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c}; drawStory(); }
 function storyBeginBattle(){ const n = S.n; closeStory(); chapterFight(n); }
 function storyComplete(){ const n = S.n, msgs = completeChapter(n); S = {n, mode:'result', msgs, units:[]}; drawStory(); }

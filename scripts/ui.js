@@ -47,11 +47,11 @@ function rParty(){
 function bondsHtml(){
   const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
   const row = (a,b) => `<div class="sm" style="display:flex;justify-content:space-between;gap:8px;padding:2px 0;border-bottom:1px solid rgba(212,168,67,.1)"><span>${a}</span><span>${b}</span></div>`;
-  const dy = G.ch>=20 ? row('Ancient bond-spell (ch20)','cast · she feels his emotions')+row('Life-saving ritual','complete (ch32)')+row('Everlasting union / permanent soul bond','<b>not established</b>')+row('Muxue wedding ceremony',dongyue?(G.ch>=40?'ceremonial only: no papers filed':'held (ch35)'):'—')
+  const dy = G.ch>=20 ? row('Ancient bond-spell (ch20)','cast · she feels his emotions')+row('Life-saving ritual','complete (ch32)')+row('Everlasting union / permanent soul bond','<b>not established</b>')+row('Muxue wedding ceremony',dongyue?(G.ch>=40?'ceremonial only: no papers filed':'held (ch35)'):'—')+(G.ch>=70 ? row('Romance', G.ch>=78 ? 'not an option: friend, crewmate and ally' : 'ended honestly (ch70)') : '')
          : '<div class="sm">Not yet.</div>';
-  const cg = !cang ? '<div class="sm">Not met as a companion yet.</div>' : row('Crimson Thread Resonance',L+'/'+RES_MAX)+row('Dual cultivation', dualCultivationOpen() ? 'open (her choice)' : 'closed until Xiyu chooses it')+row('Permanent soul bond / marriage','none');
+  const cg = !cang ? '<div class="sm">Not met as a companion yet.</div>' : row('Crimson Thread Resonance',L+'/'+RES_MAX)+row('Relationship option', dualCultivationOpen() ? 'open (her choice)' : 'opens when Xiyu chooses him (end of Volume 2)')+row('Permanent soul bond / marriage','none');
   const benefits = L>0 ? `<div class="sm" style="margin-top:4px">With Cangyuan beside her: paired techniques cost ${5*L}% less MP · her heat gain −${Math.round((.25+.05*L)*100)}% · his Steady cools +${5*L} more · she deals +${8*L}% to barriers, layers and linked foes${L>=2?' · senses severe disturbances':''}${L>=3?' · Thread-Breaker Formation':''}.</div>` : '';
-  const btn = cang ? `<button ${dualCultivationOpen() && G.bondDay.dual!==G.day ? '' : 'disabled'} onclick="act(doDualCultivation)">🌹 Dual cultivation (by her choice)</button>` : '';
+  const btn = cang ? `<button ${dualCultivationOpen() && G.bondDay.dual!==G.day ? '' : 'disabled'} onclick="act(doDualCultivation)">🌹 Relationship bonding (by her choice)</button>${G.bondDay.dual===G.day?`<img class="pg" src="assets/events/relationship_cangyuan.webp" alt="Xiyu and Cangyuan beneath the crimson moon" onerror="this.style.display='none'">`:''}` : '';
   return `<h4>Bonds</h4><div class="sm" style="font-style:italic;color:var(--gold)">Sharing one's spiritual energy does not mean surrendering one's soul. Sharing intimacy does not mean surrendering one's future.</div>
    <div class="sm" style="margin:6px 0 2px"><b>Zhan Dongyue</b></div>${dy}<div class="sm" style="margin:8px 0 2px"><b>Shen Cangyuan</b></div>${cg}${benefits}
    ${cang?`<div class="sm" style="margin-top:4px">The resonance cannot force either to stay, make anyone faithful, reveal thoughts or secrets, cure her corruption, or stop either from leaving.</div>`:''}${btn}`;
@@ -189,6 +189,7 @@ let personOpen = null;
 const CAST_SHEETS = [
   {id:'main',    n:'Main Characters', sub:'Muxue Xiyu and Zhan Dongyue: expressions, wardrobe, palette', img:'assets/cast/main_characters.webp', ch:2},
   {id:'cover1', n:'Volume 1 Cover', sub:'The Long Awaited Love Is Not a Dream', img:'assets/volume1_cover.webp', ch:39},
+  {id:'cover2', n:'Volume 2 · Beneath the Crimson Moon', sub:'Xiyu and Cangyuan: the end of Volume 2', img:'assets/events/relationship_cangyuan.webp', ch:78},
   {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];

@@ -16,7 +16,7 @@ const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple 
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
    chapter, the battle chapter, and the ch20 milestone. Target = round(chapter x GATE_RATIO). Completed chapters never lock. */
 const GATE_RATIO = 1;   // gate = chapter number: "reach an average party level equal to the chapter"
-const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54];   // 53 = Xining joins, 54 = the first bounty   // recruitment chapters, the battle chapter, the ch20 milestone and the Volume 1 finale
+const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining joins, 54 = the first bounty   // recruitment chapters, the battle chapter, the ch20 milestone and the Volume 1 finale
 
 /* ---------- THE LEVEL CURVE: Volume 1 = 39 comic chapters, spread evenly over levels ----------
    Story XP is set so a player who only reads the story is level (1 + chapters done): Lv 40 when Volume 1 ends at ch 39.
@@ -24,7 +24,7 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54];   // 53 = Xining joi
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, LAST_CHAPTER = 61;
+const VOL2_START = 40, LAST_CHAPTER = 78;
 const volOf = n => n >= VOL2_START ? 2 : 1;
 const vnum = n => n >= VOL2_START ? n - (VOL2_START-1) : n;
 const chName = n => volOf(n)===2 ? 'Volume 2 · Chapter '+vnum(n) : 'Chapter '+n;
@@ -122,7 +122,7 @@ function doDualCultivation(){
   if(G.bondDay.dual === G.day) return ['They have already cultivated together today.'];
   G.bondDay.dual = G.day;
   const before = G.resonance||0; G.resonance = Math.min(RES_MAX, before+1);
-  const msgs = ['🌹 Xiyu and Cangyuan cultivate together, by her choice. Their spiritual signatures grow more familiar.'];
+  const msgs = ['🌹 Xiyu and Cangyuan spend the night together, by her choice. Their spiritual signatures grow more familiar.'];
   if(G.resonance>before) msgs.push('✦ Crimson Thread Resonance '+G.resonance+'/'+RES_MAX+(G.resonance===3?' · new paired technique: Thread-Breaker Formation':'')+(G.resonance===2?' · resonance awareness: you can sense severe disturbances':'')+'.');
   else msgs.push('Their resonance is at its limit for now.');
   const m = addBond('cangyuan', 5); if(m) msgs.push(m);

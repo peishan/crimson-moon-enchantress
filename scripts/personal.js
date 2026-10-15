@@ -55,6 +55,13 @@ function xiaoTianHtml(){
     <h4 style="margin:8px 0 2px">Leads</h4>${leads.map(l => `<div class="li">○ <b>${l.t}</b><div class="sm">${l.clue}</div><div class="sm" style="color:#9aa">${l.state}</div></div>`).join('') || '<div class="sm">No leads yet.</div>'}
     <h4 style="margin:8px 0 2px">Memory fragments (${frags.length})</h4>${frags.map(f => `<div class="li">✦ <b>${f.title}</b> <span class="sm">· comic ${f.comic}</span><div class="sm">${f.text}</div></div>`).join('')}
     <div class="sm">More surface when a clue triggers recognition.</div>
+    ${fieldworkHtml()}
     <h4 style="margin:8px 0 2px">Field proficiency · ${FIELD_RANKS[lv]}</h4><div class="sm">Fieldwork and scouting: +${4*lv}% gold while he fights beside you. ${next}.</div>${bar(wins % FIELD_WINS + (lv >= FIELD_MAX ? FIELD_WINS : 0), FIELD_WINS, 'bond')}</div>`;
+}
+/* his fieldwork in the investigation: the 🍃 clues in the Seal & Sites journal (comics 033-038), shown once their hooks fire */
+function fieldworkHtml(){
+  if(typeof CLUES === 'undefined') return '';
+  const rows = CLUES.filter(c => c[3].startsWith('🍃') && hook(c[0]));
+  return rows.length ? `<h4 style="margin:8px 0 2px">Fieldwork in the investigation</h4><div class="sm">He scouts ahead and notices what the specialists miss. He does not know the magical answers.</div>${rows.map(c => `<div class="li">✔ ${c[3].replace('🍃 ','')} <span class="sm">· comic ${c[2]}</span></div>`).join('')}` : '';
 }
 const personalHtml = () => rolesHtml() + xiaoTianHtml();

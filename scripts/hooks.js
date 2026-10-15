@@ -2398,6 +2398,544 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"62": [
+{
+"id": "inverted_meridian_named",
+"d": "The forbidden method's principle resembles the Inverted Meridian: the technique Cangyuan buried and refused to let anyone use (first story mention)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_reacts_to_both_signatures",
+"d": "The seal reacts to Cangyuan's signature and to Xiyu's: her magic exposes what it conceals, his technique tells how",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_drawing_power_from_behind",
+"d": "The altered formation is not preserving the seal: it is drawing power from whatever lies behind it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "depletion_measurements_found",
+"d": "Marks are measurements of spiritual depletion: how much power the seal consumed, or took from those maintaining it",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_voice_found_the_price",
+"d": "\"So you've found the price.\" / \"Ask the man who left me here.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"63": [
+{
+"id": "cangyuan_remembers_formation_not_chamber",
+"d": "Cangyuan remembers the formation but not this chamber, and not leaving anyone",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_is_a_cycle_consuming_its_source",
+"d": "The seal draws energy from inside and sends it back: whoever is trapped may sustain what traps them",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_consent_unknown",
+"d": "The record shows repeated, increasing losses but not whether the keeper volunteered",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_stop_before_final_stage",
+"d": "The records stop before the final stage: removed, or never completed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_built_on_cangyuan_technique",
+"d": "Someone used Cangyuan's technique as the foundation of the formation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_asks_if_he_knew",
+"d": "\"When you left... did you know what they would do to me?\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"64": [
+{
+"id": "second_anchor_found",
+"d": "A second anchor exists outside the chamber; its mark sits beside the earliest energy readings",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "departure_record_read",
+"d": "A departure record: someone left the shrine before the final stage, someone else remained",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "two_shores_scroll_found",
+"d": "\"When the two shores are severed, the keeper shall remain.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_splits_to_investigate",
+"d": "Dongyue and Xining go to the archive; Xiyu and Cangyuan examine the anchor",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"65": [
+{
+"id": "formation_connects_two_anchors",
+"d": "The formation draws power from one end and transfers it to the other",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_forced_through_single_point",
+"d": "This version forces the energy through a single point: the sealed chamber",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_absorbs_the_strain",
+"d": "The keeper may absorb the strain whenever the connection becomes unstable",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_studied_strain_distribution",
+"d": "Cangyuan studied distributing strain across channels; he never intended a prison; someone believed the ends justified the means",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_rejects_the_word_sacrifice",
+"d": "\"Sacrifice makes it sound as though I was given a choice.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"66": [
+{
+"id": "second_anchor_reached",
+"d": "The second anchor: a pavilion across the island, not abandoned by accident",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "original_formation_shared_strain",
+"d": "The original formation shared the strain between two anchors; someone changed it into a single channel",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_alteration_deliberate",
+"d": "The alteration was deliberate: the keeper became the stabilizing point",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_made_indispensable",
+"d": "The alteration made the keeper indispensable, and so easier to control",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "channels_restored",
+"d": "The divided channels are restored; the drain stops increasing (the keeper is still bound)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_message_eastern_shrine_record",
+"d": "\"Seek the record beneath the eastern shrine.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"67": [
+{
+"id": "xiyu_cangyuan_kiss_again",
+"d": "Cangyuan asks to kiss her again, not because of magic or guilt, and she agrees",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_xining_honest_companionship",
+"d": "Dongyue and Xining agree to keep discovering together: no promises, honest companionship",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "record_symbol_not_in_first_projection",
+"d": "A symbol on the record was not in the first projection: someone is still watching over the formation",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"68": [
+{
+"id": "record_mark_added_later",
+"d": "The red mark was added after the original writing, in different ink; not part of the original Spirit Weaving",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "mark_observes_and_records",
+"d": "The mark observes the formation's flow and records changes (or is a warning system)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "mark_reacted_to_xiyu",
+"d": "The mark reacted to Xiyu's magic and transmitted something",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "whoever_added_it_knew_the_risk",
+"d": "Whoever added the mark knew the alteration was dangerous and did not remove it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "signal_goes_to_relay_point",
+"d": "The signal goes to a relay point between the western anchor and the eastern shrine",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"69": [
+{
+"id": "relay_point_found",
+"d": "The relay point is found; almost no spiritual residue",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "relay_has_a_receiver",
+"d": "The relay mark has a receiver, used more recently than its surroundings",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "receiver_active_during_keepers_losses",
+"d": "The receiver's readings match the periods when the keeper's losses increased",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "relay_school_recognised_not_maker",
+"d": "Cangyuan recognises the school of formation work, not its maker",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "transmission_gap_found",
+"d": "A gap in the transmissions: the receiver was not recording, or someone erased it",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"70": [
+{
+"id": "xiyu_tells_dongyue_ritual_not_a_promise",
+"d": "Xiyu tells Dongyue the ritual saved her life and was not a promise of love",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "wedding_not_legally_recognized_in_muxue",
+"d": "The ceremony was not a legally recognized marriage in Muxue; her father wanted her happiness",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_confesses_feelings_for_cangyuan",
+"d": "Xiyu admits she has feelings for Cangyuan; Dongyue is hurt but does not ask her to pretend",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_cast_enchantment_on_dongyue",
+"d": "Xiyu cast an enchantment so Dongyue perceives Xining as herself (hidden consequence)",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"71": [
+{
+"id": "dongyue_night_memory_gap",
+"d": "Dongyue cannot remember the night: a woman, no face, not certain it was Xiyu",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xining_account_given",
+"d": "Xining says she brought him home drunk and returned to her room; her account leaves the night unresolved",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"72": [
+{
+"id": "xiao_tian_scouted_service_path",
+"d": "Xiao Tian scouted alone and found an old service path behind the eastern ridge with fresh footprints",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "two_sets_of_tracks",
+"d": "Two sets of tracks: one from the ridge, one turned back recently (perhaps one person, perhaps staged)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "flow_redirected_from_fragment",
+"d": "The fragment's flow has been redirected, but not toward anything the fragment can show",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "platform_made_to_be_missed",
+"d": "The abandoned platform was made to be missed, not triggered",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"73": [
+{
+"id": "markings_concealed_deliberately",
+"d": "The platform's markings were concealed deliberately so they would escape ordinary inspection",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "markings_record_a_passage",
+"d": "The markings may record a passage of spiritual energy rather than control it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "slab_moved_recently",
+"d": "Scrape marks: something was moved here recently",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_found_dark_object",
+"d": "Xiao Tian found a small dark object near the outer path and signs that something heavy was dragged away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"74": [
+{
+"id": "fragment_residue_responds_to_xiyu",
+"d": "The fragment's residue responds to Xiyu's power differently",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_edge_was_fitted",
+"d": "The fragment's edge was scratched by something fitted against it: a mechanism, mount or instrument",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "markings_continue_beyond_platform",
+"d": "The pattern continues beyond the platform",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "dragged_marks_head_the_same_way",
+"d": "The dragged marks head the same way: someone carried something heavy through",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"75": [
+{
+"id": "three_channels_chamber_found",
+"d": "A small chamber with three carved channels, once carrying spiritual energy",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "flow_drawn_away_not_stopped",
+"d": "The broken channel should have stopped the flow, but it is being drawn away",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "something_was_placed_in_the_wall",
+"d": "Something was placed here; the fragment may have fitted (not proven)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "flow_redirected_deliberately",
+"d": "The flow was redirected rather than destroyed: the first sign of intention",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"76": [
+{
+"id": "chamber_stabilized_first",
+"d": "They chose to stabilize the chamber first rather than follow the flow",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "fresh_marks_near_entrance",
+"d": "Fresh marks near the entrance: ours or someone else's?",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"77": [
+{
+"id": "chamber_flow_steadied",
+"d": "The flow beneath the chamber has steadied (it did not open)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_may_belong_to_a_fitting",
+"d": "The fragment may have belonged to a fitting that once sat in the channel (not proven)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "redirected_flow_has_a_destination",
+"d": "The redirected flow continues toward a destination not yet found",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_symbol_seen_beneath_sealed_chamber",
+"d": "A symbol appears briefly beneath the sealed chamber, different from the ruins' markings but aligned with the same flow",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_2_mystery_continues",
+"d": "The Volume 2 mystery continues beyond the volume",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"78": [
+{
+"id": "xiyu_chooses_cangyuan",
+"d": "Xiyu freely chooses Cangyuan (no spell, no promise made for her)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "relationship_option_unlocked",
+"d": "The relationship option opens: Xiyu and Cangyuan (Crimson Thread Resonance)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_friend_crewmate_ally",
+"d": "Dongyue stays Xiyu's friend, crewmate and ally (author decision)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_2_completed",
+"d": "Volume 2 complete",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

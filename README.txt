@@ -19,7 +19,7 @@ scripts/temple.js      Ice Temple rooms from the author's map (assets/maps/ice_t
 scripts/ui.js          tabs: Journal, Party, Gates, Wilds, Temple, Cast, Training, Items, Bestiary, Save, Dev
 docs/CHAPTER_GATES.md  which chapter / level gates each party member  (READ THIS)
 docs/ART_ASSET_LIST.md   every art slot with exact filenames (drop-in, safe fallbacks)
-docs/BONDING_AND_CURSE.md  Moon-Heat, Attunement and the Moonlit Bonding
+docs/BONDING_AND_CURSE.md  Moon-Heat, Attunement and companion bonding (quiet time)
 docs/BOND_SYSTEM.md       the bond canon: ritual vs resonance vs marriage, implemented effects, conflicts with the pages
 docs/BOUNTIES.md         The Red Lantern Road bounty (V2 comic 015) and the repeatable road bounties
 docs/VOLUME2.md          Volume 2 so far (comics 001-009 = chapters 40-48), the bonding pause, content notes

@@ -48,7 +48,7 @@ function bondsHtml(){
   const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
   const row = (a,b) => `<div class="sm" style="display:flex;justify-content:space-between;gap:8px;padding:2px 0;border-bottom:1px solid rgba(212,168,67,.1)"><span>${a}</span><span>${b}</span></div>`;
   const dy = G.ch>=20 ? row('Ancient bond-spell (ch20)','cast · she feels his emotions')+row('Life-saving ritual','complete (ch32)')+row('Everlasting union / permanent soul bond','<b>not established</b>')+row('Muxue wedding ceremony',dongyue?(G.ch>=40?'ceremonial only: no papers filed':'held (ch35)'):'—')
-         +row('Moonlit Bonding', bondingPaused() ? 'paused: she asked for space' : bondingOpen() ? 'open' : 'closed') : '<div class="sm">Not yet.</div>';
+         : '<div class="sm">Not yet.</div>';
   const cg = !cang ? '<div class="sm">Not met as a companion yet.</div>' : row('Crimson Thread Resonance',L+'/'+RES_MAX)+row('Dual cultivation', dualCultivationOpen() ? 'open (her choice)' : 'closed until Xiyu chooses it')+row('Permanent soul bond / marriage','none');
   const benefits = L>0 ? `<div class="sm" style="margin-top:4px">With Cangyuan beside her: paired techniques cost ${5*L}% less MP · her heat gain −${Math.round((.25+.05*L)*100)}% · his Steady cools +${5*L} more · she deals +${8*L}% to barriers, layers and linked foes${L>=2?' · senses severe disturbances':''}${L>=3?' · Thread-Breaker Formation':''}.</div>` : '';
   const btn = cang ? `<button ${dualCultivationOpen() && G.bondDay.dual!==G.day ? '' : 'disabled'} onclick="act(doDualCultivation)">🌹 Dual cultivation (by her choice)</button>` : '';
@@ -57,15 +57,12 @@ function bondsHtml(){
    ${cang?`<div class="sm" style="margin-top:4px">The resonance cannot force either to stay, make anyone faithful, reveal thoughts or secrets, cure her corruption, or stop either from leaving.</div>`:''}${btn}`;
 }
 function curseHtml(){
-  const h = G.heat||0, L = G.attune||0, ready = bondingOpen() && !bondingPaused() && G.party.includes('dongyue') && !isAway('dongyue') && G.bondDay.rite!==G.day;
-  const note = !bondingOpen() ? 'After the ritual and the wedding, Dongyue can share the Moonlit Bonding with her. Until then only rest at the inn cools her.'
-    : bondingPaused() ? 'Xiyu has asked for time apart (Volume 2). The bonding is paused until the story brings them back together. Cangyuan\'s Steady the Current can cool her heat meanwhile.'
-    : G.bondDay.rite===G.day ? 'They have shared the night. They can bond again after the next day passes.'
-    : 'Once a day Dongyue can stay beside her through the night: the heat clears and her attunement deepens.';
+  const h = G.heat||0, L = attuneLv(), cos = G.party.filter(id => id!=='xiyu');
+  const done = G.bondDay.quiet === G.day;
+  const btns = cos.map(id => `<button ${quietTimeReady(id)?'':'disabled'} onclick="act(()=>doQuietTime('${id}'))">🍵 ${first(id)}</button>`).join('');
   return `<h4>The Curse · Moon-Heat</h4><div class="sm">🔥 ${heatLabel(h)} (${Math.round(h)}/100)${h>40?' · magic dulled '+Math.round((1-heatMult(h))*100)+'%':''}. Casting builds heat; resting at the inn cools 40.</div>${bar(h,100,'e')}
-   <div class="sm">🌙 Attunement ${L}/${ATTUNE_MAX}: +${2*L}% MAG, +${3*L}% MP, −${5*L}% heat gain${G.afterglow>0?' · ✨ Afterglow ('+G.afterglow+' battles)':''}</div>${bar(L,ATTUNE_MAX,'bond')}
-   ${bondingOpen()&&G.bondDay.rite===G.day?`<img class="pg" src="assets/events/moonlit_bonding.webp" alt="Moonlit Bonding" onerror="this.style.display='none'">`:''}
-   <div class="sm" style="margin:4px 0">${note}</div><button class="pri" ${ready?'':'disabled'} onclick="act(doBonding)">🌙 Moonlit Bonding</button>`;
+   <div class="sm">🌙 Attunement ${L}/${ATTUNE_MAX}: +${2*L}% MAG, +${3*L}% MP, −${5*L}% heat gain${G.afterglow>0?' · ✨ Settled ('+G.afterglow+' battles)':''}. It grows as her bonds with her companions deepen.</div>${bar(L,ATTUNE_MAX,'bond')}
+   <div class="sm" style="margin:4px 0">${cos.length ? (done ? 'She has spent quiet time with someone today. It can be repeated after the next day passes.' : 'Once a day Xiyu can spend quiet time with a companion: her heat settles by 30 and they grow closer.') : 'Quiet time with a companion opens once someone travels with her.'}</div>${btns}`;
 }
 function rSheet(id){
   const c = CHARACTERS[id], rec = isRecruited(id);
@@ -297,7 +294,7 @@ function rDev(){
    <input id="devch" type="number" min="0" max="${LAST_CHAPTER}" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.flags.bonding_unlocked=true;G.flags.bonding_resumed=true;save();toast('Bonding unlocked and resumed');render()">Unlock bonding</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.flags.xiyu_chooses_cangyuan=true;save();toast('Dual cultivation opened (Xiyu chooses)');render()">Open dual cultivation</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.flags.xiyu_chooses_cangyuan=true;save();toast('Dual cultivation opened (Xiyu chooses)');render()">Open dual cultivation</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

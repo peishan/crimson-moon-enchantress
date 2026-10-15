@@ -22,8 +22,8 @@ const relUnderstanding = u => u < 15 ? 'Little understood' : u < 40 ? 'Beginning
 
 /* Story beats that move a relationship when a chapter completes (small, deliberate; conversations do the rest). [a, b, {t,a,u}] */
 const REL_CH = {
-  8:[['dongyue','xiyu',{t:5}]], 11:[['dongyue','xiyu',{t:5,a:5}]], 16:[['dongyue','xiyu',{t:5,a:3}]], 18:[['dongyue','xiyu',{t:5,a:3}]], 20:[['dongyue','xiyu',{t:5,a:3}]],
-  21:[['dongyue','xiyu',{t:5,a:2}]], 29:[['dongyue','xiyu',{t:5,a:6}]], 33:[['dongyue','xiyu',{t:5,a:5,u:5}]], 37:[['dongyue','xiyu',{t:5,a:5}]],
+  8:[['dongyue','xiyu',{t:5}]], 14:[['xiaotian','xiyu',{t:6}]], 15:[['yaxing','xiyu',{t:6}]], 11:[['dongyue','xiyu',{t:5,a:5}]], 16:[['dongyue','xiyu',{t:5,a:3}]], 18:[['dongyue','xiyu',{t:5,a:3}]], 20:[['dongyue','xiyu',{t:5,a:3}]],
+  21:[['dongyue','xiyu',{t:5,a:2}]], 26:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 34:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 29:[['dongyue','xiyu',{t:5,a:6}]], 33:[['dongyue','xiyu',{t:5,a:5,u:5}]], 37:[['dongyue','xiyu',{t:5,a:5}]],
   38:[['dongyue','xiyu',{t:8,a:5,u:10}]], 39:[['dongyue','xiyu',{t:2,u:5}]], 40:[['dongyue','xiyu',{t:-5}]],
   41:[['cangyuan','xiyu',{t:3}]], 42:[['cangyuan','xiyu',{t:3}]], 46:[['cangyuan','xiyu',{t:5}]], 47:[['cangyuan','xiyu',{t:5,a:3}]], 48:[['cangyuan','xiyu',{t:8,u:5}]],
   49:[['cangyuan','xiyu',{t:3,u:3}]], 51:[['cangyuan','xiyu',{a:6,u:2}]], 53:[['cangyuan','xiyu',{a:3}],['xining','xiyu',{t:5}],['xining','dongyue',{t:8,u:5,a:3}],['cangyuan','xining',{t:3}]],
@@ -123,7 +123,7 @@ function pickConvo(id, optId){
 }
 
 /* ---------- the Confidants tab ---------- */
-const relationsOpen = () => G.ch >= 46;
+const relationsOpen = () => G.party.length >= 2;
 function relPairsHtml(){
   const ids = G.party.filter(id => CHARACTERS[id]); const rows = [];
   for(let i=0;i<ids.length;i++) for(let j=i+1;j<ids.length;j++){
@@ -157,9 +157,16 @@ function learnedHtml(){
   return rows.length ? `<h4>What you have learned</h4>${rows.join('')}` : '';
 }
 function rConfidants(){
-  if(!relationsOpen()) return '<h2>Confidants</h2><div class="sm">🔒 Opens when Volume 2 begins to bring the party together.</div>';
+  if(!relationsOpen()) return '<h2>Confidants</h2><div class="sm">🔒 Opens once someone travels with Xiyu.</div>';
   if(CV) return `<h2>Confidants</h2>${convoPlayHtml()}`;
   const list = CONVOS.filter(convoVisible).map(convoCardHtml).join('');
   return `<h2>Confidants</h2><div class="sm">Trust is earned by listening, respecting boundaries and keeping confidences. A question is an invitation, not a right: it is always fine to leave something unasked.</div>
-    <h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}`;
+    <h4>Quiet time</h4>${quietHtml()}<h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}`;
+}
+
+function quietHtml(){
+  const cos = G.party.filter(id => id !== 'xiyu'); if(!cos.length) return '<div class="sm">Nobody is with her yet.</div>';
+  return `<div class="sm">Once a day Xiyu can spend an hour with a companion: her heat settles and they understand each other a little better. It builds trust only up to a point; deeper trust comes from conversations and the story.</div>`
+    + cos.map(id => `<button ${quietTimeReady(id)?'':'disabled'} onclick="act(()=>doQuietTime('${id}'))">🍵 ${first(id)}</button>`).join('')
+    + (G.bondDay.quiet === G.day ? '<div class="sm">She has already spent quiet time today.</div>' : '');
 }

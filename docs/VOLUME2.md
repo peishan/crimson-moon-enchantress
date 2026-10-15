@@ -25,7 +25,7 @@ All nine pages are correctly labelled (001–009); no duplicates or misnumbered 
 - Skill unlock levels retuned to the join chapters (placeholders): Cangyuan 46 / 48 / 50 / 54, Xining 53 / 55 / 57 / 58 / 61. See `VOLUME2_PARTY.md`.
 - Ya'Xing stays at the Ice Temple (not in these pages). Xiao Tian is still in the party but does not appear in 001–009; left as is.
 
-## Decision to confirm: the Moonlit Bonding is paused
+## Resolved: the Moonlit Bonding was removed (replaced by companion bonding)
 Comic 001 has Xiyu declining to "continue as we were at the Ice Temple". I read that as the bonding being **paused** from ch 40 (flag `xiyu_separate_residence`) until the story brings them back together
 (flag `bonding_resumed`, no chapter yet; the Dev tab "Unlock bonding" resumes it). Cangyuan's **Steady the Current** is the interim way to cool her heat once he joins. If you would rather the bonding stay available, delete one line (`bondingPaused` in `scripts/core.js`).
 

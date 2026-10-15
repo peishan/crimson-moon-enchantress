@@ -179,7 +179,7 @@ function playerAct(kind, sid, tuid){
   if(s.kind==='heal' && u.id==='xining') u.treats = (u.treats||0) + 1;
   if(u.id==='xiyu' && s.kind==='magic'){
     const cg = B.allies.some(a => a.id==='cangyuan' && !a.dead);   // Resonance of Two Currents: he redirects 25% of the energy
-    u.heat = Math.min(100, (u.heat||0) + Math.round((3 + (s.mp||0)*.25) * (1 - .05*(G.attune||0)) * (cg ? Math.max(.4, .75 - .05*resLv()) : 1)));   // the curse: casting builds heat
+    u.heat = Math.min(100, (u.heat||0) + Math.round((3 + (s.mp||0)*.25) * (1 - .05*attuneLv()) * (cg ? Math.max(.4, .75 - .05*resLv()) : 1)));   // the curse: casting builds heat
     const c = B.allies.find(a => a.id==='cangyuan' && !a.dead), f = alive(B.foes)[Math.floor(Math.random()*alive(B.foes).length)];
     if(c && f && Math.random() < .35){ blog('  Cangyuan\'s threads catch the spell\'s echo.','good'); strike(c, f, {n:'Resonant Echo', kind:'magic', pow:.5, mp:0}, {noSpread:false}); }
   }

@@ -101,9 +101,11 @@ const joinLevel = id => Math.max(1, avgPartyLv() + (JOIN_LEVEL_OFFSET[id]!==unde
 const bondMult = id => 1 + .02*bondLevel(id);
 /* ---------- THE CURSE (Moon-Heat) and ATTUNEMENT ----------
    Xiyu's magic builds Heat (0-100) as she casts. High Heat dulls her magic (up to -30% MAG). Resting at the inn cools 40.
-   After the ritual and the wedding (hook dongyue_vows_lifelong_devotion, ch35) Dongyue can share the Moonlit Bonding once per day:
-   Heat clears, Attunement rises (max 10), and Xiyu keeps a short Afterglow. Attunement is permanent: +2% MAG, +3% MP and -5% Heat gain per level,
-   and it opens the bond skills. Intimacy is never shown: the game says only that he stays beside her through the night. */
+   COMPANION BONDING (replaces the old Moonlit Bonding): once a day Xiyu can spend QUIET TIME with a companion in the party. Her heat settles (-30),
+   she keeps a short "settled" state for her next 3 battles, and her trust and understanding with that companion grow (see scripts/relations.js).
+   ATTUNEMENT is no longer a counter that is clicked up: it is derived from how deeply Xiyu is connected to the companions in the party
+   (their trust and understanding with her), one level per 30 points, max 10. It is +2% MAG, +3% MP and -5% Heat gain per level, and it opens the bond skills.
+   Nothing here involves intimacy: it is time spent together, conversations and shared work. */
 const ATTUNE_MAX = 10;
 const heatMult = h => 1 - clamp(((h||0)-40)/60, 0, 1)*.3;
 const heatLabel = h => h>=80 ? 'Burning' : h>=50 ? 'Flushed' : h>=20 ? 'Warm' : 'Calm';
@@ -126,28 +128,32 @@ function doDualCultivation(){
   const m = addBond('cangyuan', 5); if(m) msgs.push(m);
   return msgs;
 }
-const bondingOpen = () => hook('dongyue_vows_lifelong_devotion') || !!(G.flags && G.flags.bonding_unlocked);
-/* Volume 2 comic 001: Xiyu asks for a separate residence and time apart ("I don't wish to continue as we were at the Ice Temple"). The bonding is PAUSED until the story
-   brings them back together (flag bonding_resumed; no chapter yet: provisional reading, the Dev tab can resume it). Cangyuan's Steady skill is the interim relief. */
-const bondingPaused = () => !!(G.flags && G.flags.xiyu_separate_residence && !G.flags.bonding_resumed);
-function doBonding(){
-  if(!bondingOpen()) return ['The Moonlit Bonding is not open yet.'];
-  if(bondingPaused()) return ['Xiyu has asked for time apart. The bonding is paused until they find their way back to each other.'];
-  if(!G.party.includes('dongyue') || isAway('dongyue')) return ['Dongyue must be with the party.'];
-  if(G.bondDay.rite === G.day) return ['They have already shared the night. They can bond again after the next day passes.'];
-  G.bondDay.rite = G.day; G.heat = 0; G.afterglow = 3;
-  const before = G.attune; G.attune = Math.min(ATTUNE_MAX, G.attune+1);
-  const msgs = ['🌙 Dongyue stays beside her through the night. Her heat settles, and the bond between them deepens.'];
-  if(G.attune>before){ msgs.push('✦ Attunement '+G.attune+'/'+ATTUNE_MAX+': her magic grows steadier and stronger.'); skillsOf('xiyu').concat(skillsOf('dongyue')).filter(s => s.req && s.req.att===G.attune && reqMet(s.owner||'xiyu', s.req)).forEach(s => msgs.push('  ✦ New skill: '+s.n)); }
-  else msgs.push('Attunement is at its limit for now.');
-  const m = addBond('dongyue', 5); if(m) msgs.push(m);
-  msgs.push('✨ Afterglow: Xiyu\'s magic is a little stronger for her next 3 battles.');
+const ATTUNE_COMPANIONS = ['dongyue','cangyuan','xining','yaxing','xiaotian'];
+function attuneLv(){
+  let t = 0;
+  if(G.rel) ATTUNE_COMPANIONS.forEach(id => { if(G.party.includes(id)){ const r = G.rel[relKey('xiyu', id)]; if(r) t += r.t + r.u; } });
+  return clamp(Math.floor(t/30), 0, ATTUNE_MAX);
+}
+const quietTimeReady = id => G.party.includes(id) && G.party.includes('xiyu') && !isAway(id) && id!=='xiyu' && G.bondDay.quiet !== G.day;
+function doQuietTime(id){
+  if(!G.party.includes(id) || id==='xiyu') return [];
+  if(isAway(id)) return [first(id)+' is not with the party.'];
+  if(G.bondDay.quiet === G.day) return ['Xiyu has already spent quiet time with someone today. It can be repeated after the next day passes.'];
+  G.bondDay.quiet = G.day;
+  const before = attuneLv(), r = relGet('xiyu', id);
+  G.heat = Math.max(0, (G.heat||0) - 30); G.afterglow = 3;   // afterglow = the settled state: +10% MAG for her next 3 battles
+  relAdd('xiyu', id, { t: r.t < 60 ? 2 : 0, u: r.u < 60 ? 2 : 0 });
+  const msgs = ['🍵 Xiyu spends a quiet hour with '+first(id)+'. Her heat settles, and they understand each other a little better.'];
+  const m = addBond(id, 3); if(m) msgs.push(m);
+  const after = attuneLv();
+  if(after > before){ msgs.push('✦ Attunement '+after+'/'+ATTUNE_MAX+': her bonds with her companions steady her magic.'); skillsOf('xiyu').concat(skillsOf('dongyue')).filter(s => s.req && s.req.att===after && reqMet(s.owner||'xiyu', s.req)).forEach(s => msgs.push('  ✦ New skill: '+s.n)); }
+  msgs.push('✨ Settled: Xiyu\'s magic is a little stronger for her next 3 battles.');
   return msgs;
 }
 function statsOf(id){
   const c = CHARACTERS[id], lv = U(id).lv, bm = bondMult(id), out = {};
   STATS.forEach(s => { out[s] = Math.round((c.base[s] + c.grow[s]*(lv-1)) * bm); });
-  if(id==='xiyu'){ const L = G.attune||0; out.mag = Math.round(out.mag*(1+.02*L)); out.mp = Math.round(out.mp*(1+.03*L)); }
+  if(id==='xiyu'){ const L = attuneLv(); out.mag = Math.round(out.mag*(1+.02*L)); out.mp = Math.round(out.mp*(1+.03*L)); }
   return out;
 }
 function gainXp(amount, ids){
@@ -176,7 +182,7 @@ function reqText(r){
 function reqMet(id, r){
   if(!r) return true;
   if(r.lvl && U(id).lv < r.lvl) return false;
-  if(r.att && (G.attune||0) < r.att) return false;
+  if(r.att && attuneLv() < r.att) return false;
   if(r.res && (G.resonance||0) < r.res) return false;
   if(r.flag && !G.flags[r.flag]) return false;
   return true;

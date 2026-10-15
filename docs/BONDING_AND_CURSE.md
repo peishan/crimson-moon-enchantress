@@ -1,28 +1,23 @@
-# The curse (Moon-Heat) and the Moonlit Bonding
+# The curse (Moon-Heat) and companion bonding
 
-Author direction: after the ritual and the "marriage", Xiyu requires regular bonding with Dongyue to increase her powers and abilities while dealing with her curse.
-Implemented as a gameplay system, kept modest (no explicit content): the game only says Dongyue stays beside her through the night.
+**Author decision (latest):** the old "Moonlit Bonding" (Dongyue staying beside Xiyu through the night) is **removed**. It came from an earlier direction the author says is out of date. It is replaced by **companion bonding**, which uses the trust and approval system (docs/RELATIONSHIPS.md). Nothing in this system involves intimacy.
 
-## The curse: Moon-Heat (0–100)
+## The curse: Moon-Heat (0-100)
 - Xiyu's spells build heat (about 3 + a quarter of the MP cost per cast). Heat carries between real battles; the Training Room does not save it.
-- From heat 40 it dulls her magic, up to −30% MAG at 100. Labels: Calm / Warm / Flushed (50) / Burning (80).
-- Resting at the inn cools 40. That is the only relief until the bonding opens.
-- Why: ch1 and ch6 give her magic a heat side effect that she cools at the stream.
+- From heat 40 it dulls her magic, up to -30% MAG at 100. Labels: Calm / Warm / Flushed (50) / Burning (80).
+- Resting at the inn cools 40. **Quiet time** with a companion cools 30 (below). Cangyuan's Steady the Current and Dongyue's Cooling Blessing also cool.
 
-## The Moonlit Bonding (opens after the wedding, hook `dongyue_vows_lifelong_devotion`, ch35: provisional, no approved script yet)
-Once per day (story chapters and inn rests advance the day), with Dongyue in the party:
-- Heat clears completely.
-- **Attunement** +1 (max 10 in Volume 1): permanent +2% MAG, +3% MP and −5% heat gain per level.
-- **Afterglow**: +10% MAG for her next 3 real battles.
-- Bond with Dongyue +5.
-- Unlocks bond skills: **Cooling Blessing** (Dongyue, Attunement 2: cools 30 heat, regen, cleanse) and **Soulbound Moonfire** (Xiyu, Attunement 3: stronger while Dongyue fights beside her). Both also need the soul-bond (ch20).
+## Quiet time (companion bonding)
+- Once a day (`G.day`) Xiyu can spend an hour with any companion in the party (Party sheet or Confidants tab). Her heat settles by 30, she is **Settled** for her next 3 battles (+10% MAG), that companion's combat bond grows a little, and her trust and understanding with them grow by 2 each.
+- Quiet time builds trust and understanding only up to 60 (the "Confided in you" stage). Deeper trust comes from conversations and the story.
 
-## Where it lives
-`scripts/core.js` (heat, attunement, `doBonding`), `scripts/battle.js` (heat in combat), `scripts/ui.js` (Xiyu's sheet "The Curse"), `scripts/characters.js` (the two skills).
-Dev tab: **Unlock bonding**, **Heat 80**, **+1 day**.
+## Attunement (derived, not clicked)
+- Attunement level = floor((sum of trust + understanding between Xiyu and each companion in the party) / 30), max 10.
+- Each level: +2% MAG, +3% MP, -5% heat gain. It opens the bond skills (for example Linked Moonfire needs attunement 3 and the story flag).
+- So her power grows as her bonds with Dongyue, Cangyuan, Xining, Ya'Xing and Xiao Tian deepen, through quiet time, conversations and story chapters.
 
-## Open questions
-1. ~~Open from the ritual (ch32) or after the wedding (ch35)?~~ Author decided: **after the wedding, ch35**.
-2. Should bonding also be required, or only helpful? It is helpful only (nothing is lost if skipped, but heat dulls her magic).
-3. Does the curse matter before the bonding? Yes, lightly (heat from ch1); say if it should start only after a story beat.
-4. Pacing: one bonding per day gives about one attunement per rest. Tune `ATTUNE_MAX` and the daily limit in `core.js`.
+## Removed
+`doBonding`, `bondingOpen`, `bondingPaused`, the "Unlock bonding" Dev button, the Moonlit Bonding row on the Bonds panel, the Afterglow art slot (`assets/events/moonlit_bonding.webp`) and the "bonding resumes" flag. Hook ids and old saves are untouched (the old attunement number in a save is ignored).
+
+## Not changed
+Crimson Thread Resonance (Xiyu x Cangyuan) stays closed until the author decides when it opens (docs/BOND_SYSTEM.md).

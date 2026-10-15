@@ -10,10 +10,10 @@ Use PNG or WebP. Comic pages named `chNN.png` are converted to WebP by the Pages
 | 3 | Portrait cards for new characters | `assets/cast/people/hoko.webp`, `anong.webp`, `yamon.webp`, `commander_west.webp` | 512×512 card in the same style as the 20-card set. Also send a clean no-caption square |
 | 4 | Story variants of the leads | `assets/party/xiyu_unveiled.webp` (veil removed, from ch33), `xiyu_wed.webp` (wedding red, from ch35), `dongyue_wed.webp` (ceremonial robes, from ch35), `yaxing_injured.webp` (bandaged, from ch36) | 320×320, caption-free. Fallback is the base portrait |
 
-## B. Needed for the new Moonlit Bonding and the curse
+## B. Curse and companion bonding (the Moonlit Bonding scene is cancelled)
 | # | Asset | File | Notes |
 |---|---|---|---|
-| 5 | **Moonlit Bonding scene** | `assets/events/moonlit_bonding.webp` | One tasteful illustration shown after each bonding: a moonlit chamber, Xiyu and Dongyue close beneath a blanket, petals and steam, faces turned or hidden. **Non-explicit, no nudity.** 1024×1536 or 1536×1024 |
+| 5 | ~~Moonlit Bonding scene~~ | (cancelled: the Moonlit Bonding was removed) | Not needed. |
 | 6 | Optional: Xiyu "Burning" (high heat) battle portrait | `assets/party/xiyu_burning.webp` | Flushed cheeks, loosened hair. Not wired yet; say if you want it |
 | 7 | Optional UI icons: Heat, Attunement, Afterglow | `assets/icons/heat.png`, `attune.png`, `afterglow.png` | 64×64. Not wired yet (emoji now) |
 

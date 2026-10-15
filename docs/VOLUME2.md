@@ -41,3 +41,6 @@ Comic 001 has Xiyu declining to "continue as we were at the Ice Temple". I read 
 
 ## Open thread: Ya'Xing (author, to revisit in Volume 3)
 Ya'Xing stays away from the party after ch39 (recovering). The new comic 039 no longer shows this on the page; the author will revisit him in Volume 3, so the game keeps him away until then.
+
+## Comics 010-015 uploaded (author)
+V2 010 "The Mark That Hid Her", 011 "The First Breach", 012 "The First Flutter" (panel numbers on the page repeat 2 and 5), 013 "The Kindness He Remembered", 014 "The Choice to Stay" (Xining joins), 015 "The Bounty Beneath the Red Lantern". Internal chapters 49-54 now have real titles, summaries, events and hooks; the placeholder flag is removed. Relationship threads on the pages: Xiyu and Cangyuan (012, 014), Dongyue and Xining (013, 014).

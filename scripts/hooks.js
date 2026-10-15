@@ -1960,10 +1960,109 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"49": [
+{
+"id": "formation_three_rings_revealed",
+"d": "The formation has three functions: concealment, regulation and containment",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_hides_the_inner_ring",
+"d": "The outer structure may be hiding the inner one from someone",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_eye_symbol_reached",
+"d": "The black filament reaches the hidden eye symbol beneath the sanctuary",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "veil_is_thinning",
+"d": "\"The veil is thinning. At last, I can sense her.\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"50": [
+{
+"id": "first_breach_beneath_sanctuary",
+"d": "The hidden eye closes beneath the sanctuary; lanterns turn black",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "island_wards_failing",
+"d": "Protective wards are failing outward from the sanctuary",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "eastern_shrine_inscription_erased_from_inside",
+"d": "The shrine inscription was erased from the inside; its mark matches the sanctuary symbol",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_door_found",
+"d": "\"Blood of the returned... You have found the first door.\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"51": [
+{
+"id": "xiyu_stopped_from_touching_mark",
+"d": "Cangyuan stops Xiyu from touching the shrine mark: it may recognise her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_notices_cangyuan",
+"d": "Xiyu finds herself thinking about Cangyuan's hand",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"52": [
+{
+"id": "xining_treats_dongyue",
+"d": "Xining treats Dongyue's spiritual exhaustion",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_feels_ease_with_xining",
+"d": "Dongyue feels an unfamiliar ease with Xining",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_cangyuan_sleeves_brush",
+"d": "Xiyu does not move away when her sleeve brushes Cangyuan's",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "53": [
 {
 "id": "xining_joins_party",
-"d": "Lu Xining joins the party (author-confirmed: V2 comic 014; chapter itself not written yet)",
+"d": "Lu Xining joins the party (author-confirmed: V2 comic 014)",
 "t": "state",
 "p": false,
 "s": "art"

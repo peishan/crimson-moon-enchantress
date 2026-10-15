@@ -22,9 +22,9 @@ const relUnderstanding = u => u < 15 ? 'Little understood' : u < 40 ? 'Beginning
 
 /* Story beats that move a relationship when a chapter completes (small, deliberate; conversations do the rest). [a, b, {t,a,u}] */
 const REL_CH = {
-  8:[['dongyue','xiyu',{t:5}]], 14:[['xiaotian','xiyu',{t:6}]], 15:[['yaxing','xiyu',{t:6}]], 11:[['dongyue','xiyu',{t:5,a:5}]], 16:[['dongyue','xiyu',{t:5,a:3}]], 18:[['dongyue','xiyu',{t:5,a:3}]], 20:[['dongyue','xiyu',{t:5,a:3}]],
-  21:[['dongyue','xiyu',{t:5,a:2}]], 26:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 34:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 29:[['dongyue','xiyu',{t:5,a:6}]], 33:[['dongyue','xiyu',{t:5,a:5,u:5}]], 37:[['dongyue','xiyu',{t:5,a:5}]],
-  38:[['dongyue','xiyu',{t:8,a:5,u:10}]], 39:[['dongyue','xiyu',{t:2,u:5}]], 40:[['dongyue','xiyu',{t:-5}]],
+  8:[['dongyue','xiyu',{t:5}]], 14:[['xiaotian','xiyu',{t:6}],['dongyue','xiaotian',{t:30,u:20}]], 15:[['yaxing','xiyu',{t:6}]], 11:[['dongyue','xiyu',{t:5,a:5}]], 16:[['dongyue','xiyu',{t:5,a:3}]], 18:[['dongyue','xiyu',{t:5,a:3}]], 20:[['dongyue','xiyu',{t:5,a:3}]],
+  21:[['dongyue','xiyu',{t:5,a:2}]], 26:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 34:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}],['dongyue','xiaotian',{t:5}]], 36:[['dongyue','xiaotian',{t:5,u:5}]], 29:[['dongyue','xiyu',{t:5,a:6}]], 33:[['dongyue','xiyu',{t:5,a:5,u:5}]], 37:[['dongyue','xiyu',{t:5,a:5}]],
+  38:[['dongyue','xiyu',{t:8,a:5,u:10}]], 39:[['dongyue','xiyu',{t:2,u:5}],['dongyue','xiaotian',{t:5}]], 40:[['dongyue','xiyu',{t:-5}]],
   41:[['cangyuan','xiyu',{t:3}]], 42:[['cangyuan','xiyu',{t:3}]], 46:[['cangyuan','xiyu',{t:5}]], 47:[['cangyuan','xiyu',{t:5,a:3}]], 48:[['cangyuan','xiyu',{t:8,u:5}]],
   49:[['cangyuan','xiyu',{t:3,u:3}]], 51:[['cangyuan','xiyu',{a:6,u:2}]], 53:[['cangyuan','xiyu',{a:3}],['xining','xiyu',{t:5}],['xining','dongyue',{t:8,u:5,a:3}],['cangyuan','xining',{t:3}]],
   52:[['xining','dongyue',{t:10,u:5,a:5}]], 54:[['xining','xiyu',{t:5,u:3}],['cangyuan','xining',{t:3}],['cangyuan','dongyue',{t:3}]],
@@ -93,6 +93,28 @@ const CONVOS = [
        reply:['Xiyu: "Some of it is mine to keep."','Cangyuan: "Then keep it."']},
       {id:'press', kind:'press', t:'Tell him it is none of his business.', fx:{t:-5},
        reply:['Cangyuan: "Fair."','He lets it go, and does not ask again today.']},
+    ]},
+  { id:'dongyue_xiaotian_dream', a:'dongyue', b:'xiaotian', ch:40, trust:40, title:'Dongyue asks about the woman in grey', who:'Dongyue → Xiao Tian',
+    lead:'Late one evening Dongyue asks his sworn younger brother about the dreams he mutters about in his sleep: the woman in grey who calls him "son".',
+    options:[
+      {id:'listen', kind:'listen', t:'Let him talk.', fx:{t:8,u:8}, flags:['xiao_tian_shared_the_dream'],
+       reply:['Xiao Tian, for once without a joke: "She says \'son\'. I can\'t see her face. I wake up and I know it mattered, and I don\'t know why."','Dongyue: "Then we find out, together. You don\'t have to be ready first."'],
+       learned:'Dongyue will back his search for the woman in grey, without pushing him to remember faster.'},
+      {id:'notnow', kind:'notnow', t:'Tell him they can talk another night.', fx:{t:1},
+       reply:['Xiao Tian: "Ha, good. I was about to make a terrible joke."','Dongyue: "Make it. Then we\'ll see."']},
+      {id:'press', kind:'press', t:'Press him to remember her face.', fx:{t:-6},
+       reply:['Xiao Tian: "If I could, I would! Stop it, it hurts."','The silence afterwards is not a kind one.']},
+    ]},
+  { id:'dongyue_xiaotian_master', a:'dongyue', b:'xiaotian', ch:40, trust:50, title:'Xiao Tian tells him about his master', who:'Xiao Tian → Dongyue',
+    lead:'After a hard fight Xiao Tian sits apart from the others. Dongyue joins him, and he finally speaks about the mountain, his martial brothers and his missing master.',
+    options:[
+      {id:'listen', kind:'listen', t:'Listen.', fx:{t:10,u:10}, flags:['xiao_tian_shared_his_loss'],
+       reply:['Xiao Tian: "They were my brothers. They died over gold, and the ones who did it wore iron masks. My master is somewhere, or nowhere. I have to get stronger before I find out which."','Dongyue: "You are not doing it alone."'],
+       learned:'Dongyue understands why Xiao Tian trains so hard, and will fight beside him rather than for him.'},
+      {id:'notnow', kind:'notnow', t:'Sit beside him in silence.', fx:{t:2},
+       reply:['Xiao Tian does not say anything either. After a while he leans against Dongyue\'s shoulder, and neither remarks on it.']},
+      {id:'press', kind:'press', t:'Tell him revenge will not bring anyone back.', fx:{t:-7},
+       reply:['Xiao Tian: "I know what it won\'t do. Let me have it anyway."','He walks off, and Dongyue lets him go.']},
     ]},
 ];
 const convoState = id => (G.convo = G.convo || {})[id] || {};
@@ -166,7 +188,7 @@ function rConfidants(){
   if(CV) return `<h2>Confidants</h2>${convoPlayHtml()}`;
   const list = CONVOS.filter(convoVisible).map(convoCardHtml).join('');
   return `<h2>Confidants</h2><div class="sm">Trust is earned by listening, respecting boundaries and keeping confidences. A question is an invitation, not a right: it is always fine to leave something unasked.</div>
-    <h4>Quiet time</h4>${quietHtml()}<h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}`;
+    <h4>Quiet time</h4>${quietHtml()}<h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}${personalHtml()}`;
 }
 
 function quietHtml(){

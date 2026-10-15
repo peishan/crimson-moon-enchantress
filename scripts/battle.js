@@ -252,6 +252,7 @@ function finishWin(){
   foes.forEach(f => { xp += f.xp; gold += f.gold; f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); G.bestiary[f.key] = (G.bestiary[f.key]||0)+1; });
   const boss = foes.find(f => f.boss);
   if(boss) rollLoot(LOOT[boss.key], spec.firstClear).forEach(d => drops.push(d));
+  if(typeof fieldGoldMult === 'function') gold = Math.round(gold * fieldGoldMult(B.allies));   // Xiao Tian's field proficiency
   B.rewards = { xp, gold, drops, msgs:[], real:!!spec.rewards };
   blog('Victory!','good');
   if(!spec.rewards) return;
@@ -261,6 +262,7 @@ function finishWin(){
   act.forEach(id => { const m = addBond(id, boss ? 8 : 3); if(m) B.rewards.msgs.push(m); });
   G.gold += gold; addItems(drops); G.wins = (G.wins||0)+1;
   if(spec.onWin) B.rewards.msgs = B.rewards.msgs.concat(spec.onWin() || []);
+  if(typeof personalOnWin === 'function') personalOnWin(act);   // field proficiency and shared danger
   if(typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
   save();
 }

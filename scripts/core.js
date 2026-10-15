@@ -125,13 +125,22 @@ function relationshipUnlock(){
 }
 /* PARTY SYNERGY: stat bonuses for allies who fight in the same battle.
    Comradeship: each ally you trust (trust 40/60/80 with them) gives +1/+2/+3% to ATK, MAG, DEF and SPD, up to +5% in all.
-   Bond of Choice (Xiyu and Cangyuan, after the relationship option opens): +4% plus 2% per Resonance level (up to +14%) for both. */
+   Bond of Choice (Xiyu and Cangyuan, after the relationship option opens): +4% plus 2% per Resonance level (up to +14%) for both.
+   Named pairs (PAIR_SYN): Dongyue + Xining +6%, Dongyue + Xiao Tian +5%, Dongyue + Xiyu +2% (from chapter 70). */
+/* Named pair synergies (author): both partners gain the bonus when they fight in the same party. They lapse by themselves while one is away. */
+const PAIR_SYN = [
+  {a:'dongyue', b:'xining',   pct:.06, label:'Healers in step', open:() => true},
+  {a:'dongyue', b:'xiaotian', pct:.05, label:'Sworn brothers',  open:() => true},
+  {a:'dongyue', b:'xiyu',     pct:.02, label:'Friends',         open:() => G.ch >= 70},   // a friendly bond, minor effect
+];
+const pairSynActive = (p, ids) => ids.includes(p.a) && ids.includes(p.b) && p.open();
 function synergyOf(id, ids){
-  let b = 0, bond = 0;
+  let b = 0, bond = 0, pair = 0;
+  PAIR_SYN.forEach(p => { if((p.a===id || p.b===id) && pairSynActive(p, ids)) pair += p.pct; });
   ids.forEach(o => { if(o === id) return; const r = G.rel && G.rel[relKey(id,o)]; if(r) b += r.t >= 80 ? .03 : r.t >= 60 ? .02 : r.t >= 40 ? .01 : 0; });
   b = Math.min(b, .05);
   if(relationshipOpen() && ((id==='xiyu' && ids.includes('cangyuan')) || (id==='cangyuan' && ids.includes('xiyu')))) bond = .04 + .02*resLv();
-  return {comrade:b, bond, total:b+bond};
+  return {comrade:b, bond, pair, total:b+bond+pair};
 }
 const dualCultivationOpen = () => relationshipOpen() && G.party.includes('cangyuan');
 function doDualCultivation(){

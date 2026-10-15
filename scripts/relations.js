@@ -197,9 +197,14 @@ function rConfidants(){
   if(CV) return `<h2>Confidants</h2>${convoPlayHtml()}`;
   const list = CONVOS.filter(convoVisible).map(convoCardHtml).join('');
   return `<h2>Confidants</h2><div class="sm">Trust is earned by listening, respecting boundaries and keeping confidences. A question is an invitation, not a right: it is always fine to leave something unasked.</div>
-    <h4>Quiet time</h4>${quietHtml()}<h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}${personalHtml()}`;
+    ${synergyHtml()}<h4>Quiet time</h4>${quietHtml()}<h4>How they stand</h4>${relPairsHtml()}<h4>Conversations</h4>${list || '<div class="sm">Nothing to talk about yet.</div>'}${learnedHtml()}${personalHtml()}`;
 }
 
+function synergyHtml(){
+  const rows = PAIR_SYN.filter(p => isRecruited(p.a) && isRecruited(p.b) && p.open()).map(p => { const on = pairSynActive(p, G.active); return `<div class="li">${on?'✔':'○'} <b>${first(p.a)} + ${first(p.b)}</b> · ${p.label} +${Math.round(p.pct*100)}% <span class="sm">${on?'active in this party':'when both fight in the same party'}</span></div>`; }).join('');
+  const bond = relationshipOpen() ? `<div class="li">${isRecruited('cangyuan') && G.active.includes('xiyu') && G.active.includes('cangyuan') ? '✔' : '○'} <b>Xiyu + Cangyuan</b> · Bond of Choice +${4+2*resLv()}%</div>` : '';
+  return `<h4>Party synergies</h4><div class="sm">Allies who fight in the same party gain stat bonuses (ATK, MAG, DEF, SPD). Anyone you trust adds a little more (Comradeship, up to +5%).</div>${rows}${bond}`;
+}
 function quietHtml(){
   const cos = G.party.filter(id => id !== 'xiyu'); if(!cos.length) return '<div class="sm">Nobody is with her yet.</div>';
   return `<div class="sm">Once a day Xiyu can spend an hour with a companion: her heat settles and they understand each other a little better. It builds trust only up to a point; deeper trust comes from conversations and the story.</div>`

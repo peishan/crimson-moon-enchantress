@@ -24,3 +24,6 @@ Swordsmanship techniques restored by memory fragments (the Thousand Petals skill
 
 ## Settled (author)
 Xiao Tian's master and martial brothers were **killed** (the hook `xiao_tian_master_and_brothers_killed` is right). The game text, fragments, leads and conversation follow that; the ch036 summary and the hook goal text were corrected from "missing master" / "locate his master".
+
+## Named party synergies (author)
+Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5%), Dongyue + Xiyu (Friends, +2%, from chapter 70) apply to both when they fight in the same party. See `PAIR_SYN` in scripts/core.js. For the planned Dongyue/Xining separation see docs/VOLUME3_PLAN.md.

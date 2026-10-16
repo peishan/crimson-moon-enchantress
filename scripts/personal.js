@@ -52,6 +52,10 @@ const XT_FRAGMENTS = [
   {id:'stance', hook:'xiao_tian_memory_again_keep_your_stance', title:'Again. Keep Your Stance.', comic:'V3 022', text:'A man\'s voice, firm yet patient: "Again. Keep your stance." Someone taught him to use a sword, and forgetting feels like letting him down. The name "Feng…" hovered on his tongue, clear and out of reach: undeniably his, but it did not fully return.'},
   {id:'rack', hook:'xiao_tian_memory_sword_rack', title:'The Sword Rack', comic:'V3 024', text:'A familiar stance, a guiding hand, a patient voice. The face remains blurred.'},
   {id:'rain', hook:'xiao_tian_dreams_of_the_masked_figure', title:'The Face in the Rain', comic:'V3 032', text:'Wet boards, rain, a blade, a hand seizing his wrist and a masked figure with a blurred face. He cannot tell whether he was protecting someone, being restrained, or trying to reach a fallen companion. One thing is clear: the hand was trying to stop him from moving forward.'},
+  {id:'opening', hook:'xiao_tian_memory_watch_the_opening', title:'Watch the Opening', comic:'V3 034', text:'A voice, familiar yet out of reach: "Watch the opening, not the blade." The voice is clear; the face behind it stays hidden.'},
+  {id:'yard', hook:'xiao_tian_memory_training_yard_laughter', title:'The Sound of Laughter', comic:'V3 035', text:'A training yard, several wooden practice swords, and someone laughing after he finally got a difficult movement right. He felt proud, and safe. The first memory that brought warmth, not fear.'},
+  {id:'opposite', hook:'xiao_tian_memory_someone_smiling_opposite', title:'Someone Smiling Opposite Him', comic:'V3 037', text:'During a light spar with Dongyue: someone standing opposite him, smiling as he finally got the movement right. The face is hidden; the companionship is clear.'},
+  {id:'name', hook:'xiao_tian_recovers_the_name_feng_xia', title:'The Name Feng Xia', comic:'V3 038', text:'He says the name aloud: "Feng Xia". It feels familiar, with both pain and relief. The face, the place and the people remain in mist. The name no longer feels like a stranger\'s.'},
 ];
 /* Leads are tracked separately; nothing links any of them to the seal or to each other unless a page does. */
 const XT_LEADS = [
@@ -71,7 +75,7 @@ function xiaoTianHtml(){
   const next = lv < FIELD_MAX ? (FIELD_WINS - wins % FIELD_WINS)+' more victories with him to the next rank' : 'the highest rank';
   const hurt = hook('xiao_tian_recovery_incomplete') ? '<div class="sm">His recovery is incomplete: pain, allergies and the odd burst of laughter remain.</div>' : '';
   return `<div class="panel"><h3>🍃 Xiao Tian · The Lost Swordsman</h3>
-    <div class="sm">Dongyue's sworn younger brother. Under the childish amnesiac he is now, he was Feng Xia, a tough, mature swordsman. His strength is not coming back all at once, and getting his memories back will not turn him back into who he was.</div>${hurt}
+    <div class="sm">Dongyue's sworn younger brother. ${hook('xiao_tian_recovers_the_name_feng_xia') ? 'He has recovered the name <b>Feng Xia</b> (the name only: the face, the place and the people are still in mist). Under the amnesiac he is now,' : 'Under the childish amnesiac he is now,'} he was Feng Xia, a tough, mature swordsman. His strength is not coming back all at once, and getting his memories back will not turn him back into who he was.</div>${hurt}
     <h4 style="margin:8px 0 2px">Leads</h4>${leads.map(l => `<div class="li">○ <b>${l.t}</b><div class="sm">${l.clue}</div><div class="sm" style="color:#9aa">${l.state}</div></div>`).join('') || '<div class="sm">No leads yet.</div>'}
     <h4 style="margin:8px 0 2px">Memory fragments (${frags.length})</h4>${frags.map(f => `<div class="li">✦ <b>${f.title}</b> <span class="sm">· ${/^V/.test(f.comic) ? f.comic : 'comic '+f.comic}</span><div class="sm">${f.text}</div></div>`).join('')}
     <div class="sm">More surface when a clue triggers recognition.</div>

@@ -166,6 +166,7 @@ const CLUES = [   // [hook id, category, comic, text]
   ['name_on_the_orders_appears_several_times', 'trail', 'V3 030', 'A name appears several times on the redirected orders (顧雲舟, Gu Yunzhou: romanisation to confirm); it does not prove they acted alone'],
   ['second_record_meeting_with_omitted_person', 'trail', 'V3 031', 'A second record places the named intermediary at a meeting with someone whose name was deliberately omitted: a blank mark and a partially torn seal'],
   ['partial_seal_resembles_clerks_scrap', 'trail', 'V3 031', 'The torn seal resembles the clerk\'s scrap but is not an exact match: someone took care to hide part of the story'],
+  ['no_evidence_connects_repository_to_xiao_tian', 'trail', 'V3 035', 'Muxue records: no one has identified who ordered the redirected deliveries, and no evidence yet connects the repository to Xiao Tian\'s past'],
   ['signal_disappeared_disturbance_remains', 'ruins', 'V3 003', 'The signal disappeared but the disturbance did not; the remaining energy is strained like a wound forced to close'],
   ['scrape_made_after_stone_settled', 'ruins', 'V3 003', '🍃 A scrape was made after the stone was already there (the dust settled inside, not across the edge)'],
   ['groove_leads_toward_inner_chamber', 'ruins', 'V3 004', 'The scrape is deliberate and leads toward the inner chamber: something was taken inside or brought out'],

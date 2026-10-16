@@ -4171,6 +4171,170 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"112": [
+{
+"id": "xiao_tian_returns_to_the_clearing",
+"d": "Xiao Tian returns to the clearing to repeat the sword stance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "stance_is_years_of_training",
+"d": "The movement is precise: learned through years of training, not recently",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_sees_discipline_and_hesitation",
+"d": "Dongyue sees discipline and a hesitation, as if Xiao Tian once learned to expect an attack from an unexpected direction",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_wonders_fight_or_survive_an_ambush",
+"d": "Xiao Tian wonders whether his teacher trained him to fight enemies or to survive an ambush",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_watch_the_opening",
+"d": "Xiao Tian recalls a voice: \"Watch the opening, not the blade.\"; the face hidden",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"113": [
+{
+"id": "xiao_tian_fears_his_old_self_was_cruel",
+"d": "Xiao Tian: \"What if I find out I was someone cruel or cold?\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "memory_cannot_decide_what_you_choose_now",
+"d": "Xining and Dongyue: memory can reveal the past but not decide what he chooses now; knowing it gives the chance to choose again",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_evidence_connects_repository_to_xiao_tian",
+"d": "The Muxue records: no one has identified who ordered the redirected deliveries, and no evidence yet connects the repository to Xiao Tian's past",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_training_yard_laughter",
+"d": "Xiao Tian recalls a training yard, wooden practice swords and someone laughing when he got a difficult movement right",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"114": [
+{
+"id": "xiao_tian_first_warm_memory",
+"d": "For the first time a returned memory brings warmth, not fear",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_felt_proud_and_safe",
+"d": "Xiao Tian: in the memory he felt proud, and safe",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_curious_not_afraid",
+"d": "He falls asleep without forcing himself to remember: curious about what might return instead of afraid of it",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"115": [
+{
+"id": "xiao_tian_spars_with_dongyue",
+"d": "Xiao Tian asks Dongyue to spar lightly, to see whether his instincts can answer a moving opponent",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_anticipates_dongyues_move",
+"d": "Without thinking, Xiao Tian anticipates one of Dongyue's movements and turns aside before the practice sword reaches him",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_someone_smiling_opposite",
+"d": "Xiao Tian recalls someone standing opposite him, smiling as he got the movement right; the face hidden, the companionship clear",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_treats_him_as_a_capable_adult",
+"d": "Xiao Tian thanks Dongyue for treating him as a capable adult, not someone who might break",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_wont_recover_only_through_dreams",
+"d": "He no longer wants to recover his past only through dreams",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"116": [
+{
+"id": "xiao_tian_recovers_the_name_feng_xia",
+"d": "Xiao Tian says the name \"Feng Xia\" aloud, no longer dismissing it as a passing sound: it feels familiar (the name only: the face, place and people remain in mist)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_pain_and_relief_at_the_name",
+"d": "Hearing the name brings both pain and relief; he is afraid of the person he used to be",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_wants_to_know_even_if_painful",
+"d": "\"I don't want to forget it anymore. Even if it is painful, I want to know.\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "name_feels_like_a_part_of_him_waiting_to_be_found",
+"d": "The name no longer feels like a stranger's: a part of him waiting to be found",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "group_keeps_following_the_evidence",
+"d": "The group keeps following the evidence rather than force a conclusion",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

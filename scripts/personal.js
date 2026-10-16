@@ -43,6 +43,9 @@ const XT_FRAGMENTS = [
   {id:'handmind', hook:'xiao_tian_memory_blade_follows_hand', title:'The Blade Follows the Hand', comic:'V3 014', text:'"The edge must follow the hand, not lead it." "The blade follows the hand. The hand follows the mind." Perhaps his master\'s words. A shape, no face.'},
   {id:'judgment', hook:'xiao_tian_memory_tool_and_judgment', title:'A Tool and Your Judgment', comic:'V3 015', text:'"A tool tells you what it can do. Your judgment decides whether you should use it." The face remains beyond reach.'},
   {id:'road', hook:'xiao_tian_memory_sword_protects_the_road', title:'The Sword Protects the Road', comic:'V3 016', text:'"A good swordsman must know what he is protecting." "The sword protects the road. It does not choose the destination." He remembers the lesson, not the day.'},
+  {id:'hands', hook:'xiao_tian_memory_in_the_hands', title:'A Memory in the Hands', comic:'V3 008', text:'Someone training him. He thinks it was his master. He is afraid the next memory will be worse.'},
+  {id:'prove', hook:'xiao_tian_memory_dont_fight_to_prove', title:'Don\'t Fight to Prove What You Were', comic:'V3 017', text:'"Don\'t fight to prove what you were. Fight only when you know what you must protect." "A sword is carried for the road ahead, not the glory behind." He cannot tell whether it came before the massacre or long before.'},
+  {id:'wrist', hook:'xiao_tian_memory_blade_and_wrist', title:'A Blade and a Wrist', comic:'V3 018', text:'A blade, a wrist, then the memory breaks. He reached for someone, but cannot tell whether he was stopping the blade, being restrained, or trying to save someone. He fears he did something terrible.'},
 ];
 /* Leads are tracked separately; nothing links any of them to the seal or to each other unless a page does. */
 const XT_LEADS = [

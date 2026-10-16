@@ -101,7 +101,14 @@ Author decision: Volume 2 has no map. The **🔎 Seal & Sites** tab (`scripts/se
 - Journal clues and hooks added (433 hooks total).
 
 ## Volume 3 comics 010-016 (chapters 88-94)
-Installed: 010 The Mark Beneath the Silence, 011 The Third Channel, 012 The Residue That Remained, 013 The Name Beneath the Silence, 014 The Craftsman's Mark, 015 The Page That Was Torn Away, 016 The Estate of Forgotten Things. `LAST_CHAPTER` is 94. **Comic 008 (chapter 86) is still the placeholder**; the author is generating it.
+Installed: 010 The Mark Beneath the Silence, 011 The Third Channel, 012 The Residue That Remained, 013 The Name Beneath the Silence, 014 The Craftsman's Mark, 015 The Page That Was Torn Away, 016 The Estate of Forgotten Things. `LAST_CHAPTER` is 94. **Comic 008 (chapter 86) was uploaded later and replaced the placeholder.**
 - The investigation moves off the ruins: the fragment is shown to a craftsman at the **Songxia workshop** (014), a workshop ledger with an almost identical pattern has its source page **missing** (015), and an **estate** inventory points to a **mountain repository** (016): "a direction, at least". Nothing names a culprit, a motive or a maker. Two new sites on the Seal & Sites schematic (workshop, estate) are dotted (leads, not proven to share a cause). The mountain repository is not drawn until it is visited.
 - Xiao Tian: seven more memory fragments (watch the shoulder; protecting someone or escaping; a click and a hand on his wrist; "your feet tell me"; "the blade follows the hand"; "a tool tells you what it can do"; "the sword protects the road"). The faces stay blurred; "his master" is only suggested.
 - Journal now has 88 clues; hooks total 463.
+
+## Volume 3 comics 008, 017 and 018 (chapters 86, 95, 96)
+- **008 "The Quiet Between Heartbeats"** (chapter 86) installed, replacing the placeholder: Xiyu and Cangyuan on familiarity and certainty; Xining and Dongyue ("let someone notice you, too"); a memory in Xiao Tian's hands; the same branching pattern, older than the damage. It overlaps in dialogue with comic 009 (both have "Then let someone notice you, too" and "You said 'suggests'"); the game records both as pages show them.
+- **017 "Two Roads in the Records"** (95): two repositories, the first a scholarly archive, the second dismantled instruments from abandoned sites; the second is more relevant, and the first question is whether it still exists.
+- **018 "The Repository That Should Be Empty"** (96): the second repository's rusted latch, disturbed dust, a track across the threshold and an empty instrument case (a clean rectangle in the dust). Xiao Tian recalls a blade and a wrist and fears he did something terrible. Still no name, no proof it belongs to the hand that altered the formation.
+- `LAST_CHAPTER` is 96; 93 clues, 478 hooks. A "Second repository (abandoned)" site was added (dotted).
+- **Page 017 typo:** one caption reads "genealogies, and cultivation histories" doubled over in the first panel (art-only).

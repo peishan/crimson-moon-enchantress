@@ -3147,6 +3147,29 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"86": [
+{
+"id": "xiyu_cangyuan_familiarity_not_certainty",
+"d": "Cangyuan: familiarity must not be mistaken for certainty; Xiyu asks him not to decide what she feels because he hopes he knows",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xining_tells_dongyue_he_notices_everyone_but_himself",
+"d": "Xining tells Dongyue he notices everyone except himself; \"Then let someone notice you, too.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_in_the_hands",
+"d": "Xiao Tian: a memory in the hands: someone training him, perhaps his master",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "87": [
 {
 "id": "same_three_channel_pattern",
@@ -3424,6 +3447,80 @@ const HOOKS = {
 {
 "id": "mountain_repository_a_direction",
 "d": "A direction, not an answer: the fittings may have come from a mountain repository",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"95": [
+{
+"id": "two_repositories_in_the_records",
+"d": "The records offer two repositories: a scholarly archive and one of dismantled instruments from abandoned sites",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_repository_more_relevant",
+"d": "The second repository (dismantled instruments) is more relevant to the fragment, but not known to hold the answer",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_entry_names_three_channel_design",
+"d": "Several entries describe fittings, but none names the three-channel design directly",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_dont_fight_to_prove",
+"d": "Xiao Tian recalls: \"Don't fight to prove what you were. Fight only when you know what you must protect.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_question_does_second_repository_exist",
+"d": "The first question is whether the second repository still exists",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"96": [
+{
+"id": "repository_latch_rusted_dust_disturbed",
+"d": "The repository's latch is rusted but the dust beneath it has been disturbed: someone, or an animal, entered",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "narrow_track_across_threshold",
+"d": "A narrow track crosses the threshold, partly obscured by fallen needles",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "instrument_case_empty_clean_rectangle",
+"d": "A clean rectangular patch in the dust: a case that once held an instrument, now gone (moved yesterday or years ago, unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_blade_and_wrist",
+"d": "Xiao Tian recalls a blade and a wrist, then the memory breaks: stopping it, being restrained, or trying to save someone? He fears he did something terrible",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "repository_searched_or_emptied_before_abandonment",
+"d": "Someone may have searched the room, or removed something before it was abandoned (not known to be connected)",
 "t": "state",
 "p": false,
 "s": "art"

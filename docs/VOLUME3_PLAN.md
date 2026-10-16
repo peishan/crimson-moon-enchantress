@@ -2,8 +2,14 @@
 
 Recorded so future chapters follow them. Nothing here is in the game text yet; the game never mentions Xining's pregnancy.
 
-## The curse belongs to Dongyue
-**Dongyue is the cursed one** (his own line in comic 021-era script: "I'm cursed too, Xiyu"). It is **not Xiyu and not Cangyuan**. Open question for the author: the game's Moon-Heat meter (Xiyu's magic heat, from the ch1/ch6 pages) is currently Xiyu's. It is a magic side effect, so it was left as is; say if the *curse* mechanic should move to Dongyue.
+## The curse belongs to Dongyue (settled)
+**Dongyue is the cursed one**, not Xiyu and not Cangyuan. Xiyu's Moon-Heat stays what it is in the game: **a magic side effect** (author decision), not the curse. Dongyue's curse mechanism is **not yet established**; the only signs on the pages are his **shocking bazi** (birth chart) and his **grey/silvery-white hair**. Do not invent a mechanic for it until the author does.
+
+## Dongyue's family backstory (author; hidden from the player and from Dongyue)
+- His **healing ability is inherited from his maternal side.**
+- His **biological father was a trader who kept poor company and was swindled of his fortune, then left his mother.** The man Dongyue knows as his father is his **stepfather**, a merchant his mother met later, after the stepfather relocated to Yilong.
+- **Dongyue does not know his father is not his biological father.** He also does not know **why his parents keep him contained in a house with no female servants**. That upbringing is why he is **inexperienced with intimacy and relationships**.
+- The game text must not reveal any of this yet. Note: in the Xining conversation (`xining_dongyue_family`) Dongyue says his parents feared what his healing could become and the fear turned into control: that is **his own understanding**, which stays true to him while the real reasons are hidden. Revisit when he returns to Yilong (the Volume 3 search for Xining's master).
 
 ## Xining's pregnancy (replaces the earlier "miscarriage" idea)
 - Supersedes the earlier undecided miscarriage/pregnancy note. **Xining is pregnant**, and she **survives the boss battle / friendly fire** (a future Volume 3 battle).

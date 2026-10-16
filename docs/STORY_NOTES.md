@@ -12,3 +12,5 @@ Xiyu is *supposed* to be a "descendant" of the Muxue clan, but in truth she was 
 ## Rules for the game
 - The game now follows the pages: hooks `xiyu_sees_yan_memory_of_infant` (ch34) and `yan_ambitions_revealed` (ch29) fire from the art. Her full identity (frozen in time, raised by her own descendants) is not stated on any page and stays open; `xiyu_questions_her_lineage` and `xiyu_doubts_about_yan_persist` stay open.
 - Xiao Tian's true name is Feng Xia (ch36 page).
+
+- Dongyue is the cursed one (shocking bazi, grey hair); Xiyu's Moon-Heat is a magic side effect. His family backstory (maternal healing line, biological father a swindled trader who left, merchant stepfather in Yilong, why he was sheltered) is recorded in docs/VOLUME3_PLAN.md and is hidden from him and from the player.

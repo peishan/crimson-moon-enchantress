@@ -19,6 +19,8 @@ const SITES = [
   {id:'western', n:'Western anchor · pavilion', x:45, y:175, shown:() => sealHook('second_anchor_reached'), note:'The second anchor, across the island. Not abandoned by accident. The divided channels were restored here.'},
   {id:'relay',   n:'Relay point',            x:150, y:40,  shown:() => sealHook('relay_point_found'), note:'A hidden receiver for the mark\'s signals, almost without residue. It was not recording during one interval.'},
   {id:'ruins',   n:'The ruins (eastern ridge)', x:305, y:60, shown:() => sealHook('xiao_tian_scouted_service_path'), note:'Reached by an old service path Xiao Tian scouted. An abandoned platform made to be overlooked, with a concealed marking.'},
+  {id:'workshop', n:'Songxia workshop', x:85, y:208, shown:() => sealHook('craftsman_consulted_songxia_workshop'), note:'A craftsman who reads old tools. The fragment\'s alloy and edges are a method, not a maker.'},
+  {id:'estate', n:'The estate', x:222, y:205, shown:() => sealHook('estate_reached'), note:'Where the old workshop records were sold. An inventory points to a mountain repository: a direction, not an answer.'},
   {id:'chamber', n:'Chamber beneath the mountain', x:225, y:28, shown:() => sealHook('three_channels_chamber_found'), note:'Three carved channels. The flow here is drawn away, not stopped. It is steadied for now, and still closed.'},
 ];
 const LINKS = [   // [a, b, solid (confirmed)]
@@ -29,6 +31,7 @@ const LINKS = [   // [a, b, solid (confirmed)]
   ['eshrine','relay', true], ['western','relay', true],   // the signal travels to a relay point (029-030)
   ['eshrine','ruins', false],     // whether the ruins belong to the same event is unproven (034)
   ['ruins','chamber', true],      // the route beyond the ruins (035-036)
+  ['ruins','workshop', false], ['workshop','estate', false],   // leads that follow the fragment (not proven to share a cause)
   ['chamber','eshrine', false],   // a symbol appears beneath the sealed chamber, aligned with the same flow (038): destination unknown
 ];
 function sitesSvg(){
@@ -159,6 +162,17 @@ const CLUES = [   // [hook id, category, comic, text]
   ['new_channel_not_on_first_survey', 'ruins', 'V3 007', '🍃 A channel not on the first survey leads away from the central ruins'],
   ['network_predates_alteration', 'ruins', 'V3 009', 'The terrace shows the same three-channel pattern; the mark is older than the damage, so the network predates the alteration'],
   ['someone_had_access_to_both_sites', 'ruins', 'V3 009', 'The fragment came from this network: someone had access to both sites (no name, no motive)'],
+  ['grooves_cleaner_beneath_dust', 'ruins', 'V3 010', 'The grooves are cleaner beneath the dust: covered after carving, or the dust settled differently'],
+  ['third_channel_narrower', 'ruins', 'V3 010', 'Two sites share almost identical spacing, but the third channel is narrower: a changed design, or a different purpose'],
+  ['third_channel_clean_cut', 'ruins', 'V3 011', 'One channel under the pavilion ends in a clean cut where the others weathered naturally (when and why unknown)'],
+  ['network_missing_connection', 'ruins', 'V3 011', 'The same design repeats in different places with a missing connection: severed, or built in stages'],
+  ['residue_concentrated_along_cut', 'ruins', 'V3 012', 'The residue is concentrated along the cut; the fragment may have interacted with the process, which is not the same as causing it'],
+  ['metallic_residue_in_groove', 'ruins', 'V3 012', 'A metallic residue is embedded in the groove'],
+  ['fragment_notch_seen_in_light', 'ruins', 'V3 013', 'A small notch near the fragment\'s edge: a fitting point, or ordinary wear'],
+  ['fragment_alloy_altered_old_tools', 'records', 'V3 014', 'The craftsman: the alloy was altered and the edges worked with tools not used in generations (a method, no maker)'],
+  ['workshop_ledger_pattern_almost_identical', 'records', 'V3 015', 'A workshop ledger shows an almost identical branching pattern (copied from an older register)'],
+  ['ledger_page_missing', 'records', 'V3 015', 'The original ledger page is missing: removed or simply lost (recorded, not an accusation)'],
+  ['inventory_mountain_repository', 'records', 'V3 016', 'An estate inventory lists incomplete metal fittings "transferred from mountain repository", from a dismantled structure'],
 ];
 const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow']];
 const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it

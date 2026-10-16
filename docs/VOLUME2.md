@@ -99,3 +99,9 @@ Author decision: Volume 2 has no map. The **🔎 Seal & Sites** tab (`scripts/se
 - **Xiao Tian:** three new memory fragments (a sound and a buckle; the corridor and someone falling; hands, a blade and possibly his master) and he says he wants to find out what happened to his **master and martial brothers** (consistent with the killed decision). The pages echo the golden buckles of the masked invaders but do not link them; the game does not either.
 - **Yilong** is first named as a place with useful records (comic 006), "a possibility, not the next destination".
 - Journal clues and hooks added (433 hooks total).
+
+## Volume 3 comics 010-016 (chapters 88-94)
+Installed: 010 The Mark Beneath the Silence, 011 The Third Channel, 012 The Residue That Remained, 013 The Name Beneath the Silence, 014 The Craftsman's Mark, 015 The Page That Was Torn Away, 016 The Estate of Forgotten Things. `LAST_CHAPTER` is 94. **Comic 008 (chapter 86) is still the placeholder**; the author is generating it.
+- The investigation moves off the ruins: the fragment is shown to a craftsman at the **Songxia workshop** (014), a workshop ledger with an almost identical pattern has its source page **missing** (015), and an **estate** inventory points to a **mountain repository** (016): "a direction, at least". Nothing names a culprit, a motive or a maker. Two new sites on the Seal & Sites schematic (workshop, estate) are dotted (leads, not proven to share a cause). The mountain repository is not drawn until it is visited.
+- Xiao Tian: seven more memory fragments (watch the shoulder; protecting someone or escaping; a click and a hand on his wrist; "your feet tell me"; "the blade follows the hand"; "a tool tells you what it can do"; "the sword protects the road"). The faces stay blurred; "his master" is only suggested.
+- Journal now has 88 clues; hooks total 463.

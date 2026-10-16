@@ -24,7 +24,7 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, LAST_CHAPTER = 87;   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comic 008 (chapter 86) not uploaded yet
+const VOL2_START = 40, VOL3_START = 79, LAST_CHAPTER = 94;   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comic 008 (chapter 86) not uploaded yet; comics 010-016 = chapters 88-94
 const volOf = n => n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
 const vnum = n => n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;
 const chName = n => volOf(n) > 1 ? 'Volume '+volOf(n)+' · Chapter '+vnum(n) : 'Chapter '+n;

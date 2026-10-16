@@ -3190,6 +3190,244 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"88": [
+{
+"id": "two_marks_a_pattern",
+"d": "Two matching marks could be a pattern, which alone cannot reveal the hand that made it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "grooves_cleaner_beneath_dust",
+"d": "The grooves are cleaner beneath the dust: covered after carving, or the dust settled differently",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "third_channel_narrower",
+"d": "The two sites' spacing is almost identical, but the third channel is narrower: the design changed, or the mark served a different purpose",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_watch_the_shoulder",
+"d": "Xiao Tian recalls his master: \"Don't watch the blade. Watch the shoulder.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_given_not_taken",
+"d": "Xiao Tian: this memory feels like something he was given, not taken",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"89": [
+{
+"id": "third_channel_clean_cut",
+"d": "One channel ends in a clean cut where the others weathered naturally (when and why unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_body_moved_first",
+"d": "Xiao Tian recalls a corridor, a blade scraping a wall and his hand pulling someone backward: protecting someone, or escaping?",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "damage_may_predate_weakening",
+"d": "The stone around the cut shows no collapse: the damage may predate the structure weakening",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "network_missing_connection",
+"d": "The same design repeats with a missing connection: severed, or built in stages",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"90": [
+{
+"id": "channel_residue_responds",
+"d": "The channel's residue responds to the fragment or to the surrounding energy",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "residue_concentrated_along_cut",
+"d": "The residue is concentrated along the cut; the fragment may have interacted with the process, not caused it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "metallic_residue_in_groove",
+"d": "A metallic residue is embedded in the groove",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_click_wrist",
+"d": "Xiao Tian recalls metal pressed into a groove, a sharp click, someone catching his wrist (not the hand)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "three_observations_not_one_explanation",
+"d": "A reaction, a matching residue and a similar sound: three observations, not yet one explanation",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"91": [
+{
+"id": "records_from_before_alteration_needed",
+"d": "They need records from before the formation was altered, or someone who has studied this spiritual architecture",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_notch_seen_in_light",
+"d": "A small notch near the fragment's edge, seen only at an angle: a fitting point or ordinary wear",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_feet_tell_the_mind",
+"d": "Xiao Tian recalls his master: \"Your feet tell me where your mind intends to go.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_fears_what_follows",
+"d": "Xiao Tian fears the thought that he might remember what happened after the training",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "lead_chosen_verifiable_first",
+"d": "They choose the lead that can be verified first",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"92": [
+{
+"id": "craftsman_consulted_songxia_workshop",
+"d": "The fragment is shown to an elderly craftsman at the Songxia workshop",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_alloy_altered_old_tools",
+"d": "The alloy has been altered and the edges worked with tools not used in generations",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_origin_unconfirmed",
+"d": "A construction method, but no confirmed origin or maker; no proof it caused the damage",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_blade_follows_hand",
+"d": "Xiao Tian recalls: \"The blade follows the hand. The hand follows the mind.\" (perhaps his master)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"93": [
+{
+"id": "workshop_ledger_pattern_almost_identical",
+"d": "The ledger entry's branching pattern is almost identical to the fragment (not proof of the same object)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ledger_page_missing",
+"d": "The original page is missing: removed or simply lost (recorded, not an accusation)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ledger_bought_at_estate_sale",
+"d": "The craftsman bought the ledger at an estate sale; related metalwork records may still be there",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_tool_and_judgment",
+"d": "Xiao Tian recalls: \"A tool tells you what it can do. Your judgment decides whether you should use it.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"94": [
+{
+"id": "estate_reached",
+"d": "The party reaches the estate whose records they hope survive",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "inventory_mountain_repository",
+"d": "An inventory entry: metal fittings (incomplete), tools and instruments, damaged, \"transferred from mountain repository\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "fittings_from_dismantled_structure",
+"d": "The fittings came from a dismantled structure; their original use is not described",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_sword_protects_the_road",
+"d": "Xiao Tian recalls: \"A good swordsman must know what he is protecting.\" / \"The sword protects the road. It does not choose the destination.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mountain_repository_a_direction",
+"d": "A direction, not an answer: the fittings may have come from a mountain repository",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

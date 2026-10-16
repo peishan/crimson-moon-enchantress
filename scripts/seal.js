@@ -151,6 +151,21 @@ const CLUES = [   // [hook id, category, comic, text]
   ['chamber_flow_steadied', 'ruins', '038', 'The flow beneath the chamber has steadied (the chamber did not open)'],
   ['redirected_flow_has_a_destination', 'ruins', '038', 'The redirected flow continues toward a destination not yet found'],
   ['second_symbol_seen_beneath_sealed_chamber', 'ruins', '038', 'A symbol appeared briefly beneath the sealed chamber, different from the ruins\' markings but aligned with the same flow'],
+  ['repository_items_taken_deliberately', 'trail', 'V3 019', 'Records were taken from the repository deliberately: someone did not want them found; the inner door is still sealed'],
+  ['caretaker_recognises_what_it_cost', 'trail', 'V3 020', 'An old caretaker recognises a triangular fragment from the repository ("what it cost"); after a night when someone disappeared, the staff were told never to speak of it'],
+  ['record_keeper_kept_copies', 'trail', 'V3 020', 'A record keeper kept copies of things the estate ordered destroyed; someone in the old market might know him'],
+  ['listed_objects_missing_from_repository', 'trail', 'V3 021', 'Objects listed in the old inventory are gone; a visitor after abandonment is not proven (they may have taken something, or searched for something already missing)'],
+  ['records_kept_apart_from_main_collection', 'trail', 'V3 024', 'An old storehouse kept duplicate records apart from the main collection; several entries are crossed out, one noting a visitor long after the repository closed (name incomplete)'],
+  ['clerk_visited_after_estate_closed', 'trail', 'V3 025', 'The former clerk was visited years after the estate closed and made to hand over copies of certain records: no threats, only a clear message that some things were safer forgotten'],
+  ['clerk_kept_a_scrap_of_a_seal', 'trail', 'V3 025', 'The clerk kept a scrap showing part of a seal impression (a frightened witness, not a guilty one)'],
+  ['partial_seal_matches_supply_organisation_style', 'trail', 'V3 027', 'The torn seal matches the estate\'s supply organisation: the right track, not an owner'],
+  ['deliveries_around_closure_dont_match_records', 'trail', 'V3 027', 'Deliveries around the time the repository closed do not match the usual records: some supplies were redirected'],
+  ['supplies_redirected_under_someones_orders', 'trail', 'V3 028', 'The former supplier: supplies were redirected under someone\'s orders; he never learned who. Those deliveries were kept in a second account book'],
+  ['large_quantities_moved_handwriting_changes', 'trail', 'V3 029', 'The second account book: large quantities moved away, the handwriting changes midway (more than one hand), recorded as "miscellaneous goods" and "maintenance supplies"'],
+  ['account_entry_mark_similar_to_clerks_seal', 'trail', 'V3 029', 'An account entry bears a mark like the clerk\'s seal: same organisation, not a full match'],
+  ['name_on_the_orders_appears_several_times', 'trail', 'V3 030', 'A name appears several times on the redirected orders (顧雲舟, Gu Yunzhou: romanisation to confirm); it does not prove they acted alone'],
+  ['second_record_meeting_with_omitted_person', 'trail', 'V3 031', 'A second record places the named intermediary at a meeting with someone whose name was deliberately omitted: a blank mark and a partially torn seal'],
+  ['partial_seal_resembles_clerks_scrap', 'trail', 'V3 031', 'The torn seal resembles the clerk\'s scrap but is not an exact match: someone took care to hide part of the story'],
   ['signal_disappeared_disturbance_remains', 'ruins', 'V3 003', 'The signal disappeared but the disturbance did not; the remaining energy is strained like a wound forced to close'],
   ['scrape_made_after_stone_settled', 'ruins', 'V3 003', '🍃 A scrape was made after the stone was already there (the dust settled inside, not across the edge)'],
   ['groove_leads_toward_inner_chamber', 'ruins', 'V3 004', 'The scrape is deliberate and leads toward the inner chamber: something was taken inside or brought out'],
@@ -180,7 +195,7 @@ const CLUES = [   // [hook id, category, comic, text]
   ['instrument_case_empty_clean_rectangle', 'records', 'V3 018', 'A case that once held an instrument is empty: a clean rectangle in the dust (moved yesterday or years ago, unknown)'],
   ['repository_searched_or_emptied_before_abandonment', 'records', 'V3 018', 'Someone may have searched the room, or removed something before it was abandoned; no proof the two are connected'],
 ];
-const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow']];
+const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow'],['trail','🗂️ The repository trail']];
 const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it
   ['hidden_eye_symbol_reached', 'What is the formation concealing, and from whom?'],
   ['record_deliberately_altered', 'Who altered the record?'],
@@ -192,6 +207,9 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['formation_alteration_deliberate', 'Who altered the formation to make the keeper indispensable?'],
   ['transmission_gap_found', 'Who receives the signals, and what happened in the missing interval?'],
   ['redirected_flow_has_a_destination', 'Where is the redirected flow going, and why?'],
+  ['repository_items_taken_deliberately', 'Who took the repository\'s records and instruments, and why?'],
+  ['name_on_the_orders_appears_several_times', 'Who is behind the name on the redirected orders, and who gave the final instructions?'],
+  ['omitted_name_blank_mark_and_torn_seal', 'Who was the person at the meeting whose name was removed?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [
@@ -201,6 +219,7 @@ const STAGES = [
   {t:'Restore the channels', d:'Stop the increasing drain without pretending the whole system is repaired.', done:() => sealHook('channels_restored'), active:() => sealHook('second_anchor_reached')},
   {t:'Trace the relay', d:'Follow the signals to the relay point and what it recorded.', done:() => sealHook('relay_point_found'), active:() => sealHook('signal_goes_to_relay_point')},
   {t:'Investigate the missing interval', d:'The records stop and a gap is left in the transmissions. Who erased it, and what happened then?', done:() => false, active:() => sealHook('transmission_gap_found')},
+  {t:'Trace the repository records', d:'Who emptied the repository, and who redirected its deliveries? A name has surfaced, and a seal torn away from a record.', done:() => false, active:() => sealHook('old_storehouse_found') || sealHook('caretaker_found_near_estate')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

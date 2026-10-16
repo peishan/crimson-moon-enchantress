@@ -3525,6 +3525,652 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"97": [
+{
+"id": "repository_dust_disturbed_or_left_before_settling",
+"d": "Someone was here, or left before the dust could settle",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_recognises_the_feeling",
+"d": "Xiao Tian touches the dust: \"I know this feeling\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_voice_calls_feng",
+"d": "Xiao Tian recalls a blade, a wrist and a voice he almost knew calling \"Feng—!\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_fears_the_person_he_was",
+"d": "Xiao Tian: \"What if I don't like the person I was?\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "repository_items_taken_deliberately",
+"d": "Records were taken deliberately: someone did not want them found",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "inner_door_still_sealed_but_searcher_knew",
+"d": "The inner door is still sealed, but someone here knew what they were looking for",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"98": [
+{
+"id": "caretaker_found_near_estate",
+"d": "An old caretaker lives near the abandoned estate",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "caretaker_recognises_what_it_cost",
+"d": "Shown a small triangular fragment from the repository, the caretaker says \"I recognize what it costs\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "caretaker_told_never_to_speak",
+"d": "After a night when someone disappeared, the staff were told never to speak of it again",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_wooden_floor_blade_hand",
+"d": "Xiao Tian recalls a wooden floor, a blade and a hand reaching toward him; the face hidden",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "caretaker_says_he_has_his_eyes",
+"d": "The caretaker says Xiao Tian has \"his eyes\", then that he may be mistaken (whose, unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "caretaker_remembers_a_boy_who_would_not_run",
+"d": "He remembers a boy who refused to run while others were falling, and does not know what became of him",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "record_keeper_kept_copies",
+"d": "A record keeper kept copies of things the estate ordered destroyed; someone in the old market might know him",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"99": [
+{
+"id": "listed_objects_missing_from_repository",
+"d": "Objects listed in the old inventory are gone",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "visitor_after_abandonment_unproven",
+"d": "Someone may have returned after the repository was abandoned: they may have taken something, or searched for something already missing (not proven)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_refuses_to_be_a_puzzle",
+"d": "Xiao Tian: \"I don't want to become a puzzle you solve\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_follows_xiao_tians_lead",
+"d": "Xiyu: \"You decide what we investigate, and when we stop\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_weight_of_a_sword",
+"d": "At the threshold: the weight of a sword in his hand; no face, no name",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "inner_door_left_untouched",
+"d": "They documented the missing objects and left the sealed inner door untouched",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"100": [
+{
+"id": "xiao_tian_memory_again_keep_your_stance",
+"d": "Xiao Tian recalls a man's voice, firm yet patient: \"Again. Keep your stance.\"; the face blurred",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_someone_taught_him_the_sword",
+"d": "Someone taught him to use a sword; forgetting feels like letting him down",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_name_feng_hovers",
+"d": "The name \"Feng…\" hovers on his tongue, clear but out of reach: it felt his, but did not fully return",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_will_say_when_ready",
+"d": "Xiao Tian: \"Next time, let me tell you when I'm ready.\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"101": [
+{
+"id": "camp_by_the_mountain_path",
+"d": "The party camps by the mountain path at night",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "helping_is_not_carrying_everything",
+"d": "Xining tells Dongyue that helping someone does not mean carrying everything for them; \"Someone has to.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "missing_objects_proof_of_loss_not_of_who",
+"d": "Proof that something is missing, not of who took it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "stop_pretending_uncertainty_is_an_answer",
+"d": "Xiyu: \"Then we stop pretending uncertainty is an answer\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_storehouse_with_duplicate_records",
+"d": "A note mentions an old storehouse where duplicate records were kept",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"102": [
+{
+"id": "old_storehouse_found",
+"d": "The group finds the old storehouse on the estate's outskirts",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_kept_apart_from_main_collection",
+"d": "Someone kept these records apart from the main collection: they survived, not why they were hidden",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "entries_crossed_out_visitor_noted",
+"d": "Several entries are crossed out; a note mentions a visitor who returned long after the repository was closed (name incomplete)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_sword_rack",
+"d": "The sword rack stirs a memory: a familiar stance, a guiding hand, a patient voice; the face blurred",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "former_estate_clerk_may_hold_inventory",
+"d": "The records point to a former estate clerk who may still have a personal copy of the missing inventory",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_no_longer_outside_his_own_life",
+"d": "Xiao Tian: he no longer feels he is standing outside his own life",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"103": [
+{
+"id": "former_clerk_found_in_village",
+"d": "The former estate clerk is found living quietly in a small village",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "clerk_refuses_to_discuss_a_name",
+"d": "The clerk: \"I won't discuss that name\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "clerk_visited_after_estate_closed",
+"d": "Years after the estate closed someone demanded copies of certain records: no threats, only a clear message that some things were safer forgotten",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "clerk_obeyed_out_of_fear",
+"d": "The clerk obeyed out of fear and is still afraid",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "clerk_kept_a_scrap_of_a_seal",
+"d": "The clerk kept a scrap showing part of a seal impression; he cannot recall the design with certainty",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_decides_what_to_do_with_each_truth",
+"d": "Xiao Tian: remembering everything no longer sounds like it would make him whole; he will decide what to do with each truth when it comes",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"104": [
+{
+"id": "party_leaves_village_with_a_lead",
+"d": "With a lead in hand, the group prepares to leave the village",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "road_ahead_will_test_the_lead",
+"d": "The road ahead would reveal whether the lead was enough",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"105": [
+{
+"id": "partial_seal_matches_supply_organisation_style",
+"d": "The torn seal matches the style used by the estate's supply organisation, but is incomplete: it confirms the track, not the owner",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "similar_seals_on_delivery_notes",
+"d": "Old delivery notes bear similar seals, none identical",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "supply_organisation_handled_rare_materials",
+"d": "The organisation handled supplies for the estate, including rare materials",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_hid_tracks_with_damaged_seal",
+"d": "Someone tried to hide their tracks: a damaged seal, or a design changed over time",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "deliveries_around_closure_dont_match_records",
+"d": "Several deliveries around the time the repository closed do not match the usual records",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "supplies_redirected_who_ordered_it",
+"d": "Some supplies were redirected: the question is who ordered it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_practises_a_remembered_stance",
+"d": "Xiao Tian finds no memory tied to the seal and practises a stance he dimly remembers: \"I can be of use.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "former_supplier_lead",
+"d": "A former supplier may hold transaction records from the repository's final years",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"106": [
+{
+"id": "former_supplier_shopkeeper_met",
+"d": "The party visits a former supplier, an older shopkeeper who handled the estate's deliveries",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "supplies_redirected_under_someones_orders",
+"d": "The shopkeeper: supplies were redirected under orders from someone; he never learned who",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "shopkeeper_obeyed_out_of_fear",
+"d": "He obeyed because it was safer not to ask; he was afraid then and still is",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "redirected_deliveries_in_a_second_account_book",
+"d": "The redirected deliveries were kept separately in a second account book (\"Secondary Deliveries\")",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_account_book_may_be_at_southern_docks",
+"d": "The second account book may be in an old warehouse near the southern docks",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_fear_of_what_he_might_lose",
+"d": "Xiao Tian: his fear is not of what he might remember but of what he might lose if he does",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"107": [
+{
+"id": "account_book_found",
+"d": "The neglected account book is found",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "entries_cover_final_years_before_closing",
+"d": "Its entries cover the final years before the repository was closed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "large_quantities_moved_handwriting_changes",
+"d": "Large quantities were moved away; the handwriting changes midway: more than one person handled the transactions",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "account_entry_mark_similar_to_clerks_seal",
+"d": "An entry bears a mark similar to the clerk's seal: not a full match, the same design elements",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "deliveries_recorded_as_miscellaneous_goods",
+"d": "Deliveries were recorded as \"miscellaneous goods\" or \"maintenance supplies\": different terms to avoid attention",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "unknown_if_supplies_arrived",
+"d": "It is not known where the supplies were sent, or whether they arrived",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_joins_the_questioning",
+"d": "Xiao Tian wants to help question the next witness and no longer stand on the sidelines",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"108": [
+{
+"id": "retired_intermediary_met",
+"d": "The party meets a retired intermediary who carried orders between the estate and its suppliers",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "intermediary_only_a_messenger",
+"d": "He was only a messenger and does not know who gave the final orders",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "name_on_the_orders_appears_several_times",
+"d": "A name appears several times on the orders: supplies were redirected under that person's instruction (read on the page as 顧雲舟, Gu Yunzhou: romanisation to confirm)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "name_does_not_prove_acting_alone",
+"d": "The name matches the style and period of the records but does not prove they acted alone: they may have carried out someone else's instructions",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "intermediary_told_to_leave_no_copies",
+"d": "He was told not to leave copies of the final orders and kept only what he needed to complete the deliveries",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_no_need_to_remember_everything_at_once",
+"d": "Xiao Tian no longer feels the need to remember everything immediately to keep moving forward",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"109": [
+{
+"id": "name_appears_in_several_transactions",
+"d": "The name appears in several transactions across different records and matches their style and period",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_insists_on_a_second_source",
+"d": "Dongyue insists on a second source: a name alone is not proof",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_helps_organise_the_documents",
+"d": "Xiao Tian asks to help organise the documents",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_record_meeting_with_omitted_person",
+"d": "A second record places the named intermediary at a meeting with someone whose identity was deliberately omitted",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "omitted_name_blank_mark_and_torn_seal",
+"d": "The other person's name is missing: a blank mark and a partially torn seal",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "partial_seal_resembles_clerks_scrap",
+"d": "The partial seal resembles the clerk's scrap, but is not an exact match",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_knows_nothing_of_who_he_was",
+"d": "Xiao Tian has spent so long wanting his own name back, yet knows almost nothing about the person he used to be",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_hid_part_of_the_story",
+"d": "Someone took care to hide part of the story",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"110": [
+{
+"id": "xiao_tian_dreams_of_the_masked_figure",
+"d": "Xiao Tian dreams of wet boards, rain, a blade, a hand seizing his wrist and a masked figure with a blurred face",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_dream_hand_stopping_him",
+"d": "The hand that seized his wrist was trying to stop him from moving forward (protecting, restraining or something else: unknown)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_afraid_he_survived_when_others_did_not",
+"d": "Xiao Tian: \"I'm afraid... that I survived when others did not.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dongyue_stays_until_breathing_steadies",
+"d": "Dongyue stays with him until his breathing steadies and asks what he needs instead of pressing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "surviving_is_not_proof_of_failure",
+"d": "Dongyue: \"Surviving is not proof of failure.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_chooses_not_to_stop",
+"d": "Even without his memories he chooses not to stop; he will face what returns when the time comes",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"111": [
+{
+"id": "xiao_tian_tells_the_group_the_dream",
+"d": "Xiao Tian tells the group about the dream",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "memory_preserves_sensation_without_context",
+"d": "Dongyue: a memory can preserve a sensation without its context; they should not turn uncertainty into a story because they want answers",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_practises_stance_in_a_clearing",
+"d": "Xiao Tian practises his sword stance in a clearing outside the inn; he nearly throws the sword aside, then begins again",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "grip_settles_into_a_practised_position",
+"d": "His grip settles into a precise, practised position: something built through years of patience; he cannot recall who taught him",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "skills_and_choices_not_entirely_gone",
+"d": "His memories may return in pieces, but the skills and choices that shaped him have not entirely disappeared",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

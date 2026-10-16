@@ -106,7 +106,7 @@ function rGates(){
 /* ---------------- JOURNAL ---------------- */
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.map(c => (c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
+  const rows = CHAPTERS.map(c => (c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>

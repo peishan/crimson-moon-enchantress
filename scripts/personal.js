@@ -33,6 +33,9 @@ const XT_FRAGMENTS = [
   {id:'mountain', hook:'xiao_tian_was_swordsman', title:'The Mountain Practice', comic:'036', text:'He was a swordsman, practising in the mountains among his martial brothers.'},
   {id:'masks', hook:'masked_assassins_identity_revealed', title:'The Masked Invaders', comic:'036', text:'Black-clad invaders with gold details and iron masks, buckled in gold, killed his master and his martial brothers over gold.'},
   {id:'torment', hook:'xiao_tian_captured_and_tortured', title:'The Bull Demons\' Torment', comic:'036', text:'Starved, fed poisoned food, dosed with the poisons of the Xuancang Mountains and cut with small knives infused with demonic energy. Part of his memory came back afterwards, and the rest stays blurred.'},
+  {id:'buckle', hook:'xiao_tian_remembers_buckle_dragging', title:'A Sound, a Buckle', comic:'V3 004', text:'A sound, a buckle, someone dragging something. He does not remember the person, only the fear of whoever was carrying that metal.'},
+  {id:'corridor', hook:'xiao_tian_memory_corridor_falling', title:'The Corridor', comic:'V3 005', text:'A corridor, someone behind him, someone falling, a weapon striking stone. He fears that turning around would show him someone he knew. He cannot see the face.'},
+  {id:'blade', hook:'xiao_tian_memory_blade_master', title:'Hands and a Blade', comic:'V3 009', text:'Hands, a blade, someone showing him how to hold it. It slips away before he sees the face. Was it his master?'},
 ];
 /* Leads are tracked separately; nothing links any of them to the seal or to each other unless a page does. */
 const XT_LEADS = [
@@ -53,7 +56,7 @@ function xiaoTianHtml(){
   return `<div class="panel"><h3>🍃 Xiao Tian · The Lost Swordsman</h3>
     <div class="sm">Dongyue's sworn younger brother. Under the childish amnesiac he is now, he was Feng Xia, a tough, mature swordsman. His strength is not coming back all at once, and getting his memories back will not turn him back into who he was.</div>${hurt}
     <h4 style="margin:8px 0 2px">Leads</h4>${leads.map(l => `<div class="li">○ <b>${l.t}</b><div class="sm">${l.clue}</div><div class="sm" style="color:#9aa">${l.state}</div></div>`).join('') || '<div class="sm">No leads yet.</div>'}
-    <h4 style="margin:8px 0 2px">Memory fragments (${frags.length})</h4>${frags.map(f => `<div class="li">✦ <b>${f.title}</b> <span class="sm">· comic ${f.comic}</span><div class="sm">${f.text}</div></div>`).join('')}
+    <h4 style="margin:8px 0 2px">Memory fragments (${frags.length})</h4>${frags.map(f => `<div class="li">✦ <b>${f.title}</b> <span class="sm">· ${/^V/.test(f.comic) ? f.comic : 'comic '+f.comic}</span><div class="sm">${f.text}</div></div>`).join('')}
     <div class="sm">More surface when a clue triggers recognition.</div>
     ${fieldworkHtml()}
     <h4 style="margin:8px 0 2px">Field proficiency · ${FIELD_RANKS[lv]}</h4><div class="sm">Fieldwork and scouting: +${4*lv}% gold while he fights beside you. ${next}.</div>${bar(wins % FIELD_WINS + (lv >= FIELD_MAX ? FIELD_WINS : 0), FIELD_WINS, 'bond')}</div>`;
@@ -62,6 +65,6 @@ function xiaoTianHtml(){
 function fieldworkHtml(){
   if(typeof CLUES === 'undefined') return '';
   const rows = CLUES.filter(c => c[3].startsWith('🍃') && hook(c[0]));
-  return rows.length ? `<h4 style="margin:8px 0 2px">Fieldwork in the investigation</h4><div class="sm">He scouts ahead and notices what the specialists miss. He does not know the magical answers.</div>${rows.map(c => `<div class="li">✔ ${c[3].replace('🍃 ','')} <span class="sm">· comic ${c[2]}</span></div>`).join('')}` : '';
+  return rows.length ? `<h4 style="margin:8px 0 2px">Fieldwork in the investigation</h4><div class="sm">He scouts ahead and notices what the specialists miss. He does not know the magical answers.</div>${rows.map(c => `<div class="li">✔ ${c[3].replace('🍃 ','')} <span class="sm">· ${/^V/.test(c[2]) ? c[2] : "comic "+c[2]}</span></div>`).join('')}` : '';
 }
 const personalHtml = () => rolesHtml() + xiaoTianHtml();

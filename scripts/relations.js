@@ -39,6 +39,9 @@ const REL_CH = {
   72:[['xiaotian','dongyue',{t:2}],['cangyuan','xiyu',{u:2}]], 73:[['xiaotian','xiyu',{t:2}]], 74:[['xiaotian','cangyuan',{t:3}]], 75:[['cangyuan','xiyu',{t:2,u:2}]],
   76:[['cangyuan','xiyu',{t:3,u:3}],['xiaotian','dongyue',{t:2}]], 77:[['xiyu','xining',{t:2}],['dongyue','xiyu',{t:2,u:2}]],
   78:[['cangyuan','xiyu',{t:6,a:15,u:5}],['dongyue','xiyu',{t:3,u:3}]],
+  79:[['cangyuan','xiyu',{t:4,a:6,u:4}]], 80:[['cangyuan','xiyu',{t:5,u:5}]], 81:[['cangyuan','xiyu',{t:2,u:2}],['xiaotian','xiyu',{t:2}]], 82:[['xiaotian','dongyue',{t:2,u:2}],['xiaotian','xining',{t:2}]],
+  83:[['xiaotian','dongyue',{t:3,u:3}],['xiaotian','xining',{t:3,u:3}]], 84:[['xiaotian','cangyuan',{t:3,u:3}],['cangyuan','xiyu',{t:2,u:2}]], 85:[['xining','xiaotian',{t:2}]],
+  87:[['xining','dongyue',{t:4,u:4,a:3}],['xiaotian','dongyue',{t:3}]],
 };
 /* Consequences that apply when a story flag is SET (so a hidden event and its discovery can be separate): e.g. when comic 031's enchantment is
    written in, the chapter sets xiyu_enchanted_dongyue (hidden, no effect) and, only when Dongyue learns the truth, dongyue_learned_of_enchantment.

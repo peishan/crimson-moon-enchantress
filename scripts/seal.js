@@ -147,6 +147,18 @@ const CLUES = [   // [hook id, category, comic, text]
   ['chamber_flow_steadied', 'ruins', '038', 'The flow beneath the chamber has steadied (the chamber did not open)'],
   ['redirected_flow_has_a_destination', 'ruins', '038', 'The redirected flow continues toward a destination not yet found'],
   ['second_symbol_seen_beneath_sealed_chamber', 'ruins', '038', 'A symbol appeared briefly beneath the sealed chamber, different from the ruins\' markings but aligned with the same flow'],
+  ['signal_disappeared_disturbance_remains', 'ruins', 'V3 003', 'The signal disappeared but the disturbance did not; the remaining energy is strained like a wound forced to close'],
+  ['scrape_made_after_stone_settled', 'ruins', 'V3 003', '🍃 A scrape was made after the stone was already there (the dust settled inside, not across the edge)'],
+  ['groove_leads_toward_inner_chamber', 'ruins', 'V3 004', 'The scrape is deliberate and leads toward the inner chamber: something was taken inside or brought out'],
+  ['metal_fragment_wedged_in_channel', 'ruins', 'V3 004', '🍃 A piece of metal was wedged in a formation channel; its position was recorded before removal'],
+  ['fragment_removed_flow_steadier', 'ruins', 'V3 004', 'With the fragment removed the current is steadier (the pressure changed; nothing was repaired)'],
+  ['sealed_mechanism_not_dormant', 'ruins', 'V3 005', 'A sealed mechanism, old but not entirely dormant; the stone was altered after it was built'],
+  ['seal_may_contain_rather_than_hide', 'formation', 'V3 006', 'Cangyuan raises that the seal may be containing something rather than hiding it'],
+  ['damage_unevenly_distributed', 'ruins', 'V3 007', 'The damage is uneven: some channels weakened, others intact (not yet called deliberate)'],
+  ['second_fluctuation_beneath_channel', 'ruins', 'V3 007', 'A second fluctuation beneath the damaged channel: a surviving formation, or residue'],
+  ['new_channel_not_on_first_survey', 'ruins', 'V3 007', '🍃 A channel not on the first survey leads away from the central ruins'],
+  ['network_predates_alteration', 'ruins', 'V3 009', 'The terrace shows the same three-channel pattern; the mark is older than the damage, so the network predates the alteration'],
+  ['someone_had_access_to_both_sites', 'ruins', 'V3 009', 'The fragment came from this network: someone had access to both sites (no name, no motive)'],
 ];
 const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow']];
 const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it
@@ -176,7 +188,7 @@ function rSeal(){
   const found = CLUES.filter(([id]) => sealHook(id)), open = QUESTIONS.filter(([id]) => sealHook(id));
   const sites = SITES.filter(s => s.shown()).map(s => `<div class="li"><b>${s.n}</b><div class="sm">${s.note}</div></div>`).join('');
   const stages = STAGES.filter(st => st.done() || st.active()).map(st => `<div class="li">${st.done()?'✔':'▶'} <b>${st.t}</b><div class="sm">${st.d}</div></div>`).join('');
-  const cats = CLUE_CATS.map(([k,label]) => { const rows = found.filter(c => c[1] === k); return rows.length ? `<h4 style="margin:8px 0 2px">${label}</h4>${rows.map(c => `<div class="li">✔ ${c[3]} <span class="sm">· comic ${c[2]}</span></div>`).join('')}` : ''; }).join('');
+  const cats = CLUE_CATS.map(([k,label]) => { const rows = found.filter(c => c[1] === k); return rows.length ? `<h4 style="margin:8px 0 2px">${label}</h4>${rows.map(c => `<div class="li">✔ ${c[3]} <span class="sm">· ${/^V/.test(c[2]) ? c[2] : "comic "+c[2]}</span></div>`).join('')}` : ''; }).join('');
   const shores = shoresSvg();
   return `<h2>Seal & Sites</h2><div class="sm">Volume 2 stays close to home, so there is no world map: a small schematic of the places that matter, the seal as far as it is understood, and a journal of what has been found.</div>
     <div class="panel"><h3>📍 Sites</h3>${sitesSvg()}${sites}</div>
@@ -185,6 +197,6 @@ function rSeal(){
       ${sealHook('formation_hides_the_inner_ring')?'<div class="li sm">Dotted line from the outer ring: the outer structure may be hiding the inner one</div>':''}
       ${sealHook('seal_crimson_markings_added')?'<div class="li sm">Red ticks at the second door: crimson markings added later, not part of the original seal</div>':''}</div>
     ${shores ? `<div class="panel"><h3>🌊 The two shores</h3>${shores}<div class="sm">The original formation shared the strain between two anchors; someone changed it so the keeper bears it. The channels are restored and the drain has stopped increasing, but the keeper is still bound.</div></div>` : ''}
-    <div class="panel"><h3>🔎 Clue Journal · The Broken Ward Network</h3>${stages}<div class="sm" style="margin:4px 0">${found.length} clues recorded. More stages appear as the story reaches them; the last two stay open at the end of Volume 2.</div>${cats || '<div class="sm">Nothing recorded yet.</div>'}
+    <div class="panel"><h3>🔎 Clue Journal · The Broken Ward Network</h3>${stages}<div class="sm" style="margin:4px 0">${found.length} clues recorded. More stages appear as the story reaches them; the last two stay open.</div>${cats || '<div class="sm">Nothing recorded yet.</div>'}
       <h4 style="margin:8px 0 2px">Still unresolved</h4>${open.map(([,q]) => `<div class="li">○ ${q}</div>`).join('') || '<div class="sm">Nothing is in question yet.</div>'}</div>`;
 }

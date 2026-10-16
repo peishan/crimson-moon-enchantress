@@ -2922,6 +2922,274 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"79": [
+{
+"id": "xiyu_cangyuan_morning_after",
+"d": "The morning after: Xiyu does not regret choosing him; no promise has been made",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_gives_xiyu_time",
+"d": "Cangyuan will give her time and would rather have the truth than a comforting lie",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_cangyuan_mutual_understanding",
+"d": "A mutual understanding: each will ask for what they want instead of deciding for the other",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"80": [
+{
+"id": "xiyu_asks_him_not_to_decide_for_her",
+"d": "Xiyu asks Cangyuan not to confuse protection with deciding for her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_promises_to_tell_her_when_afraid",
+"d": "Cangyuan will try to tell her when he is afraid instead of disguising it as certainty",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "messenger_talisman_altered_pattern",
+"d": "A messenger's talisman carries a familiar but altered pattern: Cangyuan recognises the pattern, not its source",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "disturbance_has_changed",
+"d": "The disturbance has changed: something is moving through it",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"81": [
+{
+"id": "signal_disappeared_disturbance_remains",
+"d": "The signal has disappeared, but the disturbance has not",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "energy_strained_like_a_wound",
+"d": "The remaining energy is strained, like a wound forced to close before it can heal",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_one_reads_the_whole_formation",
+"d": "No single person can read the whole formation: each sees a different part",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "scrape_made_after_stone_settled",
+"d": "A scrape was made after the stone was already there",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_feels_familiarity",
+"d": "Xiao Tian thinks he has seen something like it before",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"82": [
+{
+"id": "groove_leads_toward_inner_chamber",
+"d": "The scrape is deliberate and leads toward the inner chamber",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "metal_fragment_wedged_in_channel",
+"d": "A piece of metal is wedged in a formation channel",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_removed_flow_steadier",
+"d": "The fragment is removed (its position recorded): the current is steadier",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_remembers_buckle_dragging",
+"d": "Xiao Tian recalls a sound, a buckle, someone dragging something; he remembers the fear, not the person",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"83": [
+{
+"id": "mark_ends_at_an_opening",
+"d": "The mark ends at an opening in the ruins",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_corridor_falling",
+"d": "Xiao Tian recalls a corridor, someone falling and a weapon striking stone; he fears the face he would see if he turned",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sealed_mechanism_not_dormant",
+"d": "The sealed mechanism is old but its energy is not entirely dormant",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "stone_altered_after_original",
+"d": "Someone altered the stone after the original mechanism was built",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "notch_may_fit_a_larger_mechanism",
+"d": "A small notch may have fitted into a larger mechanism (not proven)",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"84": [
+{
+"id": "fragment_removal_changed_pressure_not_repaired",
+"d": "Removing the fragment changed the pressure without repairing the formation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_may_contain_rather_than_hide",
+"d": "Cangyuan raises that the seal may be containing something rather than hiding it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "three_leads_to_investigate",
+"d": "Three leads: the altered channels, the concealed passage, the fragment",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yilong_records_a_possibility",
+"d": "Dongyue knows of records in Yilong: a possibility, not the next destination",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_chooses_who_to_be",
+"d": "Xiao Tian: \"I can decide what kind of person I want to be while I find out.\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"85": [
+{
+"id": "damage_unevenly_distributed",
+"d": "The damage is uneven: some channels weakened, others intact",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "energy_redirected_bends_away",
+"d": "The energy follows the original channel, then bends away (or was altered to look so)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_fluctuation_beneath_channel",
+"d": "A second fluctuation beneath the damaged channel: a surviving formation or residue",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "new_channel_not_on_first_survey",
+"d": "A channel not on the first survey leads away from the central ruins",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"87": [
+{
+"id": "same_three_channel_pattern",
+"d": "The terrace shows the same three-channel pattern",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mark_older_than_damage",
+"d": "The mark is older than the damage around it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "network_predates_alteration",
+"d": "The network existed before someone altered the formation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_came_from_this_network",
+"d": "The fragment must have come from this network",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_had_access_to_both_sites",
+"d": "Someone had access to both sites",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_blade_master",
+"d": "Xiao Tian recalls hands, a blade and someone showing him how to hold it; he wonders if it was his master",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

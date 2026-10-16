@@ -38,7 +38,7 @@ const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const rint = r => r[0] + Math.floor(Math.random()*(r[1]-r[0]+1));
 
 function newState(){
-  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, resonance:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0}, quest:{ward:{}}, rel:{}, convo:{}, board:{active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}, xt:{wins:0}, shared:{} };
+  const s = { v:1, ch:0, flags:{}, units:{}, party:['xiyu'], active:['xiyu'], inv:{}, bestiary:{}, gold:50, read:{}, day:1, bondDay:{}, zone:'forest', wins:0, temple:{found:{}}, ritual:{left:null, done:false}, away:{}, hooks:{}, heat:0, attune:0, afterglow:0, resonance:0, bounty:{red:{stage:0}, rep:{day:0, done:[]}, count:0}, quest:{ward:{}}, time:8, herb:{xp:0, known:{}, gathered:0, made:0}, rel:{}, convo:{}, board:{active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}, xt:{wins:0}, shared:{} };
   ROSTER.forEach(id => s.units[id] = { lv:CFG.START_LEVEL, xp:0, bp:0 });
   return s;
 }
@@ -47,9 +47,9 @@ function load(){
   try{
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
-    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.quest = G.quest || {ward:{}}; G.rel = G.rel || {}; G.convo = G.convo || {}; G.xt = G.xt || {wins:0}; G.shared = G.shared || {}; G.board = G.board || {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
+    G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.quest = G.quest || {ward:{}}; G.rel = G.rel || {}; G.convo = G.convo || {}; G.xt = G.xt || {wins:0}; if(G.time === undefined) G.time = 8; G.herb = G.herb || {xp:0, known:{}, gathered:0, made:0}; G.shared = G.shared || {}; G.board = G.board || {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
-    G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]);
+    G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]); enforceParty();
     return true;
   }catch(e){ return false; }
 }
@@ -230,7 +230,31 @@ function addBond(id, pts){
 }
 
 /* ---------- recruiting ---------- */
-const ACTIVE_SLOTS = 4;
+/* ---------- THE CANON PARTY (author) ----------
+   The four protagonists (Xiyu, Cangyuan, Dongyue, Xining) travel together from the moment Xining joins (chapter 53). They are fielded in every
+   party and cannot be taken out of the active party ("unfieldable" = cannot be un-fielded). That leaves free seats for Xiao Tian, Ya'Xing (after his
+   arc) and the Miracle Healer. If an ARC needs someone present, add a row to ARC_REQUIRED: while the chapter is in range they cannot be removed either.
+   Heroes who are AWAY (G.away) are never fielded, whatever the rule says. Guests (the Miracle Healer's Student, Dongyue's grandfather, in the Yilong arc)
+   are planned as temporary extra seats and are not built yet (docs/COMPANIONS.md). */
+const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, FLEX_SEATS = 3;
+const ARC_REQUIRED = [];   // {id:'xiaotian', from:chapter, to:chapter, why:'text'}: e.g. an arc that cannot happen without him
+const canonLocked = () => G.ch >= CANON_LOCK_CH && CANON_PARTY.every(id => G.party.includes(id));
+const activeSlots = () => canonLocked() ? CANON_PARTY.length + FLEX_SEATS : 4;
+function lockReason(id){
+  if(id === 'xiyu') return 'Xiyu always leads the party.';
+  if(isAway(id)) return '';
+  if(canonLocked() && CANON_PARTY.includes(id)) return 'Canon party: the four protagonists travel together.';
+  const r = ARC_REQUIRED.find(x => x.id === id && G.ch >= x.from && G.ch <= x.to);
+  return r ? (r.why || 'This arc needs them present.') : '';
+}
+const partyLocked = id => !!lockReason(id);
+function enforceParty(){   // keep every locked hero fielded (and drop un-locked heroes if the seats run short)
+  G.active = G.active.filter(id => G.party.includes(id) && !isAway(id));
+  G.party.filter(id => partyLocked(id) && !isAway(id) && !G.active.includes(id)).forEach(id => {
+    if(G.active.length >= activeSlots()){ const out = G.active.slice().reverse().find(x => !partyLocked(x)); if(out) G.active.splice(G.active.indexOf(out), 1); else return; }
+    G.active.push(id); });
+  while(G.active.length > activeSlots()){ const out = G.active.slice().reverse().find(x => !partyLocked(x)); if(!out) break; G.active.splice(G.active.indexOf(out), 1); }
+}
 const activeCount = () => G.active.length;
 /* Chapter hooks (scripts/hooks.js): events fire once (never replay), states persist so later chapters can check them: hook('soul_bond_fourteen_day_deadline_active'). */
 const hook = id => !!(G && G.hooks && G.hooks[id]);
@@ -239,13 +263,14 @@ const ritualActive = () => !!G.ritual && G.ritual.left!==null && !G.ritual.done;
 function recruit(id){
   if(G.party.includes(id)) return false;
   G.party.push(id);
-  if(activeCount() < ACTIVE_SLOTS && !isAway(id)) G.active.push(id);
+  if(activeCount() < activeSlots() && !isAway(id)) G.active.push(id);
+  enforceParty();
   return true;
 }
 function toggleActive(id){
   if(id==='xiyu' || isAway(id)) return;
   const i = G.active.indexOf(id);
-  if(i>=0) G.active.splice(i,1); else if(activeCount() < ACTIVE_SLOTS) G.active.push(id);
+  if(i>=0){ if(partyLocked(id)) return; G.active.splice(i,1); } else if(activeCount() < activeSlots()) G.active.push(id);
   save();
 }
 const recruitsAtChapter = ch => Object.keys(JOIN_CH).filter(id => JOIN_CH[id] === ch);
@@ -261,9 +286,4 @@ function persistBattle(){
   B.allies.forEach(a => { const u = U(a.id); if(!u || !G.party.includes(a.id)) return; u.hp = a.dead ? Math.max(1, Math.round(a.mhp*.2)) : a.hp; u.mp = a.mp;
     if(a.id==='xiyu'){ G.heat = Math.round(a.heat||0); if(a.glow && G.afterglow>0) G.afterglow--; } });
 }
-const REST_COST = () => 10 + avgPartyLv()*2;
-function restAtInn(){
-  const c = REST_COST(); if(G.gold < c) return ['A bed at the Crimson Fairy costs '+c+' gold.'];
-  G.gold -= c; G.day++; restoreParty(); G.heat = Math.max(0, (G.heat||0)-40); save();
-  return ['🛏️ The party sleeps beneath the eight moons. HP and MP fully restored. (-'+c+'g)'];
-}
+/* Rest, time and taverns live in scripts/rest.js (restAt, advanceTime). */

@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
+const TABS = [['journal','📖 Journal'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
@@ -17,14 +17,15 @@ const act = fn => { const r = fn(); flash = [].concat(r||[]); save(); render(); 
 const flashHtml = () => { const f = flash; flash = []; return f.length ? `<div class="panel good">${f.map(m=>`<div>${m}</div>`).join('')}</div>` : ''; };
 
 function render(){
+  if(typeof drawHerbModal === 'function') drawHerbModal();
   $('hgold').textContent = '💰 '+G.gold;
   $('hch').textContent = G.ch===0 ? 'Start' : chShort(G.ch)+' ✓';
-  $('hday').textContent = '☀️ Day '+G.day;
+  $('hday').textContent = timeLabel().split(' ')[0]+' Day '+G.day+' · '+timeLabel().split(' ')[1];
   if(typeof renderTracker === 'function') renderTracker();
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen()) && (k!=='confidants' || relationsOpen()) && (k!=='board' || boardOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='bounties' || bountyBoardOpen()) && (k!=='confidants' || relationsOpen()) && (k!=='board' || boardOpen()) && (k!=='herbal' || herbalOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
+  const R = { journal:rJournal, party:rParty, gates:rGates, wilds:rWilds, inns:rInns, herbal:rHerbalism, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 
@@ -37,12 +38,12 @@ function gateLine(id){
   return `<span class="gate shut">🔒 Joins when ${chName(j).toLowerCase()} is completed${g?' (needs average party Lv '+g.lv+')':''}</span>`;
 }
 function rParty(){
-  const slots = Array.from({length:ACTIVE_SLOTS}, (_,i) => i).map(i => { const id = G.active[i];
+  const slots = Array.from({length:activeSlots()}, (_,i) => i).map(i => { const id = G.active[i];
     return id ? `<div class="slot on" onclick="sel='${id}';render()"><img src="${portrait(id)}"><b>${first(id)}</b><span class="sm">Lv${U(id).lv}</span></div>` : `<div class="slot"><span class="sm">empty</span></div>`; }).join('');
   const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id) || profileKnown(id)).map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
-  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${ACTIVE_SLOTS}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
+  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${activeSlots()}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
 }
 function bondsHtml(){
   const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
@@ -79,7 +80,7 @@ function rSheet(id){
    <div class="sm" style="margin-top:6px">${gateLine(id)} · Elements: ${c.elements}</div>
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
-   ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>`}
+   ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
    ${id==='xiyu'?curseHtml()+bondsHtml():''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>
@@ -158,7 +159,7 @@ function rWilds(){
       ${open?`<div><button onclick="wildFight('${z.id}')">Hunt</button>${z.boss?`<button onclick="wildFight('${z.id}',true)">${z.bossName?'Arena':'Boss'}</button>`:''}</div>`:''}</div>`; }).join('');
   const heroes = G.party.map(id => `<div class="sm">${CHARACTERS[id].icon} ${first(id)} — ❤️ ${curHp(id)}/${statsOf(id).hp} · 🔷 ${curMp(id)}/${statsOf(id).mp}</div>`).join('');
   return `<h2>The Wilds</h2><div class="sm">Gameplay hunting for XP, gold and herbs. These fights are not story events.</div>${flashHtml()}
-   <div class="panel"><b>The Crimson Fairy</b><div class="sm">${heroes}</div><button onclick="act(restAtInn)">🛏️ Rest (${REST_COST()}g)</button></div>${zones}`;
+   <div class="panel"><b>The Crimson Fairy</b><div class="sm">${heroes}</div><button onclick="act(()=>restAt('fairy'))">🛏️ Rest (free)</button><button onclick="openHerbModal('gather')" ${herbalReady()?'':'disabled'}>🌿 Gather herbs</button></div>${zones}`;
 }
 /* Art slots with safe fallbacks: a missing file shows the emoji instead. assets/areas/<zone>.webp, assets/enemies/<key>.webp */
 const artOrIcon = (src, icon, cls) => `<img class="${cls}" src="${src}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'big',textContent:'${icon}'}))">`;
@@ -179,7 +180,7 @@ function rTemple(){
   const found = TEMPLE_ROOMS.filter(roomFound).length;
   const rows = rooms.map(r => { const f = roomFound(r);
     return `<div class="card ${f?'':'lock'}" style="cursor:default"><span class="big">${f?TEMPLE_ICON[r.kind]:'❔'}</span><div class="fl"><b>${f?r.n:'???'}</b><div class="sm">${f?r.desc:(r.unlock===null?'Not scheduled yet':'Found after chapter '+r.unlock)}</div></div></div>`; }).join('');
-  return `<h2>The Ice Temple</h2><div class="sm">A temple of ice, memories and secrets, hidden within the Xuancang Mountains. ${found}/${TEMPLE_ROOMS.length} places found.</div>
+  return `<h2>The Ice Temple</h2><div class="panel"><b>🛏️ Warded rooms</b><div class="sm">The party may rest here at no cost.</div><button onclick="act(()=>restAt('temple'))">Rest (free)</button></div><div class="sm">A temple of ice, memories and secrets, hidden within the Xuancang Mountains. ${found}/${TEMPLE_ROOMS.length} places found.</div>
    ${templeMapOpen()?`<button class="pri" onclick="tempMap=true;render()">🗺️ View the full map</button>`:`<div class="sm">🔒 The map is revealed when exploration begins (planned: chapter ${TEMPLE_MAP_CH}).</div>`}
    <div class="row" style="margin:8px 0">${lvBtns}</div><div class="sm"><b>${lv.n}</b> — ${lv.sub}</div>${rows}
    <div class="sm" style="margin-top:8px">The sealed central chamber is a separate lock from the magical entry barrier. Rooms are the map's labels only; their story use is added with the chapters.</div>`;

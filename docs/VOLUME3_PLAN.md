@@ -32,7 +32,7 @@ Ya'Xing returns in Volume 3 (docs/VOLUME2.md). The redirected flow's destination
 
 **Timing decision (settled, author): story chapters dominate.** The family arc and everything tied to the pregnancy unlock **by chapter only**, never by the day count.
 
-**How time works in the game (why):** one clock, `G.day` (top bar "Day N"), not tied to real time. It advances only by completing a story chapter (+1), resting at the inn (+1, costs gold) and "Ask around" on the Quest Board (+1). It drives once-a-day limits (quiet time, relationship bonding), the Quest Board refresh (daily contracts, bounties every 2 days) and the repeatable road bounties. The ritual countdown is separate: a number set by chapters. Because players can raise the day count freely by resting or asking around, days must never gate story.
+**How time works in the game (why):** one clock, `G.day` (top bar "Day N"), not tied to real time. It advances only by completing a story chapter (+1) and "Ask around" on the Quest Board (+1). **Resting no longer passes a day** (see below): it passes hours of a separate clock, `G.time`. It drives once-a-day limits (quiet time, relationship bonding), the Quest Board refresh (daily contracts, bounties every 2 days) and the repeatable road bounties. The ritual countdown is separate: a number set by chapters. Because players can raise the day count freely by resting or asking around, days must never gate story.
 
 **Chapter-driven gestation tracker (sketch, not built):**
 - Store `G.xining = {weeks, known}`. Each pregnancy-related chapter sets `weeks` explicitly (like `CH_RITUAL` sets the ritual countdown), so the timeline follows the comics, not the player's resting.

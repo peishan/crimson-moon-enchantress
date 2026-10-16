@@ -3,7 +3,7 @@
 `scripts/board.js`, tab **📋 Quest Board** (opens after chapter 5, `BOARD_OPEN_CH`) plus a 📋 quest log in the top bar. Adapted from Tribute (contract board, 2-day bounty board) and Crimson Tide (quest tracker panel). It is **independent of the story**: it never advances a chapter, sets a story flag, or touches the story bounty (Red Lantern Road, Bounties tab) or the investigations. All numbers are provisional.
 
 ## Quest Board (contracts)
-- 4 contracts are posted each game day (`G.day`; chapters, resting and "Ask around" pass days). Accept up to 5 (`MAX_CONTRACTS`).
+- 4 contracts are posted each game day (`G.day`; only chapters and "Ask around" pass days; resting passes hours). Accept up to 5 (`MAX_CONTRACTS`).
 - Kinds: **kill** (defeat N of an enemy), **sweep** (win N Wilds fights in a zone), **collect** (turn in N items at the board).
 - Each needs its zone to be open; rewards (XP, gold, renown, sometimes a Moonlit Tonic) scale with the party's level when posted.
 - Progress comes from any rewarded victory (Wilds, the repeatable road bounties, story battles). Kill and sweep contracts pay out automatically; collect contracts need a turn-in.

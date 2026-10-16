@@ -3,7 +3,7 @@
    Independent of the story: nothing here advances a chapter, sets a story flag or uses the story bounty (scripts/bounties.js) or the
    investigations. Adapted from Tribute (quest board of contracts + bounty board that refreshes every 2 game days) and Crimson Tide
    (quest tracker panel). Everything here is PROVISIONAL balance: tune the numbers freely.
-   Game clock: G.day (chapters, resting and "ask around" pass days).
+   Game clock: G.day (only chapters and "ask around" pass days; resting passes hours, see rest.js).
    QUEST BOARD: up to MAX_CONTRACTS accepted contracts of three kinds. kill (defeat N of an enemy), sweep (win N fights in a zone), collect (turn in N items).
      The board posts 4 contracts a day. Rewards scale with the party's level when a contract is posted. Finishing contracts raises renown;
      each renown tier opens harder contracts and adds a little gold to every contract reward.

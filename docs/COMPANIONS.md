@@ -27,3 +27,11 @@ Xiao Tian's master and martial brothers were **killed** (the hook `xiao_tian_mas
 
 ## Named party synergies (author)
 Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5%), Dongyue + Xiyu (Friends, +2%, from chapter 70) apply to both when they fight in the same party. See `PAIR_SYN` in scripts/core.js. For the planned Dongyue/Xining separation see docs/VOLUME3_PLAN.md.
+
+## Party rules (author): the canon party and seats
+- **Canon party:** Xiyu, Cangyuan, Dongyue and Xining (the four protagonists). From chapter 53, when all four are in the party, they are **locked into the active party**: the Party sheet's "Remove" button is disabled with a reason. Xiyu has always been locked. "Unfieldable" is read here as *cannot be un-fielded*.
+- **Seats:** 4 before the canon party forms; **7** afterwards (4 canon + 3 free seats for **Xiao Tian, Ya'Xing (after his arc) and the Miracle Healer**). A 7-ally battle fits the phone layout.
+- **Arc-required heroes:** `ARC_REQUIRED` in scripts/core.js is a table of `{id, from, to, why}` rows; while the story is inside the range that hero cannot be removed either. It is empty now: add a row when an arc needs Xiao Tian or Ya'Xing present.
+- **Away** (`G.away`) always wins: an away hero is never fielded, so the Yilong separation of Dongyue and Xining works with the lock.
+- **Guests (planned, not built):** temporary extra seats in the Yilong arc for the **Miracle Healer's Student** and **Dongyue's grandfather**. They would not use a roster seat. Needs characters, skills and a guest-slot rule (a `G.guests` list shown beside the active party, removed when the arc ends).
+- The **Miracle Healer** (Xining's master) is a planned permanent flex-seat hero, not built.

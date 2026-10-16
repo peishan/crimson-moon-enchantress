@@ -247,6 +247,7 @@ function battleUseItem(u, k, t){
   if(!t.ally){ if(e.cleanse){ blog(u.name+' scatters '+ITEMS[k].n+' over '+t.name+'.'); applyFx(u, t, {k:'cleanse'}); } return true; }   // cleansing powder on a foe: strips a layered shadow
   if(e.hp){ const h = Math.min(e.hp, t.mhp - t.hp); t.hp += h; blog(u.name+' uses '+ITEMS[k].n+' on '+t.name+': +'+h+' HP.','good'); }
   if(e.mp){ const m = Math.min(e.mp, t.mmp - t.mp); t.mp += m; blog('  '+t.name+' regains '+m+' MP.','good'); }
+  if(e.heat && t.id === 'xiyu' && t.heat !== undefined){ t.heat = Math.max(0, t.heat - e.heat); blog('  Xiyu\'s heat eases.','good'); }
   if(e.cleanse) applyFx(u, t, {k:'cleanse'});
   return true;
 }

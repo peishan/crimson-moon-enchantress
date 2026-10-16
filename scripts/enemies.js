@@ -76,7 +76,7 @@ const ITEMS = {
 const USE = {
   herbal_tonic:{hp:60}, moonlit_tonic:{hp:180, mp:30}, spirit_draught:{mp:60}, cleansing_salt:{hp:30, cleanse:true},
 };
-const useText = u => [u.hp?'+'+u.hp+' HP':'', u.mp?'+'+u.mp+' MP':'', u.cleanse?'cleanses':''].filter(Boolean).join(', ');
+const useText = u => [u.hp?'+'+u.hp+' HP':'', u.mp?'+'+u.mp+' MP':'', u.heat?'−'+u.heat+' heat':'', u.cleanse?'cleanses':''].filter(Boolean).join(', ');
 const SHOP = { herbal_tonic:25, moonlit_tonic:80, spirit_draught:60, cleansing_salt:40 };   // sold at the Crimson Fairy
 const RECIPES = [
   {out:'herbal_tonic', need:{frost_herb:3}, label:'3 Frost Herb'},
@@ -112,7 +112,7 @@ function rollLoot(table, first){
 /* ---- consumables ---- */
 function useConsumable(id, k){
   const u = USE[k]; if(!u || !(G.inv[k] > 0)) return false;
-  G.inv[k]--; healUnit(id, u.hp, u.mp); save(); return true;
+  G.inv[k]--; healUnit(id, u.hp, u.mp); if(u.heat) G.heat = Math.max(0, (G.heat||0) - u.heat); save(); return true;
 }
 function brew(out){
   const r = RECIPES.find(x => x.out===out); if(!r) return 'Unknown recipe.';

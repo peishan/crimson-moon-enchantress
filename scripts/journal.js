@@ -42,6 +42,7 @@ function completeChapter(n){
   applyStoryStates(n).forEach(m => msgs.push(m));
   setHooks(n);
   relStory(n);
+  enforceParty();
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   msgs.push('Story XP +'+c.sxp);
@@ -56,7 +57,7 @@ function applyStoryStates(n){
   G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {};
   if(CH_RITUAL[n]!==undefined){ G.ritual.left = G.ritual.left===null ? CH_RITUAL[n] : Math.min(G.ritual.left, CH_RITUAL[n]); msgs.push('⏳ The ritual deadline: '+G.ritual.left+' day'+(G.ritual.left===1?'':'s')+' left.'); }
   if(n>=RITUAL_DONE_CH && G.ritual.left!==null && !G.ritual.done){ G.ritual.done = true; msgs.push('⏳ The ritual is completed. The deadline no longer applies.'); }
-  (CH_BACK[n]||[]).forEach(id => { if(G.away[id]){ delete G.away[id]; if(G.party.includes(id) && !G.active.includes(id) && activeCount()<ACTIVE_SLOTS) G.active.push(id); msgs.push('⚓ '+CHARACTERS[id].n+' is found, recuperating, and rejoins the party.'); } });
+  (CH_BACK[n]||[]).forEach(id => { if(G.away[id]){ delete G.away[id]; if(G.party.includes(id) && !G.active.includes(id) && activeCount()<activeSlots()) G.active.push(id); msgs.push('⚓ '+CHARACTERS[id].n+' is found, recuperating, and rejoins the party.'); } });
   Object.keys(CH_AWAY[n]||{}).forEach(id => { G.away[id] = CH_AWAY[n][id]; G.active = G.active.filter(x => x!==id); msgs.push('⚓ '+CHARACTERS[id].n+' stays behind: '+CH_AWAY[n][id]); });
   return msgs;
 }
@@ -69,6 +70,7 @@ function devSetChapter(n){
   G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
   G.ch = n;
+  enforceParty();
   if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
   if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }

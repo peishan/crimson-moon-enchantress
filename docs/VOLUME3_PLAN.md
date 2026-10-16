@@ -22,3 +22,12 @@ Recorded so future chapters follow them. Nothing here is in the game text yet; t
 
 ## Other carried threads
 Ya'Xing returns in Volume 3 (docs/VOLUME2.md). The redirected flow's destination, the keeper's identity and the watcher at the relay are unresolved at the end of Volume 2.
+
+## Xining's pregnancy: current plan (author, not built)
+1. During a major boss battle Xiyu uses a devastating magic skill that causes **friendly fire** and Xining is badly hurt.
+2. **The pregnancy saves Xining's life:** the baby is not an ordinary baby. It inherits the **Ming family** (Dongyue's maternal family) healing abilities and some other powers.
+3. She survives, but before she faints she tells Dongyue to **look for her master**.
+4. **Clues in her journal** lead them to the master's home. He has gone to **Yilong, where he is from**; his disciple, **Xining's senior brother, stabilizes her with acupuncture** because the journey will take time.
+5. This leads into the **family arc** in Yilong.
+
+**Timing decision (recommendation, awaiting the author):** let the **story chapters dominate**. The game already advances `G.day` only through chapters, resting and "Ask around", so a day-count gate could be skipped or farmed on the boards. Precedent: the ritual countdown is story-driven (a number set by chapters, never real time). Use a **chapter-driven gestation tracker** (weeks shown only after Dongyue learns of the pregnancy) if a visible timeline is wanted. Gating the family arc on days is not recommended.

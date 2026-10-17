@@ -35,3 +35,5 @@ Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5
 - **Away** (`G.away`) always wins: an away hero is never fielded, so the Yilong separation of Dongyue and Xining works with the lock.
 - **Guests (planned, not built):** temporary extra seats in the Yilong arc for the **Miracle Healer's Student** and **Dongyue's grandfather**. They would not use a roster seat. Needs characters, skills and a guest-slot rule (a `G.guests` list shown beside the active party, removed when the arc ends).
 - The **Miracle Healer** (Xining's master) is a planned permanent flex-seat hero, not built.
+
+- **Hoko (Volume 4, planned):** a temporary story-required guest for the Ya'Xing retrieval mission at the Ice Temple, not a recruit. See docs/VOLUME4_PLAN.md.

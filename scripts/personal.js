@@ -1,0 +1,91 @@
+/* =====================================================================
+   THE CRIMSON MOON'S ENCHANTRESS — COMPANIONS: MISSION ROLES, PERSONAL QUESTS, FIELD PROFICIENCY
+   First user: XIAO TIAN (Feng Xia). Adapted from Yang Tian in Tribute, but with his own progression: his power does not return all at once and
+   recovering memories never replaces who he is now.
+   - MISSION ROLES: what each companion contributes to the team (shown in the Confidants tab).
+   - PERSONAL QUESTS: separate from the story and the boards. Leads are tracked separately and only record what the pages have shown.
+   - FIELD PROFICIENCY (Xiao Tian): grows with rewarded victories fought with him; each level makes scouting pay a little better (+4% gold, max level 5).
+   - SHARED DANGER: fighting side by side slowly builds trust and understanding between companions, up to the "Growing trust" stage (40).
+   Save: G.xt = {wins}, G.shared = { 'a|b': winsTogether }
+   ===================================================================== */
+const ROLES = [
+  {id:'xiyu',     role:'Magical analysis',            text:'Detects abnormal crimson energy and magical interference, and decides whether dangerous magic should be touched or left alone.'},
+  {id:'dongyue',  role:'Healing and stabilization',   text:'Stabilizes the injured and reads the state of spiritual channels without disturbing the formation.'},
+  {id:'cangyuan', role:'Formation analysis',          text:'Uses Spirit Weaving to interpret patterns, compare records and manipulate spiritual structures when it is safe.'},
+  {id:'xining',   role:'Medical and historical support', text:'Recognizes physical and spiritual symptoms, keeps the party functional, and reads what a formation\'s effects mean for those caught in it.'},
+  {id:'xiaotian', role:'Fieldwork and tactical support', text:'Scouts ahead, checks physical passages, protects the others and notices details that specialists in spiritual energy overlook.'},
+];
+const FIELD_RANKS = ['Green','Steady','Sharp','Seasoned','Veteran','Pathfinder'], FIELD_MAX = 5, FIELD_WINS = 10;
+const fieldLv = () => Math.min(FIELD_MAX, Math.floor(((G.xt && G.xt.wins) || 0) / FIELD_WINS));
+const fieldGoldMult = allies => (allies || []).some(a => a.id === 'xiaotian') ? 1 + .04*fieldLv() : 1;
+function personalOnWin(ids){   // called by battle.js after a rewarded victory
+  G.xt = G.xt || {wins:0}; G.shared = G.shared || {};
+  if(ids.includes('xiaotian')) G.xt.wins++;
+  for(let i=0;i<ids.length;i++) for(let j=i+1;j<ids.length;j++){
+    const k = relKey(ids[i], ids[j]); G.shared[k] = (G.shared[k]||0) + 1;
+    if(G.shared[k] % 5 === 0){ const r = relGet(ids[i], ids[j]); if(r.t < 40) relAdd(ids[i], ids[j], {t:1, u:r.u < 40 ? 1 : 0}); }
+  }
+}
+
+/* ---------- Xiao Tian's memory fragments: only the three the pages have shown (comic 036). More surface when a clue triggers recognition:
+   add an entry with the hook that unlocks it. A fragment is a short journal scene; it does not restore his old personality. ---------- */
+const XT_FRAGMENTS = [
+  {id:'mountain', hook:'xiao_tian_was_swordsman', title:'The Mountain Practice', comic:'036', text:'He was a swordsman, practising in the mountains among his martial brothers.'},
+  {id:'masks', hook:'masked_assassins_identity_revealed', title:'The Masked Invaders', comic:'036', text:'Black-clad invaders with gold details and iron masks, buckled in gold, killed his master and his martial brothers over gold.'},
+  {id:'torment', hook:'xiao_tian_captured_and_tortured', title:'The Bull Demons\' Torment', comic:'036', text:'Starved, fed poisoned food, dosed with the poisons of the Xuancang Mountains and cut with small knives infused with demonic energy. Part of his memory came back afterwards, and the rest stays blurred.'},
+  {id:'buckle', hook:'xiao_tian_remembers_buckle_dragging', title:'A Sound, a Buckle', comic:'V3 004', text:'A sound, a buckle, someone dragging something. He does not remember the person, only the fear of whoever was carrying that metal.'},
+  {id:'corridor', hook:'xiao_tian_memory_corridor_falling', title:'The Corridor', comic:'V3 005', text:'A corridor, someone behind him, someone falling, a weapon striking stone. He fears that turning around would show him someone he knew. He cannot see the face.'},
+  {id:'blade', hook:'xiao_tian_memory_blade_master', title:'Hands and a Blade', comic:'V3 009', text:'Hands, a blade, someone showing him how to hold it. It slips away before he sees the face. Was it his master?'},
+  {id:'shoulder', hook:'xiao_tian_memory_watch_the_shoulder', title:'Watch the Shoulder', comic:'V3 010', text:'"Again. Don\'t watch the blade. Watch the shoulder." His master\'s hand, steady and familiar. "I wasn\'t only running from something. I was learning how to stand." This memory feels like something given, not taken.'},
+  {id:'protect', hook:'xiao_tian_memory_body_moved_first', title:'Protecting Someone, or Escaping?', comic:'V3 011', text:'A corridor, a blade scraping a wall, his hand pulling someone backward. His body moved before he thought. Was he protecting someone, or trying to escape?'},
+  {id:'click', hook:'xiao_tian_memory_click_wrist', title:'A Click, and a Hand on His Wrist', comic:'V3 012', text:'A metal object pressed into a narrow groove, a hand turns it slightly, a sharp click, then someone catches his wrist. Not the hand.'},
+  {id:'feet', hook:'xiao_tian_memory_feet_tell_the_mind', title:'Your Feet Tell Me', comic:'V3 013', text:'"Your feet tell me where your mind intends to go." Hands adjusting his shoulders. The face is blurred. He fears the thought that he might remember what happened after.'},
+  {id:'handmind', hook:'xiao_tian_memory_blade_follows_hand', title:'The Blade Follows the Hand', comic:'V3 014', text:'"The edge must follow the hand, not lead it." "The blade follows the hand. The hand follows the mind." Perhaps his master\'s words. A shape, no face.'},
+  {id:'judgment', hook:'xiao_tian_memory_tool_and_judgment', title:'A Tool and Your Judgment', comic:'V3 015', text:'"A tool tells you what it can do. Your judgment decides whether you should use it." The face remains beyond reach.'},
+  {id:'road', hook:'xiao_tian_memory_sword_protects_the_road', title:'The Sword Protects the Road', comic:'V3 016', text:'"A good swordsman must know what he is protecting." "The sword protects the road. It does not choose the destination." He remembers the lesson, not the day.'},
+  {id:'hands', hook:'xiao_tian_memory_in_the_hands', title:'A Memory in the Hands', comic:'V3 008', text:'Someone training him. He thinks it was his master. He is afraid the next memory will be worse.'},
+  {id:'prove', hook:'xiao_tian_memory_dont_fight_to_prove', title:'Don\'t Fight to Prove What You Were', comic:'V3 017', text:'"Don\'t fight to prove what you were. Fight only when you know what you must protect." "A sword is carried for the road ahead, not the glory behind." He cannot tell whether it came before the massacre or long before.'},
+  {id:'wrist', hook:'xiao_tian_memory_blade_and_wrist', title:'A Blade and a Wrist', comic:'V3 018', text:'A blade, a wrist, then the memory breaks. He reached for someone, but cannot tell whether he was stopping the blade, being restrained, or trying to save someone. He fears he did something terrible.'},
+  {id:'feng', hook:'xiao_tian_memory_voice_calls_feng', title:'A Voice He Almost Knew', comic:'V3 019', text:'A blade, a wrist, and a voice he almost knew calling "Feng—!". He tells Dongyue that someone called him something.'},
+  {id:'floor', hook:'xiao_tian_memory_wooden_floor_blade_hand', title:'A Wooden Floor', comic:'V3 020', text:'A wooden floor, a blade, a hand reaching toward him. The face remains hidden.'},
+  {id:'sword_weight', hook:'xiao_tian_memory_weight_of_a_sword', title:'The Weight of a Sword', comic:'V3 021', text:'At the repository threshold, the weight of a sword in his hand. No face appeared. No name returned.'},
+  {id:'stance', hook:'xiao_tian_memory_again_keep_your_stance', title:'Again. Keep Your Stance.', comic:'V3 022', text:'A man\'s voice, firm yet patient: "Again. Keep your stance." Someone taught him to use a sword, and forgetting feels like letting him down. The name "Feng…" hovered on his tongue, clear and out of reach: undeniably his, but it did not fully return.'},
+  {id:'rack', hook:'xiao_tian_memory_sword_rack', title:'The Sword Rack', comic:'V3 024', text:'A familiar stance, a guiding hand, a patient voice. The face remains blurred.'},
+  {id:'rain', hook:'xiao_tian_dreams_of_the_masked_figure', title:'The Face in the Rain', comic:'V3 032', text:'Wet boards, rain, a blade, a hand seizing his wrist and a masked figure with a blurred face. He cannot tell whether he was protecting someone, being restrained, or trying to reach a fallen companion. One thing is clear: the hand was trying to stop him from moving forward.'},
+  {id:'opening', hook:'xiao_tian_memory_watch_the_opening', title:'Watch the Opening', comic:'V3 034', text:'A voice, familiar yet out of reach: "Watch the opening, not the blade." The voice is clear; the face behind it stays hidden.'},
+  {id:'yard', hook:'xiao_tian_memory_training_yard_laughter', title:'The Sound of Laughter', comic:'V3 035', text:'A training yard, several wooden practice swords, and someone laughing after he finally got a difficult movement right. He felt proud, and safe. The first memory that brought warmth, not fear.'},
+  {id:'opposite', hook:'xiao_tian_memory_someone_smiling_opposite', title:'Someone Smiling Opposite Him', comic:'V3 037', text:'During a light spar with Dongyue: someone standing opposite him, smiling as he finally got the movement right. The face is hidden; the companionship is clear.'},
+  {id:'name', hook:'xiao_tian_recovers_the_name_feng_xia', title:'The Name Feng Xia', comic:'V3 038', text:'He says the name aloud: "Feng Xia". It feels familiar, with both pain and relief. The face, the place and the people remain in mist. The name no longer feels like a stranger\'s.'},
+];
+/* Leads are tracked separately; nothing links any of them to the seal or to each other unless a page does. */
+const XT_LEADS = [
+  {id:'eyes', t:'"You have his eyes"', hook:'caretaker_says_he_has_his_eyes', clue:'The old caretaker says Xiao Tian has someone\'s eyes, then that he may be mistaken. He remembers a boy who refused to run while others were falling, and does not know what became of him.', state:'Whose eyes, and whether the boy is Xiao Tian, are not established.'},
+  {id:'dream',  t:'The woman in his dreams', hook:'xiao_tian_mother_dream_seen', clue:'He dreams of a woman in grey who calls him "son".', state:'She is not identified.'},
+  {id:'masks',  t:'Avenge his master and martial brothers', hook:'masked_assassins_identity_revealed', clue:'Black-clad, gold-trimmed assassins in iron masks with golden buckles killed his master and his martial brothers over gold. He wants to avenge them, and first he must get stronger.', state:'Their identity and purpose are unknown. No connection to the seal is established.'},
+];
+const personalOpen = () => G.ch >= 36 && isRecruited('xiaotian');
+
+function rolesHtml(){
+  const rows = ROLES.filter(r => isRecruited(r.id)).map(r => `<div class="li"><b>${CHARACTERS[r.id].icon} ${first(r.id)}</b> · ${r.role}<div class="sm">${r.text}</div></div>`).join('');
+  return rows ? `<h4>Mission roles</h4><div class="sm">Everyone contributes something different. No one is equally skilled at everything.</div>${rows}` : '';
+}
+function xiaoTianHtml(){
+  if(!personalOpen()) return '';
+  const frags = XT_FRAGMENTS.filter(f => hook(f.hook)), leads = XT_LEADS.filter(l => hook(l.hook)), lv = fieldLv(), wins = (G.xt && G.xt.wins) || 0;
+  const next = lv < FIELD_MAX ? (FIELD_WINS - wins % FIELD_WINS)+' more victories with him to the next rank' : 'the highest rank';
+  const hurt = hook('xiao_tian_recovery_incomplete') ? '<div class="sm">His recovery is incomplete: pain, allergies and the odd burst of laughter remain.</div>' : '';
+  return `<div class="panel"><h3>🍃 Xiao Tian · The Lost Swordsman</h3>
+    <div class="sm">Dongyue's sworn younger brother. ${hook('xiao_tian_recovers_the_name_feng_xia') ? 'He has recovered the name <b>Feng Xia</b> (the name only: the face, the place and the people are still in mist). Under the amnesiac he is now,' : 'Under the childish amnesiac he is now,'} he was Feng Xia, a tough, mature swordsman. His strength is not coming back all at once, and getting his memories back will not turn him back into who he was.</div>${hurt}
+    <h4 style="margin:8px 0 2px">Leads</h4>${leads.map(l => `<div class="li">○ <b>${l.t}</b><div class="sm">${l.clue}</div><div class="sm" style="color:#9aa">${l.state}</div></div>`).join('') || '<div class="sm">No leads yet.</div>'}
+    <h4 style="margin:8px 0 2px">Memory fragments (${frags.length})</h4>${frags.map(f => `<div class="li">✦ <b>${f.title}</b> <span class="sm">· ${/^V/.test(f.comic) ? f.comic : 'comic '+f.comic}</span><div class="sm">${f.text}</div></div>`).join('')}
+    <div class="sm">More surface when a clue triggers recognition.</div>
+    ${fieldworkHtml()}
+    <h4 style="margin:8px 0 2px">Field proficiency · ${FIELD_RANKS[lv]}</h4><div class="sm">Fieldwork and scouting: +${4*lv}% gold while he fights beside you. ${next}.</div>${bar(wins % FIELD_WINS + (lv >= FIELD_MAX ? FIELD_WINS : 0), FIELD_WINS, 'bond')}</div>`;
+}
+/* his fieldwork in the investigation: the 🍃 clues in the Seal & Sites journal (comics 033-038), shown once their hooks fire */
+function fieldworkHtml(){
+  if(typeof CLUES === 'undefined') return '';
+  const rows = CLUES.filter(c => c[3].startsWith('🍃') && hook(c[0]));
+  return rows.length ? `<h4 style="margin:8px 0 2px">Fieldwork in the investigation</h4><div class="sm">He scouts ahead and notices what the specialists miss. He does not know the magical answers.</div>${rows.map(c => `<div class="li">✔ ${c[3].replace('🍃 ','')} <span class="sm">· ${/^V/.test(c[2]) ? c[2] : "comic "+c[2]}</span></div>`).join('')}` : '';
+}
+const personalHtml = () => rolesHtml() + xiaoTianHtml();

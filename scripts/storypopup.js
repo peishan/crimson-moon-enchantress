@@ -15,7 +15,7 @@ async function comicPages(n){
   if(PAGE_CACHE[n]) return PAGE_CACHE[n];
   const pages = [];
   for(let i=1;i<=40;i++){
-    const src = (n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
+    const src = (n>=VOL4_START ? 'assets/comics/v4/ch'+pad2(vnum(n)) : n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
     if(!(await probeImage(src))) break;
     pages.push(src);
   }
@@ -42,7 +42,7 @@ function storyGo(d){
   drawStory();
 }
 /* Volume covers are shown when a volume is COMPLETED (not at the start). Key = the chapter that completes the volume. */
-const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' } };
+const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' }, 116:{ v:3, n:'Volume 3', img:'assets/volume3_cover.webp' } };
 function openVolumeCover(n, after){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c, after:after || null}; drawStory(); }
 /* closing the finale splash: Volume 2's closes into the unlocking of the relationship option, then the chapter result */
 function closeCover(){

@@ -166,6 +166,13 @@ const CLUES = [   // [hook id, category, comic, text]
   ['name_on_the_orders_appears_several_times', 'trail', 'V3 030', 'A name appears several times on the redirected orders (顧雲舟, Gu Yunzhou: romanisation to confirm); it does not prove they acted alone'],
   ['second_record_meeting_with_omitted_person', 'trail', 'V3 031', 'A second record places the named intermediary at a meeting with someone whose name was deliberately omitted: a blank mark and a partially torn seal'],
   ['partial_seal_resembles_clerks_scrap', 'trail', 'V3 031', 'The torn seal resembles the clerk\'s scrap but is not an exact match: someone took care to hide part of the story'],
+  ['footprints_and_marker_found', 'yan', 'V4 003', '🍃 Fresh footprints beside a carved stone marker on the mountain path: someone passed recently'],
+  ['xiao_tian_senses_the_wind_gone_quiet', 'yan', 'V4 005', '🍃 Xiao Tian: "Something changed. Even the wind has gone quiet" before the threshold'],
+  ['yan_letter_do_not_follow', 'yan', 'V4 001', 'Yan left a letter and went to the Ice Temple alone: "Do not follow me"; he has kept much from Xiyu and will answer her questions if he returns'],
+  ['faint_trace_energy_fading', 'yan', 'V4 003', 'A fading trace of energy on the mountain path was left carefully, not to leave a clear trail but not erased completely; it does not prove whether Yan passed through or left a clue'],
+  ['yan_was_already_fighting_something', 'yan', 'V4 004', 'When Xiyu found Yan at the sanctuary he was already fighting something far older; he never told her what, or what would happen if he failed'],
+  ['concealment_formation_old_but_active', 'yan', 'V4 005', 'A concealment formation at a stone threshold, old but active; Xiyu feels the same pulse as at the sanctuary (not proof of the same force)'],
+  ['ice_temple_concealment_still_functioning', 'yan', 'V4 006', 'The Ice Temple\'s concealment still works: its gates stand open but the temple was never truly left unprotected'],
   ['no_evidence_connects_repository_to_xiao_tian', 'trail', 'V3 035', 'Muxue records: no one has identified who ordered the redirected deliveries, and no evidence yet connects the repository to Xiao Tian\'s past'],
   ['signal_disappeared_disturbance_remains', 'ruins', 'V3 003', 'The signal disappeared but the disturbance did not; the remaining energy is strained like a wound forced to close'],
   ['scrape_made_after_stone_settled', 'ruins', 'V3 003', '🍃 A scrape was made after the stone was already there (the dust settled inside, not across the edge)'],
@@ -196,7 +203,7 @@ const CLUES = [   // [hook id, category, comic, text]
   ['instrument_case_empty_clean_rectangle', 'records', 'V3 018', 'A case that once held an instrument is empty: a clean rectangle in the dust (moved yesterday or years ago, unknown)'],
   ['repository_searched_or_emptied_before_abandonment', 'records', 'V3 018', 'Someone may have searched the room, or removed something before it was abandoned; no proof the two are connected'],
 ];
-const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow'],['trail','🗂️ The repository trail']];
+const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow'],['trail','🗂️ The repository trail'],['yan','❄️ Yan\'s trail to the Ice Temple']];
 const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it
   ['hidden_eye_symbol_reached', 'What is the formation concealing, and from whom?'],
   ['record_deliberately_altered', 'Who altered the record?'],
@@ -208,6 +215,8 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['formation_alteration_deliberate', 'Who altered the formation to make the keeper indispensable?'],
   ['transmission_gap_found', 'Who receives the signals, and what happened in the missing interval?'],
   ['redirected_flow_has_a_destination', 'Where is the redirected flow going, and why?'],
+  ['yan_letter_do_not_follow', 'What must Yan face at the Ice Temple, and why alone?'],
+  ['yan_was_already_fighting_something', 'What was Yan fighting at the sanctuary, and what happens if he fails?'],
   ['repository_items_taken_deliberately', 'Who took the repository\'s records and instruments, and why?'],
   ['name_on_the_orders_appears_several_times', 'Who is behind the name on the redirected orders, and who gave the final instructions?'],
   ['omitted_name_blank_mark_and_torn_seal', 'Who was the person at the meeting whose name was removed?'],
@@ -221,6 +230,7 @@ const STAGES = [
   {t:'Trace the relay', d:'Follow the signals to the relay point and what it recorded.', done:() => sealHook('relay_point_found'), active:() => sealHook('signal_goes_to_relay_point')},
   {t:'Investigate the missing interval', d:'The records stop and a gap is left in the transmissions. Who erased it, and what happened then?', done:() => false, active:() => sealHook('transmission_gap_found')},
   {t:'Trace the repository records', d:'Who emptied the repository, and who redirected its deliveries? A name has surfaced, and a seal torn away from a record.', done:() => false, active:() => sealHook('old_storehouse_found') || sealHook('caretaker_found_near_estate')},
+  {t:'Follow Yan to the Ice Temple', d:'Yan left alone with a letter and a destination. Follow his faint trail to the Ice Temple and learn what he went to face.', done:() => false, active:() => sealHook('yan_letter_do_not_follow')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

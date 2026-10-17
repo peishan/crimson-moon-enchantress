@@ -4335,6 +4335,193 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"117": [
+{
+"id": "yan_leaves_the_residence",
+"d": "Yan has left the residence: his room is conspicuously empty a month after Volume 3",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_letter_do_not_follow",
+"d": "Yan's letter: something he must face at the Ice Temple; \"Do not follow me\"; if he returns he will answer her questions",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_has_kept_much_from_xiyu",
+"d": "Yan: \"I have kept much from you already, and I cannot ask you to understand before I have given you the truth\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_resolves_to_follow_yan",
+"d": "Xiyu resolves to follow Yan: \"That is precisely why I'm going\"",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_kept_secrets_two_thousand_years",
+"d": "The Ice Temple has kept its secrets for two thousand years",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"118": [
+{
+"id": "party_prepares_for_the_ice_temple_journey",
+"d": "Xining prepares medicines and warm clothes and Xiao Tian readies weapons and supplies for a long, dangerous journey",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_refuses_to_wait_in_uncertainty",
+"d": "Whatever Yan's reason, Xiyu refuses to wait in uncertainty and will find the truth with her own eyes",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"119": [
+{
+"id": "party_sets_out_for_the_ice_temple",
+"d": "The group sets out at dawn on horseback; snow gathers along the mountain path",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "footprints_and_marker_found",
+"d": "Xiao Tian finds fresh footprints beside a carved stone marker: someone passed recently",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "faint_trace_energy_fading",
+"d": "A fading trace of energy was left carefully, not to leave a clear trail, but not erased completely",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "trail_does_not_prove_yan_passed",
+"d": "The trace gives a direction but does not prove whether Yan passed through or deliberately left a clue for them",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"120": [
+{
+"id": "xiyu_remembers_yan_at_the_seal",
+"d": "Xiyu remembers finding her father maintaining the ancient seal and the danger he tried to conceal",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_was_already_fighting_something",
+"d": "Yan was already fighting something far older when she found him at the sanctuary; he never told her what, or what would happen if he failed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_chose_to_go_alone",
+"d": "Yan chose to go to the Ice Temple alone",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_wont_learn_it_by_waiting",
+"d": "Xiyu: \"Whatever he has been hiding, I won't learn it by waiting for him to return\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"121": [
+{
+"id": "xiao_tian_senses_the_wind_gone_quiet",
+"d": "Xiao Tian notices the change at the threshold: \"Even the wind has gone quiet\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "trail_leads_beyond_mountain_roads",
+"d": "By dusk the faint trail leads beyond the ordinary mountain roads to a stone threshold",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "concealment_formation_old_but_active",
+"d": "A concealment formation, old but still active; it cannot be opened without understanding what it was designed to hide",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_feels_the_sanctuary_pulse_again",
+"d": "The stone's red markings glow and Xiyu remembers the feeling from the sanctuary (not proof that the same force lies beneath the mountain)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_came_this_way_or_wanted_to_be_found",
+"d": "Yan came this way, or wanted someone to find it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_conceals_a_passage_stairway",
+"d": "The formation conceals a passage: a stairway is revealed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"122": [
+{
+"id": "ice_temple_stairway_climbed",
+"d": "The party climbs the hidden stairway; the Ice Temple grows larger with every step",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_gates_open_no_guards",
+"d": "At the summit a vast courtyard with open gates and no guards",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_concealment_still_functioning",
+"d": "The temple's concealment is still functioning: it was never truly left unprotected",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_wont_leave_without_answers",
+"d": "Xiyu: \"We aren't leaving without answers\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

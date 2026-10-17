@@ -107,7 +107,7 @@ function rGates(){
 /* ---------------- JOURNAL ---------------- */
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.map(c => (c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
+  const rows = CHAPTERS.map(c => (c.n===VOL4_START ? `<h4>Volume 4</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>
@@ -194,6 +194,7 @@ const CAST_SHEETS = [
   {id:'cover1', n:'Volume 1 Cover', sub:'The Long Awaited Love Is Not a Dream', img:'assets/volume1_cover.webp', ch:39},
   {id:'cover2', n:'Volume 2 · Beneath the Crimson Moon', sub:'Xiyu and Cangyuan: the end of Volume 2', img:'assets/events/relationship_cangyuan.webp', ch:78},
   {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
+  {id:'cover3', n:'Volume 3 Cover', sub:'The Roots of What Remains', img:'assets/volume3_cover.webp', ch:116},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
 function rCast(){

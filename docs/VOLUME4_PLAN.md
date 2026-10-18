@@ -14,3 +14,6 @@
 
 ## Related Volume 4 threads (from the pages so far)
 Yan left a letter and went to the Ice Temple alone ("Do not follow me"); the party follows his faint trail to the hidden stairway and the open, unguarded courtyard (comics 001-006). Ya'Xing was last seen recovering at the Ice Temple (author: his arc continues in Volume 3-4; docs/VOLUME2.md).
+
+## Update: the Ya'Xing retrieval mission is on the pages (comics 007-028)
+Hoko appears in comic 009 (alive, "protection or imprisonment") and travels with the party through comics 014-028; the game already runs the chapters (123-144) but **Hoko is still not a party member or guest in the game**: he appears only in the story text and art. Ready to build when the author says: the guest seat (`G.guests`), his hero sheet and portrait, and the goodbye choice (not on a page yet). Comics 013 and 018 are still missing; Hoko's joining may happen in 013 (between the stair formation in 012 and the passage in 014).

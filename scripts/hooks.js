@@ -4522,6 +4522,809 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"123": [
+{
+"id": "ice_temple_guardians_confront_party",
+"d": "Ice Temple guardians in white-and-blue robes emerge and challenge the party: \"Stop. State your purpose.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_names_herself_yans_daughter_to_guardians",
+"d": "Xiyu tells the guardians she is Yan's daughter; they recognise her (\"So you finally came\")",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "guardians_say_yan_returned_to_where_he_tried_to_escape",
+"d": "The guardians know Yan returned to the place he once tried to escape, but not everything he intends to do",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "guardians_protecting_something_inside",
+"d": "The guardians are protecting something inside: some duties cannot be abandoned simply because their master has left",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_may_rest_but_some_places_forbidden",
+"d": "The party may stay and rest, but there are places they cannot enter without permission",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"124": [
+{
+"id": "heavy_door_blocks_inner_chambers",
+"d": "A heavy door blocks the path to the Ice Temple's inner chambers",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "guardians_have_guarded_for_two_thousand_years",
+"d": "The guardians have guarded the temple and what rests within it for two thousand years, and were told never to abandon their duty",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "attendant_silent_when_asked_if_afraid",
+"d": "Asked whether they fear what might happen if the door is opened, the attendant says nothing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_given_guest_quarters_and_limited_records",
+"d": "The party is given guest quarters and the records the guardians are permitted to show; the inner chambers stay closed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "temple_records_missing_or_sealed_pages",
+"d": "The records reveal fragments of history, but many pages are missing or sealed",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"125": [
+{
+"id": "chief_guardian_summons_xiyu",
+"d": "The chief guardian sends for Xiyu: someone she should meet, someone who was with her when she escaped",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoko_alive_at_the_ice_temple",
+"d": "Hoko is alive: Yan's people brought him back to the Ice Temple after the whirlwind",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoko_not_free_to_leave_protection_or_imprisonment",
+"d": "Hoko was told not to leave until the temple's affairs were settled; he does not know whether it is protection or imprisonment",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "white_key_was_meant_to_open_a_way_out",
+"d": "Hoko: the white key was meant to open a way out, not to bring him back; the temple holds more than one teleportation platform, in layers",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yans_followers_repeat_the_name_yaxing",
+"d": "Hoko heard Yan's followers repeat the name Ya'Xing before Yan disappeared, as if he were the key to something",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_resolves_to_find_yaxing",
+"d": "Xiyu resolves to find Ya'Xing: \"Whether he is being protected or kept here, we need to see him\"",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"126": [
+{
+"id": "followers_spoke_of_yaxing_with_hesitation",
+"d": "Yan's followers spoke of Ya'Xing with hesitation, as if his name alone were a warning",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "temple_wards_remember_traces",
+"d": "The temple keeps traces in its formations, spiritual presence and objects touched; its wards remember",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_trace_found_in_side_hall",
+"d": "In a side hall the party finds a faint, younger but strong spiritual trace they identify as Ya'Xing's",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "trace_resembles_yans_formation",
+"d": "The trace's energy resembles the formation Xiyu once saw Yan maintaining",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_deep_connection_to_the_temple",
+"d": "The trace confirms Ya'Xing has a deep connection to the temple (it cannot say how long ago, nor whether he is still there)",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"127": [
+{
+"id": "seal_pattern_resembles_yans_seal",
+"d": "A seal pattern reminds Xiyu of the ancient seal her father struggled to maintain",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "temple_responds_to_the_seal",
+"d": "The temple responds when the seal is brought near a carved stone panel: frosted runes glow",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "crimson_light_reveals_hidden_pattern",
+"d": "Crimson light flows through the lines, revealing a hidden pattern beneath the frost",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_staircase_descends",
+"d": "A hidden staircase descends into blue darkness",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "response_to_seal_or_to_its_energy_unknown",
+"d": "It is not known whether the temple responded to the seal or to the energy within it",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"128": [
+{
+"id": "stairs_formation_layered_ward",
+"d": "The carvings on the stairs are layered like a ward: disturb one layer and the others may respond",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "same_crimson_formation_on_stairs",
+"d": "Xiyu sees the same red formation again; it feels familiar, which does not prove the same source",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_testing_not_attacking",
+"d": "The formation is not attacking: it is testing for something, or waiting for a condition to be met",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_reacts_to_xiyu",
+"d": "The crimson lines brighten and move around Xiyu, recognising her, but the barrier stays closed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "barrier_dims_outline_of_door",
+"d": "The barrier dims, revealing the faint outline of a door with no lock or handle",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "recognition_is_not_permission",
+"d": "The temple recognised something in Xiyu, but recognition was not permission; no one breaks the formation until they know what it protects",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"130": [
+{
+"id": "faint_trail_beyond_sealed_passage",
+"d": "A faint trail leads to a sealed passage with someone on the other side (it did not leave long ago; difficult to read farther ahead)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoko_recognises_the_pillar_mechanism",
+"d": "Hoko recognises a carved pillar: a pattern marking a passage linked to the temple's inner chambers; he barely escaped last time",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "different_energy_disturbed_the_ward",
+"d": "Cangyuan: this is not the energy that awakened the staircase; something has passed through and disturbed the ward",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "metallic_clink_beyond_wall",
+"d": "A faint metallic clink, then a short scrape, comes from beyond the stone wall",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "younger_guard_commander_warns_them",
+"d": "A younger guard commander warns them not to go farther: the passage was sealed for a reason and he was never told what it contained",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "residue_fading_trail_may_be_lost",
+"d": "The spiritual residue is fading: waiting too long may lose the trail",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"131": [
+{
+"id": "pillar_is_part_of_the_mechanism",
+"d": "The carved pillar is part of the door's mechanism; the formation responds to something on the other side (a person or spiritual energy: unknown)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_reacts_to_xiyus_power",
+"d": "The formation reacts to Xiyu's power; she agrees not to feed it more energy",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mechanism_may_open_from_within",
+"d": "The symbols repeat in reverse on the far side: the mechanism may open from within as well as outside, so someone could be trapped, or deliberately keeping it closed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "three_knocks_from_behind_the_door",
+"d": "Three measured knocks come from the other side: a deliberate signal",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "opening_may_affect_deeper_seals",
+"d": "The younger commander: opening the passage could affect the deeper seals; Xiyu: leaving it closed may mean abandoning someone inside",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"132": [
+{
+"id": "outer_mechanism_listens_for_a_sequence",
+"d": "The outer mechanism is listening for a response, not a key; a wrong answer may close the seal more tightly",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "single_knock_reply",
+"d": "After the party asks for three knocks again, a single knock answers: a reply or a warning",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "stone_disc_shifted_after_the_knock",
+"d": "A small stone disc shifted after the last knock; a faint blue light traces across the door to a circular mark",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mechanism_answered_the_party",
+"d": "The ancient mechanism has answered them; whether inviting or warning is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"133": [
+{
+"id": "disc_is_a_guide_not_a_keyhole",
+"d": "The disc is a guide: its symbols give the order in which the mechanism must be aligned",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "another_turn_might_have_triggered_it",
+"d": "Cangyuan stops Hoko's alignment: energy gathering along the lower edge (another turn might have triggered it)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_draws_energy_inward",
+"d": "The seal draws energy inward rather than releasing it: protecting what lies inside, or preventing something inside from crossing the threshold",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "signal_and_formation_connected",
+"d": "The knocking signal and the formation are connected: the response changes the mechanism's state",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "seam_opens_chains_move",
+"d": "A thin seam opens in the stone door; cold air and the sound of moving chains",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "chamber_beyond_still_active",
+"d": "The seal yields only enough to show that the chamber beyond is still active; no one crosses until they know what changed",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"135": [
+{
+"id": "trail_slopes_downward",
+"d": "Following the faint scrape, the passage slopes downward into darker silence",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ship_fitting_in_the_ice",
+"d": "Hoko finds a broken metal fitting in the ice: a fastening used in ship construction, removed recently",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "weakened_traveller_footprints",
+"d": "Xining reads uneven, struggling footprints: someone passed here weakened",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "smaller_stone_door_dormant_seal",
+"d": "A smaller stone door with a dormant seal (the energy around it disturbed); a narrow slit and a formation carved into the threshold",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "uneven_knock_from_inside",
+"d": "A faint, uneven knock answers Dongyue's call: someone inside is conscious (or something wants them to believe so)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ship_hardware_wedged_under_the_door",
+"d": "A strip of ship hardware is wedged beneath the door to keep the mechanism from closing fully; whoever did it improvised",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "maritime_craftsperson_clue",
+"d": "The clues form a pattern: a maritime craftsperson, a weakened traveller, and a sealed chamber someone tried to keep from closing",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"136": [
+{
+"id": "single_knock_deliberate_response",
+"d": "After a long pause a single knock answers: someone is responding deliberately",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_regulating_energy_inside",
+"d": "The seal is regulating the energy inside: forcing the door could disrupt whatever balance remains",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "brace_holds_door_not_forever",
+"d": "The ship fitting has kept the door from closing but will not hold forever; someone inside may have put it there to leave a way out",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "frost_darkened_by_moisture",
+"d": "A patch of frost darkened by moisture suggests recent water (dehydration, or moisture from the formation)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoarse_voice_dont_break_the_seal",
+"d": "A hoarse voice speaks through the door: \"...Don't... break... the seal...\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_request_not_to_rescue_by_force",
+"d": "The first request from the person inside is not to rescue them by force",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"137": [
+{
+"id": "lower_ring_dont_let_it_turn",
+"d": "The voice: \"The... lower ring. Don't let it turn.\" A ring lies beneath the threshold; rotating it might release or tighten the inner formation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoko_holds_the_fitting_steady",
+"d": "Hoko keeps the ship fitting steady: it holds part of the mechanism in place, and removing it could be dangerous",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "pale_hand_emerges",
+"d": "A pale hand, trembling from the cold, emerges through the gap",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cord_with_a_sea_knot",
+"d": "A cord around the wrist carries a knot familiar to those who work at sea",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_ring_clicks",
+"d": "The lower ring gives a faint click; the unseen captive knocks once",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"138": [
+{
+"id": "seal_does_two_jobs",
+"d": "The formation maintains two opposing forces: one holds the door shut, the other keeps the inner energy from escaping",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "releasing_outer_restraint_may_surge",
+"d": "Releasing the outer restraint without stabilising the inner formation could surge energy into the corridor and harm the person inside",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "blue_line_must_stay_intact",
+"d": "The voice: \"The... blue line. Leave it intact.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "brute_force_least_useful",
+"d": "Xiyu and Cangyuan agree: brute force would give the least useful answer",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "stone_catch_pressed_pressure_eased",
+"d": "Following Cangyuan's directions, Dongyue presses a small stone catch beside the lower ring: the pressure eases",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_is_a_fragile_balance",
+"d": "The seal is not an obstacle to conquer but a fragile balance to preserve",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"139": [
+{
+"id": "hoko_fashions_a_brace",
+"d": "Hoko has fashioned a metal brace from the ship fitting to hold the mechanism in place",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_finds_the_release_channel",
+"d": "Xiao Tian notices another channel from the lower ring to a recess in the wall: the possible release path (not connected to the blue line)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "crimson_energy_reacts_to_blue_not_part_of_it",
+"d": "Xiyu's crimson energy reacts to the blue formation but is not part of the mechanism; she keeps it separate",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_catch_released",
+"d": "Dongyue finds a second catch behind a frost-covered carving: one restraint released without disturbing the inner seal",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "door_yields_a_sliver",
+"d": "The door shifts, letting a sliver of warm lantern light in; the voice answers \"Yes...\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"140": [
+{
+"id": "yaxing_found_in_a_sealed_chamber",
+"d": "Ya'Xing is found alive in a sealed chamber: a comfortable private room, not a prison",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "doorway_formation_keeps_him_in",
+"d": "A formation at the doorway kept him from leaving without authorisation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_well_cared_for_but_fragile",
+"d": "Ya'Xing had been well cared for, but his body is still fragile; he can walk only a few steps",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_tells_dongyue_he_should_not_have_come",
+"d": "Ya'Xing: \"You shouldn't have... come here.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "months_of_searching_ended",
+"d": "After months of searching they have found him; getting him through the door is only the beginning of bringing him back",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"141": [
+{
+"id": "yaxing_settled_in_a_guest_chamber",
+"d": "Ya'Xing is settled in a proper guest chamber; he needs rest, warmth and regular meals",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_asked_to_leave_more_than_once",
+"d": "Ya'Xing asked to leave more than once and was told he was not strong enough",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "senior_commander_ordered_the_restriction",
+"d": "The senior commander ordered the restriction: he believed Ya'Xing's condition made travel too dangerous",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "doorway_formation_released",
+"d": "The doorway formation is released: with authorisation the party can leave freely",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "care_acknowledged_decision_not_endorsed",
+"d": "Xining judges the care consistent; the party acknowledges it without pretending the decision was right",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "choice_was_taken_from_yaxing",
+"d": "The comfort of the room could not erase the choice that had been taken from Ya'Xing",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"142": [
+{
+"id": "senior_commander_comes_in_person",
+"d": "The senior commander comes to the guest chamber in person",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "senior_commander_admits_good_intentions_not_proof",
+"d": "The senior commander: \"I will not pretend I made the right decision merely because my intentions were good\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_restriction_lifted",
+"d": "Ya'Xing's restriction is lifted: he may leave when his companions judge the journey safe and when he chooses",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "senior_commander_promises_an_explanation",
+"d": "The senior commander will explain tomorrow why Ya'Xing's recovery was considered so dangerous",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "senior_commander_withholds_something",
+"d": "His explanation felt incomplete: there was something he was not telling them",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"143": [
+{
+"id": "medicine_residue_not_from_any_herb",
+"d": "Xining finds the medicine residue is not from any herb (not concluded: it may be part of the temple's treatment)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_felt_something_go_quiet",
+"d": "Ya'Xing: after some doses he breathed more easily; other times something inside him went quiet, as if his strength were held down",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "formation_may_suppress_to_prevent_harm",
+"d": "A formation can suppress unstable energy to prevent harm, without the treatment being malicious; if it also kept him too weak to leave, it must be understood",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "younger_commander_not_given_full_explanation",
+"d": "The younger commander oversaw Ya'Xing's care but was not given the full explanation: the formation had to remain undisturbed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_medicine_and_recovery_may_be_connected",
+"d": "The seal, the medicine and his slow recovery may be connected (or separate precautions); they will test each possibility",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"144": [
+{
+"id": "party_inspects_the_outer_formation",
+"d": "With the senior commander's permission and a token, the party inspects the outer formation through a maintenance passage; the inner chamber needs his permission",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "two_formations_upper_stabilises_lower_drains",
+"d": "The upper formation stabilises the occupant's spiritual energy and the lower one draws away excess power; the energy descends beneath the room into the temple foundations",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "medicine_matches_lower_channel_residue",
+"d": "The medicine shares a quality with the residue near the lower channel: it may have been prepared to work with the formation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "heal_or_suppress_unknown",
+"d": "Whether it was meant to heal or suppress him is unknown (possibly both); the question is whether the restriction continued after it was necessary",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_pattern_activated_strongly_unexpected",
+"d": "The lower pattern is activated more strongly than the younger commander had ever seen: someone knew more, or the formation changed while Ya'Xing recovered",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "something_beneath_responded",
+"d": "A vibration passes through the stone: something beneath the room has just responded (it did not originate from the guest room)",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

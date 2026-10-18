@@ -223,6 +223,8 @@ const CLUES = [   // [hook id, category, comic, text]
   ['seal_manages_an_imbalance_source_hidden', 'temple', 'V4 050', 'The lower seal transfers energy between its sections, the lower marking strongest: it manages an imbalance whose source stays hidden beneath the mountain'],
   ['custodians_ledger_year_463_first_disturbance', 'temple', 'V4 052', 'Custodians\' ledger, Year 463: the first disturbance, near the lower passage; the later diagram dates to Year 472; the inspector\'s name is missing'],
   ['records_moved_from_the_former_custodians_quarters', 'temple', 'V4 052', 'Older documents were moved from the former custodians\' quarters when the inner archive was reorganised; the archive catalogue may record where'],
+  ['lower_channel_present_in_original_missing_in_later_copy', 'temple', 'V4 051', 'The original formation diagram directs energy through a lower channel that the later copy leaves out; the lower marking reacts more strongly than the later diagram predicts (simplification or alteration: unknown)'],
+  ['no_current_custodian_authorised_a_change', 'temple', 'V4 051', 'No current custodian authorised a change to the formation; the later copy was made after the earliest disturbance; the person responsible, and whether Yan knew, is unknown'],
   ['second_layer_beneath_the_formation', 'temple', 'V4 033', 'A second layer of darker material and different rhythm lies beneath the original formation, added later; its residue is neither Ya\'Xing\'s medicine nor ordinary frost'],
   ['keeper_inscription_when_the_mountain_breathes_inward', 'temple', 'V4 035', 'Library inscription: \'When the mountain\'s breath turns inward, the keeper must remain until the currents settle\''],
   ['red_crystal_fragment_reacts_to_spirit_light', 'temple', 'V4 036', 'A red crystal fragment in the old laboratory reacts unpredictably to spirit-light; the medicine residue and the formation residue are not identical'],
@@ -288,6 +290,7 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['order_reached_the_watch_through_the_command_structure', 'Who ordered the side chamber restricted, and did that purpose change?'],
   ['seal_manages_an_imbalance_source_hidden', 'What is the imbalance beneath the mountain, and does it come from the original disturbance or a later alteration?'],
   ['inspector_name_missing_from_the_ledger', 'Who recorded the first disturbance, and who erased the name?'],
+  ['lower_channel_present_in_original_missing_in_later_copy', 'Why does the later copy omit the lower channel, and who changed it?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [

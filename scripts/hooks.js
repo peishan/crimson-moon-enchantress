@@ -6116,6 +6116,50 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"167": [
+{
+"id": "lower_marking_reacts_more_strongly_than_the_later_diagram_predicts",
+"d": "The lower marking reacts more strongly than the later diagram predicts: the record does not describe the seal as it functions now",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_channel_present_in_original_missing_in_later_copy",
+"d": "The original diagram directs energy through a lower channel that the later copy omits (simplification or alteration: unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_channel_may_have_carried_strain_or_served_another_purpose",
+"d": "If active, the lower channel may have carried strain from the outer seal, or served another purpose; older is not assumed safer",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_current_custodian_authorised_a_change",
+"d": "No current custodian authorised a change to the formation; who held authority before the commander is unrecorded",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "later_copy_made_after_the_earliest_disturbance",
+"d": "The later copy was made after the earliest disturbance was recorded; when exactly needs another dated record",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_wants_to_know_who_changed_the_record",
+"d": "Xiyu: someone changed the record or preserved only part of it; she wants to know why, and whether Yan knew",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
 "168": [
 {
 "id": "custodians_ledger_year_463_first_disturbance",

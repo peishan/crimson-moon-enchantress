@@ -700,8 +700,8 @@ const CH_FLAGS = { 13:['imp_expelled'], 18:['ancient_rite'], 20:['soul_bond'],
                    40:['volume2_started','xiyu_separate_residence'], 41:['cangyuan_met'], 42:['black_vein_seen'], 43:['sanctuary_memory_seen'], 44:['yan_possessed_seen'], 45:['older_binding_known'], 46:['spirit_weaving_learned'], 47:['original_formation_plan'], 48:['xiyu_is_the_key'],
                    53:['xining_recruited','red_lantern_bounty_available'], 54:['red_lantern_road_cleared'],
                    62:['inverted_meridian_named'], 66:['channels_restored'], 70:['xiyu_confesses_feelings_for_cangyuan','xiyu_enchanted_dongyue'], 71:['dongyue_night_unresolved'],
-                   78:['volume2_complete','dongyue_friend_and_ally'], 116:['xiao_tian_name_recovered','volume3_complete'] };
-const FLAG_LABEL = { imp_expelled:'Dongyue learns Spirit Expulsion', ancient_rite:'Dongyue learns the Ancient Healing Rite', soul_bond:'The ancient bond-spell links Xiyu and Dongyue (not a permanent soul bond)',
+                   78:['volume2_complete','dongyue_friend_and_ally'], 116:['xiao_tian_name_recovered','volume3_complete'], 168:['volume4_complete','yaxing_recovery_half'] };
+const FLAG_LABEL = { volume4_complete:'Volume 4 complete: The Ice Temple', yaxing_recovery_half:'Ya\'Xing is about half recovered (the Interlude continues his recovery)', imp_expelled:'Dongyue learns Spirit Expulsion', ancient_rite:'Dongyue learns the Ancient Healing Rite', soul_bond:'The ancient bond-spell links Xiyu and Dongyue (not a permanent soul bond)',
   volume3_complete:'Volume 3 complete',
   xiao_tian_name_recovered:'Xiao Tian recovers the name Feng Xia (the name only: his memories and the person he was remain in mist)',
   channels_restored:'The divided channels are restored: the drain stops increasing (the keeper is still bound)', xiyu_confesses_feelings_for_cangyuan:'Xiyu tells Dongyue she has feelings for Cangyuan',

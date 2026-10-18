@@ -172,3 +172,10 @@ Installed as `assets/comics/v4/ch40-ch50.webp` and `ch52.webp`. Comic 051 (chapt
 - 164 gives Cangyuan bond +3 and a relationship nudge for Xiyu and Cangyuan.
 - New stages: "Find who searched the archives before us", "Find the former custodians' records".
 - Page note: the 052 closing caption has a typo ("the camme before").
+
+## End of Volume 4 (chapter 168)
+
+- Volume 4 ends at comic 052 (chapter 168). Cover installed as `assets/volume4_cover.webp` (shown as a splash on completing chapter 168 and kept in Cast). Tagline: lost records, sealed passages, hidden truths and the people who remain.
+- Volume 4 investigation map `assets/maps/ice_temple_v4.webp` is shown in the Ice Temple tab from chapter 117 above the Volume 1 map. New labels on it (Commanders' Quarters, Guest Chambers, Followers' Quarters, Xining's Chamber, Ya'Xing's Room, Ao Yun's Resting Place, Sealed Central Chamber) are not yet room entries in `temple.js`.
+- Author: Volume 5 continues the seal investigation; an Interlude continues Ya'Xing's recovery. Volume 4 sets him at about 50% (flag `yaxing_recovery_half`, hook `ya_xing_recovery_at_half`). Nothing mechanical changes yet.
+- Service worker cache bumped to v9.

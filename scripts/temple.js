@@ -8,6 +8,7 @@
    kind: room | key (important location) | locked | stairs | portal | trap
    ===================================================================== */
 const TEMPLE_MAP = 'assets/maps/ice_temple.webp';
+const TEMPLE_MAP_V4 = 'assets/maps/ice_temple_v4.webp', TEMPLE_MAP_V4_CH = 117;   // Volume 4 investigation map (author), shown from the first chapter of Volume 4
 const TEMPLE_MAP_CH = 23;   // provisional: exploration planned from comic 023
 const TEMPLE_LEVELS = [
   {lv:1, n:'Level 1 · Upper Temple', sub:'Main exploration and story areas'},

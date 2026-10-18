@@ -6195,6 +6195,13 @@ const HOOKS = {
 "t": "event",
 "p": false,
 "s": "art"
+},
+{
+"id": "ya_xing_recovery_at_half",
+"d": "Ya'Xing's recovery stands at about 50% at the end of Volume 4; the Interlude continues it",
+"t": "state",
+"p": false,
+"s": "art"
 }
 ]
 };

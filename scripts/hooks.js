@@ -5564,6 +5564,43 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"150": [
+{
+"id": "library_fragment_matches_the_formation_beneath_the_temple",
+"d": "A library diagram fragment matches the formation beneath the temple, in a style older than the records found earlier",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "fragment_central_and_upper_sections_missing",
+"d": "The fragment's central and upper sections are missing: deliberately removed, or damaged long ago (unknown)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "original_formation_contains_and_redistributes_disturbances",
+"d": "The original formation was designed to contain and redistribute spiritual disturbances within the mountain, and to stop them spreading beyond it; what they are is not stated",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "added_line_does_not_belong_to_the_original_design",
+"d": "The geometry of the fragment matches the rubbing, but the added red line changes the flow and does not belong to the original design",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "alteration_date_and_reason_unknown",
+"d": "When and why the alteration was made is unknown; more records are needed",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
 "151": [
 {
 "id": "keeper_inscription_when_the_mountain_breathes_inward",

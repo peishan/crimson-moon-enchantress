@@ -153,11 +153,12 @@ Titles: 007 Those Who Remained, 008 The Promise They Kept, 009 The Man Who Survi
 
 ## Volume 4, comics 029-039 (chapters 145-155)
 
-Installed as `assets/comics/v4/ch29-ch39.webp` (ch34 absent). Ice Temple investigation continues beneath Ya'Xing's room.
+Installed as `assets/comics/v4/ch29-ch39.webp` (ch34 added later). Ice Temple investigation continues beneath Ya'Xing's room.
 
 - 145 The Chamber Beneath the Ice · 146 The Name Beyond the Gate · 147 The Pulse Beneath the Seal · 148 Following the Third Pulse · 149 What the Stone Remembered
-- **150 = comic 034, NOT UPLOADED**: flagged placeholder (`pending:true`) so the story can run. Replace when the page arrives.
+- 150 The Pattern in the Archive (comic 034, supplied afterwards; replaced the placeholder). Library fragment of the older formation with missing sections; the added red line is not part of the original design.
 - 151 The Voice in the Stone · 152 The Laboratory of Frost · 153 The Choice of the Keeper · 154 The Trail That Continues · 155 The Courtyard Beneath the Snow
-- `LAST_CHAPTER` is now 155; 771 hooks; 14 new temple clues, 4 new questions, a new stage "Trace the pulse to its source".
+- `LAST_CHAPTER` is now 155; 776 hooks; 17 new temple clues, 5 new questions, a new stage "Trace the pulse to its source".
 - Kept open on purpose (the pages do not answer): who added the second layer (keeper or someone else), whether Yan knew of it, what the voice is, why the gate flickers for Xiyu (bloodline/affinity/role unknown), where the pavilion diagram went, whether Ya'Xing's condition relates to the disturbance.
 - Page notes: speakers mostly unlabelled; Ya'Xing speaks from the guest room (031/032/038); Hoko is not clearly identified in 029-039.
+- Author note: Hoko is the blond traveller in the white and yellow outfit. Speaker attribution on the pages is still left unlabelled in game text unless a page names the speaker.

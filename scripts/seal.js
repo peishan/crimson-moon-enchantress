@@ -201,6 +201,20 @@ const CLUES = [   // [hook id, category, comic, text]
   ['yaxing_found_in_a_sealed_chamber', 'temple', 'V4 024', 'Ya\'Xing is found alive in a comfortable sealed room, kept by a formation at the doorway'],
   ['senior_commander_ordered_the_restriction', 'temple', 'V4 025', 'The senior commander ordered the restriction because he believed travel was too dangerous; Ya\'Xing asked to leave more than once'],
   ['medicine_residue_not_from_any_herb', 'temple', 'V4 027', 'Ya\'Xing\'s medicine contains a residue that is not from any herb; he felt his strength held down, as if something inside had gone quiet'],
+  ['formation_predates_the_temple', 'temple', 'V4 029', 'The formation beneath Ya\'Xing\'s room predates the temple, built to regulate the spiritual energy of the mountain; his room is on one treatment branch of it'],
+  ['channel_reversed_since_last_inspection', 'temple', 'V4 029', 'A channel is reversed, unlike at the last outer inspection; its deeper workings were entrusted to Yan, who said to maintain, not alter'],
+  ['distorted_voice_says_yan', 'temple', 'V4 029', 'A faint distorted voice says \'...Yan...\': something recognised his name'],
+  ['patterns_older_than_yans', 'temple', 'V4 030', 'The inner formation\'s patterns are older than, and different from, Yan\'s; the inner gate predates the commander\'s authority'],
+  ['inner_gate_flickers_for_xiyu', 'temple', 'V4 030', 'The inner gate flickers when Xiyu approaches (bloodline, affinity or role: unknown)'],
+  ['red_channel_pulses_three_times', 'temple', 'V4 031', 'The red channel pulses three times at a regular interval, which is not part of routine inspections'],
+  ['dim_side_channel_feeds_the_pulse', 'temple', 'V4 032', 'A dim side channel feeds the pulse rather than receiving it; a worn groove shows someone worked the section after the original carving'],
+  ['second_layer_beneath_the_formation', 'temple', 'V4 033', 'A second layer of darker material and different rhythm lies beneath the original formation, added later; its residue is neither Ya\'Xing\'s medicine nor ordinary frost'],
+  ['keeper_inscription_when_the_mountain_breathes_inward', 'temple', 'V4 035', 'Library inscription: \'When the mountain\'s breath turns inward, the keeper must remain until the currents settle\''],
+  ['red_crystal_fragment_reacts_to_spirit_light', 'temple', 'V4 036', 'A red crystal fragment in the old laboratory reacts unpredictably to spirit-light; the medicine residue and the formation residue are not identical'],
+  ['blue_formation_ends_at_a_broken_segment', 'temple', 'V4 037', 'The original (blue) formation ends at a broken segment and the later (red) alteration begins beyond it: the boundary is found, not the hand'],
+  ['faded_crescent_symbol_on_old_diagram', 'temple', 'V4 038', 'A faded crescent symbol on the old diagram marks a section in the inner courtyard, reachable by the eastern passage'],
+  ['crescent_symbol_on_the_lantern_post', 'temple', 'V4 039', 'The same crescent symbol on a courtyard lantern-post glows as Xiyu approaches (response recorded; bloodline not assumed)'],
+  ['pavilion_shelf_missing_a_diagram', 'temple', 'V4 039', 'The pavilion shelf has a clean rectangular outline where a diagram once hung, and a path was cleared recently'],
   ['two_formations_upper_stabilises_lower_drains', 'temple', 'V4 028', 'Two formations lie beneath Ya\'Xing\'s room: the upper stabilises his spiritual energy, the lower draws away excess power'],
   ['something_beneath_responded', 'temple', 'V4 028', 'A vibration passes through the stone: something beneath the room has responded (it did not originate from the guest room)'],
   ['no_evidence_connects_repository_to_xiao_tian', 'trail', 'V3 035', 'Muxue records: no one has identified who ordered the redirected deliveries, and no evidence yet connects the repository to Xiao Tian\'s past'],
@@ -250,6 +264,10 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['repository_items_taken_deliberately', 'Who took the repository\'s records and instruments, and why?'],
   ['name_on_the_orders_appears_several_times', 'Who is behind the name on the redirected orders, and who gave the final instructions?'],
   ['omitted_name_blank_mark_and_torn_seal', 'Who was the person at the meeting whose name was removed?'],
+  ['reversed_channel_carries_a_signal', 'What is the reversed channel signalling, and to whom?'],
+  ['second_layer_beneath_the_formation', 'Who added the second layer, and was it the keeper or someone else?'],
+  ['keeper_trapped_appointed_or_willing_unknown', 'Was the keeper trapped, appointed or willing?'],
+  ['pavilion_shelf_missing_a_diagram', 'Where is the diagram that hung in the pavilion?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [
@@ -263,6 +281,7 @@ const STAGES = [
   {t:'Follow Yan to the Ice Temple', d:'Yan left alone with a letter and a destination. Follow his faint trail to the Ice Temple and learn what he went to face.', done:() => false, active:() => sealHook('yan_letter_do_not_follow')},
   {t:'Find Ya\'Xing', d:'Yan\'s followers speak of Ya\'Xing. Follow his trace through the Ice Temple and find him.', done:() => sealHook('yaxing_found_in_a_sealed_chamber'), active:() => sealHook('yans_followers_repeat_the_name_yaxing')},
   {t:'Understand the formation beneath Ya\'Xing\'s room', d:'A seal, a medicine and a slow recovery. Learn what the formation was for.', done:() => false, active:() => sealHook('yaxing_found_in_a_sealed_chamber')},
+  {t:'Trace the pulse to its source', d:'Three red pulses, a second layer and a gate that flickers for Xiyu. Find the route to the cause.', done:() => false, active:() => sealHook('red_channel_pulses_three_times')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

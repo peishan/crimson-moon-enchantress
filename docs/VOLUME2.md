@@ -150,3 +150,14 @@ Titles: 007 Those Who Remained, 008 The Promise They Kept, 009 The Man Who Survi
 
 ### Update: comics 013 and 018 received
 013 "The Presence in the Ice" (chapter 129) and 018 "The Chamber Beyond" (chapter 134) replace the placeholders; **no placeholders remain in Volume 4** (733 hooks, 146 clues). 013: the energy flows *away* from the sealed chamber, Hoko says he never came this far on his first escape (the bubble is unlabelled; the game attributes it to him because he is with the party and the line fits his history), and a human-shaped shadow crosses an archway (a person, an illusion or a remnant of the formation: unknown). 018: the glacier chamber beyond the seal (chains tied to the chamber itself, an impression in the frost, residue that does not belong to the seal, a ship-rigging fitting) and the scrape that leads to the smaller door of comic 019. Hoko is with the party from at least 013, so he joins by then.
+
+## Volume 4, comics 029-039 (chapters 145-155)
+
+Installed as `assets/comics/v4/ch29-ch39.webp` (ch34 absent). Ice Temple investigation continues beneath Ya'Xing's room.
+
+- 145 The Chamber Beneath the Ice · 146 The Name Beyond the Gate · 147 The Pulse Beneath the Seal · 148 Following the Third Pulse · 149 What the Stone Remembered
+- **150 = comic 034, NOT UPLOADED**: flagged placeholder (`pending:true`) so the story can run. Replace when the page arrives.
+- 151 The Voice in the Stone · 152 The Laboratory of Frost · 153 The Choice of the Keeper · 154 The Trail That Continues · 155 The Courtyard Beneath the Snow
+- `LAST_CHAPTER` is now 155; 771 hooks; 14 new temple clues, 4 new questions, a new stage "Trace the pulse to its source".
+- Kept open on purpose (the pages do not answer): who added the second layer (keeper or someone else), whether Yan knew of it, what the voice is, why the gate flickers for Xiyu (bloodline/affinity/role unknown), where the pavilion diagram went, whether Ya'Xing's condition relates to the disturbance.
+- Page notes: speakers mostly unlabelled; Ya'Xing speaks from the guest room (031/032/038); Hoko is not clearly identified in 029-039.

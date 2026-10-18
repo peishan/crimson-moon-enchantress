@@ -5420,6 +5420,292 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"145": [
+{
+"id": "formation_predates_the_temple",
+"d": "The sealed chamber holds a formation older than the temple, built to regulate the spiritual energy flowing through the mountain",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_room_on_one_branch_of_the_formation",
+"d": "Ya'Xing's room is on one branch of the formation, a treatment formation meant to stabilise him",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "channel_reversed_since_last_inspection",
+"d": "A channel is reversed, unlike the last outer inspection",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "deeper_workings_entrusted_to_yan_maintain_not_alter",
+"d": "The formation's deeper workings were entrusted to Yan, who told the commander to maintain it, not alter it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "distorted_voice_says_yan",
+"d": "A faint distorted voice says \"...Yan...\": something recognised Yan's name",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"146": [
+{
+"id": "inner_formation_sealed_for_generations",
+"d": "The inner formation has been sealed for generations; no one crosses until they know what awakened",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "reversed_channel_carries_a_signal",
+"d": "The reversed channel carries a signal through the formation: a response to the party's presence, not necessarily a message",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "patterns_older_than_yans",
+"d": "The patterns are older than, and different from, Yan's",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "inner_gate_flickers_for_xiyu",
+"d": "The inner gate flickers when Xiyu approaches (bloodline, affinity or role: unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"147": [
+{
+"id": "outer_circuit_stable_lower_channel_silent",
+"d": "Cangyuan's thread: the outer circuit is stable, the lower channel does not respond",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_channel_pulses_three_times",
+"d": "The red channel pulses three times at a regular interval, which is not part of routine inspections",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_compares_channels_to_ship_water_routes",
+"d": "Ya'Xing compares the channels to a ship's water routes: the reversed channel may be where pressure escapes",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"148": [
+{
+"id": "dim_side_channel_feeds_the_pulse",
+"d": "A dim side channel feeds the pulse rather than receiving it",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "groove_worn_smooth_later_alteration",
+"d": "A shallow groove worn smooth: someone worked this section after the original carving; the commander never saw it",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "route_found_not_the_cause",
+"d": "The route of the pulse is found, but not its cause",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"149": [
+{
+"id": "second_layer_beneath_the_formation",
+"d": "A second layer beneath the original formation, of darker material and a different rhythm, was added later",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "residue_matches_neither_medicine_nor_frost",
+"d": "The residue resembles neither Ya'Xing's medicine nor ordinary frost",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_never_mentioned_a_second_layer",
+"d": "The commander says Yan never mentioned a second layer",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_thread_slows_the_pulses",
+"d": "Cangyuan's thread makes the pulses pause, then slow; the party leaves the layer undisturbed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"151": [
+{
+"id": "keeper_inscription_when_the_mountain_breathes_inward",
+"d": "Library inscription: \"When the mountain's breath turns inward, the keeper must remain until the currents settle\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_trapped_appointed_or_willing_unknown",
+"d": "Whether the keeper was trapped, appointed or willing is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "stone_hums_like_a_distant_voice",
+"d": "Three red flashes and a hum in the stone, like a distant voice",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"152": [
+{
+"id": "old_alchemical_laboratory_found",
+"d": "The party finds an old alchemical laboratory",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "medicine_residue_differs_from_formation_residue",
+"d": "Ya'Xing's medicine residue (restorative herbs) is not identical to the formation residue (unknown material); not to be connected without evidence",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_crystal_fragment_reacts_to_spirit_light",
+"d": "A red crystal fragment reacts unpredictably to spirit-light; no one takes it near the sealed gate",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "weakness_and_disturbance_may_be_separate",
+"d": "Ya'Xing's weakness and the disturbance may be separate problems",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"153": [
+{
+"id": "yan_never_explained_the_keepers_duty",
+"d": "Yan told the commander to preserve the safeguards but never explained the keeper's duty",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "blue_formation_ends_at_a_broken_segment",
+"d": "The original (blue) formation ends at a broken segment; the later (red) alteration begins beyond it",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "keeper_added_it_or_unknown_hand",
+"d": "The keeper may have added the second layer, or someone altered it without the keeper's knowledge",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "inner_gate_stays_closed_until_safe",
+"d": "The party will not open the inner gate until they know whether it would destabilise the mountain",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"154": [
+{
+"id": "diagrams_agree_formation_regulates_a_disturbance",
+"d": "The diagrams agree the formation was built to regulate a disturbance beneath the mountain; no proof it caused Ya'Xing's condition",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_proof_the_voice_is_alive_behind_the_gate",
+"d": "No proof the voice belongs to someone alive behind the gate",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "faded_crescent_symbol_on_old_diagram",
+"d": "A faded crescent symbol on the old diagram marks a section in the inner courtyard, reachable through the eastern passage",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"155": [
+{
+"id": "inner_courtyard_beneath_the_snow_reached",
+"d": "The party reaches the untouched snowy inner courtyard through the eastern passage",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "crescent_symbol_on_the_lantern_post",
+"d": "The same crescent symbol is on a lantern-post, and glows as Xiyu approaches (response recorded; bloodline not assumed)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "energy_travels_beneath_the_water",
+"d": "Energy travels beneath the courtyard water: it may distribute flow across the chambers",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "cleared_path_someone_walked_recently",
+"d": "A cleared path: someone walked here recently",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "pavilion_shelf_missing_a_diagram",
+"d": "The pavilion shelf has a clean rectangular outline where a diagram once hung",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

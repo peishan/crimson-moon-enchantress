@@ -211,6 +211,18 @@ const CLUES = [   // [hook id, category, comic, text]
   ['library_fragment_matches_the_formation_beneath_the_temple', 'temple', 'V4 034', 'A library fragment matches the formation beneath the temple, in a style older than the earlier records; its central and upper sections are missing (deliberately removed or damaged long ago: unknown)'],
   ['original_formation_contains_and_redistributes_disturbances', 'temple', 'V4 034', 'The original formation was designed to contain and redistribute spiritual disturbances within the mountain and keep them from spreading beyond it; the inscription does not say what they are'],
   ['added_line_does_not_belong_to_the_original_design', 'temple', 'V4 034', 'The fragment\'s geometry matches the channel rubbing, but the added red line changes the flow and does not belong to the original design'],
+  ['fresh_footprints_stop_at_the_frozen_pond', 'temple', 'V4 040', 'Fresh light footprints, not the party\'s or the guards\', lead to the frozen pond and stop; the pavilion diagram was removed recently by someone who knew what it was'],
+  ['searcher_familiar_with_the_temple_archives', 'temple', 'V4 041', 'Someone familiar with the archives took only records on the original formation and its maintenance, and tried and failed to force a sealed side chamber (a deliberate distraction is possible)'],
+  ['inspection_records_skip_years', 'temple', 'V4 042', 'The secondary archive\'s records skip years between winter inspections, and the Emergency procedure register is lost; \'Maintain the balance\' recurs throughout'],
+  ['inventory_line_overwritten_transferred_destination_unreadable', 'temple', 'V4 043', 'The measuring plates and alignment instruments are marked Transferred with an unreadable destination; their measurements fit the altered section (relevant, not proof)'],
+  ['spiritual_flow_became_unpredictable_access_restricted', 'temple', 'V4 044', 'A former watchman: access to the side chamber was restricted when the flow became unpredictable, to protect those inside; he cannot swear the order came from Yan'],
+  ['disturbance_recorded_before_the_restriction', 'temple', 'V4 045', 'A damaged custodians\' ledger records the disturbance before the restriction; the pages after it are removed'],
+  ['three_locations_one_period', 'temple', 'V4 046', 'Western Passage, Inner Courtyard and Lower Foundation report abnormal flow in the same period: possibly one connected disturbance; the key reading is missing'],
+  ['calibration_record_earliest_fluctuation_lower_passage', 'temple', 'V4 047', 'A calibration record places the earliest verifiable fluctuation near a lower passage, later closed behind an old safety barrier'],
+  ['barrier_responds_to_energy_not_to_the_party', 'temple', 'V4 049', 'The lower barrier is active and responded measurably to a thread of energy; it did not answer the party'],
+  ['seal_manages_an_imbalance_source_hidden', 'temple', 'V4 050', 'The lower seal transfers energy between its sections, the lower marking strongest: it manages an imbalance whose source stays hidden beneath the mountain'],
+  ['custodians_ledger_year_463_first_disturbance', 'temple', 'V4 052', 'Custodians\' ledger, Year 463: the first disturbance, near the lower passage; the later diagram dates to Year 472; the inspector\'s name is missing'],
+  ['records_moved_from_the_former_custodians_quarters', 'temple', 'V4 052', 'Older documents were moved from the former custodians\' quarters when the inner archive was reorganised; the archive catalogue may record where'],
   ['second_layer_beneath_the_formation', 'temple', 'V4 033', 'A second layer of darker material and different rhythm lies beneath the original formation, added later; its residue is neither Ya\'Xing\'s medicine nor ordinary frost'],
   ['keeper_inscription_when_the_mountain_breathes_inward', 'temple', 'V4 035', 'Library inscription: \'When the mountain\'s breath turns inward, the keeper must remain until the currents settle\''],
   ['red_crystal_fragment_reacts_to_spirit_light', 'temple', 'V4 036', 'A red crystal fragment in the old laboratory reacts unpredictably to spirit-light; the medicine residue and the formation residue are not identical'],
@@ -272,6 +284,10 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['second_layer_beneath_the_formation', 'Who added the second layer, and was it the keeper or someone else?'],
   ['keeper_trapped_appointed_or_willing_unknown', 'Was the keeper trapped, appointed or willing?'],
   ['pavilion_shelf_missing_a_diagram', 'Where is the diagram that hung in the pavilion?'],
+  ['someone_else_is_searching_for_the_same_truth', 'Who took the diagram, and why now?'],
+  ['order_reached_the_watch_through_the_command_structure', 'Who ordered the side chamber restricted, and did that purpose change?'],
+  ['seal_manages_an_imbalance_source_hidden', 'What is the imbalance beneath the mountain, and does it come from the original disturbance or a later alteration?'],
+  ['inspector_name_missing_from_the_ledger', 'Who recorded the first disturbance, and who erased the name?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [
@@ -286,6 +302,8 @@ const STAGES = [
   {t:'Find Ya\'Xing', d:'Yan\'s followers speak of Ya\'Xing. Follow his trace through the Ice Temple and find him.', done:() => sealHook('yaxing_found_in_a_sealed_chamber'), active:() => sealHook('yans_followers_repeat_the_name_yaxing')},
   {t:'Understand the formation beneath Ya\'Xing\'s room', d:'A seal, a medicine and a slow recovery. Learn what the formation was for.', done:() => false, active:() => sealHook('yaxing_found_in_a_sealed_chamber')},
   {t:'Trace the pulse to its source', d:'Three red pulses, a second layer and a gate that flickers for Xiyu. Find the route to the cause.', done:() => false, active:() => sealHook('red_channel_pulses_three_times')},
+  {t:'Find who searched the archives before us', d:'Fresh footprints, a missing diagram and a sealed chamber that someone tried to force. Who came, and what did they want?', done:() => false, active:() => sealHook('someone_else_is_searching_for_the_same_truth')},
+  {t:'Find the former custodians\' records', d:'The first disturbance is in the ledger of Year 463; the people who recorded it, or what they left behind, may lie in the former custodians\' quarters.', done:() => false, active:() => sealHook('custodians_ledger_year_463_first_disturbance')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

@@ -5743,6 +5743,415 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"156": [
+{
+"id": "fresh_footprints_stop_at_the_frozen_pond",
+"d": "Fresh footprints, light and not from the party or the temple guards, lead to the pond edge and stop; the ice beyond is unmarked",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "faint_traces_near_the_stone_railing",
+"d": "Faint traces near the stone railing: someone was here for a reason",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "pavilion_diagram_removed_recently",
+"d": "The pavilion diagram was removed recently (the dust at its edges unsettled); whoever took it knew what it was",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "inventory_mentions_a_formation_diagram_entry_incomplete",
+"d": "The inventory mentions a formation diagram but the entry is incomplete; some records seem deliberately removed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_else_is_searching_for_the_same_truth",
+"d": "Not a random theft: someone else has begun searching for the truth beneath the Ice Temple",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"157": [
+{
+"id": "library_shelves_rearranged_for_formation_records",
+"d": "The library shelves were rearranged; the missing scrolls are only those on the original formation and its maintenance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "searcher_familiar_with_the_temple_archives",
+"d": "The searcher knew where to look and was familiar with the temple archives",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "side_chamber_scuffs_and_fresh_scratches",
+"d": "Scuffs along the corridor wall and fresh scratches on a sealed side chamber outside the inspection route: someone tried to force it open and stopped",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "possible_deliberate_distraction",
+"d": "Possibly a deliberate distraction: take the diagram, leave clear traces, make the search seem incomplete",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "remaining_notes_mention_containment_balance_adjustments",
+"d": "The remaining notes mention only containment, balance and regular adjustments",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"158": [
+{
+"id": "secondary_archive_found_maintenance_records",
+"d": "The secondary archive holds maintenance records kept apart from the public library",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "inspection_records_skip_years",
+"d": "The records jump from one winter inspection to the next with years missing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "routine_maintenance_and_emergency_containment_kept_separately",
+"d": "Routine maintenance and emergency containment are recorded separately; the missing years may show whether the alteration was treated as an emergency or hidden as routine",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "maintain_the_balance_phrase",
+"d": "The phrase \"Maintain the balance\" recurs too often to be meaningless; it may refer to the formation's function",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "emergency_procedure_register_lost",
+"d": "The inventory marks the Emergency procedure register as lost; whether it was removed before or after Yan left cannot be established",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"159": [
+{
+"id": "storage_rooms_formation_equipment",
+"d": "The storage rooms hold generations of formation-maintenance equipment",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "measuring_plates_identify_imbalance_not_cause",
+"d": "Measuring plates compare spiritual flow across points: they can identify an imbalance, not explain its cause",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "inventory_line_overwritten_transferred_destination_unreadable",
+"d": "An inventory line is overwritten: the plates are marked Transferred, the destination unreadable (damage or concealment: unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "measurements_compatible_with_the_altered_section",
+"d": "The plates' measurements are compatible with the altered section: relevant, not proof they were used",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "padded_case_holds_outline_of_flat_objects",
+"d": "A narrow stone case bears the outline of several flat objects; it is not known whether they were the measuring plates",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"160": [
+{
+"id": "watchman_served_before_current_command",
+"d": "An elderly watchman served at the temple before the current command",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "spiritual_flow_became_unpredictable_access_restricted",
+"d": "The spiritual flow became unpredictable and access to the side chamber was restricted until it settled",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "occupants_not_detained_entering_could_worsen_condition",
+"d": "The watchman's order said the occupants were not detained, and that entering could worsen their condition",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "order_reached_the_watch_through_the_command_structure",
+"d": "The order reached the watch through the command structure; the watchman cannot swear it came from Yan",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "custodians_ledger_near_the_inner_courtyard",
+"d": "Older instructions were once copied into a custodians' ledger kept near the inner courtyard",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"161": [
+{
+"id": "custodians_ledger_found_with_missing_pages",
+"d": "A damaged custodians' ledger of an earlier generation is found, with several pages removed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "disturbance_recorded_before_the_restriction",
+"d": "The disturbance was recorded first and the restriction afterward",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ledger_entry_unusual_readings_from_multiple_points",
+"d": "The entry mentions unusual readings from multiple points in the mountain: more than a minor fluctuation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "disturbance_cause_unknown_natural_external_or_deliberate",
+"d": "Without the missing pages the disturbance cannot be called natural, external or deliberate",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_will_not_force_the_gate",
+"d": "Xiyu: she will not repeat her father's silence by forcing open a gate they do not understand",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"162": [
+{
+"id": "three_locations_one_period",
+"d": "Reports from the Western Passage, Inner Courtyard and Lower Foundation overlap in date: possibly one connected disturbance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "direction_of_the_original_flow_unknown",
+"d": "The records do not give the direction of the original flow",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "most_important_reading_missing_from_the_period",
+"d": "The most important reading is missing, so which location changed first is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_reports_treated_each_area_as_a_separate_incident",
+"d": "The old reports treated each area as a separate incident and never mentioned a connection",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "another_copy_may_be_in_the_formation_hall",
+"d": "Another copy of the major disturbance reports may be in the formation hall",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"163": [
+{
+"id": "calibration_record_earliest_fluctuation_lower_passage",
+"d": "A calibration record places the earliest verifiable fluctuation near a lower mountain passage (a starting point, not proof of the source)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_passage_closed_after_the_disturbance",
+"d": "The lower passage was closed after the disturbance; no inspection is known since",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_safety_barrier_at_the_lower_stairway",
+"d": "An old safety barrier blocks the lower stairway and still holds residual energy; the party does not touch it",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "barrier_adjusted_after_the_disturbance_not_original_cause",
+"d": "The barrier's patterns match the old record and suggest it was adjusted after the disturbance, not the original cause",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"164": [
+{
+"id": "first_disturbance_recorded_before_the_chamber_sealed",
+"d": "The first disturbance was recorded before the chamber was sealed; whether Yan caused, discovered or tried to contain it is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_fears_the_person_she_will_find",
+"d": "Xiyu fears that when she understands her father she may not like the person she finds; Cangyuan says she does not owe him forgiveness",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_and_cangyuan_rest_together",
+"d": "Xiyu and Cangyuan spend a quiet night together before the lower passage",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"165": [
+{
+"id": "lower_barrier_pattern_matches_old_description_measurements_missing",
+"d": "The lower barrier's pattern matches the old description but several measurements are missing",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "barrier_energy_weak_but_steady",
+"d": "The barrier's energy is weak but steady; whether it is the ledger's disturbance is unconfirmed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "barrier_outer_pattern_redirects_toward_the_foundation",
+"d": "The outer pattern redirects energy toward the mountain's foundation: it may protect the temple or stop something inside spreading",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "barrier_responds_to_energy_not_to_the_party",
+"d": "The barrier responded to a measured thread of energy, and a blue line circled its outer ring; it responded to energy, not to the party",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"166": [
+{
+"id": "seal_transfers_energy_between_sections",
+"d": "The seal transfers energy between sections like a system redistributing pressure",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "lower_marking_responds_strongest",
+"d": "Upper ring weak, side markings moderate, lower marking strong: the seal is compensating for something",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_manages_an_imbalance_source_hidden",
+"d": "The seal is managing an imbalance whose source stays hidden beneath the mountain",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "strain_original_or_later_alteration_unknown",
+"d": "Whether the strain comes from the original disturbance or a later alteration is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"168": [
+{
+"id": "custodians_ledger_year_463_first_disturbance",
+"d": "Custodians' ledger, Year 463: the first disturbance was recorded near the lower passage",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "later_diagram_made_year_472",
+"d": "The later formation diagram was made in Year 472, after the disturbance (a sequence, not a cause)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "inspector_name_missing_from_the_ledger",
+"d": "The name of the inspector is missing; the date is older than the commander's command",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "even_the_guardians_may_not_know_the_original_purpose",
+"d": "The current guardians inherited procedures but not every reason behind them",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_moved_from_the_former_custodians_quarters",
+"d": "Older documents were moved when the inner archive was reorganised; the archive catalogue may record where",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

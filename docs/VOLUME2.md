@@ -162,3 +162,13 @@ Installed as `assets/comics/v4/ch29-ch39.webp` (ch34 added later). Ice Temple in
 - Kept open on purpose (the pages do not answer): who added the second layer (keeper or someone else), whether Yan knew of it, what the voice is, why the gate flickers for Xiyu (bloodline/affinity/role unknown), where the pavilion diagram went, whether Ya'Xing's condition relates to the disturbance.
 - Page notes: speakers mostly unlabelled; Ya'Xing speaks from the guest room (031/032/038); Hoko is not clearly identified in 029-039.
 - Author note: Hoko is the blond traveller in the white and yellow outfit. Speaker attribution on the pages is still left unlabelled in game text unless a page names the speaker.
+
+## Volume 4, comics 040-052 (chapters 156-168)
+
+Installed as `assets/comics/v4/ch40-ch50.webp` and `ch52.webp`. Comic 051 (chapter 167) has not been uploaded: flagged placeholder (`pending:true`).
+
+- 156 The Missing Diagram · 157 Traces of Another Search · 158 The Secondary Archive · 159 The Inventory That Remained · 160 The Watchman's Account · 161 Before the Restriction · 162 The Records That Overlap · 163 The First Point · 164 A Quiet Place to Rest (Xiyu and Cangyuan) · 165 The Barrier Below · 166 The Measure of the Seal · **167 = comic 051, NOT UPLOADED** · 168 The First Disturbance
+- Key facts kept open: who took the diagram (someone else is searching); whether Yan caused, found or tried to contain the first disturbance; first disturbance Year 463, later diagram Year 472; the lower seal is managing an imbalance whose source is hidden; the watchman cannot swear the restriction order came from Yan.
+- 164 gives Cangyuan bond +3 and a relationship nudge for Xiyu and Cangyuan.
+- New stages: "Find who searched the archives before us", "Find the former custodians' records".
+- Page note: the 052 closing caption has a typo ("the camme before").

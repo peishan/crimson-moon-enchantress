@@ -35,6 +35,13 @@ const ENEMIES = {
     moves:[{n:'Venom Bite',pow:1.1,fx:[{k:'burn',d:2}]},{n:'Web Shot',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'frost_herb',chance:.4}],desc:'Lives in the dark below the temple.'},
   hoard_mimic:{n:'Hoard Mimic',icon:'📦',elite:true,hp:180,atk:18,mag:8,def:16,spd:7,xp:90,gold:90,
     moves:[{n:'Snapping Lid',pow:1.4},{n:'Gold Lure',pow:.8,fx:[{k:'charm',d:1}]}],drops:[{id:'spirit_draught',chance:.4},{id:'moonlit_tonic',chance:.4}],desc:'It was never a chest.'},
+  /* ---- Volume 4 training (gameplay filler; NOT story events): the Commanders' Trial Ground and the Xuancang Slopes ---- */
+  sparring_construct:{n:'Sparring Construct',icon:'🛡️',hp:120,atk:14,mag:0,def:12,spd:8,xp:54,gold:26,
+    moves:[{n:'Training Strike',pow:1.1},{n:'Guard Break',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'ice_crystal',chance:.3}],desc:'A practice partner the temple guard drills against. It hits honestly and never holds a grudge.'},
+  snowfield_ram:{n:'Snowfield Ram',icon:'🐏',elite:true,hp:190,atk:17,mag:0,def:13,spd:9,xp:84,gold:42,
+    moves:[{n:'Horn Rush',pow:1.4},{n:'Stamp',pow:.8,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'frost_herb',chance:.3}],desc:'A heavy mountain ram that holds the high slopes above the temple.'},
+  ridge_yeti:{n:'Ridge Yeti',icon:'🦍',elite:true,hp:200,atk:18,mag:0,def:11,spd:10,xp:88,gold:44,
+    moves:[{n:'Maul',pow:1.3},{n:'Roar',pow:.7,all:true,fx:[{k:'slow',d:2}]}],drops:[{id:'wolf_pelt',chance:.6},{id:'ice_crystal',chance:.4}],desc:'A shaggy giant of the ridgeline: wary, strong and easy to avoid for anyone who does not go looking.'},
   /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
   red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
     moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},
@@ -94,6 +101,8 @@ const ZONES = [
   {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:1, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
   {id:'temple', n:'Ice Temple · Level 1', icon:'🏯', unlock:18, off:1, pool:['ice_golem','ward_sentinel','frost_stalker'], boss:'frost_warden', desc:'The upper temple of ice.'},
   {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:24, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens after chapter 24 (the maze and the horned beasts).'},
+  {id:'trial', n:'Ice Temple · Commanders\' Trial Ground', icon:'⚔️', unlock:117, off:1, pool:['sparring_construct','ward_sentinel','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'Trial Rounds', desc:'The temple guard\'s drill yard, run by the commanders for those staying in the temple. Sparring constructs, and Trial Rounds in the arena that each get harder.'},
+  {id:'slopes', n:'The Xuancang Slopes', icon:'⛰️', unlock:117, off:1, pool:['frost_wolf','snowfield_ram','ridge_yeti','ice_golem'], boss:null, desc:'The open mountainside above the temple: wolves, rams and ridge giants. A short walk out and back, no commander required.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

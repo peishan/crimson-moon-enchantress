@@ -156,7 +156,7 @@ function chapterFight(n){ origin='journal'; startBattle(battleSpecFor(n)); tab='
 function rWilds(){
   const zones = ZONES.map(z => { const open = zoneOpen(z);
     return `<div class="card ${open?'':'lock'}" style="cursor:default">${open?zoneThumb(z):`<span class="big">${z.icon}</span>`}<div class="fl"><b>${open?z.n:'???'}</b><div class="sm">${open?z.desc+' · foes Lv ~'+Math.max(1,avgPartyLv()+z.off):z.unlock===null?'🔒 Not scheduled yet':'🔒 Opens after chapter '+z.unlock}</div></div>
-      ${open?`<div><button onclick="wildFight('${z.id}')">Hunt</button>${z.boss?`<button onclick="wildFight('${z.id}',true)">${z.bossName?'Arena':'Boss'}</button>`:''}</div>`:''}</div>`; }).join('');
+      ${open?`<div><button onclick="wildFight('${z.id}')">Hunt</button>${z.boss?`<button onclick="wildFight('${z.id}',true)">${z.id==='trial'?'Trial Round '+((G.trial||0)+1):z.bossName?'Arena':'Boss'}</button>`:''}</div>`:''}</div>`; }).join('');
   const heroes = G.party.map(id => `<div class="sm">${CHARACTERS[id].icon} ${first(id)} — ❤️ ${curHp(id)}/${statsOf(id).hp} · 🔷 ${curMp(id)}/${statsOf(id).mp}</div>`).join('');
   return `<h2>The Wilds</h2><div class="sm">Gameplay hunting for XP, gold and herbs. These fights are not story events.</div>${flashHtml()}
    <div class="panel"><b>The Crimson Fairy</b><div class="sm">${heroes}</div><button onclick="act(()=>restAt('fairy'))">🛏️ Rest (free)</button><button onclick="openHerbModal('gather')" ${herbalReady()?'':'disabled'}>🌿 Gather herbs</button></div>${zones}`;
@@ -166,9 +166,11 @@ const artOrIcon = (src, icon, cls) => `<img class="${cls}" src="${src}" alt="" o
 const zoneThumb = z => artOrIcon('assets/areas/'+z.id+'.webp', z.icon, 'zthumb');
 function wildFight(zid, boss){
   const z = ZONES.find(x => x.id===zid); if(!z || !zoneOpen(z)) return;
-  const lv = Math.max(1, avgPartyLv() + z.off + (boss?1:0));
+  const trial = boss && z.id==='trial', rank = trial ? Math.min(12, G.trial||0) : 0;   // Trial Rounds: +1 foe level per round cleared, up to 12
+  const lv = Math.max(1, avgPartyLv() + z.off + (boss?1:0) + rank);
   const foes = boss ? [].concat(z.boss).map(k => ({key:k, lv})) : Array.from({length:Math.max(1,Math.min(2+Math.floor(Math.random()*2), G.active.length+1))}, () => ({key:AR(z.pool), lv:Math.max(1, lv+Math.floor(Math.random()*3)-1)}));
-  origin = 'wilds'; startBattle({foes, rewards:true, zone:boss ? null : zid, firstClear:boss && !G.bestiary[[].concat(z.boss)[0]]}); tab='battle'; render();
+  origin = 'wilds'; startBattle({foes, rewards:true, zone:boss ? null : zid, firstClear:boss && !trial && !G.bestiary[[].concat(z.boss)[0]],
+    onWin: trial ? () => { G.trial = Math.min(12, (G.trial||0) + 1); const g = 20 + 8*G.trial; G.gold += g; save(); return ['⚔️ Trial Round '+G.trial+' complete (+'+g+'g). The next round will be harder.']; } : null}); tab='battle'; render();
 }
 
 /* ---------------- TEMPLE ---------------- */

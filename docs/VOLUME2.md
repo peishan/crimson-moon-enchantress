@@ -179,3 +179,11 @@ Installed as `assets/comics/v4/ch40-ch50.webp` and `ch52.webp`. Comic 051 (chapt
 - Volume 4 investigation map `assets/maps/ice_temple_v4.webp` is shown in the Ice Temple tab from chapter 117 above the Volume 1 map. New labels on it (Commanders' Quarters, Guest Chambers, Followers' Quarters, Xining's Chamber, Ya'Xing's Room, Ao Yun's Resting Place, Sealed Central Chamber) are not yet room entries in `temple.js`.
 - Author: Volume 5 continues the seal investigation; an Interlude continues Ya'Xing's recovery. Volume 4 sets him at about 50% (flag `yaxing_recovery_half`, hook `ya_xing_recovery_at_half`). Nothing mechanical changes yet.
 - Service worker cache bumped to v9.
+
+## Training after Volume 4 (gameplay, not story)
+
+Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
+- **Ice Temple · Commanders' Trial Ground** (`trial`): the temple guard's drill yard. Hunts against sparring constructs, ward sentinels and frost stalkers; a **Trial Round** button runs the arena's two horned beasts, +1 foe level per round cleared (cap 12; `G.trial`) with a gold bonus.
+- **The Xuancang Slopes** (`slopes`): wolves, snowfield rams, ridge yetis and ice golems outdoors, a short walk from the temple.
+- New enemies: Sparring Construct, Snowfield Ram, Ridge Yeti. Five new Quest Board contracts (drill partners, drill sweep, rams, ridge giant, slopes patrol).
+- No lore claim is made about the disturbance causing any of these.

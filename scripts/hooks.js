@@ -4759,6 +4759,43 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"129": [
+{
+"id": "spiritual_energy_flows_away_from_sealed_chamber",
+"d": "Xining: the spiritual energy flows in one direction, away from the sealed chamber",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "something_passed_or_draws_energy_away",
+"d": "Something passed through, or something is drawing the energy away (a trace tells where to look, not who left it; not known to be Ya'Xing)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "hoko_never_came_this_far_in_his_first_escape",
+"d": "Hoko never came this far during his first escape; the party assumes nothing about what lies ahead",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "section_disturbed_more_recently",
+"d": "This section of the ice was disturbed more recently than the rest",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "human_shaped_shadow_at_the_archway",
+"d": "A faint blue light and a human-shaped shadow cross the archway before vanishing (a person, an illusion or a remnant of the formation: unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "130": [
 {
 "id": "faint_trail_beyond_sealed_passage",
@@ -4910,6 +4947,64 @@ const HOOKS = {
 "id": "chamber_beyond_still_active",
 "d": "The seal yields only enough to show that the chamber beyond is still active; no one crosses until they know what changed",
 "t": "state",
+"p": false,
+"s": "art"
+}
+],
+"134": [
+{
+"id": "chamber_beyond_the_seal_entered",
+"d": "The party enters the glacier chamber beyond the seal: broken pillars around a circular platform, heavy chains vanishing into the ice",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "floor_formation_still_active_step_on_dimmed_lines",
+"d": "The floor formation is still active: step only where the lines have dimmed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "chamber_built_for_more_than_imprisonment",
+"d": "The chamber was built for more than imprisonment: its formations draw energy from the ice toward the centre",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "chains_connected_to_the_chamber_itself",
+"d": "The chains are connected to the chamber itself, not the door; no one touches them",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "impression_in_the_frost_beside_the_platform",
+"d": "A shallow impression in the frost: someone sat or knelt by the platform for a long time (how recently is unknown)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "foreign_residue_leads_to_narrow_passage",
+"d": "A faint spiritual trail, weaker than the formation and not the seal's, leads to a narrow passage",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ship_rigging_fitting_half_buried",
+"d": "Xiao Tian finds a metal fitting half-buried in the frost, possibly from ship's rigging, like those aboard trading vessels",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "scrape_from_the_narrow_passage",
+"d": "A faint scrape followed by silence comes from the narrow passage",
+"t": "event",
 "p": false,
 "s": "art"
 }

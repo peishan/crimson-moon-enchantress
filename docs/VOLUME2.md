@@ -215,3 +215,5 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 - **Volume 5 cover installed** (`assets/volume5_cover.webp`, splash on completing chapter 193, kept in Cast). Tagline: "Four travelers. One journey. Countless secrets." / "Hidden in the past, the truth stirs again."
 - **Volume 4 comic 052 re-supplied** (new layout with Year 463 / Year 472 captions) and installed.
 - **016 and 013 re-sent unchanged** (still "Raim:" and "itr"); not reinstalled. **019 re-sent is the OLDER version** (says "Li Wen", conclusion text clean, OR-37 correct); NOT installed, so the installed 019 (Su Chengyuan, but with "OR-3T" and a garbled conclusion tail) stays. Regenerate 019 with the name Su Chengyuan and OR-37 together.
+
+- **013 and 016 re-supplied and installed:** 013's "itr" is now "it"; 016's "Raim:" is now "Remark:" (the remark field is blank). Text matches the game. 019 (the "Su Chengyuan" version with the Outer Realm entry) was NOT installed: it conflicts with 018 and 020 (see above); the earlier 019 stays.

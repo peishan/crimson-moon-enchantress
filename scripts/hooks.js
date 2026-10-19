@@ -6785,6 +6785,60 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"194": [
+{
+"id": "yaxing_dreams_of_a_gentle_hand",
+"d": "Ya'Xing dreams of a woman with a gentle hand and a small child; he thought it was his mother but cannot tell if it was her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"195": [
+{
+"id": "yaxing_was_passed_between_households_as_a_child",
+"d": "Ya'Xing remembers being sent from household to household as a child, with no say in it",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"196": [
+{
+"id": "yaxing_asked_for_his_wages_and_left_service",
+"d": "As a grown man Ya'Xing asked what he was owed, took his wages and walked out of service",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"197": [
+{
+"id": "yaxing_found_dock_work_with_a_ships_master",
+"d": "Ya'Xing found paid rigging work on the docks, handled by a ship's master who offered him a few days' work",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"198": [
+{
+"id": "yaxing_hired_by_young_master_dong",
+"d": "Ya'Xing agreed to work as a ship handler for Young Master Dong, on terms that left him free to leave",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"199": [
+{
+"id": "xiyu_remembers_the_family_that_raised_her",
+"d": "Xiyu remembers the family that raised her and being told she was the last of the family's bloodline",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

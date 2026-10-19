@@ -81,6 +81,12 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 194:[('yaxing_dreams_of_a_gentle_hand',"Ya'Xing dreams of a woman with a gentle hand and a small child; he thought it was his mother but cannot tell if it was her",'event')],
+ 195:[('yaxing_was_passed_between_households_as_a_child',"Ya'Xing remembers being sent from household to household as a child, with no say in it",'state')],
+ 196:[('yaxing_asked_for_his_wages_and_left_service',"As a grown man Ya'Xing asked what he was owed, took his wages and walked out of service",'event')],
+ 197:[('yaxing_found_dock_work_with_a_ships_master',"Ya'Xing found paid rigging work on the docks, handled by a ship's master who offered him a few days' work",'event')],
+ 198:[('yaxing_hired_by_young_master_dong',"Ya'Xing agreed to work as a ship handler for Young Master Dong, on terms that left him free to leave",'event')],
+ 199:[('xiyu_remembers_the_family_that_raised_her',"Xiyu remembers the family that raised her and being told she was the last of the family's bloodline",'event')],
  169:[('entry_records_a_disturbance_before_the_new_formation_diagram','An old entry records a disturbance "in the Year of Frost Moon, before the new formation diagram was established"','event'),('diagram_cannot_explain_how_the_disturbance_began','The later diagram cannot explain how the disturbance began; it only shows someone documented the formation afterward','state'),('fuller_original_account_once_existed_location_unknown','A fuller original account once existed, kept with the original records; its location is unknown','state')],
  181:[('duplicate_collection_index_second_copy_found','The duplicate collection index (second copy) survives with updated shelf references','event'),('administrative_collection_moved_to_eastern_wing_secondary_storage','Collection A-27 (Storage Review Inventory) was moved to secondary storage in the eastern wing during reorganisation','event'),('index_gives_a_location_not_a_conclusion','The index gives a location, not proof the missing account was inside the collection','state')],
  188:[('receiving_register_for_batch_or_37_found','The receiving register for batch OR-37 (received Year 3, 3rd month) confirms a catalogue collection arrived from the Outer Records Office','event'),('register_inventory_incomplete_and_damaged','The register notes the inventory was incomplete and some items damaged; it refers to a supplementary list, location unspecified','state')],

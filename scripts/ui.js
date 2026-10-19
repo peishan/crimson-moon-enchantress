@@ -107,7 +107,7 @@ function rGates(){
 /* ---------------- JOURNAL ---------------- */
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.map(c => (c.n===VOL5_START ? `<h4>Volume 5 · The Ice Temple: The Truth Left Behind</h4>` : c.n===VOL4_START ? `<h4>Volume 4 · The Ice Temple</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
+  const rows = CHAPTERS.map(c => (c.n===XC_START ? `<h4>Interlude · Xiyu &amp; Cangyuan</h4>` : c.n===YX_START ? `<h4>Interlude · Ya'Xing</h4>` : c.n===VOL5_START ? `<h4>Volume 5 · The Ice Temple: The Truth Left Behind</h4>` : c.n===VOL4_START ? `<h4>Volume 4 · The Ice Temple</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>
@@ -200,6 +200,7 @@ const CAST_SHEETS = [
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
   {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:168},
   {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:193},
+  {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
 function rCast(){

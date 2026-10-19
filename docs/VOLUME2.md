@@ -204,10 +204,14 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 
 - Volume 5 is 25 comics; chapter 193 ends the main story (flags `volume5_complete`, `arc3_part1_complete`). `LAST_CHAPTER = 193`.
 - 188 The Receiving Record · 189 The Supplementary List · 190 The Record That Remains · 191 What the Record Can Prove · 192 The Choice Beneath the Ice · 193 The Truth Left Behind (Finale). New main objective: **Find Yan**. Next on the author's list: the Ya'Xing and Xiyu-Cangyuan Interludes (not built).
-- No Volume 5 cover has been supplied, so no cover splash fires at 193.
+- Volume 5 cover supplied later; splash fires at chapter 193 (see below).
 - **Author edits received (comics 016, 018, 023, 025 re-supplied):** the reviewer is now **Su Chengyuan (蘇承遠)**, initials L.H. and S.C.Y.; Year 463 matches Volume 4; Yan's annotation is Year 475 (after the Year 472 diagram); comic 025 now says when Yan read the record relative to his departure is unknown. The game text follows these.
 - **Still to fix on the author's side:** comic 019 and the comic 017 dialogue still call the reviewer "Li Wen" (019: "I remember Li Wen", "Li Wen"); comic 017 may need checking. Typos: 025 "OR-3T" and "the crine incomplete"; 023 "thaat", "Butiat"; 018 "reorganiaation"; 016 "Raim:"; 013 "itr"; 002 garbled bubble; V4 052 "camme". 025's Arc Progress says "The records trail has resolved Yan's motives" (probably "has not resolved"). The "Year of Frost Moon" (001) and Years 2/3/12 in the registers are a separate, relative system.
 
 - **Re-supplied 025 and 019 (second pass):** both installed. 025's Arc Progress now reads "has not resolved Yan's motives" (fixed). 019 now says Su Chengyuan (蘇承遠). Remaining on 019: the batch number still reads "OR-3T" on the Transfer Record (the game uses OR-37, as on 020-021), and the Chapter Conclusion's last lines are garbled text ("The clerk remembers the former reviewereabouts. The surviving index to a prying plar cunsfer"). 025 now has a trailing tidy page; its "Yan consulted a record..." line matches the game.
 
 - **Third pass (002, 018, 023, 025 re-supplied, installed):** 002 garbled bubble now reads "Recognize that name?" (one glyph looks malformed). Remaining on 018: Key Discoveries "aarlier reorganization", Conclusion "are they find the reviewer" (should be "can they find"). 023: Conclusion "thhat". 025: Final Discoveries "consuiled" (one glyph). Still open elsewhere: 013 "itr", 016 "Raim:", 019 "OR-3T" and garbled Conclusion tail, V4 052 "camme".
+
+- **Volume 5 cover installed** (`assets/volume5_cover.webp`, splash on completing chapter 193, kept in Cast). Tagline: "Four travelers. One journey. Countless secrets." / "Hidden in the past, the truth stirs again."
+- **Volume 4 comic 052 re-supplied** (new layout with Year 463 / Year 472 captions) and installed.
+- **016 and 013 re-sent unchanged** (still "Raim:" and "itr"); not reinstalled. **019 re-sent is the OLDER version** (says "Li Wen", conclusion text clean, OR-37 correct); NOT installed, so the installed 019 (Su Chengyuan, but with "OR-3T" and a garbled conclusion tail) stays. Regenerate 019 with the name Su Chengyuan and OR-37 together.

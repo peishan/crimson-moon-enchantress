@@ -199,6 +199,7 @@ const CAST_SHEETS = [
   {id:'cover3', n:'Volume 3 Cover', sub:'The Roots of What Remains', img:'assets/volume3_cover.webp', ch:116},
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
   {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:168},
+  {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:193},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
 function rCast(){

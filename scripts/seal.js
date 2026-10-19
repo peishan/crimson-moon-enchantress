@@ -240,6 +240,14 @@ const CLUES = [   // [hook id, category, comic, text]
   ['earlier_catalogue_missing_from_the_current_collection', 'records', 'V5 017', 'The reviewer\'s notes refer to an earlier catalogue that is missing from the current collection'],
   ['li_wen_transferred_to_the_outer_records_office', 'records', 'V5 018', 'The reviewer is Li Wen, transferred to the Records Office (Outer Grounds) three years ago; older catalogues were stored there during the Year 2 reorganisation'],
   ['transfer_batch_or_37_returned_to_the_main_archive', 'records', 'V5 019', 'Transfer Batch OR-37 returned catalogues from the Outer Records Office to the Main Archive; whether the earlier catalogue was included is unconfirmed'],
+  ['entry_records_a_disturbance_before_the_new_formation_diagram', 'records', 'V5 001', 'An old entry records a disturbance in the \'Year of Frost Moon\', before the new formation diagram was established; a fuller original account once existed, location unknown'],
+  ['administrative_collection_moved_to_eastern_wing_secondary_storage', 'records', 'V5 013', 'The duplicate collection index places Collection A-27 in secondary storage in the eastern wing; a location, not proof the missing account was inside'],
+  ['receiving_register_for_batch_or_37_found', 'records', 'V5 020', 'The receiving register confirms batch OR-37 arrived three years ago from the Outer Records Office (incomplete, partly damaged, with a supplementary list referenced)'],
+  ['reference_hx_773_matches_the_exception_register', 'records', 'V5 021', 'Reference HX-773 on the damaged supplementary list matches the unmatched-record entry in the exception register; the original title was not preserved'],
+  ['hx_773_was_a_catalogue_of_observations_on_the_protective_formation', 'records', 'V5 022', 'HX-773 was a catalogue of historical observations of the Ice Temple\'s protective formation, used to compare changes over time; the volumes are not found'],
+  ['yan_annotated_the_custodial_record', 'records', 'V5 023', 'The older custodial record (Lower Passage) records fluctuations before the later diagram; a later annotation reads \'Reviewed the earlier record and related materials. - Yan\''],
+  ['lower_marking_responds_more_strongly_consistent_with_old_records', 'records', 'V5 024', 'The lower marking responds more strongly than the upper ones, matching the older records; compensation or worsening is undetermined, and the seal was left undisturbed'],
+  ['volume5_findings_summary_written', 'records', 'V5 025', 'Findings: the missing catalogue recorded observations of the formation; an earlier disturbance predates the diagram; the system remains active; Yan consulted the record before leaving. No evidence he caused anything'],
   ['second_layer_beneath_the_formation', 'temple', 'V4 033', 'A second layer of darker material and different rhythm lies beneath the original formation, added later; its residue is neither Ya\'Xing\'s medicine nor ordinary frost'],
   ['keeper_inscription_when_the_mountain_breathes_inward', 'temple', 'V4 035', 'Library inscription: \'When the mountain\'s breath turns inward, the keeper must remain until the currents settle\''],
   ['red_crystal_fragment_reacts_to_spirit_light', 'temple', 'V4 036', 'A red crystal fragment in the old laboratory reacts unpredictably to spirit-light; the medicine residue and the formation residue are not identical'],
@@ -310,6 +318,9 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['unmatched_historical_record_has_no_title', 'Is the unmatched historical record the missing account?'],
   ['earlier_catalogue_missing_from_the_current_collection', 'Where is the earlier catalogue, and why was it unavailable during the review?'],
   ['li_wen_transferred_to_the_outer_records_office', 'Where did Li Wen go, and what did they know?'],
+  ['no_proof_yan_caused_the_disturbance', 'Why did Yan keep the earlier disturbance from Xiyu?'],
+  ['catalogue_volumes_not_found', 'What happened to the catalogue\'s observations?'],
+  ['search_for_yan_begins', 'Where is Yan, and what does he know?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [
@@ -327,7 +338,8 @@ const STAGES = [
   {t:'Find who searched the archives before us', d:'Fresh footprints, a missing diagram and a sealed chamber that someone tried to force. Who came, and what did they want?', done:() => false, active:() => sealHook('someone_else_is_searching_for_the_same_truth')},
   {t:'Find the former custodians\' records', d:'The first disturbance is in the ledger of Year 463; the people who recorded it, or what they left behind, may lie in the former custodians\' quarters.', done:() => false, active:() => sealHook('custodians_ledger_year_463_first_disturbance')},
   {t:'Find the missing account', d:'A former custodian kept the original account; the records were moved and the trail runs through ledgers, inventories and registers. Arcs 1 and 2: The Records We Inherited, Those Who Remembered.', done:() => sealHook('arc2_those_who_remembered_complete'), active:() => sealHook('former_custodian_kept_the_records_reassigned_long_ago')},
-  {t:'Trace the unmatched record', d:'Arc 3, What the Seal Protects: an unmatched historical record, a reviewer named Li Wen, and an earlier catalogue that was no longer there.', done:() => false, active:() => sealHook('arc2_those_who_remembered_complete')},
+  {t:'Trace the unmatched record', d:'Arc 3, What the Seal Protects: an unmatched historical record, a reviewer named Li Wen, and an earlier catalogue that was no longer there.', done:() => sealHook('volume5_findings_summary_written'), active:() => sealHook('arc2_those_who_remembered_complete')},
+  {t:'Find Yan', d:'The records trail is resolved as far as the documents go. Find Yan and ask what he knew about the earlier disturbance, without recklessly opening the sealed passage.', done:() => false, active:() => sealHook('search_for_yan_begins')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

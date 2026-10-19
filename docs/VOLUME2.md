@@ -191,7 +191,7 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 ## Volume 5 begins: The Ice Temple: The Truth Left Behind (comics 002-019 = chapters 170-187)
 
 - `VOL5_START = 169`; comic n = chapter 168+n; art in `assets/comics/v5/` (the Pages workflow converts it). `LAST_CHAPTER = 187`.
-- **Comic 001 (chapter 169) and comic 013 (chapter 181, "The Duplicate Index") are not uploaded:** flagged placeholders (`pending:true`).
+- Comics 001 and 013 were supplied afterwards and replaced the placeholders.
 - Comic 015 was supplied in two versions; the cleaner layout (with the separate "Arc Completion" box) was installed.
 - Arcs on the pages: Arc 1 The Records We Inherited (to 005, complete) · Arc 2 Those Who Remembered (006-015, complete at 015) · Arc 3 What the Seal Protects (from 016, in progress). Flags `volume5_arc1_complete`, `volume5_arc2_complete`.
 - Chapters: 170 The Former Custodian · 171 The Empty Quarters · 172 The Transfer Ledger · 173 The Last Inventory · 174 The Personnel Register · 175 The Outer Administrative Wing · 176 The Departure Record · 177 The Handover File · 178 The Receiving Clerk · 179 The Senior Staff · 180 The Administrative Catalogue · 182 Secondary Storage · 183 The Exception Register · 184 The Unmatched Record · 185 The Reviewer's Notes · 186 The Reviewer's Trail · 187 The Outer Records Office.
@@ -199,3 +199,15 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 - Nothing is established about what the missing account contains or whether it concerns Yan; the pages say so repeatedly and the game text does too.
 - **Page issues for the author:** (1) comic 017's signature reads 蘇承遠 while comic 018 names the reviewer from File B as "Li Wen", and the initials in 016 are "L.H." and "S.W."; the game follows the dialogue ("Li Wen") and records the initials as unconfirmed. (2) The party has four members in these pages (Xiao Tian and Hoko are not shown).
 - Cast: the author's Volume 4 Main Cast sheet (the square version with combat-style text, matching the game's classes) was installed in Cast from chapter 117. The alternate sheet lists Xiao Tian as "Young Disciple / Sword Adept, versatile support", which differs from the game's Martial Artist / Striker; not installed, awaiting the author.
+
+## Volume 5 complete (comics 020-025 = chapters 188-193)
+
+- Volume 5 is 25 comics; chapter 193 ends the main story (flags `volume5_complete`, `arc3_part1_complete`). `LAST_CHAPTER = 193`.
+- 188 The Receiving Record · 189 The Supplementary List · 190 The Record That Remains · 191 What the Record Can Prove · 192 The Choice Beneath the Ice · 193 The Truth Left Behind (Finale). New main objective: **Find Yan**. Next on the author's list: the Ya'Xing and Xiyu-Cangyuan Interludes (not built).
+- No Volume 5 cover has been supplied, so no cover splash fires at 193.
+- **Name/date inconsistencies flagged for the author (game text follows the page; nothing silently harmonised):**
+  1. Reviewer: comic 017 signature reads 蘇承遠; comic 018 calls the reviewer "Li Wen"; comic 016 initials are "L.H." and "S.W.".
+  2. Year systems: Volume 4 comic 052 dates the first disturbance Year 463 and the later diagram Year 472; Volume 5 comic 023 dates the custodial record Year 412/415 (Yan's annotation Year 415); comic 001 says "Year of Frost Moon"; the registers use Years 2, 3 and 12. These are not reconciled on the pages.
+  3. Yan's annotation (Year 415) sits between Year 412 and the diagram, which conflicts with Volume 4's Year 472 diagram date if one calendar is meant.
+  4. Typos: comic 023 "happvned"; comic 024 "The have no relking measure"; comic 013 "itr" (next-chapter box); comic 002 has a garbled bubble ("Rangnnt reat?").
+  5. Comic 025's summary and comic 023 say "Yan consulted the record before leaving"; the annotation date is only a season, so "before leaving" is the author's inference.

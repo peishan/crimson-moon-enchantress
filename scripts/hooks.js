@@ -6204,6 +6204,29 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"169": [
+{
+"id": "entry_records_a_disturbance_before_the_new_formation_diagram",
+"d": "An old entry records a disturbance \"in the Year of Frost Moon, before the new formation diagram was established\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "diagram_cannot_explain_how_the_disturbance_began",
+"d": "The later diagram cannot explain how the disturbance began; it only shows someone documented the formation afterward",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "fuller_original_account_once_existed_location_unknown",
+"d": "A fuller original account once existed, kept with the original records; its location is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
 "170": [
 {
 "id": "name_beside_the_original_account_surname_only",
@@ -6443,6 +6466,29 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"181": [
+{
+"id": "duplicate_collection_index_second_copy_found",
+"d": "The duplicate collection index (second copy) survives with updated shelf references",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "administrative_collection_moved_to_eastern_wing_secondary_storage",
+"d": "Collection A-27 (Storage Review Inventory) was moved to secondary storage in the eastern wing during reorganisation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "index_gives_a_location_not_a_conclusion",
+"d": "The index gives a location, not proof the missing account was inside the collection",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
 "182": [
 {
 "id": "review_inventory_found_in_secondary_storage",
@@ -6597,6 +6643,144 @@ const HOOKS = {
 {
 "id": "transfer_batch_or_37_returned_to_the_main_archive",
 "d": "A partial transfer record (Batch OR-37) shows catalogues (various collections) returned to the Main Archive; whether the earlier catalogue was included is unconfirmed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"188": [
+{
+"id": "receiving_register_for_batch_or_37_found",
+"d": "The receiving register for batch OR-37 (received Year 3, 3rd month) confirms a catalogue collection arrived from the Outer Records Office",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "register_inventory_incomplete_and_damaged",
+"d": "The register notes the inventory was incomplete and some items damaged; it refers to a supplementary list, location unspecified",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"189": [
+{
+"id": "supplementary_list_found_damaged_copy",
+"d": "A damaged supplementary list (Batch OR-37) was filed separately from the receiving register",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "reference_hx_773_matches_the_exception_register",
+"d": "Reference HX-773 matches the unmatched-record entry in the exception register: the two records refer to the same unresolved reference",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "catalogue_title_not_preserved",
+"d": "The catalogue was tracked by reference but its original title was not preserved; whether the catalogue survived is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"190": [
+{
+"id": "hx_773_was_a_catalogue_of_observations_on_the_protective_formation",
+"d": "HX-773 was a catalogue of historical observations on the Ice Temple's protective formation, used to compare changes over time",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "catalogue_volumes_not_found",
+"d": "The catalogue volumes are not found, with no current location; the observations did not survive",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "lg_204_custodial_record_may_preserve_an_observation",
+"d": "Reference LG-204 (Lower Passage, custodial records) may preserve one observation independently",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"191": [
+{
+"id": "custodial_record_records_early_fluctuations_at_the_lower_passage",
+"d": "The older custodial record notes unusual fluctuations near the lower passage and signs of disturbance, before the later formation diagram",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "protective_system_active_closer_observation_ordered",
+"d": "The system remained active and the custodians were told to observe more closely and record changes",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_annotated_the_custodial_record",
+"d": "A later annotation reads \"Reviewed the earlier record and related materials. - Yan\": Yan knew of the earlier disturbance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "no_proof_yan_caused_the_disturbance",
+"d": "No evidence proves Yan caused the disturbance or what he intended; the annotation shows only that he knew",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"192": [
+{
+"id": "lower_marking_responds_more_strongly_consistent_with_old_records",
+"d": "The lower marking responds more strongly than the upper ones, consistent with the older records; compensation or worsening strain is undetermined",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "strain_limit_unknown_forcing_open_could_destabilise_the_formation",
+"d": "The strain the seal can endure is unmeasured; forcing it open could destabilise the whole formation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_chose_not_to_force_the_seal",
+"d": "Xiyu chooses not to force the sealed passage and to leave the seal undisturbed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"193": [
+{
+"id": "volume5_findings_summary_written",
+"d": "The party writes a summary of what the records prove: the missing catalogue tracked the formation, the disturbance predates the diagram, the system is active, Yan consulted the record",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_preserved_batch_or_37_box",
+"d": "The recovered records are preserved (Volume 5, Ice Temple Investigation, Batch OR-37)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "search_for_yan_begins",
+"d": "The main investigation is complete; the new main objective is to find Yan and ask what he knew",
 "t": "event",
 "p": false,
 "s": "art"

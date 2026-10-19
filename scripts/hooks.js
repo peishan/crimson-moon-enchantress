@@ -6203,6 +6203,404 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"170": [
+{
+"id": "name_beside_the_original_account_surname_only",
+"d": "A name stands beside the original account; only the surname can be read, the rest has faded",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "former_custodian_kept_the_records_reassigned_long_ago",
+"d": "The commander remembers the person who kept the records in the former custodians' quarters; they were reassigned long ago and he does not know if they are still at the temple",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "commander_never_told_why_anything_was_moved",
+"d": "The commander was never told why anything was moved: they were instructed to preserve what they received; deliberate separation is possible but unproven",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"171": [
+{
+"id": "former_custodians_quarters_cleared",
+"d": "The former custodians' quarters have been cleared of contents, with the labels left in place",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "torn_transfer_note_found_behind_a_shelf",
+"d": "Xining finds part of a torn transfer record behind a shelf: documents were moved to a designated storage location, destination and name missing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"172": [
+{
+"id": "transfer_ledger_matches_the_torn_note",
+"d": "The archive's transfer ledger matches the torn note: documents moved from the former quarters into general storage",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ledger_destination_column_missing",
+"d": "The ledger's destination column is missing (incomplete page or deliberate removal: unknown)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "transfer_came_after_the_earliest_disturbance",
+"d": "The transfer happened after the earliest disturbance entry, so it cannot explain how the disturbance began, only why the earlier account is missing now",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"173": [
+{
+"id": "duplicate_inventory_found_in_the_archive_catalogue",
+"d": "A duplicate inventory survives in the archive catalogue, listing broad categories and no individual titles",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "transfer_note_ledger_and_inventory_align_but_name_nothing",
+"d": "The transfer note, ledger and inventory align in wording and categories, but none identifies the missing account",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "former_records_assistant_helped_catalogue_the_transfer",
+"d": "A note mentions a former records assistant who helped catalogue the transfer; the name is too faded to read",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "arc1_records_we_inherited_complete",
+"d": "Arc 1 complete: the disturbance predates the later diagram, the transfer came afterward, and the archive's records are insufficient to identify the missing account",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"174": [
+{
+"id": "assistant_reassigned_to_the_outer_administrative_wing",
+"d": "The personnel register: the records assistant was reassigned from the former custodians' quarters to the outer administrative wing shortly after the records transfer",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "reassignment_reason_unknown",
+"d": "The reason for the reassignment is unknown; timing alone is not treated as proof",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"175": [
+{
+"id": "clerk_remembers_the_assistant_not_the_account",
+"d": "A clerk in the outer wing remembers the assistant (correspondence and administrative records, careful with paperwork) but not the missing account",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "assistant_later_left_the_temples_service",
+"d": "The assistant later left the temple's service; the clerk cannot say where they went",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "assistant_may_have_kept_work_notes",
+"d": "Possibly the assistant kept personal work notes; whether any survived is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"176": [
+{
+"id": "assistant_departure_record_found",
+"d": "A departure entry confirms the assistant left the temple's service; administrative keys returned; destination blank",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "assistant_departure_followed_the_transfer",
+"d": "The records transfer happened before the assistant's departure: an order of events, not a proven connection",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "departure_record_references_a_handover_file",
+"d": "The departure record references a separate handover file",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"177": [
+{
+"id": "handover_file_found_in_the_administrative_store",
+"d": "The assistant's handover file survives in the administrative store; it lists duties and broad categories including historical records",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "handover_names_no_titles_missing_account_unnamed",
+"d": "The handover names no individual titles; the missing account is not named and a broad category is not treated as proof",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "receiving_clerk_signed_the_handover",
+"d": "The receiving clerk signed the handover; the storage destination is incomplete",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"178": [
+{
+"id": "receiving_clerk_sorted_records_by_broad_category",
+"d": "The receiving clerk sorted the historical records into bundled groups by broad category and cannot confirm whether the missing account was among them",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "later_storage_review_produced_a_separate_inventory",
+"d": "A later review of the storage rooms produced a separate inventory, overseen by the senior staff; where it was kept is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"179": [
+{
+"id": "storage_review_was_an_administrative_measure",
+"d": "The later storage review organised an overcrowded, repeatedly rearranged collection",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "review_inventory_passed_to_the_archive",
+"d": "The inventory prepared during the review was passed to the archive for safekeeping; it may have been filed with administrative inventories",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "senior_staff_cannot_say_if_the_account_was_listed",
+"d": "The senior staff cannot say whether the missing account was listed",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"180": [
+{
+"id": "administrative_catalogue_lists_the_review_inventory",
+"d": "Administrative Catalogue, Collection No. A-27: the storage review inventory was catalogued separately from historical records",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "listed_shelf_holds_unrelated_documents",
+"d": "The inventory's listed shelf (East Wing, Room 3, Shelf B-12) now holds unrelated documents; the collection was reorganised and moved",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "duplicate_collection_index_may_hold_new_locations",
+"d": "A duplicate collection index (second copy) may hold the updated shelf references",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"182": [
+{
+"id": "review_inventory_found_in_secondary_storage",
+"d": "The storage review inventory survives in secondary storage in the eastern wing; its list is incomplete",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "inventory_confirms_the_category_not_the_identity",
+"d": "The inventory confirms historical incident records were included, not the identity of the missing document",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "exception_register_referenced_in_annex_storeroom",
+"d": "A remark refers to an Exception Register for damaged, missing or unmatched documents (Eastern Wing, Annex Storeroom)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"183": [
+{
+"id": "exception_register_found_in_the_annex_storeroom",
+"d": "The Exception Register survives: entries 017 (damaged), 018 (missing) and 019 (unmatched), all Year 12",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "unmatched_historical_record_has_no_title",
+"d": "Entry 019 records an unmatched historical record, title unconfirmed: it may be the missing account or another document",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "discrepancy_was_recorded_during_the_review",
+"d": "The discrepancy was recorded during the review; when the account went missing is unknown",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "arc2_those_who_remembered_complete",
+"d": "Arc 2 complete: a historical record was formally listed as unmatched; its identity and the reason are unknown",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"184": [
+{
+"id": "unmatched_entry_dates_to_the_storage_review",
+"d": "The unmatched entry dates to the later storage review; its original title and catalogue reference are missing",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "reviewer_initials_beside_the_entries",
+"d": "Reviewer initials appear beside the register entries (018: L.H., 019: S.W.); their meaning needs confirmation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "remarks_point_to_review_notes_file_b",
+"d": "The remarks point to Review Notes, File B (Historical Records), location blank",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "record_cannot_yet_be_connected_to_yan",
+"d": "The unmatched record cannot yet be connected to Yan",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"185": [
+{
+"id": "review_notes_file_b_found",
+"d": "Review Notes, File B survives in the historical records section",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "reviewer_expected_an_earlier_catalogue",
+"d": "The reviewer's note on the unidentified record says to compare with the earlier catalogue: original reference not present in the current collection",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "earlier_catalogue_missing_from_the_current_collection",
+"d": "The earlier catalogue was not available during the review; the note does not say why",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "reviewer_signed_the_notebook",
+"d": "The reviewer signed the notebook (Year 12, 6th month)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"186": [
+{
+"id": "reviewer_identified_as_li_wen",
+"d": "The personnel register names the reviewer from File B as Li Wen, Archive Official (Historical Records)",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "li_wen_transferred_to_the_outer_records_office",
+"d": "Li Wen was transferred to the Records Office (Outer Grounds) in Year 3, 3rd month, about three years ago; no reason recorded and no newer post",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "older_catalogues_stored_at_the_records_office_during_year_2_reorganisation",
+"d": "During the reorganisation of Year 2 the older catalogues were temporarily stored at the Records Office (Outer Grounds)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"187": [
+{
+"id": "outer_records_office_confirms_temporary_storage",
+"d": "The Outer Records Office clerk confirms older catalogues were temporarily stored there; most returned to the main archive",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "clerk_remembers_li_wen_not_where_they_went",
+"d": "The clerk remembers Li Wen, who worked with the historical records, but cannot say where they went",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "transfer_batch_or_37_returned_to_the_main_archive",
+"d": "A partial transfer record (Batch OR-37) shows catalogues (various collections) returned to the Main Archive; whether the earlier catalogue was included is unconfirmed",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

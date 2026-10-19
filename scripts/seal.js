@@ -225,6 +225,21 @@ const CLUES = [   // [hook id, category, comic, text]
   ['records_moved_from_the_former_custodians_quarters', 'temple', 'V4 052', 'Older documents were moved from the former custodians\' quarters when the inner archive was reorganised; the archive catalogue may record where'],
   ['lower_channel_present_in_original_missing_in_later_copy', 'temple', 'V4 051', 'The original formation diagram directs energy through a lower channel that the later copy leaves out; the lower marking reacts more strongly than the later diagram predicts (simplification or alteration: unknown)'],
   ['no_current_custodian_authorised_a_change', 'temple', 'V4 051', 'No current custodian authorised a change to the formation; the later copy was made after the earliest disturbance; the person responsible, and whether Yan knew, is unknown'],
+  ['former_custodian_kept_the_records_reassigned_long_ago', 'records', 'V5 002', 'The records of the original account were kept by someone in the former custodians\' quarters, reassigned long ago; only the surname beside the account can be read'],
+  ['torn_transfer_note_found_behind_a_shelf', 'records', 'V5 003', 'The former custodians\' quarters were cleared; a torn transfer note says documents were moved to a designated storage location (destination and name missing)'],
+  ['ledger_destination_column_missing', 'records', 'V5 004', 'The archive transfer ledger matches the torn note but its destination column is missing; the transfer came after the earliest disturbance'],
+  ['former_records_assistant_helped_catalogue_the_transfer', 'records', 'V5 005', 'A duplicate inventory lists broad categories only; a former records assistant helped catalogue the transfer (name faded)'],
+  ['assistant_reassigned_to_the_outer_administrative_wing', 'records', 'V5 006', 'The records assistant was reassigned to the outer administrative wing shortly after the transfer (the reason is unknown)'],
+  ['assistant_departure_record_found', 'records', 'V5 008', 'The assistant left the temple\'s service (keys returned, destination blank); a handover file is referenced'],
+  ['handover_names_no_titles_missing_account_unnamed', 'records', 'V5 009', 'The handover file lists categories including historical records but no titles; the receiving clerk signed it'],
+  ['review_inventory_passed_to_the_archive', 'records', 'V5 011', 'A later storage review prepared an inventory that was passed to the archive, possibly filed with administrative inventories'],
+  ['listed_shelf_holds_unrelated_documents', 'records', 'V5 012', 'The inventory was catalogued as A-27 but its listed shelf now holds unrelated documents; a duplicate collection index may hold the new locations'],
+  ['inventory_confirms_the_category_not_the_identity', 'records', 'V5 014', 'The storage review inventory confirms historical incident records were included, not the identity of the missing document; an Exception Register is referenced'],
+  ['unmatched_historical_record_has_no_title', 'records', 'V5 015', 'The Exception Register lists entries 017-019 (Year 12): damaged, missing, and an unmatched historical record with no confirmed title'],
+  ['reviewer_initials_beside_the_entries', 'records', 'V5 016', 'Reviewer initials beside the register entries point to Review Notes, File B'],
+  ['earlier_catalogue_missing_from_the_current_collection', 'records', 'V5 017', 'The reviewer\'s notes refer to an earlier catalogue that is missing from the current collection'],
+  ['li_wen_transferred_to_the_outer_records_office', 'records', 'V5 018', 'The reviewer is Li Wen, transferred to the Records Office (Outer Grounds) three years ago; older catalogues were stored there during the Year 2 reorganisation'],
+  ['transfer_batch_or_37_returned_to_the_main_archive', 'records', 'V5 019', 'Transfer Batch OR-37 returned catalogues from the Outer Records Office to the Main Archive; whether the earlier catalogue was included is unconfirmed'],
   ['second_layer_beneath_the_formation', 'temple', 'V4 033', 'A second layer of darker material and different rhythm lies beneath the original formation, added later; its residue is neither Ya\'Xing\'s medicine nor ordinary frost'],
   ['keeper_inscription_when_the_mountain_breathes_inward', 'temple', 'V4 035', 'Library inscription: \'When the mountain\'s breath turns inward, the keeper must remain until the currents settle\''],
   ['red_crystal_fragment_reacts_to_spirit_light', 'temple', 'V4 036', 'A red crystal fragment in the old laboratory reacts unpredictably to spirit-light; the medicine residue and the formation residue are not identical'],
@@ -291,6 +306,10 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['seal_manages_an_imbalance_source_hidden', 'What is the imbalance beneath the mountain, and does it come from the original disturbance or a later alteration?'],
   ['inspector_name_missing_from_the_ledger', 'Who recorded the first disturbance, and who erased the name?'],
   ['lower_channel_present_in_original_missing_in_later_copy', 'Why does the later copy omit the lower channel, and who changed it?'],
+  ['former_custodian_kept_the_records_reassigned_long_ago', 'Who kept the original account, and why was it separated from the rest?'],
+  ['unmatched_historical_record_has_no_title', 'Is the unmatched historical record the missing account?'],
+  ['earlier_catalogue_missing_from_the_current_collection', 'Where is the earlier catalogue, and why was it unavailable during the review?'],
+  ['li_wen_transferred_to_the_outer_records_office', 'Where did Li Wen go, and what did they know?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [
@@ -307,6 +326,8 @@ const STAGES = [
   {t:'Trace the pulse to its source', d:'Three red pulses, a second layer and a gate that flickers for Xiyu. Find the route to the cause.', done:() => false, active:() => sealHook('red_channel_pulses_three_times')},
   {t:'Find who searched the archives before us', d:'Fresh footprints, a missing diagram and a sealed chamber that someone tried to force. Who came, and what did they want?', done:() => false, active:() => sealHook('someone_else_is_searching_for_the_same_truth')},
   {t:'Find the former custodians\' records', d:'The first disturbance is in the ledger of Year 463; the people who recorded it, or what they left behind, may lie in the former custodians\' quarters.', done:() => false, active:() => sealHook('custodians_ledger_year_463_first_disturbance')},
+  {t:'Find the missing account', d:'A former custodian kept the original account; the records were moved and the trail runs through ledgers, inventories and registers. Arcs 1 and 2: The Records We Inherited, Those Who Remembered.', done:() => sealHook('arc2_those_who_remembered_complete'), active:() => sealHook('former_custodian_kept_the_records_reassigned_long_ago')},
+  {t:'Trace the unmatched record', d:'Arc 3, What the Seal Protects: an unmatched historical record, a reviewer named Li Wen, and an earlier catalogue that was no longer there.', done:() => false, active:() => sealHook('arc2_those_who_remembered_complete')},
   {t:'Follow the redirected flow', d:'The ruins, the chamber and the symbol beneath the sealed chamber: where is the energy going?', done:() => false, active:() => sealHook('flow_redirected_from_fragment')},
 ];
 function rSeal(){

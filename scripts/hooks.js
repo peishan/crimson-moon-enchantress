@@ -6635,14 +6635,14 @@ const HOOKS = {
 },
 {
 "id": "clerk_remembers_su_chengyuan_not_where_they_went",
-"d": "An older official says the outer records keep only transfer summaries, not detailed lists",
+"d": "An older official says the office handled many batches, including older catalogues from Year 2; the receiving records in the main archive must be checked",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
 "id": "transfer_batch_or_37_returned_to_the_main_archive",
-"d": "Transfer record: Batch OR-37, received Year 3, 3rd month, sent from the Outer Records Office (Eastern Wing) to the Main Archive; no document titles listed, so whether the earlier catalogue was included is unconfirmed",
+"d": "Transfer record: Batch OR-37, received Year 3, 3rd month, sent from the Outer Records Office to the Main Archive; no document titles listed, so whether the earlier catalogue was included is unconfirmed",
 "t": "event",
 "p": false,
 "s": "art"

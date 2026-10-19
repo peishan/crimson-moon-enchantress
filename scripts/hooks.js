@@ -6552,7 +6552,7 @@ const HOOKS = {
 },
 {
 "id": "reviewer_initials_beside_the_entries",
-"d": "Reviewer initials appear beside the register entries (018: L.H., 019: S.W.); their meaning needs confirmation",
+"d": "Reviewer initials appear beside the register entries (018: L.H., 019: S.C.Y.); their meaning needs confirmation",
 "t": "event",
 "p": false,
 "s": "art"
@@ -6604,15 +6604,15 @@ const HOOKS = {
 ],
 "186": [
 {
-"id": "reviewer_identified_as_li_wen",
-"d": "The personnel register names the reviewer from File B as Li Wen, Archive Official (Historical Records)",
+"id": "reviewer_identified_as_su_chengyuan",
+"d": "The personnel register names the reviewer from File B as Su Chengyuan, Archive Official (Historical Records)",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "li_wen_transferred_to_the_outer_records_office",
-"d": "Li Wen was transferred to the Records Office (Outer Grounds) in Year 3, 3rd month, about three years ago; no reason recorded and no newer post",
+"id": "su_chengyuan_transferred_to_the_outer_records_office",
+"d": "Su Chengyuan was transferred to the Records Office (Outer Grounds) in Year 3, 3rd month, about three years ago; no reason recorded and no newer post",
 "t": "state",
 "p": false,
 "s": "art"
@@ -6634,8 +6634,8 @@ const HOOKS = {
 "s": "art"
 },
 {
-"id": "clerk_remembers_li_wen_not_where_they_went",
-"d": "The clerk remembers Li Wen, who worked with the historical records, but cannot say where they went",
+"id": "clerk_remembers_su_chengyuan_not_where_they_went",
+"d": "The clerk remembers Su Chengyuan, who worked with the historical records, but cannot say where they went",
 "t": "state",
 "p": false,
 "s": "art"

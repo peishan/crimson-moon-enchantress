@@ -131,7 +131,7 @@ function applyFx(src, tgt, fx){
       const th = (tgt.st.thread && tgt.st.thread.n) || 0;
       if(tgt.boss && (fx.k==='bind'||fx.k==='charm') && Math.random() < Math.max(.1, .5 - .15*th)){ blog('  '+tgt.name+' resists!'); return; }
       if(tgt.st.link && !fx.spread){ alive(B.foes).filter(o => o!==tgt && o.st.link && Math.random()<.5).forEach(o => { blog('  the link carries it to '+o.name+'.'); applyFx(src, o, Object.assign({}, fx, {spread:true})); }); }
-      tgt.st[fx.k] = {d:(fx.d||2) + (th?1:0)}; blog('  '+tgt.name+' is '+({burn:'burning',slow:'slowed',bind:'bound',charm:'charmed',silence:'silenced'})[fx.k]+'.'); break;
+      tgt.st[fx.k] = {d:(fx.d||2) + (th?1:0) + ((src.id==='suliechen' && (fx.k==='bind'||fx.k==='slow')) ? 1 : 0)}; blog('  '+tgt.name+' is '+({burn:'burning',slow:'slowed',bind:'bound',charm:'charmed',silence:'silenced'})[fx.k]+'.'); break;
     case 'buff': tgt.bf.push({stat:fx.stat,m:fx.m,d:(fx.d||3)+1}); blog('  '+tgt.name+' '+fx.stat.toUpperCase()+(fx.m>=1?' up':' down')+'.'); break;
     case 'shield': tgt.st.shield = {v:Math.round(tgt.mhp*fx.v), d:(fx.d||3)+1}; blog('  '+tgt.name+' gains a barrier.'); break;
     case 'regen': tgt.st.regen = {v:fx.v, d:(fx.d||3)+1}; break;
@@ -143,6 +143,7 @@ function applyFx(src, tgt, fx){
     case 'thread': { const n = Math.min(3, ((tgt.st.thread && tgt.st.thread.n)||0) + (fx.v||1)); tgt.st.thread = {n, d:4}; blog('  '+tgt.name+' is Threadbound ×'+n+'.'); break; }
     case 'link': tgt.st.link = {d:fx.d||3}; blog('  '+tgt.name+' is linked into the formation.'); break;
     case 'strip': { if(tgt.st.shield){ delete tgt.st.shield; blog('  '+tgt.name+'\'s barrier shatters.'); } const n = tgt.bf.filter(b => b.m>1).length; tgt.bf = tgt.bf.filter(b => b.m<=1); if(n) blog('  '+tgt.name+'\'s enhancements are unravelled.'); break; }
+    case 'subdue': if(tgt.boss){ tgt.st.bind = {d:3}; blog('  '+tgt.name+' is too strong to capture, but is bound.'); break; } tgt.dead = true; tgt.subdued = true; blog('  '+tgt.name+' is subdued and taken out of the fight alive.','good'); break;
     case 'expose': tgt.st.expose = {d:(fx.d||3)+1}; blog('  '+tgt.name+'\'s weakness is exposed.'); break;
     case 'ward': tgt.st.ward = {d:(fx.d||4)+1}; break;
     case 'cleanse1': { const k = ['burn','bind','charm','silence','slow'].find(x => tgt.st[x]); if(k){ delete tgt.st[k]; blog('  '+tgt.name+' is cleared of '+k+'.'); } else blog('  Nothing ordinary to clear.'); break; }
@@ -158,12 +159,12 @@ function applyFx(src, tgt, fx){
 function skillList(u){
   return skillsOf(u.id).filter(s => s.ok).map(s => {
     const cost = mpCost(u,s);
-    const noAlly = s.needAlly && !B.allies.some(a => a.id===s.needAlly && !a.dead && a!==u), noItem = s.item && B.spec.rewards && !(G.inv[s.item] > 0);
-    return Object.assign({}, s, { cost, usable: u.mp>=cost && !(s.once && u.used[s.id]) && !noAlly && !noItem, note: noAlly ? 'needs '+first(s.needAlly) : noItem ? 'no '+ITEMS[s.item].n : (s.once && u.used[s.id]) ? 'used' : u.mp<cost ? 'low MP' : '' });
+    const noAlly = s.needAlly && !B.allies.some(a => a.id===s.needAlly && !a.dead && a!==u), noItem = s.item && B.spec.rewards && !(G.inv[s.item] > 0), noWeak = s.hpBelow && !targetsFor(s).length;
+    return Object.assign({}, s, { cost, usable: u.mp>=cost && !(s.once && u.used[s.id]) && !noAlly && !noItem && !noWeak, note: noWeak ? 'no foe at '+Math.round(s.hpBelow*100)+'% HP' : noAlly ? 'needs '+first(s.needAlly) : noItem ? 'no '+ITEMS[s.item].n : (s.once && u.used[s.id]) ? 'used' : u.mp<cost ? 'low MP' : '' });
   });
 }
 function targetsFor(s){
-  if(s.tgt==='foe') return alive(B.foes);
+  if(s.tgt==='foe') return alive(B.foes).filter(f => !s.hpBelow || f.hp <= f.mhp*s.hpBelow);
   if(s.tgt==='ally') return alive(B.allies);
   if(s.tgt==='allyDown') return B.allies.filter(a => a.dead);
   return [];
@@ -257,10 +258,13 @@ function finishWin(){
   const foes = B.foes, spec = B.spec;
   let xp = 0, gold = 0; const drops = [];
   foes.forEach(f => { xp += f.xp; gold += f.gold; f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); G.bestiary[f.key] = (G.bestiary[f.key]||0)+1; });
+  const caught = foes.filter(f => f.subdued && !f.boss);   // Su Liechen's Subdue, Not Slay: captured alive, drops rolled twice
+  caught.forEach(f => { f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); xp += Math.round(f.xp*.25); });
   const boss = foes.find(f => f.boss);
   if(boss) rollLoot(LOOT[boss.key], spec.firstClear).forEach(d => drops.push(d));
   if(typeof fieldGoldMult === 'function') gold = Math.round(gold * fieldGoldMult(B.allies));   // Xiao Tian's field proficiency
   B.rewards = { xp, gold, drops, msgs:[], real:!!spec.rewards };
+  if(caught.length) blog('🕸️ Captured alive: '+caught.map(f => f.name).join(', ')+' (extra drops and XP).','good');
   blog('Victory!','good');
   if(!spec.rewards) return;
   persistBattle();

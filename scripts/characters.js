@@ -136,5 +136,22 @@ const CHARACTERS = {
    {id:'sanctuary_still_waters',n:'Sanctuary of Still Waters',icon:'🌊',mp:26,kind:'heal',tgt:'allies',pow:.8,fx:[{k:'regen',v:.07,d:4},{k:'ward',d:4},{k:'cleanse'},{k:'buff',stat:'def',m:.7,d:4,self:true}],req:{lvl:61},sig:true,desc:'ULTIMATE. A protective healing field: the party heals over time and resists status effects (70%). It needs her concentration: her own DEF drops while it holds.'},
   ],
   passive:'A Physician\'s Resolve: repeated treatments become more efficient (each heal this battle cuts her healing MP costs by 5%, up to 30%), and she can heal with herbs when her mana is gone (Herb Pouch).'},
+ /* ===== VOLUME 6 GUEST (author's sheet): a temporary story-required guest, not a core party member. He joins at the first chapter of Volume 6 (VOL6_START)
+    for the demon-capture arc; GUESTS in core.js holds the window (end chapter not set yet: the author will give it). Later returns (e.g. Volume 8 at Yilong) are planned, not built. */
+ suliechen:{
+  vol2:true, guest:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
+  cls:'Demon Slayer / Tracker (Guest)', role:'Control · Restraint · Support', combat:'Capture specialist',
+  elements:'Ice · Restraint · Sealing',
+  identity:'A wandering demon slayer who tracks and captures demons across remote regions. He believes some demons should not be killed, as their death can bring greater disasters. His reasons remain unclear, and he keeps his past private. He travels independently, but is willing to cooperate with the party when their goals align.',
+  quote:'Some truths should be captured, not destroyed.',
+  base:{hp:84,mp:40,atk:11,mag:9,def:8,spd:13}, grow:{hp:8.6,mp:3.6,atk:1.3,mag:1.1,def:1,spd:1},
+  skills:[
+   {id:'frost_trace',n:'Frost Trace',icon:'🗡️',mp:0,kind:'phys',tgt:'foe',pow:1.0,fx:[{k:'slow',d:1}],req:{lvl:1},sig:true,desc:'A swift sword strike imbued with cold energy. Deals damage and may slow the target.'},
+   {id:'sealing_talismans',n:'Sealing Talismans',icon:'📜',mp:7,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2}],req:{lvl:1},sig:true,desc:'Binding talismans thrown from range. A good chance to bind the target (strong enemies may resist).'},
+   {id:'binding_net',n:'Binding Net',icon:'⛓️',mp:10,kind:'phys',tgt:'foe',pow:.5,fx:[{k:'bind',d:3}],req:{lvl:1},sig:true,desc:'Capture chains or a net immobilise a target for longer than the talismans.'},
+   {id:'silent_veil',n:'Silent Veil',icon:'🌫️',mp:12,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'def',m:1.25,d:3},{k:'ward',d:3}],req:{lvl:1},desc:'Hides the party\'s presence: allies take less damage for a few turns and resist status effects. (Out of battle it has no effect yet.)'},
+   {id:'subdue_not_slay',n:'Subdue, Not Slay',icon:'🕸️',mp:14,kind:'support',tgt:'foe',hpBelow:.35,fx:[{k:'subdue'}],req:{lvl:1},sig:true,desc:'UNIQUE. Subdues a weakened enemy instead of killing it: it is captured alive and leaves the fight (bosses cannot be captured, only bound). Captured foes give their drops twice and +25% XP when the battle is won. Only usable on a foe at 35% HP or below.'},
+  ],
+  passive:'Restraint: the bind and slow effects he applies last one turn longer. He does not take the killing blow if he can avoid it.'},
 };
 const ROSTER = Object.keys(CHARACTERS);

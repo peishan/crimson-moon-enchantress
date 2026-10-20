@@ -37,3 +37,11 @@ Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5
 - The **Miracle Healer** (Xining's master) is a planned permanent flex-seat hero, not built.
 
 - **Hoko (Volume 4, planned):** a temporary story-required guest for the Ya'Xing retrieval mission at the Ice Temple, not a recruit. See docs/VOLUME4_PLAN.md.
+
+## Su Liechen (苏烈尘): Volume 6 guest (built)
+
+- Author's sheet: Demon Slayer / Tracker, independent, early-to-mid 20s, tall and lean; sword, capture chains, talismans, binding net; ice, restraint, sealing. Calm, observant, pragmatic, keeps his reasons private but cooperates when goals align. Quote: "Some truths should be captured, not destroyed."
+- **Joins** when chapter 204 (Volume 6, comic 001; `VOL6_START`, `JOIN_CH`) is completed; **guest window** in `GUESTS` (core.js): `from:204`, `to:Infinity` until the author gives the arc's end chapter. Guests take an EXTRA seat (not a flex seat) and are fielded and locked while the window is open; after it closes he is "away" (still in the roster). Return in later arcs (e.g. Volume 8 at Yilong) and a possible extended-member role after Xining leaves the active party are planned, not built.
+- **Skills** (all unlocked on joining): Frost Trace (strike, may slow) · Sealing Talismans (ranged bind) · Binding Net (longer bind) · Silent Veil (party DEF up and status ward; no field effect yet) · **Subdue, Not Slay** (unique: foe at 35% HP or below is captured alive and leaves the fight; bosses are only bound; captured foes' drops are rolled twice and +25% XP). Passive: Restraint (his bind and slow last one turn longer).
+- Art: portrait `assets/party/suliechen.webp`, cast sheet `assets/cast/suliechen.webp` (Cast, from chapter 204). The sheet's pixel sprites and expressions are not used by the game.
+- Nothing in the game text asserts his reasons. Not testable end to end until Volume 6 pages exist (tested with a dev jump to 204).

@@ -81,6 +81,10 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 200:[('cangyuan_stopped_writing_home',"Cangyuan left home young with his master's guidance; his parents never answered his letters and he eventually stopped writing",'state')],
+ 201:[('cangyuan_grew_up_beside_a_companion','Cangyuan grew up beside a companion his own age; they did not stay together but parted without either being the villain','state')],
+ 202:[('xiyu_and_cangyuan_agree_pasts_stay_theirs_to_share','Xiyu and Cangyuan agree neither needs to erase the past nor share every detail of it','event')],
+ 203:[('xu_hanshan_name_spoken','Xiyu speaks the name Xu Hanshan, someone important to her whose leaving made her feel she was never enough','event'),('cangyuan_names_ruyue_as_his_first_love','Cangyuan names Ruyue as his first love, a companion from his years of travel','event'),('xiyu_cangyuan_interlude_complete','The Xiyu & Cangyuan Interlude is complete: they choose each other honestly, without erasing their pasts','event')],
  194:[('yaxing_dreams_of_a_gentle_hand',"Ya'Xing dreams of a woman with a gentle hand and a small child; he thought it was his mother but cannot tell if it was her",'event')],
  195:[('yaxing_was_passed_between_households_as_a_child',"Ya'Xing remembers being sent from household to household as a child, with no say in it",'state')],
  196:[('yaxing_asked_for_his_wages_and_left_service',"As a grown man Ya'Xing asked what he was owed, took his wages and walked out of service",'event')],

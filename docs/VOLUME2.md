@@ -231,3 +231,5 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 
 - **Xiyu & Cangyuan Interlude complete (chapters 199-203; 200 The Boy Who Left Home · 201 The Years They Grew Together · 202 The Things We Never Asked · 203 The Love We Choose).** Cover in Cast. `LAST_CHAPTER = 203`. This closes Volume 5.
 - **Inconsistencies for the author:** (1) The cover and 203 name **Shen Ruyue** as Cangyuan's first love (the 201 companion), while the game's seal journal already has the open question "What was Shen Ruyue to the place that built this?" from Volume 2 (her name on the sanctuary record). Same person, or a namesake? (2) **Xu Hanshan** (203) is a new name: the page has Xiyu say he was important to her and left, which is not in earlier volumes; the cover pairs him with Dongyue and Ruyue as people from the pasts. (3) The speaker of the first lines in 203 is only implied; the game follows the reading that Xiyu names Xu Hanshan.
+
+- Author: the green-robed traveller with Ya'Xing in the Interlude (194-195) is **Xiao Tian**; text and chapter casts updated. The other Interlude questions are answered earlier in the book and are dropped.

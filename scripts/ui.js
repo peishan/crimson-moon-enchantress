@@ -176,7 +176,7 @@ function wildFight(zid, boss){
 /* ---------------- TEMPLE ---------------- */
 let tempLv = 1, tempMap = false;
 function rTemple(){
-  if(tempMap && templeMapOpen()) return `<button onclick="tempMap=false;render()">◀ Temple</button><h2>Ice Temple Map</h2>${G.ch >= TEMPLE_MAP_V4_CH ? `<h3>Volume 4 · Investigation map</h3><img class="pg" src="${TEMPLE_MAP_V4}" alt="Ice Temple investigation map, Volume 4"><h3>Volume 1 map</h3>` : ''}<img class="pg" src="${TEMPLE_MAP}" alt="Ice Temple map, Volume 1">`;
+  if(tempMap && templeMapOpen()) return `<button onclick="tempMap=false;render()">◀ Temple</button><h2>Ice Temple Map</h2>${G.ch >= TEMPLE_MAP_LOWER_CH ? `<h3>Volume 4 · Lower level</h3><img class="pg" src="${TEMPLE_MAP_LOWER}" alt="Ice Temple lower level, Volume 4">` : ''}${G.ch >= TEMPLE_MAP_V4_CH ? `<h3>Volume 4 · Investigation map</h3><img class="pg" src="${TEMPLE_MAP_V4}" alt="Ice Temple investigation map, Volume 4"><h3>Volume 1 map</h3>` : ''}<img class="pg" src="${TEMPLE_MAP}" alt="Ice Temple map, Volume 1">`;
   const lvBtns = TEMPLE_LEVELS.map(l => `<button class="${tempLv===l.lv?'pri':''}" onclick="tempLv=${l.lv};render()">Level ${l.lv}</button>`).join('');
   const lv = TEMPLE_LEVELS.find(l => l.lv===tempLv), rooms = TEMPLE_ROOMS.filter(r => r.lv===tempLv);
   const found = TEMPLE_ROOMS.filter(roomFound).length;

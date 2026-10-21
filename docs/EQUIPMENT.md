@@ -25,3 +25,6 @@ Starting gear is now the author's three pieces each (ids double as icon names: d
 - Ya'Xing's Commanders' Sky-Blue Outfit still comes with his return; Skyshard now comes from the vault, not his return.
 - **Conflicts with earlier instructions (the sheet is followed):** Xining starts with a Healer's Satchel, not a dagger; Xiao Tian starts with a Training Staff (he can still buy weapons at the smith).
 - Old saves: starter loadouts are rebuilt once (gear version 3); owned shop purchases are kept.
+
+## Slots reduced to the sheet (author)
+- **Three slots: Clothing / Armour, Weapon / Tool, Accessory**, plus a **Book** slot for Xining only (4 for her, 3 for everyone else). Gloves and Shoes slots are removed: the old gloves/boots pieces (Hand Wraps, Leather Gloves, Frostweave Gloves, boots, etc.) are now accessories. Saves are rebuilt once (gear version 4); purchases are kept.

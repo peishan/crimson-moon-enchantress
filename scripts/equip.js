@@ -1,11 +1,11 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — EQUIPMENT
-   Five slots: Robe / Armour · Weapon (single-handed, two-handed or dual blades) · Gloves · Shoes · Accessory.
+   Three slots (the author's equipment sheet): Clothing / Armour · Weapon or Tool (single-handed, two-handed, dual blades or tool) · Accessory; plus a Book slot for Xining only.
    Owned gear is a set (G.gear.owned); each hero wears at most one piece per slot (G.gear.eq[hero][slot]); a piece can be upgraded twice (G.gear.tier).
    Pieces add stats (statsOf), may carry effects (physRed / magRed / noSlow / mechanisms) and may GRANT battle skills while worn.
    Art: assets/gear/<id>.webp (square icon); a missing file falls back to the emoji. Chapters award gear through CH_GEAR (journal.js).
    ===================================================================== */
-const GEAR_SLOTS = [['outfit','Robe / Armour','👘'],['weapon','Weapon / Tool','⚔️'],['gloves','Gloves','🧤'],['shoes','Shoes','👢'],['accessory','Accessory','📿'],['book','Book','📖']];   // the Book slot only shows for heroes who have book gear (Xining)
+const GEAR_SLOTS = [['outfit','Clothing / Armour','👘'],['weapon','Weapon / Tool','⚔️'],['accessory','Accessory','📿'],['book','Book','📖']];   // the Book slot only shows for heroes who have book gear (Xining)
 const WTYPE = {one:'Single-handed', two:'Two-handed', dual:'Dual blades', tool:'Tool'};
 const GEAR_TIERS = [null, {gold:60, mats:{ice_crystal:3}}, {gold:140, mats:{ice_crystal:6, rift_shard:3}}];   // cost to reach tier 1 and tier 2; +30% stats per tier
 const G_ = (id,n,slot,icon,who,stats,desc,extra) => Object.assign({id,n,slot,icon,who,stats,desc}, extra||{});
@@ -47,8 +47,8 @@ const GEAR = {};
  /* ---- Library discovery ---- */
  G_('healers_scripture','Healer\'s Scripture','book','📜','xining',{mag:5,mp:10},'A collection of rare medical texts from the Ice Temple: advanced healing techniques, spiritual diagnosis and unique support arts.',{fxText:'Grants Meridian Sanctuary.',grants:['meridian_sanctuary']}),
  /* generic temple pieces (not awarded yet) */
- G_('frostweave_gloves','Frostweave Gloves','gloves','🧤',null,{def:2,mag:1},'Gloves woven from temple frost-silk.'),
- G_('temple_boots','Ice Temple Boots','shoes','👢',null,{spd:2,def:1},'Spiked soles for the temple\'s icy stairs.'),
+ G_('frostweave_gloves','Frostweave Gloves','accessory','🧤',null,{def:2,mag:1},'Gloves woven from temple frost-silk.'),
+ G_('temple_boots','Ice Temple Boots','accessory','👢',null,{spd:2,def:1},'Spiked soles for the temple\'s icy stairs.'),
  G_('warding_charm','Temple Warding Charm','accessory','📿',null,{hp:8,def:1},'A charm cut with a small ward.',{fx:{magRed:.05},fxText:'Takes 5% less magic damage.'}),
  G_('healing_staff','Healing Staff','weapon','🪄','xining',{mag:5,mp:10},'A healing staff she can earn later. (Not awarded yet.)',{wt:'two'}),
  /* starters: most heroes begin in a robe; the fighters in light armour */
@@ -64,18 +64,18 @@ const GEAR = {};
  G_('sw_broad','Broadsword','weapon','⚔️',null,{atk:7,spd:-1},'Heavy and two-handed: hits hard, swings slowly.',{wt:'two',price:130}),
  G_('ar_leather','Padded Leathers','outfit','🥋',null,{def:3,hp:6},'Quilted leather armour.',{price:60}),
  G_('ar_robe','Quilted Robe','outfit','👘',null,{def:2,mp:4,mag:1},'A warm robe lined with cotton.',{price:60}),
- G_('gl_leather','Leather Gloves','gloves','🧤',null,{def:1},'Plain leather gloves.',{price:30}),
- G_('gl_wrap','Hand Wraps','gloves','🧤',null,{atk:2},'Wraps for a firmer grip.',{price:35}),
- G_('sh_boots','Travelling Boots','shoes','👢',null,{spd:1,def:1},'Good for long roads.',{price:35}),
- G_('sh_snow','Snow Boots','shoes','👢',null,{def:2},'Fur-lined boots for the snowfields.',{price:50}),
+ G_('gl_leather','Leather Gloves','accessory','🧤',null,{def:1},'Plain leather gloves.',{price:30}),
+ G_('gl_wrap','Hand Wraps','accessory','🧤',null,{atk:2},'Wraps for a firmer grip.',{price:35}),
+ G_('sh_boots','Travelling Boots','accessory','👢',null,{spd:1,def:1},'Good for long roads.',{price:35}),
+ G_('sh_snow','Snow Boots','accessory','👢',null,{def:2},'Fur-lined boots for the snowfields.',{price:50}),
  G_('ac_ring','Copper Ring','accessory','💍',null,{hp:6},'A plain ring said to turn small harm.',{price:45}),
 ].forEach(g => GEAR[g.id] = g);
 /* Smiths: a weaponsmith and an armorsmith in Muxue (open from chapter 5, before Xiao Tian joins) and at the Ice Temple (LOCKED until the author's temple map: open:false). */
 const SMITHS = [
  {id:'muxue_weapons', n:'Muxue Weaponsmith', icon:'⚒️', slot:['weapon'], open:() => G.ch >= 5, stock:['sw_dagger','sw_traveller','sw_wand','sw_twin','sw_staff','sw_broad']},
- {id:'muxue_armor', n:'Muxue Armorsmith', icon:'🛡️', slot:['outfit','gloves','shoes','accessory'], open:() => G.ch >= 5, stock:['ar_leather','ar_robe','gl_leather','gl_wrap','sh_boots','sh_snow','ac_ring']},
+ {id:'muxue_armor', n:'Muxue Armorsmith', icon:'🛡️', slot:['outfit','accessory'], open:() => G.ch >= 5, stock:['ar_leather','ar_robe','gl_leather','gl_wrap','sh_boots','sh_snow','ac_ring']},
  {id:'temple_weapons', n:'Ice Temple Weaponsmith', icon:'⚒️', slot:['weapon'], open:() => false, note:'The temple forge is sealed for now.', stock:[]},
- {id:'temple_armor', n:'Ice Temple Armorsmith', icon:'🛡️', slot:['outfit','gloves','shoes','accessory'], open:() => false, note:'The temple forge is sealed for now.', stock:[]},
+ {id:'temple_armor', n:'Ice Temple Armorsmith', icon:'🛡️', slot:['outfit','accessory'], open:() => false, note:'The temple forge is sealed for now.', stock:[]},
 ];
 function buyGear(smithId, id){
   const sm = SMITHS.find(s => s.id===smithId), g = GEAR[id];
@@ -104,8 +104,8 @@ const GEAR_START = {};   // filled below: hero -> [starter ids]
 Object.values(GEAR).filter(g => g.starter).forEach(g => (GEAR_START[g.who] = GEAR_START[g.who] || []).push(g.id));
 
 function GR(){
-  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}, v:3}; }
-  if(G.gear.v !== 3){ G.gear.v = 3; G.gear.eq = {}; Object.keys(G.gear.owned).forEach(id => { if(!GEAR[id]) delete G.gear.owned[id]; }); }   // starters were redesigned (author's equipment sheet)
+  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}, v:4}; }
+  if(G.gear.v !== 4){ G.gear.v = 4; G.gear.eq = {}; Object.keys(G.gear.owned).forEach(id => { if(!GEAR[id]) delete G.gear.owned[id]; }); }   // starters were redesigned (author's equipment sheet)
   Object.keys(GEAR_START).forEach(h => { if(!G.gear.eq[h]){ G.gear.eq[h] = {}; GEAR_START[h].forEach(id => { G.gear.owned[id] = true; G.gear.eq[h][GEAR[id].slot] = id; }); } });
   return G.gear;
 }

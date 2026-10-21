@@ -6,34 +6,35 @@
    Art: assets/gear/<id>.webp (square icon); a missing file falls back to the emoji. Chapters award gear through CH_GEAR (journal.js).
    ===================================================================== */
 const GEAR_SLOTS = [['outfit','Clothing / Armour','👘'],['weapon','Weapon / Tool','⚔️'],['accessory','Accessory','📿'],['book','Book','📖']];   // the Book slot only shows for heroes who have book gear (Xining)
-const WTYPE = {one:'Single-handed', two:'Two-handed', dual:'Dual blades', tool:'Tool'};
+const WTYPE = {one:'Single-handed', two:'Two-handed', dual:'Dual blades', tool:'Tool', focus:'Focus'};
 const GEAR_TIERS = [null, {gold:60, mats:{ice_crystal:3}}, {gold:140, mats:{ice_crystal:6, rift_shard:3}}];   // cost to reach tier 1 and tier 2; +30% stats per tier
 const G_ = (id,n,slot,icon,who,stats,desc,extra) => Object.assign({id,n,slot,icon,who,stats,desc}, extra||{});
 const GEAR = {};
 [
- /* ---- starting equipment (author's Party Equipment Sheet, "before the Ice Temple"): three pieces each ---- */
- G_('crimson_robe','Crimson Robe','outfit','👘','xiyu',{hp:4,def:2,mag:1},'The robe she wears on the island.',{starter:true}),
- G_('moonjade_hairpin','Moonjade Hairpin','accessory','🌙','xiyu',{mag:2,mp:4},'A hairpin of moonjade.',{starter:true}),
- G_('ice_dagger','Ice Dagger','weapon','🗡️','xiyu',{atk:2,mag:2},'A small dagger of old ice.',{starter:true,wt:'one'}),
- G_('travelers_sword','Traveler\'s Sword','weapon','🗡️','dongyue',{atk:3,mag:1},'A reliable blade that also carries his healing.',{starter:true,wt:'one'}),
- G_('dragon_knot','Dragon Knot','accessory','🪢','dongyue',{hp:4,def:1},'A knotted charm.',{starter:true}),
- G_('explorers_cloak','Explorer\'s Cloak','outfit','🧥','dongyue',{def:2,hp:4},'A blue cloak for the road.',{starter:true}),
- G_('binding_ropes','Binding Ropes','weapon','➰','cangyuan',{mag:2,spd:1},'Ropes he binds with spirit thread.',{starter:true,wt:'tool'}),
- G_('talisman_pouch','Talisman Pouch','accessory','👝','cangyuan',{mp:5,mag:1},'A pouch of prepared talismans.',{starter:true}),
- G_('dark_robe','Dark Robe','outfit','🥼','cangyuan',{def:1,mag:1},'A dark robe with red thread in the hem.',{starter:true}),
- G_('healers_satchel','Healer\'s Satchel','weapon','🧰','xining',{mp:4,mag:1},'Her satchel of remedies.',{starter:true,wt:'tool'}),
- G_('basic_medical_texts','Basic Medical Texts','book','📘','xining',{mag:2,mp:3},'Her trusted reference.',{starter:true}),
- G_('herbal_set','Herbal Set','accessory','🌿','xining',{hp:4,mp:2},'Pressed herbs and a small mortar.',{starter:true}),
+ /* ---- starting equipment (author's Starting Equipment sheet, Volume 4): outfit, weapon/focus/tool, accessory each; icons assets/gear/<id>.webp ---- */
+ G_('crimson_silk_robe','Crimson Silk Robe','outfit','👘','xiyu',{hp:4,def:2,mag:1},'The robe she wears on the island.',{starter:true}),
+ G_('moonshadow_hairpin','Moonshadow Hairpin','weapon','🌙','xiyu',{mag:3,mp:4},'A focus aid: a hairpin that steadies her spells.',{starter:true,wt:'focus'}),
+ G_('jade_charm','Jade Charm','accessory','🔴','xiyu',{hp:4,mag:1},'A basic jade charm.',{starter:true}),
+ G_('travellers_sword','Traveller\'s Sword','weapon','🗡️','dongyue',{atk:3,mag:1},'A reliable blade that also carries his healing.',{starter:true,wt:'one'}),
+ G_('azure_travellers_robe','Azure Traveller\'s Robe','outfit','🥼','dongyue',{def:2,hp:4},'An azure robe for the road.',{starter:true}),
+ G_('travellers_jade','Traveller\'s Jade','accessory','🔵','dongyue',{hp:4,def:1},'A general-purpose jade pendant.',{starter:true}),
+ G_('binding_gauntlets','Binding Gauntlets','weapon','🧤','cangyuan',{mag:2,spd:1},'Gauntlets he binds with spirit thread.',{starter:true,wt:'tool'}),
+ G_('darkwood_robe','Darkwood Robe','outfit','🥼','cangyuan',{def:1,mag:1},'A dark robe with red thread in the hem.',{starter:true}),
+ G_('spirit_beads','Spirit Beads','accessory','📿','cangyuan',{mp:5,mag:1},'Beads that hold a little spirit energy.',{starter:true}),
+ G_('healers_needle_set','Healer\'s Needle Set','weapon','💉','xining',{mp:4,mag:1},'Silver needles for treatment and, if needed, defence.',{starter:true,wt:'tool'}),
  G_('robe_xining','Physician\'s Robe','outfit','👘','xining',{mp:3,def:1,mag:1},'Pale robes with deep sleeves.',{starter:true}),
- G_('training_staff','Training Staff','weapon','🪵','xiaotian',{atk:3},'A plain training staff.',{starter:true,wt:'two'}),
- G_('leather_bracers','Leather Bracers','accessory','🟤','xiaotian',{def:1,hp:3},'Plain leather bracers.',{starter:true}),
- G_('travelers_garb','Traveler\'s Garb','outfit','🥋','xiaotian',{hp:4,def:2},'Hard-wearing travelling clothes.',{starter:true}),
+ G_('herbal_pouch','Herbal Pouch','accessory','🌿','xining',{hp:4,mp:2},'Pressed herbs in a small pouch.',{starter:true}),
+ G_('basic_medical_texts','Basic Medical Texts','book','📘','xining',{mag:2,mp:3},'Her trusted reference (no art on the sheet yet).',{starter:true}),
+ G_('practice_blade','Practice Blade','weapon','🗡️','xiaotian',{atk:3},'A plain practice blade.',{starter:true,wt:'one'}),
+ G_('journeymans_outfit','Journeyman\'s Outfit','outfit','🥋','xiaotian',{hp:4,def:2},'Hard-wearing travelling clothes.',{starter:true}),
+ G_('wooden_talisman','Wooden Talisman','accessory','🟫','xiaotian',{def:1,hp:3},'A carved wooden talisman.',{starter:true}),
  G_('deckhands_blade','Deckhand\'s Blade','weapon','🗡️','yaxing',{atk:3,spd:1},'A plain sailor\'s blade.',{starter:true,wt:'one'}),
- G_('seafarers_charm','Seafarer\'s Charm','accessory','🧭','yaxing',{spd:1,hp:3},'A sailor\'s charm.',{starter:true}),
- G_('simple_attire','Simple Attire','outfit','🥋','yaxing',{def:1,spd:1},'Plain clothes.',{starter:true}),
- G_('lockpicks','Lockpicks','weapon','🗝️','hoko',{atk:1,spd:2},'Fine picks, better than a sword for his work.',{starter:true,wt:'tool'}),
- G_('explorers_pouch','Explorer\'s Pouch','accessory','👝','hoko',{mp:4},'A pouch of small tools.',{starter:true}),
- G_('warm_cloak','Warm Cloak','outfit','🧥','hoko',{def:2,hp:3},'A warm travelling cloak.',{starter:true}),
+ G_('seafarer_outfit','Seafarer Outfit','outfit','🥋','yaxing',{def:1,spd:1},'A seafarer\'s clothes.',{starter:true}),
+ G_('broken_talisman','Broken Talisman','accessory','🪧','yaxing',{spd:1,hp:3},'A cracked talisman he still keeps.',{starter:true}),
+ G_('explorers_knife','Explorer\'s Knife','weapon','🔪','hoko',{atk:2,spd:2},'A knife for rope, ice and locks.',{starter:true,wt:'one'}),
+ G_('fur_mantle','Fur Mantle','outfit','🧥','hoko',{def:2,hp:3},'A warm fur mantle.',{starter:true}),
+ G_('lockpick_set','Lockpick Set','accessory','🗝️','hoko',{mp:4,spd:1},'A utility accessory: fine picks.',{starter:true}),
+ /* ---- starting equipment (author's Party Equipment Sheet, "before the Ice Temple"): three pieces each ---- */
  G_('armor_suliechen','Slayer\'s Coat','outfit','🥋','suliechen',{hp:4,def:2},'A long coat with sewn-in talisman pockets.',{starter:true}),
  G_('w_suliechen','Frost Saber','weapon','🗡️','suliechen',{atk:3,mag:1},'A saber that leaves a trace of cold.',{starter:true,wt:'one'}),
  /* ---- Treasure Vault upgrades (hidden vault behind the Ice Temple library; Hoko picks the locks) ---- */
@@ -104,8 +105,8 @@ const GEAR_START = {};   // filled below: hero -> [starter ids]
 Object.values(GEAR).filter(g => g.starter).forEach(g => (GEAR_START[g.who] = GEAR_START[g.who] || []).push(g.id));
 
 function GR(){
-  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}, v:4}; }
-  if(G.gear.v !== 4){ G.gear.v = 4; G.gear.eq = {}; Object.keys(G.gear.owned).forEach(id => { if(!GEAR[id]) delete G.gear.owned[id]; }); }   // starters were redesigned (author's equipment sheet)
+  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}, v:5}; }
+  if(G.gear.v !== 5){ G.gear.v = 5; G.gear.eq = {}; Object.keys(G.gear.owned).forEach(id => { if(!GEAR[id]) delete G.gear.owned[id]; }); }   // starters were redesigned (author's equipment sheet)
   Object.keys(GEAR_START).forEach(h => { if(!G.gear.eq[h]){ G.gear.eq[h] = {}; GEAR_START[h].forEach(id => { G.gear.owned[id] = true; G.gear.eq[h][GEAR[id].slot] = id; }); } });
   return G.gear;
 }

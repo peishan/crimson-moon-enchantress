@@ -28,3 +28,7 @@ Starting gear is now the author's three pieces each (ids double as icon names: d
 
 ## Slots reduced to the sheet (author)
 - **Three slots: Clothing / Armour, Weapon / Tool, Accessory**, plus a **Book** slot for Xining only (4 for her, 3 for everyone else). Gloves and Shoes slots are removed: the old gloves/boots pieces (Hand Wraps, Leather Gloves, Frostweave Gloves, boots, etc.) are now accessories. Saves are rebuilt once (gear version 4); purchases are kept.
+
+## Starting Equipment sheet (final) and gear art installed
+- Starters follow the author's second sheet (names changed): Xiyu Crimson Silk Robe + Moonshadow Hairpin (weapon slot, "focus") + Jade Charm · Dongyue Azure Traveller's Robe + Traveller's Sword + Traveller's Jade · Cangyuan Darkwood Robe + Binding Gauntlets + Spirit Beads · Xining Physician's Robe + Healer's Needle Set + Herbal Pouch (+ Basic Medical Texts in her Book slot; no art for it yet) · Xiao Tian Journeyman's Outfit + Practice Blade + Wooden Talisman · Ya'Xing Seafarer Outfit + Deckhand's Blade + Broken Talisman · Hoko Fur Mantle + Explorer's Knife + Lockpick Set (accessory). Su Liechen unchanged.
+- **Art:** 256x256 icons cropped from both sheets into `assets/gear/<id>.webp` (21 starters, the six vault pieces, Healer's Scripture). The character portraits on the sheets were ignored. Missing art: basic_medical_texts, outfit_yaxing_sky, generic shop and temple pieces, Su Liechen's gear, Healing Staff.

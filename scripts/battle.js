@@ -12,7 +12,8 @@ function mkAlly(id, persist){
   return { uid:id, id, ally:true, name:c.n, icon:c.icon, img:portrait(id), traits:[],
     hp:Math.max(hp,1), mhp:s.hp, mp, mmp:s.mp, atk:s.atk, mag:s.mag, def:s.def, spd:s.spd,
     st:{}, bf:[], state:null, used:{}, dead:false, guard:false, strain:0, treats:0,
-    heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0 };
+    heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0,
+    resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
 }
 function mkFoeUnit(key, lv, i){
   const u = Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
@@ -107,6 +108,7 @@ function strike(src, tgt, s, opts){
   raw -= eff(tgt,'def') * (magic ? .35 : .6);
   let d = Math.max(1, Math.round(raw));
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
+  if(tgt.ally){ const rs = magic ? tgt.resMagic : tgt.resPhys; if(rs) d = Math.max(1, Math.round(d*(1-rs))); }   // spell resistance / physical guard
   if(tgt.st.expose) d = Math.round(d*1.15);   // Physician's Insight
   if(tgt.st.layer) d = Math.round(d*.5);       // the shadow's outer layer
   if(src.id==='xiyu' && resLv()>0 && (tgt.st.shield || tgt.st.layer || tgt.st.link) && B.allies.some(a => a.id==='cangyuan' && !a.dead)) d = Math.round(d*(1 + .08*resLv()));   // Crimson transformation: she breaks what his weaving alone cannot
@@ -128,6 +130,8 @@ function applyFx(src, tgt, fx){
   switch(fx.k){
     case 'burn': case 'slow': case 'bind': case 'charm': case 'silence':
       if(tgt.ally && tgt.st.ward && Math.random()<.7){ blog('  '+tgt.name+' is protected by Still Waters.','good'); return; }
+      if(tgt.ally && fx.k==='slow' && tgt.noSlow){ blog('  '+tgt.name+' holds steady.','good'); return; }
+      if(tgt.ally && tgt.resMagic && (fx.k==='silence'||fx.k==='charm') && Math.random() < tgt.resMagic*2){ blog('  '+tgt.name+' resists the spell.','good'); return; }
       const th = (tgt.st.thread && tgt.st.thread.n) || 0;
       if(tgt.boss && (fx.k==='bind'||fx.k==='charm') && Math.random() < Math.max(.1, .5 - .15*th)){ blog('  '+tgt.name+' resists!'); return; }
       if(tgt.st.link && !fx.spread){ alive(B.foes).filter(o => o!==tgt && o.st.link && Math.random()<.5).forEach(o => { blog('  the link carries it to '+o.name+'.'); applyFx(src, o, Object.assign({}, fx, {spread:true})); }); }

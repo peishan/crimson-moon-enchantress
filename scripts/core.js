@@ -184,6 +184,7 @@ function statsOf(id){
   const c = CHARACTERS[id], lv = U(id).lv, bm = bondMult(id), out = {};
   STATS.forEach(s => { out[s] = Math.round((c.base[s] + c.grow[s]*(lv-1)) * bm); });
   if(id==='xiyu'){ const L = attuneLv(); out.mag = Math.round(out.mag*(1+.02*L)); out.mp = Math.round(out.mp*(1+.03*L)); }
+  if(typeof gearStats === 'function'){ const gs = gearStats(id); Object.keys(gs).forEach(k => out[k] = Math.max(1, out[k] + gs[k])); }   // equipment (equip.js)
   return out;
 }
 function gainXp(amount, ids){
@@ -217,7 +218,7 @@ function reqMet(id, r){
   if(r.flag && !G.flags[r.flag]) return false;
   return true;
 }
-const skillsOf = id => CHARACTERS[id].skills.map(s => Object.assign({}, s, { owner:id, ok:reqMet(id,s.req), why:reqText(s.req) }));
+const skillsOf = id => CHARACTERS[id].skills.concat(typeof gearSkills === 'function' ? gearSkills(id) : []).map(s => Object.assign({}, s, { owner:id, ok:reqMet(id,s.req), why:reqText(s.req) }));
 
 /* ---------- bond (with Xiyu) ---------- */
 function bondLevel(id){
@@ -263,6 +264,7 @@ const yxResting = () => !!(G && G.away && G.away.yaxing && G.yxRest !== undefine
 function yxCheck(){
   if(G.away && G.away.yaxing && G.yxRest !== undefined && G.day > G.yxRest){
     delete G.away.yaxing; G.flags.yaxing_rejoined = true;
+    if(typeof giveGear === 'function'){ giveGear('outfit_yaxing_sky'); giveGear('skyshard'); }
     if(G.party.includes('yaxing') && !G.active.includes('yaxing') && G.active.length < activeSlots()) G.active.push('yaxing');
     return true; }
   return false;

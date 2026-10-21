@@ -47,6 +47,7 @@ function completeChapter(n){
   setHooks(n);
   relStory(n);
   enforceParty();
+  giveChapterGear(n).forEach(m => msgs.push(m));
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
@@ -68,6 +69,7 @@ function applyStoryStates(n){
   Object.keys(CH_AWAY[n]||{}).forEach(id => { G.away[id] = CH_AWAY[n][id]; G.active = G.active.filter(x => x!==id); msgs.push('⚓ '+CHARACTERS[id].n+' stays behind: '+CH_AWAY[n][id]); });
   return msgs;
 }
+const CH_GEAR = { 119:['wayfinders_key'], 122:['bracers_xiaotian','frostweave_gloves','temple_boots','warding_charm'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
 const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
 /* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
 function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
@@ -76,6 +78,7 @@ function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(
 function devSetChapter(n){
   G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
+  for(let i=1;i<=n;i++) giveChapterGear(i, true);
   if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
   G.ch = (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : n;
   enforceParty();

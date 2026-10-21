@@ -3462,44 +3462,9 @@ const HOOKS = {
 ],
 "99": [
 {
-"id": "listed_objects_missing_from_repository",
-"d": "Objects listed in the old inventory are gone",
+"id": "xiao_tian_wishes_he_could_remember_more",
+"d": "Xiao Tian sometimes wishes he could remember more; the party tells him he is not a puzzle to be solved and that what he keeps to himself is his choice",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "visitor_after_abandonment_unproven",
-"d": "Someone may have returned after the repository was abandoned: they may have taken something, or searched for something already missing (not proven)",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_refuses_to_be_a_puzzle",
-"d": "Xiao Tian: \"I don't want to become a puzzle you solve\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "party_follows_xiao_tians_lead",
-"d": "Xiyu: \"You decide what we investigate, and when we stop\"",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_memory_weight_of_a_sword",
-"d": "At the threshold: the weight of a sword in his hand; no face, no name",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "inner_door_left_untouched",
-"d": "They documented the missing objects and left the sealed inner door untouched",
-"t": "state",
 "p": false,
 "s": "art"
 }
@@ -3507,65 +3472,23 @@ const HOOKS = {
 "100": [
 {
 "id": "xiao_tian_memory_again_keep_your_stance",
-"d": "Xiao Tian recalls a man's voice, firm yet patient: \"Again. Keep your stance.\"; the face blurred",
+"d": "Xiao Tian recalls a hand adjusting his stance and a firm voice: \"Again... Keep your stance. Let your breath settle.\"",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_someone_taught_him_the_sword",
-"d": "Someone taught him to use a sword; forgetting feels like letting him down",
-"t": "state",
 "p": false,
 "s": "art"
 },
 {
 "id": "xiao_tian_name_feng_hovers",
-"d": "The name \"Feng…\" hovers on his tongue, clear but out of reach: it felt his, but did not fully return",
+"d": "The name \"Feng...\" lingers on Xiao Tian's tongue, clear and out of reach; it feels undeniably his",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_will_say_when_ready",
-"d": "Xiao Tian: \"Next time, let me tell you when I'm ready.\"",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "101": [
 {
-"id": "camp_by_the_mountain_path",
-"d": "The party camps by the mountain path at night",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "helping_is_not_carrying_everything",
-"d": "Xining tells Dongyue that helping someone does not mean carrying everything for them; \"Someone has to.\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "missing_objects_proof_of_loss_not_of_who",
-"d": "Proof that something is missing, not of who took it",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "stop_pretending_uncertainty_is_an_answer",
-"d": "Xiyu: \"Then we stop pretending uncertainty is an answer\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "old_storehouse_with_duplicate_records",
-"d": "A note mentions an old storehouse where duplicate records were kept",
+"id": "xiao_tian_decides_not_to_run_from_his_past",
+"d": "Xiao Tian has decided not to run from his past; when the time comes he will be ready to know the truth",
 "t": "state",
 "p": false,
 "s": "art"

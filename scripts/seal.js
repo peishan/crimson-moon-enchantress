@@ -149,7 +149,6 @@ const CLUES = [   // [hook id, category, comic, text]
   ['chamber_flow_steadied', 'ruins', '038', 'The flow beneath the chamber has steadied (the chamber did not open)'],
   ['redirected_flow_has_a_destination', 'ruins', '038', 'The redirected flow continues toward a destination not yet found'],
   ['second_symbol_seen_beneath_sealed_chamber', 'ruins', '038', 'A symbol appeared briefly beneath the sealed chamber, different from the ruins\' markings but aligned with the same flow'],
-  ['listed_objects_missing_from_repository', 'trail', 'V3 021', 'Objects listed in the old inventory are gone; a visitor after abandonment is not proven (they may have taken something, or searched for something already missing)'],
   ['records_kept_apart_from_main_collection', 'trail', 'V3 024', 'An old storehouse kept duplicate records apart from the main collection; several entries are crossed out, one noting a visitor long after the repository closed (name incomplete)'],
   ['clerk_visited_after_estate_closed', 'trail', 'V3 025', 'The former clerk was visited years after the estate closed and made to hand over copies of certain records: no threats, only a clear message that some things were safer forgotten'],
   ['clerk_kept_a_scrap_of_a_seal', 'trail', 'V3 025', 'The clerk kept a scrap showing part of a seal impression (a frightened witness, not a guilty one)'],

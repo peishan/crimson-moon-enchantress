@@ -80,7 +80,7 @@ function rSheet(id){
    <div class="sm" style="margin-top:6px">${gateLine(id)} · Elements: ${c.elements}</div>
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
-   ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div></div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
+   ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div>${id==='yaxing'&&yxResting()?`<div class="sm" style="margin-top:4px">He needs a day's rest before he can travel (a game day: it passes with the next chapter, or now).</div><button class="pri" onclick="act(()=>yxRest())">🛏️ Let him rest a day</button>`:''}</div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
    ${id==='xiyu'?curseHtml()+bondsHtml():''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>
@@ -203,6 +203,7 @@ const CAST_SHEETS = [
   {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:203},
   {id:'suliechen', n:'Su Liechen · Guest', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:204},
+  {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
 function rCast(){

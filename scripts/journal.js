@@ -49,6 +49,8 @@ function completeChapter(n){
   enforceParty();
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
+  if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
+  if(n !== YX_REST_CH && yxCheck()) msgs.push('🛏️ After a day of rest at the Ice Temple, Ya\'Xing rejoins the party in the outfit the commanders gave him.');
   msgs.push('Story XP +'+c.sxp);
   gainXp(c.sxp, G.party).forEach(m => msgs.push(m));
   if(n === V3_END_CH) G.ch = V3_LAST_OLD_CH;   // the revised Volume 3 ends at chapter 107; chapters 108-116 were removed
@@ -74,6 +76,7 @@ function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(
 function devSetChapter(n){
   G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
+  if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
   G.ch = (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : n;
   enforceParty();
   if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash

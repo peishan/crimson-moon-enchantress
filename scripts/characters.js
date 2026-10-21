@@ -69,6 +69,12 @@ const CHARACTERS = {
    {id:'survival_instinct',n:'Survival Instinct',icon:'🧭',mp:11,kind:'support',tgt:'allies',fx:[{k:'regen',v:.05,d:3},{k:'cleanse'}],req:{lvl:12},sig:true,desc:'Practical know-how: the party recovers steadily and shakes off ailments.'},
    {id:'arrow_storm',n:'Arrow Storm',icon:'🌧️',mp:24,kind:'phys',tgt:'foes',pow:1.9,req:{lvl:28},desc:'PLACEHOLDER (gameplay). A storm of arrows and knives on every enemy.'},
    {id:'knife_volley',n:'Knife Volley',icon:'🔪',mp:10,kind:'phys',tgt:'foes',pow:1.1,req:{lvl:16},desc:'A fan of throwing knives that hits every enemy.'},
+   /* From the author's new sheet (he rejoins in a new outfit after the Ice Temple rest): a sword adept with new magical skills; resilient from being a test subject */
+   {id:'swift_blade',n:'Swift Blade',icon:'🌀',mp:4,kind:'phys',tgt:'foe',pow:1.6,fx:[{k:'crit',d:1,self:true}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Agile sword strikes with high mobility: strong single-target damage and a chance to follow up.'},
+   {id:'flowing_momentum',n:'Flowing Momentum',icon:'💨',mp:7,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.35,d:3},{k:'buff',stat:'atk',m:1.2,d:3}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Momentum and positioning: faster and hitting harder for a few turns.'},
+   {id:'mark_of_insight',n:'Mark of Insight',icon:'🪷',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3},{k:'strip'}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Identifies weak points and exposes vulnerabilities: effective against guarded or layered targets.'},
+   {id:'sky_step',n:'Sky Step',icon:'🕊️',mp:6,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.5,d:2},{k:'crit',d:2}],req:{flag:'yaxing_rejoined'},desc:'Enhanced movement. (Reaching high places and crossing gaps for exploration routes is not built yet.)'},
+   {id:'enduring_will',n:'Enduring Will',icon:'🧿',mp:10,kind:'support',tgt:'self',fx:[{k:'cleanse'},{k:'ward',d:4},{k:'buff',stat:'def',m:1.2,d:4}],req:{flag:'yaxing_rejoined'},sig:true,desc:'High resilience, from what was done to him: clears debuffs, resists new ones for a few turns and keeps him fighting despite injuries.'},
   ]},
  xiaotian:{
   n:'Xiao Tian', zh:'萧天', icon:'🍃', title:'The Silent Blade',
@@ -153,5 +159,21 @@ const CHARACTERS = {
    {id:'subdue_not_slay',n:'Subdue, Not Slay',icon:'🕸️',mp:14,kind:'support',tgt:'foe',hpBelow:.35,fx:[{k:'subdue'}],req:{lvl:1},sig:true,desc:'UNIQUE. Subdues a weakened enemy instead of killing it: it is captured alive and leaves the fight (bosses cannot be captured, only bound). Captured foes give their drops twice and +25% XP when the battle is won. Only usable on a foe at 35% HP or below.'},
   ],
   passive:'Restraint: the bind and slow effects he applies last one turn longer. He does not take the killing blow if he can avoid it.'},
+ /* ===== VOLUME 4 GUEST: HOKO (author: Scout / Explorer). A western explorer of Luiterra, freed in Volume 1; guides the party through the Ice Temple. Temporary guest (extra seat, GUESTS in core.js). ===== */
+ hoko:{
+  vol2:true, guest:true, n:'Hoko', zh:'', icon:'🧭', title:'Explorer of Luiterra',
+  cls:'Scout / Explorer (Guest)', role:'Utility · Support · Mid-defence', combat:'Scout and mechanism reader',
+  elements:'Routes · Mechanisms · Openings',
+  identity:'A blond western explorer who knows the Ice Temple\'s corridors from an earlier visit. Relaxed and dry-humoured, he reads routes and old mechanisms, spots weak points and creates the opening for others to strike. He is a guide, not a permanent companion.',
+  quote:'I\'ll create an opening. When it turns, attack the core.',
+  base:{hp:82,mp:36,atk:10,mag:8,def:10,spd:13}, grow:{hp:8.4,mp:3.2,atk:1.1,mag:1.0,def:1.2,spd:1.0},
+  skills:[
+   {id:'hoko_strike',n:'Explorer\'s Strike',icon:'🗡️',mp:0,kind:'phys',tgt:'foe',pow:1.0,req:{lvl:1},sig:true,desc:'A practical strike from a traveller used to rough roads.'},
+   {id:'mark_weak_point',n:'Mark the Weak Point',icon:'🎯',mp:6,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:1},sig:true,desc:'Reads a foe\'s structure and marks where it is weak: it takes 15% more damage for 3 turns.'},
+   {id:'create_opening',n:'Create an Opening',icon:'🧭',mp:9,kind:'phys',tgt:'foe',pow:.6,fx:[{k:'slow',d:2},{k:'strip'}],req:{lvl:1},sig:true,desc:'He draws the foe\'s guard open: it is slowed and loses its barrier and buffs.'},
+   {id:'scouts_lead',n:'Scout\'s Lead',icon:'🌬️',mp:11,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'spd',m:1.2,d:3},{k:'crit',d:2}],req:{lvl:1},desc:'He calls the route: the party moves faster and sees openings (crits) for a couple of turns.'},
+   {id:'read_mechanism',n:'Read the Mechanism',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},desc:'Reads a construct or trap: reveals it and strips its barrier. (Out of battle it opens nothing yet.)'},
+  ],
+  passive:'Knows the Way: he is always the first to notice a changed corridor. Temporary guest: leaves when the Ice Temple arc ends.'},
 };
 const ROSTER = Object.keys(CHARACTERS);

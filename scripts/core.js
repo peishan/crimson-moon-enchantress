@@ -8,8 +8,8 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
-const JOIN_CH  = { suliechen:204, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
-const INTRO_CH = { suliechen:204, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
+const JOIN_CH  = { hoko:119, suliechen:204, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
+const INTRO_CH = { hoko:119, suliechen:204, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
 const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
@@ -65,7 +65,7 @@ function portraitVariant(id){
   if(!G || !G.hooks) return '';
   if(id==='xiyu') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : hook('xiyu_veil_removed') ? '_unveiled' : '';
   if(id==='dongyue') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : '';
-  if(id==='yaxing') return hook('ya_xing_bull_demon_injuries_revealed') ? '_injured' : '';
+  if(id==='yaxing') return G.flags.yaxing_rejoined ? '_new' : hook('ya_xing_bull_demon_injuries_revealed') ? '_injured' : '';
   return '';
 }
 const portrait = id => 'assets/party/'+id+portraitVariant(id)+'.webp';
@@ -92,7 +92,7 @@ const XP_TABLES = {
   support:{a:44, b:24, c:1.3},     // Dongyue: battle cleric
   scholar:{a:46, b:25, c:1.35},    // Yan: ancient sage
 };
-const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
+const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', hoko:'ranger', suliechen:'fighter', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
 const xpToNext = (lv, id) => { const t = XP_TABLES[XP_CLASS[id] || 'standard']; return Math.round(t.a + lv*t.b + lv*lv*t.c); };
 /* Story XP for chapter n on the standard curve, so the story-only level after n chapters is 1 + n*STORY_PACE (continuous cumulative curve). */
 const cumXp = L => 40*(L-1) + 11*(L-1)*L + .2*(L-1)*L*(2*L-1);
@@ -243,7 +243,7 @@ const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, 
 const ARC_REQUIRED = [];   // {id:'xiaotian', from:chapter, to:chapter, why:'text'}: e.g. an arc that cannot happen without him
 const canonLocked = () => G.ch >= CANON_LOCK_CH && CANON_PARTY.every(id => G.party.includes(id));
 /* GUESTS: temporary story-required companions. They take an EXTRA seat (not a flex seat) and are fielded while their window is open (from = the chapter whose completion recruits them; to = last chapter of the arc, Infinity until the author sets it). */
-const GUESTS = { suliechen:{from:204, to:Infinity, why:'Guest for the Volume 6 demon-capture arc.'} };
+const GUESTS = { hoko:{from:119, to:Infinity, why:'Guest guide through the Ice Temple (until the arc ends).'}, suliechen:{from:204, to:Infinity, why:'Guest for the Volume 6 demon-capture arc.'} };
 const guestHere = id => !!GUESTS[id] && G.ch >= GUESTS[id].from && G.ch <= GUESTS[id].to && G.party.includes(id);
 const guestsHere = () => Object.keys(GUESTS).filter(guestHere).length;
 const flexSeats = () => G.ch >= VOL4_START ? FLEX_V4 : FLEX_SEATS;   // Volume 4 on: 4 protagonists + Xiao Tian + Ya'Xing = 6 seats (author); guests such as Hoko take an extra seat
@@ -257,7 +257,19 @@ function lockReason(id){
   return r ? (r.why || 'This arc needs them present.') : '';
 }
 const partyLocked = id => !!lockReason(id);
-function enforceParty(){   // keep every locked hero fielded (and drop un-locked heroes if the seats run short)
+/* Ya'Xing rejoins after one GAME day of rest (story time, never real time): the day after the chapter where he is found (YX_REST_CH), or at once via the Party screen's rest button. */
+const YX_REST_CH = 140;
+const yxResting = () => !!(G && G.away && G.away.yaxing && G.yxRest !== undefined && G.day <= G.yxRest);
+function yxCheck(){
+  if(G.away && G.away.yaxing && G.yxRest !== undefined && G.day > G.yxRest){
+    delete G.away.yaxing; G.flags.yaxing_rejoined = true;
+    if(G.party.includes('yaxing') && !G.active.includes('yaxing') && G.active.length < activeSlots()) G.active.push('yaxing');
+    return true; }
+  return false;
+}
+function yxRest(){ if(!yxResting()) return []; G.day++; save(); return yxCheck() ? ['🛏️ A day of rest passes at the Ice Temple. Ya\'Xing, in the outfit the commanders gave him, rejoins the party.'] : []; }
+function enforceParty(){
+  if(G.away) yxCheck();   // keep every locked hero fielded (and drop un-locked heroes if the seats run short)
   G.active = G.active.filter(id => G.party.includes(id) && !isAway(id));
   G.party.filter(id => partyLocked(id) && !isAway(id) && !G.active.includes(id)).forEach(id => {
     if(G.active.length >= activeSlots()){ const out = G.active.slice().reverse().find(x => !partyLocked(x)); if(out) G.active.splice(G.active.indexOf(out), 1); else return; }

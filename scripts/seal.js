@@ -149,13 +149,7 @@ const CLUES = [   // [hook id, category, comic, text]
   ['chamber_flow_steadied', 'ruins', '038', 'The flow beneath the chamber has steadied (the chamber did not open)'],
   ['redirected_flow_has_a_destination', 'ruins', '038', 'The redirected flow continues toward a destination not yet found'],
   ['second_symbol_seen_beneath_sealed_chamber', 'ruins', '038', 'A symbol appeared briefly beneath the sealed chamber, different from the ruins\' markings but aligned with the same flow'],
-  ['footprints_and_marker_found', 'yan', 'V4 003', '🍃 Fresh footprints beside a carved stone marker on the mountain path: someone passed recently'],
-  ['xiao_tian_senses_the_wind_gone_quiet', 'yan', 'V4 005', '🍃 Xiao Tian: "Something changed. Even the wind has gone quiet" before the threshold'],
   ['yan_letter_do_not_follow', 'yan', 'V4 001', 'Yan left a letter and went to the Ice Temple alone: "Do not follow me"; he has kept much from Xiyu and will answer her questions if he returns'],
-  ['faint_trace_energy_fading', 'yan', 'V4 003', 'A fading trace of energy on the mountain path was left carefully, not to leave a clear trail but not erased completely; it does not prove whether Yan passed through or left a clue'],
-  ['yan_was_already_fighting_something', 'yan', 'V4 004', 'When Xiyu found Yan at the sanctuary he was already fighting something far older; he never told her what, or what would happen if he failed'],
-  ['concealment_formation_old_but_active', 'yan', 'V4 005', 'A concealment formation at a stone threshold, old but active; Xiyu feels the same pulse as at the sanctuary (not proof of the same force)'],
-  ['ice_temple_concealment_still_functioning', 'yan', 'V4 006', 'The Ice Temple\'s concealment still works: its gates stand open but the temple was never truly left unprotected'],
   ['guardians_say_yan_returned_to_where_he_tried_to_escape', 'temple', 'V4 007', 'The guardians know Yan returned to the place he once tried to escape, but not everything he intends to do; some duties cannot be abandoned because their master has left'],
   ['guardians_have_guarded_for_two_thousand_years', 'temple', 'V4 008', 'The guardians have guarded the temple for two thousand years and were told never to abandon their duty; a heavy door keeps the inner chambers closed to the party'],
   ['temple_records_missing_or_sealed_pages', 'temple', 'V4 008', 'The records the guardians allow show fragments of history, but many pages are missing or sealed'],
@@ -265,7 +259,6 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['transmission_gap_found', 'Who receives the signals, and what happened in the missing interval?'],
   ['redirected_flow_has_a_destination', 'Where is the redirected flow going, and why?'],
   ['yan_letter_do_not_follow', 'What must Yan face at the Ice Temple, and why alone?'],
-  ['yan_was_already_fighting_something', 'What was Yan fighting at the sanctuary, and what happens if he fails?'],
   ['fragment_central_and_upper_sections_missing', 'What were the disturbances the original formation was built to contain?'],
   ['reversed_channel_carries_a_signal', 'What is the reversed channel signalling, and to whom?'],
   ['second_layer_beneath_the_formation', 'Who added the second layer, and was it the keeper or someone else?'],
@@ -288,6 +281,7 @@ const QUESTIONS = [   // [shown once this hook exists, question]; stays listed a
   ['senior_commander_withholds_something', 'What is the senior commander not telling them about Ya\'Xing\'s recovery?'],
   ['heal_or_suppress_unknown', 'Was the formation under Ya\'Xing\'s room meant to heal him, or to suppress him?'],
   ['something_beneath_responded', 'What responded beneath the guest room?'],
+  ['xiyu_symbol_feels_familiar', 'Why does the symbol beyond the guardian feel familiar to Xiyu?'],
 ];
 /* Stages of The Broken Ward Network. done/active read story hooks. The last two stay open at the end of Volume 2. */
 const STAGES = [

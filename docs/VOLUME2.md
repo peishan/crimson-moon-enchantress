@@ -256,3 +256,10 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 - Xiao Tian's story bond points moved: +10 at 105, +20 at 107. New Xiao Tian fragments (A Stance Remembered, The Correction Not the Man, The First Clean Movement, More Than a Name).
 - Fixed: five Volume 4 open questions had been stored in the clue list instead of the question list.
 - Author: Volume 4 is next to be rebuilt. If Volume 4 is shortened, its chapter numbers (and Volume 5 and later) can be renumbered at that point.
+
+## Volume 4 rebuild begins (author): comics 002-006 replaced (chapters 118-122)
+
+- New: 002 The Changed Guard (the guards ask for confirmation; Yan has not returned; the four former commanders are away; an injured young man is being treated) · 003 The Injured Stranger (the masked guard, Hoko, Ya'Xing seen near the eastern wing) · 004 The Path Beneath the Ice · 005 The Corridor That Moved · 006 The First Guardian (**battle**: Ice Temple Guardian, a new boss unlike the Volume 3 Estate Guardian; a symbol feels familiar to Xiyu).
+- Comic 001 (chapter 117) is unchanged. The old trail, camp, hidden threshold and stairway chapters are gone, with their hooks and clues; no new journal clues were added (one open question: the symbol).
+- Chapters 123-168 are still the old Volume 4 content. They conflict with the new opening: Hoko and the temple guards are now introduced here, and Ya'Xing is already reported injured in the temple, so the old 007-028 (Those Who Remained, the pillar mechanism, finding Ya'Xing) needs the author's redraft.
+- **Volume 4 cast sheet replaced** with the author's five-character sheet (adds Xiao Tian, "later revealed as Feng Xia"). Its class labels are flavour text that differ from the game's (Dongyue "Cursed Explorer / Celestial Immortal", Xiao Tian "Young Disciple / Sword Adept", Xiyu "Witch / Eclipse Mage"); the game's class names are unchanged.

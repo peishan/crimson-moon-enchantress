@@ -51,6 +51,10 @@ const ENEMIES = {
   estate_guardian:{n:'Estate Guardian',icon:'🗿',boss:true,hp:460,atk:22,mag:6,def:16,spd:6,xp:220,gold:120,traits:['layered'],
     moves:[{n:'Crushing Fist',pow:1.5},{n:'Defensive Pulse',pow:.8,all:true,fx:[{k:'slow',d:1}]},{n:'Core Slam',pow:1.7}],
     phases:[{at:.5,msg:'Exposed points glow: the guardian\'s plating cracks!',atk:1.2}],drops:[{id:'ice_crystal',chance:1},{id:'moonlit_tonic',chance:.5}],desc:'A massive defensive construct. Its outer plating halves damage until stripped; target the exposed points.'},
+  /* ---- Volume 4 revised (comic 006): the Ice Temple guardian. A different construct from the Volume 3 estate guardian: no plating, it channels frost through its core ---- */
+  ice_temple_guardian:{n:'Ice Temple Guardian',icon:'🧊',boss:true,hp:520,atk:21,mag:20,def:13,spd:8,xp:240,gold:130,traits:['magic'],
+    moves:[{n:'Glacial Halberd',pow:1.4},{n:'Frost Channel',pow:.9,spell:true,all:true,fx:[{k:'slow',d:2}]},{n:'Core Surge',pow:1.5,spell:true}],
+    phases:[{at:.5,msg:'Its core flares: the frost flow quickens!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient guardian of the Ice Temple whose strikes carry frost. Magic that breaks its flow works well.'},
   /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
   red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
     moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},

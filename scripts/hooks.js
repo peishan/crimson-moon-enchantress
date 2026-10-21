@@ -3594,15 +3594,22 @@ const HOOKS = {
 ],
 "118": [
 {
-"id": "party_prepares_for_the_ice_temple_journey",
-"d": "Xining prepares medicines and warm clothes and Xiao Tian readies weapons and supplies for a long, dangerous journey",
-"t": "event",
+"id": "yan_has_not_returned_to_the_ice_temple",
+"d": "Yan has not returned to the Ice Temple and has sent no recent word",
+"t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiyu_refuses_to_wait_in_uncertainty",
-"d": "Whatever Yan's reason, Xiyu refuses to wait in uncertainty and will find the truth with her own eyes",
+"id": "four_former_commanders_away_on_a_mission",
+"d": "The four former commanders left some time ago on an important mission and have not returned",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "injured_young_man_treated_in_the_temple",
+"d": "An injured young man, believed to be Ya'Xing, is being treated within the temple by a separate team; only the acting commanders know where",
 "t": "state",
 "p": false,
 "s": "art"
@@ -3610,103 +3617,47 @@ const HOOKS = {
 ],
 "119": [
 {
-"id": "party_sets_out_for_the_ice_temple",
-"d": "The group sets out at dawn on horseback; snow gathers along the mountain path",
+"id": "hoko_recovered_and_offers_to_help",
+"d": "Hoko has mostly recovered from the mountain wind and offers to guide the party to Ya'Xing's trail",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "footprints_and_marker_found",
-"d": "Xiao Tian finds fresh footprints beside a carved stone marker: someone passed recently",
+"id": "yaxing_seen_near_the_eastern_wing",
+"d": "Ya'Xing was seen near the eastern wing three days ago, heading toward a restricted section",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "faint_trace_energy_fading",
-"d": "A fading trace of energy was left carefully, not to leave a clear trail, but not erased completely",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "trail_does_not_prove_yan_passed",
-"d": "The trace gives a direction but does not prove whether Yan passed through or deliberately left a clue for them",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "120": [
 {
-"id": "xiyu_remembers_yan_at_the_seal",
-"d": "Xiyu remembers finding her father maintaining the ancient seal and the danger he tried to conceal",
+"id": "inner_corridors_shift_when_defences_awaken",
+"d": "The temple's inner corridors can shift when its defences awaken",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "dormant_mechanism_already_active",
+"d": "An ancient mechanism that was inactive on Hoko's earlier visit is already activated",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "yan_was_already_fighting_something",
-"d": "Yan was already fighting something far older when she found him at the sanctuary; he never told her what, or what would happen if he failed",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "yan_chose_to_go_alone",
-"d": "Yan chose to go to the Ice Temple alone",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiyu_wont_learn_it_by_waiting",
-"d": "Xiyu: \"Whatever he has been hiding, I won't learn it by waiting for him to return\"",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "121": [
 {
-"id": "xiao_tian_senses_the_wind_gone_quiet",
-"d": "Xiao Tian notices the change at the threshold: \"Even the wind has gone quiet\"",
+"id": "ward_stone_forced_not_worn",
+"d": "The ward stone is cracked: forced, not broken by time; someone forced the mechanism out of alignment",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "trail_leads_beyond_mountain_roads",
-"d": "By dusk the faint trail leads beyond the ordinary mountain roads to a stone threshold",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "concealment_formation_old_but_active",
-"d": "A concealment formation, old but still active; it cannot be opened without understanding what it was designed to hide",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiyu_feels_the_sanctuary_pulse_again",
-"d": "The stone's red markings glow and Xiyu remembers the feeling from the sanctuary (not proof that the same force lies beneath the mountain)",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "yan_came_this_way_or_wanted_to_be_found",
-"d": "Yan came this way, or wanted someone to find it",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "formation_conceals_a_passage_stairway",
-"d": "The formation conceals a passage: a stairway is revealed",
+"id": "corridor_seals_behind_the_party",
+"d": "The corridor twists out of Hoko's memory and seals behind the party",
 "t": "event",
 "p": false,
 "s": "art"
@@ -3714,30 +3665,16 @@ const HOOKS = {
 ],
 "122": [
 {
-"id": "ice_temple_stairway_climbed",
-"d": "The party climbs the hidden stairway; the Ice Temple grows larger with every step",
+"id": "ice_temple_guardian_defeated",
+"d": "The party defeats an ancient guardian whose strikes carry frost energy",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "ice_temple_gates_open_no_guards",
-"d": "At the summit a vast courtyard with open gates and no guards",
+"id": "xiyu_symbol_feels_familiar",
+"d": "A symbol on the wall beyond the guardian feels strangely familiar to Xiyu, as if it called to her",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "ice_temple_concealment_still_functioning",
-"d": "The temple's concealment is still functioning: it was never truly left unprotected",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiyu_wont_leave_without_answers",
-"d": "Xiyu: \"We aren't leaving without answers\"",
-"t": "state",
 "p": false,
 "s": "art"
 }

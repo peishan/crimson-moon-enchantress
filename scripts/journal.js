@@ -13,6 +13,7 @@ chapterOf(13).battle = [{key:'afflicting_imp'}];
 chapterOf(91).battle = [{key:'formation_manifestation'}];   // Volume 3 comic 013 (revised)
 chapterOf(92).battle = [{key:'formation_manifestation'},{key:'awakened_manifestation'}];   // comic 014
 chapterOf(95).battle = [{key:'estate_guardian'}];   // comic 017
+chapterOf(122).battle = [{key:'ice_temple_guardian'}];   // Volume 4 comic 006 (revised)
 chapterOf(59).quest = true;   // V2 comic 020: completed by finishing the Portrait Without a Face investigation (scripts/bounties.js)
 chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };

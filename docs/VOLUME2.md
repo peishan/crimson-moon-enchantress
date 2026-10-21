@@ -248,3 +248,11 @@ Two Wilds zones open at chapter 117, for a party staying in the Ice Temple:
 - Page note: the camp scenes use an Xiyu who is drawn with a dark-red hairstyle in 019/020; the 014 cast now shows Xining with green flowers and Cangyuan with a different outfit than 012-013 (outfits vary; not treated as errors).
 
 - **Volume 3 comics 021-023 revised (chapters 99-101):** "Not a Puzzle", "A Name Almost Remembered" (the name Feng), "The Things We Carry". Camp scenes on Xiao Tian's memory; the old repository/storehouse content for these chapters removed (old hooks/clues dropped, two new Xiao Tian fragments). Chapters 102-116 are still the old content until the author's redraft arrives.
+
+## Volume 3 revised and shortened: ends at comic 029 (chapter 107)
+
+- The author's revised Volume 3 is **29 comics** (was 38). Comics 024-029 installed as chapters 102-107: 024 A Stance Remembered · 025 The Weight of the Blade · 026 The First Clean Movement · 027 The Name He Can Carry (**Feng Xia recovered**) · 028 More Than a Name · 029 A Step Forward (end of Volume 3; the cover splash now fires at chapter 107).
+- **Old comics 030-038 (chapters 108-116) are removed**, along with their hooks, journal clues, Xiao Tian fragments and relationship nudges. Chapter numbers 108-116 stay reserved as hidden stubs (`removed:true`) so Volume 4 keeps its numbering (comic n = chapter 116+n). Completing chapter 107 jumps the story position to 116, so the next chapter is 117 (Volume 4 comic 001). Old saves sitting inside 108-115 are moved to 116 on load. The flags `xiao_tian_name_recovered` and `volume3_complete` now fire at 105 and 107.
+- Xiao Tian's story bond points moved: +10 at 105, +20 at 107. New Xiao Tian fragments (A Stance Remembered, The Correction Not the Man, The First Clean Movement, More Than a Name).
+- Fixed: five Volume 4 open questions had been stored in the clue list instead of the question list.
+- Author: Volume 4 is next to be rebuilt. If Volume 4 is shortened, its chapter numbers (and Volume 5 and later) can be renumbered at that point.

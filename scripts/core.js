@@ -24,7 +24,7 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 194, XC_START = 199, VOL6_START = 204, LAST_CHAPTER = 203;   // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 194, XC_START = 199, VOL6_START = 204, V3_END_CH = 107, V3_LAST_OLD_CH = 116, LAST_CHAPTER = 203;   // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
 const INTER_NAME = {yx:'Ya\'Xing Interlude', xc:'Xiyu & Cangyuan Interlude'};   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comics 001-038 = chapters 79-116
 const volOf = n => n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
@@ -50,6 +50,7 @@ function load(){
     const d = JSON.parse(localStorage.getItem(CFG.SAVE_KEY));
     if(!d) return false;
     G = Object.assign(newState(), d); G.temple = G.temple || {found:{}}; G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {}; G.hooks = G.hooks || {}; G.bounty = G.bounty || {red:{stage:0}, rep:{day:0, done:[]}, count:0}; G.quest = G.quest || {ward:{}}; G.rel = G.rel || {}; G.convo = G.convo || {}; G.xt = G.xt || {wins:0}; if(G.time === undefined) G.time = 8; G.herb = G.herb || {xp:0, known:{}, gathered:0, made:0}; G.shared = G.shared || {}; G.board = G.board || {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0}; G.resonance = G.resonance || 0; G.heat = G.heat || 0; G.attune = G.attune || 0; G.afterglow = G.afterglow || 0;
+    if(G.ch > V3_END_CH && G.ch < V3_LAST_OLD_CH) G.ch = V3_LAST_OLD_CH;   // old saves inside the removed chapters 108-116
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]); enforceParty();
     return true;

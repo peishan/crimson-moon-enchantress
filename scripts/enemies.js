@@ -42,6 +42,15 @@ const ENEMIES = {
     moves:[{n:'Horn Rush',pow:1.4},{n:'Stamp',pow:.8,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'frost_herb',chance:.3}],desc:'A heavy mountain ram that holds the high slopes above the temple.'},
   ridge_yeti:{n:'Ridge Yeti',icon:'🦍',elite:true,hp:200,atk:18,mag:0,def:11,spd:10,xp:88,gold:44,
     moves:[{n:'Maul',pow:1.3},{n:'Roar',pow:.7,all:true,fx:[{k:'slow',d:2}]}],drops:[{id:'wolf_pelt',chance:.6},{id:'ice_crystal',chance:.4}],desc:'A shaggy giant of the ridgeline: wary, strong and easy to avoid for anyone who does not go looking.'},
+  /* ---- Volume 3 revised arc (comics 013, 014, 017): the formation's manifestations and the estate guardian ---- */
+  formation_manifestation:{n:'Formation Manifestation',icon:'🐺',elite:true,hp:210,atk:17,mag:15,def:11,spd:11,xp:110,gold:55,traits:['magic'],
+    moves:[{n:'Spirit Maw',pow:1.3},{n:'Pillar Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.5}],desc:'A beast of spiritual energy raised by the disturbed formation. Magic works well on it.'},
+  awakened_manifestation:{n:'Awakened Manifestation',icon:'🐲',boss:true,hp:380,atk:19,mag:18,def:12,spd:10,xp:180,gold:100,traits:['magic'],
+    moves:[{n:'Spirit Maw',pow:1.3},{n:'Pillar Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Core Strike',pow:1.4,spell:true}],
+    phases:[{at:.5,msg:'The energy spreads: the manifestation surges!',atk:1.25}],drops:[{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'The formation\'s awakening, drawn to its own centre.'},
+  estate_guardian:{n:'Estate Guardian',icon:'🗿',boss:true,hp:460,atk:22,mag:6,def:16,spd:6,xp:220,gold:120,traits:['layered'],
+    moves:[{n:'Crushing Fist',pow:1.5},{n:'Defensive Pulse',pow:.8,all:true,fx:[{k:'slow',d:1}]},{n:'Core Slam',pow:1.7}],
+    phases:[{at:.5,msg:'Exposed points glow: the guardian\'s plating cracks!',atk:1.2}],drops:[{id:'ice_crystal',chance:1},{id:'moonlit_tonic',chance:.5}],desc:'A massive defensive construct. Its outer plating halves damage until stripped; target the exposed points.'},
   /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
   red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
     moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},

@@ -3283,103 +3283,61 @@ const HOOKS = {
 ],
 "90": [
 {
-"id": "channel_residue_responds",
-"d": "The channel's residue responds to the fragment or to the surrounding energy",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "residue_concentrated_along_cut",
-"d": "The residue is concentrated along the cut; the fragment may have interacted with the process, not caused it",
+"id": "formation_still_active_residue_structured",
+"d": "Spiritual residue at the standing stones is structured, as if part of a formation that is still active; something is maintaining it",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "metallic_residue_in_groove",
-"d": "A metallic residue is embedded in the groove",
+"id": "xiao_tian_memory_voice_adjust_stance",
+"d": "Xiao Tian: a familiar movement, a voice telling him to adjust his stance; he cannot see the man's face",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_memory_click_wrist",
-"d": "Xiao Tian recalls metal pressed into a groove, a sharp click, someone catching his wrist (not the hand)",
+"id": "formation_surges_party_steps_back",
+"d": "The formation becomes unstable and surges; the party steps back",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "three_observations_not_one_explanation",
-"d": "A reaction, a matching residue and a similar sound: three observations, not yet one explanation",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "91": [
 {
-"id": "records_from_before_alteration_needed",
-"d": "They need records from before the formation was altered, or someone who has studied this spiritual architecture",
+"id": "formation_affected_by_an_external_force",
+"d": "The formation's structure is intact but affected by an external force",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "fragment_notch_seen_in_light",
-"d": "A small notch near the fragment's edge, seen only at an angle: a fitting point or ordinary wear",
+"id": "first_manifestation_defeated",
+"d": "A beast of spiritual energy rises from the stones and the party defeats it",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_memory_feet_tell_the_mind",
-"d": "Xiao Tian recalls his master: \"Your feet tell me where your mind intends to go.\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_fears_what_follows",
-"d": "Xiao Tian fears the thought that he might remember what happened after the training",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "lead_chosen_verifiable_first",
-"d": "They choose the lead that can be verified first",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "92": [
 {
-"id": "craftsman_consulted_songxia_workshop",
-"d": "The fragment is shown to an elderly craftsman at the Songxia workshop",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "fragment_alloy_altered_old_tools",
-"d": "The alloy has been altered and the edges worked with tools not used in generations",
+"id": "energy_spreads_beyond_the_formation",
+"d": "The energy spreads beyond the formation: it is no longer reacting, it is awakening",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "fragment_origin_unconfirmed",
-"d": "A construction method, but no confirmed origin or maker; no proof it caused the damage",
+"id": "someone_interfering_from_outside",
+"d": "Someone is interfering with the sealed formation from the outside",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_memory_blade_follows_hand",
-"d": "Xiao Tian recalls: \"The blade follows the hand. The hand follows the mind.\" (perhaps his master)",
+"id": "awakened_manifestation_defeated",
+"d": "A larger manifestation targets the formation's centre and the party defeats it",
 "t": "event",
 "p": false,
 "s": "art"
@@ -3387,29 +3345,22 @@ const HOOKS = {
 ],
 "93": [
 {
-"id": "workshop_ledger_pattern_almost_identical",
-"d": "The ledger entry's branching pattern is almost identical to the fragment (not proof of the same object)",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "ledger_page_missing",
-"d": "The original page is missing: removed or simply lost (recorded, not an accusation)",
+"id": "record_says_formation_suppresses_and_seals_unstable_forces",
+"d": "A record over a hundred years old: the formation channels spiritual energy to suppress and seal unstable forces, to keep something from getting out",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "ledger_bought_at_estate_sale",
-"d": "The craftsman bought the ledger at an estate sale; related metalwork records may still be there",
+"id": "core_component_page_torn_away",
+"d": "The final part of the record, how to maintain it and what its core component was, is missing",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_memory_tool_and_judgment",
-"d": "Xiao Tian recalls: \"A tool tells you what it can do. Your judgment decides whether you should use it.\"",
+"id": "original_components_kept_at_an_estate_to_the_north",
+"d": "The original components were kept at a sealed, abandoned estate to the north, with defensive mechanisms still inside",
 "t": "event",
 "p": false,
 "s": "art"
@@ -3417,111 +3368,55 @@ const HOOKS = {
 ],
 "94": [
 {
-"id": "estate_reached",
-"d": "The party reaches the estate whose records they hope survive",
+"id": "inner_circle_stabilised_by_four_paths",
+"d": "The party guides the inner circle together: Dongyue the north, Cangyuan the centre, Xiyu the flow, Xiao Tian the west",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "inventory_mountain_repository",
-"d": "An inventory entry: metal fittings (incomplete), tools and instruments, damaged, \"transferred from mountain repository\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "fittings_from_dismantled_structure",
-"d": "The fittings came from a dismantled structure; their original use is not described",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_memory_sword_protects_the_road",
-"d": "Xiao Tian recalls: \"A good swordsman must know what he is protecting.\" / \"The sword protects the road. It does not choose the destination.\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "mountain_repository_a_direction",
-"d": "A direction, not an answer: the fittings may have come from a mountain repository",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "95": [
 {
-"id": "two_repositories_in_the_records",
-"d": "The records offer two repositories: a scholarly archive and one of dismantled instruments from abandoned sites",
+"id": "estate_guardian_awakened_and_defeated",
+"d": "A massive defensive construct rises at the estate and the party defeats it",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "second_repository_more_relevant",
-"d": "The second repository (dismantled instruments) is more relevant to the fragment, but not known to hold the answer",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "no_entry_names_three_channel_design",
-"d": "Several entries describe fittings, but none names the three-channel design directly",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_memory_dont_fight_to_prove",
-"d": "Xiao Tian recalls: \"Don't fight to prove what you were. Fight only when you know what you must protect.\"",
+"id": "xiao_tian_memory_familiar_combat_movement",
+"d": "In the battle Xiao Tian instinctively uses a combat movement he has seen before, and it creates an opening",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "first_question_does_second_repository_exist",
-"d": "The first question is whether the second repository still exists",
-"t": "state",
+"id": "missing_component_recovered",
+"d": "The party recovers a component that fits the disturbed formation",
+"t": "event",
 "p": false,
 "s": "art"
 }
 ],
 "96": [
 {
-"id": "repository_latch_rusted_dust_disturbed",
-"d": "The repository's latch is rusted but the dust beneath it has been disturbed: someone, or an animal, entered",
+"id": "component_returned_formation_restored",
+"d": "The component is returned: the turbulence subsides and the protective barrier operates again",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "narrow_track_across_threshold",
-"d": "A narrow track crosses the threshold, partly obscured by fallen needles",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "instrument_case_empty_clean_rectangle",
-"d": "A clean rectangular patch in the dust: a case that once held an instrument, now gone (moved yesterday or years ago, unknown)",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_memory_blade_and_wrist",
-"d": "Xiao Tian recalls a blade and a wrist, then the memory breaks: stopping it, being restrained, or trying to save someone? He fears he did something terrible",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "repository_searched_or_emptied_before_abandonment",
-"d": "Someone may have searched the room, or removed something before it was abandoned (not known to be connected)",
+"id": "local_danger_contained_history_unknown",
+"d": "The local danger is contained, but the formation's full history remains unknown",
 "t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_watch_the_opening_not_the_weapon",
+"d": "Xiao Tian: \"Watch the opening, not the weapon.\" He does not remember the man's face, but the memory feels real",
+"t": "event",
 "p": false,
 "s": "art"
 }

@@ -10,6 +10,9 @@ const chapterOf = n => CHAPTERS[n-1];
 /* Chapter battles. Only one is in the script: ch13, Dongyue expels the imp afflicting Wang Xi'er.
    Fighters are listed explicitly: Xiyu is not at Hanshan's home, and Xiao Tian / Ya'Xing are his companions (guests until they join). */
 chapterOf(13).battle = [{key:'afflicting_imp'}];
+chapterOf(91).battle = [{key:'formation_manifestation'}];   // Volume 3 comic 013 (revised)
+chapterOf(92).battle = [{key:'formation_manifestation'},{key:'awakened_manifestation'}];   // comic 014
+chapterOf(95).battle = [{key:'estate_guardian'}];   // comic 017
 chapterOf(59).quest = true;   // V2 comic 020: completed by finishing the Portrait Without a Face investigation (scripts/bounties.js)
 chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };

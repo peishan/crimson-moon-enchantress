@@ -12,6 +12,7 @@ const C_GOLD = '#c9a24a', C_RED = '#d24a55', C_DIM = '#6f6a85', C_TXT = '#cfc6dd
    The "eastern shrine" is one place: the sealed chamber (comics 011-012, 017-030). The western anchor is a pavilion across the island (027). */
 const SITES = [
   {id:'muxue',   n:'Muxue Island',           x:150, y:125, shown:() => true, note:'Home base: conversations, recovery, research and the clues that surface here.'},
+  {id:'estate', n:'The estate to the north', x:222, y:205, shown:() => sealHook('original_components_kept_at_an_estate_to_the_north'), note:'A sealed, abandoned estate that kept the formation\'s original components. Its guardian was defeated and the missing component recovered.'},
   {id:'sanct',   n:'The Sanctuary',          x:150, y:205, shown:() => G.ch >= 48, note:'The formation beneath the island: three rings and a hidden eye.'},
   {id:'clinic',  n:'Clinic / Inn',           x:55,  y:85,  shown:() => G.ch >= 52, note:'Where Xining treats Dongyue. Quiet talks and recovery.'},
   {id:'lantern', n:'Red Lantern settlement', x:240, y:95,  shown:() => G.ch >= 54, note:'The eastern settlement and its noticeboard.'},
@@ -19,9 +20,6 @@ const SITES = [
   {id:'western', n:'Western anchor · pavilion', x:45, y:175, shown:() => sealHook('second_anchor_reached'), note:'The second anchor, across the island. Not abandoned by accident. The divided channels were restored here.'},
   {id:'relay',   n:'Relay point',            x:150, y:40,  shown:() => sealHook('relay_point_found'), note:'A hidden receiver for the mark\'s signals, almost without residue. It was not recording during one interval.'},
   {id:'ruins',   n:'The ruins (eastern ridge)', x:305, y:60, shown:() => sealHook('xiao_tian_scouted_service_path'), note:'Reached by an old service path Xiao Tian scouted. An abandoned platform made to be overlooked, with a concealed marking.'},
-  {id:'repo', n:'Second repository (abandoned)', x:160, y:228, shown:() => sealHook('repository_latch_rusted_dust_disturbed'), note:'The repository the records said was abandoned. Its latch is rusted and its dust disturbed; an instrument case is empty.'},
-  {id:'workshop', n:'Songxia workshop', x:85, y:208, shown:() => sealHook('craftsman_consulted_songxia_workshop'), note:'A craftsman who reads old tools. The fragment\'s alloy and edges are a method, not a maker.'},
-  {id:'estate', n:'The estate', x:222, y:205, shown:() => sealHook('estate_reached'), note:'Where the old workshop records were sold. An inventory points to a mountain repository: a direction, not an answer.'},
   {id:'chamber', n:'Chamber beneath the mountain', x:225, y:28, shown:() => sealHook('three_channels_chamber_found'), note:'Three carved channels. The flow here is drawn away, not stopped. It is steadied for now, and still closed.'},
 ];
 const LINKS = [   // [a, b, solid (confirmed)]
@@ -32,7 +30,7 @@ const LINKS = [   // [a, b, solid (confirmed)]
   ['eshrine','relay', true], ['western','relay', true],   // the signal travels to a relay point (029-030)
   ['eshrine','ruins', false],     // whether the ruins belong to the same event is unproven (034)
   ['ruins','chamber', true],      // the route beyond the ruins (035-036)
-  ['ruins','workshop', false], ['workshop','estate', false], ['estate','repo', false],   // leads that follow the fragment (not proven to share a cause)
+  ['ruins','estate', false],   // the estate holds the formation's original components (V3 revised arc)
   ['chamber','eshrine', false],   // a symbol appears beneath the sealed chamber, aligned with the same flow (038): destination unknown
 ];
 function sitesSvg(){
@@ -274,18 +272,6 @@ const CLUES = [   // [hook id, category, comic, text]
   ['third_channel_narrower', 'ruins', 'V3 010', 'Two sites share almost identical spacing, but the third channel is narrower: a changed design, or a different purpose'],
   ['third_channel_clean_cut', 'ruins', 'V3 011', 'One channel under the pavilion ends in a clean cut where the others weathered naturally (when and why unknown)'],
   ['network_missing_connection', 'ruins', 'V3 011', 'The same design repeats in different places with a missing connection: severed, or built in stages'],
-  ['residue_concentrated_along_cut', 'ruins', 'V3 012', 'The residue is concentrated along the cut; the fragment may have interacted with the process, which is not the same as causing it'],
-  ['metallic_residue_in_groove', 'ruins', 'V3 012', 'A metallic residue is embedded in the groove'],
-  ['fragment_notch_seen_in_light', 'ruins', 'V3 013', 'A small notch near the fragment\'s edge: a fitting point, or ordinary wear'],
-  ['fragment_alloy_altered_old_tools', 'records', 'V3 014', 'The craftsman: the alloy was altered and the edges worked with tools not used in generations (a method, no maker)'],
-  ['workshop_ledger_pattern_almost_identical', 'records', 'V3 015', 'A workshop ledger shows an almost identical branching pattern (copied from an older register)'],
-  ['ledger_page_missing', 'records', 'V3 015', 'The original ledger page is missing: removed or simply lost (recorded, not an accusation)'],
-  ['inventory_mountain_repository', 'records', 'V3 016', 'An estate inventory lists incomplete metal fittings "transferred from mountain repository", from a dismantled structure'],
-  ['two_repositories_in_the_records', 'records', 'V3 017', 'The records offer two repositories: a scholarly archive (books, genealogies, cultivation histories) and one of dismantled instruments from abandoned sites'],
-  ['no_entry_names_three_channel_design', 'records', 'V3 017', 'Several entries describe fittings and components, but none names the three-channel design directly'],
-  ['repository_latch_rusted_dust_disturbed', 'records', 'V3 018', 'At the abandoned repository the latch is rusted but the dust beneath it was disturbed: someone, or an animal, entered'],
-  ['instrument_case_empty_clean_rectangle', 'records', 'V3 018', 'A case that once held an instrument is empty: a clean rectangle in the dust (moved yesterday or years ago, unknown)'],
-  ['repository_searched_or_emptied_before_abandonment', 'records', 'V3 018', 'Someone may have searched the room, or removed something before it was abandoned; no proof the two are connected'],
 ];
 const CLUE_CATS = [['formation','🌀 The formation'],['records','📜 Records and inscriptions'],['people','👤 People'],['ruins','🏚️ The ruins and the redirected flow'],['trail','🗂️ The repository trail'],['yan','❄️ Yan\'s trail to the Ice Temple'],['temple','🏯 Inside the Ice Temple']];
 const QUESTIONS = [   // [shown once this hook exists, question]; stays listed as unresolved until the story answers it

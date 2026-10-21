@@ -3423,95 +3423,39 @@ const HOOKS = {
 ],
 "97": [
 {
-"id": "repository_dust_disturbed_or_left_before_settling",
-"d": "Someone was here, or left before the dust could settle",
+"id": "xiao_tian_memory_master_voice_adjust_stance",
+"d": "Xiao Tian cannot quiet his mind: he still hears his master telling him to adjust his stance; the face slips away like mist",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_recognises_the_feeling",
-"d": "Xiao Tian touches the dust: \"I know this feeling\"",
+"id": "xiao_tian_memory_a_boy_running_falling",
+"d": "Xiao Tian remembers a voice, a sword in his hands, and a boy running and falling; he does not know what happened after",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_memory_voice_calls_feng",
-"d": "Xiao Tian recalls a blade, a wrist and a voice he almost knew calling \"Feng—!\"",
+"id": "party_reassures_xiao_tian_he_is_not_alone",
+"d": "The party tells Xiao Tian his past does not define him and that they will face whatever returns together",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "xiao_tian_fears_the_person_he_was",
-"d": "Xiao Tian: \"What if I don't like the person I was?\"",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "repository_items_taken_deliberately",
-"d": "Records were taken deliberately: someone did not want them found",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "inner_door_still_sealed_but_searcher_knew",
-"d": "The inner door is still sealed, but someone here knew what they were looking for",
-"t": "state",
 "p": false,
 "s": "art"
 }
 ],
 "98": [
 {
-"id": "caretaker_found_near_estate",
-"d": "An old caretaker lives near the abandoned estate",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "caretaker_recognises_what_it_cost",
-"d": "Shown a small triangular fragment from the repository, the caretaker says \"I recognize what it costs\"",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "caretaker_told_never_to_speak",
-"d": "After a night when someone disappeared, the staff were told never to speak of it again",
+"id": "xiao_tian_afraid_of_who_he_was",
+"d": "Xiao Tian fears remembering something that changes who he is now, but wants to know: he feels there is someone he should find or something he needs to do",
 "t": "state",
 "p": false,
 "s": "art"
 },
 {
-"id": "xiao_tian_memory_wooden_floor_blade_hand",
-"d": "Xiao Tian recalls a wooden floor, a blade and a hand reaching toward him; the face hidden",
+"id": "xiao_tian_will_keep_going_without_forcing_answers",
+"d": "Xiao Tian chooses not to push for answers or run from them; he will be ready when the time comes",
 "t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "caretaker_says_he_has_his_eyes",
-"d": "The caretaker says Xiao Tian has \"his eyes\", then that he may be mistaken (whose, unknown)",
-"t": "event",
-"p": false,
-"s": "art"
-},
-{
-"id": "caretaker_remembers_a_boy_who_would_not_run",
-"d": "He remembers a boy who refused to run while others were falling, and does not know what became of him",
-"t": "state",
-"p": false,
-"s": "art"
-},
-{
-"id": "record_keeper_kept_copies",
-"d": "A record keeper kept copies of things the estate ordered destroyed; someone in the old market might know him",
-"t": "state",
 "p": false,
 "s": "art"
 }

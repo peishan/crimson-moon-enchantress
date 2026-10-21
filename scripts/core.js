@@ -239,14 +239,15 @@ function addBond(id, pts){
    arc) and the Miracle Healer. If an ARC needs someone present, add a row to ARC_REQUIRED: while the chapter is in range they cannot be removed either.
    Heroes who are AWAY (G.away) are never fielded, whatever the rule says. Guests (the Miracle Healer's Student, Dongyue's grandfather, in the Yilong arc)
    are planned as temporary extra seats and are not built yet (docs/COMPANIONS.md). */
-const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, FLEX_SEATS = 3;
+const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, FLEX_SEATS = 3, FLEX_V4 = 2;
 const ARC_REQUIRED = [];   // {id:'xiaotian', from:chapter, to:chapter, why:'text'}: e.g. an arc that cannot happen without him
 const canonLocked = () => G.ch >= CANON_LOCK_CH && CANON_PARTY.every(id => G.party.includes(id));
 /* GUESTS: temporary story-required companions. They take an EXTRA seat (not a flex seat) and are fielded while their window is open (from = the chapter whose completion recruits them; to = last chapter of the arc, Infinity until the author sets it). */
 const GUESTS = { suliechen:{from:204, to:Infinity, why:'Guest for the Volume 6 demon-capture arc.'} };
 const guestHere = id => !!GUESTS[id] && G.ch >= GUESTS[id].from && G.ch <= GUESTS[id].to && G.party.includes(id);
 const guestsHere = () => Object.keys(GUESTS).filter(guestHere).length;
-const activeSlots = () => (canonLocked() ? CANON_PARTY.length + FLEX_SEATS : 4) + guestsHere();
+const flexSeats = () => G.ch >= VOL4_START ? FLEX_V4 : FLEX_SEATS;   // Volume 4 on: 4 protagonists + Xiao Tian + Ya'Xing = 6 seats (author); guests such as Hoko take an extra seat
+const activeSlots = () => (canonLocked() ? CANON_PARTY.length + flexSeats() : 4) + guestsHere();
 function lockReason(id){
   if(id === 'xiyu') return 'Xiyu always leads the party.';
   if(isAway(id)) return '';

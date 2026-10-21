@@ -45,3 +45,7 @@ Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5
 - **Skills** (all unlocked on joining): Frost Trace (strike, may slow) · Sealing Talismans (ranged bind) · Binding Net (longer bind) · Silent Veil (party DEF up and status ward; no field effect yet) · **Subdue, Not Slay** (unique: foe at 35% HP or below is captured alive and leaves the fight; bosses are only bound; captured foes' drops are rolled twice and +25% XP). Passive: Restraint (his bind and slow last one turn longer).
 - Art: portrait `assets/party/suliechen.webp`, cast sheet `assets/cast/suliechen.webp` (Cast, from chapter 204). The sheet's pixel sprites and expressions are not used by the game.
 - Nothing in the game text asserts his reasons. Not testable end to end until Volume 6 pages exist (tested with a dev jump to 204).
+
+## Party seats (author, Volume 4)
+- Before chapter 53: 4 seats. Chapters 53-116: 7 (4 canon + 3 flex). **From Volume 4 (chapter 117): 6 seats** = the 4 protagonists + Xiao Tian + Ya'Xing (`FLEX_V4 = 2`). Guests (Su Liechen in Volume 6; Hoko planned as a temporary Volume 4 guest) take an extra seat on top, via `GUESTS`.
+- Ya'Xing still counts as away until the story brings him back (`CH_AWAY`/`CH_BACK`); his seat is held for him. Hoko is not built yet (needs a class and skills; see VOLUME4_PLAN.md).

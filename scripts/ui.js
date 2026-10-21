@@ -198,7 +198,7 @@ const CAST_SHEETS = [
   {id:'season1', n:'Season 1 · Active Cast', sub:'Xiyu, Dongyue, Ya\'Xing, Xiao Tian and Muxue Yan', img:'assets/cast/season1.webp', ch:17},
   {id:'cover3', n:'Volume 3 Cover', sub:'The Roots of What Remains', img:'assets/volume3_cover.webp', ch:107},
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
-  {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:168},
+  {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:141},
   {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:193},
   {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:203},

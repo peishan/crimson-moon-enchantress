@@ -13,7 +13,8 @@ chapterOf(13).battle = [{key:'afflicting_imp'}];
 chapterOf(91).battle = [{key:'formation_manifestation'}];   // Volume 3 comic 013 (revised)
 chapterOf(92).battle = [{key:'formation_manifestation'},{key:'awakened_manifestation'}];   // comic 014
 chapterOf(95).battle = [{key:'estate_guardian'}];   // comic 017
-chapterOf(122).battle = [{key:'ice_temple_guardian'}];   // Volume 4 comic 006 (revised)
+chapterOf(122).battle = [{key:'ice_temple_guardian'}];
+chapterOf(124).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 4 comic 008: the small sentinels at the mechanism   // Volume 4 comic 006 (revised)
 chapterOf(59).quest = true;   // V2 comic 020: completed by finishing the Portrait Without a Face investigation (scripts/bounties.js)
 chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
@@ -54,7 +55,8 @@ function completeChapter(n){
   if(n !== YX_REST_CH && yxCheck()) msgs.push('🛏️ After a day of rest at the Ice Temple, Ya\'Xing rejoins the party in the outfit the commanders gave him.');
   msgs.push('Story XP +'+c.sxp);
   gainXp(c.sxp, G.party).forEach(m => msgs.push(m));
-  if(n === V3_END_CH) G.ch = V3_LAST_OLD_CH;   // the revised Volume 3 ends at chapter 107; chapters 108-116 were removed
+  if(n === V3_END_CH) G.ch = V3_LAST_OLD_CH;
+  if(n === V4_END_CH) G.ch = V4_LAST_OLD_CH;   // Volume 4 is 25 comics (chapters 117-141); 142-168 were removed   // the revised Volume 3 ends at chapter 107; chapters 108-116 were removed
   save();
   return msgs;
 }
@@ -69,7 +71,7 @@ function applyStoryStates(n){
   Object.keys(CH_AWAY[n]||{}).forEach(id => { G.away[id] = CH_AWAY[n][id]; G.active = G.active.filter(x => x!==id); msgs.push('⚓ '+CHARACTERS[id].n+' stays behind: '+CH_AWAY[n][id]); });
   return msgs;
 }
-const CH_GEAR = { 124:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
+const CH_GEAR = { 129:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
 const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
 /* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
 function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
@@ -80,7 +82,7 @@ function devSetChapter(n){
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
   for(let i=1;i<=n;i++) giveChapterGear(i, true);
   if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
-  G.ch = (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : n;
+  G.ch = skipRemoved(n);
   enforceParty();
   if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};

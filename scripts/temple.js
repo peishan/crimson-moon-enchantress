@@ -15,7 +15,7 @@ const TEMPLE_LEVELS = [
   {lv:1, n:'Level 1 · Upper Temple', sub:'Main exploration and story areas'},
   {lv:2, n:'Level 2 · Sealed Maze', sub:'Trapped corridors, puzzles and powerful foes'},
   {lv:3, n:'Level 3 · Underground Chamber', sub:'Hidden rooms and unexplored areas'},
-  {lv:4, n:'Lower Level (Volume 4)', sub:'The route from the lower grounds, the library branch and the vault. Unlock chapters are placeholders until the rebuilt arc settles.'},
+  {lv:4, n:'Lower Level (Volume 4)', sub:'The route from the lower grounds, the library branch and the vault. Unlock chapters follow Volume 4 comics 007-014.'},
 ];
 const TEMPLE_ROOMS = [
   // ---- Level 1: Upper Temple
@@ -50,13 +50,13 @@ const TEMPLE_ROOMS = [
   // ---- Lower Level (Volume 4, author's map). Main route: entrance > guardian hall > sealed passage > main corridor > upper staircase. Library branch off the main corridor leads to the hidden vault.
   {id:'v4_entrance',  lv:4, n:'1 · Temple Entrance',        kind:'room',   unlock:118, desc:'The party enters the Ice Temple from the lower grounds.'},
   {id:'v4_guardian',  lv:4, n:'2 · Guardian Hall',          kind:'key',    unlock:122, desc:'Ancient statues stand guard in the frozen hall. First guardian encounter.'},
-  {id:'v4_sealed',    lv:4, n:'3 · Sealed Passage',         kind:'room',   unlock:122, desc:'An ice seal blocks the way, later opened by the party.'},
+  {id:'v4_sealed',    lv:4, n:'3 · Sealed Passage',         kind:'room',   unlock:123, desc:'An ice seal blocks the way, later opened by the party.'},
   {id:'v4_corridor',  lv:4, n:'4 · Main Corridor',          kind:'room',   unlock:122, desc:'The central hallway connecting the areas of the lower level.'},
   {id:'v4_stairs',    lv:4, n:'5 · Upper Staircase',        kind:'stairs', unlock:122, desc:'Leads to the next level up.'},
-  {id:'v4_library',   lv:4, n:'6 · Inner Library',          kind:'key',    unlock:124, desc:'Rows of ancient scrolls and manuals on the temple\'s history and magic. Xining\'s scripture; the Muxue inscription.'},
-  {id:'v4_switch',    lv:4, n:'7 · Hidden Switch',          kind:'locked', unlock:130, desc:'Found by moving books in the library.'},
+  {id:'v4_library',   lv:4, n:'6 · Inner Library',          kind:'key',    unlock:129, desc:'Rows of ancient scrolls and manuals on the temple\'s history and magic. Xining\'s scripture; the Muxue inscription.'},
+  {id:'v4_switch',    lv:4, n:'7 · Hidden Switch',          kind:'locked', unlock:129, desc:'Found by moving books in the library.'},
   {id:'v4_vault',     lv:4, n:'8 · Treasure Vault',         kind:'key',    unlock:130, desc:'Hidden behind a switch. Ancient treasures: equipment and Ya\'Xing\'s Skyshard.'},
-  {id:'v4_portal',    lv:4, n:'Portal (upper floor)',       kind:'portal', unlock:null, desc:'The Muxue inscription reveals a portal on an upper floor. Its exact location is unknown. The maze and the tormentors\' location are not mapped yet.'},
+  {id:'v4_portal',    lv:4, n:'Portal (upper floor)',       kind:'portal', unlock:129, desc:'The Muxue inscription reveals a portal on an upper floor. Its exact location is unknown. The maze and the tormentors\' location are not mapped yet.'},
 ];
 const TEMPLE_ICON = {room:'🚪', key:'📍', locked:'🔒', stairs:'🪜', portal:'🌀', trap:'⚠️'};
 const roomFound = r => !!(G.temple && G.temple.found[r.id]) || (r.unlock!==null && G.ch >= r.unlock);

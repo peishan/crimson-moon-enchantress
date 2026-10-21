@@ -8,3 +8,10 @@
 - **Where they arrive (placeholders):** Wayfinder's Key at chapter 119, the four temple pieces at chapter 122, Skyshard and the outfit on Ya'Xing's return. Move them in `CH_GEAR` when the rebuilt Ice Temple chapters settle.
 - **Art:** none yet. Drop a square icon at `assets/gear/<id>.webp` (for example `skyshard.webp`); a missing file shows the emoji.
 - Not built: shops, boss-drop gear, gear for Xiyu/Dongyue/Cangyuan/Xining beyond starters, two-handed/dual-blade rules beyond the label, Sky Step / Wayfinder's Key exploration uses.
+
+## Update (author): starters, smiths, Xining, Xiao Tian, Ya'Xing
+- **Starters are placeholders.** Xiyu, Dongyue, Cangyuan and Xining each start (or join) equipped, but their starting pieces are stand-ins: the author will supply unique starting equipment for the four. Replace the `starter:true` lines in `equip.js`.
+- **Xining:** starts with a plain Self-Defence Dagger; a **Healing Staff** (`healing_staff`, hers only) exists but is not awarded yet.
+- **Xiao Tian:** no weapon. He buys one at a weaponsmith (the old starter sword was removed).
+- **Smiths** (Items tab, "Smiths"): Muxue Weaponsmith and Muxue Armorsmith (open from chapter 5, with generic stock: daggers, swords, twin daggers, staffs, broadsword, leathers, robe, gloves, boots, ring). **Ice Temple Weaponsmith and Armorsmith exist but are LOCKED** ("The temple forge is sealed for now"); set their `open` and `stock` when the author's temple map arrives. Hero-specific gear is never sold.
+- **Ya'Xing's gear is unique to him** (knives, tunic, sky-blue outfit, Skyshard are `who:'yaxing'`).

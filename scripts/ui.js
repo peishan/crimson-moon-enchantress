@@ -293,7 +293,7 @@ function rInventory(){
     return `<div class="card" style="cursor:default"><span class="big">${i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div></div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
   const brews = RECIPES.map(r => `<div class="ev"><div><b>${ITEMS[r.out].icon} ${ITEMS[r.out].n}</b><div class="sm">${r.label}</div></div><button onclick="act(()=>brew('${r.out}'))">Brew</button></div>`).join('');
   const shop = Object.keys(SHOP).map(k => `<div class="ev"><div><b>${ITEMS[k].icon} ${ITEMS[k].n}</b><div class="sm">${useText(USE[k])}</div></div><button ${G.gold>=SHOP[k]?'':'disabled'} onclick="act(()=>buyItem('${k}')?'Bought '+ITEMS['${k}'].n:'Not enough gold')">${SHOP[k]}g</button></div>`).join('');
-  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}`;
+  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
 }
 function rBestiary(){
   const keys = Object.keys(ENEMIES), found = keys.filter(k => G.bestiary[k]).length;

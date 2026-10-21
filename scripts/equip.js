@@ -23,8 +23,8 @@ const GEAR = {};
  G_('w_xiyu','Ice Staff','weapon','🪄','xiyu',{mag:4,mp:4},'A staff of old ice that steadies her spells.',{starter:true,wt:'two'}),
  G_('w_dongyue','Spellblade','weapon','🗡️','dongyue',{atk:3,mag:2},'A blade that also carries healing.',{starter:true,wt:'one'}),
  G_('w_cangyuan','Thread Spindle','weapon','🧵','cangyuan',{mag:3},'A spindle wound with spirit thread.',{starter:true,wt:'one'}),
- G_('w_xining','Needle Case','weapon','💉','xining',{mag:2,mp:4},'Silver needles for treatment and, if needed, defence.',{starter:true,wt:'one'}),
- G_('w_xiaotian','Iron Sword','weapon','🗡️','xiaotian',{atk:4},'A plain, honest sword.',{starter:true,wt:'one'}),
+ G_('w_xining','Self-Defence Dagger','weapon','🗡️','xining',{atk:2},'A simple dagger for self-defence. She is a physician, not a fighter.',{starter:true,wt:'one'}),
+ G_('healing_staff','Healing Staff','weapon','🪄','xining',{mag:5,mp:10},'A healing staff she can earn later. (Not awarded yet: the author decides when.)',{wt:'two'}),
  G_('w_yaxing','Throwing Knives','weapon','🔪','yaxing',{atk:3,spd:2},'A pair of balanced knives.',{starter:true,wt:'dual'}),
  G_('w_hoko','Explorer\'s Blade','weapon','🗡️','hoko',{atk:3},'A short blade for cutting rope and ice.',{starter:true,wt:'one'}),
  G_('w_suliechen','Frost Saber','weapon','🗡️','suliechen',{atk:3,mag:1},'A saber that leaves a trace of cold.',{starter:true,wt:'one'}),
@@ -37,6 +37,44 @@ const GEAR = {};
  G_('temple_boots','Ice Temple Boots','shoes','👢',null,{spd:2,def:1},'Spiked soles for the temple\'s icy stairs.'),
  G_('warding_charm','Temple Warding Charm','accessory','📿',null,{hp:8,def:1},'A charm cut with a small ward.',{fx:{magRed:.05},fxText:'Takes 5% less magic damage.'}),
 ].forEach(g => GEAR[g.id] = g);
+/* Shop stock (generic pieces anyone can wear). price = gold. Hero-specific gear is never sold. */
+[
+ G_('sw_dagger','Plain Dagger','weapon','🗡️',null,{atk:2},'A cheap, honest dagger.',{wt:'one',price:25}),
+ G_('sw_traveller','Traveller\'s Sword','weapon','🗡️',null,{atk:4},'A sturdy single-handed sword.',{wt:'one',price:50}),
+ G_('sw_wand','Sparring Wand','weapon','🪄',null,{mag:3,mp:2},'A light wand for focusing spells.',{wt:'one',price:70}),
+ G_('sw_twin','Twin Daggers','weapon','🔪',null,{atk:4,spd:3},'A matched pair, quick in the hand.',{wt:'dual',price:110}),
+ G_('sw_staff','Oak Staff','weapon','🪄',null,{mag:4,mp:5},'A two-handed staff of seasoned oak.',{wt:'two',price:90}),
+ G_('sw_broad','Broadsword','weapon','⚔️',null,{atk:7,spd:-1},'Heavy and two-handed: hits hard, swings slowly.',{wt:'two',price:130}),
+ G_('ar_leather','Padded Leathers','outfit','🥋',null,{def:3,hp:6},'Quilted leather armour.',{price:60}),
+ G_('ar_robe','Quilted Robe','outfit','👘',null,{def:2,mp:4,mag:1},'A warm robe lined with cotton.',{price:60}),
+ G_('gl_leather','Leather Gloves','gloves','🧤',null,{def:1},'Plain leather gloves.',{price:30}),
+ G_('gl_wrap','Hand Wraps','gloves','🧤',null,{atk:2},'Wraps for a firmer grip.',{price:35}),
+ G_('sh_boots','Travelling Boots','shoes','👢',null,{spd:1,def:1},'Good for long roads.',{price:35}),
+ G_('sh_snow','Snow Boots','shoes','👢',null,{def:2},'Fur-lined boots for the snowfields.',{price:50}),
+ G_('ac_ring','Copper Ring','accessory','💍',null,{hp:6},'A plain ring said to turn small harm.',{price:45}),
+].forEach(g => GEAR[g.id] = g);
+/* Smiths: a weaponsmith and an armorsmith in Muxue (open from chapter 5, before Xiao Tian joins) and at the Ice Temple (LOCKED until the author's temple map: open:false). */
+const SMITHS = [
+ {id:'muxue_weapons', n:'Muxue Weaponsmith', icon:'⚒️', slot:['weapon'], open:() => G.ch >= 5, stock:['sw_dagger','sw_traveller','sw_wand','sw_twin','sw_staff','sw_broad']},
+ {id:'muxue_armor', n:'Muxue Armorsmith', icon:'🛡️', slot:['outfit','gloves','shoes','accessory'], open:() => G.ch >= 5, stock:['ar_leather','ar_robe','gl_leather','gl_wrap','sh_boots','sh_snow','ac_ring']},
+ {id:'temple_weapons', n:'Ice Temple Weaponsmith', icon:'⚒️', slot:['weapon'], open:() => false, note:'The temple forge is sealed for now.', stock:[]},
+ {id:'temple_armor', n:'Ice Temple Armorsmith', icon:'🛡️', slot:['outfit','gloves','shoes','accessory'], open:() => false, note:'The temple forge is sealed for now.', stock:[]},
+];
+function buyGear(smithId, id){
+  const sm = SMITHS.find(s => s.id===smithId), g = GEAR[id];
+  if(!sm || !sm.open() || !g || !sm.stock.includes(id)) return ['That is not for sale.'];
+  if(GR().owned[id]) return ['You already own the '+g.n+'.'];
+  if(G.gold < g.price) return ['The '+g.n+' costs '+g.price+' gold.'];
+  G.gold -= g.price; GR().owned[id] = true; save();
+  return ['🛒 Bought the '+g.n+' (-'+g.price+'g). Equip it from a hero\'s Party page.'];
+}
+function smithsHtml(){
+  return '<h4>Smiths</h4>' + SMITHS.map(sm => {
+    if(!sm.open()) return `<div class="card lock" style="cursor:default"><span class="big">${sm.icon}</span><div class="fl"><b>${sm.n}</b><div class="sm">🔒 ${sm.note||'Not open yet.'}</div></div></div>`;
+    return `<div class="panel"><b>${sm.icon} ${sm.n}</b>${sm.stock.map(id => { const g = GEAR[id], own = gearOwned(id);
+      return `<div class="ev"><div><b>${g.icon} ${g.n}</b>${g.wt?` <span class="sm">· ${WTYPE[g.wt]}</span>`:''}<div class="sm">${gearStatText(g)} · ${GEAR_SLOTS.find(s=>s[0]===g.slot)[1]}</div></div>${own?'<span class="sm">owned</span>':`<button ${G.gold>=g.price?'':'disabled'} onclick="act(()=>buyGear('${sm.id}','${id}'))">${g.price}g</button>`}</div>`; }).join('')}</div>`; }).join('');
+}
+
 /* skills granted by worn gear (same format as hero skills; tier = upgrade tier needed) */
 const GEAR_SKILLS = {
  spirit_snare:{id:'spirit_snare',n:'Spirit Snare',icon:'🪢',mp:6,kind:'phys',tgt:'foe',pow:.9,fx:[{k:'bind',d:2}],req:{lvl:1},tier:0,desc:'A short-range binding strike with the Skyshard.'},
@@ -85,7 +123,7 @@ function giveChapterGear(n, silent){ const m = []; (CH_GEAR[n]||[]).forEach(id =
 
 /* ---------- UI (in the Party sheet) ---------- */
 let eqPick = null;   // {hero, slot}
-const gearStatText = g => Object.keys(g.stats).map(k => '+'+Math.round(g.stats[k]*gearMult(g.id))+' '+(STAT_NAME[k]||k)).join(' ');
+const gearStatText = g => Object.keys(g.stats).map(k => { const v = Math.round(g.stats[k]*gearMult(g.id)); return (v>=0?'+':'')+v+' '+(STAT_NAME[k]||k); }).join(' ');
 const gearIcon = g => artOrIcon('assets/gear/'+g.id+'.webp', g.icon, 'gicon');
 function equipHtml(hero){
   const rows = GEAR_SLOTS.map(([slot,label,ic]) => {

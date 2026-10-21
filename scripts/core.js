@@ -264,7 +264,7 @@ const yxResting = () => !!(G && G.away && G.away.yaxing && G.yxRest !== undefine
 function yxCheck(){
   if(G.away && G.away.yaxing && G.yxRest !== undefined && G.day > G.yxRest){
     delete G.away.yaxing; G.flags.yaxing_rejoined = true;
-    if(typeof giveGear === 'function'){ giveGear('outfit_yaxing_sky'); giveGear('skyshard'); }
+    if(typeof giveGear === 'function') giveGear('outfit_yaxing_sky');
     if(G.party.includes('yaxing') && !G.active.includes('yaxing') && G.active.length < activeSlots()) G.active.push('yaxing');
     return true; }
   return false;

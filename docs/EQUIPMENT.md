@@ -15,3 +15,13 @@
 - **Xiao Tian:** no weapon. He buys one at a weaponsmith (the old starter sword was removed).
 - **Smiths** (Items tab, "Smiths"): Muxue Weaponsmith and Muxue Armorsmith (open from chapter 5, with generic stock: daggers, swords, twin daggers, staffs, broadsword, leathers, robe, gloves, boots, ring). **Ice Temple Weaponsmith and Armorsmith exist but are LOCKED** ("The temple forge is sealed for now"); set their `open` and `stock` when the author's temple map arrives. Hero-specific gear is never sold.
 - **Ya'Xing's gear is unique to him** (knives, tunic, sky-blue outfit, Skyshard are `who:'yaxing'`).
+
+## Author's Party Equipment Sheet (Volume 4) installed
+Starting gear is now the author's three pieces each (ids double as icon names: draw `assets/gear/<id>.webp`, 256x256):
+- **Xiyu:** crimson_robe, moonjade_hairpin, ice_dagger · **Dongyue:** travelers_sword, dragon_knot, explorers_cloak · **Cangyuan:** binding_ropes (tool), talisman_pouch, dark_robe · **Xining:** healers_satchel (tool), basic_medical_texts (book), herbal_set, plus robe_xining (kept: the sheet lists no clothing for her) · **Xiao Tian:** training_staff, leather_bracers, travelers_garb · **Ya'Xing:** deckhands_blade, seafarers_charm, simple_attire · **Hoko:** lockpicks (tool), explorers_pouch, warm_cloak · Su Liechen: armor_suliechen, w_suliechen (placeholders).
+- **Tool** pieces occupy the Weapon slot (shown as "Weapon / Tool"). A sixth **Book** slot appears only for Xining.
+- **Treasure Vault upgrades (hidden vault behind the library; Hoko picks the locks):** crimson_moon_hairpin (Xiyu: 8% cheaper magic, her status effects last a turn longer), celestial_compass (Dongyue: resists silence/charm; hidden-route detection not built), spiritweave_bracers (Cangyuan: binds/slows/thread last a turn longer, 5% less magic damage), bracers_xiaotian (Mountain-Stance Bracers, now an **accessory**), skyshard (Ya'Xing; Spirit Snare now binds and slows; Spiritual Pulse at tier 2), wayfinders_key (Hoko). Placeholder chapter **130** (`CH_GEAR`).
+- **Library discovery:** healers_scripture (Xining, book slot) grants **Meridian Sanctuary** (party shield, regen and status ward). Placeholder chapter **124**. The Healing Staff remains defined but unawarded.
+- Ya'Xing's Commanders' Sky-Blue Outfit still comes with his return; Skyshard now comes from the vault, not his return.
+- **Conflicts with earlier instructions (the sheet is followed):** Xining starts with a Healer's Satchel, not a dagger; Xiao Tian starts with a Training Staff (he can still buy weapons at the smith).
+- Old saves: starter loadouts are rebuilt once (gear version 3); owned shop purchases are kept.

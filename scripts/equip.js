@@ -5,37 +5,54 @@
    Pieces add stats (statsOf), may carry effects (physRed / magRed / noSlow / mechanisms) and may GRANT battle skills while worn.
    Art: assets/gear/<id>.webp (square icon); a missing file falls back to the emoji. Chapters award gear through CH_GEAR (journal.js).
    ===================================================================== */
-const GEAR_SLOTS = [['outfit','Robe / Armour','👘'],['weapon','Weapon','⚔️'],['gloves','Gloves','🧤'],['shoes','Shoes','👢'],['accessory','Accessory','📿']];
-const WTYPE = {one:'Single-handed', two:'Two-handed', dual:'Dual blades'};
+const GEAR_SLOTS = [['outfit','Robe / Armour','👘'],['weapon','Weapon / Tool','⚔️'],['gloves','Gloves','🧤'],['shoes','Shoes','👢'],['accessory','Accessory','📿'],['book','Book','📖']];   // the Book slot only shows for heroes who have book gear (Xining)
+const WTYPE = {one:'Single-handed', two:'Two-handed', dual:'Dual blades', tool:'Tool'};
 const GEAR_TIERS = [null, {gold:60, mats:{ice_crystal:3}}, {gold:140, mats:{ice_crystal:6, rift_shard:3}}];   // cost to reach tier 1 and tier 2; +30% stats per tier
 const G_ = (id,n,slot,icon,who,stats,desc,extra) => Object.assign({id,n,slot,icon,who,stats,desc}, extra||{});
 const GEAR = {};
 [
- /* starters: most heroes begin in a robe; the fighters in light armour */
- G_('robe_xiyu','Crimson Silk Robe','outfit','👘','xiyu',{hp:4,def:2,mag:1},'The robe she wears on the island.',{starter:true}),
- G_('robe_dongyue','Spellblade Robe','outfit','👘','dongyue',{hp:6,def:2},'Layered robes cut for a sword and a healing hand.',{starter:true}),
- G_('robe_cangyuan','Weaver\'s Robe','outfit','👘','cangyuan',{def:1,mag:2},'Dark robes with red thread worked into the hem.',{starter:true}),
- G_('robe_xining','Physician\'s Robe','outfit','👘','xining',{mp:4,def:1,mag:1},'Pale robes with deep sleeves for herbs and needles.',{starter:true}),
- G_('armor_xiaotian','Traveller\'s Leathers','outfit','🥋','xiaotian',{hp:4,def:2},'Hard-wearing leathers for the road.',{starter:true}),
- G_('armor_yaxing','Deckhand\'s Tunic','outfit','🥋','yaxing',{def:1,spd:1},'A sailor\'s working tunic.',{starter:true}),
- G_('armor_hoko','Explorer\'s Coat','outfit','🥋','hoko',{def:2,spd:1},'A fur-trimmed coat with many pockets.',{starter:true}),
+ /* ---- starting equipment (author's Party Equipment Sheet, "before the Ice Temple"): three pieces each ---- */
+ G_('crimson_robe','Crimson Robe','outfit','👘','xiyu',{hp:4,def:2,mag:1},'The robe she wears on the island.',{starter:true}),
+ G_('moonjade_hairpin','Moonjade Hairpin','accessory','🌙','xiyu',{mag:2,mp:4},'A hairpin of moonjade.',{starter:true}),
+ G_('ice_dagger','Ice Dagger','weapon','🗡️','xiyu',{atk:2,mag:2},'A small dagger of old ice.',{starter:true,wt:'one'}),
+ G_('travelers_sword','Traveler\'s Sword','weapon','🗡️','dongyue',{atk:3,mag:1},'A reliable blade that also carries his healing.',{starter:true,wt:'one'}),
+ G_('dragon_knot','Dragon Knot','accessory','🪢','dongyue',{hp:4,def:1},'A knotted charm.',{starter:true}),
+ G_('explorers_cloak','Explorer\'s Cloak','outfit','🧥','dongyue',{def:2,hp:4},'A blue cloak for the road.',{starter:true}),
+ G_('binding_ropes','Binding Ropes','weapon','➰','cangyuan',{mag:2,spd:1},'Ropes he binds with spirit thread.',{starter:true,wt:'tool'}),
+ G_('talisman_pouch','Talisman Pouch','accessory','👝','cangyuan',{mp:5,mag:1},'A pouch of prepared talismans.',{starter:true}),
+ G_('dark_robe','Dark Robe','outfit','🥼','cangyuan',{def:1,mag:1},'A dark robe with red thread in the hem.',{starter:true}),
+ G_('healers_satchel','Healer\'s Satchel','weapon','🧰','xining',{mp:4,mag:1},'Her satchel of remedies.',{starter:true,wt:'tool'}),
+ G_('basic_medical_texts','Basic Medical Texts','book','📘','xining',{mag:2,mp:3},'Her trusted reference.',{starter:true}),
+ G_('herbal_set','Herbal Set','accessory','🌿','xining',{hp:4,mp:2},'Pressed herbs and a small mortar.',{starter:true}),
+ G_('robe_xining','Physician\'s Robe','outfit','👘','xining',{mp:3,def:1,mag:1},'Pale robes with deep sleeves.',{starter:true}),
+ G_('training_staff','Training Staff','weapon','🪵','xiaotian',{atk:3},'A plain training staff.',{starter:true,wt:'two'}),
+ G_('leather_bracers','Leather Bracers','accessory','🟤','xiaotian',{def:1,hp:3},'Plain leather bracers.',{starter:true}),
+ G_('travelers_garb','Traveler\'s Garb','outfit','🥋','xiaotian',{hp:4,def:2},'Hard-wearing travelling clothes.',{starter:true}),
+ G_('deckhands_blade','Deckhand\'s Blade','weapon','🗡️','yaxing',{atk:3,spd:1},'A plain sailor\'s blade.',{starter:true,wt:'one'}),
+ G_('seafarers_charm','Seafarer\'s Charm','accessory','🧭','yaxing',{spd:1,hp:3},'A sailor\'s charm.',{starter:true}),
+ G_('simple_attire','Simple Attire','outfit','🥋','yaxing',{def:1,spd:1},'Plain clothes.',{starter:true}),
+ G_('lockpicks','Lockpicks','weapon','🗝️','hoko',{atk:1,spd:2},'Fine picks, better than a sword for his work.',{starter:true,wt:'tool'}),
+ G_('explorers_pouch','Explorer\'s Pouch','accessory','👝','hoko',{mp:4},'A pouch of small tools.',{starter:true}),
+ G_('warm_cloak','Warm Cloak','outfit','🧥','hoko',{def:2,hp:3},'A warm travelling cloak.',{starter:true}),
  G_('armor_suliechen','Slayer\'s Coat','outfit','🥋','suliechen',{hp:4,def:2},'A long coat with sewn-in talisman pockets.',{starter:true}),
- G_('w_xiyu','Ice Staff','weapon','🪄','xiyu',{mag:4,mp:4},'A staff of old ice that steadies her spells.',{starter:true,wt:'two'}),
- G_('w_dongyue','Spellblade','weapon','🗡️','dongyue',{atk:3,mag:2},'A blade that also carries healing.',{starter:true,wt:'one'}),
- G_('w_cangyuan','Thread Spindle','weapon','🧵','cangyuan',{mag:3},'A spindle wound with spirit thread.',{starter:true,wt:'one'}),
- G_('w_xining','Self-Defence Dagger','weapon','🗡️','xining',{atk:2},'A simple dagger for self-defence. She is a physician, not a fighter.',{starter:true,wt:'one'}),
- G_('healing_staff','Healing Staff','weapon','🪄','xining',{mag:5,mp:10},'A healing staff she can earn later. (Not awarded yet: the author decides when.)',{wt:'two'}),
- G_('w_yaxing','Throwing Knives','weapon','🔪','yaxing',{atk:3,spd:2},'A pair of balanced knives.',{starter:true,wt:'dual'}),
- G_('w_hoko','Explorer\'s Blade','weapon','🗡️','hoko',{atk:3},'A short blade for cutting rope and ice.',{starter:true,wt:'one'}),
  G_('w_suliechen','Frost Saber','weapon','🗡️','suliechen',{atk:3,mag:1},'A saber that leaves a trace of cold.',{starter:true,wt:'one'}),
- /* Volume 4: the Ice Temple */
- G_('bracers_xiaotian','Mountain-Stance Bracers','gloves','🧤','xiaotian',{def:4,hp:8},'Reinforce his guard and keep him steady against heavy blows, without making him a mage.',{fx:{physRed:.10,noSlow:true},fxText:'Takes 10% less physical damage and cannot be slowed.'}),
- G_('skyshard','Arcane Sword: Skyshard','weapon','🗡️','yaxing',{atk:5,mag:3,spd:3},'A light, swift sword for his new style: a mobile swordsman with innate magic resistance and limited arcane techniques. (Working name.)',{wt:'one',fx:{magRed:.10},fxText:'Takes 10% less magic damage. Grants Spirit Snare and Arcane Disruption; Spiritual Pulse at tier 2.',grants:['spirit_snare','arcane_disruption','spiritual_pulse']}),
+ /* ---- Treasure Vault upgrades (hidden vault behind the Ice Temple library; Hoko picks the locks) ---- */
+ G_('crimson_moon_hairpin','Crimson Moon Hairpin','accessory','🌙','xiyu',{mag:5,mp:10},'A refined hairpin imbued with eclipse energy. Helps her control her power and reduces the strain when using magic.',{fx:{mpRed:.08,fxPlus:{burn:1,slow:1,bind:1,silence:1,charm:1}},fxText:'Magic costs 8% less MP and her spell effects last a turn longer.'}),
+ G_('celestial_compass','Celestial Compass Pendant','accessory','🧭','dongyue',{hp:8,def:2,mp:5},'An ancient compass that responds to celestial alignments. Identifies hidden routes and steadies the mind in spatially distorted areas.',{fx:{discRes:.5,routes:true},fxText:'Resists silence and charm; detects hidden routes (exploration use not built).'}),
+ G_('spiritweave_bracers','Spiritweave Bracers','accessory','🧶','cangyuan',{mag:4,mp:8},'Bracers woven with ancient binding techniques. Improve his control over spiritual energy and complex formations.',{fx:{fxPlus:{bind:1,slow:1,thread:1},magRed:.05},fxText:'His binds and slows last a turn longer; 5% less magic damage.'}),
+ G_('bracers_xiaotian','Mountain-Stance Bracers','accessory','🟢','xiaotian',{def:4,hp:8},'Reinforced bracers that enhance physical stability and endurance. Help him withstand heavy blows without relying on magic.',{fx:{physRed:.10,noSlow:true},fxText:'Takes 10% less physical damage and cannot be slowed.'}),
+ G_('skyshard','Arcane Sword: Skyshard','weapon','🗡️','yaxing',{atk:5,mag:3,spd:3},'A legendary blade crafted for one with unique resistance and affinity. Enhances his speed, disrupts enemy techniques and channels his new abilities. (Working name.)',{wt:'one',fx:{magRed:.10},fxText:'Takes 10% less magic damage. Grants Spirit Snare and Arcane Disruption; Spiritual Pulse at tier 2.',grants:['spirit_snare','arcane_disruption','spiritual_pulse']}),
  G_('outfit_yaxing_sky','Commanders\' Sky-Blue Outfit','outfit','👘','yaxing',{def:3,spd:2},'The outfit the commanders gave him. He took a liking to it.',{}),
- G_('wayfinders_key','Wayfinder\'s Key','accessory','🗝️','hoko',{spd:2,mp:6,def:1},'Helps him recognise and operate ancient mechanisms: exploration utility more than combat strength.',{fx:{mechanisms:true},fxText:'Recognises and operates ancient mechanisms. Grants Operate the Mechanism.',grants:['operate_mechanism']}),
+ G_('wayfinders_key','Wayfinder\'s Key','accessory','🗝️','hoko',{spd:2,mp:6,def:1},'A multi-function key that can open ancient locks and operate temple mechanisms. Increases his ability to explore and uncover hidden paths.',{fx:{mechanisms:true},fxText:'Opens ancient locks and operates devices (exploration use not built). Grants Operate the Mechanism.',grants:['operate_mechanism']}),
+ /* ---- Library discovery ---- */
+ G_('healers_scripture','Healer\'s Scripture','book','📜','xining',{mag:5,mp:10},'A collection of rare medical texts from the Ice Temple: advanced healing techniques, spiritual diagnosis and unique support arts.',{fxText:'Grants Meridian Sanctuary.',grants:['meridian_sanctuary']}),
+ /* generic temple pieces (not awarded yet) */
  G_('frostweave_gloves','Frostweave Gloves','gloves','🧤',null,{def:2,mag:1},'Gloves woven from temple frost-silk.'),
  G_('temple_boots','Ice Temple Boots','shoes','👢',null,{spd:2,def:1},'Spiked soles for the temple\'s icy stairs.'),
  G_('warding_charm','Temple Warding Charm','accessory','📿',null,{hp:8,def:1},'A charm cut with a small ward.',{fx:{magRed:.05},fxText:'Takes 5% less magic damage.'}),
+ G_('healing_staff','Healing Staff','weapon','🪄','xining',{mag:5,mp:10},'A healing staff she can earn later. (Not awarded yet.)',{wt:'two'}),
+ /* starters: most heroes begin in a robe; the fighters in light armour */
+ /* Volume 4: the Ice Temple */
 ].forEach(g => GEAR[g.id] = g);
 /* Shop stock (generic pieces anyone can wear). price = gold. Hero-specific gear is never sold. */
 [
@@ -77,16 +94,18 @@ function smithsHtml(){
 
 /* skills granted by worn gear (same format as hero skills; tier = upgrade tier needed) */
 const GEAR_SKILLS = {
- spirit_snare:{id:'spirit_snare',n:'Spirit Snare',icon:'🪢',mp:6,kind:'phys',tgt:'foe',pow:.9,fx:[{k:'bind',d:2}],req:{lvl:1},tier:0,desc:'A short-range binding strike with the Skyshard.'},
+ spirit_snare:{id:'spirit_snare',n:'Spirit Snare',icon:'🪢',mp:6,kind:'phys',tgt:'foe',pow:.9,fx:[{k:'bind',d:1},{k:'slow',d:2}],req:{lvl:1},tier:0,desc:'A short-range binding strike with the Skyshard that also slows the enemy.'},
  arcane_disruption:{id:'arcane_disruption',n:'Arcane Disruption',icon:'🌀',mp:9,kind:'magic',tgt:'foe',pow:.8,fx:[{k:'silence',d:2},{k:'strip'}],req:{lvl:1},tier:0,desc:'Interrupts a foe\'s active spell (silence) and unravels its barrier.'},
  spiritual_pulse:{id:'spiritual_pulse',n:'Spiritual Pulse',icon:'💫',mp:22,kind:'magic',tgt:'foes',pow:1.1,fx:[{k:'slow',d:2},{k:'silence',d:1}],req:{lvl:1},tier:2,desc:'A costly burst of energy that pushes enemies back: damage, slows and briefly silences every foe. (Skyshard tier 2.)'},
+ meridian_sanctuary:{id:'meridian_sanctuary',n:'Meridian Sanctuary',icon:'🔷',mp:18,kind:'heal',tgt:'allies',pow:.5,fx:[{k:'shield',v:.12,d:3},{k:'regen',v:.05,d:3},{k:'ward',d:3}],req:{lvl:1},tier:0,desc:'A brief protective field: stabilises allies, reduces spiritual damage and speeds recovery.'},
  operate_mechanism:{id:'operate_mechanism',n:'Operate the Mechanism',icon:'⚙️',mp:8,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'},{k:'expose',d:3},{k:'slow',d:1}],req:{lvl:1},tier:0,desc:'Turns an ancient mechanism\'s own workings against a construct: analysed, stripped of its barrier, exposed and slowed.'},
 };
 const GEAR_START = {};   // filled below: hero -> [starter ids]
 Object.values(GEAR).filter(g => g.starter).forEach(g => (GEAR_START[g.who] = GEAR_START[g.who] || []).push(g.id));
 
 function GR(){
-  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}}; }
+  if(!G.gear){ G.gear = {owned:{}, eq:{}, tier:{}, v:3}; }
+  if(G.gear.v !== 3){ G.gear.v = 3; G.gear.eq = {}; Object.keys(G.gear.owned).forEach(id => { if(!GEAR[id]) delete G.gear.owned[id]; }); }   // starters were redesigned (author's equipment sheet)
   Object.keys(GEAR_START).forEach(h => { if(!G.gear.eq[h]){ G.gear.eq[h] = {}; GEAR_START[h].forEach(id => { G.gear.owned[id] = true; G.gear.eq[h][GEAR[id].slot] = id; }); } });
   return G.gear;
 }
@@ -96,7 +115,7 @@ const gearAt = (hero, slot) => { const id = (GR().eq[hero]||{})[slot]; return id
 const gearWorn = hero => GEAR_SLOTS.map(s => gearAt(hero, s[0])).filter(Boolean);
 const gearMult = id => 1 + .3*gearTier(id);
 function gearStats(hero){ const out = {}; gearWorn(hero).forEach(g => Object.keys(g.stats).forEach(k => out[k] = (out[k]||0) + Math.round(g.stats[k]*gearMult(g.id)))); return out; }
-function gearFx(hero){ const out = {physRed:0, magRed:0}; gearWorn(hero).forEach(g => { const f = g.fx||{}; out.physRed += f.physRed||0; out.magRed += f.magRed||0; if(f.noSlow) out.noSlow = true; if(f.mechanisms) out.mechanisms = true; }); return out; }
+function gearFx(hero){ const out = {physRed:0, magRed:0, mpRed:0, discRes:0, fxPlus:{}}; gearWorn(hero).forEach(g => { const f = g.fx||{}; out.physRed += f.physRed||0; out.magRed += f.magRed||0; out.mpRed += f.mpRed||0; out.discRes += f.discRes||0; if(f.noSlow) out.noSlow = true; if(f.mechanisms) out.mechanisms = true; if(f.routes) out.routes = true; Object.keys(f.fxPlus||{}).forEach(k => out.fxPlus[k] = (out.fxPlus[k]||0) + f.fxPlus[k]); }); return out; }
 function gearSkills(hero){ const out = []; gearWorn(hero).forEach(g => (g.grants||[]).forEach(sid => { const s = GEAR_SKILLS[sid]; if(s && gearTier(g.id) >= (s.tier||0)) out.push(Object.assign({}, s, {fromGear:g.id})); })); return out; }
 function giveGear(id, equipNow){
   const g = GEAR[id]; if(!g) return []; GR().owned[id] = true;
@@ -126,7 +145,7 @@ let eqPick = null;   // {hero, slot}
 const gearStatText = g => Object.keys(g.stats).map(k => { const v = Math.round(g.stats[k]*gearMult(g.id)); return (v>=0?'+':'')+v+' '+(STAT_NAME[k]||k); }).join(' ');
 const gearIcon = g => artOrIcon('assets/gear/'+g.id+'.webp', g.icon, 'gicon');
 function equipHtml(hero){
-  const rows = GEAR_SLOTS.map(([slot,label,ic]) => {
+  const rows = GEAR_SLOTS.filter(([slot]) => slot!=='book' || Object.values(GEAR).some(g => g.slot==='book' && g.who===hero)).map(([slot,label,ic]) => {
     const g = gearAt(hero, slot), open = eqPick && eqPick.hero===hero && eqPick.slot===slot;
     const t = g ? gearTier(g.id) : 0;
     const body = g ? `<div class="gi">${gearIcon(g)}</div><div class="fl"><b>${g.n}</b>${g.wt?` <span class="sm">· ${WTYPE[g.wt]}</span>`:''} ${t?'<em class="tag">tier '+t+'</em>':''}<div class="sm">${gearStatText(g)}${g.fxText?' · '+g.fxText:''}</div>`

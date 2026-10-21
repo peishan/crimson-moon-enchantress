@@ -13,7 +13,7 @@ function mkAlly(id, persist){
     hp:Math.max(hp,1), mhp:s.hp, mp, mmp:s.mp, atk:s.atk, mag:s.mag, def:s.def, spd:s.spd,
     st:{}, bf:[], state:null, used:{}, dead:false, guard:false, strain:0, treats:0,
     heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0,
-    resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
+    resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow, mpRed: gearFx(id).mpRed, discRes: gearFx(id).discRes, fxPlus: gearFx(id).fxPlus };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
 }
 function mkFoeUnit(key, lv, i){
   const u = Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
@@ -34,7 +34,7 @@ function evaOf(u){
   let m = 1; u.bf.forEach(b => { if(b.stat==='eva') m *= b.m; });
   return clamp((0.04 + eff(u,'spd')*0.003) * m, 0, .6);
 }
-const mpCost = (u,s) => Math.round(s.mp * ((u.state && u.state.id==='bloodmoon') ? .5 : 1) * (s.res ? 1 - .05*resLv() : 1) * ((u.id==='xining' && (s.kind==='heal'||s.id==='clear_spirit')) ? 1 - Math.min(.3, .05*(u.treats||0)) : 1));   // A Physician's Resolve
+const mpCost = (u,s) => Math.round(s.mp * (1 - (u.mpRed||0)) * ((u.state && u.state.id==='bloodmoon') ? .5 : 1) * (s.res ? 1 - .05*resLv() : 1) * ((u.id==='xining' && (s.kind==='heal'||s.id==='clear_spirit')) ? 1 - Math.min(.3, .05*(u.treats||0)) : 1));   // A Physician's Resolve
 function blog(t, cls){ B.log.push({t, cls:cls||''}); if(B.log.length>60) B.log.shift(); }
 
 /* ---------- start ---------- */
@@ -131,11 +131,11 @@ function applyFx(src, tgt, fx){
     case 'burn': case 'slow': case 'bind': case 'charm': case 'silence':
       if(tgt.ally && tgt.st.ward && Math.random()<.7){ blog('  '+tgt.name+' is protected by Still Waters.','good'); return; }
       if(tgt.ally && fx.k==='slow' && tgt.noSlow){ blog('  '+tgt.name+' holds steady.','good'); return; }
-      if(tgt.ally && tgt.resMagic && (fx.k==='silence'||fx.k==='charm') && Math.random() < tgt.resMagic*2){ blog('  '+tgt.name+' resists the spell.','good'); return; }
+      if(tgt.ally && (tgt.resMagic||tgt.discRes) && (fx.k==='silence'||fx.k==='charm') && Math.random() < (tgt.resMagic||0)*2 + (tgt.discRes||0)){ blog('  '+tgt.name+' resists the spell.','good'); return; }
       const th = (tgt.st.thread && tgt.st.thread.n) || 0;
       if(tgt.boss && (fx.k==='bind'||fx.k==='charm') && Math.random() < Math.max(.1, .5 - .15*th)){ blog('  '+tgt.name+' resists!'); return; }
       if(tgt.st.link && !fx.spread){ alive(B.foes).filter(o => o!==tgt && o.st.link && Math.random()<.5).forEach(o => { blog('  the link carries it to '+o.name+'.'); applyFx(src, o, Object.assign({}, fx, {spread:true})); }); }
-      tgt.st[fx.k] = {d:(fx.d||2) + (th?1:0) + ((src.id==='suliechen' && (fx.k==='bind'||fx.k==='slow')) ? 1 : 0)}; blog('  '+tgt.name+' is '+({burn:'burning',slow:'slowed',bind:'bound',charm:'charmed',silence:'silenced'})[fx.k]+'.'); break;
+      tgt.st[fx.k] = {d:(fx.d||2) + (th?1:0) + ((src.id==='suliechen' && (fx.k==='bind'||fx.k==='slow')) ? 1 : 0) + (((src.fxPlus && (src.fxPlus[fx.k] || 0)) || 0))}; blog('  '+tgt.name+' is '+({burn:'burning',slow:'slowed',bind:'bound',charm:'charmed',silence:'silenced'})[fx.k]+'.'); break;
     case 'buff': tgt.bf.push({stat:fx.stat,m:fx.m,d:(fx.d||3)+1}); blog('  '+tgt.name+' '+fx.stat.toUpperCase()+(fx.m>=1?' up':' down')+'.'); break;
     case 'shield': tgt.st.shield = {v:Math.round(tgt.mhp*fx.v), d:(fx.d||3)+1}; blog('  '+tgt.name+' gains a barrier.'); break;
     case 'regen': tgt.st.regen = {v:fx.v, d:(fx.d||3)+1}; break;

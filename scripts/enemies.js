@@ -55,10 +55,13 @@ const ENEMIES = {
   ice_temple_guardian:{n:'Ice Temple Guardian',icon:'🧊',boss:true,hp:520,atk:21,mag:20,def:13,spd:8,xp:240,gold:130,traits:['magic'],
     moves:[{n:'Glacial Halberd',pow:1.4},{n:'Frost Channel',pow:.9,spell:true,all:true,fx:[{k:'slow',d:2}]},{n:'Core Surge',pow:1.5,spell:true}],
     phases:[{at:.5,msg:'Its core flares: the frost flow quickens!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient guardian of the Ice Temple whose strikes carry frost. Magic that breaks its flow works well.'},
+  /* ---- Volume 4 upper maze (comics 017, 020): spiritual beasts driven into a frenzy ---- */
+  frenzied_spirit_beast:{n:'Frenzied Spirit Beast',icon:'🐺',elite:true,hp:230,atk:19,mag:12,def:11,spd:12,xp:120,gold:60,traits:['magic'],
+    moves:[{n:'Frenzied Bite',pow:1.4},{n:'Howl',pow:.8,spell:true,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'rift_shard',chance:.4}],desc:'A spiritual beast driven into a frenzy by something deeper in the maze.'},
   /* ---- Volume 4 roadmap (comic 018): the maze guardian ---- */
   maze_minotaur:{n:'Maze Minotaur',icon:'🐂',boss:true,hp:600,atk:24,mag:6,def:15,spd:8,xp:260,gold:140,
     moves:[{n:'Horned Charge',pow:1.6},{n:'Labyrinth Stomp',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rending Gore',pow:1.4}],
-    phases:[{at:.5,msg:'The minotaur bellows and charges blindly!',atk:1.3}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'The guardian of the upper maze. Placeholder stats until comic 018 is supplied.'},
+    phases:[{at:.5,msg:'The minotaur bellows and charges blindly!',atk:1.3}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'The guardian of the upper maze: it guards the passage and can be subdued, not only slain.'},
   /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
   red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
     moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},

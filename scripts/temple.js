@@ -56,6 +56,9 @@ const TEMPLE_ROOMS = [
   {id:'v4_library',   lv:4, n:'6 · Inner Library',          kind:'key',    unlock:129, desc:'Rows of ancient scrolls and manuals on the temple\'s history and magic. Xining\'s scripture; the Muxue inscription.'},
   {id:'v4_switch',    lv:4, n:'7 · Hidden Switch',          kind:'locked', unlock:129, desc:'Found by moving books in the library.'},
   {id:'v4_vault',     lv:4, n:'8 · Treasure Vault',         kind:'key',    unlock:130, desc:'Hidden behind a switch. Ancient treasures: equipment and Ya\'Xing\'s Skyshard.'},
+  {id:'v4_maze',      lv:4, n:'Upper Maze',                 kind:'trap',   unlock:131, desc:'The upper-floor maze above the vault: illusion formations, spiritual beasts and a Minotaur guarding the central passage.'},
+  {id:'v4_sealedch',   lv:4, n:'Sealed Chamber (Muxue seal)', kind:'key',   unlock:138, desc:'An enormous circular seal; the Muxue clan was entrusted to guard what lies beyond.'},
+  {id:'v4_commanders', lv:4, n:'Commanders\' Chamber',      kind:'key',    unlock:139, desc:'Four vacant commander stations: North, South, East and West.'},
   {id:'v4_portal',    lv:4, n:'Portal (upper floor)',       kind:'portal', unlock:129, desc:'The Muxue inscription reveals a portal on an upper floor. Its exact location is unknown. The maze and the tormentors\' location are not mapped yet.'},
 ];
 const TEMPLE_ICON = {room:'🚪', key:'📍', locked:'🔒', stairs:'🪜', portal:'🌀', trap:'⚠️'};

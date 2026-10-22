@@ -3821,6 +3821,196 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"131": [
+{
+"id": "upper_maze_stairway_reached",
+"d": "The party reaches the stairway to the upper maze; recent footprints stop at a sealed landing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"132": [
+{
+"id": "maze_held_by_illusion_formations",
+"d": "The upper maze's space is manipulated by illusion formations powered by a flow from the temple core",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "intruders_restraint_found_in_the_maze",
+"d": "A binding restraint matching the intruders' is found: they are not far ahead",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"133": [
+{
+"id": "su_liechen_met_in_the_maze",
+"d": "Su Liechen, an independent beast hunter, stops the party from killing a spiritual beast: it can be subdued, and killing it would disturb the balance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "maze_beasts_driven_into_a_frenzy",
+"d": "The maze beasts are being driven into a frenzy by something deeper in the maze",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "another_group_passed_through_recently",
+"d": "Another group, not the temple keepers, passed through recently and is after something deeper",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"134": [
+{
+"id": "minotaur_guards_the_central_passage",
+"d": "A real Minotaur guards the central passage of the maze; it is guarding, not chasing, and is temporarily subdued",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"135": [
+{
+"id": "intruders_found_trapped_behind_a_barrier",
+"d": "The intruders who tortured Ya'Xing are found trapped behind a failing barrier among spiritual beasts",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "intruders_sought_a_sealed_relic",
+"d": "The intruders were looking for a sealed relic they believed lay beyond the maze; someone is guiding them",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"136": [
+{
+"id": "intruders_captured_alive",
+"d": "The beasts are held off and the intruders are captured alive; Ya'Xing saves one with Skyshard but does not forgive them",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "intruders_hired_to_find_a_route_beyond",
+"d": "The intruders were hired to find a route beyond the temple; their employer knew of Yan's disappearance",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"137": [
+{
+"id": "prisoners_left_at_a_checkpoint_for_the_commanders",
+"d": "The prisoners are left at a defensible checkpoint to be handed to the commanders for judgment",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_reacts_to_xiyu",
+"d": "The ancient seal ahead reacts faintly to Xiyu's presence, as if it has been waiting for her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"138": [
+{
+"id": "muxue_clan_entrusted_to_guard_what_lies_beyond",
+"d": "The Muxue clan was entrusted to guard what lies beyond the sealed chamber and keep it concealed, even from the world",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "seal_weakening_from_the_inside",
+"d": "The seal is weakening from the inside; a strong suppressive energy, like the one used on Ya'Xing, is present",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "portal_mechanism_activated_on_the_upper_floor",
+"d": "An ancient mechanism is activated on the upper floor: the portal is responding and someone is above",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"139": [
+{
+"id": "four_commander_stations_vacant",
+"d": "The four commander stations (North, South, East, West) are vacant; the commanders passed through not long ago",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yans_mark_in_the_muxue_inscription",
+"d": "Xiyu finds her father's mark in a Muxue inscription: Yan came through here",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "commanders_redirected_power_to_reinforce_the_seal",
+"d": "The commanders redirected part of the temple's power to reinforce a failing seal; the flow is unstable",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"140": [
+{
+"id": "opening_the_portal_diverts_the_seals_power",
+"d": "Opening the portal diverts a significant amount of power from the temple's protective seal",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "portal_window_shows_a_figure_like_yan",
+"d": "A portal window shows, for a moment, a figure who might be Yan",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"141": [
+{
+"id": "portal_crossed_to_an_unfamiliar_world",
+"d": "The party crosses the portal into an unfamiliar world and finds evidence that Yan and the four commanders passed through",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "su_liechen_stays_to_guard_the_temple",
+"d": "Su Liechen stays behind to guard the temple and see that the prisoners face the commanders' punishment",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_is_waiting_on_the_other_side",
+"d": "Someone else has been waiting for the party on the other side",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "169": [
 {
 "id": "entry_records_a_disturbance_before_the_new_formation_diagram",

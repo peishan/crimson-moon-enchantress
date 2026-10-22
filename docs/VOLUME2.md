@@ -290,3 +290,6 @@ Target 25 comics (chapters 117-141); Volume 5 is not planned yet but also keeps 
 - Volume 4 cover splash and `volume4_complete` fire at chapter 141; flag `portal_crossed`. Temple map gains the Upper Maze, Sealed Chamber and Commanders' Chamber.
 - **Inconsistency for the author:** the existing Volume 5 (chapters 169-193, the records trail inside the Ice Temple) no longer follows from this ending: the party now leaves the Ice Temple through the portal into an unfamiliar world, and Hoko and Ya'Xing travel with them. Volume 5 is yet to be planned (25 comics); the old content stays until replaced.
 - Page notes: 015's title card reads "Chapter 15" and later pages "Chapter 024"/"Chapter 025"; Su Liechen's sheet details (capture philosophy) are not shown beyond 017 and 018.
+
+## Volume 5 plan (author)
+- The story is "sped up": **Volume 5 takes place in a different realm** (the world beyond the Ice Temple portal). Its 25 chapters are not generated yet; they will replace the old records-trail Volume 5 (chapters 169-193, which stay in the game until the new pages arrive). The **Ya'Xing and Xiyu & Cangyuan Interludes (chapters 194-203) stay in Volume 5**. Hoko, Ya'Xing and the rest of the party travel through the portal; Su Liechen stays at the Ice Temple.

@@ -52,6 +52,7 @@ const REL_CH = {
   105:[['xiaotian','dongyue',{t:3,u:3}],['xiaotian','xining',{t:3,u:3}]], 106:[['xiaotian','xiyu',{t:2,u:2}],['xiaotian','cangyuan',{t:2,u:2}]], 107:[['xiaotian','dongyue',{t:4,u:4}],['xiaotian','xining',{t:3,u:3}]], 103:[['xiaotian','dongyue',{t:2,u:2}]],
   126:[['xiyu','yaxing',{t:3,u:3}],['xining','yaxing',{t:2,u:2}]], 127:[['dongyue','yaxing',{t:3,u:3}],['xiaotian','yaxing',{t:3,u:3}],['cangyuan','yaxing',{t:2,u:2}]], 129:[['xiaotian','hoko',{t:1}]],
   133:[['xiaotian','yaxing',{t:1}]], 136:[['dongyue','yaxing',{t:2,u:2}],['xiyu','yaxing',{t:1}]], 140:[['hoko','xiyu',{t:2}]], 141:[['cangyuan','xiyu',{t:2,u:2}],['dongyue','xiyu',{t:2,u:2}]],
+  171:[['hoko','xiyu',{t:2,u:1}],['hoko','dongyue',{t:1}]], 176:[['cangyuan','yaxing',{t:2,u:2}]], 186:[['yaxing','xiyu',{t:1}],['xining','cangyuan',{t:1}]],
   198:[['dongyue','yaxing',{t:2,u:2}]], 202:[['cangyuan','xiyu',{t:2,u:2}]], 203:[['cangyuan','xiyu',{t:3,u:3}]], 199:[['cangyuan','xiyu',{t:2,u:2}]],
  
   117:[['cangyuan','xiyu',{t:2}]],

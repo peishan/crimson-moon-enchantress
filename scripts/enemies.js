@@ -58,6 +58,10 @@ const ENEMIES = {
   /* ---- Volume 4 upper maze (comics 017, 020): spiritual beasts driven into a frenzy ---- */
   frenzied_spirit_beast:{n:'Frenzied Spirit Beast',icon:'🐺',elite:true,hp:230,atk:19,mag:12,def:11,spd:12,xp:120,gold:60,traits:['magic'],
     moves:[{n:'Frenzied Bite',pow:1.4},{n:'Howl',pow:.8,spell:true,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'rift_shard',chance:.4}],desc:'A spiritual beast driven into a frenzy by something deeper in the maze.'},
+  /* ---- Volume 5 (comic 018): the waystation guardian, bound to the four commanders' insignias ---- */
+  waystation_guardian:{n:'Waystation Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:12,def:17,spd:6,xp:300,gold:150,traits:['layered'],
+    moves:[{n:'Crushing Fist',pow:1.5},{n:'Core Pulse',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Stone Sweep',pow:1.3}],
+    phases:[{at:.5,msg:'The second layer pulses: the guardian\'s core draws more energy!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient stone construct bound to the four commanders\' insignias. Its outer layer halves damage until stripped; disrupt its four points.'},
   /* ---- Volume 4 roadmap (comic 018): the maze guardian ---- */
   maze_minotaur:{n:'Maze Minotaur',icon:'🐂',boss:true,hp:600,atk:24,mag:6,def:15,spd:8,xp:260,gold:140,
     moves:[{n:'Horned Charge',pow:1.6},{n:'Labyrinth Stomp',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rending Gore',pow:1.4}],

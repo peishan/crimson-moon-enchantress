@@ -14,6 +14,7 @@ chapterOf(91).battle = [{key:'formation_manifestation'}];   // Volume 3 comic 01
 chapterOf(92).battle = [{key:'formation_manifestation'},{key:'awakened_manifestation'}];   // comic 014
 chapterOf(95).battle = [{key:'estate_guardian'}];   // comic 017
 chapterOf(122).battle = [{key:'ice_temple_guardian'}];
+chapterOf(186).battle = [{key:'waystation_guardian'}];   // V5 comic 018
 chapterOf(133).battle = [{key:'frenzied_spirit_beast'}];   // V4 comic 017
 chapterOf(134).battle = [{key:'maze_minotaur'}];   // V4 comic 018
 chapterOf(136).battle = [{key:'frenzied_spirit_beast'},{key:'frenzied_spirit_beast'}];   // V4 comic 020

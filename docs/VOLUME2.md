@@ -309,3 +309,5 @@ Target 25 comics (chapters 117-141); Volume 5 is not planned yet but also keeps 
 - **Inconsistency for the author:** these pages return to a heavy "records / fifth seat" mystery: erased records, damaged inscriptions, a prophecy, and the fifth position, with several chapters ending on "we don't know yet". That is the investigation style the author asked to move away from; consider adding battles, a witness or a reveal in the next comics.
 
 - **Volume 5 comics 014 and 016 re-supplied and installed** (Dongyue is white-haired again; Xiao Tian in teal). The re-supplied "Commanders' Mark" page is installed as comic 019 (same content), but its title card reads "Chapter 018" and 014's reads "Comic 014": the author will fix. Comic 018 (The Fourfold Formation) has not been re-supplied.
+
+- **Volume 5 comic 022 installed (chapter 190, "The Passage That Should Not Exist")**: the last gap in 001-030 is filled.

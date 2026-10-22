@@ -81,6 +81,7 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 190:[('hidden_passage_not_on_the_temple_map','Xiao Tian opens a concealed passage that is not on the temple\'s known layout and shows signs of repeated use','event'),('two_sets_of_footprints_split_in_the_passage','Two sets of footprints, one recent and one older, split inside the passage: one path goes deeper, the other toward an area not on the map','event')],
  170:[('seven_paths_and_a_missing_group','The trail splits into seven paths; the missing group went in different directions and someone else is following','state')],
  187:[('commander_marks_unlock_the_sealed_doorway',"The four commander marks (North, South, East, West) activate together and open the sealed doorway; Xiyu finds a separate mark from her father's trail",'event')],
  191:[('inscription_four_uphold_the_realm_fifth_unclaimed','An inscription: "Four uphold the realm, their paths do not intersect. The fifth remains unclaimed, beyond name, beyond record."','event')],

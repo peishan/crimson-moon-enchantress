@@ -4256,6 +4256,22 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"190": [
+{
+"id": "hidden_passage_not_on_the_temple_map",
+"d": "Xiao Tian opens a concealed passage that is not on the temple's known layout and shows signs of repeated use",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "two_sets_of_footprints_split_in_the_passage",
+"d": "Two sets of footprints, one recent and one older, split inside the passage: one path goes deeper, the other toward an area not on the map",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "191": [
 {
 "id": "inscription_four_uphold_the_realm_fifth_unclaimed",

@@ -200,8 +200,8 @@ const CAST_SHEETS = [
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
   {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:141},
   {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'The Door Below the World', img:'assets/volume5_cover.webp', ch:198},
-  {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
-  {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:203},
+  {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:203},
+  {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:208},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},
   {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)

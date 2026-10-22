@@ -145,8 +145,8 @@ const CHARACTERS = {
  /* ===== VOLUME 6 GUEST (author's sheet): a temporary story-required guest, not a core party member. He joins at the first chapter of Volume 6 (VOL6_START)
     for the demon-capture arc; GUESTS in core.js holds the window (end chapter not set yet: the author will give it). Later returns (e.g. Volume 8 at Yilong) are planned, not built. */
  suliechen:{
-  vol2:true, guest:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
-  cls:'Demon Slayer / Tracker (Guest)', role:'Control · Restraint · Support', combat:'Capture specialist',
+  vol2:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
+  cls:'Demon Slayer / Tracker', role:'Control · Restraint · Support', combat:'Capture specialist',
   elements:'Ice · Restraint · Sealing',
   identity:'A wandering demon slayer who tracks and captures demons across remote regions. He believes some demons should not be killed, as their death can bring greater disasters. His reasons remain unclear, and he keeps his past private. He travels independently, but is willing to cooperate with the party when their goals align.',
   quote:'Some truths should be captured, not destroyed.',

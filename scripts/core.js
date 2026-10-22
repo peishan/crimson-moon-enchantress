@@ -8,9 +8,9 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
-const JOIN_CH  = { hoko:119, suliechen:204, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
-const INTRO_CH = { hoko:119, suliechen:204, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
-const NO_JOIN_YET = { yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
+const JOIN_CH  = { hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
+const INTRO_CH = { hoko:119, suliechen:133, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
+const NO_JOIN_YET = { suliechen:'Met briefly in Volume 4 (comic 017). He becomes a joinable member when the party reaches Yilong; the chapter is not decided yet.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
@@ -246,11 +246,13 @@ const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, 
 const ARC_REQUIRED = [];   // {id:'xiaotian', from:chapter, to:chapter, why:'text'}: e.g. an arc that cannot happen without him
 const canonLocked = () => G.ch >= CANON_LOCK_CH && CANON_PARTY.every(id => G.party.includes(id));
 /* GUESTS: temporary story-required companions. They take an EXTRA seat (not a flex seat) and are fielded while their window is open (from = the chapter whose completion recruits them; to = last chapter of the arc, Infinity until the author sets it). */
-const GUESTS = { hoko:{from:119, to:Infinity, why:'Guest guide through the Ice Temple (until the arc ends).'}, suliechen:{from:204, to:Infinity, why:'Guest for the Volume 6 demon-capture arc.'} };
+const GUESTS = { hoko:{from:119, to:Infinity, why:'Guest guide through the Ice Temple (until the arc ends).'} };   // Su Liechen is a joinable member (not a guest) once the party reaches Yilong; his join chapter is not decided yet
 const guestHere = id => !!GUESTS[id] && G.ch >= GUESTS[id].from && G.ch <= GUESTS[id].to && G.party.includes(id);
 const guestsHere = () => Object.keys(GUESTS).filter(guestHere).length;
 const flexSeats = () => G.ch >= VOL4_START ? FLEX_V4 : FLEX_SEATS;   // Volume 4 on: 4 protagonists + Xiao Tian + Ya'Xing = 6 seats (author); guests such as Hoko take an extra seat
-const activeSlots = () => (canonLocked() ? CANON_PARTY.length + flexSeats() : 4) + guestsHere();
+/* No fixed party size once the canon four travel together (author): whoever has joined by the comic chapters can be fielded. Set PARTY_CAP to a number if the game gets too easy. Before that, 4 seats. */
+const PARTY_CAP = null;
+const activeSlots = () => canonLocked() ? (PARTY_CAP || 99) : 4;
 function lockReason(id){
   if(id === 'xiyu') return 'Xiyu always leads the party.';
   if(isAway(id)) return '';

@@ -38,12 +38,12 @@ function gateLine(id){
   return `<span class="gate shut">🔒 Joins when ${chName(j).toLowerCase()} is completed${g?' (needs average party Lv '+g.lv+')':''}</span>`;
 }
 function rParty(){
-  const slots = Array.from({length:activeSlots()}, (_,i) => i).map(i => { const id = G.active[i];
+  const slots = Array.from({length:Math.min(activeSlots(), Math.max(G.active.length,4))}, (_,i) => i).map(i => { const id = G.active[i];
     return id ? `<div class="slot on" onclick="sel='${id}';render()"><img src="${portrait(id)}"><b>${first(id)}</b><span class="sm">Lv${U(id).lv}</span></div>` : `<div class="slot"><span class="sm">empty</span></div>`; }).join('');
   const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id) || profileKnown(id)).map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
-  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}/${activeSlots()}) — fights use these seats.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
+  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}${activeSlots()>=99?'':'/'+activeSlots()}) — everyone ticked as active fights; there is no seat limit after the four protagonists travel together.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
 }
 function bondsHtml(){
   const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
@@ -202,7 +202,7 @@ const CAST_SHEETS = [
   {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:193},
   {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:203},
-  {id:'suliechen', n:'Su Liechen · Guest', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:204},
+  {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},
   {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];

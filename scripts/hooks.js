@@ -4027,6 +4027,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"170": [
+{
+"id": "seven_paths_and_a_missing_group",
+"d": "The trail splits into seven paths; the missing group went in different directions and someone else is following",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
 "171": [
 {
 "id": "hoko_joins_the_journey",
@@ -4199,6 +4208,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"187": [
+{
+"id": "commander_marks_unlock_the_sealed_doorway",
+"d": "The four commander marks (North, South, East, West) activate together and open the sealed doorway; Xiyu finds a separate mark from her father's trail",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "188": [
 {
 "id": "vault_searched_hastily_by_someone_else",
@@ -4238,7 +4256,86 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"191": [
+{
+"id": "inscription_four_uphold_the_realm_fifth_unclaimed",
+"d": "An inscription: \"Four uphold the realm, their paths do not intersect. The fifth remains unclaimed, beyond name, beyond record.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"192": [
+{
+"id": "five_platform_mechanism_needs_several_people",
+"d": "The five-platform mechanism needs several people to stabilise at once; forcing it risks a violent backlash",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "a_platform_activates_on_its_own",
+"d": "One of the five platforms activates on its own: someone or something is still interacting with the place",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"193": [
+{
+"id": "fifth_platform_unmarked_and_activates_alone",
+"d": "The fifth platform has no insignia or name; it activates by itself and writes \"When the four return, the unclaimed seat shall awaken\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "194": [
+{
+"id": "skyshard_resonates_with_something_below",
+"d": "Skyshard answers a faint, indistinct resonance from beneath the central chamber",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"195": [
+{
+"id": "hidden_stairway_beneath_the_five_seats",
+"d": "A repaired slab hides a stairway below; a still-warm lamp shows someone passed recently",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"196": [
+{
+"id": "record_of_five_the_fifth_shall_answer_when_the_four_return",
+"d": "The underground records: \"The fifth shall answer only when the four have returned\"; the fifth position's lines were deliberately erased",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"197": [
+{
+"id": "fifth_mark_answers_xiyus_hand_briefly",
+"d": "A damaged mark lights briefly under Xiyu's hand and shows a line: the fifth answers only when the four return",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"198": [
+{
+"id": "door_below_the_world_condition_the_fifth_must_choose",
+"d": "The door below the world answers: \"The four may return. The fifth must choose.\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"199": [
 {
 "id": "yaxing_dreams_of_a_gentle_hand",
 "d": "Ya'Xing dreams of a woman with a gentle hand and a small child; he thought it was his mother but cannot tell if it was her",
@@ -4247,7 +4344,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"195": [
+"200": [
 {
 "id": "yaxing_was_passed_between_households_as_a_child",
 "d": "Ya'Xing remembers being sent from household to household as a child, with no say in it",
@@ -4256,7 +4353,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"196": [
+"201": [
 {
 "id": "yaxing_asked_for_his_wages_and_left_service",
 "d": "As a grown man Ya'Xing asked what he was owed, took his wages and walked out of service",
@@ -4265,7 +4362,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"197": [
+"202": [
 {
 "id": "yaxing_found_dock_work_with_a_ships_master",
 "d": "Ya'Xing found paid rigging work on the docks, handled by a ship's master who offered him a few days' work",
@@ -4274,7 +4371,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"198": [
+"203": [
 {
 "id": "yaxing_hired_by_young_master_dong",
 "d": "Ya'Xing agreed to work as a ship handler for Young Master Dong, on terms that left him free to leave",
@@ -4283,7 +4380,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"199": [
+"204": [
 {
 "id": "xiyu_remembers_the_family_that_raised_her",
 "d": "Xiyu remembers the family that raised her and being told she was the last of the family's bloodline",
@@ -4292,7 +4389,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"200": [
+"205": [
 {
 "id": "cangyuan_stopped_writing_home",
 "d": "Cangyuan left home young with his master's guidance; his parents never answered his letters and he eventually stopped writing",
@@ -4301,7 +4398,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"201": [
+"206": [
 {
 "id": "cangyuan_grew_up_beside_a_companion",
 "d": "Cangyuan grew up beside a companion his own age; they did not stay together but parted without either being the villain",
@@ -4310,7 +4407,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"202": [
+"207": [
 {
 "id": "xiyu_and_cangyuan_agree_pasts_stay_theirs_to_share",
 "d": "Xiyu and Cangyuan agree neither needs to erase the past nor share every detail of it",
@@ -4319,7 +4416,7 @@ const HOOKS = {
 "s": "art"
 }
 ],
-"203": [
+"208": [
 {
 "id": "xu_hanshan_name_spoken",
 "d": "Xiyu speaks the name Xu Hanshan, someone important to her whose leaving made her feel she was never enough",

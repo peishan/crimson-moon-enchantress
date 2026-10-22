@@ -199,7 +199,7 @@ const CAST_SHEETS = [
   {id:'cover3', n:'Volume 3 Cover', sub:'The Roots of What Remains', img:'assets/volume3_cover.webp', ch:107},
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
   {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:141},
-  {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:193},
+  {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'Four travelers. One journey. Countless secrets.', img:'assets/volume5_cover.webp', ch:198},
   {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:194},
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:203},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},

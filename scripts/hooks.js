@@ -4691,14 +4691,14 @@ const HOOKS = {
 "224": [
 {
 "id": "chamber_of_instruments_waits_for_contact",
-"d": "The Chamber of Instruments wakes on contact, not force; a guardian unfolds and the central ring starts descending",
+"d": "The Chamber of Instruments is an entire system that wakes at their presence; a ring turns, the mechanism awakens and a guardian unfolds from the walls",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
 "id": "watcher_dart_stops_the_mechanism",
-"d": "An unseen dart strikes a latch and halts the mechanism; a recent handprint is left beside it",
+"d": "An unseen observer's dart strikes a latch and halts the mechanism",
 "t": "event",
 "p": false,
 "s": "art"

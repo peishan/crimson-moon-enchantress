@@ -345,3 +345,5 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 - Not yet resolved: the watcher's identity and whether he joins; Su Liechen is not involved. Note: 016's "chapter 015 bridge" is 223 in the game and sits after 011-014, which matches the order of the pages.
 
 - **Volume 6 comic 015 revised and installed (chapter 223):** the repeats were removed (no second self-swinging bell, no second discovery of the chasm); it now centres on the silenced bells (clappers removed or bound, a consistent pattern by one person) and ends on the feeling of being watched, which leads into 016-017.
+
+- **Volume 6 comic 016 regenerated and installed (chapter 224):** the continuity fix for 011-015. Changes: the handprint beside the latch and Xiao Tian's "same pattern from my dream" are gone; the observer now appears in a panel (hooded, aiming) but stays unnamed. Chapter 225 (017) still reads correctly after it: the dart, the latch and "our watcher" all match. One small note for 017: it says the warning in the dust was left recently, and Hoko "stood closest to the exit"; both are unaffected.

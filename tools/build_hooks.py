@@ -81,6 +81,8 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 221:[('hidden_route_ends_at_a_chasm_with_a_silent_bell_bridge','The hidden route ends at a vast chasm crossed by a stone bridge hung with silent bronze bells; a structure across the gap looks maintained','event')],
+ 222:[('fresh_footprints_not_the_partys_at_the_bridge','Fresh, light footprints that match none of the party\'s lead to the bridge; a bell has been moved and returned','event'),('figure_vanishes_behind_a_pillar_across_the_bridge','A figure is glimpsed across the bridge and vanishes behind a pillar: a watcher, or a sign left for them','event')],
  219:[('etched_instructions_five_positions_fifth_erased','Wall diagrams record a system of five positions; the fifth\'s instructions were deliberately chiselled out','event')],
  220:[('junction_paths_no_longer_match_the_diagram','The junction\'s paths no longer match the carved diagram; one channel was deliberately severed','event'),('diagrams_are_instructions_not_a_map','If the routes can be altered, the diagrams are instructions, not a map','state'),('xiao_tian_feels_the_incomplete_symbol_is_familiar','Xiao Tian touches the incomplete symbol and feels a familiar sensation; the memory slips away','event')],
  216:[('deeper_structure_records_a_sequence_between_five_paths','A deeper structure records the flow of power between the five paths; the fifth symbol is blank','state'),('hidden_door_to_another_realm_emerges','A hidden door emerges when the lines are fully traced; beyond it lies another realm','event'),('xiao_tian_memory_doorway_and_a_hand_reaching','Xiao Tian recalls fragments: a vast doorway and a hand reaching for a sealed object; it slips away','event')],

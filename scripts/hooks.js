@@ -4647,6 +4647,31 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"221": [
+{
+"id": "hidden_route_ends_at_a_chasm_with_a_silent_bell_bridge",
+"d": "The hidden route ends at a vast chasm crossed by a stone bridge hung with silent bronze bells; a structure across the gap looks maintained",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"222": [
+{
+"id": "fresh_footprints_not_the_partys_at_the_bridge",
+"d": "Fresh, light footprints that match none of the party's lead to the bridge; a bell has been moved and returned",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "figure_vanishes_behind_a_pillar_across_the_bridge",
+"d": "A figure is glimpsed across the bridge and vanishes behind a pillar: a watcher, or a sign left for them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "223": [
 {
 "id": "bridge_of_silent_bells_crossed",

@@ -81,6 +81,17 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 241:[('xiao_tian_recognises_the_peaks_and_the_basin','Xiao Tian recognises the peaks and finds the secluded basin where he lived; a precise reflex movement shows his body remembers','event')],
+ 242:[('estate_forced_at_the_entrances',"The estate's damage is concentrated around the entrances: someone forced their way through",'event'),('hairpin_survived_the_collapse','Xining finds a hairpin that survived the collapse; it feels familiar to Xiao Tian','event')],
+ 244:[('study_searched_for_specific_things',"The study was searched by someone who knew what they wanted; Xiao Tian finds his master's hidden box, a rough map of the estate and a note",'event'),('estate_map_marks_a_place_beneath_the_main_hall','The estate map marks a hidden storage area beneath the main hall','event')],
+ 245:[('xiao_tian_remembers_the_ordinary_days','Ordinary memories return: training before sunrise, chores, a boy beside him, a chipped wooden whistle','event'),('xiao_tian_was_sent_away_on_an_errand_before_the_attack','His master sent him away on an errand before the attack; the destination and the object are lost to memory','event')],
+ 246:[('martial_manual_shanxingshu_found_behind_the_wall',"Xiao Tian finds his master's martial manual (山行書) sealed behind a wall; his body already knows the form",'event')],
+ 247:[('manual_has_corrected_sections_and_removed_pages',"The manual's final movement was corrected after the first version; several pages were removed carefully (by his master or someone else: unknown); a mountain-and-circle mark is on the binding",'event')],
+ 248:[('xiao_tian_remembers_the_night_of_masks',"Xiao Tian remembers the masked attack: his master ordered him to leave and not look back; one attacker's mask shifted and their eyes met",'event'),('the_errand_came_before_the_attack','The memory of the errand shows it came first and the attack later','state')],
+ 249:[('hoko_proposes_a_guided_recall','Hoko proposes a guided recall (a focus, careful questions, a pendulum) with strict rules; Xiao Tian decides when to begin and stop','event')],
+ 250:[('echo_recall_when_the_road_divides_do_not_follow_the_wider_path','In Echo Recall Xiao Tian hears his master: "When the road divides, don\'t follow the wider path"; he stops when the night returns','event')],
+ 251:[('narrow_path_built_to_last_with_a_mountain_marker',"The narrow path is a built route with a moss-covered marker like the manual's notation; his master taught him to read foundations, not surfaces",'event')],
+ 252:[('jinghe_stone_beneath_the_pine_heard_in_sleep','Xiao Tian murmurs "Jinghe... stone beneath the pine" in his sleep; Ya\'Xing remembers it; the meaning is unconfirmed','event')],
  238:[('xiao_yan_joins_the_party','The watcher Yan is named Xiao Yan (to tell him from Muxue Yan) and joins the party for the new journey','event'),('party_rests_after_the_single_use_portal','After crossing the single-use portal the party rests at a fire among ruins in a new land','event')],
  239:[('party_plans_the_road_to_the_city','The party prepares supplies and plans the road to the city; Xining and Xiyu begin teaching Xiao Yan plants and cooking','event')],
  240:[('xiao_tian_memory_wooden_swords_at_a_waystation_mark','At a waystation mark Xiao Tian recalls the sound of wooden swords and a voice: "Again. From the beginning." He could not see anyone','event')],

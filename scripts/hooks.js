@@ -4917,6 +4917,133 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"241": [
+{
+"id": "xiao_tian_recognises_the_peaks_and_the_basin",
+"d": "Xiao Tian recognises the peaks and finds the secluded basin where he lived; a precise reflex movement shows his body remembers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"242": [
+{
+"id": "estate_forced_at_the_entrances",
+"d": "The estate's damage is concentrated around the entrances: someone forced their way through",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hairpin_survived_the_collapse",
+"d": "Xining finds a hairpin that survived the collapse; it feels familiar to Xiao Tian",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"244": [
+{
+"id": "study_searched_for_specific_things",
+"d": "The study was searched by someone who knew what they wanted; Xiao Tian finds his master's hidden box, a rough map of the estate and a note",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "estate_map_marks_a_place_beneath_the_main_hall",
+"d": "The estate map marks a hidden storage area beneath the main hall",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"245": [
+{
+"id": "xiao_tian_remembers_the_ordinary_days",
+"d": "Ordinary memories return: training before sunrise, chores, a boy beside him, a chipped wooden whistle",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_was_sent_away_on_an_errand_before_the_attack",
+"d": "His master sent him away on an errand before the attack; the destination and the object are lost to memory",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"246": [
+{
+"id": "martial_manual_shanxingshu_found_behind_the_wall",
+"d": "Xiao Tian finds his master's martial manual (山行書) sealed behind a wall; his body already knows the form",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"247": [
+{
+"id": "manual_has_corrected_sections_and_removed_pages",
+"d": "The manual's final movement was corrected after the first version; several pages were removed carefully (by his master or someone else: unknown); a mountain-and-circle mark is on the binding",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"248": [
+{
+"id": "xiao_tian_remembers_the_night_of_masks",
+"d": "Xiao Tian remembers the masked attack: his master ordered him to leave and not look back; one attacker's mask shifted and their eyes met",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "the_errand_came_before_the_attack",
+"d": "The memory of the errand shows it came first and the attack later",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"249": [
+{
+"id": "hoko_proposes_a_guided_recall",
+"d": "Hoko proposes a guided recall (a focus, careful questions, a pendulum) with strict rules; Xiao Tian decides when to begin and stop",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"250": [
+{
+"id": "echo_recall_when_the_road_divides_do_not_follow_the_wider_path",
+"d": "In Echo Recall Xiao Tian hears his master: \"When the road divides, don't follow the wider path\"; he stops when the night returns",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"251": [
+{
+"id": "narrow_path_built_to_last_with_a_mountain_marker",
+"d": "The narrow path is a built route with a moss-covered marker like the manual's notation; his master taught him to read foundations, not surfaces",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"252": [
+{
+"id": "jinghe_stone_beneath_the_pine_heard_in_sleep",
+"d": "Xiao Tian murmurs \"Jinghe... stone beneath the pine\" in his sleep; Ya'Xing remembers it; the meaning is unconfirmed",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -10,3 +10,6 @@ Not built yet. Recorded from the author's design update.
 
 ## Conflict with what is built (needs the author's call)
 Yan is currently built from the author's earlier character sheet as the **Wayfinder** class (mechanism operation, terrain, reconnaissance, structural support). This update makes him an **Apprentice Herbalist** (non-magical support). Both could fit if the herbalist training is the ledger layered on top (Wayfinder skills in battle, herbalism for camp and supplies), or his battle skills could be replaced with remedy-style support. The existing herbalism system (Xining's pouch, mortar and recipes) could host his crafting.
+
+## Built (option 1: keep both)
+Yan keeps the Wayfinder battle class; `scripts/ledger.js` adds the Training Ledger on his Party sheet (seven skills, mentors, four stages, starting values as in the design). Story advances come from `LEDGER_CH` (empty until Volume 7 chapters exist); optional practice (gathering, tavern meals) moves herbalism, cooking and gathering from stage 1 to 2 after 3 uses. Stage rewards are listed but only the ledger itself is built; effects on remedies, meals and camp are not wired yet. The ledger appears once Yan is in the party (Volume 7).

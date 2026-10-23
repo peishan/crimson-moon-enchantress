@@ -83,7 +83,7 @@ function rSheet(id){
    ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div>${id==='yaxing'&&yxResting()?`<div class="sm" style="margin-top:4px">He needs a day's rest before he can travel (a game day: it passes with the next chapter, or now).</div><button class="pri" onclick="act(()=>yxRest())">🛏️ Let him rest a day</button>`:''}</div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
    ${id==='xiyu'?curseHtml()+bondsHtml():''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
-   <h4>Stats</h4><div class="stg">${stats}</div>${equipHtml(id)}
+   <h4>Stats</h4><div class="stg">${stats}</div>${equipHtml(id)}${id==='yanwatcher' && typeof ledgerHtml==='function' ? ledgerHtml() : ''}
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
 }
 

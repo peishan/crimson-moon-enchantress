@@ -39,7 +39,7 @@ function mealAt(id){
   const p = placeById(id); if(!p || p.kind !== 'tavern' || !p.open()) return [];
   const c = mealPrice(p); if(G.gold < c) return ['A hot meal costs '+c+' gold.'];
   G.gold -= c; G.party.forEach(pid => { const s = statsOf(pid); healUnit(pid, Math.round(s.hp*.4), Math.round(s.mp*.4)); });
-  G.heat = Math.max(0, (G.heat||0) - 15); advanceTime(1); save();
+  G.heat = Math.max(0, (G.heat||0) - 15); advanceTime(1); if(typeof ledgerUse==='function') ledgerUse('cooking'); save();
   return ['🍲 A hot meal at '+p.n+' (-'+c+'g): everyone recovers 40% HP and MP, and Xiyu\'s heat eases. '+timeLabel()+'.'];
 }
 function buyHerbAt(pid, herb){

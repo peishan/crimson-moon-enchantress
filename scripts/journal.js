@@ -54,6 +54,7 @@ function completeChapter(n){
   relStory(n);
   enforceParty();
   giveChapterGear(n).forEach(m => msgs.push(m));
+  if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)

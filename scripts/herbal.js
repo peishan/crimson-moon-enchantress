@@ -62,7 +62,7 @@ function gatherAt(spotId){
   const table = s.herbs.map(([id,w,when]) => [id, w * (when && when === per ? 2 : 1)]), total = table.reduce((a,[,w]) => a + w, 0), got = {};
   for(let i = 0; i < n; i++){ let r = Math.random()*total; for(const [id,w] of table){ r -= w; if(r <= 0){ got[id] = (got[id]||0) + 1; break; } } }
   addItems(Object.keys(got).map(id => ({id, qty:got[id]})));
-  advanceTime(GATHER_HOURS); G.herb = G.herb || {xp:0, known:{}, gathered:0, made:0}; G.herb.gathered++;
+  advanceTime(GATHER_HOURS); G.herb = G.herb || {xp:0, known:{}, gathered:0, made:0}; G.herb.gathered++; if(typeof ledgerUse==='function'){ ledgerUse('gathering'); ledgerUse('herbalism'); }
   const msgs = ['🌿 Xining gathers at '+s.n+': '+Object.keys(got).map(id => ITEMS[id].icon+' '+ITEMS[id].n+' ×'+got[id]).join(', ')+'. ('+GATHER_HOURS+' hours pass: '+timeLabel()+')'].concat(herbXp(1));
   save(); return {msgs, got};
 }

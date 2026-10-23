@@ -4687,6 +4687,38 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"224": [
+{
+"id": "chamber_of_instruments_waits_for_contact",
+"d": "The Chamber of Instruments wakes on contact, not force; a guardian unfolds and the central ring starts descending",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "watcher_dart_stops_the_mechanism",
+"d": "An unseen dart strikes a latch and halts the mechanism; a recent handprint is left beside it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"225": [
+{
+"id": "do_not_align_the_fifth_warning",
+"d": "A recent warning in the dust: \"Do not align the fifth--\"; the fifth ring shifts on its own",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "the_watcher_steps_into_the_party",
+"d": "The hooded watcher steps out of the shadows, helps stop the guardian and offers to guide them; whether he stays is undecided",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

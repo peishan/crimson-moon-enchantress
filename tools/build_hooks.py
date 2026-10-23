@@ -81,6 +81,8 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 224:[('chamber_of_instruments_waits_for_contact','The Chamber of Instruments wakes on contact, not force; a guardian unfolds and the central ring starts descending','event'),('watcher_dart_stops_the_mechanism','An unseen dart strikes a latch and halts the mechanism; a recent handprint is left beside it','event')],
+ 225:[('do_not_align_the_fifth_warning','A recent warning in the dust: "Do not align the fifth--"; the fifth ring shifts on its own','event'),('the_watcher_steps_into_the_party','The hooded watcher steps out of the shadows, helps stop the guardian and offers to guide them; whether he stays is undecided','event')],
  221:[('hidden_route_ends_at_a_chasm_with_a_silent_bell_bridge','The hidden route ends at a vast chasm crossed by a stone bridge hung with silent bronze bells; a structure across the gap looks maintained','event')],
  222:[('fresh_footprints_not_the_partys_at_the_bridge','Fresh, light footprints that match none of the party\'s lead to the bridge; a bell has been moved and returned','event'),('figure_vanishes_behind_a_pillar_across_the_bridge','A figure is glimpsed across the bridge and vanishes behind a pillar: a watcher, or a sign left for them','event')],
  219:[('etched_instructions_five_positions_fifth_erased','Wall diagrams record a system of five positions; the fifth\'s instructions were deliberately chiselled out','event')],

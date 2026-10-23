@@ -62,6 +62,10 @@ const ENEMIES = {
   waystation_guardian:{n:'Waystation Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:12,def:17,spd:6,xp:300,gold:150,traits:['layered'],
     moves:[{n:'Crushing Fist',pow:1.5},{n:'Core Pulse',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Stone Sweep',pow:1.3}],
     phases:[{at:.5,msg:'The second layer pulses: the guardian\'s core draws more energy!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient stone construct bound to the four commanders\' insignias. Its outer layer halves damage until stripped; disrupt its four points.'},
+  /* ---- Volume 6 comic 016: the chamber guardian that unfolds from the walls ---- */
+  chamber_guardian:{n:'Chamber Guardian',icon:'🗿',boss:true,hp:680,atk:25,mag:14,def:17,spd:7,xp:320,gold:160,traits:['layered'],
+    moves:[{n:'Program Strike',pow:1.5},{n:'Ring Resonance',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Gear Crush',pow:1.4}],
+    phases:[{at:.5,msg:'The central ring descends: the guardian\'s program accelerates!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient guardian that unfolds from the walls of the Chamber of Instruments, following an old program. Its outer plating halves damage until stripped.'},
   /* ---- Volume 4 roadmap (comic 018): the maze guardian ---- */
   maze_minotaur:{n:'Maze Minotaur',icon:'🐂',boss:true,hp:600,atk:24,mag:6,def:15,spd:8,xp:260,gold:140,
     moves:[{n:'Horned Charge',pow:1.6},{n:'Labyrinth Stomp',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rending Gore',pow:1.4}],

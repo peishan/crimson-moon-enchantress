@@ -4808,6 +4808,81 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"232": [
+{
+"id": "abandoned_settlement_and_transit_station_beyond_the_arch",
+"d": "Beyond the arch lies a mist-covered landscape with an abandoned settlement and a transit station whose connections were physically removed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "amber_light_in_the_watchtower",
+"d": "An amber light appears in the settlement's watchtower and fresh small footprints end at its door",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"233": [
+{
+"id": "someone_stayed_in_the_watchtower_and_left_a_warning",
+"d": "Someone stayed briefly in the watchtower and left a hidden note: \"outer route unstable. Do not return by the station\"; a section of the transit record was torn away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"234": [
+{
+"id": "copy_of_the_route_record_with_a_later_warning",
+"d": "A copy of the route record shows the elevated road branching to an outer gate; a later hand wrote \"Outer route uncertain. Verify before passage\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"235": [
+{
+"id": "elevated_road_collapses_behind_the_party",
+"d": "The elevated road collapses behind the party after they cross the ledge in pairs; Yan lets it stay broken",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"236": [
+{
+"id": "outer_gate_opens_only_from_the_far_side",
+"d": "The outer gate's release is on the far side; Yan chooses to cross with the party",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"237": [
+{
+"id": "outer_gate_opened_by_manual_release",
+"d": "The party opens the outer gate through a service channel and a manual release, and finds a real sky beyond",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_travels_with_the_party_temporarily",
+"d": "Yan crosses the threshold and travels with the party as a temporary arrangement until he understands what lies beyond",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_sees_a_monument_like_his_token",
+"d": "Xiao Tian notices a distant monument with a mark like his token and tells no one",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

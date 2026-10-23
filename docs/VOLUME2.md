@@ -343,3 +343,5 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 ## Volume 6 comics 016 and 017 installed (chapters 224, 225)
 - 224 The Chamber of Instruments (**battle**: Chamber Guardian, layered; the dart from the unseen watcher) and 225 The Message in the Dust (the hooded, ash-haired watcher steps out, warning "Do not align the fifth--"; he offers to guide them; whether he stays is undecided). `LAST_CHAPTER = 225`. The watcher is unnamed on the pages and in the game.
 - Not yet resolved: the watcher's identity and whether he joins; Su Liechen is not involved. Note: 016's "chapter 015 bridge" is 223 in the game and sits after 011-014, which matches the order of the pages.
+
+- **Volume 6 comic 015 revised and installed (chapter 223):** the repeats were removed (no second self-swinging bell, no second discovery of the chasm); it now centres on the silenced bells (clappers removed or bound, a consistent pattern by one person) and ends on the feeling of being watched, which leads into 016-017.

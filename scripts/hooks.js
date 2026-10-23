@@ -4674,15 +4674,15 @@ const HOOKS = {
 ],
 "223": [
 {
-"id": "bridge_of_silent_bells_crossed",
-"d": "The party crosses an ancient bridge whose bells are silent; some were deliberately disabled and one swings on its own",
+"id": "bridge_bells_silenced_deliberately_clappers_removed_or_bound",
+"d": "Several bells on the bridge had their clappers removed or bound, deliberately and recently, by one person; only certain bells along this section were touched",
 "t": "event",
 "p": false,
 "s": "art"
 },
 {
-"id": "someone_is_watching_or_the_bridge_tracks_them",
-"d": "Someone is watching, or the bridge itself tracks them; they cannot tell whether they are being helped or only observed",
+"id": "silenced_for_them_or_to_mislead_them_unknown",
+"d": "Whether the bells were silenced for the party or to mislead it is unknown; the feeling of being watched stays",
 "t": "state",
 "p": false,
 "s": "art"

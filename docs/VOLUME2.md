@@ -350,5 +350,5 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 
 ## Volume 6 comics 018-020, 022, 023 installed (chapters 226-228, 230, 231); comic 021 pending (chapter 229)
 - 226 The Terms of Trust (the watcher is named **Yan (晏)**, a reluctant guide) · 227 The Keeper's Workshop · 228 The Route That Should Not Exist · **229 = comic 021, not uploaded (placeholder)** · 230 The Door That Remembered (the arch's recorded past) · 231 The Cost of Completion (Yan resets the lever; the recording is lost). `LAST_CHAPTER = 231`.
-- **Inconsistency for the author:** the watcher is called "Yan" (晏) on comic 018, the same name as Muxue Yan, Xiyu's father (沐雪晏 in the cast), who is also lost in this realm. Xiyu and the party do not remark on it on the pages, even though she is searching for "Yan". The game text calls him "Yan (晏)" and refers to Muxue Yan as "Muxue Yan"; if this is a deliberate mirror it may need a line, or a different name.
+- **Name note (resolved by the author):** the watcher is Yan (晏), a different character from Muxue Yan (岩, Xiyu's father); the two names only sound alike. The game text writes the watcher as "Yan (晏)" and Muxue Yan in full.
 - Comic 022 refers to "the pin Xiao Tian found", presumably in the missing comic 021. The page also says "the seven" while 018-020 draw eight figures with Yan.

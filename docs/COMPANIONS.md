@@ -60,3 +60,6 @@ Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5
 
 ## Hoko's departure (author)
 - No fixed exit chapter. Volume 5 continues in the Ice Temple and then the upper-floor **portal**; Hoko travels with the party until he finds a way back to Luiterra (probably through that portal). His guest window (`GUESTS.hoko`, `to: Infinity`) stays open until the author sets the chapter; set `to` to that chapter, and a goodbye scene can then be added (see VOLUME4_PLAN.md).
+
+## Yan (晏), the Volume 6 watcher (author)
+- Not playable in Volume 6; he travels with the party only in the story text ("temporary arrangement"). He becomes a **playable character in Volume 7**, and once Xiyu's base is established he becomes the **maintenance / caretaker of her base**. The author will design his portrait and class. Not built; he is a different character from Muxue Yan (岩); his id will not be `yan` (already Muxue Yan's).

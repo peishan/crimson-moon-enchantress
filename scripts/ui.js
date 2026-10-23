@@ -200,6 +200,7 @@ const CAST_SHEETS = [
   {id:'cast4', n:'Volume 4 Main Cast', sub:'Xiyu, Cangyuan, Dongyue and Xining: class, role and combat style', img:'assets/cast/volume4_main.webp', ch:117},
   {id:'cover4', n:'Volume 4 · The Ice Temple', sub:'Lost records, sealed passages, hidden truths and the people who remain', img:'assets/volume4_cover.webp', ch:141},
   {id:'cover5', n:'Volume 5 · The Truth Left Behind', sub:'The Door Below the World', img:'assets/volume5_cover.webp', ch:198},
+  {id:'cover6', n:'Volume 6 · The Unknown World', sub:'Beyond the outer gate', img:'assets/volume6_cover.webp', ch:237},
   {id:'yxi', n:'Ya\'Xing Interlude', sub:'A skill, a chance, a new path', img:'assets/cast/yaxing_interlude.webp', ch:203},
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:208},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},

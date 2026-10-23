@@ -4556,7 +4556,7 @@ const HOOKS = {
 "216": [
 {
 "id": "deeper_structure_records_a_sequence_between_five_paths",
-"d": "A deeper structure records a sequence of power between the five paths and must be activated in a specific order",
+"d": "A deeper structure records the flow of power between the five paths; the fifth symbol is blank",
 "t": "state",
 "p": false,
 "s": "art"
@@ -4564,6 +4564,13 @@ const HOOKS = {
 {
 "id": "hidden_door_to_another_realm_emerges",
 "d": "A hidden door emerges when the lines are fully traced; beyond it lies another realm",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_memory_doorway_and_a_hand_reaching",
+"d": "Xiao Tian recalls fragments: a vast doorway and a hand reaching for a sealed object; it slips away",
 "t": "event",
 "p": false,
 "s": "art"
@@ -4578,8 +4585,15 @@ const HOOKS = {
 "s": "art"
 },
 {
+"id": "xiao_tian_touches_the_central_symbol",
+"d": "Xiao Tian places his hand on the central symbol; a resonance stirs and the doorway memory returns, still incomplete",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
 "id": "party_decides_not_to_open_the_fifth_door_yet",
-"d": "Xiyu stops before touching the central symbol; the party decides to understand the place first",
+"d": "The party decides to gather more information before opening the fifth door",
 "t": "event",
 "p": false,
 "s": "art"
@@ -4587,9 +4601,16 @@ const HOOKS = {
 ],
 "218": [
 {
-"id": "concealed_side_passage_to_an_empty_pedestal",
-"d": "A concealed side passage leads to a pedestal whose inscription tablet was taken, leaving a rectangular outline",
+"id": "hidden_passage_leads_downward_from_the_corridors",
+"d": "A side passage, partly hidden by fallen stone, leads downward from the corridors around the fifth door; it is cold and long unused",
 "t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "etched_diagrams_of_how_the_five_positions_interact",
+"d": "Etched diagrams on the walls illustrate how the five positions interact",
+"t": "state",
 "p": false,
 "s": "art"
 }
@@ -4682,6 +4703,22 @@ const HOOKS = {
 "id": "worn_fragment_left_behind",
 "d": "A worn fragment is found, lost or left on purpose",
 "t": "event",
+"p": false,
+"s": "art"
+}
+],
+"223": [
+{
+"id": "bridge_of_silent_bells_crossed",
+"d": "The party crosses an ancient bridge whose bells are silent; some were deliberately disabled and one swings on its own",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_is_watching_or_the_bridge_tracks_them",
+"d": "Someone is watching, or the bridge itself tracks them; they cannot tell whether they are being helped or only observed",
+"t": "state",
 "p": false,
 "s": "art"
 }

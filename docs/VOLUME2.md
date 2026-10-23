@@ -368,4 +368,4 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 
 ## Author notes on the volumes' payoffs
 - **Volume 6 (The Unknown World):** the payoff is Yan himself, now Xiao Yan (晏), who leaves the ruins and travels with the party. No map is planned for it (a one-way route that cannot be revisited).
-- **Xiao Tian's memory and the swordsman estate** are being generated now; the Volume 7 pages so far (238-240) lead toward them. (The author's wording attached this to "volume 6": read as Volume 7, to be confirmed.)
+- **Xiao Tian's memory and the swordsman estate** are being generated now; the Volume 7 pages so far (238-240) lead toward them. (Confirmed by the author: this is Volume 7.)

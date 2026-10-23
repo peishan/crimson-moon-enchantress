@@ -365,3 +365,7 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 - `VOL7_START = 238`; art `assets/comics/v7/`; `LAST_CHAPTER = 240`. The party is now one group that moves together by chapter content until Xiyu's base is established; there is no seat limit.
 - 238 A Place at the Fire (**Xiao Yan** joins: the party calls him "Xiao Yan" so as not to confuse him with Muxue Yan; his character is now named Xiao Yan in the game) · 239 The Road Beyond the Valley · 240 The Waystation Beyond the Mist (Xiao Tian recalls wooden swords at a carved mark). Ledger: 239 advances Travel preparation, 240 Herbalism (placeholder mapping; change `LEDGER_CH`).
 - Notes: 003's Hoko is named as bringing plants and speaking, which fits his guest status; the pages say the party is "back in their own world, just a distant land", so Hoko's way back to Luiterra remains open.
+
+## Author notes on the volumes' payoffs
+- **Volume 6 (The Unknown World):** the payoff is Yan himself, now Xiao Yan (晏), who leaves the ruins and travels with the party. No map is planned for it (a one-way route that cannot be revisited).
+- **Xiao Tian's memory and the swordsman estate** are being generated now; the Volume 7 pages so far (238-240) lead toward them. (The author's wording attached this to "volume 6": read as Volume 7, to be confirmed.)

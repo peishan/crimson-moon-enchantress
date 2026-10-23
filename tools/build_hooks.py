@@ -81,6 +81,7 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 229:[('chamber_interior_has_shifted_but_outer_walls_match','The chamber\'s outer structure is unchanged but its interior platforms have shifted; a gold channel was cut too cleanly for a collapse','event'),('locking_pin_found_removed_recently','Xiao Tian finds the maintenance lever\'s locking pin lodged in a crack, removed recently; the party keeps it','event'),('platforms_shift_bridge_to_a_sealed_arch','The platforms shift, cutting off the way back and forming a bridge to a sealed arch with the four insignias and a blank centre','event')],
  226:[('the_watcher_is_yan_a_guide_not_a_companion','The watcher gives his name, Yan (晏), a watcher of the ruins; he agrees to guide them to the next section but has not joined them','event')],
  227:[('yans_workshop_in_the_service_passage','Yan keeps a modest workshop of modified tools and records in a maintained service passage; he was taught to leave systems stable for whoever comes next','event'),('yan_knows_not_to_align_the_fifth','Yan knows not to align the fifth position but does not know what it is','state')],
  228:[('route_changed_wall_opens_by_itself','The route Yan remembers has changed: a wall that moved into place slides aside by itself, redirecting the route','event')],

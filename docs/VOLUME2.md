@@ -352,3 +352,5 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 - 226 The Terms of Trust (the watcher is named **Yan (晏)**, a reluctant guide) · 227 The Keeper's Workshop · 228 The Route That Should Not Exist · **229 = comic 021, not uploaded (placeholder)** · 230 The Door That Remembered (the arch's recorded past) · 231 The Cost of Completion (Yan resets the lever; the recording is lost). `LAST_CHAPTER = 231`.
 - **Name note (resolved by the author):** the watcher is Yan (晏), a different character from Muxue Yan (岩, Xiyu's father); the two names only sound alike. The game text writes the watcher as "Yan (晏)" and Muxue Yan in full.
 - Comic 022 refers to "the pin Xiao Tian found", presumably in the missing comic 021. The page also says "the seven" while 018-020 draw eight figures with Yan.
+
+- **Volume 6 comic 021 (The Chamber That Moved) installed as chapter 229:** the gap is filled; comics 018-023 now run without placeholders. It sets up the pin Xiao Tian finds and the arch used in 022. Small note: 021's pin 'fits the empty socket in Yan's tool case' while 022 has Yan insert it into the arch's central socket; both read as the same pin.

@@ -4754,6 +4754,29 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"229": [
+{
+"id": "chamber_interior_has_shifted_but_outer_walls_match",
+"d": "The chamber's outer structure is unchanged but its interior platforms have shifted; a gold channel was cut too cleanly for a collapse",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "locking_pin_found_removed_recently",
+"d": "Xiao Tian finds the maintenance lever's locking pin lodged in a crack, removed recently; the party keeps it",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "platforms_shift_bridge_to_a_sealed_arch",
+"d": "The platforms shift, cutting off the way back and forming a bridge to a sealed arch with the four insignias and a blank centre",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "230": [
 {
 "id": "arch_projects_records_of_an_earlier_time",

@@ -4615,6 +4615,38 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"219": [
+{
+"id": "etched_instructions_five_positions_fifth_erased",
+"d": "Wall diagrams record a system of five positions; the fifth's instructions were deliberately chiselled out",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"220": [
+{
+"id": "junction_paths_no_longer_match_the_diagram",
+"d": "The junction's paths no longer match the carved diagram; one channel was deliberately severed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "diagrams_are_instructions_not_a_map",
+"d": "If the routes can be altered, the diagrams are instructions, not a map",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_feels_the_incomplete_symbol_is_familiar",
+"d": "Xiao Tian touches the incomplete symbol and feels a familiar sensation; the memory slips away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "223": [
 {
 "id": "bridge_of_silent_bells_crossed",

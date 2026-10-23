@@ -326,3 +326,12 @@ Target 25 comics (chapters 117-141); Volume 5 is not planned yet but also keeps 
 ## Volume 6 comics 008, 009, 010 revised; comic 015 added (chapters 216-218, 223)
 - Revised: 008 Echoes Beneath the Stone, 009 The Fifth Door (Xiao Tian touches the central symbol), **010 now "The Hidden Passage"** (a downward side passage with etched diagrams; replaces "The Side Passage"). New comic 015 The Bridge of Silent Bells installed as chapter **223** (appended; the comics 011-014 slots, chapters 219-222, still hold the old pages).
 - **Inconsistency for the author:** old 011-014 (chapters 219-222: the missing tablet, the stair, the wall that answers, the watcher) now conflict with revised 010 (the party enters a hidden passage and heads down) and with 015 (the party reaches a chasm bridge). The author is replacing these next; until then chapter 222 ends with the watcher on a chasm bridge and chapter 223 (015) follows it, which reads naturally enough, but 219-221 repeat the stair/archive beats. Chapters 219-222 will be swapped when the new 011-014 arrive.
+
+## Volume 6 plan for comics 011-014 (author, replaces the old pages)
+Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in sequence (generate 011, review, continue to 014). Chapters 219-222 are now flagged placeholders carrying these titles; the old pedestal/stair/wall/watcher content and its hooks are removed.
+- **011 The Etched Instructions** (219): descent through the hidden entrance; diagrams of five interacting positions, damaged or erased; four directional emblems, the fifth blank. No return to the pedestal chamber.
+- **012 The Path That Changed** (220): a junction where floor markings no longer match the passage; Xining finds one channel interrupted; Xiao Tian feels a brief, incomplete recognition, no memory returns.
+- **013 The Passage Ends** (221): the passage opens on a chasm; the bridge with motionless bronze bells; a structure across the gap. Watcher not revealed.
+- **014 Signs of Someone Else** (222): fresh scrape marks, a distant movement that vanishes; debate whether to cross; watcher unidentified.
+- **015 The Bridge of Silent Bells** (223, installed): first full crossing; uncertainty whether the bells signal help or surveillance.
+- **016-017:** into the instrument chamber and the mechanism; **017 "The Message in the Dust" reveals the ash-haired watcher** (not built).

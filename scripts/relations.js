@@ -54,6 +54,7 @@ const REL_CH = {
   133:[['xiaotian','yaxing',{t:1}]], 136:[['dongyue','yaxing',{t:2,u:2}],['xiyu','yaxing',{t:1}]], 140:[['hoko','xiyu',{t:2}]], 141:[['cangyuan','xiyu',{t:2,u:2}],['dongyue','xiyu',{t:2,u:2}]],
   171:[['hoko','xiyu',{t:2,u:1}],['hoko','dongyue',{t:1}]], 176:[['cangyuan','yaxing',{t:2,u:2}]], 186:[['yaxing','xiyu',{t:1}],['xining','cangyuan',{t:1}]],
   209:[['cangyuan','xiyu',{t:2,u:2}],['xining','dongyue',{t:1}],['yaxing','xiaotian',{t:2,u:2}]],
+  231:[['xiyu','cangyuan',{t:1}],['xiaotian','dongyue',{t:1}]],
   203:[['dongyue','yaxing',{t:2,u:2}]], 207:[['cangyuan','xiyu',{t:2,u:2}]], 208:[['cangyuan','xiyu',{t:3,u:3}]], 204:[['cangyuan','xiyu',{t:2,u:2}]],
  
   117:[['cangyuan','xiyu',{t:2}]],

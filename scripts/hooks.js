@@ -4719,6 +4719,72 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"226": [
+{
+"id": "the_watcher_is_yan_a_guide_not_a_companion",
+"d": "The watcher gives his name, Yan (晏), a watcher of the ruins; he agrees to guide them to the next section but has not joined them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"227": [
+{
+"id": "yans_workshop_in_the_service_passage",
+"d": "Yan keeps a modest workshop of modified tools and records in a maintained service passage; he was taught to leave systems stable for whoever comes next",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_knows_not_to_align_the_fifth",
+"d": "Yan knows not to align the fifth position but does not know what it is",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"228": [
+{
+"id": "route_changed_wall_opens_by_itself",
+"d": "The route Yan remembers has changed: a wall that moved into place slides aside by itself, redirecting the route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"230": [
+{
+"id": "arch_projects_records_of_an_earlier_time",
+"d": "The arch, given the pin, projects records of an earlier time: a group deliberately removed the central component and sealed the arch incomplete",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_is_moving_components_between_chambers",
+"d": "The pin belongs to a different mechanism: someone has been moving components between chambers",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"231": [
+{
+"id": "arch_recording_lost_to_save_the_party",
+"d": "The arch's recording is lost when Yan resets the lever to stop the platforms collapsing; the route ahead stays open",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yan_chooses_people_over_the_system",
+"d": "Yan chooses the party over the system he was taught to preserve",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

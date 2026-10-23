@@ -4527,6 +4527,164 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"214": [
+{
+"id": "floor_pattern_channels_moved_deliberately",
+"d": "The floor pattern has changed: some channels were moved deliberately and recently unsealed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "pattern_matches_four_directions_fifth_unmarked",
+"d": "The pattern matches the four directions (North Mountain, South Flame, East Dragon, West Bird) with the fifth position unmarked",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"215": [
+{
+"id": "hall_of_five_statues_four_marked_one_blank",
+"d": "A hall of five statues: four bear the insignias, the fifth is unmarked; the statues may be keys",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"216": [
+{
+"id": "deeper_structure_records_a_sequence_between_five_paths",
+"d": "A deeper structure records a sequence of power between the five paths and must be activated in a specific order",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_door_to_another_realm_emerges",
+"d": "A hidden door emerges when the lines are fully traced; beyond it lies another realm",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"217": [
+{
+"id": "fifth_door_engraved_with_fivefold_pattern",
+"d": "A massive door bears the four insignias around an empty-yet-complete fifth symbol; opening it carelessly may trigger something uncontrollable",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_decides_not_to_open_the_fifth_door_yet",
+"d": "Xiyu stops before touching the central symbol; the party decides to understand the place first",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"218": [
+{
+"id": "concealed_side_passage_to_an_empty_pedestal",
+"d": "A concealed side passage leads to a pedestal whose inscription tablet was taken, leaving a rectangular outline",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"219": [
+{
+"id": "tablet_taken_after_the_chamber_aged",
+"d": "The tablet was removed after the chamber had aged, deliberately and not long ago",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "engraved_arrow_points_below_the_pedestal",
+"d": "An engraved arrow on the pedestal's base points to a stairway descending below",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_feels_he_knew_what_belonged_here",
+"d": "Xiao Tian feels for a moment that he knew what belonged on the pedestal; no memory returns",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"220": [
+{
+"id": "older_five_channel_chamber_beneath_the_archive",
+"d": "An older version of the five-channel chamber lies beneath the archive; the four paths circle the centre, which may be a point of choice or a boundary",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "channel_pulses_untouched",
+"d": "A golden pulse travels along a channel with no one touching the mechanism",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_vision_hand_reaching_for_a_sealed_object",
+"d": "Xiao Tian has a fleeting vision of a doorway and a hand reaching toward a sealed object",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"221": [
+{
+"id": "wall_opens_when_the_channels_align",
+"d": "A wall slides aside when the channels align, without force, revealing a narrow chamber",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mark_added_later_matches_none_of_the_four",
+"d": "A mark added later, matching none of the four insignias, suggests someone came after the temple was abandoned",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "solitary_footstep_in_an_empty_corridor",
+"d": "One solitary footstep is heard and the corridor beyond is empty",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"222": [
+{
+"id": "watcher_seen_on_the_bridge_then_gone",
+"d": "A watcher is seen on a bridge across a chasm, then disappears; fresh scrape marks remain",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mechanism_extends_across_the_chasm",
+"d": "The same pulse seen below runs through a structure across the chasm: the mechanism extends farther than thought",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "worn_fragment_left_behind",
+"d": "A worn fragment is found, lost or left on purpose",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

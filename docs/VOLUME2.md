@@ -360,3 +360,8 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 - Ya'Xing, Hoko and the others carry on; the Volume 6 cover and a Cast sheet for Yan were not supplied (no cover splash yet). Yan is not a playable character: the game text only mentions him; his join is "temporary".
 - Ongoing mysteries per the finale card: the fifth position, Xiao Tian's fragmented past, the transit network, who left the ruins, the new world. Volume 7 next.
 - **Inconsistency for the author:** (1) the numbering jumps from comic 023 to 025: comic 024 is missing or was skipped (the story reads continuously from 023 into 025). (2) The finale says "seven companions" in 025-029 but Yan makes eight; and 030's header lists Hoko (a temporary member) as one of the group. (3) 027 mentions a copy and 025/026 a torn record: consistent.
+
+## Volume 7 begins: "The Ruins That Remember" (comics 001-003 = chapters 238-240)
+- `VOL7_START = 238`; art `assets/comics/v7/`; `LAST_CHAPTER = 240`. The party is now one group that moves together by chapter content until Xiyu's base is established; there is no seat limit.
+- 238 A Place at the Fire (**Xiao Yan** joins: the party calls him "Xiao Yan" so as not to confuse him with Muxue Yan; his character is now named Xiao Yan in the game) · 239 The Road Beyond the Valley · 240 The Waystation Beyond the Mist (Xiao Tian recalls wooden swords at a carved mark). Ledger: 239 advances Travel preparation, 240 Herbalism (placeholder mapping; change `LEDGER_CH`).
+- Notes: 003's Hoko is named as bringing plants and speaking, which fits his guest status; the pages say the party is "back in their own world, just a distant land", so Hoko's way back to Luiterra remains open.

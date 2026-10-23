@@ -8,7 +8,7 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
-const JOIN_CH  = { hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
+const JOIN_CH  = { yanwatcher:238, hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
 const INTRO_CH = { yanwatcher:226, hoko:119, suliechen:133, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
 const NO_JOIN_YET = { yanwatcher:'Travels with the party only in the story text for now. He becomes a playable member in Volume 7 (the chapter is not decided yet), and later the caretaker of Xiyu\'s base.', suliechen:'Met briefly in Volume 4 (comic 017). He becomes a joinable member when the party reaches Yilong; the chapter is not decided yet.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
@@ -24,13 +24,13 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 237;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 240;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
 const INTER_NAME = {yx:'Ya\'Xing Interlude', xc:'Xiyu & Cangyuan Interlude'};   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comics 001-038 = chapters 79-116
-const volOf = n => n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
-const vnum = n => n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
+const volOf = n => n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
+const vnum = n => n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
 const chName = n => interOf(n) ? INTER_NAME[interOf(n)]+' · Chapter '+vnum(n) : volOf(n) > 1 ? 'Volume '+volOf(n)+' · Chapter '+vnum(n) : 'Chapter '+n;
 const chShort = n => interOf(n) ? (interOf(n)==='yx'?'YX':'XC')+'·'+vnum(n) : volOf(n) > 1 ? 'V'+volOf(n)+'·'+vnum(n) : 'Ch.'+n;
 const STORY_PACE = 1;

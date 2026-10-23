@@ -39,7 +39,7 @@ jobs:
           Image.MAX_IMAGE_PIXELS = None
           MAXH = 15000
           pat = re.compile(r'^ch(\d{2})(?:_(\d+))?\.(png|jpe?g)$', re.IGNORECASE)
-          for f in sorted(glob.glob('assets/comics/*') + glob.glob('assets/comics/v2/*') + glob.glob('assets/comics/v3/*') + glob.glob('assets/comics/v4/*') + glob.glob('assets/comics/v5/*') + glob.glob('assets/comics/i1/*') + glob.glob('assets/comics/i2/*') + glob.glob('assets/comics/v6/*')):
+          for f in sorted(glob.glob('assets/comics/*') + glob.glob('assets/comics/v2/*') + glob.glob('assets/comics/v3/*') + glob.glob('assets/comics/v4/*') + glob.glob('assets/comics/v5/*') + glob.glob('assets/comics/i1/*') + glob.glob('assets/comics/i2/*') + glob.glob('assets/comics/v6/*') + glob.glob('assets/comics/v7/*')):
               name = os.path.basename(f)
               m = pat.match(name)
               if not m:

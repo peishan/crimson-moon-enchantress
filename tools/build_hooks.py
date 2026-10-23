@@ -81,6 +81,9 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 238:[('xiao_yan_joins_the_party','The watcher Yan is named Xiao Yan (to tell him from Muxue Yan) and joins the party for the new journey','event'),('party_rests_after_the_single_use_portal','After crossing the single-use portal the party rests at a fire among ruins in a new land','event')],
+ 239:[('party_plans_the_road_to_the_city','The party prepares supplies and plans the road to the city; Xining and Xiyu begin teaching Xiao Yan plants and cooking','event')],
+ 240:[('xiao_tian_memory_wooden_swords_at_a_waystation_mark','At a waystation mark Xiao Tian recalls the sound of wooden swords and a voice: "Again. From the beginning." He could not see anyone','event')],
  232:[('abandoned_settlement_and_transit_station_beyond_the_arch','Beyond the arch lies a mist-covered landscape with an abandoned settlement and a transit station whose connections were physically removed','event'),('amber_light_in_the_watchtower',"An amber light appears in the settlement's watchtower and fresh small footprints end at its door",'event')],
  233:[('someone_stayed_in_the_watchtower_and_left_a_warning','Someone stayed briefly in the watchtower and left a hidden note: "outer route unstable. Do not return by the station"; a section of the transit record was torn away','event')],
  234:[('copy_of_the_route_record_with_a_later_warning','A copy of the route record shows the elevated road branching to an outer gate; a later hand wrote "Outer route uncertain. Verify before passage"','event')],

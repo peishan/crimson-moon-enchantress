@@ -177,7 +177,7 @@ const CHARACTERS = {
   passive:'Knows the Way: he is always the first to notice a changed corridor. Temporary guest: leaves when the Ice Temple arc ends.'},
  /* ===== YAN (晏), the Volume 6 watcher and guide (author's sheet). Not playable yet: he joins in Volume 7 (join chapter not decided), and later becomes the caretaker of Xiyu's base. Different character from Muxue Yan (岩; id 'yan'). The sheet wrote his name 颜: the author says that is wrong; the game uses 晏. ===== */
  yanwatcher:{
-  vol2:true, n:'Yan', zh:'晏', icon:'🧭', title:'Former Keeper of the Transit Network',
+  vol2:true, n:'Xiao Yan', zh:'晏', icon:'🧭', title:'Former Keeper of the Transit Network',
   cls:'Wayfinder (机关行者)', role:'Support · Control · Utility', combat:'Mechanism specialist',
   elements:'Earth · Structure · Utility',
   identity:'A former keeper of the ancient transit network, skilled in maintaining and operating forgotten mechanisms. Practical, observant and cautious, he sees risks others miss. He is not used to relying on others, but on the journey he slowly learns to share the burden and walk toward a future of his own choosing.',

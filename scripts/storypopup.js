@@ -15,7 +15,7 @@ async function comicPages(n){
   if(PAGE_CACHE[n]) return PAGE_CACHE[n];
   const pages = [];
   for(let i=1;i<=40;i++){
-    const src = (n>=VOL6_START ? 'assets/comics/v6/ch'+pad2(vnum(n)) : n>=XC_START ? 'assets/comics/i2/ch'+pad2(vnum(n)) : n>=YX_START ? 'assets/comics/i1/ch'+pad2(vnum(n)) : n>=VOL5_START ? 'assets/comics/v5/ch'+pad2(vnum(n)) : n>=VOL4_START ? 'assets/comics/v4/ch'+pad2(vnum(n)) : n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
+    const src = (n>=VOL7_START ? 'assets/comics/v7/ch'+pad2(vnum(n)) : n>=VOL6_START ? 'assets/comics/v6/ch'+pad2(vnum(n)) : n>=XC_START ? 'assets/comics/i2/ch'+pad2(vnum(n)) : n>=YX_START ? 'assets/comics/i1/ch'+pad2(vnum(n)) : n>=VOL5_START ? 'assets/comics/v5/ch'+pad2(vnum(n)) : n>=VOL4_START ? 'assets/comics/v4/ch'+pad2(vnum(n)) : n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
     if(!(await probeImage(src))) break;
     pages.push(src);
   }

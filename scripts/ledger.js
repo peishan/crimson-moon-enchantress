@@ -14,7 +14,7 @@ const LEDGER = [
   {id:'gathering', n:'Plant gathering', mentor:'yaxing', start:0, st:['Collecting common plants without harming the source','Better yields','Seasonal ingredients','Rare-plant collection']},
   {id:'travelprep', n:'Travel preparation', mentor:'hoko', start:0, st:['Organising a travel kit and reading routes','Better kits','Preparation for long journeys','Extra travel dialogue']},
 ];
-const LEDGER_CH = {};   // chapter -> skill ids advanced by that story chapter (filled when Volume 7 settles)
+const LEDGER_CH = {239:['travelprep'], 240:['herbalism']};   // chapter -> skill ids advanced by that story chapter (filled when Volume 7 settles)
 const LEDGER_USE = {herbalism:3, cooking:3, gathering:3};   // uses of the skill needed to move stage 1 -> 2
 const ledgerOn = () => !!G && G.party.includes('yanwatcher');
 function LD(){ if(!G.ledger){ G.ledger = {}; LEDGER.forEach(s => G.ledger[s.id] = s.start); G.ledgerUse = {}; } return G.ledger; }

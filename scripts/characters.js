@@ -175,5 +175,22 @@ const CHARACTERS = {
    {id:'read_mechanism',n:'Read the Mechanism',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},desc:'Reads a construct or trap: reveals it and strips its barrier. (Out of battle it opens nothing yet.)'},
   ],
   passive:'Knows the Way: he is always the first to notice a changed corridor. Temporary guest: leaves when the Ice Temple arc ends.'},
+ /* ===== YAN (晏), the Volume 6 watcher and guide (author's sheet). Not playable yet: he joins in Volume 7 (join chapter not decided), and later becomes the caretaker of Xiyu's base. Different character from Muxue Yan (岩; id 'yan'). The sheet wrote his name 颜: the author says that is wrong; the game uses 晏. ===== */
+ yanwatcher:{
+  vol2:true, n:'Yan', zh:'晏', icon:'🧭', title:'Former Keeper of the Transit Network',
+  cls:'Wayfinder (机关行者)', role:'Support · Control · Utility', combat:'Mechanism specialist',
+  elements:'Earth · Structure · Utility',
+  identity:'A former keeper of the ancient transit network, skilled in maintaining and operating forgotten mechanisms. Practical, observant and cautious, he sees risks others miss. He is not used to relying on others, but on the journey he slowly learns to share the burden and walk toward a future of his own choosing.',
+  quote:'I used to keep the roads open for others. Now... I\'m learning to walk one of my own.',
+  base:{hp:84,mp:42,atk:9,mag:10,def:10,spd:12}, grow:{hp:8.5,mp:3.8,atk:1.1,mag:1.3,def:1.2,spd:1.0},
+  skills:[
+   {id:'mechanism_operation',n:'Mechanism Operation',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'},{k:'slow',d:1}],req:{lvl:1},sig:true,desc:'Operates an ancient mechanism or disables a construct: analysed, stripped of its barrier and slowed.'},
+   {id:'traverse',n:'Traverse',icon:'🪢',mp:8,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'spd',m:1.2,d:3},{k:'ward',d:2}],req:{lvl:1},sig:true,desc:'Sets ropes, anchors and temporary footholds: the party moves faster and resists being knocked off balance. (Outside battle, crossing difficult terrain is not built yet.)'},
+   {id:'structural_reinforcement',n:'Structural Reinforcement',icon:'🧱',mp:12,kind:'support',tgt:'allies',fx:[{k:'shield',v:.12,d:3},{k:'buff',stat:'def',m:1.2,d:3}],req:{lvl:1},sig:true,desc:'Temporarily stabilises weak structures and creates safe zones: the party gains a barrier and more defence.'},
+   {id:'terrain_manipulation',n:'Terrain Manipulation',icon:'⛰️',mp:13,kind:'phys',tgt:'foes',pow:.8,fx:[{k:'slow',d:2}],req:{lvl:1},sig:true,desc:'Raises stone barriers or drops rockfalls: damages and slows every foe.'},
+   {id:'field_reconnaissance',n:'Field Reconnaissance',icon:'🔭',mp:6,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:1},sig:true,desc:'Reveals weak points and hidden traps: the foe takes 15% more damage. (Revealing hidden paths on the map is not built yet.)'},
+   {id:'precise_strike',n:'Precise Strike',icon:'🗡️',mp:4,kind:'phys',tgt:'foe',pow:1.3,fx:[{k:'expose',d:2}],req:{lvl:1},sig:true,desc:'A controlled, efficient close-range strike aimed at opening weak points, not raw power.'},
+  ],
+  passive:'Wayfinder (sheet passives, not all built): Route Planning (fewer ambushes, better movement in unfamiliar areas) · Wayfinder\'s Eye (senses the direction of connected routes in the transit network) · Steady Presence (calm; resists cold, fatigue and disorientation) · Companion\'s Path (unlocks extra dialogue and exploration routes with the party). These are story and exploration effects and are not built yet.'},
 };
 const ROSTER = Object.keys(CHARACTERS);

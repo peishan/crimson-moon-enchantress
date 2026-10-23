@@ -312,3 +312,8 @@ Target 25 comics (chapters 117-141); Volume 5 is not planned yet but also keeps 
 
 - **Volume 5 comic 022 installed (chapter 190, "The Passage That Should Not Exist")**: the last gap in 001-030 is filled.
 - Volume 5 comic 018 re-supplied and installed (title card reads "Chomac 018": a small typo for the author).
+
+## Volume 6 begins: "The Unknown World" (comics 001-005 = chapters 209-213)
+- Art `assets/comics/v6/ch01-05.webp`; `LAST_CHAPTER = 213`. Volume 6 continues straight from Volume 5 comic 030 (the door below the world). 209 A Quiet Morning (calm; Xiyu and Cangyuan, Xining's mixtures, Ya'Xing and Xiao Tian spar, Hoko at peace) · 210 The Door That Would Not Open · 211 The Path Beneath the Seal · 212 Records of the Four (east wind, south flame, west currents, north stillness; a fifth position removed) · 213 Footsteps in the Dust (a cloaked figure on a misty bridge; the mechanism has moved).
+- The comics headers read "Chapter 001-005"; the volume's title on the pages is "The Unknown World". Waiting on the author's cover and the rest of Volume 6. Su Liechen is not built into Volume 6 yet (he stays at the Ice Temple per Volume 4).
+- Note for the author: 211-212 again lean on damaged tablets and erased records; the cloaked figure in 213 may be where the pace picks up.

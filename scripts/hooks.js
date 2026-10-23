@@ -4454,6 +4454,79 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"209": [
+{
+"id": "quiet_morning_in_the_unknown_world",
+"d": "The party rests for a quiet morning in the realm: Xiyu and Cangyuan, Xining's mixtures, Ya'Xing and Xiao Tian sparring, Hoko in peace",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"210": [
+{
+"id": "fifth_position_light_still_active",
+"d": "The fifth position's light stays active, as if waiting; the door has not opened; the fifth may require a choice, not just activation",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "passage_beneath_the_platform_revealed",
+"d": "A moving line of light reveals a passage beneath the platform, hidden by the same formation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"211": [
+{
+"id": "tablets_four_directions_as_a_single_order",
+"d": "Damaged tablets mention the four directions as a single order; the rest is deliberately removed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_doorway_with_insignias_rearranged",
+"d": "A second doorway bears the four insignias in a different pattern",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"212": [
+{
+"id": "records_of_the_four_authorities",
+"d": "The tablets describe the four authorities: east (wind), south (flame), west (currents), north (stillness); a fifth position matching the sealed door's phrasing is deliberately removed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_is_in_the_archive_with_them",
+"d": "Someone else is in the archive: a closed door opens after the tablets are read",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"213": [
+{
+"id": "cloaked_figure_on_the_misty_bridge",
+"d": "A cloaked figure ahead on a narrow bridge over mist moves away without answering and vanishes",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "mechanism_moved_new_markings_exposed",
+"d": "A section of the mechanism has been moved, exposing new lines and markings",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

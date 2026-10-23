@@ -81,6 +81,11 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 209:[('quiet_morning_in_the_unknown_world',"The party rests for a quiet morning in the realm: Xiyu and Cangyuan, Xining's mixtures, Ya'Xing and Xiao Tian sparring, Hoko in peace",'event')],
+ 210:[('fifth_position_light_still_active',"The fifth position's light stays active, as if waiting; the door has not opened; the fifth may require a choice, not just activation",'state'),('passage_beneath_the_platform_revealed','A moving line of light reveals a passage beneath the platform, hidden by the same formation','event')],
+ 211:[('tablets_four_directions_as_a_single_order','Damaged tablets mention the four directions as a single order; the rest is deliberately removed','event'),('second_doorway_with_insignias_rearranged','A second doorway bears the four insignias in a different pattern','event')],
+ 212:[('records_of_the_four_authorities',"The tablets describe the four authorities: east (wind), south (flame), west (currents), north (stillness); a fifth position matching the sealed door's phrasing is deliberately removed",'event'),('someone_is_in_the_archive_with_them','Someone else is in the archive: a closed door opens after the tablets are read','event')],
+ 213:[('cloaked_figure_on_the_misty_bridge','A cloaked figure ahead on a narrow bridge over mist moves away without answering and vanishes','event'),('mechanism_moved_new_markings_exposed','A section of the mechanism has been moved, exposing new lines and markings','event')],
  190:[('hidden_passage_not_on_the_temple_map','Xiao Tian opens a concealed passage that is not on the temple\'s known layout and shows signs of repeated use','event'),('two_sets_of_footprints_split_in_the_passage','Two sets of footprints, one recent and one older, split inside the passage: one path goes deeper, the other toward an area not on the map','event')],
  170:[('seven_paths_and_a_missing_group','The trail splits into seven paths; the missing group went in different directions and someone else is following','state')],
  187:[('commander_marks_unlock_the_sealed_doorway',"The four commander marks (North, South, East, West) activate together and open the sealed doorway; Xiyu finds a separate mark from her father's trail",'event')],

@@ -31,7 +31,7 @@ The survivors confirm they were hired and bound to silence, with limited details
 
 ## Prototype (built)
 - `scripts/confrontation.js` holds the spec (`v7ConfrontationSpec(lv, {rewards, chapter})`); the rules live in `scripts/battle.js` (`spec.lead`, `spec.stages`, `spec.blessing`).
-- **Lead rules:** Xiao Tian deals more damage with Xiyu (+10%) and Cangyuan (+5%) alive; every other ally's damage is reduced to 60%, so they support rather than win it. The principal perpetrators cannot be killed by anyone else: a fatal hit leaves them at 1 HP and the attacker holds them in place (bound) for him. If Xiao Tian falls, the battle is lost. The principals target him 60% of the time.
+- **Lead rules:** Xiao Tian deals more damage with Xiyu (+10%) and Cangyuan (+5%) alive; every other ally's damage is reduced to 60%, so they support rather than win it. The principal perpetrators cannot be killed by anyone else: a fatal hit leaves them at 1 HP and the attacker holds them in place (bound) for him. If Xiao Tian falls, Dongyue can raise him with the Ancient Healing Rite (always available to her in this fight, revives at 40% HP); if she is down or out of MP, the battle is lost. The principals target him 60% of the time.
 - **Blessing:** Xining's pre-fight blessing gives him a 15% barrier and +15% DEF.
 - **Stage 1:** hired fighters and a captain in formation (damage halved until Cangyuan strips it or it falters on its own).
 - **Stage 2:** rhythm (ATK +20%, crit) and Dongyue mends him (+30% HP). Hoko's presence removes one fighter; Xiao Yan's presence removes another.

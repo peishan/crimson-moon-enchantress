@@ -61,7 +61,11 @@ function startBattle(spec){
 /* ---------- turn flow ---------- */
 function buildQueue(){ B.queue = alive(B.allies).concat(alive(B.foes)).sort((a,b) => (eff(b,'spd') + Math.random()) - (eff(a,'spd') + Math.random())); }
 function checkEnd(){
-  if(B.lead && B.allies.some(a => a.id===B.lead && a.dead)){ B.over='lose'; blog(first(B.lead)+' has fallen: this was his fight, and it is not over yet.','bad'); persistBattle(); save(); return true; }
+  if(B.lead && B.allies.some(a => a.id===B.lead && a.dead)){   // Dongyue may raise him; without her (or her strength) the fight is lost
+    const dy = B.allies.find(a => a.id==='dongyue' && !a.dead), rite = CHARACTERS.dongyue.skills.find(x => x.id==='ancient_rite');
+    if(!(dy && rite && dy.mp >= mpCost(dy, rite))){ B.over='lose'; blog(first(B.lead)+' has fallen, and no one can raise him.','bad'); persistBattle(); save(); return true; }
+    if(!B.fallenWarned){ B.fallenWarned = true; blog(first(B.lead)+' has fallen! Dongyue can still raise him with the Ancient Healing Rite.','bad'); }
+  }
   if(!alive(B.foes).length && B.stages && B.stage < B.stages.length-1){ nextStage(); return false; }
   if(!alive(B.foes).length){ B.over='win'; finishWin(); return true; }
   if(!alive(B.allies).length){ B.over='lose'; blog('The party has fallen...','bad'); persistBattle(); save(); return true; }
@@ -176,7 +180,7 @@ function applyFx(src, tgt, fx){
 
 /* ---------- player actions ---------- */
 function skillList(u){
-  return skillsOf(u.id).filter(s => s.ok).map(s => {
+  return skillsOf(u.id).map(s => (B.lead && u.id==='dongyue' && s.id==='ancient_rite') ? Object.assign({}, s, {ok:true}) : s).filter(s => s.ok).map(s => {
     const cost = mpCost(u,s);
     const noAlly = s.needAlly && !B.allies.some(a => a.id===s.needAlly && !a.dead && a!==u), noItem = s.item && B.spec.rewards && !(G.inv[s.item] > 0), noWeak = s.hpBelow && !targetsFor(s).length;
     return Object.assign({}, s, { cost, usable: u.mp>=cost && !(s.once && u.used[s.id]) && !noAlly && !noItem && !noWeak, note: noWeak ? 'no foe at '+Math.round(s.hpBelow*100)+'% HP' : noAlly ? 'needs '+first(s.needAlly) : noItem ? 'no '+ITEMS[s.item].n : (s.once && u.used[s.id]) ? 'used' : u.mp<cost ? 'low MP' : '' });

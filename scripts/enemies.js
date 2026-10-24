@@ -83,6 +83,13 @@ const ENEMIES = {
   afflicting_imp:{n:'The Afflicting Imp',icon:'😈',boss:true,hp:260,atk:12,mag:14,def:7,spd:11,xp:120,gold:60,traits:['magic'],
     moves:[{n:'Fever Claw',pow:1.1},{n:'Hex Spark',pow:1.2,spell:true},{n:'Sickening Cackle',pow:.7,spell:true,fx:[{k:'slow',d:2}]}],
     phases:[{at:.5,msg:'The imp shrieks and clings tighter to its host!',atk:1.2}],drops:[{id:'imp_ash',chance:1}],desc:'A small, spiteful imp that fed on Wang Xi\'er\'s fever.'},
+  /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
+  hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
+    moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
+  hired_captain:{n:'Hired Captain',icon:'⚔️',elite:true,hp:200,atk:18,mag:4,def:12,spd:11,xp:100,gold:60,
+    moves:[{n:'Formation Order',pow:.6,all:true},{n:'Cleaving Blow',pow:1.4}],drops:[{id:'moonlit_tonic',chance:.4}],desc:'Held the formation together. Knows an intermediary, a meeting place, and nothing more.'},
+  masked_principal:{n:'Masked Principal',icon:'🎭',elite:true,hp:260,atk:21,mag:6,def:13,spd:12,xp:150,gold:90,
+    moves:[{n:'Mask-Breaker',pow:1.3},{n:'Mirrored Stance',pow:1,fx:[{k:'slow',d:1}]},{n:'Final Cut',pow:1.6}],drops:[{id:'moonlit_tonic',chance:.6}],desc:'One of those who led the attack on the master\'s estate. Bound to silence about whoever hired them.'},
   /* Wilds boss (not a story event) */
   frost_warden:{n:'Frost Warden',icon:'❄️',boss:true,hp:420,atk:20,mag:18,def:13,spd:9,xp:200,gold:120,traits:['magic'],
     moves:[{n:'Winter Blade',pow:1.2},{n:'Hailstorm',pow:.9,spell:true,all:true,fx:[{k:'slow',d:2}]},{n:'Frozen Gaze',pow:1,spell:true,fx:[{k:'bind',d:1}]}],

@@ -15,9 +15,10 @@ function mkAlly(id, persist){
     heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0,
     resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow, mpRed: gearFx(id).mpRed, discRes: gearFx(id).discRes, fxPlus: gearFx(id).fxPlus };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
 }
-function mkFoeUnit(key, lv, i){
-  const u = Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false });
-  if(u.traits.includes('layered')) u.st.layer = {d:99};   // outer layer: halves damage until stripped
+function mkFoeUnit(key, lv, i, x){
+  x = x || {};
+  const u = Object.assign(mkEnemy(key, lv), { uid:'f'+i, ally:false, st:{}, bf:[], state:null, used:{}, dead:false, guard:false, known:false, perp:!!x.perp });
+  if(u.traits.includes('layered') || x.formation) u.st.layer = {d:99};   // outer layer: halves damage until stripped
   return u;
 }
 
@@ -40,8 +41,12 @@ function blog(t, cls){ B.log.push({t, cls:cls||''}); if(B.log.length>60) B.log.s
 /* ---------- start ---------- */
 function startBattle(spec){
   const ids = spec.allies || G.active;
-  B = { allies:ids.map(id => mkAlly(id, !!spec.rewards)), foes:spec.foes.map((f,i) => mkFoeUnit(f.key, f.lv, i)), queue:[], cur:null, log:[], over:null, round:0, ui:{mode:'menu'}, spec, rewards:null };
+  const first0 = spec.stages ? spec.stages[0].foes : spec.foes;
+  B = { allies:ids.map(id => mkAlly(id, !!spec.rewards)), foes:[], queue:[], cur:null, log:[], over:null, round:0, ui:{mode:'menu'}, spec, rewards:null, lead:spec.lead || null, stages:spec.stages || null, stage:0, src:null };
+  B.foes = leadFoes(first0, ids);
   blog('Battle begins!','sys');
+  if(B.stages){ blog(B.stages[0].msg,'sys'); }
+  if(B.lead && spec.blessing) leadBlessing();
   const aids = B.allies.map(a => a.id);
   B.allies.forEach(a => { const sy = synergyOf(a.id, aids); if(sy.total > 0){ ['atk','mag','def','spd'].forEach(k => a[k] = Math.round(a[k]*(1+sy.total))); a.syn = sy; } });
   const pairA = B.allies.find(a => a.id==='xiyu' && a.syn && a.syn.bond), cg = B.allies.find(a => a.id==='cangyuan' && a.syn && a.syn.bond);
@@ -56,6 +61,8 @@ function startBattle(spec){
 /* ---------- turn flow ---------- */
 function buildQueue(){ B.queue = alive(B.allies).concat(alive(B.foes)).sort((a,b) => (eff(b,'spd') + Math.random()) - (eff(a,'spd') + Math.random())); }
 function checkEnd(){
+  if(B.lead && B.allies.some(a => a.id===B.lead && a.dead)){ B.over='lose'; blog(first(B.lead)+' has fallen: this was his fight, and it is not over yet.','bad'); persistBattle(); save(); return true; }
+  if(!alive(B.foes).length && B.stages && B.stage < B.stages.length-1){ nextStage(); return false; }
   if(!alive(B.foes).length){ B.over='win'; finishWin(); return true; }
   if(!alive(B.allies).length){ B.over='lose'; blog('The party has fallen...','bad'); persistBattle(); save(); return true; }
   return false;
@@ -64,7 +71,7 @@ function advance(){
   let guard = 400;
   while(guard-- > 0){
     if(checkEnd()) return;
-    if(!B.queue.length){ B.round++; buildQueue(); blog('— Round '+B.round+' —','sys'); B.foes.forEach(f => { if(f.st.layer && B.round>=3 && !f.dead){ delete f.st.layer; blog('The '+f.name+'\'s outer layer cracks on its own: the core is exposed.','good'); } }); }
+    if(!B.queue.length){ B.round++; buildQueue(); blog('— Round '+B.round+' —','sys'); B.foes.forEach(f => { if(f.st.layer && B.round>=(f.layerAt||3) && !f.dead){ delete f.st.layer; blog(B.lead ? 'The formation falters: '+f.name+' is left exposed.' : 'The '+f.name+'\'s outer layer cracks on its own: the core is exposed.','good'); } }); }
     const u = B.queue.shift(); if(u.dead) continue;
     B.cur = u;
     if(u.st.burn){ const d = Math.max(1, Math.round(u.mhp*.06)); hurt(u,d,true); blog(u.name+' burns for '+d+'.','bad'); if(u.dead) continue; }
@@ -95,6 +102,10 @@ function hurt(t, d, ignoreShield){
   if(t.id==='xining' && t.ally && B.allies.some(a => a.id==='dongyue' && !a.dead)) d = Math.max(1, Math.round(d*.8));   // Quiet Sanctuary: Dongyue guards her
   if(!ignoreShield && t.st.shield){ const a = Math.min(t.st.shield.v, d); t.st.shield.v -= a; d -= a; if(a>0) blog('  (barrier absorbs '+a+')'); if(t.st.shield.v<=0) delete t.st.shield; }
   if(t.guard) d = Math.round(d*.5);
+  if(t.perp && B.lead && !(B.src && B.src.id===B.lead) && t.hp - d <= 0){   // only the lead may finish the principal perpetrators
+    d = Math.max(0, t.hp - 1);
+    if(!t.st.bind){ t.st.bind = {d:3}; blog('  '+(B.src && B.src.ally ? first(B.src.id) : 'The party')+' holds '+t.name+' in place: '+first(B.lead)+' will finish this.','good'); }
+  }
   t.hp = Math.max(0, t.hp - d);
   if(t.hp>0) checkPhase(t);
   if(t.hp<=0){ t.dead = true; blog(t.name+' falls!','bad'); }
@@ -104,6 +115,10 @@ function strike(src, tgt, s, opts){
   opts = opts || {};
   const magic = s.kind==='magic', stat = magic?'mag':'atk';
   let raw = eff(src, stat) * (s.pow||1) * (0.9 + Math.random()*.2) * (opts.decay||1);
+  if(B.lead && src.ally){   // lead mode: the others support; he is the one who fights
+    if(src.id===B.lead){ if(B.allies.some(a => a.id==='xiyu' && !a.dead)) raw *= 1.1; if(B.allies.some(a => a.id==='cangyuan' && !a.dead)) raw *= 1.05; }
+    else raw *= .6;
+  }
   if(s.withAlly && B.allies.some(a => a.id===s.withAlly && !a.dead)) raw *= (s.boost||1.3);   // bond skills hit harder with the partner beside her
   raw -= eff(tgt,'def') * (magic ? .35 : .6);
   let d = Math.max(1, Math.round(raw));
@@ -116,7 +131,7 @@ function strike(src, tgt, s, opts){
   if(s.crit || src.st.crit || Math.random() < .08){ crit = true; d = Math.round(d*1.6); }
   if(Math.random() < evaOf(tgt)){ blog(tgt.name+' evades '+src.name+'\'s '+s.n+'!'); return 0; }
   s.landed = true;
-  const dealt = hurt(tgt, d);
+  B.src = src; const dealt = hurt(tgt, d); B.src = null;
   blog(src.name+' uses '+s.n+' on '+tgt.name+': '+dealt+(crit?' CRIT!':''), src.ally?'':'foe');
   if(src.ally && tgt.st.link && !opts.noSpread){ const sp = Math.max(1, Math.round(dealt*.35)); alive(B.foes).filter(o => o!==tgt && o.st.link).forEach(o => { hurt(o, sp, true); blog('  the linked threads carry '+sp+' to '+o.name+'.'); }); }   // Ten Thousand Threads
   return dealt;
@@ -235,12 +250,13 @@ function foeAct(f){
     return;
   }
   const oath = targets.find(a => a.st.oath), ignore = f.boss && oath && Math.random() < .35;
-  const t = (oath && !ignore) ? oath : AR(targets);
+  const leadU = f.perp && B.lead ? targets.find(a => a.id===B.lead) : null;   // the principals look for him
+  const t = (oath && !ignore) ? oath : (leadU && Math.random() < .6 ? leadU : AR(targets));
   const dealt = strike(f, t, s);
   if(dealt>0) (mv.fx||[]).forEach(fx => { if(!t.dead && FOE_FX.includes(fx.k)) applyFx(f, t, fx); });
   if(s.landed && t.st.oath && !t.dead && !f.dead){
     const c = Math.max(1, Math.round(eff(t,'atk')*.6 - eff(f,'def')*.35));
-    f.hp = Math.max(0, f.hp - c); blog('  '+t.name+' strikes back at '+f.name+': '+c+'.','good'); if(f.hp<=0){ f.dead = true; blog(f.name+' falls!','bad'); }
+    f.hp = Math.max(f.perp && t.id!==B.lead ? 1 : 0, f.hp - c); blog('  '+t.name+' strikes back at '+f.name+': '+c+'.','good'); if(f.hp<=0){ f.dead = true; blog(f.name+' falls!','bad'); }
   }
 }
 
@@ -280,4 +296,33 @@ function finishWin(){
   if(typeof personalOnWin === 'function') personalOnWin(act);   // field proficiency and shared danger
   if(typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
   save();
+}
+
+
+/* ---------- lead battles (prototype): one hero is the protagonist; the others support ---------- */
+function leadFoes(list, ids){
+  const base = B.foes ? B.foes.length : 0;
+  return list.filter(f => !(f.skipIf && (ids||B.allies.map(a => a.id)).includes(f.skipIf))).map((f,i) => mkFoeUnit(f.key, f.lv, base+i, f));
+}
+function leadBlessing(){
+  const l = B.allies.find(a => a.id===B.lead), x = B.allies.find(a => a.id==='xining' && !a.dead);
+  if(!l || !x) return;
+  blog('🙏 Xining\'s blessing settles over '+l.name+': steady breath, steady resolve. "Come back alive."','good');
+  applyFx(x, l, {k:'shield', v:.15, d:4}); applyFx(x, l, {k:'buff', stat:'def', m:1.15, d:4});
+}
+function nextStage(){
+  B.stage++; const st = B.stages[B.stage], l = B.allies.find(a => a.id===B.lead);
+  B.queue = [];
+  blog(st.msg,'sys');
+  const ids = B.allies.map(a => a.id);
+  B.foes = B.foes.concat(leadFoes(st.foes, ids));
+  B.foes.filter(f => !f.dead && f.st.layer).forEach(f => f.layerAt = B.round + 3);
+  st.skipped = st.foes.filter(f => f.skipIf && ids.includes(f.skipIf)).map(f => f.skipIf);
+  st.skipped.forEach(id => blog('  '+first(id)+' has cut off '+(id==='hoko' ? 'the escape routes: one fighter never arrives.' : 'the passage: one fighter is held back.'),'good'));
+  (st.fx||[]).forEach(k => {
+    if(!l || l.dead) return;
+    if(k==='rhythm'){ applyFx(l, l, {k:'buff', stat:'atk', m:1.2, d:5}); applyFx(l, l, {k:'crit', d:1}); blog('  '+l.name+' finds the rhythm of his master\'s movements: he knows what comes next.','good'); }
+    if(k==='mend'){ const d = B.allies.find(a => a.id==='dongyue' && !a.dead); if(d){ const h = Math.round(l.mhp*.3); l.hp = Math.min(l.mhp, l.hp+h); blog('  Dongyue sees his breath fail and mends the wound: +'+h+' HP.','good'); } }
+    if(k==='resolve'){ applyFx(l, l, {k:'crit', d:3}); blog('  '+l.name+' no longer holds back: this is for his master.','good'); }
+  });
 }

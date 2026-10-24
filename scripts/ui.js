@@ -228,6 +228,7 @@ const PRESETS = [
   ['Ice Golem',[{key:'ice_golem'}]],
   ['BOSS: The Afflicting Imp',[{key:'afflicting_imp'}]],
   ['BOSS: Frost Warden',[{key:'frost_warden'},{key:'ice_sprite'}]],
+  ['V7 CONFRONTATION (prototype): Xiao Tian leads',[{key:'hired_fighter'}], 'v7'],
 ];
 function rTraining(){
   const opts = PRESETS.map((p,i) => `<option value="${i}" ${i===trSel?'selected':''}>${p[0]}</option>`).join('');
@@ -237,7 +238,7 @@ function rTraining(){
    <div class="sm">Party: ${G.active.map(id=>CHARACTERS[id].icon+' '+first(id)+' Lv'+U(id).lv).join(' · ')}</div>
    <button class="pri" onclick="trainFight()">Start training battle</button></div>`;
 }
-function trainFight(){ origin='training'; startBattle({foes:PRESETS[trSel][1].map(f=>({key:f.key,lv:trLv})), rewards:false}); tab='battle'; render(); }
+function trainFight(){ origin='training'; if(PRESETS[trSel][2]==='v7'){ startBattle(v7ConfrontationSpec(trLv)); tab='battle'; render(); return; } startBattle({foes:PRESETS[trSel][1].map(f=>({key:f.key,lv:trLv})), rewards:false}); tab='battle'; render(); }
 
 /* ---------------- BATTLE ---------------- */
 const CHIP = {burn:'🔥',slow:'🐌',bind:'⛓️',charm:'💫',silence:'🤐',shield:'🛡️',regen:'💚',crit:'👁️',oath:'🔁'};

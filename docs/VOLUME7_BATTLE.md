@@ -1,6 +1,6 @@
 # Volume 7: the final confrontation (author's proposal, working canon)
 
-Not built yet: waiting for the chapters (the plan ends at chapter 030, Xiao Tian returning to the estate, placing his master's keepsake beside the manual).
+**Prototype built** (Training Room → "V7 CONFRONTATION (prototype): Xiao Tian leads"; not yet attached to a chapter). The real fight waits for the chapters (the plan ends at chapter 030, Xiao Tian returning to the estate, placing his master's keepsake beside the manual).
 
 **Rule:** everyone contributes, but Xiao Tian remains the protagonist of his revenge. The others make sure he gets to face his enemies himself; they do not defeat them for him.
 
@@ -28,3 +28,12 @@ The survivors confirm they were hired and bound to silence, with limited details
 ## Build notes (when the chapters exist)
 - A chapter battle where Xiao Tian is the lead and the others are supporters: ally skills in this fight could be limited to support effects (barrier, amplify, heal, bind, flank guard) and Xiao Tian's damage the only way to finish the named perpetrators; a "Xiao Tian lead" flag could prevent the others from landing a finishing blow on them.
 - Staged enemy waves (formation, rhythm, principal perpetrators), a blessing buff applied before the fight (Xining), and the Training Ledger kept optional.
+
+## Prototype (built)
+- `scripts/confrontation.js` holds the spec (`v7ConfrontationSpec(lv, {rewards, chapter})`); the rules live in `scripts/battle.js` (`spec.lead`, `spec.stages`, `spec.blessing`).
+- **Lead rules:** Xiao Tian deals more damage with Xiyu (+10%) and Cangyuan (+5%) alive; every other ally's damage is reduced to 60%, so they support rather than win it. The principal perpetrators cannot be killed by anyone else: a fatal hit leaves them at 1 HP and the attacker holds them in place (bound) for him. If Xiao Tian falls, the battle is lost. The principals target him 60% of the time.
+- **Blessing:** Xining's pre-fight blessing gives him a 15% barrier and +15% DEF.
+- **Stage 1:** hired fighters and a captain in formation (damage halved until Cangyuan strips it or it falters on its own).
+- **Stage 2:** rhythm (ATK +20%, crit) and Dongyue mends him (+30% HP). Hoko's presence removes one fighter; Xiao Yan's presence removes another.
+- **Stage 3:** two masked principals; resolve (crit for three turns). Only he can finish them.
+- Enemy art is missing (icons are used); the hired fighters' stats and names are placeholders.

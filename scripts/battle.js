@@ -61,7 +61,7 @@ function startBattle(spec){
 /* ---------- turn flow ---------- */
 function buildQueue(){ B.queue = alive(B.allies).concat(alive(B.foes)).sort((a,b) => (eff(b,'spd') + Math.random()) - (eff(a,'spd') + Math.random())); }
 function checkEnd(){
-  if(B.lead && B.allies.some(a => a.id===B.lead && a.dead)){   // Dongyue may raise him; without her (or her strength) the fight is lost
+  if(B.lead && B.allies.some(a => a.id===B.lead && a.dead)){   // Dongyue may raise him; without him (or his strength) the fight is lost
     const dy = B.allies.find(a => a.id==='dongyue' && !a.dead), rite = CHARACTERS.dongyue.skills.find(x => x.id==='ancient_rite');
     if(!(dy && rite && dy.mp >= mpCost(dy, rite))){ B.over='lose'; blog(first(B.lead)+' has fallen, and no one can raise him.','bad'); persistBattle(); save(); return true; }
     if(!B.fallenWarned){ B.fallenWarned = true; blog(first(B.lead)+' has fallen! Dongyue can still raise him with the Ancient Healing Rite.','bad'); }

@@ -5099,8 +5099,8 @@ const HOOKS = {
 ],
 "257": [
 {
-"id": "jinghe_found_in_an_old_regional_register",
-"d": "Jinghe is recorded in an old regional register; the entry is incomplete and carries a cross-reference to another series, so it is a real name but not an answer",
+"id": "jinghe_recorded_as_a_town_on_the_western_route",
+"d": "Jinghe is recorded in the regional road register as a town on the western route, an important stop for trade and transport; the entry only shows the name existed, and the party is pointed to the dispatch ledger next",
 "t": "event",
 "p": false,
 "s": "art"

@@ -9,6 +9,16 @@ Working notes only; nothing here is built. Volume 8 is still being planned by th
 - Hanshan appears in Volume 1 (chapters 1 and 8-13, as her companion of seven years who left, then desperate for help for his wife Wang Xi'er) and is named in the Xiyu & Cangyuan Interlude. Ruyue and Hanshan both appear in the interludes (Ruyue as Cangyuan's first love, Hanshan as Xiyu's).
 - The interludes pair them: each of the couple has a first love they lost.
 
+## Puppetry (author's definition)
+In this wuxia/xianxia universe, puppetry means using **paper puppets**, shaped into the likeness of people, **to mislead others** (decoys and doubles, not strings and marionettes).
+
+Ideas that fit what the game already has (all optional, none confirmed):
+- **The hired fighters' intermediary** (V7, chapters 263 and 265): a man met at the west gate who gave the orders and payment and "left before dawn", never named. A paper double would explain why no one could ever identify him. Only a reinterpretation, no retcon needed.
+- **"A face may deceive you; a record can be compared"** (his master's letter) now reads as a warning about decoys.
+- **The altered record and the shrine voice** (V2): someone who knows the original technique; could be the same craft.
+- **Gameplay hooks:** a paper effigy enemy that looks like a person (reuse the existing "layered" outer layer, stripped by Cleansing Salt or Cangyuan's weaving), and Xiyu and Cangyuan's Crimson Thread awareness spotting "a severe disturbance" in a decoy. A fight where the party must tell the double from the person fits the "witnesses and battles" preference.
+- **Ruyue stays offstage:** the craft is hinted, never attributed to her in V8.
+
 ## What the game already has about Ruyue
 - V2 comic 018 (chapter 57): the name Shen Ruyue carved beneath the first pattern at the abandoned shrine; Cangyuan remembers a woman beside him in an ancient cultivation hall and says the hard part is remembering what he believed about her; the record there was deliberately altered; a voice says "Cangyuan. You took your time coming home."
 - Interlude (chapters 204-208): Ruyue named as his first love, Xu Hanshan named as Xiyu's.

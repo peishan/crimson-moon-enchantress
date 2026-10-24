@@ -4955,7 +4955,7 @@ const HOOKS = {
 "244": [
 {
 "id": "study_searched_for_specific_things",
-"d": "The study was searched by someone who knew what they wanted; Xiao Tian finds his master's hidden box, a rough map of the estate and a note",
+"d": "The study was searched by someone who knew what they wanted; Xiao Tian finds his master's hidden panel, a map of the estate and a note",
 "t": "event",
 "p": false,
 "s": "art"

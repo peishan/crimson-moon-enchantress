@@ -25,3 +25,20 @@ Working notes only; nothing here is built. Volume 8 is still being planned by th
 6. How Ruyue's story mirrors or contrasts with Xiyu and Hanshan, and how it tests Xiyu and Cangyuan's bond of choice.
 7. Build needs: Ruyue cast sheet, portrait and class; the sect or hometown location; Cangyuan's personal page and any unlocks.
 8. Tribute comparison: needs the Tribute material from the author.
+
+## Comparison with the Tribute system repo (peishan/tribute-game)
+Tribute is the system this game was adapted from. It has ~60 scripts; Crimson Moon has about 25. These Tribute systems have **no counterpart** in Crimson Moon (checked by search): skill trees and bond trees, evolutions, auto-battle, skirmish mode, echo rematches, deeds, chronicle, banter/overheard/moments, local regard and reputation, standing and judgments, whisper ledger, timed events, passages, homes/estates/residents, daily/AFK rewards, material codex, growth abilities, world map and travel, register marks, route reconstruction.
+
+Fit for a Volume 8 puppetry/Ruyue storyline, without clue investigation (the author does not want it):
+- **Homes, estates, residents (base.js, estates.js, residents.js):** the natural model for Xiyu's base, which Xiao Yan is meant to look after. Still unbuilt.
+- **Banter, overheard, moments (banter.js, overheard.js):** quiet party exchanges, romance and comic relief, no puzzles. Good for Xiyu and Cangyuan scenes and for keeping the party warm while a darker thread grows.
+- **Timed events (timed.js):** letters or visits that arrive as game days pass; a way to deliver puppetry hints without a chapter.
+- **Standing and judgments (standing.js), local regard (regard.js):** how witnesses and places judge the party's choices; fits the "witnesses" the author prefers.
+- **Area corruption (corruption.js):** a meter for a puppet-tainted area; could model puppet influence without an investigation.
+- **Chronicle (chronicle.js), deeds (deeds.js):** low-risk recognition; no balance impact.
+- **Growth, skill trees, bond trees, evolutions:** the biggest gameplay-depth gap for magic and melee, if the author wants more build choice.
+- **Echo rematches, skirmish, auto-battle:** repeatable-fight quality of life.
+
+Not recommended (they are investigation systems): archive records and dossiers (archive.js), register marks (regmarks.js), route reconstruction (routes.js), historical evidence (sunken.js), whisper leads (whispers.js).
+
+Tribute has no Ruyue or puppetry content (searched for "ruyue" and "puppet": no hits).

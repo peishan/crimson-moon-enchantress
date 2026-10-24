@@ -13,8 +13,7 @@ Working notes only; nothing here is built. Volume 8 is still being planned by th
 In this wuxia/xianxia universe, puppetry means using **paper puppets**, shaped into the likeness of people, **to mislead others** (decoys and doubles, not strings and marionettes).
 
 Ideas that fit what the game already has (all optional, none confirmed):
-- **The hired fighters' intermediary** (V7, chapters 263 and 265): a man met at the west gate who gave the orders and payment and "left before dawn", never named. A paper double would explain why no one could ever identify him. Only a reinterpretation, no retcon needed.
-- **"A face may deceive you; a record can be compared"** (his master's letter) now reads as a warning about decoys.
+- **Volume 7 is not linked to Volume 8.** The intermediary, the master's letter and the V7 hooks belong to Xiao Tian's own thread and are a much later Xiao Tian identity chapter; do not tie them to the puppetry or to Ruyue in V8.
 - **The altered record and the shrine voice** (V2): someone who knows the original technique; could be the same craft.
 - **Gameplay hooks:** a paper effigy enemy that looks like a person (reuse the existing "layered" outer layer, stripped by Cleansing Salt or Cangyuan's weaving), and Xiyu and Cangyuan's Crimson Thread awareness spotting "a severe disturbance" in a decoy. A fight where the party must tell the double from the person fits the "witnesses and battles" preference.
 - **Ruyue stays offstage:** the craft is hinted, never attributed to her in V8.

@@ -397,3 +397,4 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 - 019 kept. 020 regenerated (no repeat of 019; Jinghe is recorded as a town on the western route, with related references to the dispatch ledger, correspondence, river transport records and boundary revisions). Game text and the Jinghe hook rewritten to match.
 - Titles: 022 is now **The Transfer Record** (chapter 259); 023 is now **The Letter Left Behind** (chapter 260). The earlier note that 020 repeats 019 and that 023's title implied the master's death is resolved.
 - **For the author:** the new 020 header says they must find the address "hidden within the estate's missing pages", but the missing pages are only discovered in 024. Consider changing that line (e.g. "hidden within the old records").
+- Comic 020 re-supplied with the header fixed ("hidden within the old records"); installed, game text updated, and the earlier header note is resolved.

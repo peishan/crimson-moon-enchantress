@@ -5069,6 +5069,85 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"254": [
+{
+"id": "party_reaches_a_village_and_hears_of_a_regional_records_office",
+"d": "In a village on the old road an elder half remembers the name Jinghe and points the party to the city and its regional records office",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"255": [
+{
+"id": "city_archives_point_to_the_old_quarter_storage",
+"d": "The city archives have no current entry for Jinghe; the older regional collection was moved to storage in the old quarter and is open to public consultation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"256": [
+{
+"id": "records_office_requires_registration_first",
+"d": "The records office registers the party's request and opens the lower shelves only the next day; the party rests at an inn",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"257": [
+{
+"id": "jinghe_found_in_an_old_regional_register",
+"d": "Jinghe is recorded in an old regional register; the entry is incomplete and carries a cross-reference to another series, so it is a real name but not an answer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"258": [
+{
+"id": "masters_birthday_remembered_only_in_fragments",
+"d": "Xiao Tian remembers marking his master's birthday but not the date; the referenced volume is historical context, not a personal account",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"259": [
+{
+"id": "personal_document_sent_to_a_city_repository",
+"d": "A personal document was removed from the regional collection and sent to a city repository; the party obtains a verified transfer reference and the repository's location",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"260": [
+{
+"id": "masters_sealed_letter_found_in_the_repository",
+"d": "Xiao Tian reads his master's sealed letter: the attackers searched for something dangerous because of what it could prove; \"Do not pursue the first face you remember. Find the records of the search first.\"",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "masked_figure_with_a_headband_flashes_in_memory",
+"d": "A masked figure with a headband flashes through Xiao Tian's memory; not yet enough to name anyone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"261": [
+{
+"id": "supplementary_register_pages_deliberately_removed",
+"d": "Pages of the estate's supplementary register were deliberately cut out; a copy was once requested by an administrative office outside the mountain district",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

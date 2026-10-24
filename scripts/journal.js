@@ -4,12 +4,27 @@
    Comic art: assets/comics/chNN.webp, extra pages chNN_2.webp, chNN_3.webp ... (see README).
    ===================================================================== */
 const CHAPTERS = [];
-for(let n=1;n<=20;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:60 + 15*n, battle:null });
+for(let n=1;n<=LAST_CHAPTER;n++) CHAPTERS.push({ n, title:CHAPTER_DESIGN[n].title, sxp:storyXp(n), battle:null, pending:!!CHAPTER_DESIGN[n].pending, removed:!!CHAPTER_DESIGN[n].removed });   // pending = no approved script yet
 const chapterOf = n => CHAPTERS[n-1];
 
 /* Chapter battles. Only one is in the script: ch13, Dongyue expels the imp afflicting Wang Xi'er.
    Fighters are listed explicitly: Xiyu is not at Hanshan's home, and Xiao Tian / Ya'Xing are his companions (guests until they join). */
 chapterOf(13).battle = [{key:'afflicting_imp'}];
+chapterOf(91).battle = [{key:'formation_manifestation'}];   // Volume 3 comic 013 (revised)
+chapterOf(92).battle = [{key:'formation_manifestation'},{key:'awakened_manifestation'}];   // comic 014
+chapterOf(95).battle = [{key:'estate_guardian'}];   // comic 017
+chapterOf(122).battle = [{key:'ice_temple_guardian'}];
+chapterOf(224).battle = [{key:'chamber_guardian'}];   // Volume 6 comic 016
+chapterOf(186).battle = [{key:'waystation_guardian'}];   // V5 comic 018
+chapterOf(133).battle = [{key:'frenzied_spirit_beast'}];   // V4 comic 017
+chapterOf(134).battle = [{key:'maze_minotaur'}];   // V4 comic 018
+chapterOf(136).battle = [{key:'frenzied_spirit_beast'},{key:'frenzied_spirit_beast'}];   // V4 comic 020
+chapterOf(124).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 4 comic 008: the small sentinels at the mechanism   // Volume 4 comic 006 (revised)
+chapterOf(59).quest = true;   // V2 comic 020: completed by finishing the Portrait Without a Face investigation (scripts/bounties.js)
+chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
+chapterOf(264).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 7 comic 027: the ambush in the pass
+chapterOf(266).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_captain'}];   // comic 029: the camp
+chapterOf(267).battle = [{key:'hired_fighter'},{key:'hired_captain'},{key:'masked_principal'}]; chapterOf(267).lead = true;   // comic 030: Xiao Tian leads (scripts/confrontation.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;
@@ -22,6 +37,7 @@ function fightersLv(n){
 }
 function battleSpecFor(n){
   const c = chapterOf(n), lv = Math.max(1, fightersLv(n));
+  if(c.lead) return v7ConfrontationSpec(lv, { rewards:true, chapter:n, firstClear:!chapterDone(n), onWin:() => completeChapter(n) });
   return { foes:c.battle.map(f => ({key:f.key, lv})), allies:SOLO[n], rewards:true, chapter:n, firstClear:!chapterDone(n),
            onWin: () => completeChapter(n) };
 }
@@ -32,23 +48,56 @@ function completeChapter(n){
   G.ch = n;
   const c = chapterOf(n);
   recruitsAtChapter(n).forEach(id => {
-    const lv = Math.max(1, avgPartyLv()-1);
+    const lv = joinLevel(id);
     if(recruit(id)){ U(id).lv = Math.max(U(id).lv, lv); msgs.push('★ '+CHARACTERS[id].n+' joins the party!'); }
   });
   Object.keys(CH_BOND[n]||{}).forEach(id => { if(isRecruited(id)){ U(id).bp += CH_BOND[n][id]; msgs.push('💞 Bond with Xiyu ('+CHARACTERS[id].n.split(' ')[0]+'): +'+CH_BOND[n][id]); } });
-  (CH_FLAGS[n]||[]).forEach(f => { G.flags[f] = true; msgs.push('✦ Story: '+(FLAG_LABEL[f]||f)); });
+  (CH_FLAGS[n]||[]).forEach(f => { G.flags[f] = true; relOnFlag(f); if(FLAG_LABEL[f]) msgs.push('✦ Story: '+FLAG_LABEL[f]); });
+  applyStoryStates(n).forEach(m => msgs.push(m));
+  setHooks(n);
+  relStory(n);
+  enforceParty();
+  giveChapterGear(n).forEach(m => msgs.push(m));
+  if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
+  (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
+  G.day++;   // story time passes between chapters
+  if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
+  if(n !== YX_REST_CH && yxCheck()) msgs.push('🛏️ After a day of rest at the Ice Temple, Ya\'Xing rejoins the party in the outfit the commanders gave him.');
   msgs.push('Story XP +'+c.sxp);
   gainXp(c.sxp, G.party).forEach(m => msgs.push(m));
+  if(n === V3_END_CH) G.ch = V3_LAST_OLD_CH;
+  if(n === V4_END_CH) G.ch = V4_LAST_OLD_CH;   // Volume 4 is 25 comics (chapters 117-141); 142-168 were removed   // the revised Volume 3 ends at chapter 107; chapters 108-116 were removed
   save();
   return msgs;
 }
 
-// DEV: jump the save to "story at chapter n" (recruits, flags, levels)
+/* Story states that are not flags: the ritual countdown (story-driven, never real time) and heroes who are away. Returns messages. */
+function applyStoryStates(n){
+  const msgs = [];
+  G.ritual = G.ritual || {left:null, done:false}; G.away = G.away || {};
+  if(CH_RITUAL[n]!==undefined){ G.ritual.left = G.ritual.left===null ? CH_RITUAL[n] : Math.min(G.ritual.left, CH_RITUAL[n]); msgs.push('⏳ The ritual deadline: '+G.ritual.left+' day'+(G.ritual.left===1?'':'s')+' left.'); }
+  if(n>=RITUAL_DONE_CH && G.ritual.left!==null && !G.ritual.done){ G.ritual.done = true; msgs.push('⏳ The ritual is completed. The deadline no longer applies.'); }
+  (CH_BACK[n]||[]).forEach(id => { if(G.away[id]){ delete G.away[id]; if(G.party.includes(id) && !G.active.includes(id) && activeCount()<activeSlots()) G.active.push(id); msgs.push('⚓ '+CHARACTERS[id].n+' is found, recuperating, and rejoins the party.'); } });
+  Object.keys(CH_AWAY[n]||{}).forEach(id => { G.away[id] = CH_AWAY[n][id]; G.active = G.active.filter(x => x!==id); msgs.push('⚓ '+CHARACTERS[id].n+' stays behind: '+CH_AWAY[n][id]); });
+  return msgs;
+}
+const CH_GEAR = { 129:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
+const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
+/* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
+function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
+
+// DEV: jump the save to "story at chapter n" (recruits, flags, levels, ritual, away heroes)
 function devSetChapter(n){
-  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu'];
-  for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); }
-  G.ch = n;
-  const target = Math.max(1, Math.round(n*.8));
+  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
+  for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
+  for(let i=1;i<=n;i++) giveChapterGear(i, true);
+  if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
+  G.ch = skipRemoved(n);
+  enforceParty();
+  if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash
+  G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
+  if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }
+  const target = Math.max(1, Math.round(1 + n*STORY_PACE));
   G.party.forEach(id => { U(id).lv = Math.max(U(id).lv, target); U(id).xp = 0; });
   save();
 }

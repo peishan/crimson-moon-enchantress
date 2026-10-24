@@ -87,7 +87,10 @@ async function pullFromGist(){
   }catch(e){ setStatus('Pull failed — check your token, Gist ID, and connection.'); }
   gistBusy(false);
 }
-const copyGistId = () => { try{ navigator.clipboard.writeText(gistCreds().gistId); toast('Gist ID copied'); }catch(e){} };
+const copyGistId = () => {
+  const id = gistCreds().gistId, done = () => toast('Gist ID copied'), fallback = () => { try{ const t = document.createElement('textarea'); t.value = id; t.style.position = 'fixed'; t.style.opacity = '0'; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); done(); }catch(e){ toast('Select the ID and copy it by hand'); } };
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(id).then(done, fallback); else fallback();
+};
 
 /* ---- SAVE TAB ---- */
 function rSave(){

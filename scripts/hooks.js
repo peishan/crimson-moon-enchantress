@@ -4943,6 +4943,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"243": [
+{
+"id": "masters_jade_keepsake_found_behind_a_brick",
+"d": "Xiao Tian finds his master's jade keepsake (not the manual) behind a loose brick in his old room; it confirms the master cared for him but not who attacked",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "244": [
 {
 "id": "study_searched_for_specific_things",
@@ -5040,6 +5049,22 @@ const HOOKS = {
 {
 "id": "jinghe_stone_beneath_the_pine_heard_in_sleep",
 "d": "Xiao Tian murmurs \"Jinghe... stone beneath the pine\" in his sleep; Ya'Xing remembers it; the meaning is unconfirmed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"253": [
+{
+"id": "pine_mark_older_than_the_notes_and_a_half_readable_name",
+"d": "The old map's pine mark is older than the surrounding notes, and a half-readable name may or may not be \"Jinghe\"; the party needs an independent record",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "road_leads_to_the_town_beyond_the_mountains",
+"d": "The party leaves the estate for the nearest town beyond the mountain range to look for records",
 "t": "event",
 "p": false,
 "s": "art"

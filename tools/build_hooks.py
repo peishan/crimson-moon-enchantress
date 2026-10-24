@@ -81,6 +81,8 @@ for n,lst in H.items():
 
 # ---- Volume 2 (internal chapters 40+ = V2 comic 001+), from the comic pages ----
 V2H={
+ 243:[('masters_jade_keepsake_found_behind_a_brick','Xiao Tian finds his master\'s jade keepsake (not the manual) behind a loose brick in his old room; it confirms the master cared for him but not who attacked','event')],
+ 253:[('pine_mark_older_than_the_notes_and_a_half_readable_name','The old map\'s pine mark is older than the surrounding notes, and a half-readable name may or may not be "Jinghe"; the party needs an independent record','state'),('road_leads_to_the_town_beyond_the_mountains','The party leaves the estate for the nearest town beyond the mountain range to look for records','event')],
  241:[('xiao_tian_recognises_the_peaks_and_the_basin','Xiao Tian recognises the peaks and finds the secluded basin where he lived; a precise reflex movement shows his body remembers','event')],
  242:[('estate_forced_at_the_entrances',"The estate's damage is concentrated around the entrances: someone forced their way through",'event'),('hairpin_survived_the_collapse','Xining finds a hairpin that survived the collapse; it feels familiar to Xiao Tian','event')],
  244:[('study_searched_for_specific_things',"The study was searched by someone who knew what they wanted; Xiao Tian finds his master's hidden box, a rough map of the estate and a note",'event'),('estate_map_marks_a_place_beneath_the_main_hall','The estate map marks a hidden storage area beneath the main hall','event')],

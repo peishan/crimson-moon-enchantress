@@ -255,7 +255,7 @@ function foeAct(f){
   }
   const oath = targets.find(a => a.st.oath), ignore = f.boss && oath && Math.random() < .35;
   const leadU = f.perp && B.lead ? targets.find(a => a.id===B.lead) : null;   // the principals look for him
-  const t = (oath && !ignore) ? oath : (leadU && Math.random() < .6 ? leadU : AR(targets));
+  const t = (oath && !ignore) ? oath : (leadU && Math.random() < .45 ? leadU : AR(targets));
   const dealt = strike(f, t, s);
   if(dealt>0) (mv.fx||[]).forEach(fx => { if(!t.dead && FOE_FX.includes(fx.k)) applyFx(f, t, fx); });
   if(s.landed && t.st.oath && !t.dead && !f.dead){

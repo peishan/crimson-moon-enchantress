@@ -22,6 +22,9 @@ chapterOf(136).battle = [{key:'frenzied_spirit_beast'},{key:'frenzied_spirit_bea
 chapterOf(124).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 4 comic 008: the small sentinels at the mechanism   // Volume 4 comic 006 (revised)
 chapterOf(59).quest = true;   // V2 comic 020: completed by finishing the Portrait Without a Face investigation (scripts/bounties.js)
 chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red Lantern Road bounty (scripts/bounties.js)
+chapterOf(264).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 7 comic 027: the ambush in the pass
+chapterOf(266).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_captain'}];   // comic 029: the camp
+chapterOf(267).battle = [{key:'hired_fighter'},{key:'hired_captain'},{key:'masked_principal'}]; chapterOf(267).lead = true;   // comic 030: Xiao Tian leads (scripts/confrontation.js)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;
@@ -34,6 +37,7 @@ function fightersLv(n){
 }
 function battleSpecFor(n){
   const c = chapterOf(n), lv = Math.max(1, fightersLv(n));
+  if(c.lead) return v7ConfrontationSpec(lv, { rewards:true, chapter:n, firstClear:!chapterDone(n), onWin:() => completeChapter(n) });
   return { foes:c.battle.map(f => ({key:f.key, lv})), allies:SOLO[n], rewards:true, chapter:n, firstClear:!chapterDone(n),
            onWin: () => completeChapter(n) };
 }

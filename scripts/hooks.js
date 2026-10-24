@@ -5148,6 +5148,60 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"262": [
+{
+"id": "supplementary_register_copied_and_sent_to_another_district",
+"d": "The estate's supplementary register was formally requested and copied at the Qingshan records office and sent to another administrative district; the dispatch ledger is the next record",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"263": [
+{
+"id": "hired_escorts_travelled_under_assumed_names_through_an_intermediary",
+"d": "Armed escorts passed through the trading town after the massacre under assumed names, paid through an intermediary met at the west gate; they left toward the northern mountain route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"264": [
+{
+"id": "ambush_in_the_northern_pass_and_a_captive_taken",
+"d": "The party is ambushed in a prepared mountain pass; the attackers withdraw and one is captured; his mask slips and Xiao Tian remembers his face from the night his master was killed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"265": [
+{
+"id": "captive_confirms_hired_to_find_records_and_kill_witnesses",
+"d": "The captive confirms he was there, hired through an intermediary to find a record and kill anyone in the way; he never met the employer and was forbidden to speak of the contract",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"266": [
+{
+"id": "hidden_stronghold_and_a_network_of_hired_blades",
+"d": "The party finds a hidden stronghold in the northern mountains, evidence of a larger network (contract tokens, a partial list of names); one fighter escapes with a sealed case toward a higher peak",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"267": [
+{
+"id": "the_men_who_attacked_the_estate_brought_to_account",
+"d": "At an abandoned outpost Xiao Tian faces the surviving fighters; the men who attacked his home answer for it, but the employer's identity stays hidden and his master cannot be brought back",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

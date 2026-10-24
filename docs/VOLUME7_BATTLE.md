@@ -37,3 +37,8 @@ The survivors confirm they were hired and bound to silence, with limited details
 - **Stage 2:** rhythm (ATK +20%, crit) and Dongyue mends him (+30% HP). Hoko's presence removes one fighter; Xiao Yan's presence removes another.
 - **Stage 3:** two masked principals; resolve (crit for three turns). Only he can finish them.
 - Enemy art is missing (icons are used); the hired fighters' stats and names are placeholders.
+
+## Attached to chapter 267 (comic 030, What Remains)
+- Chapter 267 now launches the Xiao Tian-led fight (`chapterOf(267).lead`); winning completes Volume 7 (flag `volume7_complete`). Chapters 264 (the ambush) and 266 (the camp) are ordinary battles against hired fighters (and a hired captain at the camp).
+- Balance is a first pass: the principals were weakened after tests (HP 220, ATK 17, Final Cut pow 1.3; they target Xiao Tian 45% of the time). It needs real play-testing.
+- The comics show one principal fall on the page and one figure escaping with a sealed case (comic 029); the game fight has two principals. Adjust if you want only one.

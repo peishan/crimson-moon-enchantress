@@ -6,7 +6,7 @@ const V7_PARTY = ['xiaotian','xiyu','cangyuan','xining','dongyue','hoko','yaxing
 function v7ConfrontationSpec(lv, opts){
   opts = opts || {};
   const F = (key, x) => Object.assign({key, lv}, x || {});
-  return { lead:'xiaotian', blessing:true, allies:opts.allies || V7_PARTY, rewards:!!opts.rewards, chapter:opts.chapter, firstClear:opts.firstClear,
+  return { lead:'xiaotian', blessing:true, allies:opts.allies || V7_PARTY, rewards:!!opts.rewards, chapter:opts.chapter, firstClear:opts.firstClear, onWin:opts.onWin,
     stages:[
       { msg:'— Stage 1: The hired group holds its formation. Ya\'Xing guards the flank; break the formation before it closes around him. —',
         foes:[F('hired_fighter',{formation:true}), F('hired_fighter',{formation:true}), F('hired_captain',{formation:true})] },

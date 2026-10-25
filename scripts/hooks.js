@@ -5292,6 +5292,78 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"278": [
+{
+"id": "warning_note_tells_the_party_to_stop_searching_for_the_apprentice",
+"d": "A note slipped under the door tells the party to stop searching for the apprentice, who is not the one they need; the hidden hand knows what they are investigating",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"279": [
+{
+"id": "sealed_case_carried_north_by_two_from_the_warehouse_district",
+"d": "A cloaked, gloved tenant in the old warehouse district collected a sealed wooden case; two people carried it north and neither returned",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"280": [
+{
+"id": "trail_splits_beyond_linzhou_foot_traveller_and_rider",
+"d": "Beyond Linzhou the trail splits: one traveller went north on foot and another toward the hills on horseback, with a frayed binding cord at a roadside shelter",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"281": [
+{
+"id": "two_trails_converge_beyond_the_ridge",
+"d": "A loaded cart's tracks, a puppet-like thread and a scrap of dark cloth show the two trails converge beyond the ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"282": [
+{
+"id": "hidden_compound_with_puppet_parts_beyond_the_ridge",
+"d": "A hidden, maintained compound beyond the ridge holds joints and faceplates; its occupant lets one unarmed visitor in",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"283": [
+{
+"id": "host_offers_the_cases_location_for_dropping_the_apprentice",
+"d": "The compound's host denies building the puppet and offers where the sealed case was taken in exchange for the party leaving and dropping the search for the apprentice",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"284": [
+{
+"id": "relay_station_north_of_the_river_and_the_hosts_terms",
+"d": "The host says the case is at an old relay station north of the river and holds something that should never have been assembled; the party agrees to investigate without bringing the authorities without cause",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"285": [
+{
+"id": "case_already_moved_from_the_relay_station",
+"d": "The case was stored at the relay station but has already left by a cart; a half sentence on the wall reads \"...before the strings are drawn\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

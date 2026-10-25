@@ -5382,6 +5382,87 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"288": [
+{
+"id": "paper_figures_are_built_in_stages_and_the_final_step_is_removed",
+"d": "The paper figures are built in stages and the final step of the method was deliberately removed; a note reads \"Some knowledge must remain unfinished\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"289": [
+{
+"id": "supplier_stamp_traced_to_the_closed_wei_workshop",
+"d": "A supplier's stamp leads to the closed workshop of a craftsperson surnamed Wei; a gloved visitor with a flat wooden case came asking recently, and a new note says to follow the living hand",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"290": [
+{
+"id": "hooded_craftsperson_folding_paper_figures_near_the_old_kiln",
+"d": "A hooded craftsperson is found folding a paper figure near the old kiln; the case they carried was a decoy or already emptied, and they leave before answering",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"291": [
+{
+"id": "map_in_two_inks_points_to_a_place_of_spiritual_work",
+"d": "A map found in the discarded case was amended in a second ink and marks a place where spiritual work was performed; the trail points to a building beyond a stone bridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"292": [
+{
+"id": "retired_artisan_points_the_trail_to_a_northern_courier_workshop",
+"d": "A retired artisan recognises the mark as a place where spiritual patterns were tested and sends the party to a courier workshop near the northern pass",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"293": [
+{
+"id": "courier_ledger_shows_a_shipment_redirected_by_a_second_seal",
+"d": "The courier ledger records a shipment of \"sealed components\" under an obsolete mark, carried by two aliased carriers; its destination was changed with an administrative seal, and a second dispatch used the same mark",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"294": [
+{
+"id": "two_dispatch_routes_cross_at_a_bridge_and_a_weighing_station",
+"d": "The two dispatch routes cross at a bridge and a weighing station where cargo was likely transferred; the routes look coordinated, but no one is identified",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"295": [
+{
+"id": "unfinished_paper_figure_reacts_and_cangyuan_knows_the_principle",
+"d": "An unfinished paper figure reacts despite an incomplete pattern, and Cangyuan recognises the underlying principle from his past without knowing who changed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"296": [
+{
+"id": "altered_pattern_a_deliberately_missing_line_and_a_second_mark",
+"d": "The pattern was deliberately left one line short so the figure responds only partially; a second mark is hidden on its back, and the original dispatch slips are in an archive",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -416,3 +416,7 @@ Keep 008-010 and 015 as the canonical versions; replace the old 011-014 in seque
 
 ## Standing decision (author, Volume 8): the game text leads the story
 The game text, not the comic pages, is the authority for the story. When a comic page's caption or detail clashes with the story, the fix is made in the game text (chapter summaries, events, hooks) and the page is left as it is, so no regeneration is needed. This replaces the earlier rule that game text follows the pages word for word. Page wording is still used as the starting point, and clashes are still reported to the author, but they are resolved in the text.
+
+## Volume 8 comics 009-010 installed (chapters 276-277; LAST_CHAPTER 277)
+- 009 The Name in the Ledger (276) · 010 The Apprentice Who Vanished (277). New name: the former apprentice **Shen Luochuan (沈洛川)**. No clue board was built; story text, events and hooks only.
+- **For the author:** (1) the apprentice shares the surname Shen with Shen Cangyuan and Shen Ruyue; the game text makes no connection. (2) In 010 the line "No matching mark" is spoken while a plan with a diamond-and-cross mark like the puppet's is held up; the game text keeps the line (the mark is not on the plan that links to the kiln). Since the text leads, say if you want the mark counted as a match instead.

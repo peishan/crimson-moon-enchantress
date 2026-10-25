@@ -51,3 +51,7 @@ Fit for a Volume 8 puppetry/Ruyue storyline, without clue investigation (the aut
 Not recommended (they are investigation systems): archive records and dossiers (archive.js), register marks (regmarks.js), route reconstruction (routes.js), historical evidence (sunken.js), whisper leads (whispers.js).
 
 Tribute has no Ruyue or puppetry content (searched for "ruyue" and "puppet": no hits).
+
+## Paper puppetry timing (author)
+Paper puppetry arrives from comic 018 onward in Volume 8 (comics 019+). Comics 001-018 show only wood-and-metal constructs driven by a spiritual thread; nothing in them contradicts paper figures appearing next. Keep Ruyue unnamed and offstage; keep Volume 7 hooks separate.
+- Game-side plan for when the pages arrive: a paper-effigy enemy (layered outer shell stripped by Cleansing Salt or Cangyuan's weaving; Xiyu and Cangyuan's Crimson Thread awareness can flag it as a disturbance), written in the chapter text first because the text leads.

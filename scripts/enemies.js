@@ -83,6 +83,10 @@ const ENEMIES = {
   afflicting_imp:{n:'The Afflicting Imp',icon:'😈',boss:true,hp:260,atk:12,mag:14,def:7,spd:11,xp:120,gold:60,traits:['magic'],
     moves:[{n:'Fever Claw',pow:1.1},{n:'Hex Spark',pow:1.2,spell:true},{n:'Sickening Cackle',pow:.7,spell:true,fx:[{k:'slow',d:2}]}],
     phases:[{at:.5,msg:'The imp shrieks and clings tighter to its host!',atk:1.2}],drops:[{id:'imp_ash',chance:1}],desc:'A small, spiteful imp that fed on Wang Xi\'er\'s fever.'},
+  /* ---- Volume 8 (comic 005): the thread-driven puppet in the Linzhou workshop ---- */
+  thread_puppet:{n:'Thread-Driven Puppet',icon:'🪆',boss:true,hp:520,atk:23,mag:10,def:15,spd:9,xp:260,gold:140,traits:['layered'],
+    moves:[{n:'Jointed Strike',pow:1.4},{n:'Lunge',pow:1.2},{n:'Thread Snap',pow:.8,spell:true,fx:[{k:'bind',d:1}]}],
+    phases:[{at:.5,msg:'A second thread draws taut: the puppet\'s movements sharpen!',atk:1.25}],drops:[{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.4}],desc:'A wooden-and-metal body shaped to imitate a human, driven by a spiritual thread from an unseen hand. The thread layer halves damage until it is stripped or cut away.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -146,6 +150,7 @@ const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 
 /* ---- loot ---- */
 const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'cleansing_salt',qty:[2,2]}]},
+               thread_puppet:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

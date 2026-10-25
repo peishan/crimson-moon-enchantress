@@ -23,6 +23,7 @@ const relUnderstanding = u => u < 15 ? 'Little understood' : u < 40 ? 'Beginning
 
 /* Story beats that move a relationship when a chapter completes (small, deliberate; conversations do the rest). [a, b, {t,a,u}] */
 const REL_CH = {
+  270:[['xiyu','cangyuan',{t:4,a:4}]],
   8:[['dongyue','xiyu',{t:5}]], 14:[['xiaotian','xiyu',{t:6}],['dongyue','xiaotian',{t:30,u:20}]], 15:[['yaxing','xiyu',{t:6}]], 11:[['dongyue','xiyu',{t:5,a:5}]], 16:[['dongyue','xiyu',{t:5,a:3}]], 18:[['dongyue','xiyu',{t:5,a:3}]], 20:[['dongyue','xiyu',{t:5,a:3}]],
   21:[['dongyue','xiyu',{t:5,a:2}]], 26:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}]], 34:[['xiaotian','xiyu',{t:4}],['yaxing','xiyu',{t:4}],['dongyue','xiaotian',{t:5}]], 36:[['dongyue','xiaotian',{t:5,u:5}]], 29:[['dongyue','xiyu',{t:5,a:6}]], 33:[['dongyue','xiyu',{t:5,a:5,u:5}]], 37:[['dongyue','xiyu',{t:5,a:5}]],
   38:[['dongyue','xiyu',{t:8,a:5,u:10}]], 39:[['dongyue','xiyu',{t:2,u:5}],['dongyue','xiaotian',{t:5}]], 40:[['dongyue','xiyu',{t:-5}]],

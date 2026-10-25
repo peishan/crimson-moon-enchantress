@@ -5202,6 +5202,78 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"268": [
+{
+"id": "xiao_tian_rests_after_revenge_and_decides_without_remembering",
+"d": "After facing the attackers, Xiao Tian rests with the party at an inn and says he can decide what to do even before he remembers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"269": [
+{
+"id": "rumours_of_figures_that_move_like_people_but_stop_like_dolls",
+"d": "In Linzhou travellers say figures move after dark like people but stop like dolls; Xiao Tian names it puppetry",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"270": [
+{
+"id": "cangyuan_knew_someone_who_understood_puppetry",
+"d": "Cangyuan knows a little puppetry from someone who understood it far better; he does not know whether that person is still alive",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"271": [
+{
+"id": "abandoned_workshop_on_the_western_outskirts_recently_used",
+"d": "An abandoned woodwork shop on the western outskirts has been used recently without forcing the door; fitted wooden parts and a wooden hand are found",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"272": [
+{
+"id": "thread_driven_puppet_destroyed_in_the_workshop",
+"d": "The party destroys a mechanical puppet driven by a spiritual thread; its maker is unseen and flees by the old canal road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"273": [
+{
+"id": "puppet_mark_under_the_collar_and_a_covered_cart",
+"d": "A mark hidden under the puppet's collar and a covered cart with no seal, carrying a cloaked passenger, are the two leads; the cart passed the canal bend",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"274": [
+{
+"id": "craftsman_cannot_place_the_mark_and_cart_went_to_the_old_kilns",
+"d": "Linzhou craftsmen cannot place the mark; a boatman says the cart headed north toward the old kiln district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"275": [
+{
+"id": "kiln_workshop_where_figures_were_built_and_the_diagram_cut",
+"d": "The kiln building is where figures were built or repaired; the party finds the cart, person-shaped frames, another thread and a diagram with its most useful section removed",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

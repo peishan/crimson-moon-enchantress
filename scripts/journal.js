@@ -25,6 +25,7 @@ chapterOf(54).bounty = true;   // V2 comic 015: completed by clearing the Red La
 chapterOf(264).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 7 comic 027: the ambush in the pass
 chapterOf(266).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_captain'}];   // comic 029: the camp
 chapterOf(267).battle = [{key:'hired_fighter'},{key:'hired_captain'},{key:'masked_principal'}]; chapterOf(267).lead = true;   // comic 030: Xiao Tian leads (scripts/confrontation.js)
+chapterOf(272).battle = [{key:'thread_puppet'}];   // Volume 8 comic 005: the puppet in the workshop
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

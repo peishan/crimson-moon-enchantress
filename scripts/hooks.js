@@ -5274,6 +5274,24 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"276": [
+{
+"id": "kiln_last_owner_a_retired_craftsman_names_a_former_apprentice",
+"d": "The kiln's last recorded owner is a retired craftsman whose kiln key went missing months ago; he names a former apprentice, Shen Luochuan, skilled but impatient, who left after a dispute and was never heard from again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"277": [
+{
+"id": "apprentice_shen_luochuan_vanished_years_ago",
+"d": "Shen Luochuan's rented room was closed one morning years ago and no one saw him leave; it holds burnt papers and a plan for a jointed limb, and a cloaked visitor once argued with him after dark",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

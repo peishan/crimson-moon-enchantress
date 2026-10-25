@@ -430,3 +430,8 @@ The game text, not the comic pages, is the authority for the story. When a comic
 - Speakers: where a caption's name and the art disagree the game text follows the captions (e.g. 016: Dongyue goes in; Cangyuan fears being recognised).
 - The compound's host is unnamed; the bargain (the case's location for dropping the apprentice) is recorded as accepted in part: investigate the case, no authorities without cause, no return to the apprentice's workshop.
 - **For the author:** (1) 017 says "you will not enter the apprentice's former workshop again", but Dongyue only promises not to involve the authorities; the text records that he did not agree to drop the apprentice. (2) 016's last caption says "Before Dongyue could learn where the case had gone", though 015 had Cangyuan's name raised first; no change made. (3) Whether the host is connected to the puppet maker is left open.
+
+## Volume 8 comics 019-020 installed (chapters 286-287; LAST_CHAPTER 287)
+- 019 The Lantern in the Hills (286): the first paper puppet. 020 The Figure That Followed (287). Paper puppetry now appears, as the author said. No battles, no clue board.
+- Dongyue is the one speaking to the cloaked figure in 020 per the caption, though the art shows the white-haired figure; the text follows the caption. The cloaked figure (the host's counterpart at the hill building) is unnamed and is not tied to the compound's host or to Ruyue.
+- **For the author:** 019's last caption says the paper figure's question was "a question Cangyuan was not ready to answer", while 020 gives Cangyuan almost no further reaction; the text leaves Cangyuan's knowledge of paper puppetry open.

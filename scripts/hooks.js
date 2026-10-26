@@ -5472,6 +5472,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"298": [
+{
+"id": "regional_archive_register_volume_moved_after_the_second_dispatch",
+"d": "The regional archive confirms the register exists but its original volume was transferred to another collection weeks ago, after the second dispatch, under a valid approval whose author cannot be named without further authorisation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"299": [
+{
+"id": "authorisation_seal_and_a_removed_page_point_to_a_sanctuary",
+"d": "The register's authorisation seal belongs to a collection managed outside the bureau; a page was removed on purpose, and the index shows the later destination is a sanctuary that once preserved records unfit for ordinary archives",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"300": [
+{
+"id": "road_to_the_sanctuary_inscription_on_preserving_records",
+"d": "On the road north the party finds recent cart marks, a shrine inscription giving instructions for preserving records, and a passage sealed and later opened; the maintained sanctuary comes into view",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"301": [
+{
+"id": "keeper_of_the_sanctuary_offers_a_token_and_one_hall",
+"d": "A hooded keeper at the sanctuary gate says records do not walk and people move them, and offers a token for dawn: no drawn weapons, first hall only, nothing more promised; Cangyuan says his master taught him the principle of the gate's pattern but not who carved it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

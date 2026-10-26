@@ -42,7 +42,7 @@ function storyGo(d){
   drawStory();
 }
 /* Volume covers are shown when a volume is COMPLETED (not at the start). Key = the chapter that completes the volume. */
-const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' }, 107:{ v:3, n:'Volume 3', img:'assets/volume3_cover.webp' }, 141:{ v:4, n:'Volume 4', img:'assets/volume4_cover.webp' }, 198:{ v:5, n:'Volume 5', img:'assets/volume5_cover.webp' }, 237:{ v:6, n:'Volume 6', img:'assets/volume6_cover.webp' }, 267:{ v:7, n:'Volume 7', img:'assets/volume7_cover.webp' }, 203:{ v:5, n:'Ya\'Xing Interlude', img:'assets/cast/yaxing_interlude.webp' }, 208:{ v:5, n:'Xiyu & Cangyuan Interlude', img:'assets/cast/xc_interlude.webp' } };
+const VOLUME_COVERS = { 39:{ v:1, n:'Volume 1', img:'assets/volume1_cover.webp' }, 78:{ v:2, n:'Volume 2', img:'assets/events/relationship_cangyuan.webp' }, 107:{ v:3, n:'Volume 3', img:'assets/volume3_cover.webp' }, 141:{ v:4, n:'Volume 4', img:'assets/volume4_cover.webp' }, 198:{ v:5, n:'Volume 5', img:'assets/volume5_cover.webp' }, 237:{ v:6, n:'Volume 6', img:'assets/volume6_cover.webp' }, 267:{ v:7, n:'Volume 7', img:'assets/volume7_cover.webp' }, 301:{ v:8, n:'Volume 8', img:'assets/volume8_cover.webp' }, 203:{ v:5, n:'Ya\'Xing Interlude', img:'assets/cast/yaxing_interlude.webp' }, 208:{ v:5, n:'Xiyu & Cangyuan Interlude', img:'assets/cast/xc_interlude.webp' } };
 function openVolumeCover(n, after){ const c = VOLUME_COVERS[n]; if(!c) return; S = {n, mode:'cover', units:[], cover:c, after:after || null}; drawStory(); }
 /* closing the finale splash: Volume 2's closes into the unlocking of the relationship option, then the chapter result */
 function closeCover(){

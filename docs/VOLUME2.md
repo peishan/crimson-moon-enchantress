@@ -443,3 +443,8 @@ The game text, not the comic pages, is the authority for the story. When a comic
 
 ## Volume 8 comic 021 installed; chapters 288-296 shifted by one (LAST_CHAPTER 297)
 - 021 The Ink That Remembers is chapter 288. Comics 022-030 are now chapters 289-297 (they were 288-296 while 021 was missing), so every Volume 8 chapter number now equals comic number + 267 and each chapter shows its own art. Earlier notes in this log that list chapters 288-296 refer to the old numbers. Saves that had reached the old chapters 288-296 will read one chapter behind; a new game is unaffected.
+
+## Volume 8 complete: comics 031-034, the 028-030 re-send, and the cover (chapters 298-301; LAST_CHAPTER 301)
+- 031 The Regional Archive (298) · 032 The Missing Authority (299) · 033 The Road to the Sanctuary (300) · 034 The Keeper at the Gate (301, "End of Volume 8"). The re-sent 028-030 replaced the installed art (chapters 295-297). Volume 8 cover installed (assets/volume8_cover.webp), shown on completing chapter 301; flag `volume8_complete`. No battles; no clue board; no map.
+- Volume 8 ends at the sanctuary gate with the keeper's token (return at dawn, first hall only). The keeper is unnamed; no Ruyue; Volume 7 hooks untouched. Cangyuan's "my master taught me the underlying principle" repeats from 029-030.
+- **For the author:** 032 shows Ya'Xing in one panel's label; the text keeps him present from there on. The paper-puppet battles and a Volume 8 Wilds zone (area monsters) are not built yet.

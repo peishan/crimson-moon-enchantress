@@ -5643,6 +5643,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"317": [
+{
+"id": "sightings_share_one_watercourse_and_a_shadow_enters_the_ridge_hollow",
+"d": "Every confirmed sighting lies near the stream; a shadow passes beneath the surface into the ridge hollow, and the injury is kept separate from any attack",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"318": [
+{
+"id": "su_liechen_warns_about_the_hollows_and_says_the_intruders_were_dealt_with",
+"d": "Su Liechen, met at the Ice Temple, says old hollows run deeper than the villagers know and advises observing without entering; he says the intruders were a different matter and have been brought to justice, and will not join the party",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"319": [
+{
+"id": "phenomenon_repeats_before_the_party_while_they_observe_from_a_distance",
+"d": "The party observes from a distance as the glow, ticking and a moving shape repeat; they choose not to pursue it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"320": [
+{
+"id": "blue_light_is_a_living_creature_in_the_stream",
+"d": "A small translucent finned creature steps from the water and produces the blue light and the ticking; why it came near the village is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"321": [
+{
+"id": "creature_freed_from_a_blocked_refuge_by_stones_moved_on_purpose",
+"d": "The creature was trying to pass stones that had shifted at its refuge; the party opens a small gap and it passes through unharmed, but fresh marks suggest the stones were moved by someone",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

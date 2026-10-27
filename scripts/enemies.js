@@ -144,6 +144,8 @@ const ZONES = [
   {id:'slopes', n:'The Xuancang Slopes', icon:'⛰️', unlock:117, off:1, pool:['frost_wolf','snowfield_ram','ridge_yeti','ice_golem'], boss:null, desc:'The open mountainside above the temple: wolves, rams and ridge giants. A short walk out and back, no commander required.'},
   {id:'estate', n:'The Ruined Estate Grounds', icon:'🏚️', unlock:239, off:0, pool:['moon_wisp','rift_wraith','ward_sentinel'], boss:null, desc:'The overgrown grounds around Xiao Tian\'s old home: lingering spirits and the odd guardian construct. Wilds only, not a story location.'},
   {id:'northpass', n:'The Northern Mountain Pass', icon:'🌲', unlock:264, off:1, pool:['snowfield_ram','ridge_yeti','frost_wolf','hired_fighter'], boss:null, desc:'The narrow pass beyond the trading town: mountain beasts and the odd hired blade. Wilds only, not a story location.'},
+  {id:'archivepass', n:'The Archive Roads', icon:'📜', unlock:288, off:1, pool:['hired_fighter','ward_sentinel','moon_wisp','frost_wolf'], boss:null, desc:'The inland roads and pine forest between the city archive and the sanctuary: wandering hired blades, old guardian constructs and lingering spirits. Wilds only, not a story location.'},
+  {id:'lantern', n:'The Lantern Hills', icon:'🏮', unlock:286, off:1, pool:['rift_wraith','moon_wisp','sparring_construct','snowfield_ram'], boss:null, desc:'The wooded hills where the first paper figure walked: restless spirits and stray constructs. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

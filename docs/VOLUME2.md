@@ -448,3 +448,6 @@ The game text, not the comic pages, is the authority for the story. When a comic
 - 031 The Regional Archive (298) · 032 The Missing Authority (299) · 033 The Road to the Sanctuary (300) · 034 The Keeper at the Gate (301, "End of Volume 8"). The re-sent 028-030 replaced the installed art (chapters 295-297). Volume 8 cover installed (assets/volume8_cover.webp), shown on completing chapter 301; flag `volume8_complete`. No battles; no clue board; no map.
 - Volume 8 ends at the sanctuary gate with the keeper's token (return at dawn, first hall only). The keeper is unnamed; no Ruyue; Volume 7 hooks untouched. Cangyuan's "my master taught me the underlying principle" repeats from 029-030.
 - **For the author:** 032 shows Ya'Xing in one panel's label; the text keeps him present from there on. The paper-puppet battles and a Volume 8 Wilds zone (area monsters) are not built yet.
+
+## Volume 8 Wilds zones
+- Added two Wilds-only zones for area monsters (not story locations): The Lantern Hills (opens at chapter 286) and The Archive Roads (opens at chapter 288). No Volume 8 map. Last uploaded chapter: Volume 8 comic 034 (chapter 301).

@@ -5688,6 +5688,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"322": [
+{
+"id": "marks_on_the_refuge_stones_water_alone_might_not_explain",
+"d": "Regular marks of different depth and a residue that may have reacted to spiritual energy are found on the stones at the creature's refuge; the marks suggest but do not prove the obstruction was not natural",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"323": [
+{
+"id": "ridge_hollow_entrance_disturbed_recently_by_something_or_someone",
+"d": "The ridge hollow's entrance ground is freshly disturbed, with one partial print, a non-water sound and a possible marked wall; the party withdraws to return with equipment",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"324": [
+{
+"id": "damaged_fitting_and_a_metal_ring_in_the_narrow_passage",
+"d": "The narrow passage shows drag marks, a damaged fitting and a metal ring with a triangular mark; the creature reacts to the krrrk sound, and the water links the passage to another section of the ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"325": [
+{
+"id": "waterway_outlet_and_a_structure_above_the_pool",
+"d": "The underground channel has an outlet on the slope with signs that something was dragged or carried; a ruined structure stands above the pool",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"326": [
+{
+"id": "abandoned_platform_may_have_held_a_removable_flow_device",
+"d": "An abandoned platform has regular grooves, a matching fitting and a fragment; it may have held a removable device that altered the flow, explaining the stones but not who moved them or why",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -5769,6 +5769,105 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"331": [
+{
+"id": "collection_moved_weeks_before_and_the_route_to_the_mountain_sanctuary",
+"d": "The collection was moved weeks before the party reached the archive under a valid seal that names no one; they choose the slower, documented route to the Mountain Sanctuary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"332": [
+{
+"id": "yungui_station_and_a_six_pointed_route_marker",
+"d": "On the mountain road a six-pointed marker is used to mark a maintained route, and the party reaches Yungui Station, which looks abandoned but has a door that suggests otherwise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"333": [
+{
+"id": "route_register_fragment_and_a_diamond_marked_token_at_the_waystation",
+"d": "A concealed latch under a moved table holds a route register fragment that names no travellers and a diamond-marked wooden token; a back path points to the same upper route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"334": [
+{
+"id": "a_paper_that_repeats_one_movement_and_cangyuans_masters_description",
+"d": "A paper found before the waystation moves by itself and repeats one action; Cangyuan says his master once described techniques that preserve traces of spiritual activity, only a resemblance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"335": [
+{
+"id": "the_mountain_sanctuary_below_the_clouds_and_a_preserving_formation",
+"d": "The Mountain Sanctuary lies below the clouds under a weak formation that preserves rather than attacks; the paper reacts near the gate and a bell rings",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"336": [
+{
+"id": "sanctuary_grounds_tended_with_a_room_emptied_deliberately",
+"d": "The sanctuary grounds are tended with no one in sight, the door secured from inside or before leaving, and a room from which something was deliberately removed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"337": [
+{
+"id": "figure_on_a_stand_repeats_one_movement",
+"d": "A figure on a stand repeats one identical movement, a preserved trace rather than a living presence, and the stand carries an unrecognised mark",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"338": [
+{
+"id": "hall_of_figures_and_instructions_for_arranging_the_stands",
+"d": "A hall of figures on stands holds preserved actions, some stands inactive, and an inscription with instructions for arranging or activating them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"339": [
+{
+"id": "missing_object_removed_carefully_from_the_stand_hall",
+"d": "The missing object left a clean outline and was removed carefully, not forced; authorisation is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"340": [
+{
+"id": "arranging_the_stands_makes_a_circuit_and_opens_a_stairway",
+"d": "Placing a stand per the diagram makes the arrangement a circuit; Cangyuan has it cut before they lose control, and a floor section slides aside to reveal a stairway",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"341": [
+{
+"id": "guardian_beneath_the_hall_destroyed_and_a_stone_door_opens",
+"d": "The party destroys a wood-and-bronze guardian that woke when the floor formation was activated; damaged instructions read \"preserve\" and \"prevent\", and a stone door opens",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

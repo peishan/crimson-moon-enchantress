@@ -87,6 +87,10 @@ const ENEMIES = {
   thread_puppet:{n:'Thread-Driven Puppet',icon:'🪆',boss:true,hp:520,atk:23,mag:10,def:15,spd:9,xp:260,gold:140,traits:['layered'],
     moves:[{n:'Jointed Strike',pow:1.4},{n:'Lunge',pow:1.2},{n:'Thread Snap',pow:.8,spell:true,fx:[{k:'bind',d:1}]}],
     phases:[{at:.5,msg:'A second thread draws taut: the puppet\'s movements sharpen!',atk:1.25}],drops:[{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.4}],desc:'A wooden-and-metal body shaped to imitate a human, driven by a spiritual thread from an unseen hand. The thread layer halves damage until it is stripped or cut away.'},
+  /* ---- Volume 10 (comic 011): the guardian beneath the sanctuary hall ---- */
+  sanctuary_guardian:{n:'Sanctuary Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:10,def:17,spd:7,xp:300,gold:150,traits:['layered'],
+    moves:[{n:'Bronze Fist',pow:1.5},{n:'Floor Formation Sweep',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Shoulder Charge',pow:1.2}],
+    phases:[{at:.5,msg:'The guardian\'s core brightens along the floor formation: it moves faster!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A wood-and-bronze guardian older than the mechanism above. It wakes when the floor formation is activated and is not hunting anyone. Its outer plates halve damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -147,6 +151,7 @@ const ZONES = [
   {id:'archivepass', n:'The Archive Roads', icon:'📜', unlock:288, off:1, pool:['hired_fighter','ward_sentinel','moon_wisp','frost_wolf'], boss:null, desc:'The inland roads and pine forest between the city archive and the sanctuary: wandering hired blades, old guardian constructs and lingering spirits. Wilds only, not a story location.'},
   {id:'lantern', n:'The Lantern Hills', icon:'🏮', unlock:286, off:1, pool:['rift_wraith','moon_wisp','sparring_construct','snowfield_ram'], boss:null, desc:'The wooded hills where the first paper figure walked: restless spirits and stray constructs. Wilds only, not a story location.'},
   {id:'stream9', n:'The Hollow Stream', icon:'💧', unlock:304, off:1, pool:['ice_sprite','glacier_crab','moon_wisp','rift_wraith'], boss:null, desc:'The stream, ridge hollow and abandoned platform of the village in Volume 9: water spirits and lingering lights. Wilds only, not a story location.'},
+  {id:'cloudsteps', n:'The Cloud Steps', icon:'☁️', unlock:335, off:1, pool:['ward_sentinel','sparring_construct','moon_wisp','rift_wraith'], boss:null, desc:'The old stairs and grounds around the Mountain Sanctuary: preserved constructs and lingering spirits. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
@@ -154,6 +159,7 @@ const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 /* ---- loot ---- */
 const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'cleansing_salt',qty:[2,2]}]},
                thread_puppet:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               sanctuary_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

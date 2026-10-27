@@ -26,6 +26,7 @@ chapterOf(264).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired
 chapterOf(266).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_captain'}];   // comic 029: the camp
 chapterOf(267).battle = [{key:'hired_fighter'},{key:'hired_captain'},{key:'masked_principal'}]; chapterOf(267).lead = true;   // comic 030: Xiao Tian leads (scripts/confrontation.js)
 chapterOf(272).battle = [{key:'thread_puppet'}];   // Volume 8 comic 005: the puppet in the workshop
+chapterOf(341).battle = [{key:'sanctuary_guardian'}];   // Volume 10 comic 011: the guardian beneath the hall
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

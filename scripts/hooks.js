@@ -5773,7 +5773,7 @@ const HOOKS = {
 "331": [
 {
 "id": "collection_moved_weeks_before_and_the_route_to_the_mountain_sanctuary",
-"d": "The collection was moved weeks before the party reached the archive under a valid seal that names no one; they choose the slower, documented route to the Mountain Sanctuary",
+"d": "The collection was moved weeks before the party reached the archive under a valid seal that names no one; they choose the slower, documented route to the Mountain Sanctuary, the same sanctuary as the gate where the keeper stood, entered from another side",
 "t": "event",
 "p": false,
 "s": "art"

@@ -5553,6 +5553,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"307": [
+{
+"id": "hollow_evidence_a_place_repeated_traces_and_unagreeing_witnesses",
+"d": "The hollow shows deliberate-looking grooves, a white residue and overlapping tracks; a passer-by saw a still figure there; the evidence shows something was there, not what it was",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"308": [
+{
+"id": "xiyu_sees_a_familiar_face_on_the_ridge",
+"d": "Xiyu glimpses a figure on the ridge whose face feels familiar to her; the three witness accounts (a light, a clicking, a person) are kept separate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"309": [
+{
+"id": "a_man_who_walks_the_old_paths_and_an_unmapped_hunting_route",
+"d": "A woodcutter says a man keeps to himself and walks the old paths without being a regular villager; an unmapped hunting route with a fresh break links two light sightings",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"310": [
+{
+"id": "xiyu_speaks_to_the_stranger_who_gives_no_name",
+"d": "Xiyu speaks to the stranger at the market; he admits walking near the ridge, denies seeing the lights and declines to give his name; his face reminds her of Muxue Yan with no proof of a link",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"311": [
+{
+"id": "stranger_resembles_muxue_yan_but_is_not_him_and_a_clicking_at_the_watch_hut",
+"d": "Xiyu says the stranger is not Muxue Yan, whose hair is silver-white, and wonders why someone resembles him so closely; a clicking was heard near an abandoned watch hut east of the stream",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

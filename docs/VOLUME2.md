@@ -451,3 +451,6 @@ The game text, not the comic pages, is the authority for the story. When a comic
 
 ## Volume 8 Wilds zones
 - Added two Wilds-only zones for area monsters (not story locations): The Lantern Hills (opens at chapter 286) and The Archive Roads (opens at chapter 288). No Volume 8 map. Last uploaded chapter: Volume 8 comic 034 (chapter 301).
+
+## Volume 9 cover received
+- "Volume 9: A Season Between Journeys" cover saved as assets/volume9_cover.webp (cached by the service worker). Not yet wired: Volume 9 starts at chapter 302 when its comics arrive, and the cover popup, volume heading and VOL9_START will be added then. Autumn setting, eight companions in view.

@@ -24,13 +24,13 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 301;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 306;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
 const INTER_NAME = {yx:'Ya\'Xing Interlude', xc:'Xiyu & Cangyuan Interlude'};   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comics 001-038 = chapters 79-116
-const volOf = n => n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
-const vnum = n => n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
+const volOf = n => n >= VOL9_START ? 9 : n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
+const vnum = n => n >= VOL9_START ? n - (VOL9_START-1) : n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
 const chName = n => interOf(n) ? INTER_NAME[interOf(n)]+' · Chapter '+vnum(n) : volOf(n) > 1 ? 'Volume '+volOf(n)+' · Chapter '+vnum(n) : 'Chapter '+n;
 const chShort = n => interOf(n) ? (interOf(n)==='yx'?'YX':'XC')+'·'+vnum(n) : volOf(n) > 1 ? 'V'+volOf(n)+'·'+vnum(n) : 'Ch.'+n;
 const STORY_PACE = 1;

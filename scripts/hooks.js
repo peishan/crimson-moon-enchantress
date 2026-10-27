@@ -5733,6 +5733,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"327": [
+{
+"id": "manufactured_device_may_have_narrowed_the_creatures_route",
+"d": "A manufactured metal piece and compatible fittings support a theory that a device at the platform redirected the water and narrowed the creature's route; who installed it, when and why is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"328": [
+{
+"id": "channel_stabilised_and_the_creature_passes_freely",
+"d": "The party widens the flow by moving only loose stones; the creature no longer avoids the passage and the village is warned away from the unstable bank",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"329": [
+{
+"id": "tuoba_jingheng_the_stranger_gives_his_name_and_a_safer_route",
+"d": "The dark-haired stranger gives his name, Tuoba Jingheng, and advises the stable eastern track; he cannot say whether the rockfalls were natural; his face still resembles Muxue Yan to Xiyu with no proof of a link",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"330": [
+{
+"id": "volume_9_ends_leaving_the_device_owner_and_the_stranger_unresolved",
+"d": "Volume 9 ends with the device's owner unknown and Xiyu choosing not to seek the stranger without a reason",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

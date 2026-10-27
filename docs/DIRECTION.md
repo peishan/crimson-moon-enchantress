@@ -24,3 +24,8 @@ Game-side hooks to build when the author approves: pair bonuses and banter for D
 
 ## Clarification (author): Xiao Tian and Ya'Xing
 Their bond is brotherly only; it is not romantic. Each may later be paired with a woman, such as female party members they meet along the road. Do not write romantic beats between them or hint at one in banter, bonds or reflections.
+
+## Built (Volume 9 follow-up)
+- Wilds zone **The Hollow Stream** (opens at chapter 304): water spirits and lingering lights, Wilds only.
+- Pair bonus **Brothers in arms** (Xiao Tian + Ya'Xing, +5%, from chapter 30). Brotherly only. Dongyue + Xining (+6%, "Healers in step") and Xiyu + Cangyuan (Bond of Choice) already existed.
+- Not built yet: banter/overheard scenes and a base for Xiyu; both need writing that the author has not approved.

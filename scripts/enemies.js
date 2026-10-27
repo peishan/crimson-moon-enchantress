@@ -146,6 +146,7 @@ const ZONES = [
   {id:'northpass', n:'The Northern Mountain Pass', icon:'🌲', unlock:264, off:1, pool:['snowfield_ram','ridge_yeti','frost_wolf','hired_fighter'], boss:null, desc:'The narrow pass beyond the trading town: mountain beasts and the odd hired blade. Wilds only, not a story location.'},
   {id:'archivepass', n:'The Archive Roads', icon:'📜', unlock:288, off:1, pool:['hired_fighter','ward_sentinel','moon_wisp','frost_wolf'], boss:null, desc:'The inland roads and pine forest between the city archive and the sanctuary: wandering hired blades, old guardian constructs and lingering spirits. Wilds only, not a story location.'},
   {id:'lantern', n:'The Lantern Hills', icon:'🏮', unlock:286, off:1, pool:['rift_wraith','moon_wisp','sparring_construct','snowfield_ram'], boss:null, desc:'The wooded hills where the first paper figure walked: restless spirits and stray constructs. Wilds only, not a story location.'},
+  {id:'stream9', n:'The Hollow Stream', icon:'💧', unlock:304, off:1, pool:['ice_sprite','glacier_crab','moon_wisp','rift_wraith'], boss:null, desc:'The stream, ridge hollow and abandoned platform of the village in Volume 9: water spirits and lingering lights. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

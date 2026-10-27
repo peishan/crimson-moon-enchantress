@@ -136,7 +136,8 @@ function relationshipUnlock(){
 const PAIR_SYN = [
   {a:'dongyue', b:'xining',   pct:.06, label:'Healers in step', open:() => true},
   {a:'dongyue', b:'xiaotian', pct:.05, label:'Sworn brothers',  open:() => true},
-  {a:'dongyue', b:'xiyu',     pct:.02, label:'Friends',         open:() => G.ch >= 70},   // a friendly bond, minor effect
+  {a:'dongyue', b:'xiyu',     pct:.02, label:'Friends',         open:() => G.ch >= 70},
+  {a:'xiaotian', b:'yaxing', pct:.05, label:'Brothers in arms', open:() => G.ch >= 30},   // brotherly bond only (author: not romantic)   // a friendly bond, minor effect
 ];
 const pairSynActive = (p, ids) => ids.includes(p.a) && ids.includes(p.b) && p.open();
 function synergyOf(id, ids){

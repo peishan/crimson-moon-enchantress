@@ -21,3 +21,6 @@ Not a pillar: clue investigation (also see the earlier decision: no clue board, 
 - Ruyue and Hanshan (first loves in the interludes) stay as second-chance-love echoes; Ruyue stays offstage until her arc.
 
 Game-side hooks to build when the author approves: pair bonuses and banter for Dongyue-Xining (celestial trial flavour) and Xiao Tian-Ya'Xing (brotherly), and a past-life motif for Xiyu-Cangyuan in reflections only.
+
+## Clarification (author): Xiao Tian and Ya'Xing
+Their bond is brotherly only; it is not romantic. Each may later be paired with a woman, such as female party members they meet along the road. Do not write romantic beats between them or hint at one in banter, bonds or reflections.

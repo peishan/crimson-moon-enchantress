@@ -29,3 +29,6 @@ Their bond is brotherly only; it is not romantic. Each may later be paired with 
 - Wilds zone **The Hollow Stream** (opens at chapter 304): water spirits and lingering lights, Wilds only.
 - Pair bonus **Brothers in arms** (Xiao Tian + Ya'Xing, +5%, from chapter 30). Brotherly only. Dongyue + Xining (+6%, "Healers in step") and Xiyu + Cangyuan (Bond of Choice) already existed.
 - Not built yet: banter/overheard scenes and a base for Xiyu; both need writing that the author has not approved.
+
+## Quiet Moments (built as a surprise; contents intentionally not listed here)
+- `scripts/banter.js`: 15 short party exchanges, shown after a rest (one per rest, each only once) when the companions in it are with the party and the chapter is reached. Pairings follow the theme; Xiao Tian and Ya'Xing are brothers only. The author asked to discover them while playing as a regular player, so the lines are not summarised in docs or chat.

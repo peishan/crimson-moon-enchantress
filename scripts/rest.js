@@ -32,7 +32,9 @@ function restAt(id){
   const p = placeById(id); if(!p || !p.open()) return ['That place is not open to you yet.'];
   const c = restPrice(p); if(G.gold < c) return ['A room at '+p.n+' costs '+c+' gold.'];
   G.gold -= c; restoreParty(); G.heat = Math.max(0, (G.heat||0) - 40); advanceTime(8); save();
-  return ['🛏️ The party rests at '+p.n+(c ? ' (-'+c+'g)' : ' (free)')+'. HP and MP fully restored. The hours pass: '+timeLabel()+'.'];
+  const out = ['🛏️ The party rests at '+p.n+(c ? ' (-'+c+'g)' : ' (free)')+'. HP and MP fully restored. The hours pass: '+timeLabel()+'.'];
+  if(typeof nextBanter === 'function'){ const bt = nextBanter(); if(bt.length){ out.push.apply(out, bt); save(); } }
+  return out;
 }
 const restAtInn = () => restAt('fairy');   // the Wilds tab's rest button
 function mealAt(id){

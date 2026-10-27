@@ -454,3 +454,7 @@ The game text, not the comic pages, is the authority for the story. When a comic
 
 ## Volume 9 cover received
 - "Volume 9: A Season Between Journeys" cover saved as assets/volume9_cover.webp (cached by the service worker). Not yet wired: Volume 9 starts at chapter 302 when its comics arrive, and the cover popup, volume heading and VOL9_START will be added then. Autumn setting, eight companions in view.
+
+## Volume 8 comics 001-007 re-sent: art replaced (chapters 268-274)
+- Installed the re-sent pages for 001, 002, 003, 004, 005, 006, 007. Where two versions came (003, 005, 006), the second was used: cleaner panel numbering and layout (003 v2 shows the Linzhou stone legibly; 005 v2 fixes the scrambled panel order and adds "Please tell me that's the end" / "Don't celebrate until we've checked the room"; 006 v2 has the figure in the first panel).
+- Game text is unchanged (it leads the story). The re-sent 001 still says "a small city" and 002 still says "After a day on the road, the party finally reached Linzhou"; the text keeps Linzhou as the same city (chapters 268-269 as fixed earlier).

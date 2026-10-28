@@ -509,3 +509,11 @@ The game text, not the comic pages, is the authority for the story. When a comic
 - This volume follows your stated direction (exploration, group bonds, many battles) with almost no investigation. Han Lie (frontier hunter) is a named NPC from 357.
 - **Balance not verified:** my scripted test parties lost every boss at levels 20-40, including the older Volume 6 chamber guardian, so I cannot judge the new fights; please play 356-369 and tell me if they feel too hard or too easy.
 - **For the author:** (1) 009's labels swap the art: "Xiao Yan examines the mechanisms" sits on the white-haired figure and "Dongyue organizes the supplies" on the dark-haired red-robed one; the text follows the captions. (2) Ya'Xing and Xiao Tian look alike in several panels in 003-004; the text follows the labels. (3) 002 lists Xiao Yan as "Yan (Xiao Yan) Wayfinder"; displayed as Xiao Yan as elsewhere. (4) The party enters this volume carrying Volume 10's "second collection point" lead (the old inspection waystation), but 009 finds no records there; the text leaves that unexplained for now.
+
+## Volume 11 art-consistency notes (author's review list; logged, nothing regenerated)
+Comic numbers are Volume 11 "Chapter" numbers (game chapter = number + 352). Only 001-017 have been received so far; items for 018 onward are recorded for when those pages arrive.
+- **Xiao Tian / Cangyuan swapped in combat panels:** 013, 016, 017, 019, 020, 022, 023, 025. Several panels show Cangyuan's plum-and-black design under Xiao Tian's caption and Xiao Tian's teal design under Cangyuan's.
+- **Hoko / Xiao Yan do not match their designs** (Hoko blonde with fur trim; Xiao Yan ash-grey / charcoal): 011, 015, 019, 022, 023, 025.
+- **028:** Cangyuan's debris-deflection panel and Dongyue's outfit need correcting.
+- **027:** keep the regenerated version as the base; it is improved, and the page should not be regenerated for the issues found.
+- Game text follows the captions, which is also the standing rule that the text leads the story: for 013 (game 365), 016 (368) and 017 (369) the text attributes actions by caption (Xiao Tian leads; Cangyuan and Ya'Xing strike), so no text change is needed if the art is fixed to match.

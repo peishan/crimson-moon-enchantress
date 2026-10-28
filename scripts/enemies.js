@@ -97,6 +97,20 @@ const ENEMIES = {
   archive_warden:{n:'Corded Warden',icon:'🗿',boss:true,hp:700,atk:25,mag:12,def:18,spd:7,xp:340,gold:170,traits:['layered'],
     moves:[{n:'Double Slam',pow:1.5},{n:'Hall Shift',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Drawn Energy',pow:1.2,spell:true}],
     phases:[{at:.5,msg:'The warden pulls energy from the wall to compensate: its movements sharpen!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A larger guardian wired to the walls of the lower archive, running on a command that was forced out of position. Its outer plating halves damage until stripped.'},
+  /* ---- Volume 10 finale and Volume 11 (the Thousand-Mile Frontier) ---- */
+  fused_guardian:{n:'Fused Guardian',icon:'🗿',boss:true,hp:740,atk:26,mag:14,def:18,spd:7,xp:360,gold:180,traits:['layered'],
+    moves:[{n:'Many-Limbed Strike',pow:1.5},{n:'Chamber Shift',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Drawn Channel',pow:1.2,spell:true}],
+    phases:[{at:.5,msg:'The fused guardian draws on every channel: it rebuilds itself and strikes harder!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'Countless constructs and overlapping impressions fused into one body beneath the central regulator. Its outer layer halves damage until stripped.'},
+  spirit_wolf:{n:'Spirit Wolf',icon:'🐺',hp:95,atk:16,mag:0,def:7,spd:15,xp:44,gold:20,
+    moves:[{n:'Slope Pounce',pow:1.2},{n:'Pack Snap',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.5}],desc:'Territorial wolves of the Thousand-Mile Frontier, bold on a slope and quick to circle.'},
+  horned_ravager:{n:'Horned Ravager',icon:'🦬',boss:true,hp:600,atk:24,mag:6,def:15,spd:9,xp:280,gold:150,
+    moves:[{n:'Horn Charge',pow:1.6},{n:'Ground Slam',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rampage',pow:1.3}],
+    phases:[{at:.5,msg:'The Horned Ravager overcommits to its charge, enraged!',atk:1.25}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:.7},{id:'moonlit_tonic',chance:.5}],desc:'A massive spirit beast that rules a stretch of the Shattered Ridge. Its aggression is territorial.'},
+  ravine_beast:{n:'Ravine Beast',icon:'🐗',elite:true,hp:260,atk:21,mag:0,def:13,spd:9,xp:110,gold:55,
+    moves:[{n:'Den Charge',pow:1.5},{n:'Rock Hurl',pow:.9,all:true}],drops:[{id:'wolf_pelt',chance:.8},{id:'frost_herb',chance:.5}],desc:'A spirit beast defending its den in a narrow ravine.'},
+  pineback_behemoth:{n:'Pineback Behemoth',icon:'🌲',boss:true,hp:680,atk:25,mag:6,def:19,spd:6,xp:330,gold:170,traits:['layered'],
+    moves:[{n:'Timber Smash',pow:1.5},{n:'Bark Shake',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Crushing Charge',pow:1.3}],
+    phases:[{at:.5,msg:'The Behemoth\'s armour splinters but it rages on!',atk:1.25}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:.8},{id:'spirit_draught',chance:.5}],desc:'A massive spirit beast with thick bark-like armour that smashes through trees. Its armour halves damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -158,6 +172,8 @@ const ZONES = [
   {id:'lantern', n:'The Lantern Hills', icon:'🏮', unlock:286, off:1, pool:['rift_wraith','moon_wisp','sparring_construct','snowfield_ram'], boss:null, desc:'The wooded hills where the first paper figure walked: restless spirits and stray constructs. Wilds only, not a story location.'},
   {id:'stream9', n:'The Hollow Stream', icon:'💧', unlock:304, off:1, pool:['ice_sprite','glacier_crab','moon_wisp','rift_wraith'], boss:null, desc:'The stream, ridge hollow and abandoned platform of the village in Volume 9: water spirits and lingering lights. Wilds only, not a story location.'},
   {id:'cloudsteps', n:'The Cloud Steps', icon:'☁️', unlock:335, off:1, pool:['ward_sentinel','sparring_construct','moon_wisp','rift_wraith'], boss:null, desc:'The old stairs and grounds around the Mountain Sanctuary: preserved constructs and lingering spirits. Wilds only, not a story location.'},
+  {id:'frontier', n:'The Thousand-Mile Frontier', icon:'🛤️', unlock:354, off:1, pool:['spirit_wolf','frost_wolf','snowfield_ram','ridge_yeti'], boss:null, desc:'The trade roads and mountain trails around the Thousand-Mile Waystation: spirit wolves and wandering beasts. Wilds only, not a story location.'},
+  {id:'shattered', n:'The Shattered Ridge', icon:'⛰️', unlock:358, off:2, pool:['spirit_wolf','ravine_beast','snowfield_ram','ridge_yeti'], boss:null, desc:'The steep ridge beyond the checkpoint, where territorial beasts hold the high ground. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
@@ -167,6 +183,9 @@ const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:
                thread_puppet:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                sanctuary_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                archive_warden:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               fused_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               horned_ravager:{guaranteed:[{id:'wolf_pelt',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               pineback_behemoth:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

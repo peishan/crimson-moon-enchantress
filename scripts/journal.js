@@ -30,6 +30,14 @@ chapterOf(341).battle = [{key:'sanctuary_guardian'}];   // Volume 10 comic 011: 
 chapterOf(343).battle = [{key:'broken_figure'},{key:'broken_figure'},{key:'broken_figure'}];   // Volume 10 comic 013: the hall of broken impressions
 chapterOf(346).battle = [{key:'broken_figure'},{key:'broken_figure'}];   // comic 016: the bridge over the shaft
 chapterOf(347).battle = [{key:'archive_warden'}];   // comic 017: the larger guardian
+chapterOf(350).battle = [{key:'fused_guardian'}];   // Volume 10 comic 020: the fused guardian
+chapterOf(356).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // Volume 11 chapter 004
+chapterOf(359).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // chapter 007
+chapterOf(360).battle = [{key:'horned_ravager'}];   // chapter 008
+chapterOf(362).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // chapter 010
+chapterOf(365).battle = [{key:'ravine_beast'}];   // chapter 013
+chapterOf(368).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // chapter 016
+chapterOf(369).battle = [{key:'pineback_behemoth'}];   // chapter 017
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

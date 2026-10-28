@@ -5940,6 +5940,186 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"350": [
+{
+"id": "fused_guardian_destroyed_and_the_regulator_stabilised_without_its_component",
+"d": "The party destroys a fused guardian of overlapping impressions and stabilises the central regulator, but the missing component is not restored and the original system stays incomplete",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"351": [
+{
+"id": "founding_inscription_and_a_second_collection_point_at_a_remote_waystation",
+"d": "The sanctuary was built to preserve impressions of significant actions, emotions and intentions, not souls; the party receives a copy of the founding inscription and learns of a second collection point at a remote waystation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"352": [
+{
+"id": "volume_10_ends_with_a_new_road_and_the_keeper_repairing_the_sanctuary",
+"d": "The party leaves the mountain sanctuary; the Keeper has begun repairs and will not reactivate the damaged sections; the next destination is two to three days away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"353": [
+{
+"id": "open_road_and_a_caravan_attacked_by_spirit_wolves",
+"d": "From a ridge the party sees a lake city and the open road; a damaged caravan below is attacked by spirit wolves",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"354": [
+{
+"id": "thousand_mile_waystation_and_an_escort_contract",
+"d": "At the Thousand-Mile Waystation the party reads a bounty for a Horned Spirit Beast and accepts a Frontier Guild escort contract; the old inspection waystation lies across the Shattered Ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"355": [
+{
+"id": "east_pass_road_collapsed_and_wolves_arrive",
+"d": "The East Pass road has collapsed and a hunter warns of an unstable slope; spirit wolves arrive while they work",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"356": [
+{
+"id": "wolves_driven_off_something_else_may_have_driven_them",
+"d": "The party drives off the spirit wolves; the hunter says something else may have driven them out",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"357": [
+{
+"id": "han_lie_frontier_hunter_and_the_three_routes",
+"d": "The hunter gives his name, Han Lie; the caravan leader offers fifty more taels; the party weighs the trade road, mountain trail and ravine route and chooses to escort the caravan first",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"358": [
+{
+"id": "shattered_ridge_and_a_horned_beast_near_the_old_waystation",
+"d": "At the checkpoint the commander says trade routes are closed; the party takes the mountain trail across the Shattered Ridge toward the old inspection waystation, with a large horned beast reported near the ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"359": [
+{
+"id": "abandoned_hunter_camp_and_the_old_watch_platform_in_sight",
+"d": "The party aids injured hunters at an abandoned camp, defeats spirit wolves at a narrow pass and sees the old watch platform at dusk",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"360": [
+{
+"id": "horned_ravager_defeated_and_its_aggression_was_territorial",
+"d": "The party defeats the Horned Ravager at the ruined watch platform; they find no sign of artificial control or hidden schemes and the old waystation comes into view",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"361": [
+{
+"id": "forgotten_inspection_waystation_usable_and_a_settlement_cut_off",
+"d": "The old inspection waystation is weathered but usable with recent traveller tracks; a scout reports a nearby settlement cut off by a damaged bridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"362": [
+{
+"id": "red_creek_bridge_reinforced_and_the_frontier_market_route",
+"d": "The party helps repair the bridge at Red Creek and defeats a pack of spirit beasts; the villagers share the route to the frontier market",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"363": [
+{
+"id": "frontier_market_and_a_convoy_leaving_at_dawn",
+"d": "At the frontier market the party gathers supplies, Xiyu and Cangyuan share a quiet walk, and the broker recommends joining a convoy north at dawn",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"364": [
+{
+"id": "convoy_north_and_a_pack_animal_missing_at_night",
+"d": "The party joins a merchant convoy north; a pack animal from the third wagon goes missing, with broken ropes and tracks into the forest",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"365": [
+{
+"id": "pack_animal_rescued_from_the_ravine_and_the_beast_left_in_its_den",
+"d": "The party rescues the trapped pack animal and drives off the spirit beast without chasing it; the ravine forces the convoy onto a safer route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"366": [
+{
+"id": "rockslide_at_the_crossing_and_the_wagons_detour",
+"d": "A fresh rockslide forces an evacuation; the wagons take the longer lower route and the party weighs staying with them or taking the mountain trail",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"367": [
+{
+"id": "northern_trading_post_closed_and_smoke_beyond_the_forest",
+"d": "The party takes the mountain trail on foot; a stranded courier says the northern trading post has closed after repeated beast attacks, and smoke rises beyond the forest",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"368": [
+{
+"id": "village_defended_and_the_beasts_are_after_food",
+"d": "The party defends a farming village from spirit beasts; the hunter says food has become scarce in the northern forests and the attacks are growing more frequent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"369": [
+{
+"id": "pineback_behemoth_defeated_and_the_trading_posts_watchfires_in_sight",
+"d": "The party defeats the Pineback Behemoth in the pass of broken pines and sees the northern trading post's watchfires at dusk",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -6120,6 +6120,105 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"370": [
+{
+"id": "northern_trading_post_under_guard_and_a_supply_cart_missing",
+"d": "The northern trading post is under tightened guard and no one agrees on the cause of the beast attacks; a guide will lead the party north if they recover a missing supply cart",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"371": [
+{
+"id": "supply_cart_recovered_from_spirit_beasts",
+"d": "The party fights off spirit beasts at the abandoned supply cart by the stream, saves the injured driver and most supplies, and returns to the trading post",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"372": [
+{
+"id": "bandits_and_a_mountain_beast_ambush_the_party_in_the_pines",
+"d": "Bandits ambush the party in the pine forest at night, followed by a second wave led by a mountain beast; the beast falls and the bandits retreat",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"373": [
+{
+"id": "qingshan_settlement_and_a_herd_moving_through_the_region",
+"d": "At Qingshan Settlement the villagers say the beasts are moving through the region, not only targeting the village; the party escorts farmers to the outlying fields and sees signs of a large herd",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"374": [
+{
+"id": "herd_driven_on_toward_the_mineral_valley",
+"d": "The party helps evacuate the farmers and guides a spirit beast herd away from the crops; the herd moves north toward a broad mineral valley, the next destination",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"375": [
+{
+"id": "stonehide_beast_driven_from_the_quarry_road",
+"d": "The party drives a territorial stonehide beast from an old quarry road blocked by timber and stone and takes the quarry road north instead of the longer trade route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"376": [
+{
+"id": "mining_settlement_contract_to_clear_the_road_to_the_fallen_garrison",
+"d": "At the mining settlement the miners say the beasts have stopped some mines; a veteran hunter contracts the party to clear a dangerous beast from the road leading to the Fallen Garrison",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"377": [
+{
+"id": "crimson_horned_sovereign_driven_from_the_pass",
+"d": "The party drives the Crimson-Horned Sovereign, a beast that feeds on chaos, from the narrow cliff pass and reopens the road toward the old military road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"378": [
+{
+"id": "fallen_garrison_with_an_unstable_defensive_formation",
+"d": "The party reaches the Fallen Garrison, finds a damaged but active defensive formation with missing components and records of a defensive network along the northern frontier; a pulse flares and they camp outside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"379": [
+{
+"id": "hidden_stairway_and_a_sealed_maintenance_door_under_the_garrison",
+"d": "The party finds a hidden stairway beneath the barracks, a mural of a wider defensive network and a sealed maintenance door with the same formation pattern; a fresh pulse shakes the corridor",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"380": [
+{
+"id": "garrison_control_chamber_stabilised_and_a_spirit_spring_below",
+"d": "The party stabilises the surging mechanisms of the garrison's control chamber; a key regulating component is missing and an inscription points to a spiritual spring beneath the garrison as the source of the fluctuations",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

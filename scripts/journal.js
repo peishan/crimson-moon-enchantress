@@ -38,6 +38,11 @@ chapterOf(362).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wo
 chapterOf(365).battle = [{key:'ravine_beast'}];   // chapter 013
 chapterOf(368).battle = [{key:'frontier_raider'},{key:'frontier_raider'},{key:'frontier_raider'},{key:'frontier_raider'}];   // chapter 016
 chapterOf(369).battle = [{key:'pineback_behemoth'}];   // chapter 017
+chapterOf(371).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // Volume 11 chapter 019: the lost supply cart
+chapterOf(372).battle = [{key:'frontier_raider'},{key:'frontier_raider'},{key:'frontier_raider'},{key:'ravine_beast'}];   // chapter 020: ambush in the pines
+chapterOf(374).battle = [{key:'ravine_beast'},{key:'ravine_beast'}];   // chapter 022: the herd at the fields
+chapterOf(375).battle = [{key:'stonehide_beast'}];   // chapter 023: the quarry entrance
+chapterOf(377).battle = [{key:'crimson_sovereign'}];   // chapter 025: the Crimson-Horned Sovereign
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

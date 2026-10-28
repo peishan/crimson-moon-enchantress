@@ -6132,8 +6132,8 @@ const HOOKS = {
 ],
 "371": [
 {
-"id": "supply_cart_recovered_from_spirit_beasts",
-"d": "The party fights off spirit beasts at the abandoned supply cart by the stream, saves the injured driver and most supplies, and returns to the trading post",
+"id": "supply_cart_recovered_from_bandits_and_beasts",
+"d": "The party drives off bandits and wild beasts attacking the damaged supply cart on the forest road, saves the injured driver and the supplies, and returns to the trading post",
 "t": "event",
 "p": false,
 "s": "art"

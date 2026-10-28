@@ -6219,6 +6219,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"381": [
+{
+"id": "ancient_spiritual_spring_feeds_the_frontiers_formation_network_and_is_disturbed",
+"d": "The party finds the ancient spiritual spring beneath the garrison feeding the frontier formation network; its control seal is missing a core component and dark mineral residue shows someone has interfered with its flow",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"382": [
+{
+"id": "beasts_descend_on_a_settlement_driven_by_the_unstable_spring",
+"d": "Driven by the unstable spring, a large group of spirit beasts descends on a settlement; the party and the villagers hold through a second, larger wave",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"383": [
+{
+"id": "mountain_devourer_defeated_by_severing_its_link_to_the_spring",
+"d": "The party severs the Mountain Devourer's link to the spring through its crystal veins and it collapses into stone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"384": [
+{
+"id": "volume_11_ends_with_a_substitute_core_and_a_distant_storehouse",
+"d": "The party completes a temporary substitute core that stabilises the spring and reopens the frontier roads; a registry points to a distant storehouse of replacement components, and why the original component vanished is not explained",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

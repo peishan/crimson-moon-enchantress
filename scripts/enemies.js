@@ -108,6 +108,9 @@ const ENEMIES = {
   crimson_sovereign:{n:'Crimson-Horned Sovereign',icon:'👹',boss:true,hp:720,atk:26,mag:14,def:17,spd:9,xp:380,gold:190,traits:['layered'],
     moves:[{n:'Horn Impale',pow:1.5},{n:'Crimson Storm',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Chaos Charge',pow:1.3}],
     phases:[{at:.5,msg:'The crimson storm swells: the Sovereign feeds on chaos and strikes harder!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A crimson-horned beast that feeds on chaos and arrives like a harbinger of disaster. Its crimson hide halves damage until stripped.'},
+  mountain_devourer:{n:'Mountain Devourer',icon:'🐉',boss:true,hp:780,atk:27,mag:15,def:19,spd:7,xp:400,gold:200,traits:['layered'],
+    moves:[{n:'Mountain-Shaking Strike',pow:1.5},{n:'Dark Crystal Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Maw',pow:1.3}],
+    phases:[{at:.5,msg:'The Devourer draws harder on the spring\'s current: its armour thickens and its blows grow heavier!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A colossal spirit beast with a body like a moving mountain, drawn by the unstable spring. Its core is armoured in stone and dark crystals; the layered shell halves damage until stripped, and cutting its link to the spring weakens it.'},
   spirit_wolf:{n:'Spirit Wolf',icon:'🐺',hp:95,atk:16,mag:0,def:7,spd:15,xp:44,gold:20,
     moves:[{n:'Slope Pounce',pow:1.2},{n:'Pack Snap',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.5}],desc:'Territorial wolves of the Thousand-Mile Frontier, bold on a slope and quick to circle.'},
   horned_ravager:{n:'Horned Ravager',icon:'🦬',boss:true,hp:600,atk:24,mag:6,def:15,spd:9,xp:280,gold:150,
@@ -194,6 +197,7 @@ const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:
                horned_ravager:{guaranteed:[{id:'wolf_pelt',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                pineback_behemoth:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                crimson_sovereign:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               mountain_devourer:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

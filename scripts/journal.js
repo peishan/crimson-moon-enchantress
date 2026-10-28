@@ -43,6 +43,8 @@ chapterOf(372).battle = [{key:'frontier_raider'},{key:'frontier_raider'},{key:'f
 chapterOf(374).battle = [{key:'ravine_beast'},{key:'ravine_beast'}];   // chapter 022: the herd at the fields
 chapterOf(375).battle = [{key:'stonehide_beast'}];   // chapter 023: the quarry entrance
 chapterOf(377).battle = [{key:'crimson_sovereign'}];   // chapter 025: the Crimson-Horned Sovereign
+chapterOf(382).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'ravine_beast'},{key:'spirit_wolf'}];   // Volume 11 chapter 030: the beasts descend
+chapterOf(383).battle = [{key:'mountain_devourer'}];   // chapter 031: the Mountain Devourer
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

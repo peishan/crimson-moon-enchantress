@@ -36,7 +36,7 @@ chapterOf(359).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wo
 chapterOf(360).battle = [{key:'horned_ravager'}];   // chapter 008
 chapterOf(362).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // chapter 010
 chapterOf(365).battle = [{key:'ravine_beast'}];   // chapter 013
-chapterOf(368).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'spirit_wolf'}];   // chapter 016
+chapterOf(368).battle = [{key:'frontier_raider'},{key:'frontier_raider'},{key:'frontier_raider'},{key:'frontier_raider'}];   // chapter 016
 chapterOf(369).battle = [{key:'pineback_behemoth'}];   // chapter 017
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 

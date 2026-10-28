@@ -6105,8 +6105,8 @@ const HOOKS = {
 ],
 "368": [
 {
-"id": "village_defended_and_the_beasts_are_after_food",
-"d": "The party defends a farming village from spirit beasts; the hunter says food has become scarce in the northern forests and the attacks are growing more frequent",
+"id": "organised_hostile_group_holds_the_valley_and_is_driven_back",
+"d": "The party meets an organised, well-equipped hostile group on the high ground of a smoking valley and drives it back; they leave supplies and camp gear and know the terrain, so the party stays cautious",
 "t": "event",
 "p": false,
 "s": "art"
@@ -6114,8 +6114,8 @@ const HOOKS = {
 ],
 "369": [
 {
-"id": "pineback_behemoth_defeated_and_the_trading_posts_watchfires_in_sight",
-"d": "The party defeats the Pineback Behemoth in the pass of broken pines and sees the northern trading post's watchfires at dusk",
+"id": "guardian_beast_awakened_in_the_pass_and_driven_into_the_mountains",
+"d": "A guardian beast awakened by the party blocks the snowbound pass; they pin it with anchors and crimson binding and it retreats deep into the mountains with a clear warning, leaving the pass open",
 "t": "event",
 "p": false,
 "s": "art"

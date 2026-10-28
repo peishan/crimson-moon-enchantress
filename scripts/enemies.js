@@ -91,6 +91,12 @@ const ENEMIES = {
   sanctuary_guardian:{n:'Sanctuary Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:10,def:17,spd:7,xp:300,gold:150,traits:['layered'],
     moves:[{n:'Bronze Fist',pow:1.5},{n:'Floor Formation Sweep',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Shoulder Charge',pow:1.2}],
     phases:[{at:.5,msg:'The guardian\'s core brightens along the floor formation: it moves faster!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A wood-and-bronze guardian older than the mechanism above. It wakes when the floor formation is activated and is not hunting anyone. Its outer plates halve damage until stripped.'},
+  /* ---- Volume 10 (comics 013, 016, 017): the sanctuary's lower archive ---- */
+  broken_figure:{n:'Broken Impression Figure',icon:'🪆',hp:130,atk:15,mag:6,def:10,spd:10,xp:62,gold:30,traits:['magic'],
+    moves:[{n:'Step, Turn, Thrust',pow:1.1},{n:'Cord Snap',pow:.7,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.25}],desc:'A wooden figure on cords that repeats a fragment of someone\'s movement. It does not think; it repeats.'},
+  archive_warden:{n:'Corded Warden',icon:'🗿',boss:true,hp:700,atk:25,mag:12,def:18,spd:7,xp:340,gold:170,traits:['layered'],
+    moves:[{n:'Double Slam',pow:1.5},{n:'Hall Shift',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Drawn Energy',pow:1.2,spell:true}],
+    phases:[{at:.5,msg:'The warden pulls energy from the wall to compensate: its movements sharpen!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A larger guardian wired to the walls of the lower archive, running on a command that was forced out of position. Its outer plating halves damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -160,6 +166,7 @@ const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'cleansing_salt',qty:[2,2]}]},
                thread_puppet:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                sanctuary_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               archive_warden:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

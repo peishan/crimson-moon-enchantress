@@ -5868,6 +5868,78 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"342": [
+{
+"id": "hidden_level_beneath_the_guardian_not_in_the_records",
+"d": "A hidden level beneath the guardian is not in the records; safe tiles follow a light pattern and figures replay overlapping fragments, with a component missing from the mechanism",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"343": [
+{
+"id": "hall_of_broken_impressions_interrupted_at_the_junction",
+"d": "The party interrupts a hall of cord-suspended figures repeating a distorted drill by diverting the energy at the junction; a recessed doorway shows the symbol matching the empty socket",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"344": [
+{
+"id": "central_mechanism_socket_empty_and_a_regulator_missing",
+"d": "The lower archive's central mechanism has an empty socket with worn edges; the system still preserves impressions but no longer regulates their release, and a descending assembly is stopped inches above the floor",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"345": [
+{
+"id": "formation_principle_sound_but_changed_from_its_original_intent",
+"d": "Cangyuan says the formation follows a principle his master taught but its added channels were changed from the original intent; who altered it and why is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"346": [
+{
+"id": "instability_spreads_and_shutting_a_section_moves_the_strain",
+"d": "Crossing the unstable bridge, the party sees the formation spread its failure; disabling one section transfers the strain elsewhere",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"347": [
+{
+"id": "larger_guardian_defeated_after_a_channel_was_unlocked_and_a_fresh_footprint",
+"d": "The party defeats a larger guardian after Xiao Yan unlocks a channel that was forced into the wrong position; \"preserve... prevent...\" remains of its command, and a fresh footprint in the dust was not the guardian's",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"348": [
+{
+"id": "the_keeper_of_the_sanctuary_appears_and_joins_them_in_sight",
+"d": "The Keeper appears in a tended chamber, says the guardian was not meant to attack and that the impressions are not living people, and goes with the party within their sight",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"349": [
+{
+"id": "keeper_admits_his_redirection_worsened_the_danger",
+"d": "The Keeper admits his redirection to preserve records overloaded other channels; they decide to restore the original safeguards at the central regulator and not preserve every record",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

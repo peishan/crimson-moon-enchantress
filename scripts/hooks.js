@@ -6255,6 +6255,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"385": [
+{
+"id": "yaxings_injury_fully_healed_and_xining_overworked",
+"d": "Ya'Xing's injury from the suppression device is fully healed and the marks have completely faded; Xining overworks herself and Dongyue walks her to her quarters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"386": [
+{
+"id": "chest_from_the_ice_temple_was_opened_but_not_used",
+"d": "Xiyu tells Cangyuan the Ice Temple chest was opened: she saw the weapon and the books inside but chose not to use them yet; a faint ancient shift in Cangyuan's presence passes unnoticed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"387": [
+{
+"id": "rumours_of_a_quiet_old_road_toward_muxue_with_lights_on_the_ridge",
+"d": "Travellers say the old mountain road toward Muxue has been unusually quiet and that lights were seen on the ridge, with no agreed source; Ya'Xing and Xiao Tian spar and call it a draw",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"388": [
+{
+"id": "a_directional_stone_marker_is_still_being_turned",
+"d": "Xiao Yan and Hoko find a stone directional marker whose inner plate was rotated recently by someone and moves again before nightfall",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"389": [
+{
+"id": "someone_else_travels_the_old_route_to_muxue",
+"d": "The party finds disturbed ground, mixed footprints of five or six people moving the same way and lights beyond the ridge: someone else is on the route to Muxue",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

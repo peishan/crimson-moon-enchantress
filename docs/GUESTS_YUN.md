@@ -17,5 +17,5 @@ Liechen (Su Liechen) was already built. New in this build:
   - *Severed Possibility:* needs a marked foe (greyed out otherwise). Ordinary foe: loses its next turn (and the interruption triggers the exploit). Elite: 60% chance. Boss: 30% chance and it only falls back to its weakest move.
 - Verified headless: marks, tier text, extra MP for elites, severing, exploit damage, the unmarked block, the seal cooling Xiyu's heat, Insight and Scales.
 
-## Art
-Both portraits are generated placeholders (`assets/party/yunlong.webp`, `yunhe.webp`, a plain silhouette with initials). The two reference images in the request were links only and were not attached, so swap in real art when you have it.
+## Art (updated)
+Real portraits are installed, cropped 512x512 from the author's option sheets: Yun He = option 2 (white-and-green robes, talisman), Yun Long = option 1 (dragon behind him, forehead mark). The other two crops are saved as `assets/party/alt/yunhe_option1.webp`, `yunhe_option2.webp`, `yunlong_option1.webp`, `yunlong_option2.webp`; copy one over `assets/party/yunhe.webp` or `yunlong.webp` to swap. (Old note follows.) Both portraits were generated placeholders (`assets/party/yunlong.webp`, `yunhe.webp`, a plain silhouette with initials). The two reference images in the request were links only and were not attached, so swap in real art when you have it.

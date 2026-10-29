@@ -550,3 +550,4 @@ Comic numbers are Volume 11 "Chapter" numbers (game chapter = number + 352). Onl
 - **Cover wording:** the cover's tagline "The Long Awaited Love Is Not a Dream" fits the second-chance/destined love theme.
 - **Open art items (KIV by the author):** 003-004, 012, 014, 018 minor mix-ups; typos in 001, 012, 017 title, 028.
 - **Balance:** the two new fights were not winnable in my scripted test beyond the first (382 won, 383 lost), as with earlier bosses; please play them.
+- **Volume 10 cover received and wired (chapter 352).** Title "The Long Awaited Love Is Not a Dream", Volume 10 "The Sanctuary of Silent Strings"; shows when chapter 352 is completed. The earlier note that Volume 10 has no cover popup is resolved.

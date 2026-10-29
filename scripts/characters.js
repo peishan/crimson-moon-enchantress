@@ -192,5 +192,38 @@ const CHARACTERS = {
    {id:'precise_strike',n:'Precise Strike',icon:'🗡️',mp:4,kind:'phys',tgt:'foe',pow:1.3,fx:[{k:'expose',d:2}],req:{lvl:1},sig:true,desc:'A controlled, efficient close-range strike aimed at opening weak points, not raw power.'},
   ],
   passive:'Wayfinder (sheet passives, not all built): Route Planning (fewer ambushes, better movement in unfamiliar areas) · Wayfinder\'s Eye (senses the direction of connected routes in the transit network) · Steady Presence (calm; resists cold, fatigue and disorientation) · Companion\'s Path (unlocks extra dialogue and exploration routes with the party). These are story and exploration effects and are not built yet.'},
+
+ /* ===== VOLUME 12 BETA GUEST: YUN LONG (author). A dragon cultivator and field investigator who joins while Xining recovers. Shared Taoist techniques from Yun He plus powers of his dragon nature. Unlocks at Volume 12 chapter 25 (YUNLONG_CH in core.js). Portrait is a placeholder. ===== */
+ yunlong:{
+  vol2:true, guest:true, n:'Yun Long', zh:'云龙', icon:'🐉', title:'Dragon Cultivator',
+  cls:'Dragon Cultivator / Field Investigator (Guest)', role:'Support · Healing · Detection', combat:'Dragon-powered field specialist',
+  elements:'Dragon qi · Water · Taoist technique',
+  identity:'A dragon cultivator who investigates in the field. He learned shared Taoist techniques under Yun He and has powers of his own from his dragon nature and past life. He joins the party as a guest while Xining recovers.',
+  quote:'Something is hiding here. I can feel it in the air.',
+  base:{hp:86,mp:40,atk:10,mag:11,def:9,spd:12}, grow:{hp:8.6,mp:3.6,atk:1.1,mag:1.5,def:1.1,spd:1.0},
+  skills:[
+   {id:'dragon_talon',n:'Dragon-Talon Strike',icon:'🐉',mp:0,kind:'phys',tgt:'foe',pow:1.0,req:{lvl:1},sig:true,desc:'A plain strike with dragon-qi behind it.'},
+   {id:'azure_dragon_breath',n:'Azure Dragon Breath',icon:'💧',mp:12,kind:'heal',tgt:'ally',pow:.9,fx:[{k:'buff',stat:'def',m:1.2,d:3}],req:{lvl:1},sig:true,desc:'Restores an ally\'s HP and grants temporary defence (+20% DEF for 3 turns). A little weaker than a dedicated healer.'},
+   {id:'dragons_insight',n:'Dragon\'s Insight',icon:'👁️',mp:8,kind:'support',tgt:'foes',fx:[{k:'sense'}],req:{lvl:1},sig:true,desc:'Detects hidden spiritual traces and supernatural presences: reveals every foe\'s stats and marks magical or layered foes as exposed (+15% damage taken). (Out of battle it detects nothing yet.)'},
+   {id:'dragons_suppression',n:'Dragon\'s Suppression',icon:'🔇',mp:13,kind:'magic',tgt:'foe',pow:.6,antiMagic:1.5,fx:[{k:'quell',nb:true},{k:'silence',d:1}],req:{lvl:1},sig:true,desc:'Releases dragon qi to weaken or interrupt a supernatural enemy: hits magical foes harder, silences it for a turn and cuts its spell damage by 40% for 3 turns (bosses can resist the silence).'},
+   {id:'scales_hidden_dragon',n:'Scales of the Hidden Dragon',icon:'🛡️',mp:10,kind:'support',tgt:'ally',fx:[{k:'shield',v:.22,d:3}],req:{lvl:1},sig:true,desc:'Raises a barrier of dragon scales on one ally that absorbs 22% of their max HP in damage.'},
+  ],
+  passive:'Past life and dragon nature: sensitive to hidden spiritual traces. Temporary beta guest: tested in Volume 12; his kit is first-pass and may be trimmed if he is too versatile for one seat.'},
+ /* ===== FUTURE GUEST: YUN HE 云和 (author). Yun Long\'s shifu and Xining\'s master: Taoist healer and fate reader. Guest in the volume after Volume 12 (chapter not decided: not in JOIN_CH yet). Portrait is a placeholder. ===== */
+ yunhe:{
+  vol2:true, guest:true, n:'Yun He', zh:'云和', icon:'🧵', title:'Taoist Healer · Fate Reader',
+  cls:'Taoist Healer / Fate Reader (Guest)', role:'Tactical Support · Healing · Control', combat:'Predictive tactician',
+  elements:'Fate · Amulets · Taoist healing',
+  identity:'Xining\'s master and Yun Long\'s shifu. A Taoist healer who divines with amulets, quells demons and reads fate. Precise and predictive where Yun Long is a dragon-powered field specialist.',
+  quote:'Every action has a thread. Find it before it pulls.',
+  base:{hp:80,mp:48,atk:7,mag:13,def:8,spd:11}, grow:{hp:8.0,mp:4.4,atk:.8,mag:1.8,def:1.0,spd:.9},
+  skills:[
+   {id:'amulet_strike',n:'Amulet Strike',icon:'📜',mp:0,kind:'magic',tgt:'foe',pow:.9,req:{lvl:1},sig:true,desc:'A thrown talisman that bursts on impact.'},
+   {id:'fate_thread',n:'Fate Thread · 命运之丝',icon:'🧵',mp:8,kind:'support',tgt:'foe',fx:[{k:'fate'}],req:{lvl:1},sig:true,desc:'SIGNATURE. Reads a foe\'s fate and marks its next action (3 turns). Ordinary foes: you see the exact move and its target. Elites: only the kind of action and its target, and it costs 3 more MP. Bosses: only the kind of action. While a foe is marked, if its action is interrupted, evaded or braced against, it is exposed and takes bonus damage (8% of max HP, 3% for bosses). The read stays on the foe while it lasts.'},
+   {id:'severed_possibility',n:'Severed Possibility · 断缘',icon:'✂️',mp:10,kind:'support',tgt:'foe',needMark:true,fx:[{k:'sever'}],req:{lvl:1},sig:true,desc:'Cuts a marked foe\'s next action. Ordinary foes: lose their next turn. Elites: 60% chance. Bosses: 30% chance and only weakens the action to its weakest move. Needs a Fate Thread mark.'},
+   {id:'taoist_healing_seal',n:'Taoist Healing Seal · 道医符',icon:'☯️',mp:11,kind:'heal',tgt:'ally',pow:1.1,fx:[{k:'cleanse1'},{k:'cool',v:12}],req:{lvl:1},sig:true,desc:'Restores HP, clears one ordinary status and stabilises disrupted spiritual energy (eases Xiyu\'s heat).'},
+   {id:'demon_quelling_talisman',n:'Demon-Quelling Talisman · 镇邪符',icon:'🔇',mp:12,kind:'magic',tgt:'foe',pow:.5,antiMagic:1.5,fx:[{k:'quell'}],req:{lvl:1},sig:true,desc:'Restrains a supernatural enemy (2 turns bound; bosses can resist) and cuts its spell damage by 40% for 3 turns. A non-supernatural foe is only weakened, not bound.'},
+  ],
+  passive:'Reads Fate: always sees how a marked foe is about to act. Not yet recruited: his chapter is the next volume after Volume 12 (not decided).'},
 };
 const ROSTER = Object.keys(CHARACTERS);

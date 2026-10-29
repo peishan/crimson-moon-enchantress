@@ -241,7 +241,7 @@ function rTraining(){
 function trainFight(){ origin='training'; if(PRESETS[trSel][2]==='v7'){ startBattle(v7ConfrontationSpec(trLv)); tab='battle'; render(); return; } startBattle({foes:PRESETS[trSel][1].map(f=>({key:f.key,lv:trLv})), rewards:false}); tab='battle'; render(); }
 
 /* ---------------- BATTLE ---------------- */
-const CHIP = {burn:'🔥',slow:'🐌',bind:'⛓️',charm:'💫',silence:'🤐',shield:'🛡️',regen:'💚',crit:'👁️',oath:'🔁'};
+const CHIP = {fate:'🧵',quell:'📿',burn:'🔥',slow:'🐌',bind:'⛓️',charm:'💫',silence:'🤐',shield:'🛡️',regen:'💚',crit:'👁️',oath:'🔁'};
 function chips(u){
   let h = Object.keys(u.st).map(k=>`<i title="${k}">${CHIP[k]||k}</i>`).join('');
   u.bf.forEach(b => { h += `<i class="${b.m>=1?'up':'dn'}">${b.stat.toUpperCase()}${b.m>=1?'↑':'↓'}</i>`; });
@@ -252,7 +252,7 @@ function chips(u){
 function rBattle(){
   if(!B) return '<div class="sm">No battle in progress.</div>';
   const tgtMode = B.ui.mode==='target', cand = tgtMode ? B.ui.cands.map(u=>u.uid) : [];
-  const foes = B.foes.map(f => `<div class="unit foe ${f.dead?'dead':''} ${cand.includes(f.uid)?'tg':''}" ${cand.includes(f.uid)?`onclick="pickTarget('${f.uid}')"`:''}><div class="ic">${artOrIcon('assets/enemies/'+f.key+'.webp', f.icon, 'ethumb')}</div><b>${f.name}</b>${bar(f.hp,f.mhp,'e')}<div class="sm">${f.hp}/${f.mhp}${f.known?' · DEF '+f.def:''}</div><div class="ch">${chips(f)}</div></div>`).join('');
+  const foes = B.foes.map(f => `<div class="unit foe ${f.dead?'dead':''} ${cand.includes(f.uid)?'tg':''}" ${cand.includes(f.uid)?`onclick="pickTarget('${f.uid}')"`:''}><div class="ic">${artOrIcon('assets/enemies/'+f.key+'.webp', f.icon, 'ethumb')}</div><b>${f.name}</b>${bar(f.hp,f.mhp,'e')}<div class="sm">${f.hp}/${f.mhp}${f.known?' · DEF '+f.def:''}</div><div class="ch">${chips(f)}</div>${f.st.fate && f.fateText && !f.dead ? `<div class="sm">🧵 ${f.fateText}</div>` : ''}</div>`).join('');
   const allies = B.allies.map(a => `<div class="unit ally ${a.dead?'dead':''} ${B.cur===a&&!B.over?'cur':''} ${cand.includes(a.uid)?'tg':''}" ${cand.includes(a.uid)?`onclick="pickTarget('${a.uid}')"`:''}><img src="${a.img}"><div><b>${first(a.id)}</b>${bar(a.hp,a.mhp,'hp')}<div class="sm">${a.hp}/${a.mhp} · MP ${a.mp}</div>${a.id==='xiyu'?`<div class="sm">🔥 ${heatLabel(a.heat)} ${Math.round(a.heat||0)}${a.glow?' · ✨':''}</div>`:''}<div class="ch">${chips(a)}</div></div></div>`).join('');
   const log = B.log.slice(-9).map(l => `<div class="lg ${l.cls}">${l.t}</div>`).join('');
   let act = '';
@@ -311,7 +311,7 @@ function rDev(){
    <input id="devch" type="number" min="0" max="${LAST_CHAPTER}" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>
-   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.flags.xiyu_chooses_cangyuan=true;save();toast('Dual cultivation opened (Xiyu chooses)');render()">Open dual cultivation</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
+   <button onclick="restoreParty();save();render()">Restore HP/MP</button><button onclick="templeReveal(true);render()">Reveal temple (all rooms + map)</button><button onclick="toast(Object.keys(G.hooks).length+' hooks fired')">Hooks fired</button><button onclick="G.heat=80;save();render()">Heat 80</button><button onclick="G.flags.xiyu_chooses_cangyuan=true;save();toast('Dual cultivation opened (Xiyu chooses)');render()">Open dual cultivation</button><button onclick="G.day++;save();render()">+1 day</button><button onclick="G.flags.beta_yunlong=true;recruit('yunlong');save();toast('Yun Long (Volume 12 beta guest) is in the party');render()">Beta: add Yun Long</button><button onclick="recruit('yunhe');save();toast('Yun He added for testing');render()">Test: add Yun He</button><button onclick="ROSTER.forEach(i=>{const lv=joinLevel(i); if(recruit(i)) U(i).lv=Math.max(U(i).lv,lv)});save();render()">Recruit everyone (incl. Yan)</button></div></div>
    <div class="panel"><button onclick="if(confirm('Erase save?')){localStorage.removeItem(CFG.SAVE_KEY);location.reload()}">Erase save</button></div>`;
 }
 

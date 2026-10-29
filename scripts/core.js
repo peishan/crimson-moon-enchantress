@@ -8,9 +8,10 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
    INTRO_CH  chapter from which the hero's profile is visible before joining.
    A hero who joins starts at (average party level - 1), never below 1.
    Muxue Yan appears in ch17 and is present at the Ice Temple through the Volume 1 finale (ch34, ch39) but never travels with the party: no join chapter in Volume 1. */
-const JOIN_CH  = { yanwatcher:238, hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
-const INTRO_CH = { yanwatcher:226, hoko:119, suliechen:133, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
-const NO_JOIN_YET = { yanwatcher:'Travels with the party only in the story text for now. He becomes a playable member in Volume 7 (the chapter is not decided yet), and later the caretaker of Xiyu\'s base.', suliechen:'Met briefly in Volume 4 (comic 017). He becomes a joinable member when the party reaches Yilong; the chapter is not decided yet.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
+const YUNLONG_CH = 385 + 24;   // Volume 12 chapter 25 (author); Volume 12 starts at chapter 385. Beta guest; change this one constant if the chapter moves.
+const JOIN_CH  = { yunlong:YUNLONG_CH, yanwatcher:238, hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
+const INTRO_CH = { yunlong:YUNLONG_CH, yanwatcher:226, hoko:119, suliechen:133, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
+const NO_JOIN_YET = { yunhe:'Xining\'s master and Yun Long\'s shifu, a Taoist healer and fate reader. He appears as a guest in the next volume after Volume 12; the chapter is not decided yet.', yanwatcher:'Travels with the party only in the story text for now. He becomes a playable member in Volume 7 (the chapter is not decided yet), and later the caretaker of Xiyu\'s base.', suliechen:'Met briefly in Volume 4 (comic 017). He becomes a joinable member when the party reaches Yilong; the chapter is not decided yet.', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
@@ -24,13 +25,13 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 384;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 384;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
 const INTER_NAME = {yx:'Ya\'Xing Interlude', xc:'Xiyu & Cangyuan Interlude'};   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comics 001-038 = chapters 79-116
-const volOf = n => n >= VOL11_START ? 11 : n >= VOL10_START ? 10 : n >= VOL9_START ? 9 : n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
-const vnum = n => n >= VOL11_START ? n - (VOL11_START-1) : n >= VOL10_START ? n - (VOL10_START-1) : n >= VOL9_START ? n - (VOL9_START-1) : n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
+const volOf = n => n >= VOL12_START ? 12 : n >= VOL11_START ? 11 : n >= VOL10_START ? 10 : n >= VOL9_START ? 9 : n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
+const vnum = n => n >= VOL12_START ? n - (VOL12_START-1) : n >= VOL11_START ? n - (VOL11_START-1) : n >= VOL10_START ? n - (VOL10_START-1) : n >= VOL9_START ? n - (VOL9_START-1) : n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
 const chName = n => interOf(n) ? INTER_NAME[interOf(n)]+' · Chapter '+vnum(n) : volOf(n) > 1 ? 'Volume '+volOf(n)+' · Chapter '+vnum(n) : 'Chapter '+n;
 const chShort = n => interOf(n) ? (interOf(n)==='yx'?'YX':'XC')+'·'+vnum(n) : volOf(n) > 1 ? 'V'+volOf(n)+'·'+vnum(n) : 'Ch.'+n;
 const STORY_PACE = 1;
@@ -94,7 +95,7 @@ const XP_TABLES = {
   support:{a:44, b:24, c:1.3},     // Dongyue: battle cleric
   scholar:{a:46, b:25, c:1.35},    // Yan: ancient sage
 };
-const XP_CLASS = { xiyu:'standard', dongyue:'support', yaxing:'ranger', hoko:'ranger', yanwatcher:'support', suliechen:'fighter', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
+const XP_CLASS = { yunlong:'standard', yunhe:'support', xiyu:'standard', dongyue:'support', yaxing:'ranger', hoko:'ranger', yanwatcher:'support', suliechen:'fighter', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
 const xpToNext = (lv, id) => { const t = XP_TABLES[XP_CLASS[id] || 'standard']; return Math.round(t.a + lv*t.b + lv*lv*t.c); };
 /* Story XP for chapter n on the standard curve, so the story-only level after n chapters is 1 + n*STORY_PACE (continuous cumulative curve). */
 const cumXp = L => 40*(L-1) + 11*(L-1)*L + .2*(L-1)*L*(2*L-1);
@@ -247,8 +248,9 @@ const CANON_PARTY = ['xiyu','cangyuan','dongyue','xining'], CANON_LOCK_CH = 53, 
 const ARC_REQUIRED = [];   // {id:'xiaotian', from:chapter, to:chapter, why:'text'}: e.g. an arc that cannot happen without him
 const canonLocked = () => G.ch >= CANON_LOCK_CH && CANON_PARTY.every(id => G.party.includes(id));
 /* GUESTS: temporary story-required companions. They take an EXTRA seat (not a flex seat) and are fielded while their window is open (from = the chapter whose completion recruits them; to = last chapter of the arc, Infinity until the author sets it). */
-const GUESTS = { hoko:{from:119, to:Infinity, why:'Guest guide through the Ice Temple (until the arc ends).'} };   // Su Liechen is a joinable member (not a guest) once the party reaches Yilong; his join chapter is not decided yet
-const guestHere = id => !!GUESTS[id] && G.ch >= GUESTS[id].from && G.ch <= GUESTS[id].to && G.party.includes(id);
+const GUESTS = { hoko:{from:119, to:Infinity, why:'Guest guide through the Ice Temple (until the arc ends).'},
+  yunlong:{from:YUNLONG_CH, to:Infinity, beta:true, why:'Volume 12 beta guest: a dragon cultivator who joins the investigation while Xining recovers.'} };   // Yun He (guest in the volume after 12) is not recruited yet: no chapter decided   // Su Liechen is a joinable member (not a guest) once the party reaches Yilong; his join chapter is not decided yet
+const guestHere = id => !!GUESTS[id] && (G.ch >= GUESTS[id].from || !!(GUESTS[id].beta && G.flags && G.flags['beta_'+id])) && G.ch <= GUESTS[id].to && G.party.includes(id);   // beta guests can also be switched on from the Dev tab to test before their chapter exists
 const guestsHere = () => Object.keys(GUESTS).filter(guestHere).length;
 const flexSeats = () => G.ch >= VOL4_START ? FLEX_V4 : FLEX_SEATS;   // Volume 4 on: 4 protagonists + Xiao Tian + Ya'Xing = 6 seats (author); guests such as Hoko take an extra seat
 /* No fixed party size once the canon four travel together (author): whoever has joined by the comic chapters can be fielded. Set PARTY_CAP to a number if the game gets too easy. Before that, 4 seats. */

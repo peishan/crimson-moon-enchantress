@@ -80,14 +80,14 @@ function advance(){
     B.cur = u;
     if(u.st.burn){ const d = Math.max(1, Math.round(u.mhp*.06)); hurt(u,d,true); blog(u.name+' burns for '+d+'.','bad'); if(u.dead) continue; }
     if(u.st.regen){ const h = Math.round(u.mhp*u.st.regen.v); u.hp = Math.min(u.mhp, u.hp+h); blog(u.name+' regenerates '+h+'.','good'); }
-    if(u.st.bind || u.st.charm){ blog(u.name+(u.st.bind?' is bound and cannot move.':' is charmed and loses the turn.')); endTurn(u); continue; }
+    if(u.st.bind || u.st.charm){ blog(u.name+(u.st.bind?' is bound and cannot move.':' is charmed and loses the turn.')); if(!u.ally && u.st.fate) fateExploit(u,'its action is interrupted'); endTurn(u); continue; }
     if(u.ally){ B.ui = {mode:'menu'}; return; }
     foeAct(u); endTurn(u);
   }
 }
 function endTurn(u){
   ['burn','slow','bind','charm','silence','crit'].forEach(k => { if(u.st[k] && --u.st[k].d <= 0) delete u.st[k]; });
-  ['thread','link','expose','ward'].forEach(k => { if(u.st[k] && --u.st[k].d <= 0) delete u.st[k]; });
+  ['thread','link','expose','ward','fate','quell'].forEach(k => { if(u.st[k] && --u.st[k].d <= 0) delete u.st[k]; });
   ['shield','regen','oath'].forEach(k => { if(u.st[k] && --u.st[k].d <= 0) delete u.st[k]; });
   u.bf = u.bf.filter(b => --b.d > 0);
   if(u.state && --u.state.d <= 0){ blog(u.name+'\'s Blood Moon fades.'); u.state = null; }
@@ -129,11 +129,12 @@ function strike(src, tgt, s, opts){
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
   if(tgt.ally){ const rs = magic ? tgt.resMagic : tgt.resPhys; if(rs) d = Math.max(1, Math.round(d*(1-rs))); }   // spell resistance / physical guard
   if(tgt.st.expose) d = Math.round(d*1.15);   // Physician's Insight
+  if(src.st && src.st.quell && magic) d = Math.max(1, Math.round(d*.6));   // Demon-quelling: the foe's spells weakened
   if(tgt.st.layer) d = Math.round(d*.5);       // the shadow's outer layer
   if(src.id==='xiyu' && resLv()>0 && (tgt.st.shield || tgt.st.layer || tgt.st.link) && B.allies.some(a => a.id==='cangyuan' && !a.dead)) d = Math.round(d*(1 + .08*resLv()));   // Crimson transformation: she breaks what his weaving alone cannot
   let crit = false;
   if(s.crit || src.st.crit || Math.random() < .08){ crit = true; d = Math.round(d*1.6); }
-  if(Math.random() < evaOf(tgt)){ blog(tgt.name+' evades '+src.name+'\'s '+s.n+'!'); return 0; }
+  if(Math.random() < evaOf(tgt)){ blog(tgt.name+' evades '+src.name+'\'s '+s.n+'!'); if(!src.ally && src.st && src.st.fate) fateExploit(src,'its action is evaded'); return 0; }
   s.landed = true;
   B.src = src; const dealt = hurt(tgt, d); B.src = null;
   blog(src.name+' uses '+s.n+' on '+tgt.name+': '+dealt+(crit?' CRIT!':''), src.ally?'':'foe');
@@ -155,6 +156,17 @@ function applyFx(src, tgt, fx){
       if(tgt.boss && (fx.k==='bind'||fx.k==='charm') && Math.random() < Math.max(.1, .5 - .15*th)){ blog('  '+tgt.name+' resists!'); return; }
       if(tgt.st.link && !fx.spread){ alive(B.foes).filter(o => o!==tgt && o.st.link && Math.random()<.5).forEach(o => { blog('  the link carries it to '+o.name+'.'); applyFx(src, o, Object.assign({}, fx, {spread:true})); }); }
       tgt.st[fx.k] = {d:(fx.d||2) + (th?1:0) + ((src.id==='suliechen' && (fx.k==='bind'||fx.k==='slow')) ? 1 : 0) + (((src.fxPlus && (src.fxPlus[fx.k] || 0)) || 0))}; blog('  '+tgt.name+' is '+({burn:'burning',slow:'slowed',bind:'bound',charm:'charmed',silence:'silenced'})[fx.k]+'.'); break;
+    case 'fate': { if(tgt.ally) break; const tier = tgt.boss ? 'boss' : tgt.elite ? 'elite' : 'plain'; if(tier==='elite' && src && src.mp !== undefined) src.mp = Math.max(0, src.mp - 3);
+      tgt.st.fate = {d:(tier==='boss' ? 2 : 3)+1}; tgt.fateTier = tier; tgt.plan = planFor(tgt); tgt.fateText = fateText(tgt);
+      blog('  A thread of fate settles on '+tgt.name+': '+tgt.fateText+'.','good'); break; }
+    case 'sever': { if(!tgt.st.fate){ blog('  '+tgt.name+' carries no thread to cut.'); break; }
+      const tier = tgt.boss ? 'boss' : tgt.elite ? 'elite' : 'plain', ch = tier==='boss' ? .3 : tier==='elite' ? .6 : 1;
+      if(Math.random() >= ch){ blog('  '+tgt.name+' shrugs off the cut: its fate holds.'); break; }
+      if(tier==='boss'){ const w = tgt.moves.filter(m => !m.all).sort((a,b) => (a.pow||1)-(b.pow||1))[0] || tgt.moves[0]; tgt.plan = {mv:w, tUid:(tgt.plan||{}).tUid}; tgt.fateText = fateText(tgt); blog('  '+tgt.name+'\'s prepared action is cut: it falls back on its weakest move.','good'); }
+      else { tgt.st.bind = {d:1}; blog('  '+tgt.name+'\'s next action is severed: it will lose its turn.','good'); } break; }
+    case 'quell': { tgt.st.quell = {d:3}; blog('  '+tgt.name+'\'s spells are quelled.','good'); if(!fx.nb && tgt.traits && tgt.traits.includes('magic')) applyFx(src, tgt, {k:'bind', d:2}); break; }
+    case 'sense': { tgt.known = true; const sup = (tgt.traits||[]).includes('magic') || (tgt.traits||[]).includes('corrupt') || !!tgt.st.layer;
+      blog('  '+tgt.name+': '+(sup ? 'a supernatural presence, exposed' : 'nothing hidden')+' (HP '+tgt.hp+'/'+tgt.mhp+', DEF '+tgt.def+').', sup ? 'good' : ''); if(sup) tgt.st.expose = {d:4}; break; }
     case 'buff': tgt.bf.push({stat:fx.stat,m:fx.m,d:(fx.d||3)+1}); blog('  '+tgt.name+' '+fx.stat.toUpperCase()+(fx.m>=1?' up':' down')+'.'); break;
     case 'shield': tgt.st.shield = {v:Math.round(tgt.mhp*fx.v), d:(fx.d||3)+1}; blog('  '+tgt.name+' gains a barrier.'); break;
     case 'regen': tgt.st.regen = {v:fx.v, d:(fx.d||3)+1}; break;
@@ -182,12 +194,12 @@ function applyFx(src, tgt, fx){
 function skillList(u){
   return skillsOf(u.id).map(s => (B.lead && u.id==='dongyue' && s.id==='ancient_rite') ? Object.assign({}, s, {ok:true}) : s).filter(s => s.ok).map(s => {
     const cost = mpCost(u,s);
-    const noAlly = s.needAlly && !B.allies.some(a => a.id===s.needAlly && !a.dead && a!==u), noItem = s.item && B.spec.rewards && !(G.inv[s.item] > 0), noWeak = s.hpBelow && !targetsFor(s).length;
-    return Object.assign({}, s, { cost, usable: u.mp>=cost && !(s.once && u.used[s.id]) && !noAlly && !noItem && !noWeak, note: noWeak ? 'no foe at '+Math.round(s.hpBelow*100)+'% HP' : noAlly ? 'needs '+first(s.needAlly) : noItem ? 'no '+ITEMS[s.item].n : (s.once && u.used[s.id]) ? 'used' : u.mp<cost ? 'low MP' : '' });
+    const noAlly = s.needAlly && !B.allies.some(a => a.id===s.needAlly && !a.dead && a!==u), noItem = s.item && B.spec.rewards && !(G.inv[s.item] > 0), noWeak = (s.hpBelow || s.needMark) && !targetsFor(s).length;
+    return Object.assign({}, s, { cost, usable: u.mp>=cost && !(s.once && u.used[s.id]) && !noAlly && !noItem && !noWeak, note: noWeak ? (s.needMark ? 'needs a Fate Thread mark' : 'no foe at '+Math.round(s.hpBelow*100)+'% HP') : noAlly ? 'needs '+first(s.needAlly) : noItem ? 'no '+ITEMS[s.item].n : (s.once && u.used[s.id]) ? 'used' : u.mp<cost ? 'low MP' : '' });
   });
 }
 function targetsFor(s){
-  if(s.tgt==='foe') return alive(B.foes).filter(f => !s.hpBelow || f.hp <= f.mhp*s.hpBelow);
+  if(s.tgt==='foe') return alive(B.foes).filter(f => (!s.hpBelow || f.hp <= f.mhp*s.hpBelow) && (!s.needMark || f.st.fate));
   if(s.tgt==='ally') return alive(B.allies);
   if(s.tgt==='allyDown') return B.allies.filter(a => a.dead);
   return [];
@@ -245,8 +257,9 @@ function resolve(u, s, t){
 /* ---------- foe AI ---------- */
 function foeAct(f){
   const targets = alive(B.allies); if(!targets.length) return;
-  let mv = AR(f.moves);
-  if(f.st.silence && mv.spell) mv = f.moves.find(m => !m.spell) || f.moves[0];
+  const plan = f.plan && f.st.fate ? f.plan : null; f.plan = null;   // a foe marked by Fate Thread acts on the move that was read
+  let mv = plan ? plan.mv : AR(f.moves);
+  if(f.st.silence && mv.spell){ mv = f.moves.find(m => !m.spell) || f.moves[0]; if(f.st.fate) fateExploit(f,'its spell is silenced'); }
   const s = { n:mv.n, kind: mv.spell ? 'magic' : 'phys', pow:mv.pow, fx:mv.fx };
   if(mv.all){
     blog(f.name+' unleashes '+mv.n+'!','foe');
@@ -255,9 +268,12 @@ function foeAct(f){
   }
   const oath = targets.find(a => a.st.oath), ignore = f.boss && oath && Math.random() < .35;
   const leadU = f.perp && B.lead ? targets.find(a => a.id===B.lead) : null;   // the principals look for him
-  const t = (oath && !ignore) ? oath : (leadU && Math.random() < .45 ? leadU : AR(targets));
+  const planned = plan ? targets.find(a => a.uid === plan.tUid) : null;
+  const t = (oath && !ignore) ? oath : planned ? planned : (leadU && Math.random() < .45 ? leadU : AR(targets));
+  if(t.guard && f.st.fate) fateExploit(f,'its target is braced against it');
   const dealt = strike(f, t, s);
   if(dealt>0) (mv.fx||[]).forEach(fx => { if(!t.dead && FOE_FX.includes(fx.k)) applyFx(f, t, fx); });
+  if(f.st.fate && !f.dead && alive(B.allies).length){ f.plan = planFor(f); f.fateText = fateText(f); }
   if(s.landed && t.st.oath && !t.dead && !f.dead){
     const c = Math.max(1, Math.round(eff(t,'atk')*.6 - eff(f,'def')*.35));
     f.hp = Math.max(f.perp && t.id!==B.lead ? 1 : 0, f.hp - c); blog('  '+t.name+' strikes back at '+f.name+': '+c+'.','good'); if(f.hp<=0){ f.dead = true; blog(f.name+' falls!','bad'); }
@@ -329,4 +345,23 @@ function nextStage(){
     if(k==='mend'){ const d = B.allies.find(a => a.id==='dongyue' && !a.dead); if(d){ const h = Math.round(l.mhp*.3); l.hp = Math.min(l.mhp, l.hp+h); blog('  Dongyue sees his breath fail and mends the wound: +'+h+' HP.','good'); } }
     if(k==='resolve'){ applyFx(l, l, {k:'crit', d:3}); blog('  '+l.name+' no longer holds back: this is for his master.','good'); }
   });
+}
+
+
+/* ---------- Fate Thread (Yun He): read a foe's next action, then exploit a good answer to it ---------- */
+const fateKind = mv => mv.all ? 'an attack on the whole party' : mv.spell ? 'a spell' : 'a physical strike';
+function planFor(f){ const mv = AR(f.moves), tg = alive(B.allies); return { mv, tUid: tg.length ? AR(tg).uid : null }; }
+function fateText(f){
+  const p = f.plan; if(!p) return 'its next move is unclear';
+  const who = (B.allies.find(a => a.uid === p.tUid) || {}).name, tier = f.fateTier || (f.boss ? 'boss' : f.elite ? 'elite' : 'plain');
+  if(tier==='boss') return 'it will use '+fateKind(p.mv);
+  if(tier==='elite') return 'it will use '+fateKind(p.mv)+(who && !p.mv.all ? ' on '+who : '');
+  return 'it will use '+p.mv.n+(who && !p.mv.all ? ' on '+who : '');
+}
+function fateExploit(f, why){
+  if(f.dead || !f.st.fate || f.fateSpent === B.round) return;
+  f.fateSpent = B.round;
+  const d = Math.max(1, Math.round(f.mhp * (f.boss ? .03 : .08)));
+  blog('🧵 Fate opens: '+why+', and '+f.name+' is exposed ('+d+').','good');
+  hurt(f, d, true);
 }

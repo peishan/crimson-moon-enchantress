@@ -6300,6 +6300,177 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"390": [
+{
+"id": "neglected_shrine_with_new_marks_over_old_carvings",
+"d": "A neglected shrine on the road to Muxue has new marks cut over old carvings of a human, a beast and a winged form, disturbed offerings and three sets of tracks going different ways",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"391": [
+{
+"id": "tracks_of_several_visits_and_a_deliberately_false_path",
+"d": "Tracks show several visits, branches were bent to suggest a false path, and a cold campsite holds a fading trace; the party takes the main road while someone watches from the treeline",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"392": [
+{
+"id": "hunters_missing_and_figures_in_different_directions",
+"d": "At a hunter settlement accounts disagree, several hunters have not returned and the innkeeper warns of problems on the Qingluo River; eyes watch the inn at night",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"393": [
+{
+"id": "qingluo_river_port_and_a_route_through_duanlu_gorge",
+"d": "At the Qingluo River port damaged moorings and abandoned cargo delay boats; the party boards a boat that has inspected the route, with Duanlu Gorge ahead",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"394": [
+{
+"id": "quiet_days_on_the_river_and_a_stretch_without_birds",
+"d": "Aboard the riverboat Xiyu and Cangyuan are openly close, Ya'Xing and Xiao Tian talk swordwork, and the party passes a stretch where no birds call",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"395": [
+{
+"id": "xining_dyes_her_silver_hair_dark_in_secret",
+"d": "Xining secretly dyes her naturally silver hair dark; no one notices and Dongyue only asks for a salve",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"396": [
+{
+"id": "river_goes_silent_and_marks_at_the_waterline",
+"d": "Part of the river is unnaturally silent and the waterline shows marks as if something was dragged; Cangyuan senses a diffuse residue unlike the campsite's",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"397": [
+{
+"id": "damaged_boat_drifted_back_and_its_rope_points_upstream",
+"d": "A damaged boat lodged against the reeds holds frightened survivors with conflicting accounts and a searched bundle; the rope of the recovered boat points upstream",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"398": [
+{
+"id": "navigational_ward_in_an_old_mooring_post_redirected",
+"d": "An old mooring post holds an incomplete navigational ward whose flow was redirected; Xiyu feels a brief unfamiliar pressure and the party leaves it untouched",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"399": [
+{
+"id": "demonic_creatures_attack_at_the_landing_and_a_far_bank_watcher",
+"d": "Several demonic creatures attack from different directions at a landing; their traces do not match and a solitary figure watches the departing boat from the far bank",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"400": [
+{
+"id": "residue_on_an_injured_traveller_and_fresh_tracks",
+"d": "An injured traveller's bruise carries a fading residue that does not match the ward; fresh tracks vanish among the rocks",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"401": [
+{
+"id": "map_pattern_and_a_circled_triangle_with_an_eye_added_later",
+"d": "Xiao Yan finds a circled triangle with an eye-like sign on the map, added later in a different ink; a lantern flashes on the far bank",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"402": [
+{
+"id": "the_watcher_across_the_water_unlike_the_lesser_traces",
+"d": "Cangyuan senses a more coherent presence in a figure on the far bank that only watches the boat; Duanlu Gorge lies ahead",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"403": [
+{
+"id": "old_landing_beneath_duanlu_gorge_and_a_cracked_route_marker",
+"d": "The old landing beneath the gorge matches the mark on the map, with fresh scuffs, a cracked route marker and movement on the opposite cliff",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"404": [
+{
+"id": "a_demon_in_human_form_measures_xiyu_cangyuan_and_dongyue",
+"d": "A stranger in dark robes measures Xiyu, Cangyuan and Dongyue (\"an intriguing bloodline, unusual resonance, a celestial trace\") and privately intends to devour their power",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"405": [
+{
+"id": "gorge_closed_around_the_party_by_arranged_attacks",
+"d": "Demonic creatures close the paths and trap the party between the blocked road and the river while the stranger watches from a ledge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"406": [
+{
+"id": "the_stranger_reveals_himself_as_a_demon_and_xining_takes_the_blast",
+"d": "The stranger drops his human form and names the blood moon, the celestial lineage and the sealed bloodline as the power he wants; Xining pushes Dongyue aside and is struck by the blast",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"407": [
+{
+"id": "xining_confesses_her_love_and_an_invisible_protection_saves_her_life",
+"d": "Struck down, Xining tells Dongyue she loves him as an invisible protection softens the blast; the party defeats the demon and she asks to be taken to her master, with seven days",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"408": [
+{
+"id": "xining_critical_and_the_road_back_to_muxue_then_yunling",
+"d": "Xining's meridians are damaged and demonic poison is spreading; the party must return to Muxue first and then take the sea route north to her master in Yunling",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

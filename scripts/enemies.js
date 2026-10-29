@@ -121,6 +121,12 @@ const ENEMIES = {
   pineback_behemoth:{n:'Winter Guardian Beast',icon:'❄️',boss:true,hp:680,atk:25,mag:6,def:19,spd:6,xp:330,gold:170,traits:['layered'],
     moves:[{n:'Mountain Crush',pow:1.5},{n:'Winter Breath',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Thunderous Roar',pow:1.3}],
     phases:[{at:.5,msg:'The guardian roars and the pass shakes: its blows grow heavier!',atk:1.25}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:.8},{id:'spirit_draught',chance:.5}],desc:'A guardian beast awakened by intruders, its body like a mountain and its breath like a winter storm. Its armour halves damage until stripped.'},
+  /* ---- Volume 12: Duanlu Gorge ---- */
+  lesser_demon:{n:'Lesser Demon',icon:'👹',hp:110,atk:17,mag:9,def:8,spd:12,xp:56,gold:26,traits:['magic'],
+    moves:[{n:'Rending Claw',pow:1.1},{n:'Blood Mist',pow:.8,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.3}],desc:'A lesser demon of the Qingluo River. It attacks from different directions and does not seem to answer to one master.'},
+  crimson_stranger:{n:'The Crimson Stranger',icon:'🩸',boss:true,hp:780,atk:27,mag:21,def:16,spd:11,xp:420,gold:210,traits:['magic','layered'],
+    moves:[{n:'Blood-Mist Claw',pow:1.4},{n:'Crimson-Black Blast',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Gaze',pow:1.2,spell:true,fx:[{k:'silence',d:1}]}],
+    phases:[{at:.5,msg:'The stranger\'s calm is gone: crimson-black energy surges around him!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon in human form who hunts for spiritual power. He covets the blood moon, the celestial lineage and the sealed bloodline. His aura halves damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -184,6 +190,7 @@ const ZONES = [
   {id:'cloudsteps', n:'The Cloud Steps', icon:'☁️', unlock:335, off:1, pool:['ward_sentinel','sparring_construct','moon_wisp','rift_wraith'], boss:null, desc:'The old stairs and grounds around the Mountain Sanctuary: preserved constructs and lingering spirits. Wilds only, not a story location.'},
   {id:'frontier', n:'The Thousand-Mile Frontier', icon:'🛤️', unlock:354, off:1, pool:['spirit_wolf','frost_wolf','snowfield_ram','ridge_yeti'], boss:null, desc:'The trade roads and mountain trails around the Thousand-Mile Waystation: spirit wolves and wandering beasts. Wilds only, not a story location.'},
   {id:'shattered', n:'The Shattered Ridge', icon:'⛰️', unlock:358, off:2, pool:['spirit_wolf','ravine_beast','snowfield_ram','ridge_yeti'], boss:null, desc:'The steep ridge beyond the checkpoint, where territorial beasts hold the high ground. Wilds only, not a story location.'},
+  {id:'qingluo', n:'The Qingluo River', icon:'🌊', unlock:393, off:1, pool:['lesser_demon','ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The river road between the mountain basin and the coast: lesser demons on the banks and spirits on the water. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
@@ -198,6 +205,7 @@ const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:
                pineback_behemoth:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                crimson_sovereign:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                mountain_devourer:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               crimson_stranger:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

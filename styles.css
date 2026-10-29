@@ -241,3 +241,5 @@ img.band{width:100%;max-height:210px;object-fit:cover;object-position:center 30%
 .herb{display:flex;align-items:center;gap:6px;padding:6px 8px;text-align:left}
 .herb span{font-size:1.4rem}.herb b{font-size:.78rem;font-weight:600;flex:1}.herb i{font-style:normal;color:var(--gold-light)}
 .gicon{width:40px;height:40px;border-radius:6px;object-fit:cover;border:1px solid var(--gold-dark);flex:none}.gi{flex:none;display:flex;align-items:center;font-size:26px}
+
+.baseimg{width:100%;max-height:150px;object-fit:cover;border-radius:8px;border:1px solid var(--gold-dark);margin-bottom:6px}

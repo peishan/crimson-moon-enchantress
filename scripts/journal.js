@@ -45,6 +45,9 @@ chapterOf(375).battle = [{key:'stonehide_beast'}];   // chapter 023: the quarry 
 chapterOf(377).battle = [{key:'crimson_sovereign'}];   // chapter 025: the Crimson-Horned Sovereign
 chapterOf(382).battle = [{key:'spirit_wolf'},{key:'spirit_wolf'},{key:'ravine_beast'},{key:'spirit_wolf'}];   // Volume 11 chapter 030: the beasts descend
 chapterOf(383).battle = [{key:'mountain_devourer'}];   // chapter 031: the Mountain Devourer
+chapterOf(399).battle = [{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'}];   // Volume 12 chapter 015: the landing
+chapterOf(405).battle = [{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'}];   // chapter 021: the gorge closes
+chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'lesser_demon'}];   // chapter 023: the demon in the gorge
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

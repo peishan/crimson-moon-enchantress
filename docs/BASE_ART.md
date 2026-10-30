@@ -27,3 +27,6 @@ When the caretaker is established (a member of the Muxue extended cast, chosen b
 Wing rooms at 1024x576 (kitchen, herb garden, training yard, library, guest room) and resident portraits at 512x512. Nothing in the game needs these yet.
 
 Priority for a first art pass: the four banners in section 1, then the unlock splash, then Sister Qing.
+
+## Yilong base (planned, Volume 13)
+Xiyu will establish a second base in Yilong in Volume 13 (author). When it is built it needs its own set: `hall`, `board`, `bounty`, `comms` banners (1024x576, Yilong's setting) and an unlock splash, plus a keeper or caretaker portrait. Keep the Yilong files in a separate folder (for example `assets/base/yilong/`) so the Muxue set is untouched. Not built yet.

@@ -35,3 +35,7 @@ Their bond is brotherly only; it is not romantic. Each may later be paired with 
 
 ## Volume 13 plan (author)
 Two main arcs: **clear Dongyue's mother's name**, and the **demon-hunting arc** (Su Liechen joins as a guest here). **Yun He has two bases: Yilong (his sanctuary) and Yunling (the town where the party meets Yun Long).** The game lets the party rest free at both once reached (chapters 410 and 415).
+
+## Volume 13: Xiyu sets up a Yilong base (author)
+In Volume 13 Xiyu also establishes a **Yilong base**, like the Muxue base (opened at chapter 409 with its mirror-array link). Not built: the chapter is not decided, and the Yilong base needs its own design. Suggested build when the chapter arrives: a second hub in `scripts/base.js` (a base list instead of one hub, each with its own Hall, a shared Quest Board and Bounties, and a Comms line), `BASE_OPEN_CH` per base, and a `yilong_base_established` flag. Art needed: the Muxue list in docs/BASE_ART.md repeated for Yilong (four banners, an unlock splash, optional icons and a caretaker or keeper portrait).
+Note: Yun He's Yilong sanctuary is a separate place (free rest only); the Yilong base is Xiyu's own.

@@ -1,6 +1,6 @@
 # Muxue Base (guild hub): art asset list
 
-The hub is built and working (tab **🏠 Muxue Base**, `scripts/base.js`). It opens after chapter 409 (`BASE_OPEN_CH`; Volume 12 comic 025, where Xiyu formally establishes the base), replaces the separate Quest Board and Bounties tabs, and gathers: Hall (free rest, party, work summary), Quest Board, Bounties, and Comms (Xiyu's line to Muxue: refresh postings once a day without passing a day). Every image below is optional: a missing file falls back to an icon, so you can add them one at a time. Put files in `assets/base/` (create the folder) as WebP.
+The hub is built and working (tab **🏠 Bases**, `scripts/base.js`; two bases, Muxue and Yilong). The Muxue base opens after chapter 409 (`BASE_OPEN_CH`; Volume 12 comic 025, where Xiyu formally establishes the base), replaces the separate Quest Board and Bounties tabs, and gathers: Hall (free rest, party, work summary), Quest Board, Bounties, and Comms (Xiyu's line to Muxue: refresh postings once a day without passing a day). Every image below is optional: a missing file falls back to an icon, so you can add them one at a time. Put files in `assets/base/` (create the folder) as WebP.
 
 ## 1. Hub banners (used now) — 1024x576 WebP, subject centred
 The panel shows them cropped to a wide strip (about 3:1 at the top), so keep faces and key props in the middle band.
@@ -28,5 +28,5 @@ Wing rooms at 1024x576 (kitchen, herb garden, training yard, library, guest room
 
 Priority for a first art pass: the four banners in section 1, then the unlock splash, then Sister Qing.
 
-## Yilong base (planned, Volume 13)
-Xiyu will establish a second base in Yilong in Volume 13 (author). When it is built it needs its own set: `hall`, `board`, `bounty`, `comms` banners (1024x576, Yilong's setting) and an unlock splash, plus a keeper or caretaker portrait. Keep the Yilong files in a separate folder (for example `assets/base/yilong/`) so the Muxue set is untouched. Not built yet.
+## Yilong base (built, opens at chapter 429: Volume 13 comic 005)
+The Yilong base has its own set, in `assets/base/yilong/`: `hall`, `board`, `bounty`, `comms` banners (1024x576, Yilong's setting) and an unlock splash, plus a keeper or caretaker portrait. Files are optional (an icon shows when missing). Setting from the pages: a quiet residence with a discreet entrance, a study for correspondence, rear rooms for storing supplies, a lily pond courtyard with plum blossom trees, lanterns, a secure communication room (a round blue mirror link to A'Bu). Banners: `hall`, `board`, `bounty`, `comms` (1024x576); unlock splash `exterior` (1024x1536). Portraits (512x512, optional): A'Bu (Mystic Sage and Witch Doctor, silver-white hair and beard, facial tattoos) for the comms page, and Ming Yue (Dongyue's mother) for the cast card `assets/cast/people/ming_yue.webp`.

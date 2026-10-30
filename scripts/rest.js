@@ -18,6 +18,7 @@ const PLACES = [
   {id:'fairy', n:'The Crimson Fairy', icon:'🏯', kind:'home', open:() => true, note:'Xiyu\'s own inn. Her party always has beds here, free of charge.'},
   {id:'yunling', n:'Yunling (Yun He\'s base)', icon:'🌿', kind:'free', open:() => G.ch >= 410, note:'The quiet town of medicinal gardens and healing halls where Yun Long lives and Yun He keeps his second base. The party may rest here as his guests.'},
   {id:'yilong', n:'Yilong Sanctuary (Yun He\'s base)', icon:'🏔️', kind:'free', open:() => G.ch >= 415, note:'Yun He\'s sanctuary in Yilong, among medicinal gardens, streams and waterfalls. The party may rest here as his guests.'},
+  {id:'yilong_base', n:'Xiyu\'s Yilong Residence', icon:'🏮', kind:'free', open:() => G.ch >= 429, note:'Xiyu\'s second base: a quiet residence in Yilong with a study, a secure communication room and space for her people. The party always has beds here, free of charge.'},
   {id:'temple', n:'The Ice Temple', icon:'❄️', kind:'free', open:() => G.ch >= 18, note:'The warded rooms stay warm and quiet. The party may rest here at no cost.'},
   {id:'drowsy_lantern', n:'The Drowsy Lantern', icon:'🏮', kind:'tavern', base:6, open:() => G.ch >= 40,
    note:'The tavern in Muxue town, all rice wine and low lanterns. Its rooms are upstairs.', sells:{moon_petal:12, frost_herb:8, plum_bud:12}},

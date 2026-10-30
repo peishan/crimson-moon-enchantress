@@ -6615,6 +6615,132 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"425": [
+{
+"id": "return_to_zhan_manor_and_ming_yue_greets_yun_he_as_senior_sister",
+"d": "The party returns to Zhan Manor where Dongyue's mother Ming Yue greets Yun He as \"Ah He\" and he calls her \"Senior Sister\"; at dinner she listens carefully and reveals little",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"426": [
+{
+"id": "dongyue_tells_his_mother_he_intends_to_marry_xining_and_the_yamen_comes",
+"d": "Dongyue tells his mother he intends to marry Xining; Ming Yue takes Xining's pulse before yamen officials arrive with an order for her arrest",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"427": [
+{
+"id": "ming_yue_accused_of_forbidden_witchcraft_after_afflictions_and_deaths",
+"d": "Ming Yue is accused of forbidden witchcraft after afflictions and deaths in Yilong whose complaints share her name; she is held under official supervision while the party may seek evidence",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"428": [
+{
+"id": "xiyu_asks_abu_the_witch_doctor_and_decides_on_a_yilong_base",
+"d": "Xiyu asks A'Bu, Mystic Sage and Witch Doctor, about the unfamiliar magic and decides to establish a place of her own in Yilong; Cangyuan warns her not to give the authorities a reason to investigate her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"429": [
+{
+"id": "xiyu_establishes_her_second_base_in_yilong",
+"d": "Xiyu and Cangyuan arrange the purchase of a quiet residence in Yilong with a study and a communication room; Muxue stays her principal home and Yilong becomes her second base",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"430": [
+{
+"id": "first_survivor_says_ming_yue_treated_him_and_kept_a_bundle",
+"d": "The first affected resident says Ming Yue gave him medicine and a treatment and he felt better; he kept a bundle left behind afterwards",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"431": [
+{
+"id": "residue_in_the_bundle_is_not_ordinary_medicinal_powder",
+"d": "The bundle holds something other than ordinary medicinal powder with a faint spiritual disturbance that even Yun Long cannot identify",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"432": [
+{
+"id": "second_household_fell_ill_before_ming_yue_arrived",
+"d": "A second father fell ill days before Ming Yue arrived; she examined him but did not repeat the first treatment, and Yun Long finds different traces",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"433": [
+{
+"id": "both_households_report_an_unusual_disturbance_before_symptoms_worsened",
+"d": "Both households report an unusual disturbance before symptoms worsened, though the cases began differently and are not yet shown to share a source",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"434": [
+{
+"id": "abu_will_ask_trusted_practitioners_about_the_unfamiliar_practice",
+"d": "A'Bu says unfamiliar does not mean evil and will ask trusted practitioners about the symptoms and traces with Xiyu's name kept out",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"435": [
+{
+"id": "earliest_case_a_chill_a_bitter_smell_and_a_light_beneath_the_door",
+"d": "The earliest case: an eldest daughter's chill, a bitter smell and a light beneath the door, with an almost faded residue and a mark on the floorboards; A'Bu hears of similar symptoms beyond Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"436": [
+{
+"id": "a_complaint_is_missing_from_the_yamen_register",
+"d": "The household's account begins earlier than the official report; a yamen clerk remembers a complaint being delivered but cannot find it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"437": [
+{
+"id": "the_first_complaint_was_about_the_illness_and_its_original_words_are_gone",
+"d": "An older register shows an earlier complaint whose original statement is missing and was transcribed by someone else; a neighbour says a woman treated the daughter before the officials came",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"438": [
+{
+"id": "the_daughter_cannot_name_the_woman_who_treated_her",
+"d": "The family moved to the southern district; the daughter recalls a calm woman who treated her before the officials arrived but cannot identify her, and there is no proof it was Ming Yue",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -19,3 +19,6 @@ Liechen (Su Liechen) was already built. New in this build:
 
 ## Art (updated)
 Real portraits are installed, cropped 512x512 from the author's option sheets: Yun He = option 2 (white-and-green robes, talisman), Yun Long = option 1 (dragon behind him, forehead mark). The other two crops are saved as `assets/party/alt/yunhe_option1.webp`, `yunhe_option2.webp`, `yunlong_option1.webp`, `yunlong_option2.webp`; copy one over `assets/party/yunhe.webp` or `yunlong.webp` to swap. (Old note follows.) Both portraits were generated placeholders (`assets/party/yunlong.webp`, `yunhe.webp`, a plain silhouette with initials). The two reference images in the request were links only and were not attached, so swap in real art when you have it.
+
+## Update: Yun Long takes Xining's place (author)
+Yun Long replaces Xining in the active party slot while she recovers, until Volume 14 or 15 (not decided). Xining is marked away from chapter 407 with that note; Yun Long joins at chapter 410 and stays a guest (`to:Infinity`) until a later chapter returns Xining. Volume 13 shows them together: Xining rests at Zhan Manor under Yun He's care while Yun Long joins the field group (chapter 428).

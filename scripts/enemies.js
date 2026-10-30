@@ -192,6 +192,7 @@ const ZONES = [
   {id:'shattered', n:'The Shattered Ridge', icon:'⛰️', unlock:358, off:2, pool:['spirit_wolf','ravine_beast','snowfield_ram','ridge_yeti'], boss:null, desc:'The steep ridge beyond the checkpoint, where territorial beasts hold the high ground. Wilds only, not a story location.'},
   {id:'qingluo', n:'The Qingluo River', icon:'🌊', unlock:393, off:1, pool:['lesser_demon','ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The river road between the mountain basin and the coast: lesser demons on the banks and spirits on the water. Wilds only, not a story location.'},
   {id:'echoes', n:'The Corridor of Echoes', icon:'🌫️', unlock:413, off:2, pool:['rift_wraith','maze_wraith','moon_wisp','ward_sentinel'], boss:null, desc:'The edges of the spatial passage to Yilong: echoes that wear familiar voices, and the constructs that guard the anchors. Wilds only, not a story location.'},
+  {id:'yilongedge', n:'The Yilong Outskirts', icon:'🏮', unlock:425, off:1, pool:['lesser_demon','moon_wisp','ward_sentinel','rift_wraith'], boss:null, desc:'The roads and fields around Yilong city: lesser demons and lingering spirits near the old wards. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

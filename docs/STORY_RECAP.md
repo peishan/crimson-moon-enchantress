@@ -1,0 +1,3168 @@
+# The Crimson Moon's Enchantress: story so far (complete volumes)
+
+Generated from the game text (`scripts/chapters.js`) for backtracking. Game chapter numbers are shown; hidden placeholder chapters (V3 108-116 and V4 142-167) are omitted. The game text leads the story where it differs from a comic page.
+
+## Contents
+- Volume 1 (chapters 1-39)
+- Volume 2 (chapters 40-78)
+- Volume 3 (chapters 79-107)
+- Volume 4 (chapters 117-141)
+- Volume 5 (chapters 169-198)
+- Interlude: Ya'Xing (chapters 199-203)
+- Interlude: Xiyu & Cangyuan (chapters 204-208)
+- Volume 6: The Unknown World (chapters 209-237)
+- Volume 7: The Ruins That Remember (chapters 238-267)
+- Volume 8: The Strings of a Forgotten Promise (chapters 268-301)
+- Volume 9: A Season Between Journeys (chapters 302-330)
+- Volume 10: The Sanctuary of Silent Strings (chapters 331-352)
+- Volume 11: The Thousand-Mile Frontier (chapters 353-384)
+
+
+---
+
+# Volume 1
+
+## 1. The Witch Beneath Eight Moons
+*Location: Muxue Island · the forest*
+
+Xiyu was born beneath the Blood Moon and inherited the power of the eclipse, and its curse. Her parents are gone and Xu Hanshan, her companion of seven years, has left too. An unnatural tremor shakes the forest; after two years of hiding she veils her face and goes to find what disturbed the island.
+
+**Key events:** The Blood Moon prophecy and its curse. · Left behind by her parents and by Hanshan. · The tremor. · She leaves hiding to protect Muxue.
+
+**Opens:** Party: Muxue Xiyu; Wilds: Muxue Forest
+
+## 2. The Intruders of Muxue
+*Location: Muxue Island · the forest*
+
+After the earthquake Xiyu follows the disturbance deeper into the forest and finds strangers in foreign clothes who do not belong to Muxue. Veiled, she watches from the shadows: the man at the front has an air of authority and a faint, otherworldly mark on his face that feels like a curse. They camp for the night; at dawn she follows them as they explore, and resolves to learn what they want, whatever it costs.
+
+**Key events:** Foreign strangers in the forest. · The cursed mark: "neither pure nor entirely corrupted". · "This island is like no other. It's as if something is protecting it." · Xiyu follows them at dawn.
+
+**Opens:** Cast profiles: Dongyue, Ya'Xing, Xiao Tian visible
+
+## 3. The First Encounter
+*Location: The forest*
+
+Watching the camp, Xiyu is unsettled by the man at the front, as if light and darkness coexisted in him. He studies the island's energy with an odd familiarity. Then his gaze lifts and their eyes meet. She asks if he is from this place; he asks who she is and why she is watching. He explains the compass lost its direction and says someone has disturbed the island's balance. Xiyu resolves to discover their true intentions.
+
+**Key events:** Their eyes meet. · "You are not from this place, are you?" · The compass: northeast became southwest. · "Does he not realize who I am?"
+
+**Opens:** Story: Xiyu has met Dongyue
+
+## 4. Welcome to Muxue
+*Location: The sea · the Muxue shore*
+
+A flashback: Zhan Dongyue, eldest young master of the Zhans, sails with Ya'Xing and Xiao Tian. The water pulls the ship, the compass jerks, and the calm sea gives way to the snow-covered island of Muxue. Dongyue, who has never seen snow, is delighted. A crowd gathers: "Welcome to the island of Muxue, young travellers."
+
+**Key events:** Turbulence: "There are no storms, it is just an illusion." · Xiao Tian's amnesia: found months ago on the shores of Yilong. · The compass has lost its direction. · First snow; the elder's welcome.
+
+## 5. The Crimson Fairy
+*Location: Muxue village · the Crimson Fairy*
+
+Mayor Long Ra'ya greets the strangers; Yilong is unknown to him. A'Bu explains that Muxue cannot be reached by ordinary means, describes one sun, eight moons and the island's customs, and warns them to run from the last witch of the Muxue line. They are lodged at the red inn, the Crimson Fairy. A veiled young woman brings porridge: Muxue Xiyu, owner of the inn. Dongyue is captivated.
+
+**Key events:** Yilong is unknown on Muxue. · "Someone among you must have had the affinity to cross our boundary." · "She is a cursed witch" / "All the more I wanted to meet this woman." · "Muxue Xiyu... such a beautiful name."
+
+**Opens:** Place: the Crimson Fairy
+
+## 6. Rage
+*Location: The Crimson Fairy · the stream*
+
+Xiyu serves her fish porridge; Dongyue stares, says she reminds him of someone, and asks how to make the porridge. Xiao Tian mentions his dream of a woman in grey. Hours later the heat of her magic drives Xiyu to the stream to cool down, where she thinks of Hanshan. Dongyue appears at the water's edge: "We meet again." No words could define her rage.
+
+**Key events:** The porridge and the question. · Xiao Tian's dream (first mention). · The stream and old wounds. · "Ah, Miss Muxue. We meet again."
+
+**Opens:** Wilds: the Moonlit Stream
+
+## 7. The Intruder
+*Location: The stream*
+
+Dongyue realises what he has walked into. Xiyu's fireball and lightning pass harmlessly around him: her magic cannot touch him. He offers his outer robe and helps her fasten it.
+
+**Key events:** A terrible mistake. · Fire and lightning that never land. · "You are trying my patience."
+
+## 8. I Don't Need a Husband
+*Location: The stream*
+
+Their argument falters into an unexpected kiss. Xiyu accuses men of leaving; Dongyue says he is not Hanshan and confesses he has fallen for her ("Then let me be afraid beside you"). She threatens him with her dagger to keep the secret. In his homeland a kiss like that is a promise of marriage; she doesn't need a husband.
+
+**Key events:** A stolen kiss. · "I'm not Hanshan. I won't abandon you." · "I don't need a husband. And this is Muxue."
+
+## 9. Who Is Hanshan?
+*Location: The Crimson Fairy*
+
+Dongyue lies awake. Xiyu is absent from breakfast ("unwell," says Sister Qing). He finds his returned robe and wonders why she compared him to Hanshan. To understand her, he decides to find out who Hanshan is.
+
+**Key events:** "Why does her rejection hurt this much?" · Sister Qing. · He decides to find out who Hanshan is.
+
+## 10. Helping Hanshan on a Condition
+*Location: The Crimson Fairy · the upper hall*
+
+Xu Hanshan arrives, desperate: his wife may not survive without Xiyu's help. Xiyu keeps her distance and explains she is an enchantress, not a healer. Dongyue offers to help, on one condition: Hanshan must never return to Xiyu's life.
+
+**Key events:** "Our friendship ended, Hanshan." · "I may be able to help." · The condition.
+
+## 11. A Quest
+*Location: The Crimson Fairy*
+
+Dongyue promises to keep the stream a secret and asks for her proposal. Her ancestors left a chest in a hidden cavern holding a magical weapon and family secrets; the journey may cost lives. Dongyue weighs the danger against the chance to stay beside her: "I'll go. I won't let you face it alone."
+
+**Key events:** The inheritance chest. · "The journey may cost you your lives." · Xiyu lists the supplies; the quest begins.
+
+**Opens:** Party: Zhan Dongyue joins the quest
+
+## 12. Entering Her Private Chambers
+*Location: Xiyu's private chamber*
+
+Hanshan accepts the offer and agrees to meet Dongyue at the western lake. Tired of Dongyue's persistence, Xiyu activates the lethal wards on her door: "If you can enter, I'll hear your proposal." He pushes the door open without triggering them, and pulls the quilt over her. "What are you?" — "Someone who refuses to give up on you."
+
+**Key events:** The arrangement at the western lake. · The lethal wards, bypassed. · "What are you?"
+
+## 13. Goodbye Hanshan
+*Location: The western lake · Hanshan's home*
+
+Hanshan leads Dongyue and his companions to his home. Wang Xi'er lies feverish. Dongyue clears the room, senses a small imp afflicting her and expels it with his unusual healing power. He reminds Hanshan to stay away from Xiyu. As he leaves, a red-clad figure slips away from the yard.
+
+**Key events:** The imp is expelled. · "Keep your promise to stay away from Xiyu." · A red-clad figure watching.
+
+**Opens:** Battle: the Afflicting Imp; Dongyue skill: Spirit Expulsion
+
+## 14. Xiao Tian's Dream
+*Location: The Crimson Fairy · outside*
+
+Xiao Tian wakes from a vivid dream of a woman in grey beneath a cherry blossom tree: "Son... I'm sorry." Dongyue takes him outside and promises to find her. Xiyu's expedition may be their best chance of survival on Muxue; Xiao Tian will go, as long as Dongyue promises to heal them if things go wrong.
+
+**Key events:** The woman in grey. · "We'll find her. I promise." · "Then I'll go with you, brother."
+
+**Opens:** Party: Xiao Tian joins the quest
+
+## 15. Privacy
+*Location: The hidden chambers beneath the Crimson Fairy*
+
+Xiyu leads the group down a spiral staircase to secret chambers. Her blood on a kirin statuette opens a golden stone door onto a chamber of devices, maps and records. The red-clad woman is her cousin Pei Xinyi, who wants the family's secret of youth. The group prepares the magical boat: "We leave before sunrise."
+
+**Key events:** The kirin door opened with blood. · The hidden archive. · Pei Xinyi. · Departure before sunrise.
+
+**Opens:** Party: Ya'Xing joins the quest; Wilds: the Hidden Chambers
+
+## 16. The Gates of Muxue Have Opened
+*Location: The magical boat*
+
+A brilliant light breaks the sky and the travellers freeze. Xiyu recalls her granduncle Muxue Fangyi, who vanished when she was eight; the gates may open once every ten years. Dongyue confesses he dreamed of her before he came and gives her a scroll bearing a portrait of a veiled woman. A rift opens beneath the boat.
+
+**Key events:** The gates open. · Fangyi's disappearance and the ten-year cycle. · "I dreamed of you before I ever came here." · The rift.
+
+**Opens:** Wilds: the Rift Waters
+
+## 17. The Prisoner
+*Location: The icy mountain steps*
+
+The group climbs narrow ice steps toward the sound of chains and finds a youthful man with long white hair bound to a pillar: Muxue Yan. He points to a sealed iron chest: her blood can open it, and free him too. Xiyu's blood turns the chains to dust; Yan laughs and vanishes in a flash of light. Xiyu collapses from blood loss and Dongyue catches her.
+
+**Key events:** The icy ascent. · "You... are Muxue Yan?" · Blood and chains. · Collapse.
+
+**Opens:** Cast: Season 1 cast sheet; Cast profile: Muxue Yan visible; Wilds: the Icy Mountain Steps
+
+## 18. A Risk Only for Her
+*Location: The Ice Temple*
+
+A hidden temple of ice gradually appears around the travellers. Five hours later Xiyu wakes weak in a cold chamber. Dongyue chants from the ancient scroll and presses his palms to hers: this is more than ordinary healing. "What did you risk to save me?" He looks away. For the first time Xiyu wonders whether someone might choose to stay.
+
+**Key events:** The Ice Temple appears. · Ancient healing from the scroll. · "What did you risk to save me?"
+
+**Opens:** Dongyue skill: Ancient Healing Rite; Wilds: the Ice Temple
+
+## 19. Xiyu's Thoughts
+*Location: The boat*
+
+Xiyu remembers her mother, Lady Peony ("Xiaoxi, you are the last of the Muxue clan. Do us proud"); choosing enchantment and then offensive magic as a child; Fangyi's diary and her failed attempts to reach the mountain portal. She admits she used Dongyue to reach a place she could not reach alone, and expects he will leave. Then why does she wish he would stay?
+
+**Key events:** A mother's words. · Chosen by magic. · "I used Dongyue to reach the place I couldn't reach alone." · What does she want?
+
+## 20. A Deep Bond
+*Location: The Ice Temple*
+
+Xiyu asks how he healed her. Dongyue has hidden his gift since childhood; he found the ancient scroll and read it as if it were written for him, and used it because she was losing too much blood. Xiyu realises she can feel his emotions: the ancient spell may have bonded their souls. The bond remains unexplained.
+
+**Key events:** "You healed me. How?" · The scroll. · A bond neither understands. · "Let me take care of you."
+
+**Opens:** Story: the Soul Bond
+
+## 21. Warming Up to Him
+*Location: The Ice Temple · the chamber*
+
+Xiyu wakes in the Ice Temple with Dongyue keeping watch: "Not until you rest." He has placed a protective barrier on the chamber door while their companions search for supplies. She is startled that he can use shamanic magic; he says his family feared what he could do. His loneliness is one she recognises in herself, and his kindness unsettles her more than his power.
+
+**Key events:** A barrier on the chamber door. · Dongyue's shamanic magic: "My family feared what I could do." · Xiyu stops fighting long enough to recover.
+
+**Opens:** Story: Dongyue's shamanic barrier
+
+## 22. The Ritual's Warning
+*Location: The Ice Temple · the chamber*
+
+Xiyu wakes hours later to find Dongyue asleep in an uncomfortable corner rather than leave her alone, and, moved, lets herself kiss him lightly. She tells herself not to fall in love again. Reading the scroll with a clearer mind, she learns that after the final stage of soul-binding the two would be united as mates for life, and that if the ritual is incomplete after fourteen days the receiver's life will be lost. The ritual could preserve her life, but the intended final union is a separate matter: their spiritual energies have begun to connect, but their souls and futures remain their own. Fourteen days remain, and she must decide what she is willing to risk.
+
+**Key events:** A sleeping guardian. · An unexpected kiss. · The scroll: fourteen days, or the receiver's life is lost. · Energies joined, souls still their own.
+
+**Opens:** Story: the fourteen-day ritual deadline begins
+
+## 23. Exploring the Ice Temple
+*Location: The Ice Temple*
+
+Three days in, Xiyu's magic grows unstable and she draws Dongyue close; a knock interrupts them. Dongyue lifts the barrier ("It prevents entry and exit. It doesn't block sound") and the companions return with a basket of magical berries (red: strength, blue: intelligence, green: dexterity, orange: health, black: unknown) and ice-covered fruit. Xiyu confronts Dongyue about using the ancient magic without her permission; he says he did it because he loved her. They find a central room whose door will not budge (she feels someone she is waiting for is inside), then a gigantic library, the Ice Library, where she can read the ancient books. They record that Muxue Yan and Ao Yun had an infant daughter, Muxue Yunxi, believed encased in ice by a spell: "An infant trapped in ice for all these years? I've been lied to all my life." If they find Yan they should be able to exit.
+
+**Key events:** Magical berries (five colours). · The locked central room. · The Ice Library. · Muxue Yunxi, the infant frozen in ice. · Find Muxue Yan to exit.
+
+**Opens:** Temple: the Ice Library; Temple: the sealed central chamber (locked); Items: magical berries
+
+## 24. Accepting Fate
+*Location: The Ice Temple · the library, the maze, the underground*
+
+Survivors all met Muxue Yan, who directed them to the exit. Xiao Tian finds Secrets of the Ice Temple: the temple is a creation of Yan's thoughts and cultivation and differs for each visitor. Xiyu wonders whether Yan is still inside and whether Yunxi is linked to their passage. They gather winter cloaks, an ice staff and higher spellbooks; identifying them drains Xiyu. Eleven days remain, only six before the worst effects. Beyond an enormous door is a maze; Dongyue works out the stones to open a path. An army of ice monsters comes; Dongyue summons spirit allies and fire, then two minotaur-like beasts appear; Xiyu casts a meteor swarm with her last strength. A beast pulls a switch, the floor opens, and Xiyu and Dongyue fall to a haystack on an underground level, wondering about Xiao Tian and Ya'Xing. They find two red potions and locked chests; beyond the door the darkness stretches on.
+
+**Key events:** Secrets of the Ice Temple. · The maze door and the puzzle. · Ice monsters and the two horned beasts. · The floor opens: the fall. · Red potions and locked chests. · Xiao Tian and Ya'Xing are separated from them.
+
+**Opens:** Temple: the maze, the arena, the underground level; Wilds: Ice Temple Levels 2 and 3; Xiao Tian and Ya'Xing are separated (unknown fate)
+
+## 25. His Magic
+*Location: The Ice Temple · the underground chamber*
+
+Dongyue opens the two red vials (health-enhancing; Red berries symbolise strength). Xiyu, hurt from the battle, hears Minami in her mind: "The ritual, Xiyu. You must grow stronger, and you cannot die." Dongyue finds a deep wound and a slow-acting poison, cuts it open with her ice dagger and draws the poison out with his own mouth; a childhood encounter left him immune to the venom. Next morning Xiyu drinks the potion and recovers. A key in the wall opens the chests; green scrolls vanish once read and his magic is stronger. Xiyu: "From now on, we will be one." Dongyue: "Does this mean I can treat you as my wife now?" Ten days are left.
+
+**Key events:** The red vials. · Minami speaks in her mind. · Dongyue draws out the poison; his venom immunity. · The green scrolls empower his magic. · "Yes, us. From now on, we will be one." · Ten days left.
+
+**Opens:** Story: Dongyue's magic is empowered; Story: ten days remain
+
+## 26. Teleportation
+*Location: The Ice Temple · the frozen maze*
+
+Xiyu and Dongyue leave their chamber and go on through the frozen maze. White-robed priests and priestesses with polar bears and white wolves recognise Xiyu and flee without fighting: "Why are they afraid of you?" They find a glass enclosure; Xiyu breaks it with magic and frees Hoko, an explorer from the kingdom of Luiterra who has been trapped for about a month by an artefact. Hoko unlocks a teleportation platform with a white key.
+
+**Key events:** The white-robed group flees from Xiyu. · The glass room and Hoko of Luiterra. · The teleportation platform and the white key.
+
+**Opens:** Item: White Key; Temple: the frozen maze (provisional); Wilds: Ice Temple Level 2 (provisional)
+
+## 27. The Glass Casket
+*Location: The Ice Temple · a brighter chamber*
+
+Xiyu, Dongyue and Hoko arrive in a brighter chamber. Dongyue heals Xiyu's injured hand while Hoko studies the books and paintings and Dongyue checks for traps. At the centre rests a glass casket ringed with blossoms of many colours, each carrying a different magical property. Xiyu hears a melody and the name "Yun'er" in her mind, and is drawn toward the casket. Dongyue shields her while a storm knocks Hoko unconscious. A dark figure appears: Ancestor Yan, who says she looks better now. She asks whether she is truly his descendant; he answers "No. You are not", yet says the island belongs to her: "From now on, you are the rightful owner of Muxue." In a vision she sees a man, a baby and a woman: "Is that child... me?"
+
+**Key events:** A new chamber. · The glass casket and the coloured blossoms. · A melody and the name "Yun'er".
+
+**Opens:** Temple: the casket chamber (provisional: Ao Yun's Resting Place)
+
+## 28. Deeply Weakened
+*Location: The Ice Temple*
+
+Seven days after the soul-bond, Xiyu wakes in pain with purple veins and failing vision. She remembers her childhood, Hanshan, the Crimson Fairy and her isolation; that her blood released Muxue Yan yet he questioned whether she was truly his descendant ("Who am I, really?"). She fears telling Dongyue about the ritual in case he rejects her. Dongyue finds her crying: "I'm here. Tell me what I can do."
+
+**Key events:** Seven days left; purple veins appear. · Memories of a life of loss. · Yan questioned her blood. · The secret ritual.
+
+**Opens:** Story: seven days remain
+
+## 29. The Price of Love
+*Location: The Ice Temple · Xiyu's room, Muxue Yan's chambers*
+
+Weakened again after the transfer of vitality, Xiyu thinks death feels near and remembers her childhood, Hanshan, the Crimson Fairy: every time she fell her father would walk away, and even Lady Peony seemed to like others more. Dongyue admits his parents never wanted him once they saw he was different: "I am cursed too. Let me be your companion for the rest of my life. I won't ask for anything, only that you tell me the secret behind the ritual." He wraps her in his white fur coat and goes to seek Muxue Yan. In Yan's chambers Yan reads scrolls and commands his minions: Yamon and Anong have rebelled, the rest returned to serve. His problem is how to take his dead wife Ao Yun's casket with him. He reveals his plan: he shifted the temple from Xuancang, lured Hoko's crew with lies, and the platform needed the blood of a Muxue and someone worthy (Dongyue); his corruption made even Ao Yun try to kill him, she died for him, and his children sacrificed themselves to restrain his power; their last child Yunxi's soul was frozen by a spell to stop her becoming a half-celestial. "What does it matter if she is not my true descendant? She is the rightful owner of Muxue. With her, my ambitions can finally be fulfilled." He senses someone approaching.
+
+**Key events:** Dongyue's confession and promise. · Yan's chambers and Ao Yun's casket. · Yan's plan and ambitions. · Yunxi frozen by a spell. · "The waiting is over."
+
+**Opens:** Story: Yan's ambitions are revealed; Story: Dongyue promises to stay (this is not the ritual completed)
+
+## 30. Malicious
+*Location: The Ice Temple · Yan's hall, the ritual chamber*
+
+Xiyu dreams she is the baby in the crib, with Ao Yun and a younger Muxue Yan, and wonders whether he loved her or she was a pawn: "I don't know who I am anymore." Meanwhile Dongyue bows to Yan and tells him Xiyu is in danger; Yan says he is not versed in witchcraft, explains the Bonds of Life (made from the tendon of one of his sons), asks if Dongyue loves her ("Yes, Sir. I have pledged myself to her"), and sends him to find the almanac in the ritual chamber to the northeast, threatening his head if he fails to keep her safe. After five hundred steps Dongyue finds Ao Yun's ritual chamber behind a red jewelled door; the fifth book, Dark Fear, holds the ritual. He wants her to choose him freely, not out of obligation. From his throne Yan watches through his late wife's mystic mirror: "Soon, Xiyu will learn her actual identity. Until then, I will protect her from the appalling truth."
+
+**Key events:** Xiyu's dream of the baby. · Dongyue meets Yan. · The Bonds of Life. · The ritual chamber and the book Dark Fear. · Yan watches through the mystic mirror.
+
+**Opens:** Story: the ritual is found; Temple: Ao Yun's ritual chamber (not on the map labels)
+
+## 31. The Ritual Chamber
+*Location: The Ice Temple · the ritual chamber*
+
+Dongyue, in pain that mirrors hers, begs the deities, then Muxue Yan and Ao Yun, to save the failing Xiyu. At his third plea a dark purple light descends and the dark moon goddess Minami appears, telling Xiyu to embrace her feelings and accept who she is. Her strength returns, though she stays weak. Dongyue has completed the first phase, the summoning, and says: "I'm here because I choose you, Xiyu. Not because of a bond. I don't want to lose you. But I won't claim your future belongs to me." He lifts her veil, giving her time to object, and this time she answers him of her own accord. The candles waver and the second phase of the ritual begins; neither knows what the next phase will demand.
+
+**Key events:** A plea to the deities. · The dark moon goddess Minami. · "I choose you. Not because of a bond." · The second phase begins.
+
+## 32. Embracing Her Feelings
+*Location: The Ice Temple*
+
+The next morning Dongyue wakes aching and Xiyu's vitality has returned; she dresses, veiled, her blush betraying her. He carries her to her chamber; she insists she doesn't need a husband and admits she was lying when she said she needed him only to send her home. Minami's words resonate and Xiyu allows herself to accept her feelings and returns his kisses. He says last night was duty and he will show her what it means to be loved as a wife.
+
+**Key events:** The ritual has saved her. · "I told you that I don't need a husband." · She accepts her feelings.
+
+**Opens:** Story: the ritual is completed
+
+## 33. Rainbow Dream
+*Location: The Ice Temple*
+
+The pain fades and Xiyu wakes weak but alive. Dongyue explains he removed her veil while helping her and offers not to look unless she wishes. She notices that he, unlike the men who wanted something from her, simply stays so that she does not wake alone. Flustered, she tells him to leave if he will only sit there awkwardly; he waits outside. Between waking and sleep she dreams of a rainbow bridge where he asks "Will you walk beside me?", a question her waking heart cannot yet answer. A drumbeat breaks the dream, and no thread of fate answers for her.
+
+**Key events:** The pain fades. · Without the veil. · The rainbow dream. · The drum.
+
+**Opens:** Story: the ritual is behind them
+
+## 34. Heinous Intent
+*Location: The Ice Temple · the Red Assembly Hall*
+
+The once-plain hall is hung with red banners. Xiyu, in a bright commemorative red dress, stands beside Dongyue in matching ceremonial robes. Muxue Yan addresses the assembly. Anong and Yamon are brought in chained; Commander West reports their capture and bows to Yan, Xiyu and Dongyue. Xiyu recognises the captives and is shaken. The assembly confronts the rebels' actions; the verdict is not recorded. Xiyu recognises the rebels as bull demons; Commander West is half-celestial. Dongyue asks about his companions: "They are recuperating in the rooms." Yan announces the marriage of his successor Muxue Xiyu and Zhan Dongyue in three days; Xiyu wonders about his plan. Yan touches her head and she sees his memory of the baby in the crib: Muxue Yan was her father, and she may be Muxue Yunxi, the infant frozen in time.
+
+**Key events:** The Red Assembly Hall. · Yan's announcement. · Anong and Yamon captured; Commander West. · Xiyu recognises them.
+
+**Opens:** Temple: the Audience Hall (provisional)
+
+## 35. Gratification
+*Location: The Ice Temple · the Muxue wedding*
+
+After the assembly Xiyu asks Dongyue whether he knows something about Muxue Yan that she doesn't; he says he can detect some evil about him and promises "My life is yours"; she says "I'll trust you." Three days later the Muxue wedding: the couple wear white, a shaman gives them joss sticks, and Dongyue vows to love her whatever happens. Yan comes down to congratulate them: "Young man, I have not underestimated you." Dongyue senses approval and something darker. In their room a misty woman says "Xiyu, you need to be happy" and vanishes; Dongyue mutters in his sleep of Xiao Tian and Ya'Xing, vowing revenge. Xiyu realises that being loved is gratifying.
+
+**Key events:** "I'll trust you." · The Muxue wedding and Dongyue's vow. · Yan's congratulation. · The misty woman. · Dongyue's sleep-muttering.
+
+**Opens:** Story: Dongyue and Xiyu are married; Story: Dongyue and Xiyu are wed in ceremony
+
+## 36. Xiao Tian's Memories
+*Location: The Ice Temple*
+
+Xiao Tian wakes as if reliving a nightmare. He was a swordsman practising in the mountains when masked invaders (black, iron masks with golden buckles) killed his master and his martial brothers over gold. He had lost all memories but regained part of them after the bull demons' torment (starving them, poisoned food, poisons of the Xuancang Mountains, small knives infused with demonic energy). He is Feng Xia, not the childish Xiao Tian, and wants to find the woman in his dreams and avenge his master and martial brothers; first he must get stronger. Ya'Xing is badly affected: bandaged lower body, constant itching and allergic reactions, he can hardly walk or speak clearly and bursts into insane laughter. Commander West brings elixirs; Xiao Tian chooses to trust him. Next day Xiyu wakes beside Dongyue, worried about Minami's visit and her father's return; they discuss Dongyue accepting her father's proposal, and the Frozen Order.
+
+**Key events:** The massacre flashback. · The bull-demon experiments. · Xiao Tian is Feng Xia; his goals. · Ya'Xing's condition. · Commander West's elixirs. · The Frozen Order.
+
+## 37. The Duty of a Lesser Male
+*Location: The Ice Temple · Xiyu's room, the Enchanted Bath Chamber*
+
+Dongyue finds a small lever in Xiyu's room; the wall shifts to reveal a concealed passage. It opens into an enchanted bathing chamber of waterfalls, blossoms and lanterns whose magic changes with the emotions of those inside ("It feels like home"). Xiyu rests in a modest bath wrap while Dongyue gently washes her hair, learning to care for her. The chamber's warmth and magic begin to affect Xiyu; Dongyue stays attentive and gives her space.
+
+**Key events:** The hidden lever and passage. · The Enchanted Bath Chamber. · "I can heal wounds. No one taught me how to care for someone's hair." / "Then learn."
+
+**Opens:** Temple: the hidden passage and the Enchanted Bath Chamber
+
+## 38. Communication
+*Location: The Ice Temple*
+
+On a bridge of the Ice Temple, as the trials near their end, Dongyue asks to speak with her. He did not know everything she feared to tell him, and says he cast the spell because he could not bear to watch her die, never meaning to decide her future for her. Xiyu answers that being connected by magic does not mean they understand each other. He agrees it gives him no right to ask her to feel something she does not, and promises honest speech, not a future chosen by fear or magic. "You don't have to tell me everything today. Just don't shut me out forever." "I will try. But I need time." "Then take it." She takes his hand, and steps forward without knowing where the path leads.
+
+**Key events:** The hardest truths unspoken. · "I couldn't bear to watch you die." · Magic is not understanding. · "Then take it."
+
+**Opens:** Story: a promise to communicate
+
+## 39. Return to the Island
+*Location: The Ice Temple → Muxue*
+
+VOLUME 1 FINALE. The trials end. Xiyu wonders whether she will ever return to the Ice Temple, and whether her father loves her or needs her. Dongyue, who says he is her husband and not a stranger, asks to talk; Xiyu says she cannot simply accept everything because of the ritual or the wedding. "Then I'll give you that time. I'll keep choosing to stand beside you, as long as you want me there." Dreading what home will ask of her, she rides out with Dongyue and the party toward Muxue, her father and the changes awaiting her.
+
+**Key events:** Farewell to the temple. · "I'm your husband." / "I need time." · "I'll keep choosing to stand beside you." · Riding home to Muxue.
+
+**Opens:** Temple: the Departure Portal; Story: end of Volume 1; Ya'Xing stays at the Ice Temple
+
+
+---
+
+# Volume 2
+
+## 40. The Island That No Longer Feels Like Home
+*Location: Muxue · the harbour, the sanctuary, Xiyu's residence*
+
+VOLUME 2, COMIC 001. Xiyu and Dongyue return to Muxue, but nothing feels the same. Xiyu asks for a separate residence: "I need time to myself... What I felt there was real, Dongyue. But I don't know what it means now. I simply don't wish to continue as we were at the Ice Temple." He asks "And what were we?" She did not deny loving him; she refused to promise it would remain unchanged. In the inner sanctuary Muxue Yan faces changes he can no longer ignore: dark energy creeps beneath his skin and his eyes are briefly not his own; a servant who has served twelve years brings the medicine. Xiyu visits her father, who answers sharply and asks, with fear breaking through his composure, whether she has felt anything unusual in her cultivation. That night a simple spell twists into a shape she did not intend; the second try behaves normally.
+
+**Key events:** The return to Muxue. · A separate residence: "I don't wish to continue as we were at the Ice Temple." · Yan's skin darkens; his eyes change. · "Have you felt anything unusual in your cultivation?" · Her spell twists, once.
+
+**Opens:** Volume 2 begins; Story: Xiyu asks for time apart
+
+## 41. The Man Who Weaves Shadows
+*Location: Muxue · the market*
+
+VOLUME 2, COMIC 002. Xiyu's magic keeps misfiring. In the market a merchant's protective talisman splits and releases a swarm of restless spirit wisps. A man in black and deep burgundy steps in, binds them with threads and recognises her technique as "a rather careless binding": Shen Cangyuan, here to investigate a disturbance in the island's spiritual veins. A sealed wisp fractures and a crimson filament lashes at her wrist; his threads catch it and their magics interlock rather than resist ("Your magic destroys patterns. Mine can redirect them"). He offers to examine the disturbance and to teach her to recognise the moment her magic deviates, on terms: no secrets about the technique he teaches, no experiments without her consent, and he tells her anything dangerous. She answers "You may investigate. You don't command." At evening he says: "So it has already reached the island's veins. What have you awakened, Muxue?"
+
+**Key events:** A talisman splits; spirit wisps. · Shen Cangyuan appears and binds them. · The crimson filament and the interlocking magics. · His terms. · "What have you awakened, Muxue?"
+
+**Opens:** Cast profile: Shen Cangyuan visible
+
+## 42. The Thread Beneath the Skin
+*Location: Muxue · the courtyard behind the Crimson Fairy*
+
+VOLUME 2, COMIC 003. In a courtyard test Xiyu releases a little power while Cangyuan observes. His Spirit Weaving catches the unstable energy and their powers interlock ("The part of your magic that still remembers its own path"). A black vein appears in her crimson light and races through the stone, branching deep beneath the island; "Not your spell. Something answered it." Dongyue, who was watching, learns she had felt it before and not told him: "That isn't the same as telling me." Cangyuan says it resembles a spiritual network sealed for a very long time that her magic may have disturbed: "This isn't ordinary corruption. And if the seal is waking, Xiyu may not be the only one in danger." Far beneath Muxue an ancient formation cracks; a crimson spark falls into the depths.
+
+**Key events:** The courtyard test. · The black vein beneath the island. · "Something answered it." · Dongyue is hurt she did not tell him. · The ancient formation cracks.
+
+**Opens:** Story: something beneath the island answers Xiyu's magic
+
+## 43. The Sanctuary That Remembers
+*Location: Muxue · the sanctuary*
+
+VOLUME 2, COMIC 004. Xiyu climbs to the sanctuary to see her father. Yan says she was never forbidden; his medicines are "ordinary" but he will not say what they treat. When she touches the formation a vibration rolls through the sanctuary: "Don't touch that!" His hand is marked with dark thorns; "Leave this place... I expect you to obey me." She sees a sealed chamber far beneath the island wrapped in chains and crimson light, and the words "The blood has returned." Yan: "Whatever you saw, do not seek it again." Dongyue tells her to stop investigating alone; her father has given her another reason not to trust him. Far below, the seal stirs and cracks; Yan's hand: "You cannot hold it forever." "I said... silence."
+
+**Key events:** A visit to her father. · "Blood answers blood." · The memory beneath the stone: a chained chamber. · "The blood has returned." · The seal stirs.
+
+**Opens:** Story: Xiyu's blood answers the formation
+
+## 44. The Voice Behind His Eyes
+*Location: Muxue · the sanctuary*
+
+VOLUME 2, COMIC 005. Alone, Yan tries to reinforce the ancient seal; the ritual turns on him. "I sealed you once. You will not take this island." A voice answers through him: "You have been holding the door shut. You never asked what was standing on the other side." Xiyu arrives after a shockwave; he orders her back, and she sees a shadow move beneath his skin. He warns her: "There are things you must never touch, even when they wear a familiar face." She leaves, noticing a broken jade seal. The voice tells him: "Your daughter has returned. Her blood opened what your power could not. You cannot protect her from a door she was born to open." "Silence."
+
+**Key events:** Yan reinforces the seal; the ritual turns. · Someone answers through him. · A shadow beneath his skin. · The broken jade seal. · "A door she was born to open."
+
+**Opens:** Item: broken jade seal
+
+## 45. The Secret He Recognized
+*Location: Muxue · the moonlit pavilion*
+
+VOLUME 2, COMIC 006. Xiyu shows Cangyuan the jade fragment. He says the seal belongs to an older spiritual binding, older than most formations still used on Muxue, and admits only that he has seen the pattern once before, "not here", somewhere he would prefer not to revisit. She tells him the voice spoke through her father; he warns her not to confront him alone again, and that if the formation reacts to her blood as strongly as to her magic she may open what it was designed to keep shut. Dongyue arrives. Cangyuan offers to investigate the old records ("Because I dislike unfinished questions"); Xiyu agrees if he tells her anything about her family. After they leave a hidden symbol appears on the fragment and a memory surfaces of a place he never wished to see again: "Not again."
+
+**Key events:** The jade fragment and the older binding. · "I have seen this pattern once before. Not here." · If it reacts to her blood, she may open what it keeps shut. · Cangyuan offers to investigate. · The hidden symbol; his memory.
+
+## 46. A Dangerous Kind of Harmony
+*Location: Muxue · the moonlit pavilion*
+
+VOLUME 2, COMIC 007. After dusk Cangyuan shows Xiyu a Spirit Weaving array: it does not create power, it changes the path power takes. He teaches her to feel where energy wants to travel instead of seizing it ("You redirect magic rather than resist"), and her control proves better than he expected. Her crimson magic splits into streams through his weaving without losing strength, until a black filament appears inside her spell. She separates it and he redirects it into a jade vessel and seals it. "Next time, warn me before you put yourself in danger." / "Next time, warn me before your magic tries to devour mine." The filament "behaved as though it were searching for a path". Xiyu: "My father is hiding something beneath the sanctuary." Cangyuan: "Then we should discover what it is" and he intends to keep his word. Alone with the vessel he thinks: "It isn't merely waking. It's learning." A memory flashes: a ruined chamber, crimson threads snapping, someone calling his name.
+
+**Key events:** The Spirit Weaving array. · The first thread. · A black filament inside her spell; sealed in a jade vessel. · "Then we should discover what it is." · Cangyuan's memory.
+
+**Opens:** Party: Shen Cangyuan joins; Story: Xiyu learns Spirit Weaving (provisional)
+
+## 47. The Spell That Reached Back
+*Location: Muxue · the sanctuary approach*
+
+VOLUME 2, COMIC 008. The vessel reacts to Xiyu each time she approaches: "It knows I'm here." Cangyuan proposes comparing the filament with the original formation at the sanctuary; "Stand beside me. Don't cast anything unless I ask." When she touches the glass it reacts as she feels threatened. He admits he once met a similar formation in a place he does not want to revisit: "People died." They agree he will not demand everything tonight, but she will tell him the risks and he will not run experiments without telling her. Beneath the sanctuary a thin black filament creeps through the formation's cracks; Yan: "No. Not her. You cannot keep her apart from what she is. She has already begun to answer."
+
+**Key events:** The vessel will not sleep. · A plan to compare with the original formation. · "People died." · Yan hears: "She has already begun to answer."
+
+## 48. Echoes Beneath the Sanctuary
+*Location: Muxue · the sanctuary*
+
+VOLUME 2, COMIC 009. Xiyu and Cangyuan enter the sanctuary with the vessel. The original formation is older, larger and more complex than the broken seal. When her power touches it the sanctuary answers with memories: a child born under a blood moon, elders who foresaw a power that would change the island's fate, her parents leaving her behind. "These aren't dreams. These are memories. My memories...?" Her mother's fear, her father's decision: they sealed something with her existence. Cangyuan: "Not just to keep it closed. You are the key. Your blood can open it. Or keep it shut." Another presence appears in the memories, a man Cangyuan recognises: "He was part of the group that created this formation. And what they sealed... it wasn't just a monster. It was a truth." "Not yet. You need to be stronger before you hear it all." The filament breaks from its vessel: "You remember... You have always belonged... Open... Open... Open..." "What do you want from me?"
+
+**Key events:** The original formation. · Her memories of her birth. · "You are the key." · A man Cangyuan recognises. · "What they sealed was a truth." · The filament speaks.
+
+**Opens:** Story: Xiyu is the key to the formation
+
+## 49. The Mark That Hid Her
+*Location: Muxue · the sanctuary*
+
+After the vision of her birth, Xiyu and Cangyuan study the formation under the dust. It did not remember her, he says; it recognised her, a record and not a memory. Cangyuan recognises the hand that made it from a ruined hall where spiritual threads snapped one by one. Three rings appear: an outer ring of concealment, a middle ring of regulation and an inner ring of containment. The formation reacts to Xiyu differently, withdrawing instead of attacking, and its channels do not all point inward: the outer structure may be hiding the inner one. Dongyue helps her across the broken steps and says some truths should stay buried a little longer. Deep beneath, the black filament reaches a hidden eye symbol: the formation is not merely holding something in, it is concealing something from being found. "The veil is thinning. At last, I can sense her."
+
+**Key events:** Recognised, not remembered. · Three rings: conceal, regulate, contain. · "Some truths should remain buried." · The veil is thinning.
+
+## 50. The First Breach
+*Location: Muxue Island · the eastern boundary*
+
+Shortly after midnight the hidden eye closes beneath the sanctuary and lantern flames across the island turn black for a heartbeat. Muxue Yan, his palm on the ancient seal as dark veins crawl up his wrist, feels the barrier reach its limit. Xiyu feels a pulse beneath her feet as a protective charm splits and a black filament recoils from her crimson magic. Cangyuan warns that the formation is connected to a network, perhaps the island's wards; Dongyue brings a ward found near the eastern boundary, three more having failed along the same route. The trio follows the damaged wards to an abandoned roadside shrine whose inscription was erased from the inside. Its crimson mark matches the sanctuary symbol; "It left this for me." The symbol opens like an eye and a voice says: "Blood of the returned... You have found the first door."
+
+**Key events:** The barrier cracks. · Wards fail along the eastern path. · The shrine erased from within. · "You have found the first door."
+
+## 51. The First Flutter
+*Location: The eastern shrine*
+
+At the abandoned eastern shrine the crimson mark is the same as the one beneath the sanctuary. Xiyu reaches for it to feel it more clearly, but Cangyuan catches her wrist before she touches it: "Don't touch it. This isn't an ordinary mark." The filament will react to her blood and soul and may recognise her. He tells her the place is not for her to explore alone; she says she knows her limits, and he answers that sometimes knowing isn't enough to stop you. He lets go, but the warmth of his hand lingers, and Xiyu, who is supposed to be investigating the mark, cannot stop thinking about his hand. Cangyuan watches her a moment longer and chooses not to comment.
+
+**Key events:** The mark at the shrine. · "Don't touch it." · A different kind of closeness. · A restless heart.
+
+## 52. The Kindness He Remembered
+*Location: Muxue · the clinic*
+
+The morning after the eastern shrine incident, Dongyue, his spiritual energy nearly depleted from reinforcing the last protective barrier, sways on his feet. Lu Xining, a physician, tells him to sit down, notes that his pulse is thin and that he has forced his energy too long, and gives him a warm restorative broth. In his household weakness was something to conceal and concern came with expectations; with her he is caught off guard. When Xiyu arrives with Cangyuan to check on him, Dongyue's expression relaxes in a way she has not seen for some time. Xiyu and Cangyuan's sleeves brush and she does not move away. Later Dongyue sits alone with the empty bowl and finds he cannot dismiss the warmth he felt with Xining as mere gratitude, though his feelings for Xiyu have not disappeared. Outside, the island's damaged ward flickers again.
+
+**Key events:** Dongyue sways. · "Sit down before you collapse." · Xiyu notices. · A feeling without a name.
+
+## 53. The Choice to Stay
+*Location: Muxue · the clinic*
+
+The morning after the eastern shrine incident Dongyue tries to leave the clinic, still not fully recovered. Xining tells him his spiritual energy is unstable and that he suppressed the symptoms instead of healing them: if he keeps forcing energy through the same damaged channels the next collapse may be worse. She studies a black residue fragment and can already tell what it does to the body from what it does to a ward; with another sample she may learn more. She asks to come along: "I didn't treat you to collect a debt. But I want to understand this corruption." Xiyu agrees: "Good. Then welcome aboard, Physician Lu." Cangyuan accepts her for being useful. Xiyu's sleeve brushes Cangyuan's again and she does not move away. The group leaves the clinic together; Xining walks with Dongyue discussing the damaged ward fragment, and beyond the road another ward flickers crimson and black.
+
+**Key events:** Not fully recovered. · A practical contribution. · "Welcome aboard, Physician Lu." · Four paths, one journey.
+
+**Opens:** Party: Lu Xining joins; Bounty board opens
+
+## 54. The Bounty Beneath the Red Lantern
+*Location: A settlement at Muxue's eastern boundary · the red lantern road*
+
+VOLUME 2, COMIC 015 (Arc 3). The group reaches a busy settlement beneath red lanterns where a guard pins up a notice: another ward has failed and something attacks travellers after sunset. Xining insists on examining the one survivor before accepting: his meridians are not damaged in the usual way; "It didn't wound me. It took something away." At the road Cangyuan's golden threads and Xiyu's crimson spell reconstruct the ward, and black filaments emerge from inside it: the corruption was already in the formation. A shadow with a pulsing red core rises; Xining's cleansing powder exposes the core, Dongyue strikes, Cangyuan redirects its threads and Xiyu severs the corrupted anchor. A black-red fragment is left. Xining can help the survivor recover but cannot promise to restore what was taken; Cangyuan: "Someone, or something, is testing the island's wards." Far beneath the forest a voice: "They have begun to follow the trail." This chapter introduces the first bounty, The Red Lantern Road.
+
+**Key events:** The noticeboard. · The survivor: "It took something away." · The corruption was inside the ward. · The shadow and its anchor. · The corrupted fragment. · "They have begun to follow the trail."
+
+**Opens:** Bounty: The Red Lantern Road (first bounty); Repeatable road bounties; Item: corrupted fragment
+
+## 55. The Distance Between Heartbeats
+*Location: A quiet pavilion in Muxue*
+
+VOLUME 2, COMIC 016 (Arc 3). The group returns to a quiet pavilion after reporting the Red Lantern Road bounty. The survivor has stabilised, but the fragment's residue stays active. Cangyuan shows Xiyu how to separate a black filament without letting it into the spiritual channels, and she loses the thread. Xining asks Dongyue why he came when the danger is greater than expected; Xiyu, alone in the garden, admits she wanted him to let go and does not know why she was disappointed when he did. Cangyuan finds her and does not ask what is wrong. Back in the pavilion the fragment lights up: the lines are connected, the Red Lantern Road was only one point, and several converge on places where the island's wards have failed. Investigation unlocked: The Broken Ward Network.
+
+**Key events:** After the bounty. · An unwelcome distraction. · "Why is my heart so difficult to control?" · Investigation unlocked: The Broken Ward Network.
+
+**Opens:** Investigation: The Broken Ward Network
+
+## 56. The Technique He Buried
+*Location: The temporary residence · the map*
+
+VOLUME 2, COMIC 017 (Arc 3). Back at the temporary residence the corrupted fragment has stabilised enough to read. Cangyuan uses Spirit Weaving to separate the black filaments and recognises the technique: Spirit Weaving can leave a signature, and he has seen this one before, in the hands of someone he knew once. A memory surfaces of a woman patiently teaching him to guide spiritual threads; some memories survived not because he wished to remember but because he never found a way to put them to rest. Xiyu tells him he need not explain, and he thanks her. Xining compares the pattern with regional charts: the fragment is linked to multiple locations, a network, and a line of black-red light crosses the map. An abandoned shrine in the eastern reaches carries an old name, almost erased from the charts. Someone has begun using a technique that should have remained buried.
+
+**Key events:** The fragment stabilises. · Spirit Weaving leaves a signature. · "Someone I knew once used a similar method." · The network on the map.
+
+## 57. The Name Behind the Seal
+*Location: The abandoned shrine in the eastern reaches*
+
+VOLUME 2, COMIC 018 (Arc 3). The group reaches the abandoned shrine whose stone gate bears the hooked symbol from the fragment. Cangyuan says the place was abandoned before he left the sect; "Then someone has returned. Or something that never truly left." Examining the inscription without touching the residue, he reveals that it is a record, and a name carved beneath the first pattern: Shen Ruyue. A memory surfaces of a woman beside him in an ancient cultivation hall. Xiyu moves the fragment away to give him room. He admits he cared about her; remembering her is not the difficult part, but remembering what he believed about her. Xining finds part of the record deliberately altered, the work of someone who knows the original technique. A tremor runs through the stone, the black filaments retreat, the seal cracks and a voice says: "Cangyuan. You took your time coming home."
+
+**Key events:** The abandoned shrine. · The name: Shen Ruyue. · "Remembering what I believed about her." · "You took your time coming home."
+
+**Opens:** Quest: the second sealed door
+
+## 58. The Woman Behind the Door
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 019 (Arc 4: The Silence After the Spell). Before the second sealed door the voice calls Cangyuan by name and asks if he will leave her waiting again. The seal responds to his spiritual signature: someone designed it to recognise him, and someone changed the formation, adding crimson markings not part of the original seal, either to keep whatever is inside hidden or whatever is outside trapped. Xiyu asks whether he is afraid; he says she mistakes silence for fear. Their techniques react when their hands touch, and Cangyuan says they should discuss it somewhere less likely to collapse. In the corridor beyond hang faded portraits, one deliberately scratched away. Xiyu asks if he wants her to ask, he says no and thanks her for not asking. The voice asks whether he has brought someone with him this time; "Ask the man beside you what he left here."
+
+**Key events:** The voice behind the door. · The seal recognises him. · Hands touch; the techniques react. · The scratched portrait.
+
+**Opens:** Quest step: The Portrait Without a Face
+
+## 59. The Portrait Without a Face
+*Location: The portrait gallery beyond the second seal*
+
+VOLUME 2, COMIC 020 (Arc 4). Inside the lantern-lit corridor Xiyu asks Cangyuan what he left behind; he answers "A great many things", without his usual teasing smile. He says the formation responds to him because he once belonged to the place that created it. In the portrait gallery one portrait is slashed beyond recognition and another has been taken down recently, or never wanted to be seen. Cangyuan's hand hovers above the frame exactly as in his memory: someone once taught him not to touch what he did not understand. Xining finds a brittle departure record behind the empty frame; one name has been erased, and Cangyuan says he does not know if it is his. Xiyu tells him he need not tell her everything: "I can be curious without being cruel." The seal stirs, golden threads rising as the corruption retreats, and the voice murmurs "Still cautious, Cangyuan? You weren't always so careful." He says they should not mistake a familiar voice for a trustworthy one. The second door stays closed.
+
+**Key events:** The question: what did he leave here? · The portrait gallery. · A departure record from the sect. · The seal stirs.
+
+**Opens:** Quest: The Portrait Without a Face (investigation)
+
+## 60. The Truth Beneath the Silence
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 021 (Arc 4). The voice behind the second door has fallen silent, but the formation still reacts whenever Cangyuan approaches. Xiyu points out that he is afraid of what he will find; he asks whether she would prefer he pretended otherwise, and she says she would prefer he stopped pretending he feels nothing. Xining finds a narrow line of writing beneath the damaged seal that is not part of the original formation: someone added it later, and it appears to describe a restriction placed on whoever enters. Cangyuan stops Xining from activating it. A muted memory surfaces: understanding a technique is not the same as understanding the person who taught it; he once believed that knowing someone's methods meant knowing their heart, and now he knows better. While Dongyue and Xining examine another inscription, Xiyu asks if she was important to him; "Yes. Remembering her isn't the difficult part. It's remembering what I believed about her." She tells him he does not have to face the door alone. The seal pulses and the voice returns: "You always did take too long to understand." Asked if he wants to turn back, he says no, but this time he will not pretend to know what awaits them.
+
+**Key events:** The door that remembers. · A restriction on whoever enters. · "Was she important to you?" · "I won't pretend I know what awaits us."
+
+## 61. The Kiss She Chose
+*Location: The second sealed door · a side chamber*
+
+VOLUME 2, COMIC 022 (Arc 4). The crimson light has dimmed but the mystery is far from over; Cangyuan insists they will not open the door until they understand the restriction. Xining finds a narrow inscription describing a secondary passage that seems to predate the alteration, and Dongyue and Xining go ahead to inspect it, leaving Xiyu and Cangyuan in a small side chamber. Cangyuan tells her she can join them; she notes that he is still here too. She asks why he keeps his distance from everyone: "Because closeness gives people something to lose. It also gives them something worth choosing." "You should be careful with me, Xiyu." "Is that a warning?" "An honest one." She says she hasn't decided what that means and he answers that he will not decide for her. "If I kiss you, don't mistake it for a promise." "I wouldn't dare." For once Xiyu does not wait for fate to choose; she makes the choice herself, and kisses him. Afterwards he admits he had prepared several clever responses and has forgotten every one; she says it was what she wanted. They agree to return before the others come looking. The past still waits behind the sealed door, but something between them has changed, and neither wishes to undo it.
+
+**Key events:** The door falls silent. · A secondary passage. · "Closeness also gives them something worth choosing." · "If I kiss you, don't mistake it for a promise."
+
+**Opens:** Relationship: Xiyu and Cangyuan (the kiss she chose)
+
+## 62. After the Kiss
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 023 (Arc 4). After the kiss Xiyu and Cangyuan do not pretend it meant nothing, though she tells him not to mistake one kiss for a promise about everything that comes after. The seal reacts again to his spiritual signature, and not only his: her magic exposes what the formation conceals and his technique tells them how it was concealed. A diagram shows a forbidden method whose principle resembles the Inverted Meridian, the technique he buried and refused to let anyone use. Someone has altered it, and the formation is not preserving the seal but drawing power from whatever lies behind it. Dongyue and Xining find marks that are measurements of spiritual depletion: someone recorded how much power the seal consumed, or how much it took from the people maintaining it. The same symbol is on the sealed door. A voice behind it says: "So you've found the price." Xiyu asks who paid it. "Ask the man who left me here."
+
+**Key events:** Neither will pretend. · Two signatures. · The forbidden method. · The price.
+
+## 63. The Price Behind the Seal
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 024 (Arc 4). Cangyuan says he does not remember leaving anyone in this place; the voice answers that he remembers what he chose to remember. He remembers the formation, not the chamber. Xiyu reads the seal: it is not simply a prison, it draws spiritual energy from inside and sends it back through the seal, so whoever is trapped may be sustaining the very thing that keeps them trapped, a cycle designed to consume its own source. Xining and Dongyue read repeated, increasing losses of spiritual energy in the records, but the record does not say whether the keeper volunteered, and a record of sacrifice is not proof of consent. The records stop before the final stage: removed, or never completed. Cangyuan warns Xiyu she may not like what she learns of his past; she says she does not need him to be blameless, only honest when he is ready: "...I'll try." The formation answers; someone used his technique as the foundation, and the seal is adapting to them. "You really don't remember." "When you left... did you know what they would do to me?"
+
+**Key events:** A memory that will not return. · A seal that takes. · Four suspicions. · "Did you know what they would do to me?"
+
+## 64. The Door They Refused to Open
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 025 (Arc 5: Two People on Opposite Shores). Cangyuan answers "I don't know"; the voice says he always did know how to make ignorance sound respectable. Forcing the door could destabilize the whole formation and harm the captive if she is sustaining it, so they decide not to break it blindly. Xiyu finds that there is another anchor: the main formation is connected to something outside the chamber, and a mark appears beside the earliest energy readings. Dongyue takes Xining to the archive, she will check whether the energy losses match the older entries, and Cangyuan and Xiyu examine the anchor. He tells her he does not know which parts of his past deserve defending; she tells him to stop defending them before he has learned what happened, and that she would rather make her own choices with her eyes open than be spared them. Xining reads a departure record: someone left the shrine before the final stage, someone else remained, and nobody knows who made that choice or whether the one who stayed was allowed to choose. A scroll reads "When the two shores are severed, the keeper shall remain." Cangyuan: "I think we've been looking at the wrong end of the seal."
+
+**Key events:** "You always did know how to make ignorance sound respectable." · The second anchor. · A departure record. · "When the two shores are severed, the keeper shall remain."
+
+## 65. The Keeper's Price
+*Location: The second sealed door*
+
+VOLUME 2, COMIC 026 (Arc 5). The record and the anchor are parts of the same design: the formation draws power from one end and transfers it to the other, and if the connection is severed, the keeper remains. The original framework redirected spiritual energy between two anchors; this version forces it through a single point, the sealed chamber, so someone turned a connection into a means of containment. The keeper may be absorbing the strain whenever the connection becomes unstable, which explains why the losses grew, though not whether she agreed. Cangyuan remembers studying a method for distributing strain across channels: he believed it could keep a formation from collapsing, and never intended it to become a prison. He remembers someone who believed the ends justified the means. The voice corrects them: stop calling this a sacrifice, because sacrifice makes it sound as though she was given a choice, and none of them has asked what it did to her. The connection begins to lose stability, and they agree not to reinforce it and to find the second anchor first. Xiyu: "We won't let guilt make the decision for us."
+
+**Key events:** Two clues, one formation. · The two shores. · "Stop calling this a sacrifice." · The other anchor.
+
+**Opens:** Investigation: the second anchor
+
+## 66. Where the Two Shores Meet
+*Location: The pavilion across the island · the second anchor*
+
+VOLUME 2, COMIC 027 (Arc 5). The second anchor is a pavilion across the island, not abandoned by accident. The original formation was designed to share the strain between two anchors, so neither bore the whole burden, until someone changed it into a single channel; the alteration was deliberate, and the keeper became the stabilizing point. A missing instruction reads "Restore the divided channels. Let neither shore command the other." The original method described balance, not imprisonment; the alteration made the keeper indispensable, and therefore easier to control. Cangyuan offers to restore the channels; Xiyu says not alone, and not because he thinks he owes the past a punishment, and he asks her to help him do it properly. Following Dongyue's order for the channels, the drain stops increasing and the connection is stable, though the keeper is still bound. The keeper left a message: "If the channels are ever restored, seek the record beneath the eastern shrine. The truth was not entrusted to the keeper alone." Xiyu: "You could have let me make that mistake." "I could have. I chose not to."
+
+**Key events:** The original formation. · "Let neither shore command the other." · The channels are restored. · The keeper's message.
+
+**Opens:** Investigation: restore the channels (done)
+
+## 67. The Space We Choose
+*Location: Muxue · a terrace above the lake*
+
+VOLUME 2, COMIC 028 (Arc 5). The drain has stopped increasing, but the keeper is still bound; they plan to reach the record beneath the eastern shrine and rest for the night. Cangyuan invites Xiyu to a place that has nothing to do with seals or curses, only because he wants to share it with her. They admit what the kiss meant: neither thinks it was a mistake. He asks to kiss her again, not because of magic or guilt, and she agrees. Elsewhere Dongyue tells Xining he has spent most of his life following what was decided for him and does not always know what he wants; she says he is learning now, and they agree to keep discovering together, with no promises they cannot keep, only honest companionship. A symbol on the record was not in the first projection and may be a marker for the record beneath the eastern shrine, or a warning: someone is still watching over this formation. "Not every step forward needs a promise."
+
+**Key events:** A plan, and a night of rest. · "Not because of magic, not because of guilt." · Dongyue and Xining: honest companionship. · A symbol that still watches.
+
+## 68. The Eye That Never Sleeps
+*Location: The eastern shrine · the record*
+
+VOLUME 2, COMIC 029 (Arc 5). Over breakfast the party studies the record. The red mark was added after the original writing, in different ink, and is not part of the original Spirit Weaving pattern: someone gave the formation another function. It does not bind the keeper; it observes the formation's flow and records changes, or it is a warning system. Xiyu's magic makes it react and transmit something, so someone could know when the formation is disturbed. Whoever added it knew the alteration was dangerous and did not remove it: they might be responsible, or trying to contain what someone else did. Cangyuan, who studied forbidden techniques for years, says that if someone was monitoring his work he might never have known; it angers him more than it frightens him, and Xiyu tells him not to solve it in his head before they have evidence. The signal does not return to the sealed chamber: it goes to a relay point between the western anchor and the eastern shrine, unknown. If someone is still receiving the signals, they will know the mark has been found.
+
+**Key events:** The mark in the record. · A watcher, or a warning system. · The signal's destination. · "Someone is receiving these signals."
+
+**Opens:** Investigation: the relay
+
+## 69. The Truth at the Relay
+*Location: The relay point*
+
+VOLUME 2, COMIC 030 (Arc 5). The relay point is almost without spiritual residue: designed to leave little evidence, or made to look abandoned. The mark has a receiver, built to receive the changes the other marks transmit, so someone could monitor the sealed chamber without being anywhere near it; it has been used more recently than its surroundings. Its readings match the periods when the keeper's energy losses increased, so the receiver was active while she suffered, but they do not show whether the person receiving caused the changes, permitted them, or tried to prevent something worse. Xiyu stops Cangyuan from reaching for the disc. He recognizes the school of formation work, not the person who made it, and will not pretend certainty. Xining makes her own copy of the records. They find a gap in the transmissions: the receiver was not recording during that interval, or someone deliberately erased the record. The watcher left evidence but not an identity, and the party has something more useful than suspicion: a way forward. Cangyuan: "I won't let the gaps in my memory become an excuse to stop searching."
+
+**Key events:** The relay. · The hidden receiver. · The last transmission. · The missing interval.
+
+**Opens:** Investigation: the missing interval (open)
+
+## 70. Then, What About Him?
+*Location: A pavilion · the tavern*
+
+VOLUME 2, COMIC 031 (Arc 5). Dongyue asks Xiyu plainly about the Ice Temple. She says the ritual saved her life and was not a promise that she would love him; what they shared was real, but survival and love are not always the same. Calling him her husband gave her something to hold on to when she was afraid; she had not yet worked out what her heart wanted. The ceremony mattered, but it was not a legally recognized marriage in Muxue, and nothing registered him as her husband; her father believed she loved him and wanted that happiness for her. He asks about Shen Cangyuan. She does not give a different answer to spare him: yes, she has feelings for him. Dongyue: "Don't apologize for telling me the truth. Just don't ask me to pretend it doesn't hurt." She leaves him to gather his thoughts, not because she no longer cares but because she cannot give him the future he hoped for. Later Xiyu hears that Dongyue is drinking with Xining. Seeing his sadness she feels guilty and wants to ease his pain, and she casts an enchantment so that Dongyue perceives Xining as herself. She does not stay to see what happens, believing she has offered him a brief illusion of comfort; she never imagined what her illusion would set in motion.
+
+**Key events:** "The ritual was to save my life." · The ceremony was not a legally recognized marriage. · "Yes." · The wrong kind of comfort.
+
+## 71. The Face He Could Not Remember
+*Location: The inn*
+
+VOLUME 2, COMIC 032 (Arc 5). Dongyue wakes with a heavy head and blurred vision, steadies himself with his healing energy, and remembers the tavern but not what followed. He remembers a woman and her robes, but not her face; he thinks he saw Xiyu, but cannot be certain, and does not know who she was. She is already gone, and nothing she left tells him who she was; there are a few drops of blood on the sheet. Xining brings him tea for his hangover. She tells him she found him drunk, the innkeeper helped her take him back to his room, and she returned to her own room to finish her medical research and sleep early; she did not see anything else. He remembers nothing and can only note that there were other women at the tavern. The morning leaves him with nothing he can trust, not even his own memories.
+
+**Key events:** A blurred awakening. · Fragments of memory. · What remains. · No answers.
+
+## 72. A Trace Beneath the Silence
+*Location: The ruins behind the eastern ridge*
+
+VOLUME 2, COMIC 033 (Final Arc). Words between them remain unspoken, but the distance is real. Before they leave, Cangyuan shows a fragment: this is not ordinary damage, the spiritual residue has been disturbed but not destroyed, and the flow has been redirected, though not toward anything this fragment can show. They stop studying the fragment and look for the next place it touched. Xiao Tian, who has been scouting alone, found an old service path behind the eastern ridge with fresh footprints: two sets of tracks, one from the ridge and one that turned back recently, which could be the same person only if they changed their footwear halfway, or wanted them to think so. Xining finds something she cannot tell is mineral residue or spiritual; Xiyu says it is faint and settled before the residue on their fragment, so this may be the earlier point in the sequence. The path opens onto a small abandoned platform, and Xiao Tian stops them from stepping forward: it was made to be missed, not triggered. Someone wanted this place overlooked, and whatever passed through here did not want to leave a trail.
+
+**Key events:** The fragment. · Xiao Tian scouts. · Two sets of tracks. · A platform made to be overlooked.
+
+**Opens:** Fieldwork: Xiao Tian scouts the eastern ridge
+
+## 73. The Mark Beneath the Dust
+*Location: The ruins · the platform*
+
+VOLUME 2, COMIC 034 (Final Arc). The ruins were abandoned; the formation beneath them was not. Cangyuan stops anyone touching the markings: the line was made deliberately, and the surface was concealed so the marks would escape ordinary inspection, whether the spiritual disturbance exposed them or someone exposed them deliberately. These are not a complete formation; they may record the passage of spiritual energy rather than control it. Dongyue finds scrape marks along the edge of a slab: something was moved here recently enough that the weather has not worn the marks away, so the footprints may have been left to draw attention away from this place. Xiyu asks Xiao Tian to check the path on the other side, and he finds a small dark object near the outer path, which may have come from a tool or a piece of equipment, and signs that something heavy was dragged away from the platform. They ask why anyone would abandon a place used recently: perhaps it no longer served its purpose, or someone wanted them to believe so. They have evidence of movement, altered spiritual energy and a concealed marking, but do not know whether they belong to the same event.
+
+**Key events:** "Don't touch the markings yet." · Scrape marks along the edge. · Xiao Tian's find. · Evidence, not an answer.
+
+**Opens:** Fieldwork: Xiao Tian's find
+
+## 74. The Fragment That Remembers
+*Location: The ruins*
+
+VOLUME 2, COMIC 035 (Final Arc). The fragment bears a residue that Cangyuan cannot identify; it responds to Xiyu's power differently, so they agree not to force a reaction. Its edge is scratched in a way that is not random: something was fitted against this piece, a mechanism or a mount. Xining wonders whether it was part of a medical instrument; the wear is heavier on one side, so whatever held it was under repeated strain, and Xiyu suspects the formation was forcing energy through something, though she has nothing more than reason to investigate. Dongyue notes that the markings converge toward the broken slab, but Xiyu shows that the lines continue beyond it: the pattern does not end at the platform. The dragged marks Xiao Tian found head the same way, and he reads that whoever came through was carrying something heavy and did not come empty-handed. They agree to follow the route without assuming the fragment proves where it came from. They have a route, a fragment and a pattern that continues beyond the ruins, but no proof that they share a single cause. For the first time the clues point in the same direction.
+
+**Key events:** A residue that responds differently. · A fitted edge. · The pattern continues beyond the platform. · A route.
+
+**Opens:** Fieldwork: the dragged marks
+
+## 75. The Flow That Was Stolen
+*Location: The chamber beyond the ruins*
+
+VOLUME 2, COMIC 036 (Final Arc). Xiao Tian scouts ahead and finds no movement, but the path narrows. Xiyu feels the spiritual flow change, and Dongyue says the current is being drawn sideways. The passage opens into a small chamber in which three channels are carved into the floor, once carrying spiritual energy; the broken one should have stopped the flow, but it did not. A current remains beneath the break, but Xiyu cannot tell what restoring it would do, so Cangyuan decides they do not restore anything yet and first learn where the energy went. A groove continues into the wall, and something was placed here that the fragment might have fitted: the dimensions are close, though close is not proof, and the section is cleaner than the rest, as if something was removed, or moved repeatedly. The energy is not spreading outward; it is being drawn away. Someone may have redirected the flow rather than destroying the channel, which would explain why the disturbance persists, though not who did it or why. If someone removed a piece from here they needed a way in and a way out, and this route may have served both. They leave the chamber closed for now. It is the first sign of intention beneath the damage.
+
+**Key events:** Three channels. · Something was placed here. · The flow is drawn away. · The first sign of intention.
+
+**Opens:** Investigation: the redirected flow
+
+## 76. The Choice Beneath the Mountain
+*Location: The chamber beneath the mountain*
+
+VOLUME 2, COMIC 037 (Final Arc). The current is changing and the flow is weakening, perhaps because they found the channel, or because something on the other side has noticed the disturbance. Opening the chamber now might expose the destination and destabilize the channel that leads to it. Cangyuan lays out two choices: follow the flow while they can still trace it, which is risky, or stabilize the chamber first, which is safer; if the flow becomes unstable they may lose the evidence or make the damage worse, and they should not mistake urgency for certainty. They choose to stabilize what they can without forcing the current back into its old path. Xiao Tian keeps the passage clear while Dongyue watches for physical damage, and Xiyu and Cangyuan reduce the strain on what is left without rebuilding the missing section, stopping if the current resists. The pressure eases and the flow stabilizes, temporarily. No one came through while they were working, but Xiao Tian finds fresh marks near the entrance and cannot tell whether they are theirs or someone else's. There is still something beyond, but they have not earned the right to assume they understand it. They have chosen not to force the truth from its hiding place.
+
+**Key events:** The current is changing. · Follow the flow, or stabilize first. · The flow is stabilized. · Fresh marks near the entrance.
+
+**Opens:** Choice made: stabilize first
+
+## 77. The Destination Beyond the Wall
+*Location: The chamber beneath the mountain*
+
+VOLUME 2, COMIC 038 (Final Arc). The chamber did not open, but for the first time the flow beneath it has steadied. The pressure has eased, though Cangyuan will not promise it will hold; the energy is still moving away from its original course, so their intervention protected the remaining channel without undoing what was done. They decide to leave before the light fades; if someone else knows this route they should not be caught in a dead end, and they have enough evidence to return with a plan. The fragment may have belonged to a fitting that once sat in the channel, but they have not seen the original piece and will not turn a likely explanation into a fact; the current was redirected beyond the chamber, so the damage here may be only the visible part of a larger system, whose purpose (protection, extraction or something else) is unknown. They will preserve what they found and investigate before touching anything further, and next time bring proper equipment. Far beneath the sealed chamber a thin line of pale light travels through an unseen stone channel and reaches a second carved surface, where a symbol appears, different from the markings at the ruins but aligned with the same flow, and then disappears. Somewhere beyond the wall the redirected flow continues toward a destination they have yet to discover.
+
+**Key events:** The pressure eases. · "Next time, we bring proper equipment." · A thin line of pale light. · A symbol that appears, then disappears.
+
+**Opens:** Story: the mystery continues beyond Volume 2
+
+## 78. Beneath the Crimson Moon
+*Location: Muxue · a terrace beneath the crimson moon*
+
+VOLUME 2 FINALE (comic 039). The mystery beneath the mountain remains unanswered, but tonight Xiyu wants to think about something else. On a terrace beneath the crimson moon she finds Cangyuan awake too; with him, silence does not feel like an absence, sometimes it feels like room to breathe. She tells him she has spent too long wondering what her choices meant to other people, what she owed them, what they expected, whether choosing herself would make her cruel, and now thinks she can care about someone without belonging to them. Understanding something and being ready to live by it are different things, but she is ready to make a choice tonight. He tells her he wants her too, but needs to know it is what she wants, not something she feels she must prove to herself: "I'm not proving anything. I'm choosing." No spell chose for her and no promise was made on her behalf; this time she knew what she wanted and stepped toward it herself. They spend the night together, and neither has to pretend they feel nothing; desire does not erase uncertainty or promise that tomorrow will be easy. "I don't know what this will become." "Neither do I. I'd rather discover it with you than invent an ending before we've lived it." For once, Xiyu did not reach for magic to change what she felt. She simply chose the person beside her. Dongyue remains her friend, crewmate and ally.
+
+**Key events:** "Still awake?" · "I'm not proving anything. I'm choosing." · No spell chose for her. · The relationship option opens.
+
+**Opens:** Volume 2 complete; Relationship option: Xiyu and Cangyuan (Crimson Thread Resonance); Dongyue: friend, crewmate and ally
+
+
+---
+
+# Volume 3
+
+## 79. After the Crimson Moon
+*Location: Muxue · a bedchamber at dawn*
+
+VOLUME 3 (The Roots of What Remains), COMIC 001. The crimson moon has faded, but the choice Xiyu made beneath it remains. She has spent so long making sure no one could leave her with anything to lose, and last night she was the one who chose to stay. Cangyuan has been awake a while, giving her time to decide whether she wanted company. He tells her he wants last night to mean something and will not pretend otherwise; she says she does not want him to mistake it for a promise she has not made, and he says he will give her time, because he would rather know the truth than be comforted by a lie. She admits she does not know what they will become and is still learning what it means to want someone without fearing what she will lose, but she does not regret choosing him. She asks him to ask for what he wants instead of deciding what she can bear; he asks the same of her. They agree on a mutual understanding, and then on breakfast. Beyond Muxue, old disturbances have not forgotten how to grow, and something beneath the mountain remains unfinished.
+
+**Key events:** The morning after. · "I won\'t pretend otherwise." · "A promise I haven\'t made." · A mutual understanding, and breakfast.
+
+**Opens:** Volume 3 begins
+
+## 80. The Things Left Unsaid
+*Location: Muxue · breakfast on the terrace*
+
+VOLUME 3, COMIC 002. Over breakfast Cangyuan asks why she asked him to stay: because she wanted him there. He wants to know whether he believes she knew that herself, and she says last night was not a desperate attempt to keep someone beside her. There were times she wanted someone only because she could not bear another person leaving; this was a different thing. He tells her he knows how to wait and is less practiced at telling someone why he is waiting. She asks one thing of him: when he discovers something dangerous, he should not decide alone that keeping it from her is the kindest choice, and stop confusing protection with deciding for her. He answers that he will not promise never to make a mistake but will try to tell her when he is afraid instead of disguising it as certainty, and he will try to ask what she is hiding before assuming she does not trust him. A messenger\'s talisman slips in carrying a familiar, altered fluctuation: he recognizes the pattern, not its source. The disturbance has changed: something is moving through it, and they agree to find out before deciding what it means. For once neither tries to solve the danger alone.
+
+**Key events:** "Why did you ask me to stay?" · "Stop confusing protection with deciding for me." · A messenger\'s talisman. · Neither solves it alone.
+
+## 81. A Disturbance Returns
+*Location: The ruins*
+
+VOLUME 3, COMIC 003. Back at the ruins, the signal has disappeared, but the disturbance has not: something is interrupting the flow, though not like a natural fracture. The channels are still connected, yet the energy does not travel through them evenly, and what remains feels strained, like a wound forced to close before it can heal. They agree not to pour more energy in, and note that no single person could read the whole formation: each sees a different part of the problem. Xiyu starts to reach for the connection and Cangyuan stops her ("Don\'t sever it!"): cutting it might stop the pressure and destroy the only trace of where it leads, but if the pressure builds again they may have no time to investigate, so they decide to prepare a way to contain it before the next pulse and to make any harder decision with evidence, not fear. Xiao Tian notices that a mark was not made by the collapse: the dust has settled inside but not across the edge, so something scraped it after the stone was already there. He thinks he has seen something like it before, and a fleeting image crosses his mind and vanishes. They agree to document it before touching anything.
+
+**Key events:** The signal disappears; the disturbance does not. · "Like a wound forced to close." · "Don\'t sever it." · A scrape made after the stone was there.
+
+**Opens:** Investigation: the ruins revisited
+
+## 82. The Familiar Trace
+*Location: The ruins · the inner chamber*
+
+VOLUME 3, COMIC 004. The scrape continues beneath a broken edge, and the debris settled around it rather than over it, so it was made before the stone shifted or afterward. It is not a natural fracture: the edges are too even and the direction is deliberate, toward the inner chamber, so whatever made it was taken inside or brought out. Xiao Tian finds a piece of metal wedged into a formation channel: the formation reacts when it is disturbed, and if it was placed deliberately, moving it might change the flow, so they agree to record its position before removing it. As he reaches for it he is struck by a flash: a sound, a buckle, someone dragging something. He does not remember the person but remembers the feeling: he was afraid of whoever was carrying that metal. He says it may be a memory or his mind making sense of what he is seeing, and they decide not to force an answer out of it and to preserve the evidence and let the facts speak first. After the fragment is removed the current is steadier, either because it no longer presses on the channel or because they changed the balance; they cannot tell which yet. Xiao Tian wants to know what happened, not just find someone to blame. The groove continues deeper into the ruins: "We follow the mark. Together."
+
+**Key events:** A scrape that is deliberate. · Metal wedged in a channel. · Xiao Tian: a sound, a buckle, someone dragging something. · "We follow the mark. Together."
+
+**Opens:** Fieldwork: the metal fragment
+
+## 83. A Memory Without a Name
+*Location: The ruins · a sealed passage*
+
+VOLUME 3, COMIC 005. The groove leads deeper into the ruins, ending not at the wall but at an opening; the edges are too even for a natural fracture, so something was deliberately moved through here, or something concealed a mechanism. As Xiao Tian steps on the stones he hears a scrape and stops: a metallic scrape, a golden buckle, someone falling, a voice. He tells them he was somewhere else, in a corridor, with someone behind him; he remembers falling, the sound of a weapon striking stone, and being afraid that if he turned around he would see someone he knew, but he cannot see their face. Dongyue tells him not to force it; Xining asks if he wants to stop. He wants to keep going: he is not sure about anything he remembered but is sure he wants to find out what happened, and he does not want his fear to make every decision for him. They find that the mechanism has been sealed a long time, but the energy behind it is not entirely dormant, and someone altered the stone after the original mechanism was built. A small notch may have fitted into a larger mechanism, or the fragment may simply have broken off something else, so they decide not to force it into the recess. The memory has given Xiao Tian no name, only a sound, a flash of gold and the certainty that someone fell.
+
+**Key events:** An opening, not a wall. · "A metallic scrape. A golden buckle. Someone falling." · "I don\'t want my fear to make every decision for me." · A notch, and a sealed mechanism.
+
+**Opens:** Fieldwork: a memory without a name
+
+## 84. The Road Beyond the Ruins
+*Location: The ruins*
+
+VOLUME 3, COMIC 006. Xiyu says they could force the mechanism; Cangyuan notes she said could, not should, and that he is learning from her; they agree to leave it alone and decide what comes next. The flow is steadier than when they arrived, but the underlying damage remains, so removing the fragment changed the pressure without repairing the formation. They have evidence of interference but not its purpose, and do not know whether the sealed passage caused the damage or was sealed because of it. Xiao Tian\'s flash returns ("Still no face") and Dongyue tells him he need not keep searching today; Xiao Tian wants to know what happened to his master and his martial brothers, not just chase the first person who looks suspicious. He may not remember who he was, but he can decide what kind of person he wants to be while he finds out. Cangyuan raises a possibility he had not mentioned: the seal may be containing something rather than hiding it, and Xiyu answers that she can decide what to do with the information. They have three things to investigate: the altered channels, the concealed passage and the fragment. They also need to compare the formation with records from other sites, which means older cultivation records and someone who understands how these formations were built. Dongyue knows of a few places that might hold useful records, one in Yilong, but they do not yet know whether they will need to go there: Yilong is a possibility, not the next destination. For now.
+
+**Key events:** Could, not should. · Xiao Tian: "I can decide who I want to be." · "The seal may be containing something." · Yilong is a possibility.
+
+**Opens:** Story: Yilong is mentioned as a source of records
+
+## 85. The Wound Beneath the Formation
+*Location: The ruins*
+
+VOLUME 3, COMIC 007. The ruins have yielded evidence but no answers, so they begin with what they can prove: someone interfered, but not why. The damage is not evenly distributed: some channels were weakened while others remain intact, which natural deterioration would not do, though they should not call it deliberate until they understand how the formation was originally built. Xiao Tian\'s flash returns ("Still no face") and Xining says they will record what he remembers, not what they think it means; Xiyu notes that the energy follows the original channel and then abruptly bends away, and Cangyuan that the channel may have been altered to appear that way. Dongyue feels a second fluctuation beneath the damaged channel: a surviving formation, or residue from something that passed through it. They decide not to activate it until they know which, to leave the sealed passage alone, and to inspect the outer network without disturbing the seal. On the map they find a channel that was not on the first survey, leading away from the central ruins: either they overlooked it, or someone made sure they would not see it. The ruins have yielded another question, and this time the answer lies outside the sealed door.
+
+**Key events:** What they can prove. · The damage is uneven. · A second fluctuation. · A channel that was not on the first survey.
+
+**Opens:** Investigation: the outer network
+
+## 86. The Quiet Between Heartbeats
+*Location: The ruins · a quiet morning*
+
+VOLUME 3, COMIC 008. Beyond the sealed passage the old formation continues into places no surviving map can explain. Cangyuan finds Xiyu quiet that morning and asks if it is a problem; she says she was wondering whether she was becoming too accustomed to standing beside him, and he answers only if she begins to mistake familiarity for certainty. She asks him to keep asking and not to decide what she feels just because he hopes he knows. Xining watches Dongyue drink the tea she gave him and notes he has been examining records all morning; she says he notices everyone except himself, and he answers "Then let someone notice you, too." Xiao Tian has a memory in the hands: he saw someone training him and thinks it was his master. He is afraid the next memory will be worse, and Dongyue tells him he need not do it alone. Back at the stone Xiyu and Cangyuan find the same branching pattern and note that this mark is older than the damage around it: the network existed before someone altered the formation, which is what it suggests, and he is being careful, learning from a demanding teacher. They had found no name, no culprit and no complete answer, but trust, like memory, could return in fragments.
+
+**Key events:** "Don't decide what I feel because you hope you know." · Tea, and a quiet turn. · A memory in the hands. · The same branching pattern.
+
+**Opens:** Investigation: the same pattern
+
+## 87. Fragments That Still Speak
+*Location: An overgrown terrace*
+
+VOLUME 3, COMIC 009. The newly discovered channel leads to an overgrown terrace where the ruins speak in fragments. It is the same three-channel pattern, and the mark is older than the damage around it, so the network existed before someone altered the formation. Cangyuan tells Xiyu she is being careful and she says she is trying to learn from a demanding teacher. Dongyue notices Xining has been writing all morning; she says he has been examining records just as long, and that sometimes she thinks he notices everyone except himself; "Someone has to notice you." "Then let someone notice you, too." The fragment must have come from this network, which means someone had access to both places. A memory fragments through Xiao Tian\'s mind, distant but distinct: hands, a blade, someone showing him how to hold it, and it slips away before he sees their face. "Was that... my master?" Dongyue tells him he need not force it, that memories return when they are ready and not when they are demanded, and he says he is afraid the next one will be worse; they will face it together. They compare the mark with the fragment and confirm the connection between the two sites: still no name, still no motive, but with each fragment of evidence their bond grows stronger.
+
+**Key events:** The same three-channel pattern. · "Then let someone notice you, too." · A blade, and hands that taught him. · The two sites are connected.
+
+**Opens:** Investigation: the network predates the alteration
+
+## 88. The Mark Beneath the Silence
+*Location: The ruins · the terrace*
+
+VOLUME 3, COMIC 010. One mark could be an accident; two could be a pattern, but a pattern alone could not reveal the hand that made it. The grooves are cleaner beneath the dust, so someone may have covered them after the stone was carved, or the dust settled differently there. Xiyu refuses to let either of them become so attached to an answer that they stop seeing the truth, and Cangyuan asks her to remind him if he does. Dongyue and Xining compare the two sites: the spacing is almost identical, but the third channel is narrower, so either the design changed or this mark served a different purpose, and a shared design does not necessarily mean a shared function. A memory fragments through Xiao Tian's mind: "Again. Don't watch the blade. Watch the shoulder." His master's hand, steady and familiar; "I wasn't only running from something. I was learning how to stand." He tells Dongyue that most of what he remembers feels taken from him, but this felt like something he was given. Two locations, the same design, different details: enough to justify looking for another.
+
+**Key events:** One mark, or a pattern. · The third channel is narrower. · "Watch the shoulder." · Enough to look for another.
+
+**Opens:** Investigation: two sites, one design
+
+## 89. The Third Channel
+*Location: The pavilion · the three channels*
+
+VOLUME 3, COMIC 011. The pattern appears again beneath the pavilion, and this time one of its channels has nowhere left to go. The other channels weathered naturally; this edge is different, too clean. It could be a deliberate cut, but a clean break does not say when or why, and Cangyuan lets himself stay uncertain a little longer. A memory fragments through Xiao Tian's mind: a corridor, the sound of a blade scraping against a wall, his hand pulling someone backward, his body moving before he thought about it: "Was I protecting someone, or trying to escape?" Dongyue tells him the body can retain habits but they should not use that alone to decide what happened to him; "At least I know I wasn't helpless." "You still aren't." The stone around the cut shows no obvious collapse, so the damage may have been made before the structure weakened, but they must compare the residue first. The same design is repeated in different places with a missing connection: someone may have severed it, or the network may have been built in stages. They need another site to tell the difference. The third channel ended where the evidence began.
+
+**Key events:** The pattern again. · A cut that is too clean. · "Was I protecting someone, or trying to escape?" · The missing connection.
+
+**Opens:** Investigation: the third channel
+
+## 90. The Residue That Remained
+*Location: The standing stones*
+
+VOLUME 3, COMIC 012 (revised). The party reaches the place from the reports: a circle of standing stones in the snow. The formation is still here, but it looks disturbed. Xiyu finds spiritual residue on the ground, faint but not faded. It is structured, as if part of a formation that is still active; Dongyue says it is not a remnant of the past, something is still maintaining it. Xiao Tian has a flash of memory: a familiar movement, a voice telling him to adjust his stance, but he still cannot see the man's face. Then the energy increases, the formation becomes unstable and surges: "Everyone, step back!"
+
+**Key events:** The standing stones in the snow. · Structured residue: the formation is still active. · A familiar movement, a voice, no face. · "Everyone, step back!"
+
+**Opens:** Discovery: the formation is still active
+
+## 91. The Formation Stirs
+*Location: The standing stones*
+
+VOLUME 3, COMIC 013 (revised, BATTLE). The next day the residue is stronger: something on the outside is influencing the formation. Cangyuan reads its structure as intact but affected by an external force; Dongyue sees the energy converge, then disperse, which is not natural. Xining warns that the air is heavier and the reaction is growing. A manifestation rises from the stones: a beast of spiritual energy. Dongyue calls everyone to their positions; Xiyu says not to let it break the pillars; Xiao Tian warns it may not be the only one and Xining supports from the rear.
+
+**Key events:** Something outside is influencing the formation. · A beast of spiritual energy rises from the stones. · "Everyone, to your positions!" · "Don't let it break the pillars!"
+
+**Opens:** Battle: the first manifestation
+
+## 92. The Standing Stones Awaken
+*Location: The standing stones*
+
+VOLUME 3, COMIC 014 (revised, BATTLE). The party reaches the ancient standing stones, where the air itself seems to stir; the sealed formation, dormant for many years, is reacting violently. The energy is spreading beyond the formation, faster than before; it is no longer just reacting, it is awakening. Dongyue says the place has been sealed a long time but its core is still responsive; Xining feels the air press on body and mind. A larger manifestation rises overhead and targets the centre of the formation. Dongyue orders everyone to hold their positions and stabilise the inner circle; Xiyu says not to let it break the pillars; Cangyuan watches the outer side; Xining prepares a healing barrier; Xiao Tian flanks it to draw its attention.
+
+**Key events:** The formation, dormant for years, reacts violently. · "It isn't just reacting anymore. It's awakening." · A manifestation targets the centre. · "I'll flank it! Try to draw its attention!"
+
+**Opens:** Battle: the awakened manifestation
+
+## 93. The Page That Was Torn Away
+*Location: The temple library*
+
+VOLUME 3, COMIC 015 (revised). The party examines the ancient records left in the temple. The standing stones form the core of a multi-layered formation that channels surrounding spiritual energy and suppresses unstable forces gathering in the region; it has protected the area for many years, preventing demonic influence from spreading beyond these mountains. If it weakens, those suppressed forces will gradually surface again. The formation is still functional, but part of it was damaged, which caused the recent disturbance. To fully restore it, they need a key component kept outside the temple, stored at an estate to the north. An old man explains the estate served as secure storage for important formation components and was sealed and abandoned after a past conflict, but the component should still be there. They agree to prepare and leave at first light.
+
+**Key events:** The standing stones are the core of a multi-layered formation. · "If the formation weakens, those suppressed forces will gradually surface again." · A key component at an estate to the north. · "We leave at first light."
+
+**Opens:** Discovery: the formation's purpose; Lead: the estate to the north
+
+## 94. Guiding the Inner Circle
+*Location: The standing stones*
+
+VOLUME 3, COMIC 016 (revised). The inner circle begins to stabilise and the party takes the chance to guide the remaining energy. Dongyue directs the north, Cangyuan anchors the centre, Xiyu regulates the flow and heals any backlash, and Xiao Tian watches the west and keeps the outer layer in check. Four paths, one destination: the scattered energy converges and slowly returns to its place. Everyone's condition is stable for now and the formation holds. The inner circle stabilised, but the energy was still deep; they needed to continue guiding it carefully until the final layer awakened.
+
+**Key events:** Four paths, one destination. · "I'll anchor the center." · "Maintain the rhythm. Don't force it." · The inner circle stabilises, but the energy is deep.
+
+**Opens:** Moment: the party stabilises the inner circle
+
+## 95. The Guardian's Challenge
+*Location: The estate*
+
+VOLUME 3, COMIC 017 (revised, BATTLE). At the estate the mechanism activates and a massive defensive construct rises from its depths. Xiyu will restrain its movements and focus on the core; Cangyuan will bind its spirit and slow its attacks; Dongyue will disrupt its structure and target the exposed points when an opening appears; Xining supports everyone and watches for new mechanisms; Xiao Tian will draw its attention. In the heat of the battle Xiao Tian instinctively uses a combat movement he has seen before, and the familiar movement creates an opening. The party defeats the guardian and disables the mechanism. Among the recovered objects they find a component that fits the disturbed formation, and decide to return it to its original location.
+
+**Key events:** A massive defensive construct rises. · "I'll draw its attention. When it strikes, I'll create the opening!" · A familiar movement creates an opening. · The missing component.
+
+**Opens:** Battle: the estate guardian; Discovery: the missing component
+
+## 96. The Formation Restored
+*Location: The standing stones*
+
+VOLUME 3, COMIC 018 (revised). The component recovered from the estate is brought back and returned to its original place. With it in place the scattered energy converges and the formation's function is fully restored: the turbulence subsides and the protective barrier begins to operate again. The local danger has been contained, at least for now. The formation's full history is still unknown, but they have prevented further manifestations; whoever removed the component did so for a reason, and they leave the deeper mysteries for another time. Xiao Tian: "I can still hear my master's voice... watch the opening, not the weapon. I don't remember his face, but the memory feels real." The party leaves the standing stones with the immediate threat resolved; Xiao Tian continues his journey, his memories returning in fragments, on their own.
+
+**Key events:** The component is returned to its place. · The barrier begins to operate again. · "Watch the opening, not the weapon." · The formation is restored; its history remains a mystery.
+
+**Opens:** Resolved: the local danger
+
+## 97. Echoes After the Battle
+*Location: Camp near the standing stones*
+
+VOLUME 3, COMIC 019 (revised). After the formation is restored the party makes camp near the standing stones to rest. The night is quiet at last, but traces of the disturbance linger in their hearts. Xiao Tian cannot quiet his mind: "I can still hear my master... telling me to adjust my stance." The movements feel familiar, like something he once knew well, but when he tries to see his master's face it slips away like mist. The others reassure him: it is natural for old memories to surface, he does not have to force himself, and he can tell them when he is ready. "I remember a voice. I remember the feel of a sword in my hands. But I don't know what happened after. There's a boy... running... falling..." Dongyue: "Your past does not define you. What matters is who you are now, and who you choose to become." Xiyu: "You're not alone in this. Whatever comes back to you, we'll face it together." The memories are still incomplete, but no longer feel as distant. The group prepares to leave after a short rest, carrying new questions but a stronger bond than before.
+
+**Key events:** Xiao Tian cannot quiet his mind. · A master's voice, and a face that slips away like mist. · "There's a boy... running... falling..." · "Whatever comes back to you, we'll face it together."
+
+**Opens:** Memory: a voice, a sword, a boy running and falling
+
+## 98. A Quiet Question
+*Location: Camp near the standing stones*
+
+VOLUME 3, COMIC 020 (revised). The night after the battle the group camps near the standing stones. The danger has passed, but their thoughts are far from quiet; with no immediate threat they finally have time to speak openly. Dongyue asks Xiao Tian if he is unwell: "I'm fine. Just... thinking. The voice I heard keeps returning. It feels so real, but everything else is a blur." Xiyu: it is natural to feel unsettled after a memory resurfaces, and he does not have to force himself. Cangyuan: memories can be fragmented; forcing them may cause more pain, so let them come on their own terms. Xining: if the memories bring distress, tell us; you do not have to carry this alone. Xiao Tian: "I'm afraid... What if I remember something that changes who I am now? What if I'm no longer the person you guys know? But at the same time... I want to know. I feel like there's someone I should find, or something I need to do." Dongyue: "Who you were in the past does not take away who you are now. Whatever you remember, we will still be here." Xiao Tian, turning a small triangular token in his fingers: "Then... I'll keep going. I won't push for answers, but I won't run from them either. When the time comes, I'll be ready." The group sits together until the fire burns low. A faint voice remains in Xiao Tian's heart, waiting for the right moment to speak again.
+
+**Key events:** "What if I'm no longer the person you know?" · "I want to know. I feel like there's someone I should find." · "Whatever you remember, we will still be here." · "I won't push for answers, but I won't run from them either."
+
+**Opens:** Moment: Xiao Tian's quiet question
+
+## 99. Not a Puzzle
+*Location: A quiet mountainside*
+
+VOLUME 3, COMIC 021 (revised). Days after the formation was restored the group continues its journey and camps on a quiet mountainside. The immediate danger has passed, but the road ahead remains long. Xiao Tian: "Sometimes I wish I could remember more." Dongyue: "It's all right to feel that way. But you don't have to rush." Xiyu: "You are not a puzzle to be solved. Whatever you remember or forget, you are still you." Cangyuan: "If the memories bring you pain, we won't force it. We face what comes, together." Xining: "There can be pieces you keep for yourself. You can tell us when you are ready. Or not at all. That's your choice." A familiar voice still lingers in his mind, but the full memory remains out of reach. "I'll keep going. I want to know the truth someday. But for now, I'll take it one step at a time." With their bond stronger the group rises at dawn and continues; some questions can wait.
+
+**Key events:** "Sometimes I wish I could remember more." · "You are not a puzzle to be solved." · "You can tell us when you are ready. Or not at all." · "One step at a time."
+
+**Opens:** Moment: 'You are not a puzzle'
+
+## 100. A Name Almost Remembered
+*Location: A quiet mountainside*
+
+VOLUME 3, COMIC 022 (revised). The group camps by a quiet mountainside and allows itself to rest, but Xiao Tian's mind will not stop circling a familiar voice. "A familiar voice... A movement I learned long ago. It feels like it's part of me, but I still can't see his face." He remembers a hand adjusting his stance and a firm voice teaching him to breathe, to focus, to move with intention: "Again... Keep your stance. Let your breath settle." The movements feel familiar, but when he tries to see the man's face it slips away like mist. A name rises: "Feng..." The party reassures him: he only remembers the voice and how to move, not the face or what happened after, and that is still important; he does not have to force the rest, the past does not define him, what matters is who he chooses to be now. The name lingers on his tongue, clear yet out of reach: Feng. It feels undeniably his, but does not return completely. He chooses to let the fragments remain and to continue with the others; the name will come when it is ready.
+
+**Key events:** A hand adjusting his stance. · "Again... Keep your stance. Let your breath settle." · "Feng..." · The name will come when it is ready.
+
+**Opens:** Memory: the name Feng
+
+## 101. The Things We Carry
+*Location: A quiet mountainside*
+
+VOLUME 3, COMIC 023 (revised). After leaving the standing stones the group camps on a quiet mountainside; the road is long, but for the first time in a while the air feels lighter. Xiyu: "We all carry things we cannot let go of. But we don't have to carry them alone anymore." Xiao Tian: "Sometimes I'm afraid... that what I remember will change who I am now." Dongyue: "No matter what you remember, you are still you. The past may explain a part of your story, but it doesn't define your future." Cangyuan: "Memories can be a burden, but they can also be strength. When the time is right, we will face whatever comes, together." Xining: "We should take things one step at a time. Rest, heal, travel, and learn. The answers will come when they are meant to." Xiao Tian: "I still don't remember everything. But I've decided not to run from it anymore. When the time comes, I'll be ready to know the truth." They share a simple meal, warm tea and quiet company; each carries something from the past, a wound, a promise, a question. They set out at first light, without all the answers but with each other.
+
+**Key events:** "We don't have to carry them alone anymore." · "What I remember will change who I am now." · "I've decided not to run from it anymore." · They have each other.
+
+**Opens:** Moment: the things they carry
+
+## 102. A Stance Remembered
+*Location: A small inn at the edge of the mountain path*
+
+VOLUME 3, COMIC 024. The morning after their rest the group camps near a small inn at the edge of the mountain path, and with no immediate danger Xiao Tian returns to his practice. He begins with a familiar stance, a basic movement he has practised a thousand times, but his body stiffens, he grips too tightly and loses the flow. He pauses, closes his eyes and lets a memory surface: a familiar voice, a steady hand correcting his foot placement. The face remains hidden, but the instruction feels real. He adjusts his footing, lets his breath settle and moves again, clean and steady. Dongyue: "Your hands remember the sword. Give the rest of you time to catch up." Xining: "Again, only if you want." The memory did not return. The movement did. For today, that was enough.
+
+**Key events:** A familiar stance, and a body that stiffens. · A steady hand correcting his foot placement. · "Your hands remember the sword." · The memory did not return. The movement did.
+
+**Opens:** Memory: a steady hand correcting his footing
+
+## 103. The Weight of the Blade
+*Location: A clearing near a small inn*
+
+VOLUME 3, COMIC 025. A few days after the formation was restored the group camps in a quiet mountainside near a small inn and devotes time to rest and heal. Xiao Tian repeats the sword sequence he has regained, but his wrist trembles and he overcompensates and nearly loses his balance. Dongyue: "You're forcing strength. The movement should flow, not fight against it. Try this: keep your center low, let your breath guide the movement. Don't think of power. Think of continuity." The memory returns in fragments, a hand adjusting his stance, a steady voice correcting him, but the face remains unknown. "I remember the correction. Not the man." "Then begin with what you remember. You don't need every answer now. Just let your body keep what it knows." He repeats the sequence again and again, smoother and steadier. His body carried lessons his mind could not yet name.
+
+**Key events:** His wrist trembles and he nearly loses his balance. · "Don't think of power. Think of continuity." · "I remember the correction. Not the man." · His body carried lessons his mind could not yet name.
+
+**Opens:** Memory: the correction, not the man
+
+## 104. The First Clean Movement
+*Location: The clearing*
+
+VOLUME 3, COMIC 026. Xiao Tian returns to the clearing before the others wake. His body remembers the beginning of the form, then loses the rhythm. "Why can I remember the movement but not the lesson?" Dongyue, sitting on a rock nearby: "You don't have to recover it all at once." This time he stops chasing the memory and pays attention to his own balance, and the movement is clean. "That one felt right." "Then remember how it feels, not what you think it should mean." For the first time, progress did not depend on remembering. It depended on beginning again.
+
+**Key events:** His body remembers the start of the form, then loses the rhythm. · "Why can I remember the movement but not the lesson?" · "That one felt right." · Progress depended on beginning again.
+
+**Opens:** Moment: the first clean movement
+
+## 105. The Name He Can Carry
+*Location: The clearing*
+
+VOLUME 3, COMIC 027. After days of practice the group prepares to continue their journey; the morning air is calm, but something within Xiao Tian has shifted. As he moves through the familiar sequence a name surfaces, faint at first, like a breath in the wind: "Feng... Xia..." The name feels warm. It belongs to him. He still cannot see his teacher's face, but he remembers the feeling of being guided, a reminder that he was once someone worth teaching. It is not a complete memory, but enough to no longer feel like a stranger to himself. He no longer wants to run from the fragments; he will accept the name that returned to him. Dongyue: "Feng Xia... It suits you. It carries both strength and gentleness." Xiyu: "A name is more than a label. It is a bridge between who you were, who you are now, and who you choose to become." "We're with you, Feng Xia. You don't have to face the past alone." For now, Feng Xia chose to walk forward: the memories may still be incomplete, but the name was real, and it gave him a place to stand.
+
+**Key events:** A name surfaces, faint as a breath in the wind: "Feng... Xia..." · "It was not a complete memory, but it was enough." · "A name is more than a label." · "We're with you, Feng Xia."
+
+**Opens:** Xiao Tian recovers the name Feng Xia
+
+## 106. More Than a Name
+*Location: The clearing*
+
+VOLUME 3, COMIC 028. Another day passes in quiet practice and the group prepares to leave the mountain. Xiao Tian sits alone in the clearing watching the morning light; the movements no longer feel foreign, they are becoming part of him again. He still cannot remember his master's face or the full truth of what happened, but the sword in his hand no longer feels like a stranger's weapon. The name Feng Xia lingers in his heart like a steady flame: no longer just a word from a dream, but a name he can choose to live with. Dongyue: "You've made great progress. You don't need to remember everything to be strong again." "I know. I'm not trying to force the memories anymore. For now, I will walk as Feng Xia." Xiyu: "Then that name belongs to you. Not to your past. To who you are today." Xining: "A name can be a beginning again. It can carry both what was lost and what you wish to become." Cangyuan: "The past isn't gone just because you don't remember it. But it also doesn't determine you. You choose the next step." Surrounded by his companions, Feng Xia no longer feels like a broken person waiting for answers. There are still blank spaces in his past, but for the first time in a long while he is not afraid of them. The name is no longer a question; it is a promise, to keep going.
+
+**Key events:** The sword no longer feels like a stranger's weapon. · "For now, I will walk as Feng Xia." · "You choose the next step." · The name is a promise to keep going.
+
+**Opens:** Moment: Xiao Tian walks as Feng Xia
+
+## 107. A Step Forward
+*Location: The mountain path*
+
+VOLUME 3, COMIC 029 (end of Volume 3). After days of practice the group prepares to leave the mountain, and this time Xiao Tian walks with steadier steps. He no longer forces his memories and focuses on what he can do in the present; the movements that once felt heavy now flow naturally. "I still cannot remember everything. But I no longer feel that something is missing from me." Dongyue: "That is enough. You do not need to have all the answers right now." Cangyuan: "The past will come in its own time. Until then, we walk this path together." Xiyu: "Whether you are Xiao Tian or Feng Xia, you are still you. And you are not alone anymore." The five of them choose to walk forward together. The memories may still be fragmented, the truth still shrouded in mist, yet Feng Xia has already taken back something far more important: a name he could carry, a body he could trust, and companions who believed in him. Their journey continues, new lands await, and the truth of the past will one day be revealed. Volume 3 is a story of recovery: not every wound requires an immediate answer, and not every memory needs to return in order to move forward.
+
+**Key events:** He walks with steadier steps. · "I no longer feel that something is missing from me." · "Whether you are Xiao Tian or Feng Xia, you are still you." · "A name he could carry. A body he could trust."
+
+**Opens:** Volume 3 complete: the five walk forward together
+
+
+---
+
+# Volume 4
+
+## 117. The Empty Room
+*Location: The residence · Yan's room*
+
+VOLUME 4, COMIC 001 (a month after Volume 3). A month has passed since the name Feng Xia returned to Xiao Tian, and the group has settled into a brief period of rest after their recent troubles. When Xiyu goes to Yan's room, she finds it conspicuously empty. On the table lies a letter addressed to her, sealed in red wax. It reads: "Xiyu, There is something I must face at the Ice Temple. Do not follow me. I have kept much from you already, and I cannot ask you to understand before I have given you the truth. Forgive me for leaving without a word. If I return, I will answer your questions. — Yan." "You still think you can decide what I should know." "Father... You disappear for years, leave me with unanswered questions... and now expect me to wait?" She gathers the others and tells them about the letter: "Yan has gone to the Ice Temple. He told me not to follow." "And you intend to do the opposite?" "Naturally." "The Ice Temple is no ordinary ruin. If he went alone, he may have believed no one else should be involved." "Then we should leave before his trail grows cold." "That is precisely why I'm going." They prepare supplies for the journey, knowing the road ahead would be dangerous. The Ice Temple had kept its secrets for two thousand years; this time, Xiyu would not turn back.
+
+**Key events:** A month later. · An empty room. · Yan's letter: "Do not follow me." · "That is precisely why I'm going."
+
+**Opens:** Volume 4 begins; Lead: Yan has gone to the Ice Temple
+
+## 118. The Changed Guard
+*Location: The Ice Temple gates*
+
+VOLUME 4, COMIC 002 (revised). Following the letter, the party arrives at the Ice Temple. The place remains grand and unchanged, yet the guards and the atmosphere feel different. Xiyu: "I am Muxue Xiyu. I am the daughter of Master Muxue Yan. We have come following his letter." The guard commander greets her but says the current command follows strict protocols and certain matters must be confirmed. Xiyu asks whether her father has been here recently and whether they know where he is. Master Muxue has not returned to the temple and they have received no recent communication from him; the four former commanders are also away, having left some time ago on an important mission and not returned. Xiyu then asks about a young man named Ya'Xing. There is indeed an injured person being treated within the temple, and from the description they believe it is him, but they do not know the exact location: for security reasons his treatment area is handled by a separate team, and only the acting commanders and designated personnel know the details. Xiyu: "Please lead us to the acting commanders. We wish to speak with them and follow the proper procedures to locate Ya'Xing."
+
+**Key events:** The guards and the atmosphere feel different. · "I am the daughter of Master Muxue Yan." · Yan has not returned; the four former commanders are away. · An injured young man, treated by a separate team.
+
+**Opens:** Lead: the acting commanders
+
+## 119. The Injured Stranger
+*Location: The temple's treatment quarter*
+
+VOLUME 4, COMIC 003 (revised). With only limited information the party continues the search. A masked guard says the earlier guards informed her of their arrival and that, although the temple is under heightened security, she will guide them to the last recorded location: a secluded chamber beneath the main hall. They pass through inner corridors and several guarded sections to a quiet treatment quarter, where they find Hoko. Xiyu: "You're Hoko. It seems your injuries have healed." Hoko: "Mostly. The mountain wind sent me flying even when I helped you earlier. It took some time to recover." He offers to help: Ya'Xing was seen near the eastern wing three days ago, heading toward a restricted section. The path is not straightforward, with ancient defences and shifting corridors; he can show where the trail likely leads, but they must be prepared, since it is not a place for casual visitors. "Lead the way, Hoko." With his guidance they head for the eastern wing, but as they proceed they meet an ancient defence that blocks their way.
+
+**Key events:** A masked guard leads them to the treatment quarter. · "You're Hoko. It seems your injuries have healed." · Ya'Xing was seen near the eastern wing three days ago. · "Lead the way, Hoko."
+
+**Opens:** Lead: the eastern wing
+
+## 120. The Path Beneath the Ice
+*Location: The eastern wing corridors*
+
+VOLUME 4, COMIC 004 (revised). With Hoko's guidance the party heads for the eastern wing. Hoko visited the temple before and remembers part of the route; the layout can be confusing, so they should stay close and follow his lead. Some sections remain the same, but the inner corridors can shift when the defences awaken, so they should move quickly before more mechanisms activate. Through towering corridors of ice carvings and ancient runes the air grows colder and the temple quieter, as if holding its breath. A corridor should lead to a junction near the eastern wing; the runes look recently disturbed, and the flow of spiritual energy is not stable: something or someone passed through not long ago. They find footprints in the snow and faint marks along the floor. As they approach the next section Hoko discovers an ancient mechanism that should be inactive yet is already activated: "It wasn't active when I was here."
+
+**Key events:** "The inner corridors can shift when the defences awaken." · Runes that look recently disturbed. · Footprints in the snow. · "It wasn't active when I was here."
+
+**Opens:** Discovery: an ancient mechanism already active
+
+## 121. The Corridor That Moved
+*Location: The eastern wing corridors*
+
+VOLUME 4, COMIC 005 (revised). Following Hoko's lead the party ventures into the corridor he remembers from his earlier visit; the runes match his memory. They find recent footprints and scattered ice: "Ya'Xing must have gone this way." The spiritual energy here is disturbed, as if someone forced the mechanism out of alignment; the formation is unstable, and the ward stone is cracked, not broken by time but forced. As they move forward the walls shift and the air grows colder: the straight corridor twists into an unfamiliar path that no longer matches Hoko's memory. Before they can retreat the corridor seals behind them, its ancient defence activating.
+
+**Key events:** The runes match Hoko's memory. · "The ward stone is cracked. It wasn't broken by time. This was forced." · The corridor twists into an unfamiliar path. · The corridor seals behind them.
+
+**Opens:** Discovery: someone forced the mechanism
+
+## 122. The First Guardian
+*Location: The corridor's end*
+
+VOLUME 4, COMIC 006 (revised, BATTLE). At the end of the corridor the party meets an ancient guardian, which activates and recognises them as intruders. Its movements are different from the one they faced before, and Xiyu says to focus on disrupting its core. One companion offers to draw its attack; Dongyue says its structure channels ice, so they need to break the flow; Xiao Tian will target its joints; Xining warns that its strikes carry frost energy; Hoko will create an opening, and when it turns they should attack the core. With their combined efforts the guardian is defeated. Beyond it a passage leads deeper into the temple, and a symbol on the wall catches Xiyu's attention. It feels strangely familiar, as if it called to her: "This symbol... It feels familiar."
+
+**Key events:** An ancient guardian recognises them as intruders. · "Its movements are different from the one we faced before." · "When it turns, attack the core." · "This symbol... It feels familiar."
+
+**Opens:** Battle: the Ice Temple guardian; Discovery: a symbol that feels familiar
+
+## 123. The Sealed Passage
+*Location: The sealed passage*
+
+VOLUME 4, COMIC 007. With the guardian defeated, the silence returns. Beyond it the party finds a route concealed by an ancient barrier: large stone doors covered in ice and runes. Hoko: "This should be the next passage. It was sealed before." The runes are similar to, but not the same as, the previous mechanism; this one responds to flow and sequence, not just force. Dongyue says the pattern suggests a cycle and they need to restore the correct sequence to open it; Xining feels residual energy in the air, since it has not been opened for a long time. Xiao Tian finds marks that someone has activated this before: "These aren't old... they're recent." Hoko: "Ya'Xing must have come this way." At the centre of the passage is a circular mechanism with frost-carved channels that guide the flow of spiritual energy in a specific order. "If we get the order wrong, it might seal again... or trigger another defence." Dongyue: "Let's study it carefully. We need to align the flow with the temple's rhythm."
+
+**Key events:** Large stone doors covered in ice and runes. · "This one responds to flow and sequence, not just force." · "These aren't old... they're recent." · "If we get the order wrong, it might seal again."
+
+**Opens:** Discovery: a mechanism that responds to sequence
+
+## 124. Beyond the Guardian
+*Location: The core mechanism*
+
+VOLUME 4, COMIC 008 (BATTLE). The party reaches the core mechanism that seals the next passage, and ancient runes light up, waiting for the correct sequence. Dongyue studies it: the runes follow a cycle of five, so the outer ring must be activated first and then the inner seals, in order. Cangyuan redirects the unstable spiritual flow to keep the structure from collapsing; Xiyu activates the sealed runes with her crimson magic, and once the flow is stable opens the first layer; Xining monitors the fluctuations and warns of a spike in the next ring; Xiao Tian holds the structure steady and opens the next seal on signal. Small sentinels come at them: Hoko says "I'll clear the smaller sentinels", and tells the others to stay focused on the mechanism. One by one the runes respond, and with a CLUNK the final seal lifts. Beyond it lies a passage colder and older than the ones before, untouched for centuries.
+
+**Key events:** "The runes follow a cycle of five." · Each of them takes a part of the mechanism. · "I'll clear the smaller sentinels." · The final seal lifts.
+
+**Opens:** Battle: the sentinels at the mechanism
+
+## 125. A Familiar Voice
+*Location: A deeper section of the temple*
+
+VOLUME 4, COMIC 009. Beyond the sealed passage the party enters a deeper section of the temple where the air is colder and heavier, as if holding echoes of the past. Dongyue: there are traces of recent activity; someone has been here not long ago. Cangyuan: the spiritual flow is disturbed, not by the temple but by a person. Xiyu finds marks that are not the temple's pattern: someone left them. Xining feels faint but recent residual energy: Ya'Xing may be nearby. Xiao Tian warns of pressure runes ahead. Hoko goes ahead to check. Deeper inside they find signs of a struggle and a cloth with a familiar symbol, a lotus, stained with blood. "He's been here." "He's alive. Let's keep moving." "We're close." "Stay alert. The temple is different beyond this point."
+
+**Key events:** "Not by the temple... but by a person." · Marks that are not the temple's pattern. · Signs of a struggle and a familiar symbol. · "He's alive. Let's keep moving."
+
+**Opens:** Discovery: a lotus symbol on a bloodied cloth
+
+## 126. The Hidden Chamber
+*Location: A hidden chamber used to confine someone*
+
+VOLUME 4, COMIC 010. Beyond the sealed passage the party finds a hidden chamber, a place used to confine someone. At its centre, chained, is Ya'Xing: "...I'm alright. Did you... find me?" Xiyu calms him: "You're safe now. No one will hurt you again." Dongyue sees signs that he was restrained, and that the bindings are not from the guardian. Xining: his physical wounds have mostly healed and are older, but he was pushed beyond his limits and is very weak; let him rest. Cangyuan: the restraints are man-made, and someone moved him and tried to get information from him. Xiao Tian: "So someone came here after we left Yilong. They knew he was important." Hoko: the bindings match the temple's older design but were modified by someone who knows this place, not the guardian. Near Ya'Xing they find traces of an attempt to extract information, and the lotus symbol again. Ya'Xing: "They asked about the inner chambers... I only knew a little... I think it was the same group. Someone with the symbol." Cangyuan: "He endured all this and still refused to speak. We need to find out who came here and what they're after. This place has more layers than we thought."
+
+**Key events:** Ya'Xing, chained at the centre of the chamber. · "You're safe now. No one will hurt you again." · Man-made restraints, modified by someone who knows the place. · "This place has more layers than we thought."
+
+**Opens:** Ya'Xing is found
+
+## 127. A Place to Rest
+*Location: A room in the temple*
+
+VOLUME 4, COMIC 011. Dongyue and Xining work together to strengthen Ya'Xing's recovery, guiding spiritual energy to mend his body and ease the lingering effects of the experiments. When he wakes he feels a power within him, a current of magic that was never there before. He used to be a deckhand with no special abilities; now his body feels lighter, his movements faster and his senses sharper. "It wasn't until now that I remember... I was a test subject. This power... it's a permanent side effect. I don't fully understand it yet... but it's real." To test his condition Xiao Tian spars with him: Ya'Xing moves with unexpected speed and agility, reflexes far beyond a normal person's. "It feels so natural. Like my body finally remembers something." Cangyuan tests him with a controlled binding spell, and to their surprise it does not take effect: he has magic resistance. "No wonder the temple's lingering magic didn't affect me as much." "I'm still figuring this out. But I'll get stronger. I'll keep going. This time, I'm not just a deckhand anymore."
+
+**Key events:** Dongyue and Xining guide energy into his body. · "I was a test subject. This power is a permanent side effect." · A binding spell does not take effect: magic resistance. · "This time, I'm not just a deckhand anymore."
+
+**Opens:** Ya'Xing wakes with new power and magic resistance
+
+## 128. The Questions They Left Behind
+*Location: The room in the temple*
+
+VOLUME 4, COMIC 012. Ya'Xing, in fragments, tells the others what his captors asked: about the inner chambers of the temple, the sealed passages, the symbols and their meaning, and whether anyone enters or leaves. "Where is the lower level? Who opened the seal? Tell us what the symbol means." When he refused to answer they used a weapon: not an ordinary blade and not ice, but something that made his body heavy and his strength meaningless. Marks appeared on his skin whenever they used it. Cangyuan says it sounds like a spiritual suppression weapon that interferes with the body's meridians and disrupts the natural flow of energy, designed for interrogation and not for killing at once, so his increased resistance would not be enough. Hoko: "So they came prepared. They knew what they were dealing with. They had information about the temple, and possibly about you." Xining: their questions focused on the inner chambers and the seal; they were likely after something inside, a person, an artefact or a way to unlock the deeper levels. Xiao Tian: "Whatever they wanted, it was worth torturing a deckhand for. They didn't kill you, which means they needed information only you could give." The temple has multiple layers and sealed chambers that have not been opened for a long time; if someone is trying to access them, they must be after something important. Ya'Xing: "I don't remember everything yet. But I'll keep trying. If I recall more, I'll tell you... Next time, I won't be captured so easily." For now they rest and stay alert: whoever they are, they may still be nearby.
+
+**Key events:** "Where is the lower level? Who opened the seal?" · A spiritual suppression weapon that leaves branching marks. · "They needed information only you could give." · "Next time, I won't be captured so easily."
+
+**Opens:** Discovery: the captors' questions and the suppression weapon
+
+## 129. The Hidden Path
+*Location: The inner library*
+
+VOLUME 4, COMIC 013. The group reaches the inner library of the Ice Temple, where rows of ancient scrolls and manuals line the hall, preserved by eternal cold. Each searches in their own way: Xiyu looks at texts on ancient clans and rituals, Dongyue at records of the temple's formations, Cangyuan at writings on the unusual spiritual fluctuations, Xiao Tian at the temple's defences and dangers ahead, Hoko at maps and exploration notes for hidden passages. Xining discovers a set of ancient healing scriptures with techniques she has never seen, which will help her grow and bring new healing abilities to the party. Xiyu notices an inscription on the wall in an old Muxue clan code: it says there is a portal on an upper floor of the temple, and only clan members would know how to read it. While moving books the group finds a book that feels different, a hidden switch behind the shelf; Xiao Tian presses it, and a low rumble echoes. A hidden door opens onto a passage leading deeper into the temple: Dongyue: "This must lead to the treasure vault." Hoko: "Let's be prepared. There could be defenses ahead."
+
+**Key events:** Rows of ancient scrolls preserved by eternal cold. · Xining finds rare healing scriptures. · "It's an old Muxue clan code. There is a portal on an upper floor." · A hidden switch behind the shelf.
+
+**Opens:** Discovery: the healing scriptures; Discovery: a Muxue inscription about an upper-floor portal; Discovery: a hidden door
+
+## 130. The Treasure Vault
+*Location: The treasure vault*
+
+VOLUME 4, COMIC 014. The hidden door leads to a treasure vault untouched by time, with ancient chests and relics preserved within layers of ice and protective formations. Hoko examines the chests and identifies the intricate locks: "Leave this to me. These are ancient locks, but I can open them." One by one the chests reveal equipment crafted with powerful spiritual energy: Xiyu a Crimson Moon Hairpin, Cangyuan Spiritweave Bracers, Dongyue a Celestial Compass Pendant, Xiao Tian Mountain-Stance Bracers, Hoko a Wayfinder's Key and exploration tools. Xining has already found her healing scriptures in the library. In the deepest chest is a magnificent sword unlike the others that seems to respond when Ya'Xing reaches for it: "It feels... different. As if it recognises me." It is Skyshard, an arcane sword crafted for a unique swordsman: it enhances speed and precise strikes, disrupts hostile spiritual techniques, amplifies his innate resistance and unlocks new arcane skills as he grows. "I can feel the power... but I still need to learn how to control it." With new equipment and knowledge the group prepares to continue their search for Yan and the four commanders. "This is only the beginning. There are still unexplored paths ahead, and the maze awaits."
+
+**Key events:** Hoko opens the ancient locks. · Each hero finds equipment crafted with spiritual energy. · Skyshard responds to Ya'Xing. · "There are still unexplored paths ahead, and the maze awaits."
+
+**Opens:** Equipment: the Treasure Vault; Skyshard found
+
+## 131. The Stairway Above
+*Location: The stairway above the treasure vault*
+
+VOLUME 4, COMIC 015. Beyond the treasure vault a staircase rises into darkness: an upper floor, a maze spoken of only in fragments. Xiyu: "So there is another level..." Cangyuan: the aura feels different from the lower temple; Dongyue: the spiritual flow above is unstable; Xining: they should stay alert; Xiao Tian: "It feels... bigger. Like the temple is watching us."; Ya'Xing: the patterns have changed, this place is a maze but not without logic; Hoko: "Look at these marks. Someone passed through earlier." Footprints are recent, more than one person, and they stop at a sealed landing with no tracks beyond. Dongyue: someone reached here but could not proceed. Xiyu: "Beyond this... we may find answers about Yan... and the four commanders." At the top the corridor splits into many paths: doors, arches and shifting shadows. The upper maze had begun.
+
+**Key events:** A staircase into darkness: the upper maze. · Recent footprints that stop at a sealed landing. · "Beyond this... we may find answers about Yan." · Many paths, doors, arches and shifting shadows.
+
+**Opens:** Discovery: the upper maze
+
+## 132. Into the Maze
+*Location: The upper maze*
+
+VOLUME 4, COMIC 016. Beyond the sealed landing the party examines the ancient mechanism: the same symbols as below, but the pattern has changed. Hoko: someone has been here before; the mechanism was activated, but not fully; the tracks stop at this landing, they could not proceed either. With the mechanism reset the path ahead opens and looks straightforward, but after walking a while they find themselves back at the same archway. Hoko: the architecture is fixed but the space is manipulated by illusion formations; distance and direction are distorted. Dongyue: the spiritual flow is layered and creates false paths; Cangyuan: the illusion is powered by a continuous flow from the temple core, and the flow reacts to movement and intent; Xining: the patterns are old but still active, so stay alert and together; Xiao Tian: the air changes ahead, something large nearby. Ya'Xing finds part of a binding restraint that matches the ones the intruders used: "They're not far ahead." A deep guttural roar echoes. Hoko: "Something big lives in this area. Stay close. We move as one."
+
+**Key events:** The mechanism was activated, but not fully. · Back at the same archway: illusion formations. · A binding restraint that matches the intruders'. · A deep, guttural roar.
+
+**Opens:** Discovery: the maze is held by illusion formations
+
+## 133. Beasts of the Labyrinth
+*Location: The upper maze*
+
+VOLUME 4, COMIC 017 (BATTLE). A growl shatters the silence and a massive spiritual beast emerges from a side passage. Xiyu: "I'll end it now!" A man steps in: Su Liechen, an independent beast hunter: "Wait. This beast can be subdued. Killing it will disturb the balance further. These beasts are being driven into a frenzy. Something deeper in the maze is manipulating them." Dongyue holds the front line, Cangyuan disrupts the beast's spiritual flow, Xiao Tian creates an opening with precise strikes, Xining tends to the injured and Hoko watches for other threats. Ya'Xing uses Skyshard to interfere with the beast's control, but the effort drains him: "Hah... I can hold it no longer..." The beast, its control disrupted, retreats into the deeper passages: "It is wounded, but it will not stay away for long. Come. We follow its trail." Liechen examines the tracks and finds signs of other people: "Another group has passed through recently. These traces are not from the temple keepers. They are likely connected to the intruders. They are not just hunting the beasts, they are after something deeper."
+
+**Key events:** A massive spiritual beast. · "Wait. This beast can be subdued. Killing it will disturb the balance further." · Skyshard interferes with the beast's control; it drains Ya'Xing. · "They are after something deeper."
+
+**Opens:** Battle: the frenzied beast; Su Liechen: first meeting
+
+## 134. The Minotaur's Domain
+*Location: A vast circular chamber*
+
+VOLUME 4, COMIC 018 (BATTLE). Following the beast's trail Liechen leads the party to a vast circular chamber, where an enormous Minotaur guards the central passage; its presence is real, not an illusion. Ya'Xing: "It's not chasing us... It's guarding the passage." Liechen: "Then we shouldn't kill it. If we can subdue it, we might learn why it's here." Its attacks are brutally physical, each strike shaking the chamber. Dongyue holds the front line, Xiao Tian targets its joints, Cangyuan disrupts its spiritual reinforcement, Xiyu attacks from range, Xining supports with healing and Hoko watches for other threats. Ya'Xing uses Skyshard to interfere with the Minotaur's magical armour, creating a brief opening, but the effort quickly drains him. Together they force the guardian into a temporary retreat. Liechen: "That's enough. It's temporarily subdued. Let's move before it recovers." Behind its position are footprints not from the temple keepers: another group went this way recently, likely connected to the intruders. "Then we follow. Whatever lies beyond... we'll find it."
+
+**Key events:** An enormous Minotaur guards the central passage. · "It's not chasing us... It's guarding the passage." · Skyshard interferes with its magical armour. · "It's temporarily subdued."
+
+**Opens:** Battle: the Minotaur is subdued
+
+## 135. The Lost Intruders
+*Location: A narrow passage*
+
+VOLUME 4, COMIC 019. Beyond the Minotaur's chamber the party follows the footprints into a narrow passage. Hoko spots signs of a hurried retreat: more than one person, some injured. They find the intruders trapped behind a weakening magical barrier, with spiritual beasts prowling nearby. Ya'Xing recognises the people who interrogated him: "It's them... Even now, I still feel the fear." The intruders are injured and exhausted, and their equipment suggests they came prepared to search the temple, not to explore it. One admits: "We were looking for a sealed relic. We believed it lay beyond this maze. We never found the library's hidden vault." Dongyue: "This is not a random group of explorers. Someone is guiding them." Xiyu: "I don't trust them. They tortured Ya'Xing and put us all at risk. Why should we help them?" Liechen: "We capture them alive. They may lead us to whoever sent them. Information is more valuable than their lives." Ya'Xing: "They deserve what happened... But if we leave them, they will die here. I don't want to see more deaths... but I also don't forgive them." Xiao Tian: the barrier is unstable and the beasts will break through soon; they must decide quickly. The barrier flares and starts to fail, and the beasts close in. The party must decide: intervene, capture, or let them face the consequences of their own actions.
+
+**Key events:** The intruders trapped behind a failing barrier. · Ya'Xing recognises his interrogators. · "We were looking for a sealed relic." · Intervene, capture, or let them face the consequences.
+
+**Opens:** Discovery: the intruders were looking for a sealed relic
+
+## 136. Mercy or Judgment
+*Location: The narrow passage*
+
+VOLUME 4, COMIC 020 (BATTLE). The barrier shatters and the spiritual beasts surge forward. The party moves to protect the injured and hold back the beasts: Dongyue ("Stay behind me!"), Xiyu clearing a path from range, Xiao Tian creating an opening, Cangyuan restraining the beasts, Xining stabilising the injured, Hoko finding a safe route to a wider area. Ya'Xing faces the intruders, fear and anger rising, but does not step back: "You hurt me... but you will not die today." He uses Skyshard to interrupt a beast's magic and save one of them. Liechen helps subdue the remaining beasts and capture the intruders: "Bind them. Keep them alive. They will face the commanders." Ya'Xing: "Saving your life does not mean forgiveness. You will answer for what you did to me. And for why you came here." Xiyu: "Mercy now... but judgment later. Do not forget what they are." Dongyue: "We bring them to the temple commanders. They will decide their punishment. For now, we move before more beasts arrive." The captured intruders, disarmed and bound, have no choice but to speak: "We were hired to find a route beyond this temple. Our employer believed there is something sealed past the maze... and they also knew about Yan's disappearance. The Four Commanders are not the only ones searching. Someone else wants what lies beyond... and they sent us here to find it. Yan was in the way." With new questions and prisoners in tow, the party continues deeper into the maze, determined to find the truth about Yan and the sealed path.
+
+**Key events:** The barrier shatters; the beasts surge. · "You hurt me... but you will not die today." · "Mercy now... but judgment later." · "Yan was in the way."
+
+**Opens:** Battle: the beasts at the barrier; The intruders are captured; Lead: the intruders' employer
+
+## 137. The Price of Mercy
+*Location: The old passage toward the inner chamber*
+
+VOLUME 4, COMIC 021. The captured intruders are disarmed and tightly restrained under Liechen's watch. Ya'Xing keeps his distance, his expression guarded: "I saved their lives. That does not mean I trust them. They still hurt me. They must answer for what they did." Hoko finds an old passage that could lead deeper into the maze, rarely used but still stable. Under questioning the intruders explain: they were hired to find a relic sealed beyond the maze, and also told to investigate the disappearance of Yan; their employer believed the two were connected. Hearing her father's name, Xiyu presses them: "What do you know about my father? Where is he now?" They only know that Yan was last seen near a sealed passage deeper in the temple; their employer did not tell them more. Liechen warns that their employer is likely exploiting the temple's instability to reach something dangerous: "Someone is using the chaos in the temple to gain access to what should remain sealed. This is bigger than a simple expedition." The party decides to leave the prisoners at a defensible checkpoint for now, to hand over to the commanders for judgment, since their priority is the inner chamber and the truth about Yan. Ya'Xing: "I chose to save them because I don't want innocent lives lost. But they must face judgment. I won't forgive what they did. If they have more to say, I want to hear it, when the time is right." Xining stabilises them. Cangyuan senses a powerful spiritual seal ahead, ancient and reacting faintly to Xiyu's presence. At the entrance to the inner chamber: "This seal... it's not ordinary. It feels like it recognises you, Xiyu. Not fully awakened, but it reacts." Xiyu: "...It feels familiar. As if it has been waiting for me."
+
+**Key events:** The intruders disarmed and restrained under Liechen's watch. · "This is bigger than a simple expedition." · "But they must face judgment." · "It feels like it recognises you, Xiyu."
+
+**Opens:** The prisoners are left at a checkpoint for the commanders; Discovery: the seal reacts to Xiyu
+
+## 138. The Sealed Chamber
+*Location: The inner chamber*
+
+VOLUME 4, COMIC 022. The party reaches the inner chamber, where an enormous circular seal covers the floor and walls. As Xiyu approaches, the seal reacts more strongly, its light resonating with her presence. She discovers a hidden line of Muxue clan script within the ancient inscriptions: "This place... It is not a treasure room. It is a place of protection. Our clan was entrusted to guard what lies beyond... so that it would not fall into the wrong hands. The full purpose is not written here..." Dongyue notices the seal has been disturbed and is weakening from the inside: there are traces of recent interference from within. Ya'Xing feels through Skyshard a familiar energy similar to the suppressive energy used on him when he was captured, but much stronger; he cannot tell where it comes from. An ancient mural shows the Muxue ancestors sealing something beyond the chamber: "It was never meant to be opened easily. Our clan's duty... was to keep it concealed, even from the world." Xiyu places her hand on the inscription and the seal illuminates with the mark of her bloodline: "It recognises me... but it does not fully open." Suddenly a deep rumble echoes from above: an ancient mechanism has been activated on the upper floor. "The portal... it's responding. Someone is above us. We must be careful. They are moving faster than we expected." The seal has reacted, and the path above is opening: answers... or greater danger?
+
+**Key events:** A circular seal covering the floor and walls. · "It is a place of protection." · A hidden line of Muxue clan script. · A rumble: the portal is responding.
+
+**Opens:** Discovery: the Muxue clan was entrusted to guard what lies beyond
+
+## 139. The Missing Commanders
+*Location: The commanders' chamber*
+
+VOLUME 4, COMIC 023. The seal's response leads the party upward to an elevated passage and an ancient chamber with four commander stations, North, South, East and West, all vacant. Hoko finds recent traces: the commanders passed through not long ago, four of them, heading toward a sealed route beyond the temple. Cangyuan reads the formation's changes: the commanders redirected part of the temple's power to reinforce a failing seal, but the flow is unstable now, and whatever they are facing is causing the seal to weaken again. Xiyu finds her father's mark within a Muxue clan inscription: "This is my father's mark... Yan came through here. But it does not say where he went." Dongyue: the seal is weakening despite their intervention; the commanders must have left to confront whatever threatens it; "the temple is buying time... but not for long." Ya'Xing feels a faint resonance from Skyshard pointing beyond the chamber: the same energy ties lead to the sealed route beyond the temple; the commanders must have taken this path. Xining translates the inscriptions: the chamber records the four commanders' duty to maintain the temple's seals, and the route ahead leads to the portal, but there is a warning. Murals depict the four commanders standing together, guarding what lies beyond: "They were the last line of defence when the temple faced a greater threat. And now they are gone... which means the threat may have returned." The inscription warns that opening the portal may weaken the temple's protection even further. Xiyu: "If the commanders left, it means they deemed it necessary. We must be prepared for what awaits beyond."
+
+**Key events:** Four commander stations, all vacant. · The commanders redirected the temple's power to reinforce a failing seal. · "This is my father's mark... Yan came through here." · "They were the last line of defence."
+
+**Opens:** Discovery: the four commanders went through the portal route; Discovery: Yan came through here
+
+## 140. The Portal's Price
+*Location: The portal chamber*
+
+VOLUME 4, COMIC 024. Xining translates the final inscription, revealing the cost of opening the portal: it will divert a significant amount of power from the temple's protective seal, and if the seal weakens further the temple will be vulnerable to outside forces. Cangyuan: the seal can be stabilised for a time, but not indefinitely; once the portal is opened they must move quickly. Xiyu's bloodline can activate the portal, yet she refuses to take the risk blindly: "I can open the portal. But I will not do it without preparation. This temple is not just a passage. It is a protection. I will not endanger it carelessly." Ya'Xing senses a familiar and dangerous energy beyond: Skyshard reacts strongly, like the same suppressive force from his captivity; whatever lies beyond is powerful and hostile. Hoko discovers another safeguard, a control mechanism that can regulate the power diverted from the seal, so they may open the portal without completely breaking the temple's defences. Dongyue coordinates the plan: they will open the portal in phases, Liechen will keep watch for approaching threats, and once the portal is stable they move together. Liechen: "I'll hold this point. If anyone comes, I'll give you a signal. Make sure you're ready when the portal opens." Xiyu places her hand on the mechanism, her bloodline resonating with the temple's power; a portal window forms, revealing a glimpse of what lies beyond. In the swirling light a familiar figure appears for a brief moment, a figure who might be Yan. Before they can see more the image flickers and begins to fade. "...Yan?" The portal holds the answers, but it also comes at a price.
+
+**Key events:** The cost: the temple's seal loses power. · "I will not do it without preparation." · Hoko's safeguard regulates the diverted power. · A figure who might be Yan.
+
+**Opens:** Discovery: the portal's price; Xiyu opens the portal window: a glimpse of a figure who might be Yan
+
+## 141. Beyond the Ice Temple
+*Location: The portal and the world beyond*
+
+VOLUME 4, COMIC 025 (finale). The portal flickers, showing a clearer glimpse of the figure beyond. His silhouette resembles Yan, but Xiyu cannot confirm his identity: "It looks like... Father... But I cannot be sure." Hoko's safeguard buys them time, but the seal continues to strain; they cannot keep the portal open safely. Cangyuan senses the increasing instability: the temple's power is being diverted faster than expected, so they must decide now. Xiyu recognises a Muxue symbol within the vision, confirming the passage is connected to her father: "This passage leads to where Father is." Dongyue proposes that they cross together rather than let Xiyu go alone: "We go together. No one is left behind. Whatever awaits beyond, we face it as a team." Ya'Xing: "Skyshard is resonating. The way is open. We should move quickly." Liechen makes his choice: "I will remain and guard the temple. Someone must ensure the seal does not collapse completely. Go and find the truth. I will hold this side." (The intruders are left in his charge, and he is responsible for sending them to the commanders for their punishment.) With resolve Xiyu activates the portal as the others stabilise the mechanism. The party steps through, and behind them the portal closes, leaving the Ice Temple's fate uncertain. On the other side they arrive in an unfamiliar world, and quickly find evidence that Yan and the four commanders had passed through, but they are not the only ones who have been here. Someone else has been waiting for them. The search for Yan has only just begun. Volume 5: to be continued.
+
+**Key events:** The silhouette resembles Yan. · "We go together. No one is left behind." · "I will remain and guard the temple." · An unfamiliar world, and someone waiting.
+
+**Opens:** Volume 4 complete: the party crosses the portal; Su Liechen stays behind at the Ice Temple
+
+
+---
+
+# Volume 5
+
+## 169. A World Beyond the Gate
+*Location: The ruins beyond the portal*
+
+VOLUME 5, COMIC 001. The party steps through the portal and emerges in a world unlike anything they have ever seen: floating ruins, bridges and waterfalls in a snowy sky. Xiyu: "From what Hoko told us about Luiterra... this place doesn't sound anything like it." Hoko: "This isn't Luiterra. At least, nothing I know of there looks like this. The landscape, the ruins and the spiritual atmosphere are different." Cangyuan: the spiritual flow is unfamiliar too, so they should not assume their usual techniques will work. The air feels lighter yet sharper, with a strange resonance; even the snow carries a strange magical resonance. Skyshard is reacting, and the energy here responds differently from Luiterra's; Xining: they should be cautious until they know how the realm's energy affects their bodies and healing techniques. Behind them the portal wavers and vanishes. "We're truly in another world." "Then we move forward together. We find Yan, the commanders... and a way back to Luiterra."
+
+**Key events:** Floating ruins, bridges and waterfalls. · "This isn't Luiterra." · The snow carries a strange magical resonance. · The portal vanishes behind them.
+
+**Opens:** The party arrives in another realm
+
+## 170. Seven Paths, One Missing Group
+*Location: The ruins beyond the portal*
+
+VOLUME 5, COMIC 002. The party moves deeper into the unfamiliar realm, following the traces left by Yan and the four commanders. There are clear signs the missing group passed through: footprints that are "not old", and a banner with a winged symbol that matches the commanders' emblems. The trail splits into seven paths: "This wasn't a single journey. They went in different directions for a reason." Hoko: the spiritual energy here is different from Luiterra and unstable; they must examine each path quickly before the residual energy fades. Skyshard reacts faintly toward the eastern path, a weak response that feels familiar, like the same direction as the commanders. The northern and western paths also carry heavy residue, so the group may have split to cover more ground. There are other footprints mixed in, some recent: someone else has been here too. The party decides to split their investigation temporarily but remain within reach of each other: "We'll explore the eastern path first." "The commanders aren't the only ones who crossed over... and we may already be followed."
+
+**Key events:** The footprints are not old. · A trail that splits into seven paths. · Skyshard reacts faintly toward the east. · "We may already be followed."
+
+**Opens:** Discovery: seven paths
+
+## 171. Hoko's Decision
+*Location: The ruins*
+
+VOLUME 5, COMIC 003. After a short rest Hoko studies the surroundings: "The terrain, architecture, energy patterns... I've never seen anything like this in Luiterra. This is a different realm." Xiyu: "So there really is no direct way back to Luiterra from here? Then we need to find another way. And we should also look for Yan and the other commanders." Hoko: "I will join you. I want to find a way back to Luiterra too. I owe it to those we left behind: to bring back information and make sure no one else is lost here." The party is grateful: his knowledge of Luiterra will be invaluable. They move as one group, with the same goals: find Yan, the commanders and a way back. Dongyue wants a clear plan and more information about the realm's geography; Cangyuan will keep observing the spiritual flow and record anomalies; he warns of unexpected effects on techniques and bodies; Xining will make sure everyone stays in good condition. The search for Yan and the four commanders continues.
+
+**Key events:** "I will join you." · "I want to find a way back to Luiterra too." · "We need a clear plan." · The search continues.
+
+**Opens:** Hoko joins the journey
+
+## 172. The Laws Have Changed
+*Location: The ruins*
+
+VOLUME 5, COMIC 004. As the party moves forward the unfamiliar energy becomes more apparent. Cangyuan: the spiritual flow is scattered and unstable, as if the laws of this realm are not the same. Xining: even the plants and water respond differently, so healing techniques may not have the same effect as in Luiterra. Skyshard reacts more strongly than before but does not point clearly in any one direction; its light is unstable, as if trying to adapt to this realm's energy. Hoko: this realm's energy is heavier and more unpredictable, which explains why he could not recognise anything earlier. Xiyu: their usual methods may not work, so they should observe, learn and avoid unnecessary risks until they understand more. They will rely on each other, with their different skills and knowledge, to adapt, and stay alert and collect as much information as they can. Somewhere ahead answers await, but this new realm has only just begun to reveal its secrets.
+
+**Key events:** "As if the laws of this realm are not the same." · Healing may not work the same way. · Skyshard's light is unstable. · "We'll rely on each other."
+
+**Opens:** Discovery: the realm's laws differ from Luiterra's
+
+## 173. Footprints in the Ruins
+*Location: A ruined outpost*
+
+VOLUME 5, COMIC 005. By late afternoon the party reaches a ruined outpost with signs of recent passage in the snow. Ya'Xing: "These are the commanders' tracks. They passed here not long ago." Hoko: they must have rested briefly before splitting up; judging from the camp there were several groups. Xiyu: "Seven sets of tracks... the four commanders, my father, and possibly their sub-groups. They must have split up to cover more ground." The tracks lead in different directions. Xining notices the snow was disturbed again: someone else has passed more recently, and these footprints do not belong to the commanders: larger, a different pattern, but following the same trail. Hoko: "We shouldn't assume we are alone. Someone may be watching us." The seven paths run North, Northwest, Northeast, West, East, Southwest and Southeast, and they need more information to choose. Beyond the ruins the path leads toward a darker, more dangerous region. Unseen by the party, another pair of eyes watches from the shadows.
+
+**Key events:** Seven sets of tracks lead in different directions. · Someone else has passed by more recently. · "We shouldn't assume we are alone." · Another pair of eyes watches from the shadows.
+
+**Opens:** Discovery: seven paths; Discovery: someone else is following the trail
+
+## 174. The Trail That Vanished
+*Location: A broken stone bridge*
+
+VOLUME 5, COMIC 006. Following the direction they chose, the party continues along the eastern trail, guided by the traces left behind. The footprints are deeper and more organised than theirs: a group passed here recently. But the tracks abruptly end at a broken stone bridge. Cangyuan: there is no sign of a struggle and no fall marks. Hoko: "This isn't a natural collapse. There are mechanisms beneath the bridge. These are ancient transport mechanisms. The bridge could have been raised or shifted to another path." Cangyuan senses traces of spiritual residue rising into the air: "They didn't leave by the ground. Someone activated a different route." Ya'Xing: "Let me try with Skyshard." The energy pattern is different from anything in Luiterra; as Skyshard draws near, the dormant mechanism briefly lights up, responding to the blade.
+
+**Key events:** The tracks end at a broken bridge. · "This isn't a natural collapse." · Spiritual residue rising into the air. · The mechanism responds to Skyshard.
+
+**Opens:** Discovery: an ancient transport mechanism
+
+## 175. The Silent Waystation
+*Location: An abandoned waystation above a ravine*
+
+VOLUME 5, COMIC 007. The signal leads them to an abandoned waystation suspended above a deep ravine. Hoko: "This is a waystation. The design is unlike anything from Luiterra. It uses an ancient transport mechanism, but the destination markings are unfamiliar." Xining: someone rested here recently, with traces of multiple people (travel wear, dried herbs and healing supplies); they stayed a short time, then left in a hurry. Xiyu finds a symbol: "It resembles the Muxue markings, but it's not identical. I can't be sure of its origin." The mechanism has been deliberately damaged: someone didn't want others to use this route. In a sealed compartment they find a fragment of a map, not of any region Hoko knows, with markings that suggest a location beyond this realm, perhaps deeper into the ancient world. Xining: if they used this waystation, there are other routes like it, and someone with knowledge of this realm must be guiding them. Xiyu: "My father and the four commanders did not vanish without a trace. Someone is leading them, and they want it to remain hidden." Hoko: "Then we follow what they left behind. This fragment may be our next clue."
+
+**Key events:** An abandoned waystation above a ravine. · A symbol like the Muxue markings, but not identical. · The mechanism was deliberately damaged. · A fragment of a map.
+
+**Opens:** Discovery: a map fragment; Discovery: a symbol resembling the Muxue markings
+
+## 176. Skyshard's Echo
+*Location: The waystation*
+
+VOLUME 5, COMIC 008. At the waystation Ya'Xing carefully brings Skyshard close to the mechanism. It responds, revealing a faint energy thread, an echo left by a previous activation: "It's not a direct message, but a residual imprint. Someone activated this mechanism before us. The energy shows a path, but it's fragmented. It feels like an echo... not something left for us." The reaction grows stronger and is draining him quickly; with Cangyuan's support ("Focus only on maintaining contact. I'll contain the overflow") the energy stabilises, allowing them to examine the echo more clearly. They realise the signal is an echo, not a current message from Yan, but a record of a past passage. The pattern repeats: it looks like a warning, not a guide. Cangyuan: "Someone left this behind intentionally, but not for us. We should be cautious. The next route may not be safe."
+
+**Key events:** Skyshard reveals an echo of a past activation. · "It's draining me quickly." · The pattern repeats: a warning, not a guide. · "Not for us."
+
+**Opens:** Discovery: the waystation holds an echo of a past passage
+
+## 177. The Mark of the Past
+*Location: The waystation*
+
+VOLUME 5, COMIC 009. Within the ruined waystation the party searches for more clues. Faded banners and scarred inscriptions suggest the place once served a group with a familiar emblem. Xiao Tian: "This is the same emblem we saw on the banners. But it's damaged... part of it has been deliberately erased." Hoko: "The mechanism was not naturally destroyed. Someone sealed and broke it to prevent further use. This waystation was meant to be forgotten." Xiyu: "This emblem... it resembles the Muxue markings, but it is different. The patterns feel older, like a forgotten branch." A section has been chipped away: it wasn't due to time, it was deliberate. Whoever did this wanted to hide the full symbol, but traces still remain, so there may be more information at the next site. Xiao Tian: if the route was intentionally hidden, someone doesn't want others to reach the place beyond. Hoko: they should expect more seals, and perhaps traps; this is likely only the first layer. Xiyu: "Someone went to great lengths to erase its path. That means what lies ahead is important. We continue."
+
+**Key events:** A familiar emblem, deliberately erased. · "This waystation was meant to be forgotten." · A pattern that feels older: a forgotten branch of the Muxue markings. · "What lies ahead is important. We continue."
+
+**Opens:** Discovery: an emblem resembling a forgotten Muxue branch
+
+## 178. Traces Beneath the Ice
+*Location: The waystation*
+
+VOLUME 5, COMIC 010. Using the fragment as a reference Hoko examines the surrounding structures: the carving technique matches, and the architectural style is consistent throughout the waystation; it was built as a connected system. Cangyuan: the waystation is not a single structure but a network, and each site may conceal a different mechanism. He notices faint lines beneath the frost on a nearby wall: directional marks that are not on the surface; the real pattern is carved underneath, then sealed with ice. Someone wanted it to be hidden. This must be one of several waystations across the region, forming a route to a place beyond this realm. It explains why the tracks ended here: they did not fall, they moved to the next waystation. So their next step is to find the other sites and locate more fragments or markers. Cangyuan: "If this was deliberately hidden, the next waystation may be more dangerous than this one. Be prepared for traps." Hoko will analyse this site further; Cangyuan will check the surroundings for spiritual residue and trace the route's direction.
+
+**Key events:** Directional marks carved under the ice. · A network of waystations across the region. · "They didn't fall. They moved to the next waystation." · "The next waystation may be more dangerous."
+
+**Opens:** Discovery: the waystations form a network; Lead: the other waystations
+
+## 179. Beyond the Northern Gate
+*Location: A vast complex carved into the cliffs*
+
+VOLUME 5, COMIC 011. The party passes through the northern gate into a vast complex carved into the cliffs. Hoko: "This is a transit platform. The mechanism is intact, but the operating method is unlike anything I've seen." Cangyuan senses multiple spiritual traces converging deeper inside: "This place is larger than it appears." Beyond the gate lies a network of ancient platforms and corridors connected across great depths, designed to transport people across the complex, but the rules seem to have changed. Hoko: the controls respond, but the sequence is unfamiliar, as if another method was added on top of the original design. Cangyuan: "Whoever modified this knew the original system very well. They left their own layer of seals. And they wanted it to remain hidden." Once everyone crosses, the gate seals behind them. As they move forward a deep rumble shakes beneath their feet: something massive moves beneath the stone floor.
+
+**Key events:** A vast complex carved into the cliffs. · "Another method was added on top of the original design." · The gate seals behind them. · Something massive moves beneath the stone floor.
+
+**Opens:** Discovery: the northern gate complex
+
+## 180. The Hall of Returning Voices
+*Location: The complex's inner corridors*
+
+VOLUME 5, COMIC 012. Inside the complex the corridors carry faint voices: fragments of people who passed through long ago. "...hurry... don't look back... the northern path... for the sake of..." Xiyu hears a voice that resembles her father's: "...Xiyu... forgive me... the world is more cruel than you know..." "Father...?" Xining determines these are residual spiritual impressions, not living voices: "These are echoes left behind by people who passed through. They are not real voices, but fragments of spiritual residue. The echo is drawing from your memories and emotions. It sounds real because it resonates with you." Xiyu: "Even if it's an echo... hearing his voice still hurts." They find a chamber where several impressions overlap, from different times, as if the place recorded important discussions or decisions. One echo stands out, mentioning the commanders' titles: "...North... South... East... West... the four shall seal... until the true time..." The mention of the four commanders confirms the place is connected to a larger secret, and Xiyu: "So this place really holds the records of the past."
+
+**Key events:** Faint voices of people who passed through long ago. · A voice resembling her father's: "forgive me". · "It sounds real because it resonates with you." · "...the four shall seal... until the true time..."
+
+**Opens:** Discovery: the hall of echoes; Discovery: an echo naming the four commanders
+
+## 181. The Map Beneath the Stone
+*Location: A side chamber*
+
+VOLUME 5, COMIC 013. In a side chamber Hoko notices an unusual stone panel with faint carvings beneath the dust. With some effort it is moved, revealing a detailed map hidden beneath the floor, carefully preserved from time. It shows several ancient ruins, all connected by transit routes; the central structure must be the main site. Ya'Xing uses Skyshard to carefully interrupt the lingering magical lock on the map, limiting the exposure: "I'll cut the seal here. Keep the exposure minimal. These patterns are still active." Hoko: there are multiple routes connecting different ruins, but one route has been deliberately scratched out. The erased route bears the same unusual mark found at the waystation. Ya'Xing: "So someone intentionally hid this route. They didn't just block the path, they left a mark." Hoko: this suggests people expected others to reach this place, just not this way, and they wanted the route to remain forgotten. "There are still other routes. But this erased path must lead to something important. We need to find out why it was scratched out and what lies beyond it."
+
+**Key events:** A detailed map hidden beneath the floor. · Skyshard cuts the lingering magical lock. · One route deliberately scratched out. · "They didn't just block the path, they left a mark."
+
+**Opens:** Discovery: a hidden map with an erased route
+
+## 182. The Guardian Stirs
+*Location: A vast chamber*
+
+VOLUME 5, COMIC 014. The party enters a vast chamber guarded by an ancient stone construct. Xiao Tian tests the guardian's movements, observing its physical strength and range. Dongyue: its movements are not random; it follows a fixed pattern and responds to specific intruders. Hoko examines the structure and identifies the protective seal: "It's reacting to us because we're not recognised. This is a defensive mechanism, not a blind attack construct." Xiyu: if they can reach the control seal they can stop it without destroying it; Xining: yes, but the seal is in a place that requires all of them to create an opening. The party coordinates its attacks, aiming to create an opening to reach the guardian's control seal. The guardian awakens fully and moves to block the only exit. "It's not going to let us pass..." "Then we have no choice." "We stop it... together."
+
+**Key events:** An ancient stone construct guards the chamber. · "It follows a fixed pattern and responds to specific intruders." · "A defensive mechanism, not a blind attack construct." · "We stop it... together."
+
+**Opens:** Discovery: the guardian is bound to a control seal
+
+## 183. The Path Awakens
+*Location: The guardian's chamber*
+
+VOLUME 5, COMIC 015. Working together the party directs the guardian toward the control seal; it responds, its massive form turning as instructed. Ya'Xing maintains the direction using Skyshard ("A little more to the left"), Xiao Tian pushes his strength to help stabilise the construct, Hoko monitors the mechanism and prepares for the next phase, and Xining reinforces their spiritual stamina and heals minor injuries. The guardian's hand reaches the control seal, and with a deep rumble the seal begins to open. The guardian slowly steps back, revealing a sealed passage beyond. "It's open. Now we follow the path. Stay alert. There may be more mechanisms ahead. This... is just the beginning."
+
+**Key events:** The party directs the guardian toward the control seal. · "Keep your breaths steady. Don't force it too much." · A sealed passage revealed. · "This... is just the beginning."
+
+**Opens:** The sealed passage opens
+
+## 184. The Guardian's Core
+*Location: The guardian's chamber*
+
+VOLUME 5, COMIC 016. The guardian remains active after opening the passage, and its core begins drawing energy from the entire chamber. Xiao Tian steps forward, drawing its attention with swift, precise movements: "Over here! Keep its attention on me!" With its focus diverted, Dongyue studies the core: "The control seal is at its core... but there's more than one symbol." Four distinct commander insignias are embedded within it (North, West, East, South): "These are... the four commanders' insignias. So the guardian is bound to them." As the core continues to draw energy the whole chamber begins to destabilise, and beneath the control seal another layer is revealed: "There's a second layer beneath the control seal. This is more than a simple mechanism... We need to find a way to disrupt it."
+
+**Key events:** The core draws energy from the whole chamber. · Four commander insignias in its core. · "The guardian is bound to them." · A second layer beneath the control seal.
+
+**Opens:** Discovery: the guardian is bound to the four commanders' insignias
+
+## 185. A Blade Against the Seal
+*Location: The guardian's chamber*
+
+VOLUME 5, COMIC 017. With an opening created by the party, Ya'Xing uses Skyshard to interrupt the guardian's active seal. The blade's effect temporarily interrupts the seal's energy flow, but the disruption is brief and repeated use strains both Ya'Xing and the weapon: "It won't hold for long..." Cangyuan redirects the guardian's surging energy away from the party to buy them time, and Xining stabilises those affected by the backlash: "Stay close. Don't push yourselves." As the outer seal weakens, a second layer of protection is revealed beneath the core, and the hidden layer reacts to the four commander insignias: "It's responding... The four marks are linked to this layer. I can't push it further. Skyshard will be damaged if I do." The guardian, though disrupted, remains active as energy continues to gather. Ya'Xing lowers Skyshard, forcing himself to hold back: "We need another way. This won't be enough." The second layer pulses in response to the four insignias, indicating a deeper formation ahead.
+
+**Key events:** Skyshard interrupts the guardian's active seal. · "It won't hold for long..." · The hidden layer reacts to the four insignias. · "We need another way."
+
+**Opens:** Discovery: a second layer linked to the four insignias
+
+## 186. The Fourfold Formation
+*Location: The guardian's chamber*
+
+VOLUME 5, COMIC 018 (BATTLE). Cangyuan reads the spiritual flow to understand the fourfold formation binding the guardian: "The four seals form a connecting flow. If we disrupt them in sequence, we can weaken its core." Xining stabilises the party, lessening the backlash. Xiyu recognises a fragment of the formation's symbolism but its origin remains uncertain: "I've seen this pattern before... It's familiar, but not the same." The party coordinates to disable the four points without destroying the chamber. Ya'Xing strikes the eastern point with Skyshard, and the eastern seal weakens. Cangyuan suppresses the northern point, redirecting the guardian's remaining energy. Xining stabilises the southern point, preventing a dangerous backlash as the seal collapses. Xiyu disrupts the western point with her eclipse magic, carefully controlling the release. With all four points disrupted the guardian's core falls silent and the guardian slumps, revealing a sealed doorway behind it. Xiyu: "So this is what lies beyond the guardian... But the question remains: who created this formation, and why now?"
+
+**Key events:** The four seals form a connecting flow. · East: Ya'Xing. North: Cangyuan. South: Xining. West: Xiyu. · The guardian's core falls silent. · "Who created this formation, and why now?"
+
+**Opens:** Battle: the stone guardian; Discovery: a sealed doorway behind the guardian
+
+## 187. The Commanders' Mark
+*Location: The sealed doorway*
+
+VOLUME 5, COMIC 019. With the guardian silenced the party approaches the sealed doorway. Hoko identifies four matching insignias: "These are the commanders' marks. North, South, East and West" (the mountain, the phoenix, the dragon, the flame). Xiyu discovers a separate mark that resonates with her father's trail: "This mark... it's different. It's the same symbol from my father's trail. I can't tell whether he opened the seal... or left it behind." Dongyue: all four marks must be activated together; the formation is still reactive and they can use its remaining energy. Cangyuan stabilises the flow ("Once it's opened, we won't be able to close it again"). Ya'Xing channels Skyshard to unlock the final seal, the four commander marks activate in sequence, and with a deep rumble the sealed doorway opens.
+
+**Key events:** Four commanders' marks: North, South, East, West. · A separate mark from her father's trail. · "All four marks must be activated together." · The sealed doorway opens.
+
+**Opens:** The sealed doorway opens
+
+## 188. Someone Was Here
+*Location: The treasure chamber*
+
+VOLUME 5, COMIC 020. With the sealed doorway open the party steps into the chamber beyond, a treasure vault preserving ancient chests and relics within layers of ice and protective magic. Hoko notices signs of recent disturbance: "Someone has been here recently." Ya'Xing spots scattered ice shards and broken seal fragments that are not from their activation: they were broken earlier. Cangyuan finds traces of a hasty search: chests opened and relics moved but not taken, "as if they were looking for something specific". Xining finds a damaged protective script array: the outer layer was forced open with brute force, but the inner protection is intact; they didn't have enough time. Xiyu finds a larger chest, its lid slightly ajar, holding scrolls, a celestial map and a small sealed letter preserved within a jade case: "They opened this... and left it behind. Strange." Dongyue: "This is meant to be kept safe. Who were they looking for? And why is this still here?" The jade case bears a symbol matching one of the four commander insignias but with an additional mark: "There's an additional mark on top of the Western insignia. I've never seen this before." Xiao Tian notices another detail among the relics: a fabric that is not from this temple; someone from the outside was here. The party realises this is only one part of a larger mystery. Xiyu: "This is just the beginning. There are still more pieces we don't understand... and someone is always one step ahead."
+
+**Key events:** A treasure vault of ice and protective magic. · A hasty search: chests opened, relics left. · A jade case with the Western insignia and an extra mark. · "Someone is always one step ahead."
+
+**Opens:** Discovery: someone searched the vault before them; Discovery: a jade case, a celestial map and a sealed letter
+
+## 189. The Map Beneath the Dust
+*Location: The treasure chamber*
+
+VOLUME 5, COMIC 021. Inside the treasure chamber the party examines the items left behind by those who came before. Dongyue: "This is a celestial map. But it's not just a map of the temple. It records routes... and sequences." Hoko notices several routes that have been deliberately scratched out, but one path remains intact, leading toward the central structure: "Only this path is left untouched. It leads to the heart of the complex." Xining senses a faint spiritual residue: "This was handled recently." Dongyue compares the map's markings with the jade case: the pattern matches the symbols on the case, so it is part of a larger instruction. The sequence suggests that certain chambers can only be reached by activating seals in a specific order; the wrong order could block the route and activate a defensive formation. Hoko: "Why scratch out the other paths? Did they lead to dead ends... or something they wanted to hide?" A closer look reveals a route that does not correspond to any visible passage in the ruins: "It shouldn't exist. Either the temple was larger than it appears... or this leads somewhere that is hidden from sight." The party realises that the map holds more secrets, and this may be only the first piece: who drew this, who followed it, and what lies at the end of the path that isn't on the map?
+
+**Key events:** A celestial map that records routes and sequences. · The routes scratched out; one path left untouched. · The seals must be activated in a specific order. · A route that does not correspond to any visible passage.
+
+**Opens:** Discovery: the celestial map and the seal sequence
+
+## 190. The Passage That Should Not Exist
+*Location: A side corridor of the temple*
+
+VOLUME 5, COMIC 022. Following the leads from the map the party returns to a side corridor whose wall looks no different from the others. Ya'Xing: "There's a response... A faint spiritual current is flowing behind this wall." Xiao Tian examines the stonework and finds traces of an old mechanism hidden beneath a defensive carving: "There are marks here. It was deliberately concealed." He locates the trigger, hidden beneath layers of ice and stone, and the carving shifts with a low rumble, revealing a narrow passage that does not appear on the temple's known layout. It shows clear signs of repeated use: "This isn't a forgotten chamber. Someone has been here before." Skyshard resonates briefly as Ya'Xing steps in ("There's an echo... but it fades too quickly. I can't tell who it is"). Deeper inside they find two sets of footprints that split: one recent, one older; one path leads deeper into the temple, the other veers toward an unknown area that does not match the map. Skyshard no longer reacts, but the air feels different. "Someone was here. But who... and where did they go?"
+
+**Key events:** A faint spiritual current behind the wall. · A hidden mechanism beneath a defensive carving. · "This isn't a forgotten chamber. Someone has been here before." · Two sets of footprints that split.
+
+**Opens:** Discovery: a hidden passage not on the temple map
+
+## 191. The Four Who Came Before
+*Location: The inner temple*
+
+VOLUME 5, COMIC 023. Deeper within the temple the party finds a chamber with four ancient insignias carved into massive stone pillars (North, South, East, West Guard). They match the marks in the guardian's core, but their arrangement is different from the formation they defeated. Dongyue: the four commanders may have followed a common objective, but it is not certain they worked together willingly. Xiyu discovers another symbol near the insignias: it resembles the one linked to her father's trail, but it has been partially damaged. Hoko: parts of the inscription were intentionally damaged. Xining feels old lingering residue and cannot tell when it was made or who damaged it. Ya'Xing: the style is the same, but this one doesn't match any of the four. Beneath the insignias an inscription reads: "Four uphold the realm, their paths do not intersect. The fifth remains unclaimed, beyond name, beyond record." The party realises the four marks may be only part of a larger system, and that a fifth presence exists within the complex. "Who left this mark? And what were they trying to protect?"
+
+**Key events:** Four insignias carved into massive pillars. · "It's been tampered with." · "The fifth remains unclaimed, beyond name, beyond record." · A fifth presence hidden from all records.
+
+**Opens:** Discovery: a fifth presence beyond the four commanders
+
+## 192. The Price of Opening the Way
+*Location: The central chamber of the inner temple*
+
+VOLUME 5, COMIC 024. Following the hidden passage the party reaches a sealed mechanism at the heart of the inner temple: five stone platforms arranged in a circle, each resonating with a different spiritual current. Xining: the formation requires several people to stabilise the seals at the same time; if activated carelessly there could be a violent spiritual backlash. Cangyuan: the currents are linked; when one seal is activated the others respond. Ya'Xing tests one seal with Skyshard: it responds, but the resonance is unstable and the blade doesn't accept it completely. Xiao Tian finds additional circuits beneath the platforms; forcing it open could trigger a defensive response. Hoko: the markings are older than those outside; someone has maintained this place, but not recently. Xiyu senses a familiar yet distant resonance connected to the mark she found earlier, but incomplete. The party decides to withdraw before the mechanism fully awakens: "We'll need more information. Brute force won't solve this." As they retreat one of the five platforms suddenly activates on its own, though no one is standing on it: "Someone... or something, is still interacting with this place."
+
+**Key events:** Five stone platforms in a circle. · "The formation requires several people to stabilise the seals." · "Brute force won't solve this." · A platform activates on its own.
+
+**Opens:** Discovery: a five-platform mechanism
+
+## 193. The Unclaimed Seat
+*Location: The central chamber*
+
+VOLUME 5, COMIC 025. The party returns to the chamber after studying the mechanism's response. Dongyue compares the platforms with the celestial map: there are four commander insignias, but the fifth platform has no mark. Hoko: no insignia, no name, no carving: it's as if the seat was never claimed. Cangyuan: the four marks may represent only part of a larger system; the chamber was designed for five positions. Xiyu: "Could my father's symbol belong here? ...But the evidence is incomplete." Xining feels a faint resonance, different from the other four and dormant, as if waiting. Ya'Xing: Skyshard responds when the fifth platform activates, then goes silent: "It's not a stable signal." Without anyone standing on it the fifth platform activates, golden lines of light connecting all five seats, and a line of ancient writing appears across the central dais: "When the four return, the unclaimed seat shall awaken." Dongyue: "A historical event... a prophecy... or a mechanism still waiting to be completed? We don't know yet."
+
+**Key events:** No insignia, no name, no carving. · "The chamber was designed for five positions." · Golden lines connect all five seats. · "When the four return, the unclaimed seat shall awaken."
+
+**Opens:** Discovery: the unclaimed fifth seat
+
+## 194. The Echo in Skyshard
+*Location: The central chamber*
+
+VOLUME 5, COMIC 026. After the fifth platform awakens Ya'Xing brings Skyshard close to its surface. A faint resonance flows through the blade: "It responded... but the signal is weak." Dongyue asks him to repeat the test but the response disappears as soon as the platform dims; then the blade seems to react not to the platform but to something beneath the chamber: "It's not the surface. The resonance comes from below." They inspect the floor and discover narrow channels connecting the five positions to a deeper structure, all leading downward and matching the celestial map. Dongyue: the path aligns with the hidden route on the map and likely leads to a chamber beneath this one. Skyshard resonates a second time: a faint, indistinct sound, like an echo from somewhere beneath their feet, more like a distant rumble or a resonance than a voice. The party can only speculate whether it came from a mechanism, a weapon, or something or someone else. Xiyu: "Something is waiting beneath this temple... but what?"
+
+**Key events:** Skyshard answers, then falls silent. · Channels leading downward from the five positions. · A faint sound from beneath their feet. · "Something is waiting beneath this temple."
+
+**Opens:** Discovery: something resonates beneath the chamber
+
+## 195. Beneath the Five Seats
+*Location: The central chamber*
+
+VOLUME 5, COMIC 027. Xiao Tian and Hoko search the chamber for a way to reach the channels beneath the five platforms. Xiao Tian notices one part of the floor has been repaired with different stone; Hoko finds tool marks around its edges: "Someone opened this before and sealed it again." Working together they remove the slab and reveal a narrow stairway descending below. The air is warmer than in the temple above; the walls bear scratches that do not match the ancient construction and look more recent. At the foot of the stairs they find a discarded lamp that is still faintly warm: "Someone passed through here not long ago." The passage continues further, its destination hidden in darkness. "But who came here? And for what purpose?" "They left in a hurry. Or they didn't expect us to follow."
+
+**Key events:** A repaired section of floor. · "Someone opened this before and sealed it again." · A discarded lamp, still warm. · "Or they didn't expect us to follow."
+
+**Opens:** Discovery: a hidden stairway beneath the five seats
+
+## 196. The Record of Five
+*Location: An underground archive*
+
+VOLUME 5, COMIC 028. Cangyuan and Xining discover an underground archive containing damaged stone records. The records describe the four cardinal authorities, each with separate responsibilities: they worked together when needed, but each authority operated independently. Xining finds a repeated reference to a fifth position, but its lines are deliberately damaged, chiselled away. Several sections were intentionally erased, making their full meaning impossible to determine; Xining detects old spiritual residue but cannot tell when the damage occurred. A surviving line provides a crucial clue: "The fifth shall answer only when the four have returned." The wording matches the inscription above the five platforms: the unclaimed seat is part of a larger system, not an isolated puzzle. Another fragment bears a partially intact symbol that resembles the one seen earlier. "Most of the key parts have been erased. We still don't know if the fifth position belongs to a person, an office, or a function. Who erased these records? And what were they trying to hide... and who is meant to answer when the four return?"
+
+**Key events:** Four authorities with separate responsibilities. · A fifth position, deliberately chiselled away. · "The fifth shall answer only when the four have returned." · "A person, an office, or a function?"
+
+**Opens:** Discovery: the Record of Five
+
+## 197. The Mark That Answers
+*Location: The underground archive*
+
+VOLUME 5, COMIC 029. Xiyu compares the damaged record with the symbol from her father's trail: "This fragment... it looks similar." Dongyue warns her against treating resemblance as proof: the records have been altered. When Xiyu places her hand on the mark it briefly illuminates, and a hidden line of text appears beneath the damaged surface: "The fifth position: only when the four return, will it answer." She reads it but the meaning is incomplete: it speaks of a path, but they still don't know what is required. Dongyue: the mechanism requires the five positions to recognise each other; the order or relationship may be more important than the marks themselves. For a moment the fifth symbol resembles the mark Xiyu has been searching for, but the light fades, leaving the original carving unchanged. "It may be related to my father's trail... but it's not enough to be certain. It's close... but the truth is still hidden somewhere deeper."
+
+**Key events:** "A resemblance does not mean it is the same." · The mark answers Xiyu's hand, briefly. · "The five positions must recognise each other." · "The truth is still hidden somewhere deeper."
+
+**Opens:** Discovery: the fifth position answers only when the four return
+
+## 198. The Door Below the World
+*Location: A concealed chamber under the temple*
+
+VOLUME 5, COMIC 030. Using the map, the archive records and the channels beneath the platforms, the party reaches a concealed chamber under the temple: a massive door ringed by five stone positions. Four bear the familiar commander insignias; the fifth remains unmarked. Hoko finds recent handling marks, but the inner seal appears intact. Ya'Xing brings Skyshard close: it resonates with a clear, deep hum, yet does not unlock the door. Cangyuan: the mechanism requires more than power or a single person's spiritual energy; the five positions must recognise each other, not just in sequence, but in relationship. Dongyue: "The temple is not asking for a weapon, or a person alone. The fifth position must choose. That is why it remains unmarked." As the party steps back light flows through the mechanism: the four commander marks illuminate first, and a heartbeat later the fifth position also responds. The door does not open. Instead a line of text appears across its surface: "The four may return. The fifth must choose." The message lingers, then fades, leaving the door unchanged. "We have discovered the condition... The door is still closed. There is more we do not yet understand."
+
+**Key events:** A massive door ringed by five stone positions. · "The fifth position must choose." · "The four may return. The fifth must choose." · "We have discovered the condition."
+
+**Opens:** Discovery: the condition of the door below the world
+
+
+---
+
+# Interlude: Ya'Xing
+
+## 199. Before He Remembered
+*Location: Ya'Xing's room · a memory*
+
+YA'XING INTERLUDE, CHAPTER 001. Some mornings the past stayed silent; others it came close enough to hurt. Ya'Xing, recovering in bed, dreams of a woman with a gentle hand telling a small child "It's all right..." He wonders whether it was someone he knew: a voice, a hand, no name, no face. Xiao Tian sits with him: "Did you have a bad dream?" "I don't know if it was a dream." Ya'Xing thought he remembered his mother, but he doesn't even know if it was her. "Then you don't have to decide today." "What if I never remember?" "Then we'll face that when it comes." The past gave him fragments, not answers; for now he was allowed to leave them unfinished.
+
+**Key events:** A dream of a gentle hand. · "I thought I remembered my mother." · "Then you don't have to decide today." · Fragments, not answers.
+
+**Opens:** Memory: a voice and a hand
+
+## 200. Passed from Hand to Hand
+*Location: Ya'Xing's room · memories of his years as a servant*
+
+YA'XING INTERLUDE, CHAPTER 002. Some habits remained, even when the danger was long past. Ya'Xing remembers, as a child, being sent from household to household: "He can carry loads and run errands." "Then I'll take him." A decision about his life could be made without asking him. At each new place he learned the rules before the people, and noticed what others overlooked; remembering details made work easier and mistakes less costly. "Am I staying here?" "Not anymore. Come along." He tells Xiao Tian: "I don't remember every place. Just the feeling of leaving." "You don't have to tell me everything." He had spent years being sent wherever others chose. One day, he would choose where to go.
+
+**Key events:** Sent from household to household. · "Am I staying here?" "Not anymore." · He noticed what others overlooked. · "One day, he would choose where to go."
+
+**Opens:** Memory: years of being transferred
+
+## 201. The Price of Freedom
+*Location: The docks*
+
+YA'XING INTERLUDE, CHAPTER 003. After years of being passed from hand to hand, Ya'Xing, now grown, is told he will go to another household tomorrow. This time he speaks: "Have you settled what you owe me?" "Why are you asking now?" "Because I don't want to be transferred again." He has learned to keep track of every task, every payment, every promise, and has his wages. "You could have stayed where you were assigned." "I have stayed where I was sent for long enough." No one stopped him; no one called him back. Freedom did not arrive with a celebration: it began with a gate he could walk through. "I don't know where I'll end up. But I can decide where I go first." He had not yet found a home, but his next step belonged to him.
+
+**Key events:** "Have you settled what you owe me?" · "I don't want to be transferred again." · A gate he could walk through. · "I can decide where I go first."
+
+**Opens:** Memory: he walks out of service
+
+## 202. The Man Who Offered Him Work
+*Location: The harbour*
+
+YA'XING INTERLUDE, CHAPTER 004. Freedom had opened the gate; it had not shown him where to go. At the harbour most work required references or a permanent address, and he had neither. On the docks he sees a load slipping and corrects the rope: "Stop pulling. You're tightening the wrong side." A ship's master notices: "You've handled ships before." "Enough to know when a load is about to fall." He offers a few days' work; Ya'Xing asks the hours and the pay. "You negotiate like someone who has been cheated before." "I prefer to know what I'm agreeing to." He had spent years learning how to endure someone else's decisions; now he was learning how to make his own. He had found a way to earn his living, not yet the place he wanted to call home.
+
+**Key events:** A load slipping on the docks. · "You've handled ships before." · "I prefer to know what I'm agreeing to." · A living, not yet a home.
+
+**Opens:** Memory: his first paid work
+
+## 203. The Young Master's Offer
+*Location: A ship at the harbour*
+
+YA'XING INTERLUDE, CHAPTER 005. The harbour taught him that a skill could carry him farther than a name. Ya'Xing warns a crew to secure a rope before the wind catches the sail; a white-haired traveller asks whether he is employed by this crew. "Only for this voyage. I take work where I can find it." "I travel often. I need someone who can handle a vessel and tell me when a route is unsafe." "You need a ship handler, not someone who agrees with everything you say." "Then we understand each other. Your wages will be agreed in advance. If you wish to leave, tell me plainly. I will not claim you owe me your freedom." "I'll take the work, Young Master Dong." "Then welcome aboard." Trust did not arrive all at once: it grew through ordinary days and the freedom to speak honestly. He had finally found work he could choose, and a place among people who did not mistake service for ownership.
+
+**Key events:** A warning about the rigging. · "I will not claim you owe me your freedom." · "I'll take the work, Young Master Dong." · "Welcome aboard."
+
+**Opens:** Memory: how he met Dongyue
+
+
+---
+
+# Interlude: Xiyu & Cangyuan
+
+## 204. The Family That Raised Her
+*Location: Xiyu's old memory*
+
+XIYU & CANGYUAN INTERLUDE, CHAPTER 001. Some of Xiyu's oldest memories carried no fear: only the warmth of a home and the people who made it one. As a girl she practises calligraphy with a gentle woman: "There is no need to master everything today, Xiyu. You have time to grow." A man tells her "Your mother says you've been working hard." "Then I'll do better tomorrow!" They never asked her to earn the right to belong. One evening the woman tells her "There is something about our family you should know... You are the last of our family's bloodline. It means there is a history that will one day belong to you. But you don't have to understand it all tonight. Whatever that history means, remember this: you were loved long before you knew what it meant to inherit anything." Years later Xiyu tells Cangyuan of the memory: "Of the people who raised me. They left me with more than I understood at the time." Some inheritances begin with blood; others begin with the people who choose to love us.
+
+**Key events:** Calligraphy with a gentle woman. · "You are the last of our family's bloodline." · "You were loved long before you knew what it meant to inherit anything." · "Some inheritances begin with blood."
+
+**Opens:** Memory: the family that raised her
+
+## 205. The Boy Who Left Home
+*Location: Cangyuan's memory*
+
+XIYU & CANGYUAN INTERLUDE, CHAPTER 002. Cangyuan learned early not to expect his parents to appear: they had arranged his cultivation education, and the rest they left to others. When the other students had gone he stayed to finish an exercise his master said he had already finished three times; his master had watched him long enough to recognise the difference between discipline and loneliness. "I intend to continue my travels." "May I come with you?" "If you understand that the road will not always be easy." "I understand." His parents gave him permission to leave; they did not ask him to stay ("Listen to your master and do not bring trouble upon the family"). At first he still wrote home, describing the roads, the lessons and the places he had seen. No answer came. He told himself his parents were busy, then that the letters were delayed, until he ran out of explanations that made a difference. One day he stopped writing: not the day he stopped caring, but the day he stopped waiting for an answer.
+
+**Key events:** His parents arranged his education and left the rest. · "May I come with you?" · Letters that were never answered. · The day he stopped waiting.
+
+**Opens:** Memory: why Cangyuan stopped writing home
+
+## 206. The Years They Grew Together
+*Location: Cangyuan's memory*
+
+XIYU & CANGYUAN INTERLUDE, CHAPTER 003. For the first time Cangyuan had someone his own age who stayed. A sword-wielding young woman watches him practise from sunrise and teases him to remember to eat; they spar ("You anticipated the pattern. You didn't anticipate me.") and bicker over tea. They grew together through lessons, journeys and years of shared work: trust came first, everything else followed in its own time. "You're easier to understand than you pretend." "Only to you." "I don't know what the road ahead will bring." "Neither do I. But we can choose what we mean to each other now." "Then let it be our choice." They did not remain together forever, but what they had shared was real, and neither needed to become the villain for their paths to part. Some loves belong to the life we lived; they need not diminish the life we choose afterward.
+
+**Key events:** Someone his own age who stayed. · "You anticipated the pattern. You didn't anticipate me." · "Let it be our choice." · Neither needed to become the villain.
+
+**Opens:** Memory: the years Cangyuan grew with someone
+
+## 207. The Things We Never Asked
+*Location: Xiyu and Cangyuan, at night*
+
+XIYU & CANGYUAN INTERLUDE, CHAPTER 004. Xiyu notices Cangyuan is quiet tonight; he says he only wondered where his thoughts had wandered. "Do you ever think about the people you knew before?" "Sometimes." "And does remembering them make the present feel different?" "It reminds me that I had a life before this one. Not a life I regret. Just one that brought me here." He did not pretend the past had meant nothing, and did not mistake remembering it for wanting to return. "I had someone important to me, too. We parted without becoming enemies." "I know. Then I hope you can remember what was good without carrying what is over." "You aren't going to ask me for every detail?" "Would you want me to?" "No." "Then I won't." "And if one day you want to tell me more about your past?" "Then I'll tell you. Because I choose to share it with you." Neither asked the other to erase the past; they had learned that love was not ownership of another person's history, but the freedom to share it and the freedom to keep some things private until the heart was ready.
+
+**Key events:** "Do you ever think about the people you knew before?" · "We parted without becoming enemies." · "Then I won't." · "Because I choose to share it with you."
+
+**Opens:** Moment: Xiyu and Cangyuan speak of their pasts
+
+## 208. The Love We Choose
+*Location: Xiyu and Cangyuan, at night*
+
+XIYU & CANGYUAN INTERLUDE, CHAPTER 005 (finale). "There's one name I haven't spoken aloud in a long time." "Do you want to tell me?" "Xu Hanshan. He was important to me. When he left, I thought it meant I had never been enough." She had survived the loss; for a long time she had mistaken survival for healing. "What he chose does not decide your worth." "You don't resent me for remembering him?" "I would resent a lie more than a memory." "Dongyue was part of my life, too. We parted without becoming enemies." "Then you needn't pretend he meant nothing." "I won't. But what I choose now is my own." Cangyuan names Ruyue, his first love: "We shared years that mattered to me. She was a part of the road that made me who I am." "And those years made you who you are." "Some of them did." "I don't want you to erase her." "Nor will I ask you to erase them." "Then what do we ask of each other?" "Honesty. And the freedom to choose each other again." Their pasts had not been empty, and their future did not need to be a contest with them: they could remember without returning, love without possessing, and begin again without pretending they had never been hurt. The past had shaped them. It would not choose their future. The cover lists Xu Hanshan, Zhan Dongyue and Shen Ruyue.
+
+**Key events:** The name she hadn't spoken: Xu Hanshan. · "I would resent a lie more than a memory." · Ruyue, his first love. · "The freedom to choose each other again."
+
+**Opens:** Interlude complete: the Xiyu & Cangyuan Interlude; Name: Xu Hanshan
+
+
+---
+
+# Volume 6: The Unknown World
+
+## 209. A Quiet Morning
+*Location: The terrace*
+
+VOLUME 6 (The Unknown World), COMIC 001. After the discoveries of the night the party allows itself a rare moment of calm as the first light of morning spreads across the ancient realm. Xiyu and Cangyuan: "You're still thinking about the door, aren't you?" She teases him ("Let me see if I can erase that frown") and rests against him: "A little rest won't stop the world from turning." "...Not when you're here." Dongyue notices Xining has changed the proportions of her mixture again: she needs to stabilise his condition, so it cannot be too strong; some remedies are useful only when you understand what they must not disturb. Ya'Xing and Xiao Tian spar on the terrace ("You're getting slow!" "You're the one telegraphing your moves."). Hoko sits at a quiet corner, letting the morning breeze carry away the tension: for a moment there was no map to study and no danger at their back, only the rare peace of now. They were different people with different burdens, but on this morning they were simply companions sharing the same path.
+
+**Key events:** "You're still thinking about the door, aren't you?" · "A little rest won't stop the world from turning." · Ya'Xing and Xiao Tian spar on the terrace. · "The rare peace of now."
+
+**Opens:** Moment: a quiet morning in the realm
+
+## 210. The Door That Would Not Open
+*Location: The sealed door*
+
+VOLUME 6, COMIC 002. After the quiet morning the party returns to the sealed door. Dongyue: "The fifth position responded last night, but the door never opened." Cangyuan: if the four have returned and the fifth has responded, either their interpretation is incomplete or they are missing another condition. Xiyu notices the light around the fifth position is still active: "It feels as though it is waiting for something." Hoko finds recent handling marks that continue beyond the doorframe. Ya'Xing tries Skyshard: it resonates clearly but isn't enough to open it. Cangyuan: the problem may not be a lack of strength; each position might represent a different role, and the fifth could require a specific choice, not just activation. As they declare a dead end, Xiyu points to the floor: a line of light is moving away from the door, revealing a passage beneath the platform hidden by the same formation. The door had refused them; the realm, however, had not run out of paths.
+
+**Key events:** "The fifth position responded, but the door never opened." · Skyshard resonates but cannot open it. · The light on the floor moves away from the door. · A passage beneath the platform.
+
+**Opens:** Discovery: a passage beneath the platform
+
+## 211. The Path Beneath the Seal
+*Location: A concealed passage beneath the sealed door*
+
+VOLUME 6, COMIC 003. Following the line of light the party descends into a concealed passage beneath the sealed door. Ya'Xing: "You can still feel the remnants of spiritual energy in the stone. It is old, but not completely dormant." Xining: the carvings differ from those near the door and many sections have been deliberately removed. Xiao Tian touches a mark that feels familiar: "As if I've seen it before... but I can't remember where." Skyshard resonates with the lines, but the connection is incomplete. Hoko: the stonework is stable for now and someone has passed through before them. The passage opens into a chamber filled with damaged stone tablets, some text deliberately scratched away ("too precise to be ordinary erosion"); one phrase is about the four directions as a single order, and the rest is missing. Xiyu: the symbols are the four commander insignias, but the arrangement is different. Beyond the tablets stands another doorway bearing the same four insignias in a different pattern. "Someone wanted us to see this... but not the whole truth."
+
+**Key events:** A concealed passage beneath the sealed door. · Tablets with deliberately scratched text. · "The four directions as a single order." · Another doorway with the insignias in a different pattern.
+
+**Opens:** Discovery: damaged tablets and a second doorway
+
+## 212. Records of the Four
+*Location: The archive chamber*
+
+VOLUME 6, COMIC 004. Beyond the passage the party finds an ancient archive chamber, its stone tablets broken and incomplete but still holding fragments of the past. The tablets describe the four authorities as responsibilities and arrangements, not only power: the eastern authority with the rising wind, movement, guidance and the balance of the realm; the southern with the flame, transformation, purification and the cycle of life; the western with the currents, transition, boundaries and the unseen; the northern with stillness, protection, restraint and the root of the realm. In some records they are listed together as a single order. Hoko: someone has been here before; the dust is disturbed and the marks are recent. Xiyu finds a section deliberately removed, and surrounding text mentions a position that belongs to none of the four directions, in the same phrasing as the inscription on the sealed door. Dongyue: "I cannot say for certain that this is the fifth... but the similarities are too strong to ignore." The records explain the arrangement, not the current whereabouts of the authorities. Xiao Tian finds a mark beneath a tablet that feels familiar. Then the door that was closed before opens: "No. Someone is definitely here." The archive had preserved enough to raise questions, and too little to answer them.
+
+**Key events:** Four authorities: east wind, south flame, west currents, north stillness. · A position that belongs to none of the four directions. · "Someone is definitely here." · A door that was closed now opens.
+
+**Opens:** Discovery: the Records of the Four
+
+## 213. Footsteps in the Dust
+*Location: A narrow bridge over a sea of mist*
+
+VOLUME 6, COMIC 005. A faint sound comes from beyond the archive, and a door that was closed moments ago now stands slightly ajar. Fresh marks in the dust are not from the original builders: someone passed this way not long ago. The party follows the traces to a narrow bridge suspended over a sea of mist, where a cloaked figure stands ahead. "Wait! Who are you?" They don't answer and move faster. Ya'Xing: "I'll catch up!" Cangyuan: "Wait, Ya'Xing. This bridge is unstable. Stay alert." "Understood." The figure vanishes: "They couldn't have disappeared into thin air." Xiyu finds a section of the mechanism that has been moved, exposing lines that were not exposed before, connected to a new set of markings. Someone was here before them, and the path ahead has changed.
+
+**Key events:** A door that was closed moments ago stands ajar. · A cloaked figure on a narrow bridge. · "They couldn't have disappeared into thin air." · A moved mechanism and new markings.
+
+**Opens:** Discovery: a cloaked figure ahead of them
+
+## 214. The Hidden Pattern
+*Location: The chamber floor*
+
+VOLUME 6, COMIC 006. The pattern on the chamber floor is not the same as before: some of the channels have been moved, deliberately, not by natural wear. Hoko: these lines were covered before and have been unsealed recently. Ya'Xing: "Skyshard shows what the eye cannot always see." Dongyue reads the pattern against the map: it matches the four directions (North Mountain, South Flame, East Dragon, West Bird), all converging on a central point, but the fifth position remains unmarked. Xining: it resembles a spiritual circulation formation, but she cannot determine its purpose, and activating it without understanding the full structure would be risky. Xiao Tian finds a damaged section strangely familiar, but the feeling is fleeting. A line continues beyond the chamber toward a distant structure: "The door wasn't the only thing we were meant to find. Let's follow this route. We'll learn more before deciding what to do next."
+
+**Key events:** Channels moved deliberately. · North Mountain, South Flame, East Dragon, West Bird. · The fifth position remains unmarked. · "The door wasn't the only thing we were meant to find."
+
+**Opens:** Discovery: the hidden pattern leads to a distant structure
+
+## 215. The Hall of Converging Paths
+*Location: A vast hall of five paths*
+
+VOLUME 6, COMIC 007. Following the hidden pattern the party arrives at a vast hall where five paths converge. Five towering statues stand around it: four bear the familiar insignias (North Mountain, South Flame, East Dragon, West Bird), and the fifth remains unmarked. Dongyue: the craftsmanship and spiritual suppression are far more advanced than in the previous chamber. Cangyuan: "These statues aren't just symbolic. They feel like keys." Xining: the five paths may represent different realms or cycles, but without the missing insignia they cannot determine the full meaning. Xiao Tian finds more inscriptions recording the flow between the paths. Ya'Xing suggests splitting up to examine the paths; Hoko: "Better not. These mechanisms might be linked. Let's investigate together." At the centre lies a circular platform with the fifth position empty, and a corridor leads into darkness where the air grows colder and ancient magic stronger. "This place isn't simply abandoned."
+
+**Key events:** Five towering statues; the fifth is unmarked. · "These statues aren't just symbolic. They feel like keys." · "These mechanisms might be linked. Let's investigate together." · A circular platform with the fifth position empty.
+
+**Opens:** Discovery: the hall of five statues
+
+## 216. Echoes Beneath the Stone
+*Location: The deeper site*
+
+VOLUME 6, COMIC 008 (revised). Following the converging paths the party arrives at a deeper section where a massive structure stands. Xiyu: "This is larger than I expected. It feels as though this place has been sealed for a very long time." Dongyue: the inscription style matches the earlier chamber, but the structure is far more complex. Xining senses a strong spiritual suppression, different from the outer chambers. Cangyuan: the carvings are not just decorative; they record a sequence, the flow of power between the five paths. At the centre of the structure lies a circular mechanism covered in ancient inscriptions, with the four insignias (North Mountain, South Flame, East Dragon, West Bird) and a blank fifth. As Xiao Tian examines the carvings a strange sensation washes over him: "These markings... Like I've seen them somewhere before." Fragments of a memory flicker: a vast doorway, a hand reaching for a sealed object, but the image slips away before he can grasp it. When the lines are fully traced a hidden door slowly emerges from the shadows; beyond it lies another realm. "So this is the next gate. Whatever lies beyond... we need to be ready."
+
+**Key events:** A massive structure sealed for a very long time. · Four insignias and a blank fifth. · Xiao Tian: a vast doorway, a hand reaching for a sealed object. · "So this is the next gate."
+
+**Opens:** Discovery: the next gate
+
+## 217. The Fifth Door
+*Location: The end of the hall*
+
+VOLUME 6, COMIC 009 (revised). At the end of the hall the party finds a massive door engraved with the fivefold pattern: the four known insignias surround a fifth symbol at the centre. Xiyu: "So this is the fifth door. It feels different from the previous chambers. As if it leads beyond this realm." Dongyue: the central symbol does not belong to any of the four and appears to be a separate layer of formation. Cangyuan: "This is no ordinary door. It was sealed for a reason. Opening it carelessly could trigger something we can't control." Xining: the formation connects the five paths, but its purpose is unclear; it may be a gateway or a barrier. Xiao Tian: "These carvings feel familiar..." Ya'Xing: the fifth symbol is neither mountain, flame, dragon nor bird: "It feels... empty, yet complete." Hoko: the mechanism is more complex, with additional channels beneath the surface. Xiao Tian places his hand on the central symbol and a faint resonance stirs, sending a wave of unfamiliar sensations through him: a vast doorway, a hand reaching for a sealed object. It slips away before he can grasp it: "It feels familiar... But I still can't remember." Dongyue: "Before we open this door, we need more information." The party decides to examine the surrounding structures first; the fifth door remains unopened, its secrets still hidden.
+
+**Key events:** A massive door with the fivefold pattern. · "It feels... empty, yet complete." · Xiao Tian's hand on the central symbol: a doorway, a hand, a sealed object. · "Before we open this door, we need more information."
+
+**Opens:** Discovery: the fifth door
+
+## 218. The Hidden Passage
+*Location: The ancient corridors around the fifth door*
+
+VOLUME 6, COMIC 010 (revised). After studying the fifth door the party turns to the surrounding area: ancient corridors extend in several directions, their walls etched with time-worn markings. Xiyu: "These corridors seem to branch out from the central chamber. Perhaps they lead to records or secondary formations." Dongyue: the carvings describe the same system in more detail; Cangyuan: the patterns near the ceiling might indicate a connection to the central mechanism; Xining: the spiritual energy flows differently, like a branching channel, not a separate door. Xiao Tian: the symbols match the ones they saw earlier, but there are additional layers beneath them. A side passage leads downward, its entrance partly hidden by fallen stone; Hoko: the air is colder and the passage has not been used for a long time. The walls are lined with etched diagrams, records and faded text that appear to illustrate how the five positions interact. As Xiao Tian traces the carvings a faint resonance stirs: "These marks... I've seen them before..." A vast doorway, a hand reaching for a sealed object, but the image fades before he can see more. "You alright, Xiao Tian?" "I'm fine. Just a strange feeling. It's incomplete... but it feels important." Dongyue: "Then it's all the more reason to document everything here. These records might help us piece together the full formation." Xining: "Let's continue down this passage. We may find the missing information about the fifth position."
+
+**Key events:** Corridors branching from the central chamber. · A side passage downward, partly hidden by fallen stone. · Etched diagrams of how the five positions interact. · "It's incomplete... but it feels important."
+
+**Opens:** Discovery: a hidden passage leading downward
+
+## 219. The Etched Instructions
+*Location: A deep subterranean passage*
+
+VOLUME 6, COMIC 011. Following the hidden entrance the party descends into a deep subterranean passage; the air grows colder and the walls are lined with ancient carvings faintly lit by golden traces. Strange diagrams cover the walls, records of a system centred on five positions, some intact, others broken or deliberately erased. Dongyue: "These carvings match the formation we've seen. The same four emblems appear here as well." Cangyuan: the four directions (North Mountain, South Flame, East Dragon, West Bird) are clear, but the central position remains unmarked, the same as the formation below. Xiyu: some inscriptions have been scratched away; important parts were removed on purpose. Xiao Tian: the lines connect the five positions, but some channels are broken, as if the system no longer works the same way. Xining finds the carvings showing how the positions interact, but this part is missing: it might explain what happens when the fifth position is aligned. Touching the carvings reveals faint residual magic that quickly fades. Hoko: "These weren't just decorations. Someone recorded how this place was meant to function." Ya'Xing: "And someone tried to hide it from others. The damage here is too deliberate to be from time alone." The passage continues down to a larger chamber, raising more questions than answers, especially about the missing fifth position and why its instructions were erased.
+
+**Key events:** Diagrams of a system centred on five positions. · Key diagrams chiselled out. · "Someone recorded how this place was meant to function." · "The damage here is too deliberate to be from time alone."
+
+**Opens:** Discovery: the etched instructions with the fifth position erased
+
+## 220. The Path That Changed
+*Location: A wide junction below the passage*
+
+VOLUME 6, COMIC 012. The passage descends further to a wide junction. The floor is etched with branching channels, but the paths no longer match the directions ahead (signs for West and East). Cangyuan: "The carvings show the paths leading in different directions. But the passage ahead no longer matches the diagram." Dongyue: one channel has been interrupted, and it looks deliberate. Xining: a line should connect to the western path but ends here; the grooves are cleanly severed, as if the connection was dismantled long ago. As Xiao Tian places his hand on the incomplete symbol a familiar sensation stirs: "I've seen this before... It feels familiar. But the memory slips away again." Ya'Xing: "The paths can change. This place may be responding to something, or someone." Hoko: "If the routes can be altered, then the diagrams aren't a map. They're instructions. But for what?" Xiyu: "And the fifth remains missing. It feels like someone doesn't want us to reach it." One corridor is partly collapsed, as if sealed after being used; another path descends even deeper, its entrance hidden behind a shifted stone wall, with traces of recent movement, faint scuff marks in the dust. With no clear answers the party follows the remaining path downward, knowing the system may no longer work as intended.
+
+**Key events:** A junction whose paths no longer match the diagram. · A channel deliberately severed. · "They're instructions. But for what?" · A path behind a shifted stone wall, with scuff marks.
+
+**Opens:** Discovery: the diagrams are instructions, and the paths have been altered
+
+## 221. The Passage Ends
+*Location: A vast cavern*
+
+VOLUME 6, COMIC 013. The passage continues downward until the walls open into a vast cavern; the hidden route ends here. Before them lies a deep chasm spanning the ruins, with a stone bridge adorned with bronze bells suspended beneath its arches. Dongyue: "This must be the bridge mentioned in the diagrams. The proportions match the notes we saw below." Multiple bronze bells hang beneath the bridge, yet not one moves in the wind. Xiyu: "It's strange... There should be wind here. But the bells are completely silent." Xiao Tian: the chasm is deeper than it looks; they cannot see the bottom. Ya'Xing: there is a structure on the other side, part of the same system, and its buildings look intact: someone may still be maintaining this place. Hoko: "Or someone has been here recently. This doesn't feel abandoned." Closer inspection shows fine engraved patterns on the bells, with refined craftsmanship but no recent sign of natural movement. Xining: the bridge seems stable, but they don't know what will trigger the bells or what they are meant to signal. The party prepares to cross, but the silence feels unnatural; they cannot tell whether the bridge is a test, a warning or a sign that someone is already watching. In the distance one bell swings on its own, with no wind, and a faint metallic breath echoes through the cavern, then stillness again.
+
+**Key events:** The hidden route ends at a vast cavern and chasm. · A stone bridge with silent bronze bells. · "This doesn't feel abandoned." · One bell swings on its own.
+
+**Opens:** Discovery: the chasm and the bridge of bells
+
+## 222. Signs of Someone Else
+*Location: The edge of the passage*
+
+VOLUME 6, COMIC 014. At the edge of the passage the party finds traces that suggest someone has been here recently; the bridge ahead remains silent but is not entirely untouched. Fresh footprints indent the frost near the entrance to the bridge, not from the party: the size and pattern match none of theirs. Dongyue: "The prints are light, someone who moves quietly. And they know this place well." Xiyu finds scrape marks: someone has moved the bells before, but carefully. One bell shows recent touch marks, its surface free of frost, and hangs slightly off-centre as if it had been moved and then returned. Xiao Tian: the mechanism is still sensitive; even a small movement leaves a trace. Hoko: "So they've been watching us for a while. But why haven't they revealed themselves?" As the party observes, one of the bells moves gently on its own; there is no wind in the chasm. A faint movement is seen across the bridge, a figure that quickly disappears behind a pillar; they cannot tell whether it was someone watching them or leaving a sign. Ya'Xing: "We can't be sure whether they're helping us... or simply ensuring we reach where they want us to go." Xiao Tian: "Either way, we're not alone in this place. Someone knows we're here." With more questions than answers the party prepares to cross.
+
+**Key events:** Fresh footprints that are not the party's. · A bell with touch marks, moved and returned. · A figure behind a pillar, gone. · "Someone knows we're here."
+
+**Opens:** Discovery: someone else has been on the bridge
+
+## 223. The Bridge of Silent Bells
+*Location: The ancient bridge over the chasm*
+
+VOLUME 6, COMIC 015 (revised). With no better route forward the seven companions step onto the ancient bridge; the chasm below disappears into frozen mist and rows of bronze bells hang in silence. Xiyu: "Move steadily. Keep to the center. The stones look stable, but we shouldn't test our luck." Dongyue: "The bells are completely silent. Not even the wind stirs them. Someone has deliberately prevented them from ringing." Xining: some clappers have been removed and others bound so they cannot move freely; Xiao Tian: the tool marks are more recent than the rest of the structure and the same person altered multiple bells in a consistent pattern. Ya'Xing: not every bell has been touched, only certain ones along this section. Hoko: "So they knew exactly which bells mattered. Someone understands this mechanism better than we do." Xiyu: "Whether this was done for us... or to mislead us, we won't know yet." After a long crossing the party reaches the far side; beyond it stands another structure whose purpose is still unclear. No one appears to greet them, but the feeling of being watched does not disappear.
+
+**Key events:** The seven companions step onto the bridge. · Some clappers removed, others tightly bound. · "Someone understands this mechanism better than we do." · "Whether this was done for us... or to mislead us, we won't know yet."
+
+**Opens:** Discovery: the bells were deliberately silenced
+
+## 224. The Chamber of Instruments
+*Location: The chamber of instruments*
+
+VOLUME 6, COMIC 016 (revised, BATTLE). Beyond the bridge the party enters a vast inner chamber within the ancient structure: bronze rings, stone gears and delicate instruments hang in the air, connected by golden channels to a dark central disc. Xiyu: "This place... It's more complex than the diagrams we found. It's not just a door mechanism. It's an entire system." The symbols match the formation they saw in the passage: four directions (North Mountain, South Flame, East Dragon, West Bird) and a fifth in the centre. Dongyue: "The instruments are still active. But the fifth position remains blank, as if intentionally." Xiao Tian: "I've seen this pattern before... But I don't know why." Xining: "One of the rings responds to touch. It's delicate, like a musical instrument. The sequence must be precise." A low vibration rumbles through the chamber as a ring slowly turns on its own; the structure interprets their presence, then the mechanism fully awakens. Stone plates slide open and an ancient guardian unfolds from the walls, a massive construct forged with bronze and stone, the size of several men. Its movements are precise, following an ancient program, and the party works together to hold it back. From the shadows an unseen observer takes aim: a thin metal dart flies silently and strikes a small latch behind the central ring. The latch releases, interrupting the mechanism at a critical moment; the guardian stutters and comes to a halt. No one sees who fired it; from somewhere beyond the chamber a faint scrape echoes, then silence.
+
+**Key events:** A chamber of suspended instruments and a dark central disc. · "It's not just a door mechanism. It's an entire system." · The mechanism awakens and a guardian unfolds from the walls. · A dart from the shadows strikes the latch.
+
+**Opens:** Battle: the chamber guardian; Discovery: an unseen observer stops the mechanism
+
+## 225. The Message in the Dust
+*Location: The chamber of instruments*
+
+VOLUME 6, COMIC 017. The guardian falls silent, its stone form broken. The chamber remains unstable but the mechanism above has stopped, for now. Hoko: "Next time we find an ancient mechanism, can we admire it from a distance?" "You were the one standing closest to the exit." "Exactly. I was protecting the exit." Cangyuan studies the dart: "This wasn't improvised. Whoever fired it knew exactly which latch to hit. Our watcher has been here before. Or someone taught him how to survive here." Xiao Tian finds a warning in the dust, left recently: "Do not align the fifth--" "I've seen this pattern before... But I don't know why." Dongyue: "It doesn't say the fifth must never be used. Only that we mustn't align it." Xiyu: "That sounds like a distinction someone made after learning the hard way." Without anyone touching it the blank fifth ring shifts a fraction toward the northern ring: "Nobody move. It's responding to the mechanism we interrupted." The mechanism restarts, the stone plates slide and the guardian moves again: "Then we stop it before the fifth ring connects!" A figure moves from the shadows and another dart strikes the second latch; the fifth ring jerks to a halt. The hooded watcher: "If you're going to stand there staring, at least help me!" The party helps. "You also activated the chamber." "And you helped us survive it. We can argue about blame afterward." "Easy. We just saved you." "You know this place. We need answers." The watcher: "I know how to keep certain things from killing me. That's not the same as understanding them. If you intend to keep going, you'll need someone who knows the way." For the first time the watcher had stepped into their world; whether he would walk beside them or disappear at the next opportunity was still undecided.
+
+**Key events:** "Do not align the fifth--" in the dust. · The blank fifth ring shifts on its own. · The hooded watcher: "At least help me!" · "I know how to keep certain things from killing me. That's not the same as understanding them."
+
+**Opens:** The watcher steps into their world; Discovery: a warning not to align the fifth
+
+## 226. The Terms of Trust
+*Location: The chamber of instruments*
+
+VOLUME 6, COMIC 018. The guardian has fallen silent and the unknown man who intervened is pulled from the shadows; for the first time the party stands face to face with the one who has been watching them. The page names him Yan (晏), a watcher of the ruins and its reluctant guide, not to be confused with Muxue Yan. Xiyu: "You could start by telling us your name. And why you have been following us." "Yan. I have been observing you since you entered the ruins. Because you woke something that should have remained quiet." Dongyue: "You knew which latch would stop it." "I know how to stop some things from killing me. That doesn't mean I understand them." Xining: "How long have you been here, Yan? And do you know what this place is?" "Long enough to learn which paths collapse, and which ones still hold. I know how to survive here. But I don't know the original purpose of this mechanism." Hoko: "Then help us reach the next section. After that, we're on our own." Yan: "This route is dangerous, even with me leading. If you cannot follow my pace or instructions, some of you may not make it. I'm also not here to answer every question." Xiyu: "Show us the route. You can keep your secrets for now. Helping us doesn't erase the questions you owe us." "...If I decide to leave?" "Then leave. We're not asking you to become our prisoner. Right now, we share the same destination." Yan leads the party into a narrow service passage lined with maintenance channels: "Stay close. Follow only where I step. This place doesn't like visitors." He had not joined them, not yet; for now they shared only a route, a danger and the fragile possibility of trust.
+
+**Key events:** The watcher is brought out of the shadows: Yan. · "I know how to stop some things from killing me." · "Show us the route. You can keep your secrets for now." · "Stay close. This place doesn't like visitors."
+
+**Opens:** The watcher gives his name: Yan (晏); Yan agrees to guide them to the next section
+
+## 227. The Keeper's Workshop
+*Location: A modest workshop off the service passage*
+
+VOLUME 6, COMIC 019. Following Yan the party enters a narrow service passage lined with maintenance channels. "Watch your step. Some of these stones are unstable." "You memorised every loose stone?" "No. I remember which ones tried to kill me." Xiyu: the passage has been maintained long after the main chamber fell into disrepair; some repairs are old, others recent. Yan: "I don't have the luxury of letting them collapse." The passage opens into a modest workshop with no treasures, only tools, spare fittings, weathered records and a simple sleeping mat. "This is where you've been living?" "When the other rooms become unsafe." Dongyue: the tools are modified for specific latches and channels. "You learned all this alone?" "I learned what I needed. Mistakes here are expensive." "And the knowledge came from?" "Old records. Older habits." Each tool has been altered to fit a unique mechanism within the ruins. Dongyue unrolls a brittle sheet showing the four directional positions connected to a central blank circle: "These instructions describe maintenance, not activation." "That's why I kept them." "You knew the fifth position was dangerous?" "I knew not to align it. I don't know what it is." Xiao Tian finds a worn mark on a wooden tool case resembling the fragment from his dream, but incomplete: "Where did this come from?" "It was here before me." Yan: "I was taught that someone must leave these systems stable for whoever comes next." "Who taught you?" "Someone who is no longer here." He shows a route that bypasses the unstable instrument chambers and leads toward an outer structure: "This route might get you out of the inner ruins. Might. The last section has shifted. I haven't crossed it recently." Xiyu: "You can guide us to the outer structure. After that, we'll decide what comes next." "And I can decide whether I continue with you." "That's fair." For the first time Yan had shown them more than a path: the shape of the life he had built among the ruins, and how little of it he was willing to explain.
+
+**Key events:** Maintenance channels and old, new repairs. · A modest workshop: tools, records, a sleeping mat. · "I knew not to align it. I don't know what it is." · "I was taught that someone must leave these systems stable for whoever comes next."
+
+**Opens:** Discovery: the keeper's workshop; Discovery: a route to the outer structure
+
+## 228. The Route That Should Not Exist
+*Location: A narrow service passage*
+
+VOLUME 6, COMIC 020. After reviewing the records Yan leads the party along a different route toward the outer ruins. "We follow this channel until it splits. Take the eastern branch, not the southern one." "The southern branch is marked as the shorter route." "It was. Before the floor collapsed." He leads them through a narrow service passage, carefully avoiding cracks and pressure plates: "You make this look easy." "It becomes easy when you've made every mistake already." At the junction the route is not as Yan remembers: a sealed wall with a glowing mark "That wasn't here." "How certain are you?" "Certain enough to dislike this." Dongyue: it isn't an ordinary collapse; the wall has moved into place, and fine lines beneath the frost match the channels from the instrument chamber but the pattern has been rearranged. Xiyu studies the groove: it does not form any of the four directional insignias and ends in a short unfinished line: "This doesn't look like a lock. It looks like a route being redirected." "Then don't touch it." "For once, we agree." Xiao Tian finds faint marks in the dust: not footprints but shallow impressions from a small wheeled or sliding object, "more recently than I would like". A low rumble passes through the ruins and the sealed wall slides aside by itself, revealing a narrow passage. Hoko: "I'm beginning to dislike doors that open on their own." "At least this one opened the right way." "Don't assume that yet." Yan checks the edges and finds no trigger: "I knew the route that used to be here." "Then the ruins are changing beyond your control." For the first time Yan leads them beyond a route he understands; whatever lies ahead, none of them can rely on old instructions alone.
+
+**Key events:** A route Yan remembers, and a wall that moved. · A groove that is a redirected route, not a lock. · Marks of a small wheeled or sliding object. · The wall opens on its own.
+
+**Opens:** Discovery: the ruins are changing beyond Yan's control
+
+## 229. The Chamber That Moved
+*Location: A chamber of hanging platforms*
+
+VOLUME 6, COMIC 021. Yan leads the party through the newly opened passage into a vast chamber: stone platforms hang at different heights, connected by narrow bridges, with gold channels crossing the walls but several ending in empty air. Dongyue: "This chamber should be one level below the archive." "Then why are we above it?" "That is what I'd like to know." Dongyue compares Yan's map with the chamber: the main walls match but the connecting platforms do not; the outer structure is unchanged and the interior has shifted. Xiyu examines a broken gold channel carved into a platform: the break is too clean for a natural collapse, possibly cut deliberately, but there is no sign of a blade. Yan finds a maintenance lever beneath a layer of frost, its handle turned but its locking pin missing: "This should hold the platforms in place." "Then someone released it? Or the mechanism released itself." Xiao Tian finds the locking pin lodged in a crack near the platform's edge, its surface scratched but not corroded like the surrounding metal: "This was removed recently." "Keep it. Don't put it back yet. We don't know what the lever will do if the platforms have already shifted." A deep rumble rolls through the chamber: one platform slides sideways, cutting off the route behind them, and another rises into place, forming a narrow bridge toward a sealed arch. "Please tell me that was supposed to happen." "It wasn't." "Then we move before it changes again!" Xiyu crosses the new bridge first, keeping her balance as the stone shifts beneath her ("Don't follow the old markings. Watch the platforms."). The new bridge leads to an arch bearing the four familiar directional insignias, with the central space blank and no visible keyhole: another structure tied to the same network, not marked on any map Yan has seen. Yan compares the recovered pin with the empty socket in his tool case: it fits, but its worn surface bears a tiny mark he doesn't recognise, and it came from a different mechanism. The ruins were not merely falling apart: something had altered their paths, and even Yan could no longer tell which changes were accidents and which were deliberate.
+
+**Key events:** A chamber of platforms where the interior has shifted. · A broken gold channel, too clean for a collapse. · The locking pin, removed recently. · A new bridge toward a sealed arch.
+
+**Opens:** Discovery: the locking pin; Discovery: a sealed arch tied to the same network
+
+## 230. The Door That Remembered
+*Location: The mysterious arch*
+
+VOLUME 6, COMIC 022. The seven arrive at a mysterious arch connected to the same network as the other instrument chambers: the four directional insignias are present, but the central circle remains blank. Xiyu: "This is the same structure as the instrument chamber. But the central position is still missing. Are we certain we want to trigger this?" Dongyue: "Let's try the pin Xiao Tian found. It might be a maintenance key. If it doesn't work, we stop immediately." Yan inserts the recovered pin into the empty socket at the centre. Instead of opening, the arch responds with light: the central circle illuminates, projecting fragmented scenes from the past, not memories but records of an earlier time when the ruins were still in use, with people in robes like Yan's inspecting and adjusting the mechanisms. Yan: "These are maintenance procedures. But someone left the final step incomplete." The records show a group deliberately removing the central component and sealing the arch with an incomplete alignment, leaving the central position blank. "They intentionally removed it?" "Yes. And they sealed it so it cannot be activated fully." "But why?" "I don't know." Xiyu: "This wasn't damage. It was a choice. Someone didn't want the full system to function." Dongyue: "Could it have been to prevent something from awakening? Or to keep something from leaving? We don't know which is worse." Xiao Tian: "This mark on the pin... I've seen something similar before. In my dream. But this is not the same." The pin came from a different mechanism: it was used here but doesn't belong here; someone has been moving components between chambers. The projection fades, leaving the arch silent. Yan: "So we know who came before us. But we still don't know what they were trying to stop... or what might happen if someone completes what they left unfinished." The arch had remembered, but its memories raised more questions than answers.
+
+**Key events:** The arch responds to the pin with light. · A record of a group removing the central component deliberately. · "This wasn't damage. It was a choice." · The pin belongs to a different mechanism: someone is moving components between chambers.
+
+**Opens:** Discovery: the arch's record of an earlier time; Discovery: the central component was removed on purpose
+
+## 231. The Cost of Completion
+*Location: The arch and its platform*
+
+VOLUME 6, COMIC 023. The recording fades, leaving the arch silent; the four insignias remain and the central position is still blank. Dongyue: "The removal was deliberate. Whoever did it understood what the central component controlled." Xiyu: "But we still don't know whether they were preventing something from awakening, or preventing someone from leaving." A sharp pulse travels from the arch into the floor and the recovered pin vibrates in Xiao Tian's hand: "It's reacting to this." Yan: "Put it down. Slowly." The platform beneath the arch shifts and a narrow bridge retracts, cutting off the route back. "The ruins have decided they don't like us!" "Less talking. Find solid ground!" Yan spots a maintenance lever across the widening gap: "If I reset this section, the record may be lost." "And if you don't, the platform will collapse." "Stay together. I'm going." Xiyu catches the edge of Yan's cloak while Cangyuan braces her from behind: "Let go! You'll fall too!" "Then stop making yourself so difficult to rescue." Dongyue identifies a secondary catch and Xiao Tian uses the recovered pin to hold it in place: "It needs another anchor." Ya'Xing crosses the narrow platform, using his sword to brace against a stone seam; Hoko steadies Xining while Cangyuan protects the others. "Now!" "Hold it!" The platforms stop moving; the arch's recording is gone, but the route ahead remains open. Xiyu: "You sacrificed the mechanism to save us." "I sacrificed a lever." "Don't make it sound noble." Yan: "I was taught to keep these systems stable. I thought that meant preserving them at any cost." Dongyue: "Perhaps maintaining something also means knowing when to let it go." "...Let's go." The recording was lost, and the ruins remained a mystery. But for the first time Yan had chosen the people before the system.
+
+**Key events:** The pin vibrates; the platform shifts and a bridge retracts. · Yan reaches for the lever; Xiyu catches his cloak. · The party anchors the secondary catch together. · "For the first time Yan had chosen the people before the system."
+
+**Opens:** The arch's recording is lost; Yan chooses the people over the system
+
+## 232. The Land Beyond the Mist
+*Location: A mist-covered landscape beyond the arch*
+
+VOLUME 6, COMIC 025. The seven companions cross beyond the broken arch and descend onto a vast, mist-covered landscape; the ruins stretch far beyond the inner structure, with distant towers rising from a sea of clouds. "Well, it's certainly not the same corridor." "That's the most encouraging thing you've said all day." Yan finds a weathered marker beside the road: its inscription resembles the maintenance notation but the route names are unfamiliar. "This isn't part of the system I was taught. Yet the marker uses the same construction." "Then whoever built this knew the same methods, or learned from someone who did." Dongyue: the mark doesn't match the four directional insignias or the blank fifth position: "This appears to be a route marker, not a formation symbol." The road leads to a small, abandoned settlement: stone houses stand intact, but their doors hang open and their lanterns are cold, with no bodies or signs of a recent battle. "People lived here. But they didn't leave in a hurry. There's no sign of a struggle." "Or someone made sure there would be no sign." Xiyu inspects a doorway with the same route marker: no lock, no broken seal, no trace of magic. "They didn't seal this place away. Then perhaps they expected someone to return. Or they expected someone to pass through without stopping." At the settlement's centre a circular platform surrounded by stone pillars, each bearing a different route marker, is a transit station for travelling somewhere else: "The destination is the part we're missing." Xiao Tian finds a small metal token lodged between the platform's stones, bearing a worn geometric mark that does not match the fragment from his earlier vision: "I'll keep it for further examination." Dongyue and Yan find the platform's channels cold and several connections physically removed: "Even if we restore this, we don't know where it leads. Then we shouldn't activate it just because we can." As the party prepares to leave a small amber light appears in an upper window of the settlement's watchtower: "Please tell me one of you did that." "No." Fresh footprints, too small to identify, mark the frost near the tower's entrance and the trail ends at the door: "I thought I was the only one still maintaining anything." "You may not have been alone here after all."
+
+**Key events:** A mist-covered landscape beyond the arch. · A route marker that is not a formation symbol. · An abandoned settlement and a transit station with its connections removed. · An amber light in the watchtower.
+
+**Opens:** Discovery: an abandoned settlement and a transit station; Discovery: someone is in the watchtower
+
+## 233. The Watchtower Door
+*Location: The watchtower*
+
+VOLUME 6, COMIC 026. The party follows the fresh footprints to the watchtower: the mist thins, revealing a tall, weathered tower at the edge of the abandoned settlement, and the footprints end at the heavy wooden door. "Whoever came here entered." "Or wanted us to think so." Yan examines the hinges: one has been repaired with a different metal pin; the work is careful but hurried. Xiyu pushes the door open: the ground floor is empty, with a table, broken lanterns and a stairway upward. "Whoever lit the tower is gone. Or upstairs." On the landing Xining finds a cup and a folded blanket: "Someone stayed here, at least briefly." The blanket hasn't gathered much dust. In the upper room Dongyue finds a damaged transit record: several routes are marked but one section has been torn away, the tear too clean to tell why. "This station connected to more than one destination. And someone removed the part that matters." Xiao Tian places the metal token beside the remaining marks: "It belongs to this network, perhaps. But not this station." "Don't force it to fit." Cangyuan finds a hidden compartment beneath the desk with a strip of paper protected by waxed cloth: "...outer route unstable. Do not return by the station." "It tells us one thing: the station may not be safe to use." Yan finds an empty outline where a specialised maintenance tool once rested, similar to his own but not identical: "Someone was working here. Someone who knew what they were doing. Enough to leave. Not enough, or not willing, to leave us a complete answer." From the tower window the party sees an old elevated road leading away from the settlement, its far end disappearing into the mist but appearing physically intact: "A route we can walk. No activation mechanism required." "I don't know where it leads." "Then we'll find out together." The watchtower offered no reunion and no complete map, only proof that someone had passed this way and a road that still waited to be taken.
+
+**Key events:** Footprints end at a repaired door. · A cup, a blanket, a torn transit record. · "Outer route unstable. Do not return by the station." · An elevated road that needs no mechanism.
+
+**Opens:** Discovery: someone stayed in the watchtower; Lead: the elevated road
+
+## 234. The Last Transit Record
+*Location: The elevated road and a half-buried building*
+
+VOLUME 6, COMIC 027. Before leaving the watchtower the party takes a closer look at the damaged transit record: a faint notation mentions a second record, possibly stored further along the elevated road. "A duplicate?" "Possibly. Or an index telling someone where the original was moved." Dongyue: a small symbol beside the damaged route resembles the marker on the elevated road outside but is incomplete. Yan looks out to a narrow side path toward a smaller stone structure half-buried in frost: "That building may have been a route station." "You sound uncertain." "Because I've never been there." "Then we decide together whether it's worth the detour." On the elevated road ("At least the road isn't trying to move." "Don't tempt it.") the party makes one short stop; if the structure is unsafe they turn back. The side path leads to a squat stone building sealed by a wooden panel reinforced with old metal strips: "No active mechanism. Just a door." "Finally, a door that behaves like a door." Inside Dongyue finds a narrow stone case containing several sealed strips of treated paper; most are blank from age but one preserves part of a route record: "This is a copy, not a complete one, but enough to compare." It shows the elevated road branching toward an outer gate; a later hand has crossed out the final segment and written a warning: "Outer route uncertain. Verify before passage." "Someone marked this after the original map was made. So the route may still exist, but the record cannot guarantee it." Xiao Tian compares the metal token with the marks on the record's case: a small notch is similar but not an exact fit: "Don't turn a resemblance into certainty." From the station the elevated road continues toward an ancient outer gate; one side of the bridge is broken but a narrow ledge may allow passage: "That looks like our next obstacle." The record gave them no promise of escape, only a destination worth testing. For once, Yan did not have to make the decision alone.
+
+**Key events:** A second record and a half-buried route station. · A copy of the route record with a later warning. · "Don't turn a resemblance into certainty." · An outer gate, a broken bridge and a narrow ledge.
+
+**Opens:** Discovery: a copy of the route record; Lead: the outer gate
+
+## 235. The Road That Closes
+*Location: The broken bridge and the narrow ledge*
+
+VOLUME 6, COMIC 028. The party stands before the broken bridge: a narrow ledge follows the cliff wall toward the outer gate, while the elevated road behind them stretches back toward the abandoned settlement. "The ledge looks passable, one at a time." "And if it isn't?" "Then we find out before all seven of us step onto it." A deep crack races across the elevated road behind them; stones shear away and vanish into the mist and the golden lines flare once, then go dark. "The road is collapsing!" "Not just collapsing. The supports are disengaging." "Can you stop it?" "Not from here." Yan kneels beside a broken channel: "If I can reach the support joint, I might slow the collapse. Might. I don't know this structure. I'd be guessing." Xiyu: "We don't risk the whole party to save a road. If it collapses completely, the route may be lost." "And if you fall trying to preserve it, what exactly have you saved?" Ya'Xing moves onto the ledge first, using Skyshard to test the stone ahead: the first section holds but a loose slab shifts under his weight: "The outer edge is stable. The middle section isn't. I can find a foothold. Someone will need to secure a line." Dongyue: "We move in pairs. No one crosses alone." Cangyuan checks the anchor, Hoko steadies it and Xiao Tian carries the line across after Ya'Xing marks the safe footholds. "The pillar might not hold." "Then check it with us instead of trying to solve everything by yourself." One by one the companions cross: Xining slips on loose frost but Xiao Tian and Hoko catch the line, and Yan reaches back to help steady the anchor. The last section of the elevated road breaks apart; the line snaps free of the old pillar, leaving the party stranded on the outer ledge, with the gate intact ahead and the route behind them lost to the mist. "So we're committed." "Yes." "Then we stop looking back and find out where this road leads." Yan looks back once at the broken road, takes a small maintenance tool from his case, considers it, then puts it away. "You could still try to repair it someday." "Perhaps. But not today." The road behind them had fallen; for the first time, Yan allowed a broken thing to remain broken and chose the uncertain path forward.
+
+**Key events:** A crack races across the road behind them. · "We don't risk the whole party to save a road." · They cross in pairs, anchoring a line. · Yan lets the broken road stay broken.
+
+**Opens:** The road behind them collapses; Yan chooses not to repair it
+
+## 236. A Choice Beyond the Ruins
+*Location: The ancient outer gate*
+
+VOLUME 6, COMIC 029. The party reaches the ancient outer gate: it stands between two towering cliffs, far larger than any structure they have seen in the Unknown World. The mechanism appears intact but the gate is tightly sealed. "So this is the outer gate. It's still standing. But how do we open it?" Yan examines the control panel: it is functional but its activation seal faces the other side, as the gate was designed to be opened from beyond. "The release mechanism is on the far side. We can't open it from here. It would require a manual release. Even if I force it, I might damage the connection permanently." Dongyue: the gate is part of the same network but its symbols differ from the transit station's markers; it leads somewhere beyond the Unknown World, and the structure is intact, so the route may still be reachable. "If we open this, the connection to the inner ruins may be severed." "You could still try to maintain it someday." "But not today. You don't have to decide right now." Xiyu: "You don't have to carry this alone anymore. Preserving the past is important, but so are the people standing here with you now. If opening this gate means letting go, then let go with us, not against us." Yan takes a small maintenance tool from his case and looks at it for a long moment: a tool that has been with him for years, a symbol of his duty to the ruins. "I always thought I had to come back." "That someone needed to keep this from being forgotten. But a place is not truly preserved if it costs everything important to you. Maybe letting go is also a way of protecting it." Yan puts the tool back, takes a deep breath and looks toward the gate: he is not abandoning the ruins, he is choosing what comes next. "I can't open this gate from this side. We'll have to cross and activate it from the other side. ... Then we move forward together." The party prepares to cross into the unknown: "No more hesitation. Whatever the other side is, we face it together. Let's go." Behind them the ruins fade into the mist; ahead, a new world stretches beyond the horizon. Yan chose not to look back, not because he had forgotten but because he finally had people worth moving forward for.
+
+**Key events:** A gate larger than anything they have seen. · "The release mechanism is on the far side." · "Maybe letting go is also a way of protecting it." · "Then we move forward together."
+
+**Opens:** Yan chooses to leave the ruins with the party
+
+## 237. The Way Forward
+*Location: The outer gate and the valley beyond*
+
+VOLUME 6, COMIC 030 (finale). The party reaches the ancient outer gate: beyond the sealed arch lies another world, its sky brighter and wider than anything in the Unknown World, with the release mechanism on the other side. "The release is on the other side. We need a way around the gate." "There's a service channel beneath the western support. If it hasn't collapsed, it will lead behind the mechanism." "Then let's go." Yan removes a loose stone panel revealing a narrow service channel, barely wide enough for one person: "You don't have to be the first one in." "I know the route." "Then guide us. Don't mistake that for having to face everything alone." The party moves through the ancient maintenance channel; several sections have collapsed but the passage holds with care and teamwork. The passage opens behind the gate's inner mechanism: four mechanical arms meet around a central socket, but the socket is empty. "This is a manual release. It doesn't need the central position." "Can we open it without damaging the rest of the system?" "If we move the arms in sequence, I can guide you, but I can't guarantee what remains connected beyond the gate." The release sequence is marked clearly: mountain (North), flame (South), dragon (East), bird (West), with the central socket blank and untouched. "Then we open the way out without waking what we don't understand. On my signal." The arms turn one by one: "Keep the last arm steady!" "It's slipping!" "Hold it!" "Almost there!" With a thunderous rumble the ancient gate opens: beyond it lies a vast valley of light and mist, a sky unlike the enclosed ruins behind them. "That's a real sky, isn't it?" "It appears to be." "Then we should keep moving before the gate changes its mind." Yan looks back once toward the ruined world he maintained for years, takes a small maintenance tool from his case, then puts it away: "I thought leaving would mean abandoning everything I was taught." "You can carry what matters without staying trapped where you learned it." "...You're right." Yan crosses the threshold and joins the group, choosing the uncertain path forward not as a keeper alone but with companions at his side. "I'll travel with you until I understand what lies beyond this place." "That sounds suspiciously like joining us." "It's a temporary arrangement." "We'll take it." As they walk into the new world Xiao Tian notices a distant monument whose worn mark resembles the token he found, but the distance is too great to confirm; he doesn't tell the others, he simply keeps walking. "So many places still waiting... and so many answers left to find." Volume 6 complete. Progress: reached the ancient outer gate; opened the gate and escaped the inner ruins; discovered the route leads to a new world; Yan chose to move forward with the party. Ongoing mysteries: the fifth position remains unknown; Xiao Tian's past is still fragmented; the full purpose of the transit network; who left the ruins, and why; what lies in the new world. To be continued in Volume 7.
+
+**Key events:** The gate must be opened from the other side. · A service channel and a manual release. · "I'll travel with you until I understand what lies beyond this place." · A distant monument bears a mark like Xiao Tian's token.
+
+**Opens:** Volume 6 complete: the party leaves the ruins; Yan travels with the party temporarily
+
+
+---
+
+# Volume 7: The Ruins That Remember
+
+## 238. A Place at the Fire
+*Location: Ruins in a new land*
+
+VOLUME 7, COMIC 001 (The Ruins That Remember). After crossing the single-use portal the party finally sets foot in a new land and finds a sheltered place to rest among the ruins. For the first time in a long while there is no pursuit, no mechanism to activate and no danger pressing down: tonight they rest. Xining prepares a gentle supplement from herbs gathered along the way: "This will help your body recover from the fatigue of the portal. Please drink it while it's still warm." "...Thank you. It smells really good." Xiyu: "By the way, we'll call you Xiao Yan. My father was Muxue Yan, so to avoid confusing the two, we thought Xiao Yan sounds better." "...That's fine. Thank you for accepting me." The party eats together: "Xiao Yan, try this. It's a simple dish, but Xiyu really knows how to bring out the flavour." "You've worked hard. You need to eat well." "Later we'll plan the route to the city. For tonight, let's just enjoy this." Xiao Yan has spent so long maintaining places and paths for others that he had almost forgotten what it feels like to be welcomed somewhere himself. For now he walks with the party, not as a keeper left behind but as Xiao Yan, a place among companions who accept him as he begins a new journey in this world.
+
+**Key events:** The party rests at a fire among the ruins. · Xining's supplement for the portal's fatigue. · "We'll call you Xiao Yan." · "What it feels like to be welcomed somewhere himself."
+
+**Opens:** Xiao Yan joins the party; Moment: a place at the fire
+
+## 239. The Road Beyond the Valley
+*Location: The ruins and the descent to the lower valley*
+
+VOLUME 7, COMIC 002. The morning after a night of rest the party prepares to continue its journey: the new world has offered a way forward, but the road ahead remains uncertain. Xiao Yan rises early out of habit, checking the surrounding ruins: "The eastern slope is unstable. We shouldn't take that path." Xining: "You're awake early." "Habit." "Then make a new one. Eat breakfast before you start inspecting everything." Xiyu: "Xiao Yan! If you let the food cool, I'll assume you dislike my cooking." Dongyue studies a map with Hoko: "If this record is accurate, we can reach the lower valley before nightfall." Xiao Yan: "If it's accurate. We should prepare for the possibility that the bridge is gone. This drainage path could still be passable, though the stonework will be slippery. The retaining wall leans inward. Water would have followed the lower edge. If the channel remains open, it should lead beneath the damaged section." "You're much more talkative when discussing broken roads." "Broken roads rarely ask personal questions." The party prepares supplies: "Leave a little room. We may find supplies along the way. Or we may find nothing. Better to ration what we have." Xining: "These are safe to handle, but don't assume every similar-looking plant is safe. Learn to identify them before you prepare anything." Xiyu teaches him which ingredients can be kept and which need to be used quickly: "Are you teaching me to cook?" "I'm teaching you not to waste my ingredients." Ya'Xing: "These grow where the water drains away. We might find more along the lower path." For years knowledge had been something Xiao Yan guarded; here it was something he could gather from others. By sunset they reach an abandoned waystation; beyond it lies the mountain road and a place Xiao Tian has not seen since the world he knew was taken from him. The road ahead is still uncertain, but for the first time Xiao Yan does not have to face it alone.
+
+**Key events:** Xiao Yan checks the ruins out of habit. · "Broken roads rarely ask personal questions." · Xining and Xiyu teach him: plants, ingredients. · An abandoned waystation by sunset.
+
+**Opens:** Ledger: travel preparation introduced
+
+## 240. The Waystation Beyond the Mist
+*Location: An abandoned waystation on the mountain road*
+
+VOLUME 7, COMIC 003. After a day's descent the party reaches an abandoned waystation along the mountain road: weathered by time, its stone walls and broken roofs still offer shelter. It once served travellers on this continent, a reminder that they are back in their own world, just a distant land. Hoko: "We can shelter here, provided we avoid the eastern rooms. The roof beams are cracked." Xiao Yan: "The stone supports on this side are still stable. We should keep our packs away from the inner wall. The drainage channel is open, so rainwater shouldn't collect here." Xiyu finds a kitchen: "Good. A kitchen. This place may yet redeem itself." "You've inspected more stones today than most people inspect in a lifetime." "And yet the stones continue to surprise me." Xiao Tian looks at a pattern carved on a wooden post: "This pattern..." Dongyue: "It may have been a waystation mark. We shouldn't assume it belongs to a particular family." At the sight of the carving fragments surface: the sound of wooden swords, distant shouts and the rhythm of practice long ago. "Someone was training..." "Take your time. You don't have to chase the memory." "I couldn't see anyone clearly. But I knew how to stand. My body remembered before I did." Hoko brings plants for Xining to identify ("Good instinct. Never use a plant simply because it resembles one you know. Learn to identify them before you prepare anything."). As night falls the party shares a simple meal in the old kitchen. "Any pain? Dizziness?" "No. Just... a memory that disappeared before I could hold it." "Then rest. We don't need to force it tonight." As the others settle down Xiao Tian looks at the mark once more: a fragment surfaces, "Again. From the beginning." The past has not returned. Only a sound, a movement, and the ache of something once familiar. The waystation once sheltered strangers on a long road; tonight it shelters a group carrying their unfinished histories.
+
+**Key events:** A waystation that still offers shelter. · A carved mark and the sound of wooden swords. · "My body remembered before I did." · "Again. From the beginning."
+
+**Opens:** Xiao Tian: a memory of training at a waystation mark
+
+## 241. The Mountain Remembers
+*Location: The mountain road*
+
+VOLUME 7, COMIC 004. The waystation fades behind them as the party continues along the mountain road, deeper into a remote region of their own world, a distant continent, where Xiao Tian's past still sleeps beneath the mountains. The road splits: the western path is longer, the eastern appears to climb toward a broken pass. Xiao Yan: "The eastern pass may be dangerous, but it was built to carry travellers. If its foundations still hold, we can cross." Dongyue: "We'll inspect it before committing." Xiao Tian: "I think I know those peaks." At a carved stone a memory surfaces: footsteps, a wooden sword and voices urging him to keep up. "I remember running here." "Do you remember where you were going?" "No. Only that I didn't want to be left behind." A loose rock tumbles and Xiao Tian moves without hesitation: "That movement was precise." "I didn't think about it." Dongyue: "Your body can retain trained movements even when the memories surrounding them are inaccessible." They cross the broken pass along the cliff wall one at a time, and beyond it the landscape opens into a secluded mountain basin with a ruined estate at its heart. "This place... I lived here." He had found the place his memories kept circling; whether it would return what he had lost, or reveal what he was not yet ready to face, remained unknown.
+
+**Key events:** The road splits; Xiao Yan reads the eastern pass. · "I remember running here." · A precise movement without thought. · "I lived here."
+
+**Opens:** Discovery: Xiao Tian's former home
+
+## 242. The Gate of His Former Home
+*Location: The estate gate*
+
+VOLUME 7, COMIC 005. The mountains had changed less than the world below; here the years left marks but did not erase every trace of what happened. The party gives Xiao Tian space at the ruined gate. The door groans, the same sound as before, and a small memory returns: the courtyard fills with the sound of wooden swords, the instructions of a stern master and the weight of many mornings. "We trained here." "Your technique is still there." "I know how to move. I just can't remember who taught me every part of it." Dongyue: "You don't need to recover everything today." The marks on the entrances weren't made by weather: the damage is concentrated around the entrances and someone forced their way through. Xining finds a hairpin that survived the collapse: "I don't know this hairpin... but seeing it feels familiar." A fragment: flames beyond the doorway and someone shouting for him to run. "We've learned enough for today. We'll continue when he's ready." In his old room a few belongings remain beneath the dust: "I used to keep things here. Small things. I don't remember what they were." Somewhere inside the ruins a piece of his old life had survived the fire.
+
+**Key events:** The gate groans: the same sound as before. · Wooden swords and a stern master. · Damage forced around the entrances. · A hairpin that feels familiar.
+
+**Opens:** Discovery: signs the estate was forced
+
+## 243. What Survived the Fire
+*Location: Xiao Tian's old room*
+
+VOLUME 7, COMIC 006. Some things had been lost to the fire, but not everything had been destroyed. Xiao Tian returns to his old room, following the faint memory from the dream: a loose brick, just as he remembered, with a small recess behind it. Inside, wrapped in a dark cloth, is a jade keepsake on a red cord with a gold tassel. It was not the manual: it was a personal keepsake left by his master. For a moment memories return, not of the attack but of quieter days: his master had cared for him, taught him and protected him, and given him this keepsake as a reminder that he was never truly alone. But the memories did not reveal who had attacked the estate, or why. The manual must be hidden elsewhere in the estate; this was only one piece of the past. Later Xiao Tian rejoins the others and shows them what he found. "It's a personal keepsake from my master." "It doesn't reveal who attacked the estate. But it confirms that he cared for you." "Then it's important you keep it. It's part of who you are." "We'll continue searching for the manual tomorrow. There may be other hidden places in the estate." That night Xiao Tian places the keepsake beside him: a small thing, but it gave him strength. His master's care had survived the fire, and so would he. There were still secrets within these ruins, and the search for the manual would continue.
+
+**Key events:** A loose brick and a small recess. · "It was not the manual. It was a personal keepsake left by his master." · "It confirms that he cared for you." · "The search for the manual would continue."
+
+**Opens:** Discovery: his master's jade keepsake
+
+## 244. The Old Study
+*Location: The old study at the end of the inner corridor*
+
+VOLUME 7, COMIC 007. Guided by fragments of memory the party goes deeper into the estate, to the old study at the far end of the inner corridor, a place Xiao Tian remembers, though time has left its scars. "I spent many evenings here. It looks almost the same, though... different." Xiao Yan: "The room is stable enough for now. Avoid the damaged section on the left." Xiao Tian: "I remember my master working at this desk. Many things are gone, but some traces remain." Xiyu and Dongyue sort the papers that can still be read; Hoko notes the damage differs from the outer buildings: "It looks like someone searched for specific things." Xiao Tian finds a small deliberate mark on the wood: "My master sometimes left small marks like this when he wanted me to notice something." Behind the desk Xiao Yan finds a thin panel built to be opened without damage. Inside, protected from the dust, are a folded map and a short note. Unfolded on the desk, the map shows a detailed layout of the estate, including a passage beneath the main hall. "This is more than a floor plan. It shows a route below the hall." "I never knew there was a lower passage here." Hoko: "The proportions match the current layout. We should compare it with the hall before proceeding." The note: "When the hall is cleared, follow the lower wall. Do not force the sealed way." The map leads them to the main hall: the stonework matches the marking, but the entrance is not immediately visible. "So this is where we start. We find the entrance first, and confirm the structure before opening it." Somewhere beyond the wall lay a hidden passage; what waited beneath the hall remained unknown.
+
+**Key events:** A study searched for specific things. · A hidden panel opened without damage. · A map with a passage beneath the main hall. · "When the hall is cleared, follow the lower wall."
+
+**Opens:** Discovery: a map of the estate and a note from his master
+
+## 245. The Days Before
+*Location: The storerooms and the rear of the estate*
+
+VOLUME 7, COMIC 008. In daylight the estate seems less like a battlefield and more like a home interrupted. "We'll record what we find. No one enters a collapsed room alone." Xiyu: "Someone used to sit here often." Memories of ordinary days return: training before sunrise, chores, then training again, carrying water, and a boy beside him ("Don't drop it. The master will make us both carry water tomorrow."). "I thought I remembered only the fighting." "Sometimes the ordinary memories are the ones that take longer to return." A chipped wooden whistle: too damaged to play, but the shape is familiar. Several storage rooms have been disturbed, the damage concentrated around the latches: "Someone wanted this open quickly." "If they were searching for something, they didn't take everything." The dust is thinner on one shelf: "We have signs of a search, not proof of what they wanted. Let's keep those separate." In a room near the rear Xiao Tian stops: "My master sent me away before... before everything happened." "I need you to go somewhere for me." "Can't one of the senior disciples go?" "This is something I'm asking you to do. Remember the route. Don't take unnecessary risks. Return when the task is done." He left on his master's instructions, and when he returned the home he remembered was gone. The destination and the object he was meant to retrieve remained lost to memory, but the days before the fire still lived within these ruins.
+
+**Key events:** Training, chores and a boy carrying water. · A chipped wooden whistle. · Storerooms disturbed around the latches. · "Remember the route. Return when the task is done."
+
+**Opens:** Memory: he was sent away on an errand before the attack
+
+## 246. The Manual Behind the Wall
+*Location: The main hall and the older wall beyond it*
+
+VOLUME 7, COMIC 009. Guided by the map and the note, the party returns to the main hall and searches the wall the map marked; the hidden passage leads to an older part of the structure whose wall feels different from the rest. "There's a seam here. It looks like a panel." "Careful. Let me check the joints." The panel opens on a cavity. Inside, wrapped in old cloth, are a blue clothbound manual titled 山行書 and a round jade keepsake with a red cord. "This is my master's handwriting." "The jade keepsake... the same as the one he gave me when I was young." The manual is filled with martial techniques, each page carefully written and illustrated: "I remember this movement... He showed me this when I was still learning." Xiyu: "Does it help you remember more?" "Not fully. It brings back fragments... but not the whole picture." Cangyuan: "Even so, it is an important lead. Your master trusted you with this for a reason." Dongyue: "This keepsake carries his feelings. It must have been with him always." "The carvings look like a seal. Do you know what it means?" "I don't know... But the manual is real. The techniques are exactly as he taught me." Xiao Yan: "Then we keep it safe. It may help you recover more memories later." The manual and the keepsake are placed back in a protective cloth. They were not the end of the search, but they were proof that his master's inheritance had survived. The path ahead was still uncertain, but for the first time since his return, Xiao Tian held something that belonged to his past.
+
+**Key events:** A seam in the old wall. · A manual 山行書 in his master's hand. · A round jade keepsake with a red cord. · "The techniques are exactly as he taught me."
+
+**Opens:** Discovery: the manual 山行書
+
+## 247. The Lesson Between the Lines
+*Location: The estate room*
+
+VOLUME 7, COMIC 010. The manual survived the fire; the hand that filled its pages did not. "He always wrote the reason beside the movement." "If you only copy the shape, you'll fail when the ground changes." Dongyue: one section has been corrected, and the correction changes the direction of the final movement: the original version leaves his side exposed, the corrected one is more compact. "He changed this after teaching me the first version." "Do you remember when?" "No. Only that he insisted I practise it until I stopped making the same mistake." Several pages have been removed carefully: "But we can't tell whether your master removed them or someone else did." Xiao Tian repeats the sequence with the corrected movement: "That looked different." "It felt different." "You may be able to relearn the reasoning even if the memory of the lesson doesn't return." On the inner binding he notices a faint mark, a simple notation of mountains and a circle: "It could indicate a location. But without the missing pages, we don't know how to read it." The party searches the room for loose pages; "I won't guess at what they said." His master had left him a way to continue learning, but somewhere between the lines a part of the past was still missing.
+
+**Key events:** A corrected section: the final movement changed. · Pages removed carefully. · "I may be able to relearn the reasoning." · A mountain-and-circle mark on the binding.
+
+**Opens:** Discovery: the manual has missing pages and a mark
+
+## 248. The Night of Masks
+*Location: The estate at night*
+
+VOLUME 7, COMIC 011 (regenerated for the keepsake). Some memories returned with warmth; others waited behind the same doors as fear. Xiao Tian studies the unfamiliar mark again and again; a loose shutter bangs. "That sound... I heard it that night." The memory returns: figures in masks move through the estate, shouts echo in the corridors and steel rings against steel. "Listen to me. You must leave." "Master... What about everyone else?" "Go. Do not turn back until you are clear of the mountain. Go. This is an order." "I hesitated. I didn't leave immediately. I looked back." During the chaos one of the attackers turned toward the sound of his footsteps; the mask shifted for a moment and their eyes met. Then the memory broke apart into fire, falling beams and a reaching hand. "I saw someone. I know I saw someone." Xining: "You're here with us. Breathe slowly." Dongyue: "You remember part of a face. We should preserve that detail without forcing the rest of the image to become clearer than it is." Hoko: "Let's keep to what you're certain of. It helps us understand the timeline, even if the identity remains unknown." Another memory surfaces, before the attack: his master, with the jade token before him: "There is something I need you to retrieve. You must go alone." "Why can't one of the senior disciples go with me?" "Because I'm asking you to do it. Trust me, and remember the route." The location and the object remained indistinct; the errand came first and the attack happened later. Xiao Tian places the manual beside the jade token: two inheritances, separate yet equally precious. Xiao Yan: "I'll secure the shutters. You should get some sleep." "Thank you, Xiao Yan." He had recovered a command, a glimpse of a face and the memory of a road he was told to follow. The answers were still far away, but now he knew which questions to ask.
+
+**Key events:** A shutter bangs: the night returns. · "Go. Do not turn back until you are clear of the mountain." · An attacker's mask shifts; their eyes meet. · The manual beside the jade token: two inheritances.
+
+**Opens:** Memory: the night of the masked attack; Memory: an errand he must do alone
+
+## 249. The Errand He Forgot
+*Location: The estate*
+
+VOLUME 7, COMIC 012. He remembered being sent away and returning to ruin; between those two moments lay a road his mind could no longer find. "Do you remember anything else about the errand?" "Only pieces. I was meant to leave alone. My master told me to remember the route." "Keep it dry. Don't open it on the road." "I was carrying something. I'm sure of that much. But the memory fades before I can see what it was." The party lays out the map, the manual and their notes: "The mountain roads have changed. Even if we knew the original route, we'd need to check which sections remain passable." What they know: his master sent him away before the attack; he carried a wrapped object; he was told to remember the route. Dongyue: "The errand may explain why you survived. But we can't assume your master sent you away because he expected the massacre." "I don't want us to invent an answer just because we need one." Xining: "If you push too hard, you may only exhaust yourself." Xiao Tian: "I can perform forms I don't remember learning. But when I try to recall that night, everything breaks apart." He stops before the final movement: "I know what to do. I just can't hear his explanation anymore." Hoko proposes a guided trance: slow breathing, a steady point to focus on and careful questions, like a pendulum. "And if the method leads him toward a memory that isn't real?" "Then we stop. It cannot prove that a memory is true. It may help him reach a fragment, but we mustn't put words into his mouth." Xiao Tian: "I want to try. Not tonight, but when I'm rested." The party prepares. He could not force the past to return, but with his companions beside him, he could choose how to seek it.
+
+**Key events:** A wrapped object he was told to keep dry. · The errand and the massacre are not assumed to be connected. · Hoko proposes a guided trance. · "I want to try. Not tonight."
+
+**Opens:** Lead: the errand; Hoko proposes Echo Recall
+
+## 250. Echo Recall
+*Location: A quiet room in the estate*
+
+VOLUME 7, COMIC 013. They would not force the past to open; they would make room for Xiao Tian to approach it at his own pace. A quiet room, clear boundaries: "If you feel unwell, we stop." Hoko: "This is only a focus. It won't uncover truth by itself." Dongyue: "I'll write down your exact words. I won't suggest names, places, or answers." "If I want to stop, I say so." "Immediately." "Breathe slowly. Focus on this point." At first only the sound of his own breathing; then a road appears in his mind: stone steps, pines, a bend near a broken marker. "I was carrying something. I kept checking that it was still there." The object remains unclear, hidden within the cloth. His master: "Remember the route. Don't take unnecessary risks." "How will I know I've reached the right place?" His answer fades before Xiao Tian can hear it clearly: "He said... 'When the road divides, don't follow the wider path.'" "Is that what you remember?" "Yes. I think so." For a moment the night returns, with flames; "Stop. I don't want to go further." "That's enough. You're here with us." "Not remembering it today doesn't mean it's lost forever." They compare the route notation with the old map: "If that phrase is accurate, the narrower branch may matter. But we should compare it with the actual terrain." The memory had not given him a destination; it had given him a choice of roads.
+
+**Key events:** A road in his mind: stone steps, pines, a broken marker. · "When the road divides, don't follow the wider path." · The night returns; he asks to stop. · "It had given him a choice of roads."
+
+**Opens:** Discovery: "When the road divides, don't follow the wider path"
+
+## 251. His Master's Instruction
+*Location: The junction and the narrow path*
+
+VOLUME 7, COMIC 014. The memory had given them no destination, only a warning. The party sets out from the estate after a night of rest to a junction: the broad road appears on the map, the narrow one is barely marked. Xiao Yan: "There are old stone supports beneath the weeds. This was a built path, not just a game trail." "I remember standing here. Or somewhere very much like it." "We'll inspect the narrow path first. If the landmarks don't match, we turn back." A moss-covered marker carries a carving that resembles the notation in the manual but is too eroded to be certain. His master: "A road is not always the path that looks most travelled. Learn to recognise what was built to last, even when the road itself disappears." "He taught me to look for the foundations, not the surface." Dongyue records the marker's position. They continue along the narrow path ("Keep to the inside edge. The slope below has been eroding."), crossing a damaged section one at a time. "I think I passed this point alone." "You may forget the exact turns. Remember what the signs mean." "What if the signs are damaged?" "Then learn to read the land itself." "He wasn't just teaching me a route. He was teaching me how to find it again if the markers were gone." Dongyue: "That fits what we've found. But we should still distinguish the route you remember from the errand's destination." "I know. We follow the evidence, not the answer I want." Beyond the bend they find a section of old stonework almost completely hidden by vegetation. His master had taught him how to find a road after it disappeared; the road was returning, but its destination remained hidden.
+
+**Key events:** The broad road versus the barely marked narrow one. · A moss-covered marker like the manual's notation. · "He was teaching me how to find it again." · Old stonework hidden by vegetation.
+
+**Opens:** Discovery: the narrow path was built to last
+
+## 252. Words in the Night
+*Location: A stable part of the estate*
+
+VOLUME 7, COMIC 015. The trail had offered a direction, not a destination; for tonight the party had reached the limit of what the ruins could tell them. They return to a stable part of the estate. Xining gives Xiao Tian a drink to help him recover from the strain of the last few days: "You've been looking after everyone." "That's what happens when everyone forgets to rest." The two companions settle into the same room. Ya'Xing lies awake listening to the wind; Xiao Tian murmurs in his sleep: "When you reach the... ...Jinghe... stone beneath the pine..." "Xiao Tian?" Ya'Xing repeats the phrase silently to himself, committing it to memory. The next morning: "You said something in your sleep. I think it might matter." "What did I say?" "'Jinghe... stone beneath the pine.' You repeated it twice." "Jinghe... I don't recognise the name. Not consciously." Dongyue: "It could be a place, a landmark, or part of an instruction. We shouldn't decide which until we have more evidence." Xiao Yan: "There are several old routes that pass beneath pine-covered slopes. We'll need more than that phrase to identify one." Hoko: "I can't find 'Jinghe' marked here. It might be a local name that never appeared on this map." Xiyu: "Or it may not be a name at all. It could be a phrase he learned to associate with the errand." Dongyue: "Either way, it came from Xiao Tian's own sleep. That makes it worth investigating, not automatically true." The note: 'Jinghe: "stone beneath the pine." (heard during sleep) Meaning unconfirmed.' A few whispered words had survived where a whole night remained lost; the party now had another clue, but not yet an answer.
+
+**Key events:** Xiao Tian murmurs in his sleep: "Jinghe... stone beneath the pine." · Ya'Xing commits it to memory. · "Worth investigating, not automatically true." · The note: meaning unconfirmed.
+
+**Opens:** Discovery: the words "Jinghe... stone beneath the pine"
+
+## 253. The Route Beyond the Mountain
+*Location: The estate's surviving study, the pine forest and the lower valley*
+
+VOLUME 7, COMIC 016. A few whispered words were not enough to identify a destination, but old records could preserve what memory had lost. The party gathers in the estate's surviving study and compares the old map with the notes from Xiao Tian's memory session. Xiao Yan: "This mark may match the phrase Xiao Tian spoke in his sleep. We should compare it with the other notations." Dongyue: "The pine mark is older than the surrounding notes. Someone copied it from an earlier record." "This section was added later. The original map may have shown a route that no longer exists." Hoko: "There's a name here, or the remains of one." Xiao Tian: "I don't recognise them. But I feel as though I should." Dongyue: "The first character is too damaged to read with confidence. The second might be 'he', but that is only a possibility." Hoko: "If 'Jinghe' is a local name, the spelling we use now may not match the old record. We shouldn't force the characters to fit the phrase." Xiyu: "The words he spoke could be a place name followed by a landmark. Or someone might have taught him to remember the phrase as a whole." Cangyuan: "Either way, we need an independent record before we treat it as a location." The road on the map leads toward the nearest town beyond the mountain range: "If old records survived there, we may find another reference." "Then that's our next destination. We'll look for records, not assume we've already found the answer." The party prepares: Xining will replenish supplies once they reach the town; rope and spare bindings for the uneven mountain trail; the map fragment kept dry; the copy goes with them while the original stays protected. Xiao Tian takes one last look at the estate: for days the ruined home had held him close to the life he lost, and now the road led him away from it. They follow the old trail down through the pine forest; mist rolls across the slope; they find an old milestone with a weathered carving of a pine tree that resembles the map symbol, though it provides no readable name. "It's familiar. That's all I can say." "We'll record it and keep going." The road finally carries them beyond the mountains, to a town in the valley. Whether Jinghe was a place, a warning, or a memory waiting to be understood, the next clue lay ahead.
+
+**Key events:** The pine mark is older than the notes around it. · A half-readable name that may not be "Jinghe". · A pine-carved milestone with no readable name. · A town in the valley beyond the mountains.
+
+**Opens:** Lead: the town beyond the mountain range
+
+## 254. The Road to the City
+*Location: The old road and the village beyond the mountains*
+
+VOLUME 7, COMIC 017. The old trail had led them beyond the mountains; now they needed something the ruins could no longer provide: living memory. The party follows the old road down into a broad valley. "We should reach a settlement before dusk if this road hasn't been blocked." "We'll replenish water first. I don't want anyone arriving at the next stop exhausted." In a village they ask about the old road, and the past turns out to be part of ordinary conversation. A villager: "Follow the river east. The main road joins the city route beyond the old bridge." An older man: "My grandfather spoke of a place by that name. It may have been absorbed into another district after the old mountain roads fell out of use." "Do you know where it stood?" "Not precisely. You'd need an old road register or a district record. There used to be a regional records office near the old administrative quarter." "Is it still operating?" "Not as it once did. Some records were moved. Others remain in storage. The city archives may know." Xiyu: "It's a lead, not a guarantee. But it's better than following a name through the mountains without direction." At a roadside inn the party eats and plans. Dongyue, noticing Xiao Yan has been checking everyone's supplies: "Make sure yours are in order too." "I did check them." "Then you won't mind checking them again with me." "I see how this works. I'm being supervised." "You're learning." Xiao Tian, who does not want to lose another detail, is told not to solve the whole errand tonight: "Nothing is lost just because we rest." At the old bridge the next morning a faded marker bears a pine motif like the one on the map; too worn to be sure, it stirs a familiar unease. The city appears beyond the river plain: "First, we find the records. Then we decide what the evidence means."
+
+**Key events:** A village on the old road, and a name an old man half remembers. · A roadside inn; Dongyue teaches Xiao Yan to double-check. · A faded pine marker at the old bridge. · The city appears beyond the river plain.
+
+**Opens:** Story: the road to the city
+
+## 255. A Clue in the Records
+*Location: The city gate and the city archives*
+
+VOLUME 7, COMIC 018. The city held more records than the mountain ever could; whether it held the right one was another question. The party reaches the city gate: "Please present your travel papers." Inside, merchants, porters and travellers fill the streets, old stone buildings beside newer timber ones. At the city archives, a large records hall with wooden shelves rising to the rafters, they ask for an old settlement or route called Jinghe. The archivist: "There's no direct entry under that name in the current catalogue. It may be an older name." "Can we consult those records?" "If they remain in this building, they were moved when the old records office closed. The transfer was never fully reconciled. Some boxes arrived here. Others were sent to the old storage rooms. I can't promise the register you want survived." A small number of clerks still maintain the records, and the old quarter is still occupied, though most of its offices have closed. Outside, Xiao Tian: "It doesn't mention my master. It doesn't mention the errand." Cangyuan: "It was never meant to. This is a catalogue entry, not the record itself. We've only learned where to look next." Xiyu: "Still, someone preserved the collection long enough to catalogue it. That gives us a chance." Xiao Yan: "We go together. No one searches an unfamiliar storage building alone." In the quiet old administrative district a keeper tells them the regional road-register transfer collection was moved to the lower storage rooms years ago, though it is open for public consultation. Beneath the old quarter, a stair leads down.
+
+**Key events:** The city gate and the travel papers. · A catalogue entry is not the record itself. · The old quarter and its closed offices. · A stair down to the lower storage rooms.
+
+**Opens:** Story: the old quarter of the city
+
+## 256. The City in the Distance
+*Location: The old administrative quarter and an inn*
+
+VOLUME 7, COMIC 019. The city had grown around its old centre; some offices had closed, others had changed hands, and a few still guarded records no one had asked to see in years. A clerk leads the party through the old administrative quarter to the records office. "The regional collection is kept below. The upper rooms are used for sorting and repair." Xiao Yan: "The building is old, but the supports look sound." Hoko: "At least we won't have to climb through a broken window." Xiyu: "That was never our plan." Inside, another clerk: "The lower collection is not open for casual browsing. If you want to consult the regional registers, we need to record your request first." Cangyuan explains they wish to consult the transferred collection and understand access may be limited. The clerk: "The collection is still under this office's care. You may consult the approved materials while a clerk is present." Dongyue asks whether there is time to begin today. "Only to register your visit and prepare the room. The lower shelves will be opened tomorrow." Xiao Tian: "Tomorrow is fine. We'll follow the rules." At an inn for the night Xining tells everyone to rest properly. Xiao Yan: "We have enough for a few days. If the room takes longer, we can replenish in the city." Xiyu: "A city with a thousand records, and we've been given one room and a rule to wait until morning." Hoko: "A considerable improvement over a collapsing mountain path." Late that evening Cangyuan finds Xiao Tian quiet: "I want to know what my master sent me to retrieve. But I don't want to turn every ordinary thing into a sign." "Then we wait for the records. If they tell us nothing, we'll decide what to do next." "I can do that." Xiao Yan checks the door; the records building stands quietly in the old quarter under the moon.
+
+**Key events:** The records office and its rule: register first, consult tomorrow. · An inn for the night; Hoko jokes about broken windows. · Xiao Tian: "I don't want to turn every ordinary thing into a sign." · Moonlight over the quiet records building.
+
+**Opens:** Story: a night in the city
+
+## 257. The Hidden Address
+*Location: The lower storage rooms of the records office*
+
+VOLUME 7, COMIC 020 (regenerated). The next morning the party begins examining the regional records; they need to find the address, route or destination hidden within the old records. At first light they return to the archive: the lower records room is opened and the materials prepared. "These are the regional road registers, boundary revisions, and transport records from that period. Please handle them with care. Some of the pages are very old." Cangyuan: "Let's compare the old routes with the surviving boundary records. We should preserve the order of each entry." Dongyue: "I'll record the references so we can return to anything that needs further checking." Xiyu: "We need to look for transport requests, dispatched documents, and any records of special consignments." Hoko: "The roads may have changed over time. We should check older boundary maps to understand the context." Xiao Yan: "And compare the place names. Some may have used different names in older records." They begin with the road registers. "Here. This section matches the time period." There was an entry for Jinghe: it was recorded as a town along the western route, an important stop for trade and transport. Cangyuan: "The spelling is consistent with other entries from this period." Xiao Tian: "But this only confirms that Jinghe existed as a place name. It doesn't tell us whether it was the destination my master intended." The records keeper: "Place names were often reused, and routes changed over the years. This entry only shows that a record related to Jinghe was made." They compare the entry with older boundary maps; the location matches an important river route connecting several mountain regions. Xining notes there are also records of transport convoys and official dispatches passing through Jinghe. Hoko: "Some of them were administrative, not private requests. We can't assume it refers to the same matter yet." Cangyuan: "We should check the dispatch ledger next. It may record where documents or copies were sent from this region." Xiyu: "Agreed. This is a lead, but not the answer. We need more records before we can conclude anything." They record the related references: the Dispatch Ledger (Western Route), administrative correspondence, river transport records and boundary revisions. "Then this is our next step. We follow the dispatch ledger and see where the copied record was sent." Jinghe was only a name on paper for now, but it brought them closer to the truth.
+
+**Key events:** The regional registers, opened at first light. · Jinghe: a town on the western route. · "It doesn't tell us whether it was the destination my master intended." · Next step: the dispatch ledger.
+
+**Opens:** Story: Jinghe, a town on the western route
+
+## 258. The Master's Birthday
+*Location: The records office and its courtyard*
+
+VOLUME 7, COMIC 021. A reference could lead to another record; it could not promise what that record would contain. The party waits at the long reading table while the records keeper searches the lower shelves. Cangyuan: "We should keep the original wording separate from our interpretations." Xiao Yan: "That will save us from mistaking an assumption for a fact." The keeper finds the referenced series; some pages are missing, but the volume can be consulted. Its pages list transfers, administrative changes and records moved between regional offices: "Transfers, boundary revisions, retired offices... nothing here is a personal account." Xiao Tian remembers the command more clearly than the place it concerned: "There is something I need you to retrieve. You must go alone." The place and the date remain incomplete: "I remember being told to go. I can't remember the exact date or what the place was called." Xiyu: "Then we shouldn't ask your memory to supply what it cannot. We can work with what you know." Cangyuan: "The register gives us historical context. Your memory gives us a separate lead. They may connect, but we haven't proved that yet." During a short break in the courtyard Dongyue asks about his master's birthday. "I remember that we marked it. I'm not sure I remember the date correctly." "Then we leave it there until you're certain." Back at the table the volume is consulted: Jinghe appears in an old regional register, with a cross-reference to another series; its purpose is not established. "Good. If the evidence changes, we can revise our conclusions without losing track of what was actually written." The keeper: "If you need to consult another volume, submit the next reference through the front desk." That evening: "We have more to do. At least now I know what we haven't established." The master's birthday remained a fragment of memory, not a key. The records had offered context, not certainty; the next step would have to be earned.
+
+**Key events:** A volume with missing pages and no personal account. · "I remember being told to go. I can't remember the exact date." · His master's birthday: a fragment, not a key. · Dongyue: "If the evidence changes, we can revise our conclusions."
+
+**Opens:** Story: a memory of his master's birthday
+
+## 259. The Transfer Record
+*Location: The records office and a city repository*
+
+VOLUME 7, COMIC 022. The previous day had established what the records could prove, and what they could not; today they would follow the reference without deciding its meaning in advance. The party returns to the records office. Cangyuan asks to consult the related series. The keeper opens the volume; some materials it mentions are no longer held in this building. Hoko: "This entry was recorded later than the original collection. It may have been moved separately." Dongyue: "I'll mark it as a separate transfer, not assume it was part of the same box." A note records that an accompanying personal document was removed from the regional collection and sent to a city repository for safekeeping. "Does it name the repository?" "It gives a repository designation, but this office's catalogue doesn't explain the document's contents." Xiao Yan: "A personal document could be anything. We shouldn't decide it belongs to my master just because we're looking for him." Xiao Tian recalls his master: "There are things that must be kept safe, even when the person who keeps them cannot explain why." The words feel familiar, but he cannot tell whether he remembered them clearly or shaped them around what he hoped to find. "I remember my master treating certain things with great care. But I can't say that this document was one of them." Cangyuan: "Then we keep that memory separate from the record. It may matter later, but it isn't proof." "I want the truth. I don't want to invent it." The keeper provides a copy of the transfer entry and an official mark; the designation refers to an old repository near the former administrative offices, whose custodian will decide whether the document can be consulted. Xiao Yan: "A transfer record isn't permission to open a repository." Hoko: "And if they refuse, we'll ask what documentation they require rather than force our way in." Xiao Tian places the copy in his travel pouch, separate from his manual and the jade keepsake. The repository stands beyond a row of tiled roofs, its doors closed, a sign identifying it as a records facility. Somewhere beyond that door, a document had been kept apart from the records that once accompanied it. Whether it belonged to Xiao Tian's past remained unknown.
+
+**Key events:** A personal document sent to a city repository. · "I want the truth. I don't want to invent it." · The copy of the transfer entry in his travel pouch. · The repository door, still closed.
+
+**Opens:** Story: the repository in the old quarter
+
+## 260. The Letter Left Behind
+*Location: The records repository*
+
+VOLUME 7, COMIC 023. The document had been separated from the records that once accompanied it; before they could learn why, they had to establish what had actually survived. The party arrives at the repository and the custodian confirms that a personal document was transferred there. Cangyuan: "We understand. We won't ask you to bypass the repository's rules." The custodian: "This is the document associated with that transfer number. The accompanying register identifies it as a private letter. The seal is old, but the custody record is intact." Xiao Tian: "That hand... I've seen it before." "Can you identify it with confidence?" "I can't be certain from this alone. But the strokes resemble my master's writing." "There is no record here of its contents." Xiao Tian had spent months trying to recover the past; now it rested within reach, and he feared what it might ask of him. Xining: "You don't have to read it all at once." "If it is his letter, I need to hear what he wanted to say." The custodian records the opening in the ledger and carefully releases the old fastening. "This is his writing." The letter: "If this reaches you after the estate has fallen silent, do not mistake silence for proof that everything has been lost. What they sought was not valuable because of its price. It was dangerous because of what it could prove. Do not pursue the first face you remember. Find the records of the search first. A face may deceive you; a record can be compared." Some lines are damaged by age and the identity of the person or group involved is not named. A brief, incomplete memory flashes through Xiao Tian's mind: a masked figure with a headband in the dark; it is not yet enough to name a person. Dongyue: "So the damage wasn't random." Xiyu: "It supports what we saw at the estate. It doesn't tell us who gave the order." Xiao Tian: "He wanted me to find out what they were searching for before I chased the people who did it." Cangyuan: "Perhaps he feared the letter would be found. Or perhaps he thought you would understand more when you were ready. We can't know which." Hoko: "The letter gives us a method: find records of the search, compare dates, and look for people who had access." Xiao Yan: "We can start with the estate's missing inventory and the older district records. We shouldn't assume the same person handled every part of it." The original stays in the repository unless permission is obtained for another consultation. "Thank you. Whatever comes next, this gives me a reason to keep looking." Xiao Tian keeps the authorised copy of the relevant passages in a separate pouch, away from his manual and his jade keepsake. His master had left him neither a name to strike nor an easy answer. He had left him a way to begin.
+
+**Key events:** His master's seal and the old letter. · "Do not mistake silence for proof that everything has been lost." · "A face may deceive you; a record can be compared." · A masked figure with a headband flashes through his mind.
+
+**Opens:** Story: his master's letter
+
+## 261. The Missing Page
+*Location: The estate and its study*
+
+VOLUME 7, COMIC 024. The letter had given them a question to pursue: the estate might still hold the records that could answer it. The party returns to Xiao Tian's ruined estate. "It's been a long time." Xiao Yan: "Stay to the right. The ground near the outer wall has loosened." Xiyu: "We'll inspect the structure before anyone enters a damaged room." The ruins were no longer only the place where Xiao Tian had lost his home; they had become the beginning of his search. In the old study they lay out the surviving estate records. Cangyuan: "We compare what remains with what the inventory says should have been here. We don't assume every missing item was stolen." Dongyue: "Some records may have been lost naturally. We should distinguish that from deliberate removal." Hoko: "The damage is old. I can't tell whether it happened during the attack or afterwards." Xiao Yan: "These numbers run in sequence. But there's a gap between this register and the next." A section of pages is missing, and the stitching has been cut. Xiao Tian: "That wasn't caused by the fire alone." Hoko: "The thread was cut cleanly. Someone removed these pages while the binding was still intact." Xiyu: "There's no reason to think the missing pages fell behind this cabinet. The other damaged paper is still here." The inventory confirms that a supplementary section once existed; the record numbers show a clear gap. Xiyu notes that the shelf was disturbed too, but the objects left behind are ordinary household records. His master's words return to him: "Find the records of the search first. A face may deceive you; a record can be compared." Cangyuan: "We know a supplementary list existed. We don't know whether it named objects, people, or transfers." Hoko: "And we can't assume every missing page was taken by the attackers. The estate was abandoned afterward. Someone else could have entered." Dongyue records their findings: a supplementary section existed; its pages were deliberately removed from the estate register; the surviving inventory does not disclose its contents; the date and person responsible for the removal remain unknown. Cangyuan finds a notation: a copy of the estate's supplementary register was once requested by an administrative office outside the mountain district. "This gives us a place to ask, not proof that the duplicate survives." Xiao Yan: "We should leave before dark." Xiao Tian: "I used to think coming back would tell me what happened. It turns out I have to follow the records." The missing pages had not given them a culprit. They had given them a question that could be checked beyond the ruins.
+
+**Key events:** The return to the ruined estate. · Pages cut cleanly from the register: removed on purpose. · A copy once requested by an office outside the mountains. · "I used to think coming back would tell me what happened."
+
+**Opens:** Story: pages removed from the estate register
+
+## 262. The Office Beyond the Mountains
+*Location: The road west and the town of Qingshan*
+
+VOLUME 7, COMIC 025. The missing pages had given them no culprit; they had given them a place to begin asking questions. At dawn the party leaves Xiao Tian's ruined estate carrying the copy of the reference and the notes from their search. Xiao Tian: "We follow the record. We don't assume more than what is written here." Cangyuan: "This administrative office is beyond the mountain district. The roads may have changed, so we should stay alert." They travel west along the old road records through mountain passes and smaller settlements; beyond the mountains lies a town that once administered the district, and its records office still preserves ledgers from that time. By late afternoon they arrive at Qingshan, a transport hub for the surrounding mountain regions. The clerk: "Access to the old registries requires a formal reference. What is the purpose of your request?" Xiao Tian: "We are investigating a record from the former mountain district. Here is the reference and authority seal from that period." With the reference confirmed the clerk leads them to the archives. Dongyue: "The supplementary register was indeed requested and copied. The entry matches your estate name and the date." The ledger records a formal request for a duplicate register: "It was prepared by this office and sent to another administrative district as requested. The receiving location is noted here. But it doesn't say what the missing pages contained. It only confirms that a copy was made and sent." Hoko: "So the people who requested it may not be the same as those who used it later. We need to find the next record." The clerk: "The dispatch ledger that records outgoing documents is kept in a separate archive. It should still exist, but access requires another request." Cangyuan: "Then we prepare the next petition. We may need to stay in town for a few days." Xiyu: "Each record brings us closer to the truth. Even if the path is long, we continue." The copied register had been sent beyond the mountain district. The trail led further now, and the search was only beginning.
+
+**Key events:** Qingshan, a transport hub beyond the mountains. · The supplementary register was requested and copied. · A copy was sent to another district; the dispatch ledger is the next step. · "Each record brings us closer to the truth."
+
+**Opens:** Story: the town of Qingshan
+
+## 263. Men Who Leave No Names
+*Location: The guild office and an inn in the trading town*
+
+VOLUME 7, COMIC 026. Following the references from the records office, the party travels to the trading town along the western route; they need to learn more about the group that handled the transfer and the men who took the copied register. At the guild office that keeps caravan and escort records Cangyuan: "We'd like to consult the caravan and escort records from several months ago." The clerk: "These records are kept by contract type and route. I'll check the entries for that period." Xiao Tian: "Focus on groups that travelled west and had special cargo. Some may be listed under temporary names." Cangyuan: "There are several entries that match the timeframe. The names are different, but the route is the same." The entries show a group of armed escorts passing through the town after the massacre. Hoko: "The names are assumed, and the payment recorded through an intermediary. There is no employer listed here." Xiyu: "So they deliberately kept their identities hidden." The party speaks with a retired caravan guard who saw the group: "They passed through not long after the new moon. Disciplined men. Well armed, well organised. Not bandits. They moved like men trained to work together." The group stayed only one night, kept to themselves, and used temporary names on their contracts; their payment and instructions were handled through an intermediary, and the men did not discuss their employer in public. "Did the guard recognise any of their faces?" "Most of them kept their faces covered. They used hoods and scarves. Only one or two were seen clearly, and not for long." "Do you remember the intermediary? A contact, a guild, or a merchant?" "They met a man at the west gate. I don't know his name. He wasn't part of the caravan. He delivered the payment and the orders, then left before dawn." Cangyuan: "So the contract was separate from the guard records. That means we follow their route and look for more evidence, not just rely on what people remember." At the inn the party reviews what they gathered: they left the town the next day, heading toward the northern mountain route; it matches an older transport path used for high-value cargo that bypasses the main posts. "They planned their movements carefully. No names, no traces, no unnecessary contact." Xiao Tian: "But there is a pattern. Their formation and travel style are the same as what I remember. It's not a full memory yet, but it's enough to keep going." The guard marks the rough route they took after leaving the town; the group was last seen heading toward a narrow mountain route known for its hidden paths. The trail had not given them a name. It had given them a direction. The party leaves the town at first light, following the route in search of more answers.
+
+**Key events:** Escorts under assumed names, paid through an intermediary. · A retired guard: disciplined men, not bandits. · A man at the west gate who delivered the orders and left before dawn. · "Their formation and travel style are the same as what I remember."
+
+**Opens:** Story: the northern mountain route
+
+## 264. The Ambush in the Pass
+*Location: The northern mountain pass*
+
+VOLUME 7, COMIC 027 (BATTLE). Following the trail from the trading town, the party heads into the mountain pass mentioned by the guard. The route is narrow and rarely used, with steep cliffs and dense forest, the kind of path easy to control, perfect for an ambush. The closer they go, the quieter the surroundings become; even the wind seems to hold its breath. Xiao Yan notices signs the path has been prepared: cleared branches and hidden ropes along the cliffs. "Someone prepared this ground. Don't bunch together." Before they can react, figures appear on the rocks above; arrows and ropes rain down. "Block them! Don't let anyone escape!" The fighters move with clear coordination, and their first target is Xiao Tian, trying to separate him from the others. Xiao Tian counters their attacks, his body recalling the timing and footwork even when the full memory is unclear: "I've seen this formation before..." Dongyue moves between the injured, using healing techniques to keep the party standing: "Hold still. Don't overextend yourself." Hoko uses the terrain to disrupt their formation, pulling down a loose branch to force them back: "Now!" Xiyu guards the rear, preventing the attackers from circling behind them. Xiao Yan: "Move to the left! The ground ahead is unstable!" and directs the party away from the most dangerous ground, keeping the group from being surrounded. Xining tends to the wounded, stabilising their injuries while keeping an eye on the battlefield. Cangyuan holds the front, keeping the fighters away from Xiao Tian's flank. After a fierce struggle the remaining fighters withdraw toward a rocky shelf, taking advantage of the terrain. One of the attackers is injured and cannot escape; the party captures him before the others disappear. As the captive's mask slips during the fight, Xiao Tian sees his face: "...This face... I remember..." A memory stirs, a fragment from the night his master was killed. But a resemblance alone is not enough. The trail had not given them a name. But it had given them a direction.
+
+**Key events:** Cleared branches and hidden ropes: the ground was prepared. · Xiao Tian is the first target; his body remembers the formation. · The fighters withdraw; one is captured. · The captive's mask slips: "This face... I remember..."
+
+**Opens:** Story: a captive from the night of the attack
+
+## 265. The Face Behind the Mask
+*Location: The mountain camp*
+
+VOLUME 7, COMIC 028. After the ambush the party has captured one of the fighters. Though injured, he is still alive; he might hold the answers they need. The captive is treated just enough to keep him conscious. Xiao Tian: "Answer truthfully. You were part of the attack on my master's estate, weren't you?" The captive says nothing. Cangyuan: "Ask what he knows. Don't let anger decide what you hear." "I won't. I just want the truth." Xiao Tian describes the details he remembered from that night: the man's stance, a distinctive scar, and a movement used when changing direction: "You turn your blade like this before moving. And you have a scar across your left cheek." The captive reacts before Xiao Tian has finished speaking. The scar and the reaction confirm it: "...Fine. I was there." Under questioning the captive admits the group had been hired to search the estate for a specific item or record: "We were hired. We were told to find the records and kill anyone who got in the way. We were given instructions through an intermediary. We never met the employer. We were told not to speak of the contract. We used temporary names for the journey." Xiao Tian's memory, once a blur, now has a face and a voice to anchor it. "So you knew what you were doing. You were there. You drew your blade against my master and his people." "Do what you want. I was a hired blade. We weren't told who commissioned it. We were paid to complete the task." Xiyu: "Then your silence doesn't make you innocent. There are others. We will find them too." The mask he wore during the fight was a fragment from the night his master was killed. "...This face... I remember." But a resemblance alone is not enough. With a confirmed participant and new information, the party prepares to pursue the remaining fighters. One face had returned from the past. The hands that had wielded the blades were becoming known. The hand that had paid them remained hidden.
+
+**Key events:** The captive reacts to the scar before Xiao Tian finishes. · Hired to find the records and kill anyone in the way. · An intermediary, temporary names, no employer ever met. · "The hands that had wielded the blades were becoming known. The hand that had paid them remained hidden."
+
+**Opens:** Story: a confirmed participant, and the hand that paid them still hidden
+
+## 266. The Remaining Blades
+*Location: The northern mountain forest and a hidden stronghold*
+
+VOLUME 7, COMIC 029 (BATTLE). With the captive's testimony the party sets out to find the remaining fighters; their trail leads to a hidden stronghold in the northern mountains, where the group is said to be regrouping. The party reviews the information and pieces together the possible location. Dongyue: "They will likely regroup at a temporary camp before moving again." Cangyuan: "This matches the route. The terrain provides natural cover." Xiao Yan notices signs of recent movement on the narrow path, fresh hoofprints and broken branches. They follow the trail through dense forest carefully to avoid being detected. Xiyu: "Stay low. They have scouts. We don't know how many are inside." Xiao Tian keeps his guard up; the memory of the man's face gives him renewed determination. By nightfall they spot the hidden stronghold, a fortified camp built into the cliffs. Hoko counts at least a dozen men, including some they have not encountered before: "There are more than we fought. We chose our approach carefully." Cangyuan: "We gather what we need. The goal is to find the others and any further information, not to throw our lives away." Xining: "I'll prepare support spells. If we need to withdraw, we do so together." Hoko: "We split into two groups. One draws their attention, the other searches the camp." Xiao Yan: "Keep to the shadows. I'll lead the flank. No unnecessary fighting unless we're discovered." Under cover of darkness Xiyu and Xiao Yan create a distraction while the others slip into the camp. The distraction works, but the camp is more alert than expected. Xiao Tian faces another of the attackers; the man is not the one he recognised, but he fights with the same training and discipline. In one of the tents they find supplies, contract tokens and a partial list of names, evidence of a larger network. "So it really is a network... But the name we're looking for is not here yet." Before they can search further, alarms are raised and several of the fighters flee, taking important items with them. One figure escapes with a sealed case, heading toward a higher peak. The party pursues, but the man is too far ahead. They had gained new clues, but the one who held the full truth was still beyond reach.
+
+**Key events:** A hidden stronghold built into the cliffs. · Two groups: a distraction and a quiet search. · Supplies, contract tokens and a partial list of names: a larger network. · One figure escapes with a sealed case toward a higher peak.
+
+**Opens:** Story: a network of hired blades
+
+## 267. What Remains
+*Location: An abandoned outpost above the pass*
+
+VOLUME 7, COMIC 030 (FINAL BATTLE, Volume 7 finale). Following the trail of the retreating fighters the party reaches an abandoned outpost above the pass; those who remained had nowhere left to run. Xiao Yan: "We can close the path behind them. But once we move, we need to stay together." Several of the surviving fighters take defensive positions, determined to delay the rest of their escape. Cangyuan: "Block the exit! Don't let them slip through!" Hoko: "With me! Cut them off!" Xiyu: "Don't let them surround him." Xiao Yan: "They won't get past us." Xiao Tian, to the man he faces: "I remember what you did. This time, you won't leave without answering for it." The man: "You're still alive... Impressive. But it ends here." Blades meet in a burst of sparks, and Xiao Tian brings him down himself. The man: "We were paid to find something... A record... an item... We were not told the name. The employer kept his identity hidden." Xiao Tian: "Not knowing who paid you doesn't make the blood on your hands disappear." The men who attacked his home had been brought to account. But his master and the people lost that night would not return. Xiao Tian, the jade keepsake in his hand: "I thought finding them would bring everything back into focus." Cangyuan: "It may help you understand what happened. It cannot return what was taken." The party preserves the evidence they recovered and leaves the wider investigation for another time. The truth behind the contract remained hidden. Yet Xiao Tian no longer stood among the ruins as someone waiting for his past to return. He had chosen what to do next. Volume 7 complete. Progress: the men who attacked the estate have been brought to account; the employer remains unknown; Xiao Tian has stopped waiting for his past to return. To be continued.
+
+**Key events:** Retreating fighters make a stand at an abandoned outpost. · Each companion holds a place; Xiao Tian faces the man himself. · "We were not told the name. The employer kept his identity hidden." · "It cannot return what was taken." He has chosen what to do next.
+
+**Opens:** Story: the men who attacked his home have answered for it
+
+
+---
+
+# Volume 8: The Strings of a Forgotten Promise
+
+## 268. A Place to Rest
+*Location: A small city between the hills*
+
+VOLUME 8, COMIC 001. Days after leaving the ruined estate the party leaves the mountains and follows the old roads toward a small city. "We can reach the next town by dusk. There's a decent inn there to rest." "For once, we get to sleep on proper beds." "Don't sound so surprised. I checked the route. The inn is safe." "Safe and near good food? A rare combination." By nightfall they arrive at Linzhou, a small city nestled between hills, where travellers, merchants and locals share the warmth of food and lantern light. A private room is arranged and the weapons are set aside; for the first time in days they can simply be a group of travellers. Over dinner Hoko jokes that they would be eating dried rations under a tree if he hadn't talked them into stopping, and that they would still argue about who snored the loudest. Xiao Tian: "I thought I would feel different after facing them. I'm relieved that I know they were real. That I wasn't chasing a memory I invented. But I still don't remember everything. I still don't know what my master wanted me to retrieve. Or why he sent me away that day." Cangyuan: "Rest isn't the same as giving up. If there's something left to find, it'll still be there tomorrow." Xiyu: "You don't have to turn every day into a search for what you've lost. The person sitting here with us is already real. The answers can wait." The plan: a full day of rest, restocking supplies and gathering information in the city; Xiao Yan will handle the supplies and look into leads from seafarers, merchants and travellers who know the southern routes, and Dongyue would like proper clothes. By moonlight Xiao Tian: "I used to think that if I remembered everything, I'd know what to do." "And now?" "Now I think I can decide what to do, even before I remember." For the first time since returning to the ruins he allowed himself a night in which he did not have to chase the past: a table, a roof, and a place among people who had chosen to stay.
+
+**Key events:** Down from the mountains, toward a small city. · A private room and weapons set aside. · "Rest isn't the same as giving up." · "I can decide what to do, even before I remember."
+
+**Opens:** Story: a night of rest after the revenge
+
+## 269. A City of New Threads
+*Location: Linzhou: the inns and the market*
+
+VOLUME 8, COMIC 002. The party's first evening in Linzhou. Roadside taverns had offered food and drink on the way, but tonight promises a proper bed. "A bed that doesn't require watch rotations." "You'll still complain about it." Xiyu: "We need new clothes." Cangyuan: "Agreed. Before the next fight ruins what little remains." In the cloth market each of them chooses something new: Xiyu a pink robe, Xiao Tian a dark plum one, Cangyuan blue and white, Xining a pale green set. Hoko and Xiao Yan haggle over cloaks ("No dangling tassels. They'll catch on branches." "I wasn't going to buy tassels."). Cangyuan, seeing Xining's choice: "That style suits her. Comfortable for the road? Light, with enough layers for the evening." With new clothes and equipment the party reunites in the market. Near the western market Hoko and Xiao Yan ask travellers about local news. "People? Some settlements have seen figures moving after dark... They say they move like people... but stop like dolls." Xiao Tian: "...Puppetry." Cangyuan: "Then we find someone who knows more." In Linzhou a quiet stop had become the beginning of another mystery.
+
+**Key events:** Linzhou, a lantern-lit city. · New clothes for the road. · Travellers' rumour: figures that move like people but stop like dolls. · "...Puppetry."
+
+**Opens:** Story: rumours of puppets in Linzhou
+
+## 270. A Thread Between Two Shadows
+*Location: The inn at night*
+
+VOLUME 8, COMIC 003. After shopping for new clothes the party returns to the inn: good food, warm lanterns and a rare moment of ease. In their room Xiyu and Cangyuan tease each other ("Well, you do clean up nicely." "I was wondering whether you owned anything that wasn't black." "It's plum." "And pink suits you." "Careful. You almost sound sincere." "I am. Don't let it go to your head."). Their teasing had always come easily; what had changed was how little either of them needed to hide behind it, and some distances, once crossed, no longer needed to be measured. Later Xiyu asks about the stories Hoko heard that day: "You recognised something when he mentioned puppetry." "I know a little." "That's not the same as answering me." Cangyuan: "There are different kinds of puppetry. Some use strings and mechanisms. Others use spiritual energy, talismans, or formations to make a vessel move. The figure itself is only a vessel. What matters is what moves it, and what it costs to keep it moving." "And the figures described by those travellers?" "We don't have enough evidence to know what they are." "Where did you learn all this?" "From someone who understood the art far better than I did." "Someone you knew?" "Yes." "Are they still alive?" "I don't know." "Then we'll find out what these puppets are first. One thread at a time." Neither spoke of the past again that night, but the question remained between them. Downstairs Hoko and Xiao Yan keep talking about the rumours: "The accounts came from different travellers. They weren't repeating the same tale word for word." "That makes them worth checking. It doesn't make them true." "If the figures are real, we find out where they were first seen, whether they appeared along the same roads, and whether anyone saw them being transported. And if they weren't transported? Then we'll have learned something." "I doubt these stories reached Linzhou for no reason." "Neither do I. Tomorrow, we find the earliest account we can." Somewhere beyond the city a lone figure walks the night road past a stone marked Linzhou. Then it moved. And no one was there to see it.
+
+**Key events:** Teasing that no longer hides anything. · Cangyuan knows a little puppetry, from someone far better at it. · "Are they still alive?" "I don't know." · A lone figure on the night road: "Then it moved."
+
+**Opens:** Story: Cangyuan knew someone who understood puppetry
+
+## 271. The First Thread
+*Location: The western outskirts and an abandoned workshop*
+
+VOLUME 8, COMIC 004. Linzhou wakes beneath a clear sky: for most of its residents an ordinary morning; for eight travellers, the beginning of a search. "Are we investigating rumours before or after breakfast?" "You can do both. Try not to interrogate the food." "We start with the earliest reported sighting. If the stories share a location, we may find a common thread. The western market is our best lead." A cart driver: "I didn't see the figure myself. But a man told me he saw one beside the old road, near a shuttered workshop." "What kind of workshop?" "Woodwork, I think. It closed years ago. No one has used it since." A second witness: "I saw something there after dusk. A human shape, standing in the road. It didn't move until my lantern went out." "Did it have strings? Any visible mechanism?" "Nothing I could see. But when it moved, it was too stiff to be a living person." Two accounts, both pointing to the western outskirts, and neither proves the figures are puppets. Xiyu: "Something about this place troubles you." "I don't like coincidences that arrive with so little explanation." The western outskirts had long since been forgotten by the city; weeds split the paving stones. "This place looks as though no one has entered it in years." "Then we check whether that's actually true." Inside, "Someone has been here recently... Recent enough that the dust hasn't settled over the marks." "The door wasn't broken open. Perhaps whoever entered had a key. Or never needed one." A faint click in the dark. "Wood doesn't usually answer when you stop moving." Among the scraps: "These aren't ordinary scraps. They were shaped to fit together." "For a puppet?" "Possibly." Xiyu finds a wooden hand beneath a cloth: "I believe we've found our first thread." Cangyuan: "I recognise the method. Not the maker." They had come looking for a rumour. Something in the workshop had been waiting for them.
+
+**Key events:** Two witnesses, one shuttered workshop. · Recent marks in the dust; a door never forced. · Fitted wooden pieces: a puppet in the making. · "I recognise the method. Not the maker."
+
+**Opens:** Story: the abandoned workshop
+
+## 272. The Figure in the Dark
+*Location: The abandoned workshop (battle)*
+
+VOLUME 8, COMIC 005 (BATTLE). For one suspended moment no one moves. A tall figure stands in the workshop's doorway. "Is that supposed to be a person?" "Don't approach it until we know." It lunges, its mechanical arm catching a blade with a shriek of metal: "Definitely not a normal person!" "Its movements are being driven by something other than ordinary muscle!" Cangyuan cuts a thread attached to its arm, but it doesn't stop: "Because that may not be the only one." Xiao Tian: "Don't attack at random. Watch the joints. Find what connects them." Xiyu, seeing him hold himself so calmly: "You sound very familiar with this." Cangyuan: "The joints are mechanical, but something is supplying energy." "Can you disable it?" "If I can reach the core." Hoko and Xiao Yan keep it busy while Xiyu's crimson power surges. For the first time the figure's movements falter. Cangyuan: "Everyone, back!" and the puppet collapses in a clatter. "This was assembled to imitate a human body. The workmanship is deliberate. But it isn't a complete spiritual construct. Something was directing it." "I've never seen a thread like this. Neither have I seen this particular method." Xiyu finds a mark on it: "There's a mark here. Don't touch it yet." Xiao Yan: "Whoever built this didn't abandon the workshop. Someone has been using it recently. And they may still be nearby." Hoko finds an alley that leads toward the old canal road; the ground there is cracked to cover tracks: "They knew where the ground would stop keeping their tracks. Or they planned their escape before we arrived." Xiyu: "You recognise more than you're saying." Cangyuan: "I recognise enough to know this wasn't made for street performances." The puppet in the workshop had been destroyed. But the hand that moved it remained unseen.
+
+**Key events:** A figure in the doorway that is not a person. · A thread cut, and it keeps moving. · Cangyuan strikes the core; the puppet collapses. · A mark on the puppet; the maker has fled by the canal road.
+
+**Opens:** Story: a puppet destroyed, its master unseen
+
+## 273. The Hand Behind the Thread
+*Location: The workshop and the canal district*
+
+VOLUME 8, COMIC 006. The figure has been defeated, but the workshop holds more questions than answers. "Look for anything that suggests who used this place. Don't disturb the parts we've already examined." Xiyu and Cangyuan examine a mark hidden beneath the puppet's collar, meant to be found only if someone examined it closely: "Does it mean anything to you?" "Not as a crest or a name. It may be a mark used within a particular craft." The thread is not ordinary silk or metal wire; it carries a trace of spiritual energy, enough perhaps to transmit a command. "The joints supplied the movement, while the thread guided it. Whoever designed this combined mechanical construction with spiritual techniques." "So someone made a doll that can be ordered to fight." The core is damaged beyond use, though it looks as though something was removed before the puppet was abandoned. Outside, Xiao Yan reads the tracks: at least two sets lead away from the workshop. A neighbour warns: "People who linger around that building tend to disappear from the neighbourhood. They leave. Quickly. And they don't speak about what they saw." A boatman remembers a covered cart passing a few nights ago, no merchant's seal, no visible cargo, and a passenger in a dark cloak who kept their face hidden. Cangyuan: "A cart, an abandoned workshop, and a puppet that was still active. But it doesn't prove the cart carried the puppet." Xiao Tian: "Whoever made that figure wanted it to look human enough to deceive someone at a distance. That suggests a purpose beyond ordinary defence... Or to make someone believe they had seen a person who wasn't there." Xiyu: "A disguise? A decoy? A messenger? We have too little evidence to choose." The same pattern is on a scrap: "You mean someone wants us to find it?" "Or someone dropped it. We should keep both possibilities open." The cart passed the canal bend before reaching the workshop district; they need to find where it entered the city. Xiyu to Cangyuan: "You said the method was familiar, but the particular thread wasn't. Are you certain that's all you know?" "I'll try to spare us both the trouble." "Very well. But when you decide you can tell me more, don't make me drag it out of you." The party had found a trail. They had not found its owner. And somewhere beyond Linzhou, the hand behind the thread had already begun its next work.
+
+**Key events:** A hidden mark and a thread that carries spiritual energy. · A neighbour: those who linger there disappear. · A covered cart with no seal, and a cloaked passenger. · "When you decide you can tell me more, don't make me drag it out of you."
+
+**Opens:** Story: the trail of the covered cart
+
+## 274. The Craftsman's Mark
+*Location: The craftsmen of Linzhou and the old kiln district*
+
+VOLUME 8, COMIC 007. By morning the party has two leads: the covered cart that passed through the canal district, and the strange mark found on the puppet. "Let's investigate both. We shouldn't let one uncertain lead hold up the other." Hoko asks the merchants and boatmen about the cart; the others take the mark to Linzhou's craftsmen, who have worked these streets for generations. An old craftsman: "I've seen marks like this before, though not exactly this one. Some workshops mark their work with a symbol. Others mark the tools or the pattern used to make a piece. But this one doesn't look like a shop sign. Possibly a technical notation, a pattern for how pieces fit together. But I wouldn't claim to know without seeing the object it came from." Xiyu: "You recognised the method before anyone else. Yet you don't recognise the mark." Cangyuan: "Knowing how something works doesn't mean knowing who made it." "A convenient distinction." "A necessary one." A boatman remembers a cart: "This one passed through a few nights ago. No merchant's seal. The driver said the cargo was fragile and wouldn't let anyone touch the cover. It headed north after crossing the canal. Toward the old kiln district, I think. I wasn't following it." The old kilns once supplied roof tiles, pottery and fired clay to Linzhou, a likely delivery point for something heavy or fragile. "We look first. We don't start a fight because a road happens to lead somewhere suspicious." The district is quieter than the city, its busiest days long past; wind carries the smell of cold ash through abandoned yards. Xiao Yan: "These tracks are newer than the rest. The width matches a cart." "If this place has been abandoned, why is the ash fresh?" "Because someone has used it recently, or wants us to think so." A scraping sound from a door: "That's not the wind." "We don't know who's inside. Let's listen before we act." The mark had led them beyond the workshop and into the forgotten edge of Linzhou. Whatever waited behind the kiln doors, someone had left a sign that they were on the right trail.
+
+**Key events:** An old craftsman: the mark is not a shop sign. · A boatman: a covered cart went north toward the old kilns. · Fresh tracks and fresh ash in an abandoned district. · A scraping sound behind the kiln door.
+
+**Opens:** Story: the old kiln district
+
+## 275. Behind the Kiln Door
+*Location: The old kiln district*
+
+VOLUME 8, COMIC 008. The mark on the kiln door matches the one found on the puppet. "A connection, perhaps. Not proof of who made it." Something moves inside: "Then let's not announce ourselves before we know what's waiting." The building is abandoned in appearance only: dust lies thick in the corners, but the path through the room has been cleared recently. In the kiln yard stands the covered cart. "This could be the cart the boatman described." "Could be. We still need something that connects it to the workshop." Whatever it carried was removed; the frames inside look sized for something shaped like a person. Xiyu finds another of the threads: "Another of those threads." "And still no proof that the cart carried the puppet we fought." Footprints lead out the back: "Someone left through here. Recently? The ash hasn't settled over the prints." "Whoever left knew the back roads. Or knew this city well enough to disappear into it." "This wasn't just a storage room. Someone was building or repairing figures here." "And you still don't know who?" "No." Xiao Yan finds a diagram: "The most useful section has been removed. Deliberately? We can't tell. But we should preserve what's left." Cangyuan: "We have evidence of a workshop, a cart, and a method of construction. We don't yet have the person behind them." Xiao Tian: "Then we find out who rents or owns this building." The party had found the place where the work was done. But the hand behind the thread was already watching them.
+
+**Key events:** The kiln door bears the same mark. · The covered cart, emptied, with person-shaped frames. · A second workshop: figures built or repaired here. · A diagram with the most useful section removed.
+
+**Opens:** Story: the place where the puppets were made
+
+## 276. The Name in the Ledger
+*Location: The Linzhou property records and an old craftsman's home*
+
+VOLUME 8, COMIC 009. The abandoned kiln had given them evidence of the work, but not the identity of the people behind it. Cangyuan: "If someone uses that building, there should be a record somewhere." Hoko: "The kiln district used to belong to several workshops. Some were closed, others changed hands." Xiao Tian: "Then we need to find out who holds the property records." The records keeper: "The old kiln buildings were transferred between owners over the years. Some records are incomplete." "We only need the latest recorded owner." The ledger: "This is the last name recorded against that property." "Does the record say who currently uses it?" "No. Only who was responsible for it on paper." The name belongs to a workshop owner who retired years ago, and they ask whether he can be found if he is still in Linzhou. At his home the old craftsman is wary: "I haven't worked there in years. Whatever you found, it has nothing to do with me." Cangyuan: "We haven't accused you of anything." Told of the cart and the unfinished puppet parts inside the kiln, he says: "Then someone is using the building without my permission." "That is possible." He adds: "The old kiln key went missing months ago. I thought I'd misplaced it." "Did anyone else have access to it?" "A former apprentice. I haven't seen him in years. He was skilled, but impatient. He left after a dispute over his work." "Do you know where he went?" "No. He never told me." He writes the name: Shen Luochuan (沈洛川). Xiao Tian: "We have a former apprentice, a missing key, and a building used without the owner's knowledge." Cangyuan: "A lead. Not proof that he built the puppet, or that he controls it." Leaving, Hoko notices a hooded figure in the alley: "Someone was watching us." "Should I follow?" "No. We don't know whether they were watching us or the craftsman." They had found a name connected to the kiln, and a missing key that might explain how someone entered. But a name in a ledger was not the same as the hand behind the thread.
+
+**Key events:** The last name recorded against the kiln. · The old key went missing months ago. · A former apprentice: Shen Luochuan. · A hooded figure watches from the alley.
+
+**Opens:** Story: a former apprentice, Shen Luochuan
+
+## 277. The Apprentice Who Vanished
+*Location: The apprentice's rented room*
+
+VOLUME 8, COMIC 010. A name in an old record had given them somewhere to begin; it had not yet given them someone to blame. Xiao Tian: "We find out what happened to the apprentice before we decide he's involved." A neighbour remembers him: "Quiet fellow, always carrying bundles of wood or metal fittings." "Did he leave Linzhou?" "That's what people said. No one saw him depart. He rented a room there after leaving his master's shop. It was closed one morning, and that was the last of him." "How long ago?" "Several years. Perhaps more." At the room, the lock is rusted: "This place hasn't been opened recently." "Then why come here?" "Because an abandoned room can still tell us what someone left behind." The workshop has been stripped of anything valuable, yet the marks on the bench suggest its owner once worked with small, intricate pieces: "These grooves are too fine for ordinary carpentry." "Someone wanted this space hidden." "Let's hope they left something worth hiding." Under a loose board: burnt papers and hinge fittings. "Someone burned these deliberately." "Or tried to destroy them in a hurry. We can't tell which." A surviving plan shows a joint designed to move in several directions: "And the hinge could support a lightweight articulated limb." "So the apprentice really did work with moving figures?" "He worked with mechanisms. We still don't know what he made later." Xiao Tian: "No matching mark. No name. Nothing that connects this room directly to the kiln." "Then we've reached a dead end?" "We've learned what he studied. That's not nothing." The neighbour adds: "He wasn't alone the last time I saw him. Someone visited after dark. They argued, but I couldn't hear what was said." "Do you remember the visitor?" "Only a long, dark cloak. I never saw their face." Cangyuan: "The apprentice may have been involved in the puppet work, or he may have encountered the same people we're searching for." "Until we find more evidence, both possibilities remain open." The apprentice had vanished years ago. His workshop had offered fragments of his craft, but no explanation for his disappearance. And somewhere, someone still knew what had happened to him.
+
+**Key events:** A neighbour: no one saw him depart. · A sealed room and fine grooves on the bench. · Burnt papers and a plan for a jointed limb. · A visitor in a long dark cloak, never seen clearly.
+
+**Opens:** Story: the apprentice who vanished
+
+## 278. The Visitor After Dark
+*Location: The apprentice's old street*
+
+VOLUME 8, COMIC 011. The visitor may be the party's best lead: they need to learn who met the apprentice before he disappeared, without assuming that visitor was connected to the puppets. The neighbour: "The visitor came after dark. I heard raised voices, then the door slammed." "Did you hear a name?" "No. But I remember something about the visitor's hands. There was a dark stain on the fingers. Like soot, or ink. I couldn't tell which." Xiyu: "That could describe half the craftsmen in Linzhou. Still, it's a detail we didn't have before." Soot, ink or metal dust will not identify anyone, but the visitor may have handled the same kind of mechanism. A fine tool found in the room was made for delicate adjustments, not ordinary carving; a craftsman says: "This isn't made locally. The handle's design is unfamiliar, and the tip was ground for very fine work. I have seen similar tools carried by travelling mechanism specialists. Some pass through the northern trade road." So the visitor could have come from outside Linzhou. Xiao Yan notes the apprentice vanished years ago, so the visitor might have left long before the puppet appeared: "Then we're chasing two different mysteries. Unless we find evidence connecting them." Xiyu: "You've seen work like this." Cangyuan: "I've seen tools used to guide and adjust spiritual threads. That doesn't mean this one belongs to the same tradition." "You always leave yourself an escape route." "Because certainty is expensive when the evidence is thin." A woman brings a note slipped beneath the door, asking that it be given to the travellers investigating the old kiln. "Did you see who left it?" "Only a sleeve disappearing into the crowd." The note: "Stop searching for the apprentice. He is not the one you need to find." "That sounds like someone trying to mislead us." "Or someone trying to keep us away from him." "Someone knows what we're investigating." "Yes. And they want us to know they're aware." For the first time the hidden hand had answered their search, not with a face, but with a warning.
+
+**Key events:** The visitor's soot-stained fingers. · A tool not made in Linzhou: travelling mechanism specialists. · A note: "Stop searching for the apprentice." · "They want us to know they're aware."
+
+**Opens:** Story: a warning note from the hidden hand
+
+## 279. The Price of Knowing
+*Location: Linzhou's old warehouse district*
+
+VOLUME 8, COMIC 012. The note tells them to stop searching for the apprentice, which means someone knows what they are doing, though it doesn't say whether the warning is meant to frighten or protect them. Cangyuan: "The writer may be hiding the apprentice, silencing a witness, or directing us away from something else. Three possibilities, and not one of them makes the writer trustworthy." Hoko has seen instruments like this among travelling mechanism specialists; a few passed through last season, and one group rented rooms near the old warehouses. A warehouse keeper: "There was a tenant who paid in advance and asked no questions about the building. They stayed only a few nights. A dark cloak. Gloves, even indoors. I accepted payment. I didn't ask questions. I wasn't paid to ask." "At least he's honest about being dishonest." His ledger carries a mark similar to the one on the tool: "Similar isn't identical. It could indicate a supplier, a workshop, or something else entirely." Something was moved out of the room, or moved through. Xiyu finds another thread, resembling the one from the puppet; they will compare them before drawing conclusions. Xiyu to Cangyuan: "You know more about spiritual threads than you've told them." "I know enough to recognise danger. I don't yet know whose hands are behind it." "And when you do?" "You'll hear it from me." The tenant collected a sealed wooden case on the last night; two people carried it away and neither returned, heading north toward the road beyond the city. "We have a possible trail beyond the city. No confirmed identity, no proof of what was in the case. But enough to investigate." The warning had not stopped their search. It had given the unseen hand another reason to watch them.
+
+**Key events:** Three readings of the warning, none trustworthy. · A tenant in a dark cloak and gloves, paid in advance. · A sealed wooden case carried north by two people. · "You'll hear it from me."
+
+**Opens:** Story: a sealed case carried north
+
+## 280. The Road Beyond Linzhou
+*Location: The northern road and a roadside shelter*
+
+VOLUME 8, COMIC 013. The warehouse keeper's account gave them a direction, not an answer: somewhere beyond Linzhou two strangers had carried away a sealed wooden case. "We follow the northern road first. If the trail divides, we look for evidence before choosing." At a signpost (north road, mountain road, river road) the case could have gone along any of them; the river road would make transporting something heavy easier. Wide tracks, not yet softened by rain, and a place where something heavy left the road. At a weathered shelter, where the straw beneath the eaves looks newer than the rest, Xiyu finds a cord whose fibres are frayed at one end: "This cord wasn't left here by the wind." "It's the kind used to bind a package. But that alone doesn't connect it to the case." "You notice the smallest things." "Small things are often all a trail leaves behind." An old man at the shelter: "Two travellers stopped here several nights ago. One stayed with the horses while the other carried a long case inside." "Did you see their faces?" "Only briefly. I wouldn't recognise them again." One went north on foot; the other took a horse toward the hills. "Then they may have separated, or simply chosen different routes. We can't know yet." The plan: a witness, a possible package cord and two directions of travel; the party splits only if it can stay within reach, and no one follows a stranger alone. Their first solid lead beyond Linzhou had become two uncertain trails. Somewhere ahead, the sealed case was still moving, and the party had to decide which path to follow.
+
+**Key events:** A signpost: north, mountain and river roads. · A frayed binding cord at a roadside shelter. · Two travellers: one on foot north, one on horseback to the hills. · "No one follows a stranger alone."
+
+**Opens:** Story: two trails beyond Linzhou
+
+## 281. The Road Divides
+*Location: The river road and the ridge*
+
+VOLUME 8, COMIC 014. The witness saw one traveller continue north on foot and another ride toward the hills; the party must decide which trail is more likely to lead to the case. Hoko: "The rider could cover more ground. If the case was heavy, they may have taken it by horse." "Or the rider was drawing attention away from the person carrying it." They split into two pairs, but neither pair goes beyond shouting distance where the paths allow it; if either trail turns dangerous they withdraw, and no one mistakes a suspicious footprint for permission to start a fight. Fresh hoofprints, but no sign of a cart: "We may be following the messenger, not the cargo." On the softer ground near the riverbank: "A loaded cart passed here. The wheel sank deep enough to scrape the stone. That supports the possibility. It doesn't tell us what the cart carried." Xiyu finds a thread in the grass: "This looks like the material from the puppet." "Similar appearance, perhaps. We'll need to compare it with the sample from Linzhou." Someone could cross the river here without using the main road: "A useful route for anyone who doesn't want to be seen. Or a useful route for anyone who simply knows the countryside." The rider left a scrap of dark cloth behind: "Or lost it long before passing here. We should keep it as a clue, not proof." Comparing evidence: the cart may have followed the river path before turning toward the ridge, and the rider may have taken the hill road separately; they still cannot prove they were working together. Two uncertain trails had converged on one place worth investigating. Beyond the ridge, someone had found a place to hide what the road could no longer conceal.
+
+**Key events:** Two pairs, within shouting distance. · Fresh hoofprints, but no cart. · A loaded cart's wheel marks at the riverbank. · A thread like the puppet's, and a scrap of dark cloth.
+
+**Opens:** Story: the trails converge beyond the ridge
+
+## 282. The Gate in the Woods
+*Location: A hidden compound beyond the ridge*
+
+VOLUME 8, COMIC 015. The two trails had led them to a place hidden from the main road; nothing about its quiet appearance revealed what lay beyond the gate. "Let's check the surroundings before we announce ourselves." No signboard, no family emblem, no indication of who owns it: "Either the owner values privacy, or this place isn't meant to receive visitors." The gate is old, the hinge isn't: "Someone maintains it. That doesn't tell us whether they're connected to the puppet." A clacking from within sounds like a mechanism, or someone working with tools. Xiyu sees a filament on the other side: "Don't touch it. We don't know whether it's a simple thread or a warning device." Cangyuan: "It may be part of a mechanism. We shouldn't assume it's the same spiritual thread we found before." "You sound almost disappointed." "I'd rather be wrong about a thread than right about a trap." Hoko: "Someone uses this entrance. And those prints are fresher than the tracks on the main path." Xiao Tian: "We have no proof that anyone inside is responsible for the puppets. Then we find out who's here before deciding what to do." Through a gap: joints, faceplates, possibly puppet components, though they still need to see whether they are connected to the figure they fought. "They heard us. Or they were already watching the gate." A voice from inside: "You've followed a long road to reach a place you don't understand." "Then perhaps you can tell us what this place is." "That depends on what you intend to do here. Leave your weapons outside, and one of you may enter." The hidden compound had finally acknowledged their presence, but its occupant offered no name, no explanation and no assurance of safety. The next step would require more than following a trail. It would require deciding whom they were willing to trust.
+
+**Key events:** A maintained gate with no sign and no emblem. · A filament on the far side: thread or warning device? · Joints and faceplates glimpsed inside. · "Leave your weapons outside, and one of you may enter."
+
+**Opens:** Story: a hidden compound beyond the ridge
+
+## 283. The Host Behind the Gate
+*Location: The hidden compound*
+
+VOLUME 8, COMIC 016. "One visitor. No weapons." That sounds less like an invitation and more like a trap, which is why they decide carefully. Dongyue: "We came seeking information about a workshop and a puppet. We won't threaten your household." "Then send someone who can keep a calm head." Xiyu: "If this person knows anything about spiritual threads, Cangyuan may be the best choice. Or the worst, if they recognise me." Hoko: "Dongyue should go. He asks questions without turning every answer into a challenge." Dongyue: "I'll go in. Keep the gate in sight, and leave if anything seems wrong." "We'll be here." The compound is not a home in the ordinary sense; it is a place where things are assembled, tested and taken apart. The host, a man in a dark cloak: "You came farther than most." "We followed evidence. We haven't decided what it means." Shown a jointed wooden hand: "Have you seen something built like this?" "Something similar. It was used to attack travellers." "Then you have seen a tool in the wrong hands, or a tool doing precisely what it was made to do." "Did you build the puppet we encountered near Linzhou?" "No." "Can you prove that?" "Can you prove I did?" Of the mark: "This is a workshop notation. It tells a craftsperson how a piece should fit. It isn't a name." "Then someone could copy it." "Anyone with the skill. Or anyone who wanted you to believe they had it." Asked about a former apprentice who disappeared from Linzhou years ago: "Many apprentices leave their masters. Some leave because they are ambitious. Others because they have learned something they shouldn't." "Which was his reason?" "I didn't say I knew him." The host offers a bargain: "I can tell you where the sealed case was taken. In exchange, you must leave this place and stop searching for the apprentice." "You ask us to abandon one question in return for an answer to another." "I ask you to decide which answer matters more." For the first time the party had found someone willing to speak, but every answer came tied to another condition. Before Dongyue could learn where the case had gone, he would have to decide what the truth was worth.
+
+**Key events:** One visitor, no weapons: Dongyue goes in. · A compound where things are assembled, tested and taken apart. · The host denies building the puppet and calls the mark only a workshop notation. · A bargain: the case's location for dropping the apprentice.
+
+**Opens:** Story: the host behind the gate
+
+## 284. The Terms of the Deal
+*Location: The hidden compound and the road*
+
+VOLUME 8, COMIC 017. Dongyue: "I'll hear where the case went. But I won't promise to abandon the apprentice without knowing why you're asking. I prefer to know what I'm agreeing to." The host: "You bargain before you've even heard the price. You may investigate the case. You will not enter the apprentice's former workshop again, and you will not bring the city authorities here." Dongyue: "I can agree not to involve the authorities without cause. I won't promise to ignore evidence if it leads back to the apprentice." Outside, Xiyu: "He's been inside too long." "He's asking questions. That takes longer than drawing a sword." "You would know." The host: "The sealed case was taken to an old relay station north of the river. It hasn't been used by official couriers for years." "Who took it there?" "Two carriers. I never learned their names." "We follow the river before turning into a narrow valley." "Why tell us this now?" "Because the case shouldn't remain there. Its contents are dangerous in the wrong hands." "What does it contain?" "Something that should never have been assembled." "Does it have anything to do with the puppet we encountered?" "The case contains components. Components can be used in many ways." "That isn't an answer." "It's the only answer I can give you. If you find the case, don't open it." "Then how am I supposed to know whether it is dangerous?" "You may have to decide whether knowing is worth the risk." Outside Dongyue reports: a location, not an identity. The terms: investigate the case without involving the authorities without cause, and stop returning to the apprentice's workshop. Xiao Tian: "That condition tells us what the host fears. It doesn't tell us whether the fear is justified." Asked whether the host recognised the spiritual-thread method: "They knew enough to warn me about the case. They denied making the puppet." "And did you believe them?" "I believe they withheld something. That's not the same as knowing they lied." The plan: follow the river north, take the valley path and check the station before sunset if the road permits, observing first. The host: "If they've reached the relay station, then someone else has already made a mistake." The party had gained a destination, but the warning about the sealed case made one thing clear: finding it might be more dangerous than losing the trail.
+
+**Key events:** The host: investigate the case, but keep the authorities out. · The case is at an old relay station north of the river. · "Something that should never have been assembled." "Don't open it." · "I believe they withheld something."
+
+**Opens:** Story: the relay station north of the river
+
+## 285. The Old Relay Station
+*Location: The old relay station in the valley*
+
+VOLUME 8, COMIC 018. The host had given them a destination, but no names and no guarantee that the sealed case would still be there. "The station should be beyond the next bend. We look around before going inside." The building hasn't been maintained in years, "That doesn't mean no one has used it", and someone came recently, the dust disturbed after the last rain. "No one waiting for us." "That doesn't mean we're not alone." The lock is newer than the building: "Then someone wanted this room secured. We should find out why before forcing it." Xiao Yan: "It's a simple lock, but it has been adjusted. Someone wanted it to look older than it is. Yes. Carefully." Inside: "The case was here. Or something of the same size was." Xiyu finds fibres that look similar to the cord from the shelter: "Similar isn't proof. But this gives us another sample to compare." On the wall, scratched writing, only part of it legible: "...before the strings are drawn." "It could refer to the puppet's control threads. It could also be a metaphor. We shouldn't build a theory around half a sentence." A cart has left from the rear yard: "Then we follow it. After we record what we've found. If the case has moved again, we need to know what this place can actually tell us." The relay station had confirmed that something had been stored there, but the case was already gone. Someone was moving the pieces ahead of them. The question was whether the party was following the trail, or being led along.
+
+**Key events:** The station's lock was adjusted to look old. · The room where the case lay: cord fibres, a size outline. · A half sentence on the wall: "...before the strings are drawn." · A cart left from the rear yard.
+
+**Opens:** Story: the case has moved again
+
+## 286. The Lantern in the Hills
+*Location: A lone building in the hills*
+
+VOLUME 8, COMIC 019. The relay station had been emptied, but the tracks behind it were fresh enough to follow. "The wheels veer off the main trail here. Whoever drove this cart knew where they were going." "The cart was heavy. It scraped the branches on the turn." "Then we can follow the damage even where the ground is too hard to hold tracks." A lit building stands ahead, with no smoke from the chimney: "It may not be an ordinary residence." "We observe first. No one approaches the cart alone." "Agreed. If someone is inside, they may already know we're here." A mark on a crate beside the cart resembles the notation on the puppet's components: "Resembles it. Let's not call it a match until we compare the details." A tapping sounds from within: "Someone's inside. And they heard us arrive." Then a small figure of folded paper steps out and moves. Xiyu: "Paper?" "Don't touch it. Watch what it does." "It isn't using the same visible mechanism as the wooden puppet." "No. This is a different technique." It leaves a message, red-stained on paper: "Only the last line: 'The strings are not always seen.'" Xiyu to Cangyuan: "You've seen paper puppetry before." "I've seen references to it." "That wasn't what I asked." "And I'm not ready to answer more than that." A voice from the dark doorway: "If you've come for the case, you're too late." "Then tell us where it went." "First, tell me why you're following it." The wooden puppets had left physical traces. This new figure had left only a message, and a question Cangyuan was not ready to answer. The strings were not always visible. And neither were the promises that bound them.
+
+**Key events:** A cart's damage leads to a lit building in the hills. · A figure of folded paper walks and leaves a message. · "The strings are not always seen." · Cangyuan: "I'm not ready to answer more than that."
+
+**Opens:** Story: the first paper puppet
+
+## 287. The Figure That Followed
+*Location: The hill building and a small shrine in the woods*
+
+VOLUME 8, COMIC 020. In the building the cloaked figure answers Dongyue: "I know where it was meant to go. Whether it arrived is another matter." "Why help us now?" "I didn't invite you here. You followed a trail someone else wanted you to find. If you want the case, follow the valley path. But don't mistake the trail for an answer." "And if the trail is another trap?" "Then you should be wise enough to recognise it." Outside, the folded paper figure's remains hold a folded part that didn't burn or tear: "A message hidden inside? Let's examine it somewhere safe." Xiao Tian, holding a small paper slip marked with a different notation: "This isn't the geometric mark from the wooden components." "No. It's a different notation." "Do you recognise it?" "Not enough to identify its maker." Something is watching from the trees: "We're being watched." "By another paper puppet?" "Unless paper has learned to climb trees by itself." It moves away: "Don't chase blindly. Watch where it goes. We follow only as far as we can keep sight of one another." "And if it leads us straight into an ambush?" "Then we stop before it chooses the ground for us." It leads them to a small shrine in the woods. "That proves it wanted us here. It doesn't tell us why." Xining finds the dust disturbed beneath an offering bowl: "Something was hidden here. And removed recently." Under the bowl a note: "The hand that pulls the thread is not always the hand that ties the knot." "Someone is trying very hard to teach us a lesson." "Or trying to make us look in the wrong direction." The paper figure had led them to a place where something was hidden, then left them with another riddle. The next clue was no longer about where the case had gone, but who wanted them to keep searching.
+
+**Key events:** The cloaked figure: "Don't mistake the trail for an answer." · A paper slip with a different notation. · A paper figure leads them to a shrine; something was removed from under the bowl. · "The hand that pulls the thread is not always the hand that ties the knot."
+
+**Opens:** Story: a shrine and another riddle
+
+## 288. The Ink That Remembers
+*Location: The ink seller and an abandoned paper-figure workshop*
+
+VOLUME 8, COMIC 021. The message beneath the bowl had offered no name, only a warning about the difference between the hand that pulls a thread and the hand that ties it. Dongyue: "We should examine the ink seal before following another trail." Laid side by side, the marks show different shapes and different construction. "They may belong to different traditions, or someone may want us to think they do." Xining studies the paper: "The ink soaked through the paper unevenly. Some lines were drawn before the folds, others afterward." "So the figure was assembled in stages." "Or altered after it was folded." Xiao Tian: "This wasn't simply a puppet left to move on its own. Someone prepared it to deliver a specific message." "You sound certain." "I'm certain about the preparation. Not the person who did it." At an ink seller's stall: "Have you seen a mark like this?" "Not that exact one. But specialised inks and talisman paper are sold farther east, where the old shrine workshops used to operate. Most of those workshops closed years ago. A few craftspeople still make paper figures for ceremonies. They aren't supposed to move." "And the ones that do?" "Then someone has given them a purpose beyond ceremony." At a place that looks abandoned (a sign reading 'paper figures'), the threshold has been swept recently. Inside, hung paper pieces: "These could be ceremonial pieces. Or unfinished work. We shouldn't assume they're all made for the same purpose." Xiyu: "Someone cleared this space recently. And left the tools behind?" "Perhaps they expected to return." A diagram shows how to shape the figure, "but not how it was animated. The missing step may be the part that matters most." Xiyu to Cangyuan: "That mark means something to you." "It resembles a notation I encountered long ago." "From your old school?" "Possibly. I won't claim more until I'm certain." They had found a place where paper figures were made, and evidence that someone had removed the most important instruction. The ink remembered the shape of the art. Cangyuan remembered something else, and was not yet ready to say what.
+
+**Key events:** The ink was laid down in stages, or altered after folding. · Specialised ink and talisman paper sold farther east. · A swept threshold and hung paper figures. · "I won't claim more until I'm certain."
+
+**Opens:** Story: a workshop where paper figures were made
+
+## 289. The Missing Fold
+*Location: The hill building and the shrine road*
+
+VOLUME 8, COMIC 022. The party studies the paper diagrams in the hill building: "The final step was deliberately removed. Someone didn't want the complete method left behind. Or they took it with them. We need to find out which." A locked compartment's latch is designed to resist tampering: "Then opening it carelessly would defeat the purpose of finding it." Inside are three sheets recording variations of the same design: the first shows the shape, the second adds markings, the third introduces something else, perhaps a binding strip that serves as an anchor without which the figure might not hold its form. "You sound more certain now." "Because this sheet gives us more to examine. Not because I know who made it." Hoko reads two characters on a sheet, perhaps part of a name or the end of a sentence; Xiao Tian sees a red stamped mark that could be a supplier's: "Then we return to the market and ask who used it. We ask. We don't accuse." Among the paper figures hung from the rafters, one is no longer facing them, though no wind came through the windows. Xiyu: "Don't touch it yet." A note: "Some knowledge must remain unfinished." "That sounds less like a warning and more like a command." "Or a reminder from someone who believed they had the right to decide." The missing fold had not revealed the complete technique, but it had shown them that the paper figures were built in stages, and that someone was determined to keep the final step out of reach.
+
+**Key events:** The final step of the method was removed. · A locked compartment with three staged diagrams. · A supplier's red stamp. · "Some knowledge must remain unfinished."
+
+**Opens:** Story: paper figures are built in stages
+
+## 290. The Name Beneath the Ink
+*Location: The market and an old workshop*
+
+VOLUME 8, COMIC 023. In the market they look for someone who recognises the stamp, without accusing the first nervous merchant. An old man: "I've seen something similar. It belongs to a small workshop that used to supply the shrine artisans. The workshop closed. Its owner moved to the eastern quarter." The record gives only the surname Wei; the rest is smudged. "A quiet craftsperson. They worked alone, and rarely sold directly to customers." Xiyu: "A closed workshop, a missing instruction, and a name with half its ink erased." "At least we're beginning to find people who existed outside the paper." "You make progress sound terribly unromantic." At Wei's old workshop, "No one has lived here for a while. But someone cleared the path recently." A neighbour: "Wei's workshop closed years ago. Someone came asking about it recently, though. I couldn't see their face. They wore gloves and carried a flat wooden case. They left before sunset and went toward the old canal road. I heard two sets of footsteps. I only saw one person." Comparing the supplier's mark with the wooden puppet's notation: "The marks aren't identical. One may identify a supplier, the other a construction method. Then we shouldn't assume the paper and wooden puppets came from the same workshop." Cangyuan: "This style of notation was used by certain spirit-weavers. It could record how a spiritual pattern should be arranged." Xiyu: "You said you'd seen references to paper puppetry." "I have. I still don't know whether this workshop belonged to that tradition." A new note appears that wasn't there when they arrived: "The name you seek belongs to the past. Follow the living hand, not the dead record." "Another riddle." "Or a warning that the records are being used to lead us in circles." They had found a supplier's name, a former address, and a witness who remembered a recent visitor. None of it proved who had made the puppets, or who was using them now.
+
+**Key events:** A supplier's stamp traced to a closed workshop: the surname Wei. · A neighbour: a gloved visitor with a flat wooden case. · The paper and wooden marks are not the same. · "Follow the living hand, not the dead record."
+
+**Opens:** Story: the Wei workshop
+
+## 291. The Living Hand
+*Location: The canal road and the old kiln*
+
+VOLUME 8, COMIC 024. The message urged them to follow the living hand rather than the dead record; their next lead was the visitor who had carried a flat wooden case toward the canal. Xiao Tian: "We find the visitor first. The workshop can wait until we know who has been using it." A boatman: "Two people came through three nights ago. One carried a case. Neither hired a boat. They took the path toward the old kiln. Most people avoid it now. The kiln has been closed for years. People say the ground around it is unstable." Xiao Yan: "A cart went this way. The tracks are too damaged to tell whether it's the same cart from the relay station." Xining and Hoko find someone has entered recently, the dust not yet settled over the print. Inside they find a hooded figure at a table working on a small paper figure. "We've found someone. Wait. We don't know whether they're the person who carried the case, or someone who found it." The figure: "You shouldn't have followed the trail here." "Then tell us why someone wanted us to." "I left no messages at the shrine." "We didn't say you had." "Then you know less than you think." Diagrams in the case resemble the ones in the workshop: "Many people copy old techniques. Similarity proves nothing." "Agreed. But your reaction suggests you recognise the method." Dongyue: "We're asking questions, not trying to imprison you." "Questions become accusations quickly. I won't stay to see which yours become." "Then give us one reason to believe you're not involved." The case was a decoy, or its contents had already been removed. They had finally found a living craftsperson, but not the answers they expected. The hand was real. The truth, however, remained just beyond their grasp.
+
+**Key events:** Two people with a case took the path to the old kiln. · A hooded craftsperson folding a small paper figure. · "I left no messages at the shrine." "We didn't say you had." · The case was a decoy, or already emptied.
+
+**Opens:** Story: a living craftsperson, and a decoy case
+
+## 292. The One Who Escaped
+*Location: The old kiln and the stone bridge*
+
+VOLUME 8, COMIC 025. The case had been left behind, but its contents were gone. The craftsperson had escaped before they could learn who had commissioned the work. Dongyue: "This wasn't an accidental loss. Someone removed the contents deliberately." Xiao Tian: "They left in a hurry, but no one forced their way out." Xiao Yan: "Then they chose to leave, or someone warned them we were coming." Cangyuan holds two paper figures: "The paper figures are more than decoys. Their construction suggests someone understands how to preserve a spiritual pattern in a fragile form." Xiyu: "You speak as though you've studied this craft closely." "I've studied the principles. I haven't identified the maker." Hoko finds a hidden map in the case: "This isn't a complete map. But the bridge should be identifiable." Xining notes the route was drawn in two inks, the bridge and river first and the building added later: "So someone amended the destination after the map was made." Cangyuan: "Not the same as the supplier's stamp. It resembles a notation used to identify a place where spiritual work was performed." "Do you know the place?" "Not yet." The sketch matches the stone bridge they know. A building beyond: "That could be the place. Or another abandoned building. We'll look for signs of recent use before approaching the gate." Fresh prints: "People have been coming here. Enough to leave a trail. Not enough to tell us who they were." Dongyue: "We observe first. If someone is inside, we speak before we interfere." "And if we find evidence of a dangerous technique?" "Then we judge the evidence, not the reputation of the person who may have used it." The discarded case had given them a route, but not a name. For the first time the trail pointed toward a place rather than another intermediary. Whatever waited beyond the gate, it had not yet revealed whether it was a workshop, a refuge, or the next carefully prepared decoy.
+
+**Key events:** The case's contents were removed on purpose. · A map drawn in two inks: the building was added later. · A notation for a place where spiritual work was performed. · The trail points to a place, not an intermediary.
+
+**Opens:** Story: a map to a building beyond the gate
+
+## 293. The Mark Behind the Gate
+*Location: A maintained compound and its artisan*
+
+VOLUME 8, COMIC 026. Dongyue: "The map brought us here. We should announce ourselves before entering." An attendant: "This property is closed. You have no business here." "We're investigating a wooden case and paper figures. We believe someone brought them here." "Then you believe wrongly." Cangyuan points at a carved mark by the door: "That mark, where did it come from?" "It's been here longer than I've worked here. The property belongs to a retired artisan. They don't receive visitors. I was told not to give his name to strangers." Dongyue: "We're not here to seize the property. Someone has been moving dangerous puppet components through this region. If the owner knows anything, even a small detail could help prevent someone being hurt." "Wait here." The compound is maintained, unlike the abandoned workshop; someone still works here, or wanted the place to appear occupied. Hoko: "Those covers are clean. Someone uses these tables." The artisan, shown the map, asks where it was found: "Inside a discarded wooden case at an abandoned kiln." "Then you have found something that was never meant to reach you." Cangyuan: "Do you recognise the destination?" "I recognise the mark. It identifies a place where certain spiritual patterns were tested. It does not identify the person who made them. No one has tested patterns here for years." Xining: "If no one has worked here for years, why is this ink fresh?" "Because I still practise ordinary calligraphy. Not every written mark is part of a puppet." "That's fair. But may we see the rest of the table?" "These are remnants of my old trade. I have nothing to do with the case you found." "Then you won't mind if we record the marks and compare them with our evidence." Finally: "This mark was used by a courier workshop near the northern pass. If someone transported a sealed case, that is where I would begin looking." "Why didn't you tell us that sooner?" "Because people who ask about old techniques rarely stop at the truth they came to find." The compound had yielded a name for their next destination, but no proof that its owner had made or moved the puppets. The trail led north again. This time they would be looking for the people who transported the case, not merely the hands that could have built it.
+
+**Key events:** A maintained compound and a retired artisan. · "I recognise the mark": a place where spiritual patterns were tested. · Fresh ink, explained as ordinary calligraphy. · The mark belongs to a courier workshop near the northern pass.
+
+**Opens:** Story: the trail turns north to a courier workshop
+
+## 294. The Courier's Ledger
+*Location: A courier station on the northern road*
+
+VOLUME 8, COMIC 027. The artisan's mark led them north, toward a courier station that once connected the mountain settlements with the river towns. Xiao Yan: "If the mark is genuine, someone used this station to move the case." "This place isn't abandoned." "Then we ask before we start searching." Dongyue shows the clerk the mark: "It's an old dispatch mark. We stopped using it several years ago. Here. A shipment under this mark was recorded three weeks ago." "What was shipped?" "The description says 'sealed components.' No further details. Two carriers accepted the shipment. Neither used a family name." "Were their identities verified?" "They paid the fee and presented valid travel tokens. That was all the procedure required. The destination was changed after the shipment was entered. The correction was authorised with a second seal." "Can you identify whose seal it was?" "Not from this copy. The original dispatch slip was collected by the courier who approved the change." "And where did that courier go?" "The northern road. I don't know where beyond that." Cangyuan: "This is an administrative seal, not a spiritual mark. It authorised a change in the shipment's route." Xiyu: "So the person who redirected the case may not be the person who made the puppets." "Exactly. We must keep those questions separate." The clerk finds another dispatch: no description, only a weight and a destination. "Was it linked to the first?" "The records don't say. But both used the same obsolete mark." Xiao Yan: "We have a shipment, two aliases, an altered destination, and a second dispatch." Hoko: "Enough to follow the route. Not enough to accuse anyone. If the second dispatch followed the same route, we should start there. We follow the records and look for physical evidence. No assumptions about who ordered the shipment." For the first time, the trail had produced records that could be checked. The case had passed through official hands, but the names in the ledger led nowhere. The next destination was no longer a guess. It was a place recorded in ink, waiting at the end of the northern road.
+
+**Key events:** An old dispatch mark and a shipment of "sealed components". · Two carriers under aliases; the destination was altered with a second seal. · A second dispatch under the same obsolete mark. · "We follow the records and look for physical evidence."
+
+**Opens:** Story: the courier ledger
+
+## 295. The Second Dispatch
+*Location: The crossing, the toll booth and the weighing station*
+
+VOLUME 8, COMIC 028. Dongyue: "The second dispatch left two days after the first, using the same obsolete mark. The destinations differ. We need to establish whether the routes meet." Xiao Yan marks a crossing where both routes pass: "Then that's where we begin. A place where two shipments meet is easier to investigate than a name that doesn't exist." By midday the party reaches the crossing marked on both routes. The shelter appears unused, but the road beyond shows recent cart tracks. A toll keeper: "Not anymore. But I remember a cart that crossed after dark. Its driver paid for two crossings, though only one cart was visible. Only that the second load was to be collected farther up the road." Xiao Yan: "Two crossings could mean two loads, or a fee paid in advance." Xining finds a red wax seal fragment: "This may have come from a dispatch seal." Dongyue: "It resembles the colour of the seal in the ledger, but we need more than colour to connect them." Cangyuan: "The impression is incomplete. I can see part of a border, but not enough to identify the seal." Xiyu: "Then we shouldn't force a conclusion out of it." "Exactly." Xiao Tian: "A cart could wait here without being seen from the toll booth, and transfer its cargo before continuing." Hoko finds wood similar in thickness to the case frame: "Similar, but not necessarily from the same object. We'll record it and keep looking." The signpost points to a weighing station and the northern pass. Xining finds the tally book there: "Someone used this place recently. And the tally may record a transfer. We should copy it before we leave." Dongyue: "We can't prove the two shipments carried the same contents. But the shared crossing and the transfer point suggest the routes were coordinated." Xiao Yan: "Someone planned the movement carefully. That still doesn't tell us who made the puppets, or who ordered the shipments." The second dispatch had left a physical trail. For the first time the party could trace the movement of the cargo without relying on another stranger's word.
+
+**Key events:** The two routes cross at a bridge and toll booth. · A toll keeper: two crossings, only one cart seen. · A broken red wax seal and a weighing station tally. · The routes were coordinated, but no one is identified.
+
+**Opens:** Story: the coordinated crossing
+
+## 296. The Unfinished Figure
+*Location: A storage building and the pass road*
+
+VOLUME 8, COMIC 029. At the weighing station's storage building Xiao Yan reads marks recording weights and transfer dates: "They're not ordinary inventory notes." Dongyue: "Can you connect them to the second dispatch? Not yet. But the dates are consistent with the courier ledger." Hoko finds a crate with a false bottom, holding only scraps: "Whatever was stored here has already been removed." Xining finds a paper that doesn't look like packing paper, its ink perhaps treated: "Don't unfold it too quickly." Cangyuan: "These aren't written instructions. They're a construction pattern." "For a paper puppet?" "Possibly. The pattern alone doesn't tell us how it was activated." Xiao Yan: "The two patterns share a structure. This fragment could belong to a larger design. Then someone may have divided the instructions between shipments." Xiao Tian finds something else: an unfinished figure. Hoko: "Careful. It may be unfinished for a reason." Cangyuan: "Don't move it. We need to know whether that was a spiritual reaction or a mechanical one." Xiyu: "Did anyone touch it? No." Cangyuan, examining it: "I recognise part of the principle. The pattern guides movement through a prepared structure. The rest is what worries me. This design is incomplete, yet it reacted." Dongyue: "We shouldn't test it here. We'll preserve it and have it examined properly." Cangyuan: "I'll record the pattern before we leave. If anyone has altered it, we'll need a reference." Hoko: "Whoever used this station knew how to leave without drawing attention. Or they left long before we arrived." Xiyu: "You recognised more than a few lines." "I knew a similar principle once. That doesn't mean I know who revived it, or what they've changed." "I'll let you keep your secrets for now." The second dispatch had led them to a fragment of a working design. Someone had used the courier network to move the pieces, and someone had altered the technique enough to make an unfinished figure respond. Cangyuan knew the principle. He did not yet know whose hands had changed it, or why.
+
+**Key events:** Weights and dates match the courier ledger. · A paper construction pattern, divided between shipments. · An unfinished figure that reacted anyway. · "I knew a similar principle once."
+
+**Opens:** Story: an unfinished figure that responds
+
+## 297. The Hand Behind the Pattern
+*Location: The weighing station*
+
+VOLUME 8, COMIC 030. Dongyue: "The dates align, and the construction patterns share several features. We can reasonably connect the fragments to the same chain of shipments. But we still can't prove who commissioned them." Cangyuan finds a line that should continue through the joint: "Whoever altered the design stopped it deliberately." Xiyu: "A mistake?" "No. A missing line would weaken the pattern. Someone wanted the figure to respond only partially." Xining: "That would explain the movement we witnessed without the figure being fully functional. So it may have been a test rather than a finished puppet." Dongyue: "That's possible. We should keep it as a hypothesis." Cangyuan: "I encountered a similar principle during my training. The pattern doesn't create movement by itself. It directs force through a prepared form." "And who taught you that?" "My master taught me the underlying principles. This particular design is not one I remember studying." Xiao Yan: "The framework is similar, but the arrangement differs. Whoever made this adapted the principle rather than copying a complete design." "Exactly. That's why I can't name the maker from the pattern alone." Hoko: "The courier network explains how the pieces travelled. It doesn't tell us whether the carriers understood what they were transporting." Xiao Tian: "Then we shouldn't treat every carrier as a conspirator." Xiao Yan: "Agreed. We need evidence of intent, not just a name in a ledger." Xining finds another mark hidden on the reverse of the pattern: "Could it identify the person who prepared the pattern?" "Possibly. Or it could identify a stage of the process. We need another example before we can tell." Xiao Yan sets out the account: construction, transport, purpose (still unknown). "That's the clearest account we have so far." Xiyu: "You recognised something that unsettled you." "I recognised a principle from my past. I don't want to turn that into an accusation without proof." "Then we'll find the proof before drawing conclusions." The clerk has identified where the original dispatch slips were sent for storage. Dongyue: "An archive gives us something we can verify." Hoko: "And records are harder to question than rumours, assuming no one has altered them." "Tomorrow, we follow the original records. We won't experiment with the figure until we understand more about its construction." "That's wise. An incomplete technique can be more dangerous than one we understand." The party had uncovered a chain of shipments, not altered design, and a principle Cangyuan recognised from his training. Yet the hand that had changed the pattern remained unknown. The trail had revealed how the pieces travelled, not who had set them in motion. The original records awaited them, and with them, the next thread to follow.
+
+**Key events:** An altered pattern: a deliberately missing line. · Construction, transport, purpose: purpose still unknown. · A second mark on the reverse of the pattern. · The original dispatch slips are in an archive.
+
+**Opens:** Story: the original dispatch records
+
+## 298. The Regional Archive
+*Location: The regional archive of an inland city*
+
+VOLUME 8, COMIC 031. The second dispatch had led the party farther inland, to a city where old records were guarded as carefully as treasures. At last they reach the regional archive. Hoko: "Let's hope this place has better records than the courier house." Dongyue: "Records aren't the problem. It's who gets to see them." He asks for a shipment registered under an obsolete dispatch mark that passed through the northern routes. The archivist: "Older transport records are kept in the restricted collection. You'll need a specific register number." Xiao Yan: "This mark appears beside two separate dispatches. The second one was recorded later, but its destination was altered." "Wait here." The archive was silent, but not idle: behind its closed doors, records were moved, copied, and sealed away from public view. The archivist returns: "The register exists. However, the original volume is no longer in its assigned place." "Was it removed recently?" "According to this entry, it was transferred to another collection several weeks ago." "Who authorised the transfer?" "The approval is valid. I can't disclose the person's identity without further authorisation." The transfer was legitimate on paper. That did not mean it was innocent. Xiao Tian: "Someone knew which record mattered." Dongyue: "Or someone knew what it could lead us to." Xiao Yan: "The transfer happened after the second dispatch. Then whoever moved the record may have been responding to that shipment." A guard at the door of the restricted collection: "Without proper authorisation, you cannot enter." Hoko: "We need to find where this collection was moved." "Then that's where we go next." The trail had not ended. It had reached a door that someone else had already opened and closed again. The archive had preserved the evidence. Someone had simply made sure the party could not reach it yet.
+
+**Key events:** The register exists, but the volume was moved weeks ago. · The transfer happened after the second dispatch and was valid on paper. · The approving person cannot be named without further authorisation. · The restricted collection is closed to them.
+
+**Opens:** Story: a record moved to another collection
+
+## 299. The Missing Authority
+*Location: The archive and the northern gate*
+
+VOLUME 8, COMIC 032. The archive had confirmed the transfer. It had not revealed who ordered it. Dongyue: "We need to find the office responsible for this collection." Xiao Yan studies the register: "This isn't an ordinary courier's mark. It's an authorisation seal." "Can you identify it?" "Not from this copy alone." The archivist: "That authorisation belongs to a collection managed outside this bureau. The destination was recorded separately." Xining: "That wasn't torn out by accident." Xiao Tian: "Whoever removed it wanted the surrounding entries to remain intact." Xiao Yan: "The missing page left its impression behind. Can we trace the number? If the index still exists." Someone had searched this room before them. Xiyu asks: "Are we following the same person who moved the shipment?" Hoko: "Perhaps. But we have no proof yet." Ya'Xing is with them. In the index: "The original destination and the later destination are different. Then the sanctuary is our next lead." The archivist: "That sanctuary was once used to preserve records that could not remain in ordinary archives." Xining: "Why would anyone move these particular records there?" "That is not something the index tells us." Xiyu: "You've seen something like this before." Cangyuan, looking at a fragment: "Only a fragment of the method. I don't know who made this mark, or why." Xiao Yan: "We have a destination, not a culprit." Dongyue: "Then we follow the evidence. We won't decide who is guilty before we get there." They leave the city through its northern gate; beyond the walls a mountain road winds between dark pines. Hoko: "A repository, then a sanctuary. Whoever planned this wanted the records far from public eyes." "Or wanted them preserved somewhere ordinary investigators wouldn't think to look." The records had given them a destination, but not a safe passage. Tomorrow, they find out which road leads to the sanctuary.
+
+**Key events:** The authorisation seal belongs to a collection outside the bureau. · A page was removed on purpose; the surrounding entries are intact. · The destination changed: the sanctuary. · "We have a destination, not a culprit."
+
+**Opens:** Story: the sanctuary that preserves records
+
+## 300. The Road to the Sanctuary
+*Location: The northern road and the hidden sanctuary*
+
+VOLUME 8, COMIC 033. The register points to the sanctuary, but it doesn't tell them which road reaches it. At a stone marker reading north road, Dongyue: "Then we examine both before choosing." Hoko: "This road once carried regular traffic." Xining: "But not for a long time." Xiao Tian finds that someone came through recently, recently enough that the rain hasn't completely erased the marks. Xiao Yan finds a frame that could have carried a sealed chest: "Could have. We cannot prove it carried ours." Xiyu: "Whoever travelled this route wanted someone to follow it." "A decoy?" "Possibly. Or a route used for an entirely different purpose." At a roadside shrine, Xining: "Someone has left an offering here." An inscription: "These aren't directions for travellers. They're instructions for preserving records." The inscription suggested a place built to keep certain knowledge beyond ordinary reach. Xiyu: "Is it the same method?" Cangyuan: "It resembles one principle my master taught me. That doesn't mean the same person made it." "Then we'll wait for evidence." A sealed passage: "Someone sealed this passage. And someone else opened it. Or the same person did both." Then, through the trees, the sanctuary itself: a great hall complex built into the mountainside. The sanctuary had been hidden by distance, terrain, and the silence of forgotten records. Xining: "This place isn't abandoned. Someone has maintained the entrance. But they didn't want visitors." Dongyue: "Whatever is inside, we shouldn't assume it belongs to the person we're pursuing. Agreed. First, we find out who's here." The road had led them to the sanctuary. The question now was whether its keeper would open the gate, or make them discover another way inside.
+
+**Key events:** Two roads; one carries recent marks. · A shrine inscription: instructions for preserving records. · A passage sealed and opened again. · The sanctuary comes into view; its entrance is maintained.
+
+**Opens:** Story: the sanctuary comes into view
+
+## 301. The Keeper at the Gate
+*Location: The sanctuary gate*
+
+VOLUME 8, COMIC 034 (finale). Xiyu: "Perhaps no one is home." Dongyue: "Someone maintained the seal. We should assume we're being heard." A hooded keeper speaks through a window in the gate: "The sanctuary accepts no visitors." "We came seeking records transferred here from the regional archive." "Then you came seeking something you were not meant to see. Who sent you?" "The records themselves led us here." "Records do not walk. People move them." Xiao Yan: "Two dispatches shared an obsolete mark. The second destination was altered. This entry records the collection's transfer." "You have gathered fragments. You have not yet understood them." Cangyuan, at the carved pattern on the gate: "This pattern was used to preserve something, not simply to conceal it." "Who taught you to read that pattern?" "My master taught me its underlying principle. I do not know who carved this one." "Then your knowledge is incomplete." "Yes." Xiyu: "At least he admits what he doesn't know." Dongyue: "We aren't here to seize your collection. We need to know why those records were moved and who changed the destination." "And if the records reveal something dangerous?" "Then we will judge what to do after we understand the truth." Xining: "Many have come here believing that truth belongs to whoever finds it first." "And you believe it belongs to no one?" "I believe some knowledge can destroy the person who carries it." The keeper hands them a token: "At dawn, return with this token. Come without weapons drawn, and enter only the first hall." "And the records?" "You may learn whether the collection is here. Nothing more is promised. You may shelter in the outer courtyard tonight. You will go no farther." Xiyu: "A generous welcome, by sanctuary standards." Cangyuan: "Don't mistake permission for trust." Xiao Yan: "Tomorrow, we see what these records contain." Dongyue: "If the keeper allows us to see anything at all." They had reached the place where the trail ended, but not the truth at its center. The collection had been moved for a reason. At dawn, the party would learn whether the keeper intended to protect that reason, or protect them from it. End of Volume 8.
+
+**Key events:** A hooded keeper behind a window in the gate. · "Records do not walk. People move them." · A token: return at dawn, no drawn weapons, first hall only. · Shelter in the outer courtyard, and no farther.
+
+**Opens:** Story: a night in the sanctuary courtyard
+
+
+---
+
+# Volume 9: A Season Between Journeys
+
+## 302. A Village on the Road
+*Location: A quiet village beyond the ridge*
+
+VOLUME 9, COMIC 001. After the long pursuit of forgotten records, the road carries the party away from the mountains and into quieter country. Hoko: "For once, no hidden workshops, missing ledgers, or suspicious couriers." "Don't tempt fate." "How much farther?" "There's a village beyond the next ridge. We can rest there. Provided Hoko doesn't decide we need to inspect every ruin along the way." "I heard that." The village looks ordinary: small, secluded, and far removed from the troubles they had left behind. At the gate an old man asks if they are passing through; they hope to rest for a night or two, if there's an inn: "There's one near the central square. You can't miss it." Xining: "A warm meal and a proper bed. That's all I ask today." "For once, we agree." For a little while there is no mystery to solve and no trail to follow, and the eight of them share a long table. At a nearby table a villager says: "Did you hear? Someone saw lights moving between the trees again." "Those were probably lanterns." "No one was carrying them." Xining examines a villager's swollen hand: "May I take a look? It might be easier to treat before the swelling worsens." Xiyu, in the doorway at night: "Something on your mind?" Xiao Tian: "Not yet. I'm simply enjoying the quiet." A dog barks. Beyond the village something moves between the trees. The village had welcomed eight travellers seeking a little rest. By morning, they would hear why the locals feared the woods.
+
+**Key events:** A long table and a quiet village. · "Someone saw lights moving between the trees again." "No one was carrying them." · Xining treats a villager's swollen hand. · Beyond the village, something moves between the trees.
+
+**Opens:** Story: a village that fears its woods
+
+## 303. Whispers Beyond the Woods
+*Location: The village and the eastern stream*
+
+VOLUME 9, COMIC 002. By morning the village seems peaceful again. An elder: "If you're planning to explore, stay on the marked paths." "Because of the lights?" "Because people who wander too far sometimes come back frightened, and sometimes they don't come back before dark." Villagers argue where the light was: hovering over the path, between the trees, by the river. "Both of you are wrong. It was by the river." Dongyue: "Did anyone see the same light twice?" "I don't know. Every time it appears, it's somewhere different." Xiao Yan: "Mist, reflected lantern light, or something carried through the trees could explain part of this." "And the people who never returned?" "That requires a separate answer." Xining asks whether anyone has been injured near the forest: "Scratches. A twisted ankle. One woodcutter came back with a fever after spending the night outside. He refuses to talk about it." Hoko: "Fear makes people remember things differently. We should speak to the woodcutter ourselves. If he's willing to see us." At the forest edge, red ribbons on a marker stone: "Are these warnings? Could be a local custom. We should ask before touching them." Someone: "He lives near the eastern stream. But don't ask him about the lights. Because last night, he heard them again." A crack in the woods: "That wasn't a bird." Tracks: "These aren't clear enough to identify. But something passed through here." The stories contradicted one another. The tracks revealed almost nothing. Yet something was out there.
+
+**Key events:** "Stay on the marked paths." · Every sighting is somewhere different. · A woodcutter who came back with a fever and will not talk. · Tracks too unclear to identify: "something passed through here."
+
+**Opens:** Story: the lights are reported in different places
+
+## 304. Stories by Lanternlight
+*Location: The woodcutter's home and the riverbank*
+
+VOLUME 9, COMIC 003. The woodcutter: "I already told the village elder. I don't know what else you want." Dongyue: "Only what you remember. You don't need to guess." "I heard something before I saw the light. A dry sound, like paper flapping in the wind." "Was there any wind?" "No. The trees were still. It hovered near the ground. Then it rose, as if something had lifted it." "Did you see what lifted it?" "No." Xining: "You may have fallen while escaping. You shouldn't force yourself to remember more than you can." Fear had left him with impressions, not a reliable account. Dongyue: "His wound doesn't prove he was attacked. We'll keep the two questions separate. But it doesn't prove he wasn't." Xiao Yan finds a scrap of paper in the reeds: "This could have come from a lantern, a charm, or ordinary wrapping. Then we shouldn't decide what it means yet." Cangyuan: "Paper can carry a method, but paper alone tells us nothing." Xiyu: "You're speaking from experience?" "From knowing how easily people mistake resemblance for proof." At the inn villagers tell of spirits and bandits: "Neither story tells us what happened." Hoko: "If something is moving through here, it knows the paths better than we do. Then tomorrow we watch where the paths meet." On the bridge, Xiyu: "There. Across the water. I saw the light. Not enough to identify the figure." A flutter in the night: "That sound again? Yes. This time, more than one of us heard it." "We'll follow the river first. No one goes into the woods alone." The village's stories still disagreed. But now the party had a sound, a fragment of paper, and a direction. Whatever moved through the woods had come close enough to be heard.
+
+**Key events:** A sound like paper flapping with no wind. · A scrap of paper in the reeds. · More than one of them hears the flutter. · "No one goes into the woods alone."
+
+**Opens:** Story: a fragment of paper by the river
+
+## 305. Tracks in the Mist
+*Location: The eastern stream and a hollow in the rocks*
+
+VOLUME 9, COMIC 004. Early morning mist hangs above the eastern stream. The party follows the bank toward where the light had appeared the night before. Xiao Yan: "Something crossed here." "A person?" "Possibly. The marks aren't clear enough to tell." Hoko: "Something brushed past here." "Or someone did. We shouldn't confuse a trace with an explanation." A flitting sound: "That sounds like the noise the woodcutter described. Then we listen before we move." "If something crossed here, it could have reached the opposite bank without entering the deeper water. Could have. But we don't know whether the light crossed with it." Xining finds more pale paper fragments: "The material may be the same. Does that mean they came from the same object? Not yet." At a hollow in the rocks: "Something could shelter here. Then we look carefully. No one enters alone." "These marks are newer than the surrounding ones. And there are several of them. That could mean repeated visits, or more than one visitor." Xiyu: "A hidden shelter, strange paper, and a light that moves. It's tempting to say they all belong together." "Tempting isn't the same as proven." "I was waiting for you to say that." Dongyue: "Whatever passed through here didn't simply disappear into the woods. It may be using the river as a route." Across the water a figure: "Someone's over there. Did you recognize them? No. I barely saw a shape." The tracks were inconclusive. The paper explained nothing. But something had returned to this hollow often enough to leave its mark. Tomorrow, they would learn whether the village's witnesses had seen the same thing, or something else entirely.
+
+**Key events:** Tracks and paper fragments by the stream. · A hollow in the rocks with newer marks: repeated visits. · "It may be using the river as a route." · A figure glimpsed across the water.
+
+**Opens:** Story: a hollow that something keeps returning to
+
+## 306. The Woodcutter's Return
+*Location: The woodcutter's home and the riverbank at night*
+
+VOLUME 9, COMIC 005. "Back again? I told you what I remember." Dongyue: "We found signs that something has been returning to the hollow. We hoped you might remember one more detail." "There was another thing. I heard a clicking sound before the paper-like flutter." "A single click?" "Several. Like small pieces of wood striking together." Hoko: "A lantern might rattle in the wind, but you said there was no wind." "That's what frightened me." Xiao Yan: "It tells us the sound was unusual to him. It doesn't tell us what caused it." Xining: "Your injury is healing. Avoid the forest until you can walk safely." "I won't go back there. Not even in daylight." Dongyue taps two sticks: "This could reproduce the clicking he described. Could it also explain the flutter? Not by itself. We need to observe the place, not invent a machine from one sound." The plan: watch from the riverbank before dusk, no one enters the hollow unless there is a clear reason; Xiao Tian takes the western approach and Xiao Yan watches the path from the village. "A whole afternoon spent waiting. Sometimes waiting tells us more than chasing. If something appears, we let it move first. And if someone is in danger, we intervene." At night: "There. Near the flat stone. I see it." "Tik. Tik. Tik." "Did it react to the sound? Maybe. We need another observation before deciding." A figure stands in the dark: "Don't follow it. Agreed. We know where it went. That is enough for tonight." Back at the table: "A glow, three clicks, then movement. That's what we observed. Not what caused it." For the first time, the party had witnessed the phenomenon together. They still did not know whether it was a creature, a device, or something else entirely. Tomorrow, they would search the rocks in daylight.
+
+**Key events:** Several clicks, like small pieces of wood, before the flutter. · Watching from the riverbank: a glow, three clicks, then movement. · "We know where it went. That is enough for tonight." · Creature, device, or something else: still unknown.
+
+**Opens:** Story: the phenomenon witnessed together
+
+## 307. Not a Ghost
+*Location: The rocky hollow and the village*
+
+VOLUME 9, COMIC 006. At the hollow Dongyue: "Let's begin with what we can verify. No assumptions about what the light was." There is no obvious chamber or hiding place; someone could have carried the light away. Deliberate-looking grooves in the stone: "They might be tool marks. We need a closer look before deciding." A white residue, dry now though the surrounding soil is damp, cannot be identified from appearance alone. Xiyu: "A light can mislead the eye in darkness. But it cannot explain the marks by itself." "So we have evidence of something being here, but not evidence of what it was." New impressions differ from the older marks, but the ground is too soft and they overlap; the trail reaches the water and the current may have erased the rest: "Then we record the endpoint and move on." A passing man: "You're looking for the lights, aren't you? Have you seen them yourself? No. But I saw something standing near the hollow a few nights ago. It stood very still. I thought it was a person waiting for someone. Did it approach you? No. When I looked again, it was gone." Dongyue: "A figure, a strange light, and unexplained sounds. I can understand why people call it a ghost. A name isn't an explanation. Until we have better evidence, we keep every possibility open." Xiao Yan labels what they have: a paper fragment, stone grooves, residue, tracks and witness accounts: "We can say the hollow has been visited repeatedly. We can say the light appeared there. We cannot yet say those facts share one cause." The investigation had not revealed a ghost, or proved that no spirit was involved. It had revealed a place, repeated traces, and witnesses whose stories did not quite agree. Tomorrow, they speak to the people who saw it from different places.
+
+**Key events:** Grooves in the stone, a white residue, overlapping tracks. · A witness saw a still figure near the hollow. · "A name isn't an explanation." · Five kinds of evidence, not yet one cause.
+
+**Opens:** Story: the hollow has been visited repeatedly
+
+## 308. A Face from Memory
+*Location: The village and the ridge*
+
+VOLUME 9, COMIC 007. The party speaks to three witnesses. One saw a light that vanished behind the trees and heard a faint clicking, as though someone were working with tools. Another saw no light, only a person standing near the old path: tall, dark clothing, but the mist was thick. Dongyue: "One witness saw a light. Another heard clicking. A third saw a person. Could all three have witnessed the same event? They could have. But we don't have enough evidence to say they did." Cangyuan to Xiyu: "Tired? About the mystery?" "Partly." The village offered no single account, only fragments that might, or might not, belong together. On the ridge a figure appears: "Wait." Xiyu thinks: "That face..." The resemblance struck her before she could explain it. She had seen that appearance before, but memory was not proof, and resemblance was not identity. "Do you know him? I'm not sure." Hoko: "Did anyone see which way he went? No. Then we shouldn't chase a direction we never saw." Cangyuan: "You don't have to explain it now." "I know. I only wish I understood why he looked so familiar." A villager: "I saw him near the ridge, nothing more." Xiao Yan: "Then we'll keep the sightings separate until we find evidence linking them." The map marks the village, the bridge, the ridge (observation) and the rocky hollow. The strange lights remained unexplained. Now there was another question, one Xiyu could not dismiss so easily. Tomorrow, the party would learn whether the man on the ridge was a local stranger, or simply someone whose face resembled a memory.
+
+**Key events:** Three witnesses: a light, a clicking, a person. · A figure on the ridge, and a face Xiyu knows. · "Resemblance was not identity." · The sightings are kept separate on the map.
+
+**Opens:** Story: a stranger on the ridge whose face Xiyu knows
+
+## 309. Gone Between the Trees
+*Location: The slope, the old hunting route and the village*
+
+VOLUME 9, COMIC 008. Dongyue: "We saw him somewhere along this slope. Then we'll search the nearby paths first. No need to scatter." "Nothing I can identify. Could he have gone over the rocks? He could have. We can't prove he did." Hoko: "There are three paths below. One follows the river, one leads back to the village, and one disappears into the forest. Then we check where they meet." Xiyu: "The face remained clear in her memory, though the encounter itself had lasted only a moment. I can't help it. Something about his face felt familiar." Cangyuan: "Familiarity can come from many things." "I know. I'm not saying he's the person I remember." "Then keep looking for what you actually saw." Xining: "This path isn't on the map. It may be an old hunting route. Let's inspect it before following." Hoko: "Someone passed through here. The break is fresh. Fresh enough to investigate, not fresh enough to identify who made it." Dongyue: "Nothing here suggests the stranger came this way. Then we don't force the trail to fit." Xiao Yan: "This route links two places where the lights were reported. That makes it worth watching. It doesn't yet explain the sightings." The map: ridge (sighting), village (sighting), ravine (new path), riverbank (impressions). A woodcutter: "You were looking around the ridge yesterday. Did you see someone there? A man sometimes walks the old paths. I don't know his name. He keeps to himself. Does he live nearby? I couldn't tell you. He never stays long enough for anyone to ask. He's not a regular villager, but people have seen him near the outskirts more than once." The stranger had vanished, leaving no proof of who he was, or why his face had stirred an old memory. The next step was to learn more about the man without letting the mystery of the lights slip from view.
+
+**Key events:** Three paths below the slope. · An unmapped old hunting route and a fresh break. · A man who walks the old paths and keeps to himself. · A route linking two light sightings.
+
+**Opens:** Story: a man who walks the old paths
+
+## 310. The Man in the Village
+*Location: The village market*
+
+VOLUME 9, COMIC 009. Xiyu: "It's him." In daylight, the resemblance was harder to dismiss. At a market stall a woman says: "These herbs are from the upper mountain. They're very effective." "I'll take these." The stranger was not the silver-haired sage Xiyu remembered. Yet something in his face stirred the same uneasy familiarity. Cangyuan: "Do you want to speak to him?" "I want to know who he is." "Then ask him. Don't decide the answer before he gives it." Xiyu: "Excuse me. Have you travelled through the eastern woods recently?" "Several times. Why?" "I saw someone near the ridge a few days ago. I wondered whether it might have been you." "Perhaps. I walk those paths when I need to be alone." "Have you seen strange lights near the river or the rocky hollow?" "I've heard people talk about them. I haven't seen anything I'd call a light." "Have you heard the clicking sound?" "No." "Forgive me. I've been asking questions without even giving my name." "You needn't apologise. I prefer not to give my name to everyone I meet." "A reasonable precaution." "Are you staying here?" "Only for a short while. I have my own errands. Thank you for your concern." Dongyue: "He admitted walking near the ridge, but denied seeing the lights." Xiao Yan: "That makes him a witness to the location, not a suspect." "I know. His face is the only reason I approached him." She had finally spoken to the man whose face reminded her of Muxue Yan. She still had no name, no explanation, and no proof that he was connected to her past. The next step was to learn more about the man without letting the mystery of the lights slip from view.
+
+**Key events:** A market stall and the stranger buying herbs. · "I walk those paths when I need to be alone." · He gives no name and denies seeing the lights. · A face that recalls Muxue Yan, with no proof of any link.
+
+**Opens:** Story: the stranger declines to give his name
+
+## 311. An Unfamiliar Resemblance
+*Location: The inn and the village paths*
+
+VOLUME 9, COMIC 010. Cangyuan: "You barely touched your tea. About the man?" "You don't believe he's Yan, do you?" "No. Yan has silver-white hair, and I remember his face clearly." "Then what troubles you?" "That someone else can resemble him so closely." Dongyue: "A resemblance can be meaningful, but it can also be coincidence. We don't need to decide what it means today." A villager: "Another villager heard the clicking last night. Near the abandoned watch hut east of the stream." "Did anyone see the light? Not this time. Only the sound." "I'll mark it here." Xiao Yan: "The locations are different. Until we find evidence connecting them, we investigate them separately." "I'll take a look at the watch hut with you." "We'll go together. No one explores alone." The encounter was ordinary enough that Xiyu almost wondered whether she had imagined its significance. The stranger, seen again: "You seem to know the village paths well. Well enough to avoid the crowded streets. And the forest? Well enough to know when not to enter. You're travelling with the group investigating the lights. Word travels quickly here. People talk when they are frightened. Have you found anything? Tracks, scraps of paper, and sounds we can't explain. Then you have traces, not answers. You sound as though you have investigated mysteries before. I've learned not to mistake a clue for a conclusion. I have somewhere to be. May I ask your name next time? If there is a next time." Dongyue: "He knows about the investigation, but that doesn't mean he is involved." "And his words could come from ordinary experience." "I know. Still, I want to remember what he said." Xiao Yan adds the encounter to the notes, clearly separating it from the confirmed sightings. The man remained a question without a name. The strange lights remained a mystery without an explanation. For now, the party had a more immediate lead to follow.
+
+**Key events:** Xiyu: the stranger is not Yan, whose hair is silver-white. · A clicking heard near an abandoned watch hut east of the stream. · "I've learned not to mistake a clue for a conclusion." · The stranger stays nameless: "If there is a next time."
+
+**Opens:** Story: the abandoned watch hut
+
+## 312. Another Night of Fear
+*Location: The abandoned watch hut east of the stream*
+
+VOLUME 9, COMIC 011. "This is where the clicking was heard last night?" "According to the witness. Let's see whether the hut tells us anything." "No one has maintained this place for years." "Someone might still use it occasionally. That's what we're here to find out." "Nothing valuable." "We're not looking for valuables." Hoko: "This section has been handled more recently. Could it explain the clicking? It could produce a sound. That doesn't mean it produced the sound we heard." Xining: "These pieces resemble the paper we found by the stream. Resemblance again. We should compare the materials before drawing a connection. Agreed. I'll leave them where they are." Behind a panel Dongyue finds a hidden cavity: "Someone stored these here." A wooden peg and paper strips. A wooden mechanism clicks: "Tik. Tik. Tik. That sounds like the report. We have reproduced a similar sound. We still don't know whether this mechanism caused the sounds outside." Through the window the party sees a blue light: "It's the same light. Possibly. Let's see where it moves before we follow." Xiyu: "He's here." "Does he seem to be following it? I can't tell. No clear tracks. Then we don't know whether he followed the light or left before it appeared." Dongyue: "The hut contains something capable of clicking. We saw a light outside, and the stranger was nearby. Three observations. No proven connection. I know. Still, I want to remember what he said." Xiao Yan notes: wooden mechanism (reproduces the clicking sound), paper fragments (similar to the stream), hidden cavity (wooden peg, paper strips), location map (hut and sighting). The hut had offered physical evidence, but no explanation for the light. And once again, the dark-haired stranger had appeared at the edge of their investigation, without revealing why. For now, the party had a more immediate lead to follow.
+
+**Key events:** A wooden mechanism that reproduces the clicking. · Paper fragments like those at the stream, and a hidden cavity. · A blue light outside, and the stranger nearby. · "Three observations. No proven connection."
+
+**Opens:** Story: a mechanism that clicks, and a blue light
+
+## 313. The Pieces That Match
+*Location: The inn and a villager's account*
+
+VOLUME 9, COMIC 012. Dongyue: "Let's compare what we found before deciding where to go next. The hut gave us evidence. We still need to understand it." Xining: "They may be made from similar material. But they aren't obviously pieces of the same sheet. Correct. I wouldn't claim they came from one object." Hoko: "This could be a crease from folding, or a mark left during manufacture. Can we tell which? Not from this fragment alone." Xiao Yan: "The frame can make a clicking sound. That explains one possible source. But not the sound heard outside the hut. Exactly. We mustn't turn a plausible explanation into a proven one." Four kinds of evidence: paper fragments, a mechanism sketch, a location map, witness accounts. "These may connect, but for now each needs its own explanation. Then what can we pursue? The places where witnesses independently reported activity." A villager: "I heard you're investigating the lights. Then you should know what happened near the old shrine. It was low to the ground. Then it moved behind the shrine. Did you hear the clicking? No. Only the wind in the trees. Did you see a person? No. I saw something move. I can't swear it was a person, or anything else. That's a useful distinction." Dongyue: "The locations are close enough to investigate together, but that doesn't prove a shared cause. We'll check the shrine in daylight. And leave the hut undisturbed until we know more." Cangyuan to Xiyu: "Still wondering about him? A little. But he isn't our only unanswered question." Dongyue: "We go in daylight, observe first, and avoid disturbing anything we don't understand. And if the light appears again? We record what we see before we decide what it means." The fragments had offered similarities, not certainty. The watch hut had offered a possible source of sound, not a complete explanation for the light. Now the old shrine waited beyond the trees.
+
+**Key events:** Four kinds of evidence, each needing its own explanation. · A villager saw something low to the ground move behind the old shrine. · "I can't swear it was a person, or anything else." · The old shrine will be checked in daylight.
+
+**Opens:** Story: the old shrine is the next place to check
+
+## 314. The Abandoned Shrine
+*Location: The abandoned shrine*
+
+VOLUME 9, COMIC 013. Dongyue: "We observe first. If the structure is unstable, no one rushes inside. I'll check the foundation." Hoko: "The rest of the path is covered in leaves. This section isn't. Someone may have come here recently. Or the wind cleared it. Let's check for other signs." Fresh scratches: "These are newer than the weathering around them. Made by a tool? Possibly. I can't tell what kind from this." Xiao Yan: "A person watching from the path might see a light without seeing its source. Especially if it stayed close to the ground. That explains the limited view. It doesn't explain the light itself." Inside: "Nothing here looks recently used. Look at the floor near the altar. Someone has opened this section before. Can we tell when? Not precisely. The marks are too faint. That space is deeper than I expected. Don't reach inside until we've checked the edges." "Tik... tik... That came from below us. And it wasn't caused by anyone moving just now." "Should we follow the passage? Not until we know where it leads or whether the structure can support us." A carved mark: "This was deliberately carved. It might identify a craftsperson, a repair, or something else. We need a comparison before assigning meaning." Dongyue: "We have evidence of disturbance and a sound beneath the platform. But we don't know whether either is connected to the reported light. Correct. We'll return with proper equipment if the structure can be examined safely." The shrine had not revealed what the villagers saw. But something beneath its floor was still active.
+
+**Key events:** Fresh scratches and a section of the floor opened before. · A space deeper than expected beneath the platform. · "Tik... tik..." from below. · A deliberately carved mark that needs a comparison.
+
+**Opens:** Story: something beneath the shrine floor is still active
+
+## 315. Something in the Trees
+*Location: The shrine and the stream*
+
+VOLUME 9, COMIC 014. Dongyue: "We brought what we need to inspect the opening safely. We examine the structure first. If anything moves, we don't rush in." "The glow is still here. Don't touch it yet." Cangyuan: "There's spiritual energy here, but it's weak. Can you identify its source? Not from this trace alone." "Krrrk... That came from outside. Everyone stay alert." Xiao Yan: "Something passed through here. Recently? The edges haven't crumbled yet. Probably." Xiyu: "There!" A dark shape with blue eyes in the trees. Xiao Tian: "If we let it escape, we'll lose it." Dongyue: "Stay together! If we split up, it can lead us anywhere." Hoko: "It went toward the stream. The trail changes direction twice. We should follow slowly." "Is it hurt? We don't know what it is yet. Let's not assume." "It went into the water. Or crossed beneath the roots. We didn't see enough to know. Splash!" Dongyue: "We have a trail, a blue glow, and something moving. That's more than rumour. But still not enough to identify it." Whatever moved through the woods was real. Whether it was responsible for every strange sighting remained unknown. And for the first time, the party had reason to believe the mystery could run deeper than the shrine itself.
+
+**Key events:** A weak spiritual energy and a glow beneath the platform. · A dark shape with blue eyes bolts toward the stream. · "We didn't see enough to know." · Something real moved through the woods; whether it caused every sighting is unknown.
+
+**Opens:** Story: a creature with blue eyes at the stream
+
+## 316. The Injured Villager
+*Location: The stream and the village*
+
+VOLUME 9, COMIC 015. "Help... Someone's hurt." A villager: "Don't try to get up. We'll help you. Something came out of the water..." Xining: "Let me see your arm first. Tell me if you feel numbness in your fingers. It hurts, but I can move them. The arm has a deep scrape, and the ankle may be sprained. I don't see an obvious fracture, but we should keep weight off it. What do you need? Clean water, bandages, and a straight branch to support his ankle. This should work as a support. Good. Wrap it in cloth first so it doesn't press directly against his skin." "Take your time. What did you see? A blue light near the roots. Then something rushed past me. I fell against the rocks. Did you see what struck you? No. I only heard a splash. Did you see a face, limbs, or any clear shape? It was too fast. I thought it was a monster. You were frightened and injured. We shouldn't ask you to identify what you couldn't see." Hoko: "Something moved quickly along the bank. Could it have knocked him down? Possibly. The marks don't prove it." Xiyu: "The same colour we saw near the shrine. It may be related. We need more evidence before concluding that." "You shouldn't walk back alone. Can someone from the village meet us on the main path? We'll get you somewhere safe first. People said the lights were harmless. I don't believe that anymore. We don't know that the light hurt you. But we do know this area isn't safe to explore alone. Rest your ankle and have someone check the wound tomorrow." "We have a new witness and a possible link between the blue residue and the stream. But we still don't know what moved, or whether it intended to hurt anyone." The mystery was no longer just a collection of strange lights and sounds. Someone had been hurt, and the party needed to discover why.
+
+**Key events:** An injured villager at the stream: "Something came out of the water." · Xining splints his ankle and checks his arm. · A blue light near the roots, then something rushed past. · The same colour as at the shrine: a possible link.
+
+**Opens:** Story: someone has been hurt by the stream
+
+## 317. The Pattern of Attacks
+*Location: The map table and the stream hollow*
+
+VOLUME 9, COMIC 016. Xiao Yan: "Every confirmed sighting lies near this watercourse." Dongyue: "That gives us a pattern of location. Not yet a common cause." Hoko: "The ridge is the one place we haven't properly examined." The map marks the shrine, the ridge hollow, the injured villager and the watch hut. Xining: "He remembers a blue light, a sudden movement, and a fall. He never saw what struck him. So we know he was injured during the encounter. We don't know that he was deliberately attacked. Let's keep that distinction." At the ridge hollow: "The opening narrows quickly. We shouldn't enter without knowing how deep it goes. And the water could rise without warning." Ya'Xing: "These stones have shifted recently." Xiao Yan: "Possibly from water, an animal, or someone moving them. We can't determine which yet." Tik... Tik... Tik... Dongyue: "That resembles the sound from the shrine." Cangyuan: "Resembles it. We haven't established that it's the same source." Xiyu: "There, beneath the water." Xiao Tian: "Everyone stay back." A shadow passed beneath the surface and disappeared into the hollow. "It went inside. We don't know whether it lives there, or whether it was simply passing through." Xiao Yan: "The stream could provide a route between these places. A plausible route, yes. But not proof that one creature caused everything. Exactly." Dongyue: "The lights may be appearances of something moving near the surface." Cangyuan: "Or the lights, sounds, and injury may have different causes. Then we investigate the hollow without assuming either answer." The incidents shared a geography: the stream, the shrine, and the hollows beneath the ridge. The party had found a possible path for the strange phenomena, but not yet its origin.
+
+**Key events:** Every confirmed sighting lies near the watercourse. · The injury is kept separate from "attack". · A shadow passes beneath the surface into the ridge hollow. · The incidents share a geography; the origin is unknown.
+
+**Opens:** Story: the sightings share one watercourse
+
+## 318. The Hunter's Warning
+*Location: The village inn and the stream*
+
+VOLUME 9, COMIC 017. A hunter in a white fur-trimmed cloak: "Su Liechen. It's been a while since the Ice Temple." "You're the ones from Muxue. What brings you here this time?" Dongyue: "We've been investigating strange lights near the stream. The villagers said you know these woods." "I've been handling something here of my own. The intruders have been brought to justice. You don't need to worry about them anymore." "Intruders? Are they the ones causing the recent incidents?" "What happened here and what you're investigating may or may not be the same. The intruders were a different matter. For now, they've been dealt with." Liechen: "There are old hollows beneath this stretch of woodland. Some are shallow. Others connect farther underground than the villagers realise. I don't enter a passage simply because I know it exists. I've recorded changes in the water and signs of movement along the stream. Nothing here tells me what produced your blue light." Dongyue: "So the hollow may be relevant, but the cause remains unknown." "That's the sensible way to put it." Xiao Tian: "If something dangerous lives there, shouldn't we drive it out?" "And if it's hiding from something worse? Or if the passage collapses when you force your way in?" Xining: "A villager was injured near the water. He saw a blue light but couldn't identify what struck him." "Then keep people away from the stream until you understand the danger. Don't call it an attack unless you know what happened." Xiao Yan: "Watch the waterline. If something passes through the hollow, the current or mud may show it before you see the creature itself. A way to observe without entering. Exactly." "If you hear the clicking again, don't follow the sound underground. Mark the time, watch the water, and see whether the sound repeats. And if the creature appears? Keep your distance until you know whether it is a threat. I have another trail to check. I won't be joining your investigation." "Your warning is enough. Thank you." "Don't thank me until you make it back safely." The hunter had given them no answer about the strange light. He had given them something more useful: a way to investigate without making the danger worse.
+
+**Key events:** Su Liechen returns: "It's been a while since the Ice Temple." · "The intruders have been brought to justice." · Old hollows run deeper than the villagers know. · He gives advice and will not join the party.
+
+**Opens:** Story: Su Liechen's warning about the hollows
+
+## 319. Bait in the Clearing
+*Location: The streambank, watching the hollow*
+
+VOLUME 9, COMIC 018. "We can see the waterline from here without standing near the entrance. Then we stay here and record what happens." Xiao Yan: "We'll record the sound, the glow, and any changes in the current separately." Dongyue: "Good. No conclusions until we have something repeatable." Xining: "The same irregular rhythm. Mark the time." Tik... tik... Xiyu: "There it is." A blue glow beneath the roots. Xiao Yan drops a leaf: "The leaf didn't irregular anything, or at least, nothing we could observe." Cangyuan: "One test isn't enough to establish a pattern." Xiao Tian: "Something moved." Dongyue: "We saw it. Don't pursue." Xiao Yan: "The glow appeared near the roots, then vanished when the shape moved." Hoko: "That gives us a sequence. It doesn't tell us why." Dongyue: "The sound has moved, or we're hearing it from a different point." Cangyuan: "We should not assume it's the same source." Xiao Tian: "We may lose it if we wait." Dongyue: "We may lose more if we follow blindly." Xiao Tian, after a pause: "Understood." Xining: "It's brighter than the earlier traces." Dongyue: "Record it. We still don't approach." They had followed Liechen's advice: observe, record, and resist the urge to pursue what they could not yet understand. For the first time, the phenomenon had repeated before their eyes. The next question was whether it would do so again.
+
+**Key events:** Watching the waterline from a distance. · A leaf test, and the glow vanishing when the shape moves. · "We may lose more if we follow blindly." · The phenomenon repeats before their eyes.
+
+**Opens:** Story: the phenomenon repeats
+
+## 320. The Light Revealed
+*Location: The streambank at night*
+
+VOLUME 9, COMIC 019. Xiao Yan: "The glow appeared twice yesterday. Both times, it vanished after movement beneath the roots." Dongyue: "Tonight we watch for the same sequence. No one approaches the water." Tik... tliiing... tik... Xining: "That second sound wasn't there before." Cangyuan: "Record it. We don't know whether it comes from the same source." Xiyu: "It's brighter and staying longer." Dongyue: "Everyone remain where you are." Out of the water steps a small translucent creature with a pale, finned crest and a blue glow. Xiao Tian: "That's what we've been following?" Dongyue: "At least, it's one source of the light." Xiao Yan: "The sound follows the light." Cangyuan: "That suggests they're connected. It doesn't tell us why the creature does it." Xiao Tian: "I barely moved." Xining: "It may be frightened by sudden movement. Then nobody moves closer." Xiyu: "If it rushed past him while frightened, he may have fallen trying to get away." Dongyue: "Possible. But we still can't say what happened to him." Hoko: "At least we have a better explanation for the light." Xiao Yan: "It moves between the roots and the hollow. The waterway may be its shelter." Xiao Tian: "We could catch it now." Dongyue: "We could also frighten it into an unknown passage. Then we wait." "And we shouldn't block its only exit." The blue light was not a warning from the forest. It was the trace of a living creature moving through its hidden waterways. Xiao Yan: "We've identified one source of the light." Dongyue: "Now we need to understand why it has come so close to the village." Finding the creature had answered one question. It had opened another.
+
+**Key events:** A small translucent creature with a finned crest steps from the water. · The sound follows the light. · "We shouldn't block its only exit." · One source of the light is found; why it came so close is not.
+
+**Opens:** Story: the blue light is a living creature
+
+## 321. The Creature's Refuge
+*Location: The stream bend and its blocked hollow*
+
+VOLUME 9, COMIC 020. Xiao Tian: "We know the creature produces the glow. We still don't know why it comes so close to the village. Then we look for what changed in its habitat." Xiao Yan: "The sightings became more frequent only recently. Which suggests a recent change, though not necessarily one caused by a person." Dongyue: "The current is stronger here. Anything displaced upstream could be carried toward the hollow. Let's see where the flow narrows." Hoko: "These stones have shifted. The marks are fresh, but we can't tell whether water, an animal, or a person moved them." "The glow is coming from behind those stones. Don't move them yet. We need to understand how the water is flowing." The creature presses at the stones: "It's trying to get through. Or trying to get away from something on the other side. Either way, we shouldn't frighten it further." Dongyue: "We won't touch you. It may not understand us. But it understands we're not rushing toward it." Hoko: "We can move the loose stones on this side. The larger rocks should stay where they are. If we open a small gap, the current may clear the rest. Only if the bank remains stable." Glissh... "It made it through. It doesn't look injured. Let's give it room to leave." Xiao Yan: "The obstruction explains why the creature may have changed its route. But we still don't know what caused the blockage." Cangyuan: "Nor whether it explains every sighting." The creature had not been haunting the village. It had been searching for a way through its own blocked refuge. But the stones had not fallen into place by themselves, or so the fresh marks seemed to suggest.
+
+**Key events:** Fresh marks on stones that shifted, and a blocked refuge. · The party opens a small gap; the creature passes through unharmed. · "We still don't know what caused the blockage." · The stones did not fall by themselves, or so the marks suggest.
+
+**Opens:** Story: the creature freed from its blocked refuge
+
+## 322. Marks on the Stone
+*Location: The stones at the creature's refuge*
+
+VOLUME 9, COMIC 021. Xiao Yan: "Let's examine the stones before the current washes away the remaining traces." Dongyue: "We document first. We don't disturb anything else unless we have to." "This mark is unusually regular. Regular doesn't automatically mean artificial. Look for a second sign before deciding." Xiao Tian: "There's another one here." "Similar direction. Different depth." Xining: "There's something caught in the seam. It isn't ordinary mud." Dongyue: "Can you identify it? Not from appearance alone. It may have reacted to spiritual energy." Cangyuan: "Or the light from the creature may have left a trace. Both remain possible." Hoko: "The current presses against this side of the stones. If the obstruction formed naturally, I'd expect more scattered damage. But the evidence isn't enough to rule out a natural cause." Xiyu: "There's another impression under the roots. Don't touch it yet. Let Xiao Yan record its position." Ya'Xing: "Have you seen this mark before?" Xiao Yan: "Not one I can identify. We shouldn't assign it to a group without evidence." Dongyue: "Someone may have walked along the bank. Or something moved through it. We follow only as far as the evidence remains clear." The creature returns: "It's come back. Let it watch. We won't pursue it." Xiao Yan: "The marks, the residue, and the disturbed trail may belong to the same event. May. We have a connection worth investigating, not a conclusion." The stones bore marks that water alone might not explain. Whatever had disturbed the creature's refuge may have left a trail upstream.
+
+**Key events:** Two regular marks of different depth on the stones. · A residue in the seam that may have reacted to spiritual energy. · The creature comes back to watch. · "A connection worth investigating, not a conclusion."
+
+**Opens:** Story: marks on the stones that water alone might not explain
+
+## 323. The Hollow in the Ridge
+*Location: The ridge hollow*
+
+VOLUME 9, COMIC 022. Xiao Yan: "The trail ends here. The ground near the entrance has been disturbed." Dongyue: "We'll inspect the outside before going in. These marks are fresh." Cangyuan: "Fresh enough to suggest recent movement, but not enough to tell us who made them." Dongyue: "The floor is uneven. We go slowly and keep sight of one another." Hoko: "I'll watch the route behind us." Xiao Yan: "One partial print. Not enough to identify the person." Ya'Xing: "But enough to confirm that something passed through? Likely. We shouldn't claim more than that." Xiyu: "That resembles the light at the stream." Dongyue: "Resembles it. Let's see whether it repeats before we connect the two." Cangyuan: "Someone may have marked this wall. Or the rock fractured along a natural seam. We'll record the pattern and compare it with the marks outside." Hoko: "The lower route carries more moisture. The upper one is drier." Dongyue: "We take the lower route only as far as we can safely observe. We won't split up." Krrrk... Xiao Tian: "That wasn't water." Cangyuan: "No. But we don't know what made it." Xiao Yan: "This could connect the cave to the obstruction." Dongyue: "Could. We keep the fragment undisturbed until we can compare them properly." Xining: "Whatever made that sound may have already left." Dongyue: "Or it may simply be farther away. We stop here, mark the route, and return with proper equipment." The hollow was not merely a shelter for water and stone. Someone, or something, had passed through it recently. Beyond the bend, the ridge kept its silence.
+
+**Key events:** A trail that ends at the disturbed ground by the hollow. · One partial print: something passed through. · A sound that was not water. · The party marks the route and withdraws for equipment.
+
+**Opens:** Story: someone or something passed through the hollow recently
+
+## 324. The Sound Beyond the Bend
+*Location: The passage beyond the bend*
+
+VOLUME 9, COMIC 023. Xiao Yan: "The sound came from beyond this bend. We examine the passage, then return if the route becomes unsafe." Dongyue: "Stay together. We don't pursue anything into unknown ground." Hoko: "This passage is narrower than the main route. The ground near it looks disturbed." Cangyuan: "Then we inspect the entrance before deciding whether to proceed." Xiao Yan: "These are consistent with something being dragged or carried through here. Can we tell what? Not yet." Xiao Tian: "This doesn't look like a natural fracture." Cangyuan: "The fitting was damaged. We still don't know what it held." Krrrk... Dongyue: "The same sound." Xiao Yan: "Possibly. We should wait and see whether it repeats." The creature appears: Xiyu: "It has followed us back here." Xining: "Or this is where it was trying to go all along. That sound frightened it." Dongyue: "It suggests the sound matters to the creature. It doesn't tell us what caused it." Xiao Yan: "The passage narrows further ahead. We can't safely move as a group." Hoko: "Then we don't force our way through. We record the entrance and look for another route." Cangyuan finds a metal ring with a triangular mark: "This may be related to the impression outside. It may. I'll compare the sketches before we make that claim." Dongyue: "Something disturbed the refuge, and now the creature reacts whenever we hear that sound." Cangyuan: "Two observations. We need one more piece of evidence before joining them into a single explanation." Xiao Yan: "The water connects this passage to another section of the ridge." Hoko: "That route may let us inspect the area without squeezing through the damaged opening." Dongyue: "We'll follow the water from the outside if we can. No one enters that narrow passage alone." The damaged fitting and the frightened creature pointed toward the same hidden passage. Whatever had disturbed the hollow had left more than a trail, but its purpose remained unknown.
+
+**Key events:** A narrow passage with drag marks and a damaged fitting. · The creature reacts to the "krrrk" sound. · A metal ring with a triangular mark. · The water links the passage to another part of the ridge.
+
+**Opens:** Story: a damaged fitting and a frightened creature
+
+## 325. The Water's Hidden Path
+*Location: The slope above the pool*
+
+VOLUME 9, COMIC 024. Xiao Yan: "The underground channel continues in this direction. If it has another outlet, it should emerge somewhere along this slope." Dongyue: "We follow the terrain, not the water into unsafe ground." Hoko: "The stronger current goes beneath the shelf." Xiao Yan: "Then we'll check the far side before considering any route under it." Xiao Tian: "There's a break in the rocks ahead. Could be the outlet." Xiyu: "The channel reaches this side after all." Dongyue: "That gives us a route to observe without entering the narrow passage." Xiao Yan: "Something heavy may have passed here." Cangyuan: "Or something was dragged. The tracks alone don't tell us which." Xining: "This patch was pressed down recently. Could someone have rested a load here? Possibly. It could also have another explanation." Ya'Xing: "There's something caught here." Dongyue: "We'll document its position. We don't know what material it is yet." Hoko: "Both routes have signs of disturbance, but neither gives us a continuous trail." Dongyue: "We shouldn't split up. We'll examine the nearer route first." The creature: "It can reach this outlet too. Which confirms the waterway connects the two areas. It doesn't explain the disturbed ground." Xiao Yan: "The channel, the disturbed soil, and the damaged fitting may be connected." Dongyue: "Then our next step is to determine whether the disturbance continues beyond this pool." Xiao Tian: "There's a structure up there." Dongyue: "We approach carefully. No one goes ahead alone." Xiao Yan: "This may have been a stopping point. We need to inspect it before drawing conclusions." The waterway had led them to another place where the ground bore signs of recent disturbance. The trail was growing clearer, but its destination remained hidden.
+
+**Key events:** The underground channel has an outlet on the slope. · Something heavy was dragged or carried; a patch pressed down recently. · The creature reaches this outlet too. · A structure above the pool: a possible stopping point.
+
+**Opens:** Story: the waterway leads to a ruined structure
+
+## 326. The Abandoned Platform
+*Location: An abandoned platform above the stream*
+
+VOLUME 9, COMIC 025. Xiao Yan: "This platform overlooks both the stream and the ridge outlet. It may have been used to inspect the waterway." Dongyue: "Let's examine the stonework before deciding what it was for." Xiao Yan: "The groove is regular. It may have held something in place." Dongyue: "This fitting may have served a similar purpose." Cangyuan: "Similar isn't identical. We should compare their dimensions." Xiao Yan: "The measurements are close, though not exact." Cangyuan: "Then it may belong to the same kind of mechanism. We still don't know whether the two fittings were used together." Xining: "There's residue here, but I can't identify it from appearance alone." Dongyue: "We'll record it and leave it undisturbed." Hoko: "If something sat in this groove, it could have guided water or secured a movable barrier." Xiao Yan: "A possibility worth testing, not a conclusion." Xiao Tian: "Something may have been fixed here once." Cangyuan: "And whatever it was, it isn't here now." Ya'Xing: "There's a fragment beside this stone." Xiao Yan: "We'll compare its shape with the damaged fitting. It may be unrelated." Xiyu: "The creature is still using the waterway." Dongyue: "Then whatever happened here disrupted its route, not necessarily its home." Xiao Yan: "The platform may have held a removable device that altered the flow." Dongyue: "That would explain the stones, but not who moved them, or why. Tomorrow, we compare the platform, the hollow, and the outlet as one system." The platform offered a plausible explanation for the blocked waterway. But a mechanism could explain how the refuge was disturbed. It could not explain who had chosen to disturb it.
+
+**Key events:** Matching grooves and a fitting on an abandoned platform. · A removable device may have altered the flow. · A fragment beside the stone to compare with the damaged fitting. · A mechanism explains how, not who chose to.
+
+**Opens:** Story: a platform that may have held a removable device
+
+## 327. What the Water Carried
+*Location: The map table*
+
+VOLUME 9, COMIC 026. Xiao Yan: "The marks from all three places are consistent with a device that could have been secured at the platform and moved through the channel." Dongyue: "Let's test that theory against the physical evidence." Xiao Yan: "The fittings are compatible in size, though we can't prove they belonged to the same device." Cangyuan: "Then the mechanism remains a working theory." Hoko: "If a barrier was placed here, it could have forced the current toward the lower passage. And if the lower passage narrowed, the water might have carried debris into the creature's route." Xiao Tian: "There's a piece of metal caught beneath the stone." Xiao Yan: "Don't move it yet. Let me record its position. This looks manufactured. It may have belonged to a removable frame or guide." Ya'Xing: "Could it have held the barrier in place?" "Possibly. We need more than one component to know how it worked." Xining: "It can pass through now, but it still avoids the narrow gap." Dongyue: "The disturbance may have made that route unsafe for it." Cangyuan: "A device may have been placed in the channel. Debris gathered around it, and the creature's route narrowed. That explains a possible sequence. It doesn't establish whether the device was meant to redirect water or serve another purpose." Xiyu: "This was made with care. It wasn't simply a fallen branch or broken stone." Dongyue: "Agreed. But manufactured parts can be used for many reasons." Hoko: "So someone may have installed the mechanism, but we don't know who. Or when it was last used. The water and weather have erased too much." The party had found a plausible explanation for the blocked refuge: a manufactured device may have redirected the water and narrowed the creature's passage. Xining: "We can leave the channel clear and warn the villagers away from the unstable rocks." Dongyue: "Yes. We don't need to know every answer before preventing further harm." Xiao Yan: "We've learned how the route may have been disturbed." "But not why." The water had carried away the clearest traces. What remained was enough to explain the creature's distress, but not the hand behind the mechanism.
+
+**Key events:** The marks are consistent with a device secured at the platform and moved through the channel. · A manufactured metal piece beneath the stone. · A plausible sequence: a device, debris, a narrowed route. · They know how it may have been disturbed, but not why.
+
+**Opens:** Story: a manufactured device may have blocked the creature's refuge
+
+## 328. The Last Disturbance
+*Location: The stream bank*
+
+VOLUME 9, COMIC 027. Xiao Yan: "The current has shifted since yesterday. The loose stones may move again." Dongyue: "Then we stabilize the channel before anyone gets hurt." Hoko: "The bank is soft here. We should work from the rock shelf, not the mud." Xiao Yan: "Agreed. We keep clear of the unstable edge." Cangyuan: "The blockage is smaller now, but the pressure is still concentrated here." Dongyue: "We need to widen the flow without loosening the bank. Move only the loose stones. Leave the larger ones in place." Ruuush... Cangyuan: "Hold there. The pressure is easing." Xining: "The water is moving more evenly now." Dongyue: "Let's watch for another moment before we call it safe." Xiyu: "It isn't avoiding the passage this time." Dongyue: "That's encouraging. We should still give it room." Xiao Tian: "We could track it and make sure it reaches the other pool." Xining: "Or we could let it choose its own route." Cangyuan: "You're right. We've done enough." Hoko to a villager: "The waterway is flowing more safely, but the bank needs time to settle. Keep people away from the rocks for now. We will tell everyone. Thank you." Xiao Yan: "We can reasonably conclude that the waterway was disturbed by some kind of manufactured device." Cangyuan: "But we cannot establish who placed it, or whether the creature was the intended target." The creature's refuge was no longer blocked. The village had been warned, and the immediate danger had passed. Xiao Yan: "We know what may have happened to the waterway." Dongyue: "That is enough for now. We shouldn't invent an answer to the question we cannot solve." The disturbance had ended. Whoever caused it remained beyond their reach.
+
+**Key events:** The channel is stabilised by moving only the loose stones. · The creature no longer avoids the passage. · The village is warned away from the unstable bank. · "We cannot establish who placed it."
+
+**Opens:** Story: the channel stabilised and the village warned
+
+## 329. A Stranger's Familiar Face
+*Location: The village road*
+
+VOLUME 9, COMIC 028. Hoko: "The village should be safe for now, provided people stay away from the unstable bank." Dongyue: "We've done what we can. It's time to move on." A familiar face. An unfamiliar presence. Xiyu: "No. A resemblance proves nothing." A dark-haired traveller in a dark cloak: "You're the travelers who helped the village." Dongyue: "We assisted where we could. Were you looking for someone?" "No. I was passing through and heard that the road near the stream had become unsafe. Tuoba Jingheng." "The northern path has been difficult lately. Several sections were damaged by falling rock. Take the eastern track around the ridge. It's slower, but the ground is more stable." Xiao Yan: "Have you traveled it recently?" "Recently enough to know which route I'd avoid." "Were the rockfalls natural?" "I couldn't say. I saw the damage, not what caused it." "That's still useful. Thank you." The resemblance was real. The meaning behind it was not yet hers to know. Cangyuan: "You recognized something." Xiyu: "Perhaps. But a face is not a confession." Cangyuan: "Then we'll leave the question unanswered until we have a reason to ask it." "Safe travels. And to you." She had seen a resemblance, not an answer. Dongyue: "The next stretch should be quieter." Xiao Yan: "Let's not mistake quiet roads for roads without questions." One mystery had been left behind at the stream. Another had appeared for a moment at the roadside, and then vanished into the wider world.
+
+**Key events:** A traveller gives his name: Tuoba Jingheng. · He advises the stable eastern track and cannot say whether the rockfalls were natural. · "A face is not a confession." · The resemblance is real; its meaning is not yet hers to know.
+
+**Opens:** Story: Tuoba Jingheng, the familiar stranger
+
+## 330. The Road Beyond
+*Location: The ridge road above the village*
+
+VOLUME 9, COMIC 029 (finale). The village slowly disappeared behind them. Its waters flowed freely again, and the creature had returned to its refuge. Dongyue: "Do you think the villagers will be all right?" Xining: "If they heed the warning and leave the unstable bank alone, they should be." Xiao Yan: "We found evidence of a manufactured mechanism, but nothing that identifies its owner." Hoko: "Not every road gives us the answer we want." Xiao Tian: "We could have searched the ridge longer." Cangyuan: "And perhaps found another clue. Or spent days chasing something that no longer threatened anyone." "I suppose there's a difference between leaving a mystery and leaving danger behind." A familiar face had appeared, then vanished into the crowd. Cangyuan: "Still thinking about the stranger?" Xiyu: "A little." "Will you look for him?" "Not without a reason." A resemblance is not a lineage. And a lineage is not an answer. Ya'Xing: "The road ahead looks easier." Hoko: "Then let's enjoy it while we can." They had not solved every mystery. They had not uncovered every motive. But they had helped those who needed them, and they had learned when to stop searching. Some answers would wait for another season. End of Volume 9: A Season Between Journeys.
+
+**Key events:** The village behind them, the creature back in its refuge. · "There's a difference between leaving a mystery and leaving danger behind." · Xiyu will not look for the stranger without a reason. · Some answers would wait for another season.
+
+**Opens:** Story: Volume 9 complete
+
+
+---
+
+# Volume 10: The Sanctuary of Silent Strings
+
+## 331. The Record's Destination
+*Location: The map table*
+
+VOLUME 10, COMIC 001. The village was behind them. The mystery they had left unfinished was not. Xiao Yan: "The collection was removed from its assigned place several weeks before we reached the archive." Dongyue: "And the transfer was officially recorded?" Xiao Yan: "The mark appears valid. The destination is the part we need to verify." Dongyue: "There is no clear name beside the authorization." Cangyuan: "Then we shouldn't assume the seal identifies the person who ordered the transfer." Hoko: "The main road ends before the mountain district. Beyond that, we'll need local guidance. There are two possible approaches. One is shorter, but the records for it are incomplete." Xiao Yan: "This route is slower, but it has a documented waystation and fewer unknown stretches." Xiao Tian: "Then we take the route we can actually follow." Cangyuan, looking at a notation: "The construction resembles a notation I've seen before." Xiyu: "In your master's records?" "Something similar. Not enough to identify the maker." Xiyu: "A familiar mark can lead us in the right direction. It can also make us see connections that aren't there." "Exactly. We'll follow the evidence, not the resemblance." Xiao Tian: "How far to the first waystation?" Hoko: "A day's travel if the weather holds." Xining: "Then we should leave before the road gets crowded." Xiao Yan: "The timing is consistent with the route we followed before." Dongyue: "Consistent, but not conclusive. That's enough to choose our next destination. It isn't enough to accuse anyone." They had no name to pursue and no certainty about what awaited them. But the record had given them a destination. The archive had preserved the record. Someone had made sure the record could not be found easily.
+
+**Key events:** The collection was moved weeks before they reached the archive. · The seal is valid but names no one. · Two routes: a shorter, incomplete one and a slower one with a waystation. · A notation Cangyuan has seen something similar to.
+
+**Opens:** Story: the road to the Mountain Sanctuary, the same sanctuary as the keeper's gate, entered from another side
+
+## 332. The Mountain Road
+*Location: The mountain road and the waystation*
+
+VOLUME 10, COMIC 002. Beyond the last village, the road grew quieter. The mountains offered fewer witnesses and fewer answers. Xiao Yan: "The old marker agrees with your map." Hoko: "The road is still usable. Whether the waystation is occupied is another question." Xiao Tian: "Someone has passed through here more recently than the surrounding trail suggests." Cangyuan: "Recently, perhaps. We shouldn't assume how many people." Xiao Yan: "The tracks are too worn to tell us much." Dongyue: "Then we record them and continue. We won't build a theory on marks the weather has nearly erased." Xining, Ya'Xing and Hoko rest at a stream; Hoko: "If the old route is accurate, we should reach the waystation before dusk." Cangyuan, at a marker with a six-pointed mark: "The shape resembles a notation used to mark a maintained route." Xiyu: "Does it belong to the archive?" "I can't say. Similar shapes appear in more than one tradition." Dongyue: "We should reach shelter before the weather worsens. The waystation is our best option. If it's unsafe, we can reassess there." Xiyu finds a paper: "Someone left this here." Cangyuan: "Or it was carried here by the wind. We need to see how it was placed before deciding." Xiao Yan: "Nothing here ties it to the archive." Xiyu: "Then we leave it. A mystery doesn't become evidence simply because we want it to be one." By late afternoon the waystation emerged from the mist, its sign reading Yungui Station (雲歸驛). Dongyue: "We check the surroundings first. If someone is inside, we announce ourselves." Xiao Yan: "And if no one answers, we don't assume the place is abandoned." The waystation looked abandoned. The door suggested otherwise.
+
+**Key events:** The old marker agrees with the map. · A six-pointed mark used for a maintained route. · Xiyu: "A mystery doesn't become evidence simply because we want it to be one." · Yungui Station emerges from the mist.
+
+**Opens:** Story: Yungui Station
+
+## 333. The Empty Waystation
+*Location: Yungui Station*
+
+VOLUME 10, COMIC 003. The door creaked open. Inside, a thin layer of dust covered the room. The waystation looked abandoned. Dongyue: "We'll inspect the room before moving anything." Xiao Yan: "I'll check the entrance and the windows. Someone crossed this room after the dust settled." Dongyue: "Can you tell when? Not precisely." Hoko: "It was used, though not recently enough for us to tell when." Xiao Yan: "Then we record it as evidence of use, not proof of a particular visitor." Cangyuan: "The table has been moved." Xiyu: "To hide something? Possibly. Or for an ordinary reason. Let's look beneath it." Xiao Tian: "There's a concealed latch." Dongyue: "Open it carefully." Xiao Yan: "A route register fragment and a token. We shouldn't assume they belong together." The register confirms that the route beyond the waystation was recorded. Ya'Xing: "Does it name the travelers? No. That part is missing." A wooden token with a diamond mark: "Could this identify the person who used the route?" Cangyuan: "It could be a marker, a tally, or something entirely ordinary. We need a comparison before assigning it meaning." Hoko: "There's another way out." Xiao Yan: "Then whoever used this place wasn't limited to the main road." Xining: "Nothing here suggests a struggle." Dongyue: "Nor does it tell us whether the person left willingly." Xiao Yan: "The fragment and this path point toward the same upper route. That is the lead we can justify following." Xiyu: "Someone passed through here. Whether they knew what lay ahead is another question." The waystation had preserved a fragment of the road's history, but not the identity of those who had taken it.
+
+**Key events:** Footprints crossed the dust after it settled. · A concealed latch: a route register fragment and a token. · The register names no travellers. · The fragment and a back path point to the same upper route.
+
+**Opens:** Story: a register fragment and a diamond-marked token
+
+## 334. The Paper That Moves
+*Location: Yungui Station at night*
+
+VOLUME 10, COMIC 004. Xiao Yan: "We found this caught beneath a branch before reaching the waystation." Hoko: "You think it belongs with the register?" Dongyue: "I think we should compare them before deciding." "The paper and ink appear different." Cangyuan: "Then we shouldn't assume they came from the same source." Xiyu: "Did anyone touch it?" Dongyue: "I'll use as little energy as possible. If it reacts, we stop." Xiao Yan: "I'll watch the paper itself, not the energy." Tck... The paper moves by itself. Xining: "It moved by itself." Dongyue: "The movement repeated precisely." Cangyuan: "Then it may be responding to a preserved pattern rather than making a decision." Xiyu: "Could something be trapped inside?" Cangyuan: "We have no evidence of that. A repeated movement isn't proof of a living presence." Dongyue: "It only repeats that one action. We haven't awakened anything. And we shouldn't keep testing it until we know more." Cangyuan: "My master once described techniques that could preserve traces of spiritual activity. But this is only a resemblance to that principle." Xiao Yan: "So this may be related to the sanctuary, but we can't prove that yet. Correct." Xiao Yan wraps it: "We'll keep it intact and compare it with anything we find at the sanctuary. No more experiments until we understand the risk." Hoko: "If this technique reaches all the way out here, the sanctuary may not be as isolated as it looks." Xiao Yan: "Or the paper traveled farther than we think." The paper had preserved a movement, but not the hand that made it, the moment it belonged to, or the reason it remained.
+
+**Key events:** A paper beneath a branch, with different paper and ink from the register. · It moves by itself and repeats the same action precisely. · Cangyuan: his master described techniques that preserve traces of spiritual activity. · No more experiments until the risk is understood.
+
+**Opens:** Story: a paper that repeats one movement
+
+## 335. The Sanctuary Below the Clouds
+*Location: The ridge above the sanctuary*
+
+VOLUME 10, COMIC 005. Beyond the waystation, the road climbed into a region absent from most modern maps. Xiao Yan: "The register's route ends near the next ridge." Hoko: "These steps are old, but someone has kept the route passable." Xiao Yan: "That suggests maintenance. It doesn't tell us who maintains it." Dongyue: "There's a protective formation here." Cangyuan: "Still active?" "Weakly. But yes." Cangyuan: "The formation doesn't appear designed to attack intruders." Xiyu: "Perhaps it was meant to preserve the grounds." "Perhaps. We should wait until we see more." Below the clouds lay the sanctuary, the same one whose gate the keeper had held, now seen from another approach. It did not look untouched by time. It looked as though time had been asked to wait. Xiao Tian: "No guards. No obvious signs of a struggle." Ya'Xing: "And no one coming to ask why we're here." Xining: "Someone has tended it, even if they haven't been here today." Dongyue: "Or the formation has helped preserve it. We can't tell which yet." Xiao Yan: "It reacted again." The wrapped paper stirs near the gate. Xiao Yan: "Don't expose it fully. Let's see whether the gate responds without another test." Cangyuan: "The fragment and the gate may share a principle." Xiao Yan: "May. We still need evidence before calling them part of the same system." Dongyue: "We shouldn't force it open." Xiyu: "Agreed. If this is an archive, careless entry could damage what remains." Cangyuan: "Then we examine the outer grounds first." A bell rings: Ting... The sanctuary had not welcomed them. But something within its walls had noticed their arrival.
+
+**Key events:** The register's route ends at a ridge above the Mountain Sanctuary. · A formation that preserves rather than attacks. · "It looked as though time had been asked to wait." · The paper reacts near the gate and a bell rings.
+
+**Opens:** Story: the sanctuary below the clouds
+
+## 336. Doors Without Keepers
+*Location: The sanctuary grounds*
+
+VOLUME 10, COMIC 006. The sanctuary showed no sign of welcoming visitors. Yet its grounds had not been left entirely to time. Hoko: "These plants were cut back recently." Xiao Yan: "Then someone has maintained this route. We still don't know whether they're here now." Dongyue: "The lantern was prepared for use." Cangyuan: "But not necessarily used today." Ya'Xing: "No lock." Xiao Tian: "But the door hasn't been left open. Someone secured this from inside, or secured it before leaving." "Can we open it? We can. But we should first check whether another entrance exists." Dongyue: "These grooves are part of the formation." Xiyu: "The same one that protects the entrance?" Cangyuan: "Possibly related. This section seems to regulate the building rather than repel intruders." Dongyue: "A preservation formation would explain why the courtyard remains intact." Cangyuan: "It could explain some of it. We haven't established the formation's original purpose. Then we keep looking." Xining: "Something has passed through here recently. The dust is disturbed only along this edge." Xiao Yan: "Good observation. We'll note it, but we can't identify the visitor from this alone." The room had not been ransacked. Something had been removed deliberately. Hoko: "We don't know what was kept here." Xiao Yan: "But whatever it was, someone removed it without disturbing the rest. That makes it worth recording, not enough to tell us why." Xiyu: "Nothing has tried to stop us." Dongyue: "That doesn't mean we're free to enter every room. We continue carefully. The sanctuary has already given us more questions than answers." There were doors without keepers, rooms without occupants, and signs of hands that had left no names.
+
+**Key events:** Plants cut back and a lantern prepared for use. · The door is unlocked but secured from inside, or before leaving. · A room not ransacked, with something removed deliberately. · "Doors without keepers, rooms without occupants."
+
+**Opens:** Story: signs of hands that left no names
+
+## 337. The Figure That Remembers
+*Location: A closed room of the sanctuary*
+
+VOLUME 10, COMIC 007. Beyond the courtyard, the sanctuary held rooms that had been closed but not emptied. Xiao Yan: "Let's inspect one shelf at a time. Nothing leaves this room until we understand what it is." Hoko: "That one has been handled more recently than the others." Xiao Yan: "Or it was protected better. We shouldn't confuse the two." Dongyue: "There's a formation inside the stand." Cangyuan: "A storage formation?" Dongyue: "Possibly. I can sense a trace of energy, but not its function. I'll approach slowly. If the energy changes, I'll stop." Xiao Yan: "I'll watch the figure's movement." Tik. Xining: "It moved." Dongyue: "The movement is identical." Ya'Xing: "So it's repeating an action, not reacting freely." Dongyue: "That is the more cautious explanation." Xiyu: "Could the figure preserve a person's movement?" Cangyuan: "It could preserve a pattern of movement. That doesn't mean it preserves the person." The figure did not choose a new action. It returned to the same beginning. Dongyue: "It has shown us one movement. Nothing more." Cangyuan: "Then we should treat it as a preserved trace, not a living presence." Xiao Yan: "And record exactly what happened, without adding an interpretation. There's another mark here. I don't recognize it." Cangyuan: "Could it identify the maker?" Xiao Yan: "It could identify the stand, the room, or a later repair. We don't know yet." Dongyue: "We shouldn't dismantle it." Xiao Yan: "Agreed. We'll compare it with the archive records first." Cangyuan: "If this room holds other examples, we may learn more from comparing them than from testing one object repeatedly." The sanctuary had preserved a movement with remarkable precision. But it had preserved no explanation of why that movement mattered.
+
+**Key events:** A figure on a stand repeats one identical movement. · A preserved pattern, not a living presence. · A mark on the stand that Xiao Yan does not recognise. · The room may hold other examples.
+
+**Opens:** Story: a figure that repeats one movement
+
+## 338. Records Without Voices
+*Location: The figure hall*
+
+VOLUME 10, COMIC 008. The first figure had not been alone. It had been one object in a collection. Xiao Yan: "Let's compare their stands before we test anything else." Hoko: "They look like people caught in the middle of an action." Cangyuan: "Or carved to represent actions. The difference matters." Xiyu: "Could each one preserve a different movement?" Cangyuan: "That's a possibility. We need to see whether the structures support it." Dongyue: "No response." Xiao Yan: "That doesn't mean it never worked. The stored energy may be exhausted, or its trigger may be different." Dongyue: "This one still responds." Tik. Dongyue, comparing two stands: "The first stand retains a trace of active energy. The second doesn't." Xiao Yan: "So the difference may lie in the storage mechanism, not the figure itself." Dongyue: "We have a preserved action, but no context. We don't know who performed it, when it happened, or what came before." Xiyu: "A record with its meaning stripped away." Cangyuan: "Perhaps. Or a record that was never meant to contain the meaning." Hoko: "Another object is missing. Could it be the one that was recently handled?" Xiao Yan: "We can't tell. The empty space alone doesn't establish when it was removed." Xiao Tian: "There's writing under here." Ya'Xing: "Can you read it? Not enough to be sure." Dongyue: "This looks like an instruction for arranging or activating the stands." Xiao Yan: "Then it may describe a system, not a single object. We have three things now: a responding figure, inactive stands, and instructions for arranging them." Dongyue: "We shouldn't overlook any details. The arrangement, spacing and sequence may all be important." Cangyuan: "Enough to establish that the objects were designed to work within a larger method. Not enough to tell us what the method was for." The sanctuary had preserved fragments of action. But without names, context, or a living witness, the records could not tell the party whose actions they were.
+
+**Key events:** A hall of figures on stands, each possibly a preserved action. · One stand keeps a trace of active energy; others do not. · An inscription under a shelf: instructions for arranging or activating the stands. · A larger method, with no stated purpose.
+
+**Opens:** Story: a hall of preserved actions
+
+## 339. The Missing Space
+*Location: The figure hall*
+
+VOLUME 10, COMIC 009. The empty space was too precise to be accidental. Xiao Yan: "Let's compare this with the other stands. The outline is clean. The stand that was here fitted this space exactly. The grooves align with the feet of a stand, but the missing object may have had a wider base. Or it may have sat inside another support. Both are possible. We need more than the outline." Dongyue: "This one contains a formation, but I can't tell whether every stand had the same structure." Cangyuan: "The inscription may help us determine how they were arranged." Xiao Yan: "The arrangement could correspond to these marks." Dongyue: "Could. We shouldn't treat a partial match as a confirmed key." Xiyu: "Perhaps the figures weren't the only things being preserved here." Cangyuan: "That would explain why some positions are wider. But we still don't know what belonged in them." Xining: "Something brushed against the back edge." Xiao Yan: "Possibly when the object was moved. We can't tell when it happened." Xiao Tian: "No splintering. No damaged joints." Ya'Xing: "So it wasn't forced out." Cangyuan: "The object may have been removed carefully. That doesn't tell us whether the removal was authorized." Xiao Yan: "We have different stands, an incomplete set of instructions, and at least one missing object." Dongyue: "Enough to suspect a larger arrangement. Not enough to reconstruct it." Tik. Ya'Xing: "Was that another figure?" Dongyue: "We don't know. Let's check the corridor before testing anything else." Xiao Yan: "We have enough for now. If we disturb the arrangement, we may lose evidence we don't yet understand." Dongyue: "Then we search the adjoining rooms for records that might explain it." The missing object had left behind no name, no explanation, and no clear trail. Only a place where something had once belonged.
+
+**Key events:** A clean outline where a stand once sat. · The object was removed carefully, not forced. · Different stands, incomplete instructions and at least one missing object. · Another "tik" from somewhere in the hall.
+
+**Opens:** Story: the missing space on the shelf
+
+## 340. The Order of the Stands
+*Location: The figure hall*
+
+VOLUME 10, COMIC 010. Cangyuan: "The positions aren't decorative. Each stand fits a particular place." Dongyue: "Then the arrangement may determine what the figures preserve, or what they repeat." Xiao Yan: "The diagram matches the spacing on the shelves. The marks here are the same as the inscription from Chapter 008." Dongyue: "The grooves are too consistent to be accidental. This stand was fitted for this exact position." Xiyu: "Knowing where they belong doesn't mean we should put them there." Cangyuan: "But if we leave everything untouched, we may never learn why this hall was built." Xiao Yan: "I'll place this stand in the position shown on the diagram." Dongyue: "I'll use only a small amount of energy. Just enough to test for a response." Tik. "There. It's responding." Another figure moves, and another. "The energy is flowing beneath the shelves. The arrangement is a circuit." Xiao Yan: "That wasn't part of the first test." Cangyuan: "Enough. Let's cut the flow before we trigger something we can't control." Dongyue: "Disconnecting now." Xiyu: "The light is fading, but something else has been activated." A deep sound echoed from beneath the floor. A section of the floor slid aside, revealing a stairway descending into the darkness below. Cangyuan: "That can't be a coincidence anymore."
+
+**Key events:** The diagram matches the spacing on the shelves. · A stand is placed and the figures respond: the arrangement is a circuit. · Cangyuan has the flow cut before they lose control. · A floor section slides aside to reveal a stairway.
+
+**Opens:** Story: a hidden stairway under the hall
+
+## 341. The Guardian Stirs
+*Location: The chamber beneath the hall (battle)*
+
+VOLUME 10, COMIC 011 (BATTLE). The stairs led to a broad chamber. At its center stood a guardian constructed of wood and bronze. Xiao Yan: "That construction is older than the mechanism above. Its presence was silent until the moment we entered." Cangyuan: "It's moving. Stay back!" WHRR... BOOM! Xiyu: "Its outer plates are reinforced!" Dongyue: "The energy is concentrating at its left shoulder. Strike there when it commits to an attack." Xiao Tian: "Now!" "That would have hurt." Cangyuan: "Try not to test it twice." Xiao Yan: "It's following the floor formation! Keep it off the center line!" They attacked together, targeting the damaged joint and the exposed mechanism. CRASH! "It's stopped." Dongyue: "It wasn't hunting us. It reacted when we activated the formation." Xiao Yan: "The instructions are damaged. Only fragments remain." Cangyuan: "...preserve... prevent... But the rest is missing." Behind the fallen guardian, a stone door began to open. "Shall we proceed?" "Yes. Carefully."
+
+**Key events:** A guardian of wood and bronze, older than the mechanism above. · Dongyue reads its energy; Xiao Tian strikes the shoulder. · "It wasn't hunting us. It reacted when we activated the formation." · Damaged instructions: "...preserve... prevent..." A stone door opens.
+
+**Opens:** Story: the guardian beneath the hall
+
+## 342. Beneath the Outer Hall
+*Location: The hidden level beneath the guardian*
+
+VOLUME 10, COMIC 012. Beyond the fallen guardian lay a hidden level, never recorded in the plan above. Xiao Yan: "This level isn't included in the records." Cangyuan: "Then the records were incomplete, or this chamber served a different purpose." Xiao Yan: "The figures are moving, but only along set patterns." Xiyu: "Don't assume every movement is an attack." Cangyuan: "I won't. I'll assume it might be one." Xiao Yan: "This tile feels different—" KRK... SWISH— "Everyone back!" Xiao Tian: "I'll hold this line!" Dongyue: "The safe tiles follow a faint light pattern." Cangyuan: "Their paths are fixed. We just need our movements." They reached a lower chamber filled with figures repeating fragmented actions. Several figures replayed brief movements at the same time, as if their memories overlapped. One figure reached toward an empty space over and over; on the fourth repetition its arm moved sharply, the cord pulling taut. SNAP... Xiao Yan: "Something is missing from the mechanism. The edges are worn smooth. It wasn't broken recently." Dongyue: "This could explain the instability. But it doesn't tell us who removed it or why." Beyond this chamber, a narrower passage descended further into the mountain. "Shall we continue?" Cangyuan: "Yes. But stay alert. The deeper we go, the less we know."
+
+**Key events:** A hidden level not in the plan above. · Safe tiles that follow a faint light pattern. · Figures replay overlapping fragments of action; one cord snaps. · A component is missing from the mechanism, its edges worn smooth.
+
+**Opens:** Story: the hidden level beneath the hall
+
+## 343. The Hall of Broken Impressions
+*Location: A vast hall of suspended figures*
+
+VOLUME 10, COMIC 013 (BATTLE). Beyond the side passage lay a vast hall filled with wooden figures suspended by fine cords. Cangyuan: "These figures aren't arranged like the ones upstairs." Dongyue: "Perhaps they preserve different kinds of impressions. They repeat fragments of movement... but the sequence is broken." Xiyu: "That movement is breaking down." Cangyuan: "Then we don't linger." TWANG! Cangyuan: "Don't strike the cords unless necessary! They're connected!" Xiao Tian: "How many more of these are there?" Xiao Yan: "The movement is spreading through the formation. We need to interrupt the sequence, not destroy every figure." Dongyue: "The energy is unstable. I'll divert the flow here." Cangyuan: "Keep it moving! I'll clear this side." The remaining figures suddenly moved together, repeating the same sequence: step, turn, thrust. The movements resembled a coordinated martial drill, but their timing was distorted. Dongyue: "These aren't acting with a shared intention. They're repeating separate fragments." Xiyu: "Then we mustn't mistake repetition for thought." Xiao Yan: "Here — the energy converges at this junction. If we disrupt it, the sequence should collapse." Dongyue: "Diverting the flow now. Hold them back!" "Almost there! Now!" One by one, the figures slowed and the lights faded. At the far end of the hall, a recessed doorway revealed a symbol matching the markings around the empty socket. Cangyuan: "That looks like our next destination."
+
+**Key events:** Fragments of movement with the sequence broken. · Cords are connected; strike them only if necessary. · Figures repeat a distorted martial drill: step, turn, thrust. · Disrupting the junction collapses the sequence; a doorway shows the socket's symbol.
+
+**Opens:** Story: the hall of broken impressions
+
+## 344. The Missing Component
+*Location: The central mechanism chamber*
+
+VOLUME 10, COMIC 014. Beyond the broken hall, they found a circular chamber built around a central mechanism. Xiao Yan: "This must be the core mechanism for the lower archive." At the center was an empty socket, its edges worn smooth, with no fresh fracture marks. Xiyu: "Something fitted here. And it isn't here now." Dongyue: "The flow is uneven. Some sections receive energy, while others are being overloaded." Xiao Yan: "There are no tool marks. It may have been removed deliberately. But we can't tell when." Cangyuan: "Could the missing component have caused the instability?" Dongyue: "Possibly. The system can still preserve impressions, but it can no longer regulate how they're released." A surge of energy passed through the chamber, and a massive wooden assembly began to descend. RMMM... Cangyuan: "Find a way to stop it!" Xiyu: "I'll hold the falling debris away from you. Hurry!" Dongyue: "I'll redirect the flow through the side channel. Give me a few breaths." Xiao Yan: "I can stop it! Just a little more..." With the flow diverted, Xiao Yan wedged a tool into the locking mechanism. K-CHAK! The assembly stopped inches above the floor. "That was close." Xiyu: "Are you hurt?" Cangyuan: "Not badly." Behind the assembly, they found a second inscription. Most of the text was eroded, but a repeated symbol matched the one on the doorway. Xiao Yan: "This wasn't just a storage room. The mechanism connected several parts of the sanctuary." Dongyue: "The missing component may have been a regulator — or a key. We need more evidence before we can determine its purpose." A narrow passage lay beyond the mechanism, its stone lintel bearing the same symbol. Xiyu: "If we find where this passage leads, we may understand what this chamber controlled — and what was taken."
+
+**Key events:** An empty socket with edges worn smooth. · The system preserves impressions but no longer regulates their release. · A descending assembly is stopped inches above the floor. · A second inscription and a passage marked with the same symbol.
+
+**Opens:** Story: the missing component
+
+## 345. The Master's Principle
+*Location: A smaller chamber with a formation in the floor*
+
+VOLUME 10, COMIC 015. Beyond the side passage was a smaller chamber, filled with broken stands, incomplete diagrams, and a formation carved into the stone floor. Xiao Yan: "These diagrams look different from the ones we saw above." Cangyuan: "I've seen a principle like this before. My master taught that a formation should guide spiritual energy, not force it through a single path." Xiyu: "So this design follows that principle?" Cangyuan: "The core idea is the same, but this version has additional channels that redirect the flow toward the central mechanism." Dongyue: "That could be a correction — or a change made for another purpose." Xiao Yan: "My copied diagram doesn't include these lines. They were either added later or recorded in a different section." Cangyuan: "These channels are connected to the sockets we saw earlier. If one part is altered, it can affect multiple chambers." HUM... "Look... one of the figures is responding again. The energy is rising through this channel!" Xiyu: "I'll hold it in place. Stop the flow!" Dongyue: "Diverting a small amount of the energy should be enough." Cangyuan: "I'll seal this channel temporarily." Xiao Yan: "Almost there... just a moment!" K-CHAK! "It's stopped." Cangyuan: "The principle is sound. The way it's being used isn't. Someone changed its original intent." Xiyu: "Which means... the instability isn't an accident. But we still don't know who made the change, or why." Dongyue: "We can learn how it works. That doesn't automatically tell us who altered it." Xiao Yan: "This symbol matches the one from the doorway and the central mechanism." At the far end of the chamber a narrow bridge extended across a deep shaft; beyond it lay another section of the sanctuary. More figures moved in the darkness below, their motions faint and uncoordinated. Xiyu: "The deeper we go, the more this place resists our presence." Cangyuan: "Then we proceed carefully. Understanding the formation is the first step. The rest... we'll uncover in the next chamber."
+
+**Key events:** Cangyuan's master taught that a formation should guide energy, not force it. · Extra channels redirect the flow toward the central mechanism. · "The principle is sound. The way it's being used isn't." · A narrow bridge across a deep shaft.
+
+**Opens:** Story: the master's principle, altered
+
+## 346. The Unstable Archive
+*Location: The bridge over the shaft*
+
+VOLUME 10, COMIC 016 (BATTLE). Beyond the previous chamber lay a vast space, filled with wooden figures suspended by countless strings. Xiao Yan: "The entire chamber is connected." Cangyuan: "Possibly to the central mechanism. We should assume that disturbing one section may affect another." Some figures repeat small movements. Others remain motionless. Xiyu: "That wasn't happening before." Dongyue: "Then keep moving." KRRR-KLIK! A section of the bridge sank beneath their feet. The cords above tightened, pulling the figures across the path. Xiao Yan: "The bridge is reacting to the same formation as the figures!" A cord snapped overhead. CRASH! Cangyuan: "Don't force it. We need to find which channel is overloading." Dongyue: "I can identify the safe footholds from the shifting lights." Xiyu: "We don't have time to repair the formation." Xiao Yan: "I can interrupt this section, but the mechanism will lose stability completely for a moment!" Cangyuan: "Do it when we reach the other side." They crossed in stages, following the brief windows when the lights marked stable ground. Xiao Yan disabled the bridge's active channel. K-CHAK! The suspended figures stopped moving. For several seconds, the chamber was silent. Then a deep rumble sounded from below. RUMMM... They reached a stone platform. Ahead lay a broad chamber with multiple doorways, each marked by a different symbol. Dongyue: "The formation isn't failing in one place. It's spreading." Cangyuan: "And shutting down one section transfers the strain elsewhere." Xiyu: "Something is moving ahead."
+
+**Key events:** The chamber is one connected system. · A bridge section sinks and the cords pull the figures across the path. · They cross in stages by following the lights; Xiao Yan disables the bridge channel. · "The formation isn't failing in one place. It's spreading."
+
+**Opens:** Story: the unstable archive
+
+## 347. The Guardian's Last Command
+*Location: The circular hall of the larger guardian*
+
+VOLUME 10, COMIC 017 (BATTLE). Beyond the next doorway lay a circular hall. At its center stood a larger guardian, its body connected to the walls by thick cords. Unlike the previous figures, this one was already active. Cangyuan: "Its channels are connected directly to the walls." Xiao Yan: "Then it may be drawing energy from the entire lower archive." "Preserve... prevent..." A fragment of its damaged command appeared, but the remaining text was too eroded to read. The guardian charged, striking the floor with both arms. THOOM! Xiyu drew the guardian's attention with crimson magic. Xiao Tian struck an exposed joint, then retreated before the counterattack. Cangyuan cut through a damaged connecting cord. One of the guardian's arms dropped, but it immediately pulled energy from the wall to compensate. Dongyue: "It is replacing the energy we interrupt!" The guardian slammed its remaining arm into the floor. The hall itself began to shift, with pillars moving and mechanisms descending from above. Xiao Yan found a control inscription that had been forcibly redirected. "This channel was deliberately locked into the wrong position!" Dongyue: "Can you reverse it? I'll hold the energy steady!" K-CHAK! "If you can hold it long enough!" The pin is removed, and the channel begins to realign. The guardian's core flickered, and its movements became erratic. Cangyuan: "Everyone clear!" Xiyu caught its momentum with a crimson barrier. Xiao Tian cut the remaining cord at the right moment. CRASH! The guardian crashed to the floor. Its blue core dimmed, then went dark. Dongyue: "Its safeguards were bypassed. The system was forced to keep supplying energy even when its commands became unstable." Xiao Yan: "Someone altered the mechanism — or the damage accumulated over time. We can't determine when." Behind the fallen guardian, a narrow door opened. A fresh footprint in the dust was not made by the guardian. Xiyu: "That wasn't made by the guardian."
+
+**Key events:** A larger guardian wired to the walls, already active. · Its command: "Preserve... prevent..." · A control channel was deliberately locked into the wrong position; Xiao Yan removes the pin. · A fresh footprint in the dust that the guardian did not make.
+
+**Opens:** Story: the guardian's last command
+
+## 348. The Living Keeper
+*Location: A tended workshop chamber*
+
+VOLUME 10, COMIC 018. Beyond the fallen guardian, a narrow passage led to a smaller chamber. Unlike the other halls, this room was orderly, with tools, wooden figures, and diagrams laid out with care. Cangyuan: "Someone has been working here. The lantern is still warm." Xiao Yan: "These figures have been repaired. Not long ago." Xiyu: "Look at this. A fresh mark on the doorframe. Someone is here." Cangyuan: "Be ready. We don't know who this is, or why they're here." Dongyue: "Stay calm. Let's hear them out first." A tall figure in dark robes, the Keeper: "You disabled it. The guardian was not meant to attack anyone who entered the sanctuary." Cangyuan: "It attacked us. Then perhaps you can explain why it did." Keeper: "...because the original safeguards no longer hold. I have kept some of the system functioning. These impressions are fragments of memories, not living people. They must remain preserved — not spread." Dongyue: "You knew a component was missing." Keeper: "I knew the system could no longer function as intended. That is not the same as knowing who removed it." Cangyuan: "Did you alter the formation?" Keeper: "I made adjustments to prevent a complete collapse. If I had done nothing, much of the archive would have been lost long ago." Xiao Yan: "This channel was locked into the wrong position. That wasn't just damage. It was deliberate." Keeper: "Perhaps. Or it was a necessary correction. Without knowing the full history, we cannot say. Here is a map of the lower sanctuary. Several routes are unsafe. These are the sections most affected by the instability. The central chamber lies beyond this section. You must not activate the central formation until we reach it." Xiyu: "Why should we trust you?" Keeper: "You shouldn't. Not yet. But if you want to understand what happened here, you need someone who knows which doors must remain closed." Cangyuan: "We don't have a better option. We'll proceed with you. But you're staying within our sight." Keeper: "That is reasonable. Then let us go. There is little time before the next section destabilizes."
+
+**Key events:** A tended chamber with repaired figures and a warm lantern. · The Keeper: "The guardian was not meant to attack anyone who entered." · The impressions are "fragments of memories, not living people". · The Keeper offers a map and goes with them, within their sight.
+
+**Opens:** Story: the Keeper of the sanctuary
+
+## 349. The Keeper's Reason
+*Location: The map room*
+
+VOLUME 10, COMIC 019. The Keeper led them to a map room overlooking the lower sanctuary. Channels of light traced the connections between the chambers, some steady, others flickering with instability. Xiao Yan: "The instability is spreading along these channels. If one section collapses, the strain moves into the next." Xiao Yan: "You marked these routes as unsafe before the guardian fell." Keeper: "I have been watching the failures for some time." Cangyuan: "Then why didn't you leave?" Keeper: "Because leaving would mean abandoning everything still intact. These are not souls. They are impressions — traces of movements, intentions, and feelings preserved by the original formation. Fragments of moments. They cannot bring anyone back." Xiyu: "Fragments of lives?" Keeper: "When the safeguards began to fail, I redirected the energy to preserve the records that remained. I thought I could keep the archive alive long enough to repair it." Dongyue: "But the redirection overloaded other channels." Keeper: "Some of them. I did not understand how far the strain would spread." Cangyuan: "You were trying to preserve the archive, but you made the danger worse." Keeper: "Yes." Xiao Yan: "And the guardian?" Keeper: "Its command structure was already damaged. The redirected channels kept it active when it should have shut down." Xiyu: "Why not tell us this when we first met?" Keeper: "Because you had already disabled the guardian. I didn't know whether you intended to save the sanctuary or destroy what remained. Now I have seen you stop when destroying the mechanism would have been easier." A violent pulse shook the room. Several lines on the map flared, then went dark. Beyond the walls, wooden figures began striking against their restraints. THOOM! Dongyue: "The instability has reached another section." Xiao Yan: "We have to choose which channels to stabilize. We cannot preserve every record and keep the mechanism running." Keeper: "The original safeguards can still be restored, but only if we reach the central regulator before the next collapse." Xiyu: "Then we stop trying to save every damaged piece and save the archive itself. Records can be lost. People can be hurt. We won't let the sanctuary keep endangering anyone just to preserve everything inside it."
+
+**Key events:** The Keeper has watched the failures for some time and chose to stay. · The impressions are traces preserved by the formation, not souls. · His redirection overloaded other channels; he admits it. · Xiyu: "Records can be lost. People can be hurt."
+
+**Opens:** Story: the Keeper's reason and a choice
+
+## 350. The Heart of the Strings
+*Location: The central chamber of the lower sanctuary*
+
+VOLUME 10, COMIC 020 (BATTLE). At the end of the passage lay the central chamber: a massive regulator hung above a deep shaft, its channels extending in every direction, and below it a fused guardian formed from countless constructs began to stir. Keeper: "The central regulator is still functioning, but barely. The uncontrolled impressions have accumulated into that construct. If the regulator fails, the remaining archive will collapse." The construct tore free of its restraints and attacked with multiple limbs. Xiyu drew its attention away from the others; Xiao Tian: "It's not controlled by one set of strings!" Dongyue: "There are overlapping impressions. Interrupting one does not stop the others." Xiao Yan: "Its body is drawing energy from several channels. We need to separate it from the regulator." The construct slammed the floor and the chamber began to shift. The Keeper could stabilize the outer channels, but the central regulator had to be shut down briefly; Dongyue warned the whole chamber might lose support, Xiao Yan that if they did nothing it would keep rebuilding itself. Cangyuan kept it busy while the channels reversed and its core was exposed. Xiyu held back its limbs with a crimson barrier, Xiao Tian struck the damaged joint, Cangyuan struck decisively, and Xiao Yan interrupted the central regulator at the same moment. The core collapsed inward and the construct fell apart. Dongyue: "The dangerous feedback has stopped." Xiao Yan: "The missing component was not restored. We stopped the uncontrolled flow without it." Keeper: "The sanctuary can survive. But the original system will remain incomplete."
+
+**Key events:** A fused guardian of countless constructs below the central regulator. · "It's not controlled by one set of strings!" · Each of them has a part: barrier, joint, core strike, regulator interrupted. · The socket is still empty; the original system stays incomplete.
+
+**Opens:** Story: the fused guardian destroyed
+
+## 351. The Promise Preserved
+*Location: The central chamber and the sanctuary gate*
+
+VOLUME 10, COMIC 021. After the battle the central chamber fell silent. The construct lay in pieces and the sanctuary's lights returned to a steady glow; the immediate danger had passed, but the empty socket at the center remained. Dongyue: "The dangerous feedback has stopped. The outer safeguards are holding." Xiao Yan: "The regulator is stable, but we shouldn't reactivate the damaged sections until they've been inspected." Keeper: "Some records were lost. Others are damaged beyond recovery. But most of the archive remains." He showed a plate kept apart from the active formation: its inscription states that the sanctuary was built to preserve impressions of significant actions, emotions and intentions so later generations could study the traces left by the past; it also warns that these impressions are fragments, not souls or complete memories, and must never be treated as living witnesses. Cangyuan: "The original design had safeguards against exactly what happened here." Keeper: "I tried to keep the system active to preserve the records. But I failed to understand that preserving the archive also meant preserving its limits." Xiyu: "Records can be lost. People can be hurt. We won't let the sanctuary keep endangering anyone just to preserve everything inside it." Xiao Yan asked whether the record says who removed the component; the Keeper said no: the original plate describes the safeguards, not the later alterations, and the wear around the socket predates their arrival by an unknown amount of time. Dongyue: "Then we should not confuse the cause of the current collapse with the missing component." Xiao Yan found a reference to a second collection point, a remote waystation where damaged records were once inspected before being moved elsewhere: "This isn't proof of a wider conspiracy, but it's a real destination." The Keeper gave them a copy of the founding inscription and a safe diagram of the original formation in a jade case; the original had to remain. Cangyuan: "We've learned what the sanctuary was meant to protect. We still don't know who changed it." Xiyu: "That question can wait until we have evidence." Keeper: "I cannot restore every lost impression. But I will ensure no one trying to preserve them again is harmed." The party left the sanctuary with a new lead and a clearer understanding of its purpose, carrying away something smaller than a memory but enough to guide their next step.
+
+**Key events:** Some records lost, most of the archive remains. · The founding plate: impressions are fragments, not souls or living witnesses. · A second collection point: a remote waystation. · A jade case with the founding inscription and a safe diagram.
+
+**Opens:** Story: the founding inscription and a second collection point
+
+## 352. The Road Beyond the Mountain
+*Location: The mountain waystation and the ridge above the sanctuary*
+
+VOLUME 10, COMIC 022 (finale). Somewhere behind them a forgotten archive had finally fallen silent; the mountain that once trembled with unstable impressions now stood in quiet light. Xiao Yan: "The copy is intact. The formation diagram survived too." Xiao Tian, laughing, asked if anything was chasing them; Cangyuan: "You said that about the last one." Xiao Tian: "The last one had fewer falling wooden figures. Then this may be the first pleasant mountain I've visited." Dongyue: "The archive preserved impressions of the past. But the records were never meant to be living testimony." Xiao Yan: "Which means a record can tell us what happened without telling us everything that mattered." Xiyu: "Perhaps that was the Keeper's mistake. They tried to preserve everything, even when doing so put others in danger." Cangyuan: "The intention wasn't wrong. The choice was." Xiyu: "Then we should remember the choice, not the intention." By midday they reached a small mountain waystation and for the first time in many days could rest without alarm. The next destination was two days away if the old route was still passable, perhaps three if the mountain roads had changed. Xiao Yan marked the map: this had been a collection point, not the final destination; records passed through before continuing elsewhere. Cangyuan asked whether the missing component could have passed through; Dongyue: "It could have. But the entry doesn't establish that." Xiyu: "A new place, new people, and perhaps something that has nothing to do with the sanctuary." Cangyuan: "Would that disappoint you?" Xiyu: "Not at all. I'd welcome it." As they prepared to leave a faint light appeared on the jade case, a message from the Keeper: "The outer safeguards are stable. The remaining records are secure. I will not reactivate the damaged sections." Xiao Yan: "The Keeper has begun the repairs." Cangyuan: "For now. Experience has taught me not to trust them for long." They had entered the mountain seeking an explanation for a missing piece, and they left with a safer sanctuary, a preserved record and a road leading somewhere new. End of Volume 10: The Sanctuary of Silent Strings. Beyond the mountain, the world waited.
+
+**Key events:** "The first pleasant mountain I've visited." · "The intention wasn't wrong. The choice was." · A message from the Keeper on the jade case: repairs begun, damaged sections not reactivated. · Cangyuan will not trust the Keeper for long.
+
+**Opens:** Story: Volume 10 complete
+
+
+---
+
+# Volume 11: The Thousand-Mile Frontier
+
+## 353. A Road Without Strings
+*Location: The ridge above a lake city, and a caravan on the road*
+
+VOLUME 11, CHAPTER 001. From a high ridge the party looked down on a wide valley, a river and a lake city. Hoko: "Finally. A road that doesn't contain suspended wooden figures." Dongyue: "Don't celebrate too early. We haven't reached the town." Xiyu: "The world seems much larger from up here." Cangyuan: "It always was. We simply spent too long underground." Xiyu: "...Thank you for showing me this view." Dongyue studied the map: the old waystation should lie beyond the main trade route, so they would reach the town first and ask about the mountain paths and buy supplies. Then a damaged caravan appeared ahead, attacked by spirit wolves on the slope. "Keep them away from the carts!" The party scrambled to protect the merchants and animals: the slope was the wolves' advantage and they must not be allowed to circle; Xiyu kept the beasts off the animals; Dongyue took a wounded man to safety while Xiao Yan checked for a safe escape route.
+
+**Key events:** A lake city in the valley, the first open road in a long time. · "We simply spent too long underground." · The old waystation lies beyond the main trade route. · A damaged caravan attacked by spirit wolves.
+
+**Opens:** Story: a caravan under attack on the slope
+
+## 354. The Thousand-Mile Waystation
+*Location: The Thousand-Mile Waystation*
+
+VOLUME 11, CHAPTER 002. The Thousand-Mile Waystation stood where safe roads ended and uncertain journeys began. The party split into small groups for practical tasks. Hoko wanted more rope and climbing hooks for the western route; Xiao Yan noted the old depot wasn't on the current trade map and that beast reports named the same range; Ya'Xing read a bounty notice for a Horned Spirit Beast (danger: high, do not approach its territory, confirmed attacks on caravans, reward 300 silver). Dongyue: "This one isn't behaving like the smaller creatures. We don't know whether it's connected. Let's not turn one report into a conclusion." At a tea house a hunter said three caravans had turned back that week, either because something was driving the beasts toward the trade roads or because someone was disturbing their nests. A caravan broker said the old inspection waystation route still exists but isn't maintained; one must leave the main road and cross the Shattered Ridge: "For prepared travellers. Not for a careless caravan." Choosing a first expedition: the trade road is safest but longer, the mountain trail may be faster if it hasn't collapsed, the ravine route is dangerous. Cangyuan: "We should learn why the beasts are moving before travelling deeper into their territory." Xiyu: "We can do both. Take a nearby contract, learn the local conditions, then decide." Xiao Tian found an escort contract (escort a supply wagon through East Pass, 500 silver plus provisions, requester the Frontier Guild); the party accepted it. The old record had given them a destination; the frontier offered them a hundred reasons to delay.
+
+**Key events:** The bounty board: a Horned Spirit Beast. · Three caravans turned back in a week. · The old inspection waystation lies across the Shattered Ridge. · The party accepts an escort contract from the Frontier Guild.
+
+**Opens:** Story: an escort contract from the Frontier Guild
+
+## 355. A Contract in Red Ink
+*Location: The East Pass road*
+
+VOLUME 11, CHAPTER 003. The supply wagon left the Thousand-Mile Waystation at dawn. "We have a contract, a destination, and a road that may or may not exist." "That describes most of our journeys." A local hunter appeared on a rocky outcrop and warned them not to take the next bend at full speed: the slope had come down in the night. He did not know whether the landslide caused the beast attacks, but something had been moving through these hills and did not always leave tracks. The road had collapsed. The wagon could not cross the edge; they could carry the supplies across, but not the heavy crates, so they braced the outer edge with timber while others organised the lighter supplies and Xining checked a worker's wound. While they worked Hoko noticed movement among the trees: "Everyone, step away from the wagon." A pack of spirit wolves came out of the trees. "They've come. Take positions!" The contract had promised a safe passage; the mountain had other plans.
+
+**Key events:** A hunter warns the road is unstable. · The edge has collapsed; the wagon cannot cross. · Hoko sees movement in the trees. · "The contract had promised a safe passage. The mountain had other plans."
+
+**Opens:** Story: the road collapses and wolves arrive
+
+## 356. Hold the Line
+*Location: The collapsed East Pass road (battle)*
+
+VOLUME 11, CHAPTER 004 (BATTLE). The spirit beasts struck as the party prepared to clear the damaged pass. "Get the merchants behind the wagon!" "The slope is their advantage. Don't let them circle us!" Xiyu: "Keep them off the animals!" Xining bound a worker's wound while Dongyue moved the workers back. Xiao Yan found a narrow gap between the rocks to control their approach and Hoko guided the merchants toward it while the others kept the beasts focused on them. Ya'Xing drew some of them away; Xiao Tian and Cangyuan held the wagon. Xiyu: "This path is closed. Find another way!" The remaining beasts broke away and retreated, looking back; the hunter: "Something else may have driven them out." The convoy survived, but the road remained unsafe. They would repair the section before moving the wagon, and for now rest and secure the area.
+
+**Key events:** Spirit wolves on the slope. · A narrow gap between rocks to control their approach. · "Something else may have driven them out." · The convoy survives; the road is still unsafe.
+
+**Opens:** Story: the wolves driven off
+
+## 357. The Price of Safe Passage
+*Location: The East Pass road*
+
+VOLUME 11, CHAPTER 005. After the battle the party secured the pass and checked the damage. Most of the cargo was intact. Xining tended the injured while the others checked the supplies (food, medicine and climbing gear first), and Xiao Tian and Ya'Xing collected the beasts' remains as proof for the bounty office. The local hunter introduced himself: Han Lie, a frontier hunter. After heavy rain the slopes often collapse and some routes become impassable for weeks; the beasts are territorial and if one group is driven out they move toward the trade roads. Hoko and Xiao Yan examined the road and suggested bracing the outer edge with timbers and rope and clearing the loose rocks above; Cangyuan and Xiyu worked together to clear a blocked section. The caravan leader offered fifty more taels to reach the next checkpoint. The party weighed the trade road (safer, longer), the mountain trail (faster if it hasn't collapsed) and the ravine route (dangerous), and chose to escort the caravan to the next checkpoint first, then decide. As the road became passable again, the party prepared to continue; the next checkpoint awaited.
+
+**Key events:** Han Lie, a frontier hunter, explains the beasts and the landslides. · Caravan leader offers fifty more taels. · Three routes: trade road, mountain trail, ravine. · Escort first, then decide.
+
+**Opens:** Story: Han Lie, a frontier hunter
+
+## 358. Beyond the Checkpoint
+*Location: A fortified checkpoint at the edge of the trade roads*
+
+VOLUME 11, CHAPTER 006. The party reached a fortified checkpoint at the edge of the trade roads. Beyond it lay the Shattered Ridge, where the old inspection waystation was said to be. The Checkpoint Commander said beast attacks had increased over the past few months and several trade routes were closed; the waystation was beyond the ridge but the road was dangerous. Hoko and Xiao Yan laid out two routes: the trade road (longer but suitable for wagons, safest) and the narrow mountain trail (faster, with steep climbs and unstable sections); Ya'Xing offered to scout first. A local hunter warned of a large horned beast near the ridge, powerful and territorial, and no one knew whether it was the reason for the recent attacks. Dongyue and Xining prepared medicine, herbs and bandages. Xiyu: "The faster we reach the waystation, the better." Cangyuan: "We take the mountain trail. Hoko and Ya'Xing scout ahead. Xiao Tian helps secure the wagon to the checkpoint." Later Ya'Xing and Hoko reported the trail open but with several climbs, fallen rocks and signs of recent beast activity; the wagons would stay at the checkpoint. The party left the main road and began the ascent into the Shattered Ridge.
+
+**Key events:** A checkpoint commander: several trade routes are closed. · A large horned beast near the ridge. · They take the mountain trail; wagons stay at the checkpoint. · Ahead: the old inspection waystation.
+
+**Opens:** Story: the Shattered Ridge
+
+## 359. The Hunter's Trail
+*Location: The mountain trail through hunting camps*
+
+VOLUME 11, CHAPTER 007 (BATTLE). The party followed the mountain trail through abandoned hunting camps and damaged shelters. At a deserted camp with broken traps they found scattered supplies: "They left in a hurry. The beasts must have attacked recently." They helped a small group of injured hunters and recovered some of their equipment; the hunters offered to show a safer route and explained the beasts are territorial: in packs they defend the high ground. At a narrow pass a pack of spirit wolves attacked from both sides. Xiyu used crimson magic to stop them from surrounding the group, Cangyuan held the center, Ya'Xing drew part of the pack toward the ledge while Xiao Tian stopped them from flanking. After a fierce battle the remaining wolves retreated. The party treated their injuries and checked supplies; the hunters said that beyond that ridge was an old watch platform from which the trail to the inspection waystation is clear. At dusk they reached a high overlook and saw a ruined watch platform in the distance, the first sign they were approaching the old route.
+
+**Key events:** An abandoned hunter camp and a few injured hunters. · Spirit wolves attack from both sides at a narrow pass. · The hunters share the route: an old watch platform. · A ruined watch platform seen at dusk.
+
+**Opens:** Story: the old watch platform in sight
+
+## 360. The Horned Ravager
+*Location: The ruined watch platform on the ridge (boss battle)*
+
+VOLUME 11, CHAPTER 008 (BATTLE). The party reached a ruined watch platform where they found clear signs of a massive beast's territory: broken wagons and scattered equipment confirmed the reports. The horned beast blocked the only practical route forward. The Horned Ravager, a massive spirit beast that rules this part of the ridge, appeared and charged with incredible force, trying to break through the group. "It's coming! Hold your ground!" Xiyu restricted its movement with crimson magic without collapsing the trail; Cangyuan struck at a vulnerable point when it lost momentum; Ya'Xing attacked from the flank, targeting its legs while off balance; Xiao Tian drew its charge away from the narrow ledge; Dongyue coordinated the timing ("Now! Strike together!"); Xining stayed with the injured; Hoko found unstable ground to limit its movement and Xiao Yan spotted a rocky choke point where it could not turn. The party forced the Horned Ravager to overcommit during its charge and defeated it. Afterwards they treated their injuries and secured the trail. They found no signs of artificial control or hidden schemes: the beast's aggression appeared to be territorial. At dusk they saw the old inspection waystation's roofline beyond the ridge. The Thousand-Mile Frontier still held dangers, but the way forward was now open.
+
+**Key events:** The Horned Ravager rules this part of the ridge. · Each companion has a role: barrier, opening, flank, lure, timing, healing, ground, choke point. · No sign of artificial control: its aggression is territorial. · The inspection waystation's roofline at dusk.
+
+**Opens:** Story: the Horned Ravager defeated
+
+## 361. The Forgotten Checkpoint
+*Location: The old inspection waystation*
+
+VOLUME 11, CHAPTER 009. After crossing the Shattered Ridge the party finally reached the old inspection waystation. It was weathered and partially damaged but still usable. "It's old, but the main structure is still strong. We can stay here." Hoko and the others checked the storage rooms, stable and facilities: most supplies were gone but some equipment was usable and the stable only needed repairs. The inspection logs had stopped several years ago, but some mechanisms still worked. Dongyue organised the supplies and suggested rationing; Xining treated the lingering injuries. Xiyu and Cangyuan scouted the surroundings and found them quiet, with no beasts nearby. Tracks showed a small caravan had passed through not long ago, and cooking ashes and discarded provisions showed other travellers were active in the region: it was not a hidden place but part of a regular route. That evening the party discussed their next steps: there were several routes from here, and the northern road was said to lead to a larger settlement but was longer and more dangerous. As night fell a returning scout reported that a nearby settlement had been cut off by a damaged bridge and needed assistance; if they could help, they might also learn more about the routes ahead.
+
+**Key events:** The old inspection waystation is weathered but usable. · Recent tracks and cooking ashes: other travellers are active here. · A northern road to a larger settlement, longer and more dangerous. · A nearby settlement is cut off by a damaged bridge.
+
+**Opens:** Story: a settlement cut off by a damaged bridge
+
+## 362. The Bridge at Red Creek
+*Location: The settlement of Red Creek (battle)*
+
+VOLUME 11, CHAPTER 010 (BATTLE). The party arrived at Red Creek, a small settlement whose bridge had been damaged by storms and recent beast attacks. The wooden bridge was weakened and unsafe; the villagers were repairing it but feared another attack before the work was complete. "We can repair it, but we need more hands. If the bridge collapses, we won't be able to bring in supplies." The party helped with the repairs; Xining treated the injured. Suddenly a pack of spirit beasts charged from the forest, drawn by the noise and the scent of people. Xiao Tian held the front, drawing the beasts away from the workers; Ya'Xing moved on the flank, targeting weak points; Cangyuan and Xiyu coordinated to drive the beasts toward open ground; Hoko and Xiao Yan secured a damaged support before the bridge gave way and Dongyue kept everyone coordinated. After a fierce battle the remaining beasts retreated into the forest and the bridge held. The villagers gave provisions in thanks and shared what they knew about the routes ahead: the route led to a larger frontier market; the bridge was safe for now but travel should be slow, as there were still beasts in the area. With new supplies in hand the party headed back to the waystation with a safer route toward the frontier market.
+
+**Key events:** A bridge weakened by storms and beast attacks. · The party helps the villagers repair it. · The beasts charge from the forest; the bridge holds. · A safer route to the frontier market.
+
+**Opens:** Story: Red Creek and the frontier market route
+
+## 363. The Market Beyond the Ridge
+*Location: The frontier market*
+
+VOLUME 11, CHAPTER 011. The party arrived at a bustling frontier market where merchants, hunters and caravans gathered before venturing into the more dangerous northern routes. They split up to gather supplies and information: Xining bought medicinal herbs; Cangyuan chose a well-balanced blade useful for the mountain routes and, with Hoko, more climbing gear and ropes; Hoko and Xiao Yan studied the regional maps (several mountain paths connect here but the northern road is difficult, with landslides and more beast sightings). Xiyu and Cangyuan took a quiet moment away from the crowds: "It's been a while since we had a chance to walk like this." "Yes. Let's enjoy this moment before the next leg of the journey." Dongyue negotiated with a caravan broker: the old waystation connects to several routes and the northern road leads to a larger frontier settlement but has become difficult to traverse; there have been landslides and the beasts in that area are more aggressive. A convoy would leave in two days and the broker recommended travelling with it. The route options were the Northern Route (landslides, dangerous) and the Secondary Route (longer, safer). The party considered the convoy against going alone, their supplies and everyone's condition. A caravan prepared to depart at dawn, and the party would rest that night and make their decision before the convoy left. The road ahead led deeper into the frontier, with greater challenges yet to come.
+
+**Key events:** A bustling frontier market and a supply run. · Xiyu and Cangyuan walk together away from the crowds. · Northern Route (dangerous) or Secondary Route (longer, safer). · A convoy leaves at dawn.
+
+**Opens:** Story: the frontier market and a convoy at dawn
+
+## 364. The Convoy at Dawn
+*Location: The northern road with a merchant convoy*
+
+VOLUME 11, CHAPTER 012. At dawn the party joined a merchant convoy heading north: travelling with the merchants gave them access to supplies, guides and safer camps along the route. The convoy passed through forests, rivers and narrow mountain roads. The party helped with a badly damaged wheel and drove off smaller spirit beasts that threatened the pack animals. At rest stops they shared information with the merchants and guards (more landslides ahead; a safer camp in the valley, one day's detour), and Xining restocked herbs. Xiyu and Cangyuan sat together away from the crowds: "It feels different travelling with a convoy." "Yes. It gives us time to breathe, even if we must stay alert." Hoko and Xiao Yan studied the terrain (the northern route goes through a narrow but passable pass; if there are more landslides they may need an alternative), and Xiao Tian and Ya'Xing helped the guards set up the night camp and place extra watchers on the ridge. That night a guard noticed the pack animal from the third wagon was missing. They found broken ropes and tracks leading into the forest and prepared to investigate in the morning, aware that something might be following the convoy.
+
+**Key events:** Joining a convoy for supplies, guides and safer camps. · Xiyu and Cangyuan: "It gives us time to breathe." · A pack animal from the third wagon goes missing at night. · Broken ropes and tracks lead into the forest.
+
+**Opens:** Story: a missing pack animal
+
+## 365. The Beast in the Ravine
+*Location: A narrow ravine (battle)*
+
+VOLUME 11, CHAPTER 013 (BATTLE). Following the tracks the party entered a narrow ravine and found the missing pack animal trapped among fallen branches. It was alive but injured. Fresh tracks and claw marks led deeper into the ravine. Before they could free the animal the spirit beast returned to its den. The beast charged, forcing the party into battle on the narrow and unstable terrain. Xiao Tian held the beast's attention, keeping it away from the trapped animal; Ya'Xing used the higher ground to create openings; Cangyuan and Xiyu coordinated their attacks, driving the beast toward open ground; Hoko and Xiao Yan secured a safe path while Dongyue and Xining freed the animal. The beast retreated after suffering heavy attacks, disappearing into the deeper part of the ravine. "Let it go. It's retreating into its den. We shouldn't chase it any further." The party checked the rescued animal (injured, but it would recover) and returned to the convoy before dark; the guards would strengthen the night watch. The ravine's unstable terrain forced the convoy to take a safer route ahead: it was too dangerous for the wagons and they would take a longer, safer path to the north.
+
+**Key events:** The pack animal is trapped but alive. · The beast returns to its den and charges. · It retreats; they do not chase it. · The ravine forces the convoy onto a longer, safer path.
+
+**Opens:** Story: the pack animal rescued
+
+## 366. The Crossing of Falling Stones
+*Location: A mountain crossing*
+
+VOLUME 11, CHAPTER 014. The convoy reached a mountain crossing but recent landslides had blocked the main road: a massive rockslide, and the merchants debated waiting for repairs or taking an alternative route. The party helped assess the terrain: the main road was too dangerous for the wagons and there was a narrow mountain trail passable on foot, but the wagons could not cross safely. Before a decision could be made a fresh rockslide broke loose above the road: "Everyone move! Get the wagons away from the slope!" Xiyu used her magic to shield the workers from the falling debris; Cangyuan and Xiao Tian stabilised the convoy's exposed side; Hoko and Xiao Yan found a safer path along the ridge, narrow but safe on foot; Dongyue coordinated the evacuation (animals to higher ground; check that everyone is accounted for; move the wagons in stages); Xining treated the injured. After a long and dangerous effort the immediate danger passed, but the main road was still blocked. The merchants decided to send the wagons along a longer detour (the lower route, longer but safer, extra days to the next settlement) and thanked the party. The party weighed staying with the convoy against taking the mountain trail ahead to save time; as the sun set they prepared to rest and decide at dawn.
+
+**Key events:** A massive rockslide blocks the main road. · A fresh rockslide: Xiyu shields the workers. · The wagons will take a longer lower route. · Stay with the convoy, or take the faster, more dangerous trail?
+
+**Opens:** Story: the crossing of falling stones
+
+## 367. Two Roads at Dawn
+*Location: The mountain trail above the convoy route*
+
+VOLUME 11, CHAPTER 015. At sunrise the party decided to take the narrow mountain trail on foot while the merchant convoy followed the longer detour. They exchanged route information with the caravan leader and agreed to meet at the northern trading post if circumstances permitted. The caravan leader shared a map: the mountain trail was faster but narrow and dangerous, with landslides and unstable paths; the northern trading post was marked as temporarily closed. The party set out carrying essential supplies. The trail was steep and difficult, with loose stones and narrow ledges; Hoko and Ya'Xing scouted ahead and Xiao Yan identified unstable sections and suggested the higher ridge path, narrower but more stable. Midway they found a stranded courier with an injured horse; Xining treated the horse and Dongyue checked the courier, who said the northern trading post had closed its gates after repeated beast attacks in the past few weeks; they were reinforcing the walls and no travellers were being allowed in. Xiyu: "Those attacks must be getting worse to cause a full closure." After making sure the courier and his horse were safe the party continued along the trail. From a high overlook they spotted smoke rising beyond the northern forest and moved carefully to find out what was going on.
+
+**Key events:** The party takes the mountain trail on foot; the convoy takes the detour. · The northern trading post is closed. · A stranded courier and an injured horse. · Smoke rises beyond the northern forest.
+
+**Opens:** Story: smoke beyond the northern forest
+
+## 368. Smoke Over the Valley
+*Location: A smoking valley with watchfires (battle)*
+
+VOLUME 11, CHAPTER 016 (regenerated; BATTLE). As the party approached the valley they found signs of a recent battle: smoke rose from the watchfires and hostile forces still lingered in the area. The valley was filled with smoke and the remnants of a fight, and they had to move carefully, since more enemies might be nearby. Hoko, with a spyglass, and Xiao Yan saw people ahead: "Not just bandits — an organised group. They're setting up defensive positions. We should avoid a frontal approach." Xiyu: "They're aware of our presence. Stay close and follow the plan." Dongyue would stabilise the team's spiritual energy, and Xining would see to anyone wounded. The hostile group took the high ground. Ya'Xing took the right flank to draw their attention while Xiao Tian created an opening from the left. Cangyuan moved to the front, raising a barrier of force to deflect the falling debris: "Everyone, stay behind me! I'll hold this!" Xiao Tian met the attackers head-on ("They won't get through!"); Xiyu wove crimson magic to disrupt their formation and slow their advance; Ya'Xing followed through, striking from the flank to scatter the rest ("Fall back! Don't let them regroup!"). Once the attackers were driven back, Dongyue and Xining tended the injured. Hoko and Xiao Yan found supplies and camp gear left behind: "They're well-equipped and know this terrain. We should keep moving before they return." The party regrouped to continue through the valley. Xiyu and Cangyuan: "They're organised and well-prepared. We need to be more cautious from here on." "Agreed. Let's keep moving. We still have a long way to go."
+
+**Key events:** Smoke from watchfires and the remnants of a fight. · Not just bandits: an organised group on the high ground. · Cangyuan raises a barrier against falling debris. · Supplies and camp gear left behind: "This isn't a small group."
+
+**Opens:** Story: an organised hostile group driven back in the valley
+
+## 369. The Pass of Broken Pines
+*Location: A snowbound mountain pass blocked by a guardian beast (boss battle)*
+
+VOLUME 11, CHAPTER 017 (regenerated; BATTLE). The party continued through the mountain pass, only to be blocked by a powerful guardian beast awakened by their presence: its body like a mountain and its breath like a winter storm. It let out a thunderous roar that shook the pass. Cangyuan moved first, using his spirit-weaving to deflect the falling rocks ("Keep your positions!"). Xiao Tian drew the beast's attention and pressed the attack from the front ("Over here! Look at me!"). Xiyu wove crimson magic, disrupting the beast's senses and slowing its movements ("Let the crimson moon bind you!"). Ya'Xing attacked from the flank to create an opening ("Now! Strike at its side!"). Hoko and Xiao Yan set anchor points to restrict its movement ("Anchor set! Hold it in place!" "I'll reinforce it. Keep the pressure on!"), while Dongyue and Xining stayed near the rear, healing injuries and maintaining the team's strength. With the beast's movement restricted the party launched a coordinated strike. The guardian bellowed in rage, then retreated deep into the mountains, leaving the pass open but with a clear warning. The path ahead was clear, for now. "That was close. Stay alert — there may be more." "Everyone did well. Let's rest briefly, then move on."
+
+**Key events:** A guardian beast like a mountain, breath like a winter storm. · Anchor points and crimson binding hold it in place. · It retreats deep into the mountains with a clear warning. · "There may be more."
+
+**Opens:** Story: the guardian beast driven from the pass
+
+## 370. Beneath the Watchfires
+*Location: The northern trading post*
+
+VOLUME 11, CHAPTER 018. After driving the guardian beast from the pass, the party reached the northern trading post, its watchfires glowing against the mountains. Guards at the gate checked every traveller: the post was under tightened guard because of recent attacks. The party said they were travellers from the south with an injured man to treat, and a guard led them to the medical tent. Inside, the post was crowded with merchants, hunters and travellers delayed by dangerous roads. The northern routes had become much worse these past few weeks, and even experienced caravans were forced to take detours. No one was certain of the cause: the season, migrating beasts, shrinking food sources, or the weather, the terrain and the increase in travellers all playing a part. Xiao Yan compared the regional map with the party's route record: the old inspection waystation connects to a lesser-used road leading farther north, still accessible but rough, and needing a guide and sufficient provisions. The party agreed to rest, replenish supplies and travel with a guide who knew the terrain. A local guide offered to lead them to the next settlement beyond the northern forest, but first needed help: a supply cart from the post had gone missing on the forest road two days ago, near a stream, in an area with increased beast activity. The party agreed to recover the cart and bring back the driver if possible. That night they prepared for the mission. "Once we recover the cart, our journey north can truly begin."
+
+**Key events:** The post is under tightened guard. · No one agrees on the cause of the beast attacks. · A guide offers to lead them north if they recover a missing supply cart. · They prepare for the forest road.
+
+**Opens:** Story: a missing supply cart on the forest road
+
+## 371. The Lost Supply Cart
+*Location: The forest road (battle)*
+
+VOLUME 11, CHAPTER 019 (regenerated; BATTLE). Early in the morning the party set out with the local guide to find the supply cart that went missing on the forest road. Along the mountain road they found the damaged cart under attack by a group of bandits and wild beasts: the supplies were important to a nearby settlement, so the party stepped in to drive the attackers away and help the injured driver. "Take everything! Don't let them escape!" Xiao Tian moved to hold the front, drawing the bandits' attention ("Come at me! Keep them away from the cart!"); Cangyuan supported from the side, deflecting the incoming attacks ("Stay behind me! Focus on the main group!"); Ya'Xing struck from the flank to scatter the bandits ("From the left! Don't let them regroup!"); Xiyu wove crimson magic to slow the beasts and break their coordination ("The crimson moon binds you!"). Once the area was secure, Hoko and Xiao Yan checked the driver (badly hurt but alive; Xiao Yan checked for internal injuries) and worked together to repair the cart and reinforce the harness. Dongyue and Xining tended the injured driver (his breathing steadier, the wounds deep but he would recover; herbal salve and bandages). With the attackers driven away the party regrouped ("The supplies are safe. We should move before more bandits return.") and continued, more cautious after the encounter. By evening the party returned to the northern trading post with the recovered cart.
+
+**Key events:** Bandits and beasts surround the damaged cart. · The driver is badly hurt but alive. · The cart is repaired and the harness reinforced. · "We should move before more bandits return."
+
+**Opens:** Story: the supply cart recovered
+
+## 372. The Road Through the Pines
+*Location: A pine forest road at night (battle)*
+
+VOLUME 11, CHAPTER 020 (BATTLE). Under the cover of night the party continued along the mountain road. The dense pine forest made the path difficult and the risk of ambush remained high. Not long after they left the last rest point, Hoko and Xiao Yan spotted people ahead among the trees: several, maybe more, not travellers, waiting in the narrow section. Bandits attacked from both sides, using the darkness to their advantage. Xiao Tian moved to the front and met the attackers head-on; Cangyuan covered the flank to stop the enemies breaking through; Ya'Xing and Xiyu struck together and scattered the remaining bandits. A second wave appeared, led by a ferocious mountain beast. Xiao Tian dodged its charge and kept it away from the others, Xiyu used crimson magic to disrupt its senses and create an opening, and Ya'Xing seized the moment to strike at its weak point. With the beast defeated, the remaining bandits retreated into the trees. Hoko and Xiao Yan checked the area to make sure no more attackers were nearby ("Still be careful. There may be more deeper in the forest."), and Dongyue and Xining tended the injured. After a brief rest the party regrouped to continue through the forest under the bright moon. "We can't let them ambush us again." "Let's move. The sooner we leave this section, the better."
+
+**Key events:** Bandits wait in the narrow section of the pine road. · A second wave led by a ferocious mountain beast. · The beast falls; the bandits retreat. · "There may be more deeper in the forest."
+
+**Opens:** Story: an ambush in the pines
+
+## 373. A Warm Welcome
+*Location: Qingshan Settlement*
+
+VOLUME 11, CHAPTER 021. After a long journey through the forest the party arrived at a settlement beyond the pines. Surrounded by fields and mountains, the village was smaller than the trading post but lively and warm. The villagers welcomed them with cautious curiosity ("Welcome to Qingshan Settlement! You must be tired from your journey."). The party restocked food, medicine and other supplies at the local market (extra medical supplies, rope and repair tools). The village head explained that the settlement relies on nearby farms and a single road; beast attacks had increased and deliveries had become unreliable, and they did their best to protect the fields but did not have enough people to patrol everything. The villagers shared what they had seen: the attacks are not every day but have become more frequent in the past few weeks, larger herds pass near the fields, especially at dawn and dusk, and it looks like the beasts are moving through this region, not just targeting the village. The village head asked the party to escort a group of farmers to the outlying fields the next day; the party agreed, as it would also give them a chance to learn more about the surrounding terrain. The next morning the farmers gathered outside the village and set out, a half-day's travel to the fields. Along the way they pointed out the southern fields, where the beasts had trampled a lot of crops, and fences that were repaired but kept being broken, with fresh tracks every morning. In the distance the party saw signs of a large herd: recent tracks and more damage ahead. "It looks like a large herd passed through. We may still be nearby."
+
+**Key events:** A smaller, warmer settlement beyond the pines. · The attacks are moving through the region, not aimed at the village alone. · The party agrees to escort farmers to the outlying fields. · Signs of a large herd ahead.
+
+**Opens:** Story: Qingshan Settlement and a herd on the fields
+
+## 374. The Fields at the Forest's Edge
+*Location: The outlying fields (battle)*
+
+VOLUME 11, CHAPTER 022 (BATTLE). With the villagers the party arrived at the outlying fields. The morning was peaceful, but signs of recent beast activity were everywhere: damaged fences and trampled crops showing the path of the herd. While the farmers gathered what could be saved, a herd of spirit beasts emerged from the forest. They were not attacking the village directly, but they were moving through the fields: "It's a whole herd! They're heading toward the valley!" Dongyue organised the villagers and kept everyone at a safe distance ("Everyone retreat to the east side! Take the injured with you!"); Xiao Tian and Ya'Xing drew the beasts away from the crops, using speed and agility to guide the herd's movement; Cangyuan held the defensive line, blocking dangerous approaches; Xiyu used controlled crimson magic to disrupt the herd's movement; Xining treated a farmer injured during the evacuation; Hoko and Xiao Yan found a narrow route to higher ground that let the remaining farmers escape safely. After a tense struggle the herd gradually moved on toward the valley. The party helped the farmers repair the worst damage and gather what could still be used. A farmer shared that the herd had been moving north toward the broad valley, where there is a large mineral area, and that they had seen more beasts in that direction these past few weeks, perhaps a seasonal migration. The villagers thanked the party and gave supplies for the journey. As the sun set the party prepared to continue toward the valley: "The herd is heading toward that valley. That must be our next destination."
+
+**Key events:** Damaged fences and trampled crops show the herd's path. · A whole herd heads toward the valley. · The farmers are evacuated to the east side. · A broad valley with a large mineral area is the next destination.
+
+**Opens:** Story: the herd driven on to the valley
+
+## 375. The Old Quarry Road
+*Location: An old quarry road (battle)*
+
+VOLUME 11, CHAPTER 023 (BATTLE). Following the farmers' directions the party travelled toward a broad valley known for its mineral deposits. Along the way they found signs of an old quarry road: abandoned carts and broken equipment, left in a hurry. The road could shorten their journey north, but it was blocked by fallen timber and loose stone; the path beyond still looked passable on foot. As they began clearing the blockage a territorial stonehide beast appeared, guarding the quarry entrance. Xiao Tian drew the beast's attention using speed and agility ("Over here! Keep your focus on me!"); Ya'Xing and Cangyuan struck when its armour shifted ("Now! Its flank is open! Strike together! Don't let it recover!"); Xiyu used controlled crimson magic to limit its movement; Hoko and Xiao Yan found loose ground and a way to force the beast to retreat. The beast withdrew: "It's leaving! Don't pursue it." After it retreated the party inspected the quarry road: clear enough to pass, with more old structures ahead but the road remaining stable and safe enough to continue on foot. They decided to take the quarry road rather than return to the longer trade route, accepting the risk as long as they stayed cautious. Beyond the quarry the companions saw a long line of mountains stretching toward the frontier's unexplored interior. "That must be the way north." "The road ahead won't be easy, but we're getting closer to the interior." They would rest a little, then continue the next day.
+
+**Key events:** An abandoned quarry road blocked by timber and stone. · A stonehide beast guards the entrance. · It is driven off, not pursued. · They choose the quarry road over the longer trade route.
+
+**Opens:** Story: the quarry road north
+
+## 376. The Valley of Iron
+*Location: A mining settlement in a valley*
+
+VOLUME 11, CHAPTER 024. After leaving the old quarry road the party descended into a broad valley rich in mineral deposits. Ahead lay a mining settlement, where ore from the mountains is gathered and traded with the northern regions. It was busier than expected despite the recent beast activity: "Mining is difficult now, but we can't stop. This valley provides the ore that keeps our settlements alive." The party learned the current situation from local miners and merchants: spirit beasts had been crossing the roads more often, some mines had already stopped operations, the beasts appeared in several areas not just one route, and many tools and supplies had been lost on the way. A group of miners arrived with a damaged cart, having barely escaped an attack near the eastern trail; the beasts destroyed their cart and took much of their ore, and the road ahead was blocked by a dangerous beast. A veteran hunter offered the party a contract: a particularly dangerous beast had claimed the road ahead and attacked any carts that passed, even forcing groups of hunters to retreat; if they cleared that stretch of road, the miners would provide supplies and information about the area beyond. Xiao Tian: "This will help the miners and make the route safer for everyone. We accept the contract." The miners shared a map and marked the road ahead: the beast is usually seen near a narrow pass where the road skirts the cliffs, and many fallen rocks make it easier for the beast to ambush travellers; beyond the pass lay the old military road that leads to the Fallen Garrison. The party restocked food, medical supplies and repair tools and used the chance to gather more information about the Fallen Garrison. As evening fell they prepared to depart at dawn. "Stay alert. This beast is more dangerous than the ones we've faced so far."
+
+**Key events:** A mining settlement, busier than expected. · A veteran hunter's contract to clear the road of a dangerous beast. · A narrow pass beyond which the old military road leads to the Fallen Garrison. · "More dangerous than the ones we've faced so far."
+
+**Opens:** Story: a contract to clear the road to the Fallen Garrison
+
+## 377. The Crimson-Horned Sovereign
+*Location: The narrow cliff pass (boss battle)*
+
+VOLUME 11, CHAPTER 025 (BATTLE). The arrival of the crimson-horned beast shattered the fragile calm of the frontier. It emerged from the mist, its presence a harbinger of disaster. Xiyu: "This beast... It feeds on chaos." "Then let it taste our resolve." Cangyuan: "Hold the line. I will break its advance." Dongyue: "Everyone, maintain formation. Do not let it surround us." Xiao Tian: "I'll draw its attention!" Ya'Xing: "Flank from the east!" Hoko: "I'll support you from the rear!" Xiao Yan: "I'll cut off its escape route!" Xining: "I'll be ready if anyone is injured!" Together they stood against the crimson storm. After a hard fight the party drove the Crimson-Horned Sovereign from the pass and the road reopened toward the old military road.
+
+**Key events:** A crimson-horned beast "feeds on chaos". · Each companion takes a role: barrier, lure, flank, support, escape route, healing. · "Together, they stand against the crimson storm." · The road is reopened.
+
+**Opens:** Story: the Crimson-Horned Sovereign driven from the pass
+
+## 378. The Fallen Garrison
+*Location: The Fallen Garrison*
+
+VOLUME 11, CHAPTER 026. Following the reopened road the party arrived at the remains of the Fallen Garrison, a once-important military outpost. Its outer walls had collapsed in places, but sections of the old barracks and watchtowers still stood. "It's been a long time since this place was abandoned. Look at the size of the walls... This must have been an important garrison." They found abandoned equipment and signs that spirit beasts regularly passed through, and the defensive mechanisms had been damaged. Hoko and Xiao Yan inspected the remaining structures while the others secured the approach: the marks are part of an old defensive formation, with some components missing. In the central courtyard they discovered an old formation embedded in the garrison's foundations, damaged but still active, and its pulses felt unstable: "No wonder the surrounding area has been affected." Several key components were missing or broken and the energy pulsed irregularly. They could not determine the full purpose yet, but it might explain why beast activity in the region had increased. They found records etched into stone tablets and damaged ledgers mentioning a defensive network along the northern frontier, some sections missing but part of a larger system. As they explored further a sudden pulse rippled through the courtyard and the ground shook, loose stones falling from the walls: "Look out! The formation just flared to life!" The pulse faded, leaving the area unstable but not fully activated. They set up a temporary camp outside the most unstable section. "There is still a lot we don't know, but we have a concrete problem to investigate. Tomorrow we'll take a closer look at the formation and its missing components."
+
+**Key events:** The garrison's walls fallen in places; barracks and towers still stand. · An old defensive formation in the courtyard, damaged but active and unstable. · Tablets mention a defensive network along the northern frontier. · The formation flares; the party camps outside it.
+
+**Opens:** Story: the Fallen Garrison and its unstable formation
+
+## 379. The Pulse Beneath the Stones
+*Location: The Fallen Garrison, courtyard and lower section*
+
+VOLUME 11, CHAPTER 027. The morning after the sudden pulse the party returned to the Fallen Garrison to investigate the formation and search for the source of the disturbance. The outer walls were damaged but the central courtyard remained accessible. In the courtyard they examined the formation more closely: the pulse from yesterday was stronger than expected, several components were missing and some of the stones broken, and the energy flow was unstable and not functioning properly. Hoko and Xiao Yan inspected the surrounding defensive mechanisms: many damaged, but some still with useful components. Dongyue and Xining assessed the risks before entering the lower section, noting signs of recent energy surges; Xining prepared healing medicine. Xiyu and Cangyuan helped secure the courtyard while the others checked the lower access route; Xiao Tian and Ya'Xing cleared fallen masonry near a collapsed section of the barracks and found a passage blocked by loose stones, a way to a lower level. After clearing the debris they found a hidden stairway leading beneath the barracks, sealed for a long time but still passable. They descended into the lower section: corridors used for storage and maintenance, with some supplies left behind but mostly rotted over the years, and old supply chambers and records related to the garrison's former operations. Military supplies and tools for maintaining the formation confirmed that the garrison was more than just a watch post. A mural in the corridor showed the garrison as part of a wider defensive network: it was connected to other outposts along the northern frontier, and these formations worked together to protect the roads and settlements. Deeper inside they found a sealed maintenance door at the end of a corridor, bearing the same formation pattern as the one above. "This must lead to the control section." Suddenly a fresh pulse shook the corridor, causing dust to fall from the ceiling.
+
+**Key events:** The pulse is stronger than expected. · A hidden stairway beneath the barracks. · A mural of a wider defensive network along the northern frontier. · A sealed maintenance door, and a fresh pulse.
+
+**Opens:** Story: the lower level and the sealed maintenance door
+
+## 380. The Broken Circuit
+*Location: The garrison's control chamber*
+
+VOLUME 11, CHAPTER 028. The party opened the sealed maintenance door and entered a chamber that housed the garrison's control mechanisms: a complex system that once channelled spiritual energy along the northern frontier. "This must be the garrison's control chamber. Many parts are damaged, and some components are missing." Hoko and Xiao Yan examined the mechanisms, which once regulated the flow of spiritual energy to the defensive network; several sections had deteriorated and one component was missing. Dongyue studied the inscriptions: the system helped protect the roads and settlements along the northern frontier and channelled energy from a spiritual spring to multiple garrisons. Xining checked the remaining components and assessed the risks: the energy was unstable, and if it overloaded the entire structure could be damaged; they needed to stabilise the active components first before going further. The party worked together to stabilise the mechanisms ("I'll hold this in place!" "Adjust the flow here!" "Keep the rhythm steady. Let the energy disperse gradually!" "I'll contain the surging energy on this side!"), with Cangyuan deflecting falling debris while the others focused on the adjustments. After a tense effort the immediate instability was brought under control: the energy flow stabilised for now, but the system was only partially functional, not a complete repair. They examined the missing component: it was key to regulating the network, and they could not tell who removed it or when, but it was also causing the current disturbances. Surviving records confirmed that this garrison was part of a larger defensive network across the northern frontier and that the same formation pattern was used at other locations. A final inscription pointed to the source of the energy fluctuations: a spiritual spring beneath the garrison; if the source was unstable it would explain the increasing beast activity in the region. The party prepared to explore the path to the spring: "The spring must be below here." "We should rest, prepare our supplies, and proceed carefully tomorrow." "There's still much we don't know, but we have a clear lead."
+
+**Key events:** A control chamber that once channelled energy along the frontier. · The party stabilises the surging mechanisms together. · A key regulating component is missing; who removed it is unknown. · A spiritual spring beneath the garrison may explain the beast activity.
+
+**Opens:** Story: a spiritual spring beneath the garrison
+
+## 381. The Unstable Current
+*Location: The ancient spiritual spring beneath the garrison*
+
+VOLUME 11, CHAPTER 029. Following the clues from the garrison, the party descended into the underground passage and reached the ancient spiritual spring: a vast spring at the centre of a cavern, its waters beautiful but turbulent and filled with unstable spiritual energy. "The water is unusually agitated. It's not just a natural spring. It's connected to the garrison's formation network." Cangyuan examined the ancient diagrams carved into the stone: the spring's flow feeds multiple formations along the frontier, including the fallen garrison, and something is disrupting the flow; the control seal here is damaged. Dongyue sensed the energy in the water: imbalanced, with surges as if something were forcing the flow off course. Xiao Yan found traces of dark mineral deposits mixed with the spring's crystals: "This kind of residue isn't natural. It looks like someone has been interfering with the flow." Xining collected samples from the water and the nearby herbs (too much restless energy; purifying herbs from higher altitudes would be needed to stabilise it completely). Hoko inspected the damaged mechanisms: the main control seal is missing a core component, the remaining parts are still functional, but a replacement is needed to restore it fully. Xiao Tian checked the surrounding paths (several passages collapsed and unstable; signs that spirit beasts had come this way recently) and Ya'Xing kept watch ("The air is heavy with beast energy. We should expect interference once we start the repairs."). The party agreed: they could not stabilise the flow without the missing component, so they would secure the area, gather materials and look for clues about who removed it. As they prepared a temporary camp the waters of the spring suddenly surged, sending ripples through the cavern. "It seems the underground spring is far from calm. Their investigation has only just begun."
+
+**Key events:** A vast underground spring tied to the garrison's formation network. · The control seal is missing a core component. · Dark mineral residue: someone has been interfering with the flow. · The spring surges as they set up camp.
+
+**Opens:** Story: the ancient spiritual spring
+
+## 382. When the Beasts Descend
+*Location: A nearby settlement under attack at night (battle)*
+
+VOLUME 11, CHAPTER 030 (BATTLE). As the party prepared the repairs, a large group of spirit beasts suddenly descended from the mountains, threatening a nearby settlement. Driven by the unstable current from the underground spring, the beasts had left their usual territories and were moving closer to human settlements. The party rushed to the settlement to warn the villagers and organise the defence ("The beasts are coming from the northern ridge! We need to evacuate the elders and children to the inner village!"). Dongyue coordinated the evacuation and assigned groups to different areas; Cangyuan worked with the local hunters to set up defensive formations (archers on the higher ground, barriers to slow the beasts, hold the main gate); Xiyu used her magic to strengthen the defensive barriers; Xining and the medics tended the injured while assisting with the evacuation; Hoko and Xiao Yan scouted the surrounding areas to track the beasts' movements ("There are more coming from the east. It looks like they're being driven in this direction."). Xiao Tian and Ya'Xing held the front line with the hunters and drove back the first wave. A second wave surged forward, stronger and more aggressive than the first and larger than expected; the hunters and villagers fought together to defend their home. During a short pause the party assessed the situation: the beasts kept coming, and this was not just a small migration but far more than usual. "We can't stop them all until the spring is stabilised. We need to buy more time. Let's hold for now and protect the villagers. Once the repairs are complete, the flow should calm down and the beasts will retreat." The night was long and the battle continued, the party and the villagers standing together and waiting for a chance to turn the tide.
+
+**Key events:** A large group of spirit beasts descends on a settlement. · Evacuation, barriers and the hunters' line. · A second wave, larger and more aggressive. · "We can't stop them all until the spring is stabilised."
+
+**Opens:** Story: the settlement held through the night
+
+## 383. The Mountain Devourer
+*Location: The settlement (boss battle)*
+
+VOLUME 11, CHAPTER 031 (BATTLE). As the second wave of beasts was held back, a colossal spirit beast emerged from the depths: the Mountain Devourer, drawn by the unstable current of the underground spring, far larger and more dangerous than the previous beasts, with a body like a moving mountain. The party quickly assessed it: "It feeds on the spiritual current from the spring. We must disrupt its connection. Its core is protected by layers of stone and dark crystals. We need to break the outer shell first. It's extremely aggressive. We have to keep the villagers away and work together." The beast unleashed a massive attack that shook the mountains ("Everyone get down!"). Xiyu used her magic to weaken it, binding its movements; Dongyue and Xining worked together to counter its dark energy ("I'll disrupt the corrupted energy around its core." "I'll keep everyone stable."); Cangyuan and Ya'Xing targeted the beast's armour with coordinated attacks, Ya'Xing following up with a Skyshard strike; Hoko and Xiao Yan took the higher ground and found the crystal veins through which the current flowed, so that collapsing one might break its link to the spring; Xiao Tian led a group of hunters in a diversion attack to keep the beast's attention away from the village. After a fierce battle the party broke part of the beast's armour ("There! It's exposed! Hit the core!") and with a final combined attack severed its connection to the spring. The Mountain Devourer let out a final roar before collapsing, its body turning to stone. The spiritual current gradually calmed and the beast's energy faded away; with the immediate threat gone, the party could finally complete the repairs and stabilise the underground spring.
+
+**Key events:** A colossal spirit beast, a body like a moving mountain, feeds on the spring's current. · Its core is armoured in stone and dark crystals. · The party severs its link to the spring through the crystal veins. · The Mountain Devourer collapses and turns to stone.
+
+**Opens:** Story: the Mountain Devourer defeated
+
+## 384. A Road Reopened
+*Location: The underground spring and the frontier (end of Volume 11)*
+
+VOLUME 11, CHAPTER 032 (finale). After the Mountain Devourer was defeated, the party returned to the underground spring. The water was calmer now and the violent surges had stopped; the spiritual current still flowed strong but was no longer chaotic. They could finally complete the repairs and stabilise the garrison's formation. Dongyue examined the formation, comparing the spiritual flow with the original diagrams: the main flow was stabilised but the formation was still incomplete, and without the missing component they could not fully restore it, though they could create a stable temporary substitute. Cangyuan compared the damaged inscriptions with the records from the garrison: the beast's connection had been severed, but this part of the network remained damaged, and they could reinforce the surrounding channels to stabilise the flow for now. Hoko repaired the control mechanism and secured the seals; Xiao Yan and Xiao Tian secured the unstable maintenance passages; Ya'Xing helped redirect the remaining energy with the Skyshard; Xining prepared purifying herbs to cleanse the residual impurities (to be added over the next few weeks); Xiyu used her crimson magic to contain a final surge. With everyone's efforts combined the repair was completed: the substitute was in place and the flow was stable. It would not last forever, but it was enough to keep the garrison and the frontier safe for now. The beasts were no longer being driven into human territory and the roads would become safe again. In the following days the frontier began to recover: hunters reopened the mountain paths, merchants resumed their journeys and villagers repaired their homes ("Thank you for staying with us. You've helped more people than you know."). The party found a surviving registry in the garrison's archives with a record of a distant storehouse where replacement components were once kept: it gave a location but no explanation of why the original component was missing. "We'll leave this question for now." Xiao Tian, laughing: "A road without something trying to eat us. I almost miss the excitement." "Don't get used to it. The day is still young." At dawn the party prepared to depart. The thousand-mile frontier had tested their strength, their patience, and their trust in one another. Now its roads were open again, and beyond them, another journey awaited. End of Volume 11: The Thousand-Mile Frontier.
+
+**Key events:** A temporary substitute core stabilises the flow. · The frontier begins to recover. · A registry points to a distant storehouse for replacement components; why the component vanished is not explained. · "The day is still young." End of Volume 11.
+
+**Opens:** Story: Volume 11 complete
+

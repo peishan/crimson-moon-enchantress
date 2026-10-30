@@ -20,25 +20,133 @@ const ENEMIES = {
     moves:[{n:'Stone Fist',pow:1.2},{n:'Warding Pulse',pow:.9,spell:true,all:true}],drops:[{id:'rift_shard',chance:.25}],desc:'A construct left to guard old Muxue vaults.'},
   rift_wraith:{n:'Rift Wraith',icon:'👻',hp:95,atk:7,mag:17,def:6,spd:12,xp:50,gold:24,traits:['magic'],
     moves:[{n:'Void Touch',pow:1.1,spell:true},{n:'Wail',pow:.8,spell:true,all:true,fx:[{k:'slow',d:2}]}],drops:[{id:'rift_shard',chance:.4}],desc:'Something that slipped through when the gates opened.'},
-  ice_golem:{n:'Ice Golem',icon:'🧊',elite:true,hp:210,atk:18,mag:0,def:15,spd:5,xp:80,gold:40,
+  ice_golem:{n:'Ice Golem',icon:'🧊',elite:true,hp:170,atk:16,mag:0,def:15,spd:5,xp:80,gold:40,
     moves:[{n:'Glacial Smash',pow:1.3},{n:'Frozen Grip',pow:.8,fx:[{k:'bind',d:1}]}],drops:[{id:'ice_crystal',chance:.7}],desc:'A walking slab of mountain ice.'},
+  /* ---- Ice Temple depths (gameplay filler tied to the temple map's levels; NOT story events) ---- */
+  frost_stalker:{n:'Frost Stalker',icon:'🐆',hp:110,atk:17,mag:0,def:8,spd:17,xp:52,gold:26,
+    moves:[{n:'Ice Fang',pow:1.1},{n:'Pounce',pow:1.6},{n:'Stalking Chill',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'ice_crystal',chance:.35}],desc:'A pale hunter that prowls the temple corridors.'},
+  icicle_snare:{n:'Icicle Snare',icon:'🪤',hp:90,atk:14,mag:6,def:14,spd:6,xp:46,gold:22,
+    moves:[{n:'Falling Icicles',pow:1.2,all:true},{n:'Frozen Trap',pow:.8,fx:[{k:'bind',d:1}]}],drops:[{id:'ice_crystal',chance:.4}],desc:'A trap mechanism that fights back.'},
+  maze_wraith:{n:'Maze Wraith',icon:'💨',hp:105,atk:8,mag:19,def:7,spd:13,xp:56,gold:28,traits:['magic'],
+    moves:[{n:'Cold Drain',pow:1.1,spell:true,fx:[{k:'silence',d:1}]},{n:'Wail',pow:.8,spell:true,all:true}],drops:[{id:'rift_shard',chance:.3}],desc:'A restless chill that wanders the sealed corridors.'},
+  horned_beast:{n:'Horned Beast',icon:'🦬',elite:true,hp:210,atk:19,mag:0,def:14,spd:8,xp:96,gold:50,
+    moves:[{n:'Horn Charge',pow:1.5},{n:'Ground Slam',pow:.9,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.8},{id:'ice_crystal',chance:.5}],desc:'One of the arena\'s two horned beasts.'},
+  cave_crawler:{n:'Cave Crawler',icon:'🕷️',hp:120,atk:18,mag:0,def:10,spd:12,xp:60,gold:30,
+    moves:[{n:'Venom Bite',pow:1.1,fx:[{k:'burn',d:2}]},{n:'Web Shot',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'frost_herb',chance:.4}],desc:'Lives in the dark below the temple.'},
+  hoard_mimic:{n:'Hoard Mimic',icon:'📦',elite:true,hp:180,atk:18,mag:8,def:16,spd:7,xp:90,gold:90,
+    moves:[{n:'Snapping Lid',pow:1.4},{n:'Gold Lure',pow:.8,fx:[{k:'charm',d:1}]}],drops:[{id:'spirit_draught',chance:.4},{id:'moonlit_tonic',chance:.4}],desc:'It was never a chest.'},
+  /* ---- Volume 4 training (gameplay filler; NOT story events): the Commanders' Trial Ground and the Xuancang Slopes ---- */
+  sparring_construct:{n:'Sparring Construct',icon:'🛡️',hp:120,atk:14,mag:0,def:12,spd:8,xp:54,gold:26,
+    moves:[{n:'Training Strike',pow:1.1},{n:'Guard Break',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'ice_crystal',chance:.3}],desc:'A practice partner the temple guard drills against. It hits honestly and never holds a grudge.'},
+  snowfield_ram:{n:'Snowfield Ram',icon:'🐏',elite:true,hp:190,atk:17,mag:0,def:13,spd:9,xp:84,gold:42,
+    moves:[{n:'Horn Rush',pow:1.4},{n:'Stamp',pow:.8,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'frost_herb',chance:.3}],desc:'A heavy mountain ram that holds the high slopes above the temple.'},
+  ridge_yeti:{n:'Ridge Yeti',icon:'🦍',elite:true,hp:200,atk:18,mag:0,def:11,spd:10,xp:88,gold:44,
+    moves:[{n:'Maul',pow:1.3},{n:'Roar',pow:.7,all:true,fx:[{k:'slow',d:2}]}],drops:[{id:'wolf_pelt',chance:.6},{id:'ice_crystal',chance:.4}],desc:'A shaggy giant of the ridgeline: wary, strong and easy to avoid for anyone who does not go looking.'},
+  /* ---- Volume 3 revised arc (comics 013, 014, 017): the formation's manifestations and the estate guardian ---- */
+  formation_manifestation:{n:'Formation Manifestation',icon:'🐺',elite:true,hp:210,atk:17,mag:15,def:11,spd:11,xp:110,gold:55,traits:['magic'],
+    moves:[{n:'Spirit Maw',pow:1.3},{n:'Pillar Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.5}],desc:'A beast of spiritual energy raised by the disturbed formation. Magic works well on it.'},
+  awakened_manifestation:{n:'Awakened Manifestation',icon:'🐲',boss:true,hp:380,atk:19,mag:18,def:12,spd:10,xp:180,gold:100,traits:['magic'],
+    moves:[{n:'Spirit Maw',pow:1.3},{n:'Pillar Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Core Strike',pow:1.4,spell:true}],
+    phases:[{at:.5,msg:'The energy spreads: the manifestation surges!',atk:1.25}],drops:[{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'The formation\'s awakening, drawn to its own centre.'},
+  estate_guardian:{n:'Estate Guardian',icon:'🗿',boss:true,hp:460,atk:22,mag:6,def:16,spd:6,xp:220,gold:120,traits:['layered'],
+    moves:[{n:'Crushing Fist',pow:1.5},{n:'Defensive Pulse',pow:.8,all:true,fx:[{k:'slow',d:1}]},{n:'Core Slam',pow:1.7}],
+    phases:[{at:.5,msg:'Exposed points glow: the guardian\'s plating cracks!',atk:1.2}],drops:[{id:'ice_crystal',chance:1},{id:'moonlit_tonic',chance:.5}],desc:'A massive defensive construct. Its outer plating halves damage until stripped; target the exposed points.'},
+  /* ---- Volume 4 revised (comic 006): the Ice Temple guardian. A different construct from the Volume 3 estate guardian: no plating, it channels frost through its core ---- */
+  ice_temple_guardian:{n:'Ice Temple Guardian',icon:'🧊',boss:true,hp:520,atk:21,mag:20,def:13,spd:8,xp:240,gold:130,traits:['magic'],
+    moves:[{n:'Glacial Halberd',pow:1.4},{n:'Frost Channel',pow:.9,spell:true,all:true,fx:[{k:'slow',d:2}]},{n:'Core Surge',pow:1.5,spell:true}],
+    phases:[{at:.5,msg:'Its core flares: the frost flow quickens!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient guardian of the Ice Temple whose strikes carry frost. Magic that breaks its flow works well.'},
+  /* ---- Volume 4 upper maze (comics 017, 020): spiritual beasts driven into a frenzy ---- */
+  frenzied_spirit_beast:{n:'Frenzied Spirit Beast',icon:'🐺',elite:true,hp:230,atk:19,mag:12,def:11,spd:12,xp:120,gold:60,traits:['magic'],
+    moves:[{n:'Frenzied Bite',pow:1.4},{n:'Howl',pow:.8,spell:true,all:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.7},{id:'rift_shard',chance:.4}],desc:'A spiritual beast driven into a frenzy by something deeper in the maze.'},
+  /* ---- Volume 5 (comic 018): the waystation guardian, bound to the four commanders' insignias ---- */
+  waystation_guardian:{n:'Waystation Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:12,def:17,spd:6,xp:300,gold:150,traits:['layered'],
+    moves:[{n:'Crushing Fist',pow:1.5},{n:'Core Pulse',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Stone Sweep',pow:1.3}],
+    phases:[{at:.5,msg:'The second layer pulses: the guardian\'s core draws more energy!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient stone construct bound to the four commanders\' insignias. Its outer layer halves damage until stripped; disrupt its four points.'},
+  /* ---- Volume 6 comic 016: the chamber guardian that unfolds from the walls ---- */
+  chamber_guardian:{n:'Chamber Guardian',icon:'🗿',boss:true,hp:680,atk:25,mag:14,def:17,spd:7,xp:320,gold:160,traits:['layered'],
+    moves:[{n:'Program Strike',pow:1.5},{n:'Ring Resonance',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Gear Crush',pow:1.4}],
+    phases:[{at:.5,msg:'The central ring descends: the guardian\'s program accelerates!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'An ancient guardian that unfolds from the walls of the Chamber of Instruments, following an old program. Its outer plating halves damage until stripped.'},
+  /* ---- Volume 4 roadmap (comic 018): the maze guardian ---- */
+  maze_minotaur:{n:'Maze Minotaur',icon:'🐂',boss:true,hp:600,atk:24,mag:6,def:15,spd:8,xp:260,gold:140,
+    moves:[{n:'Horned Charge',pow:1.6},{n:'Labyrinth Stomp',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rending Gore',pow:1.4}],
+    phases:[{at:.5,msg:'The minotaur bellows and charges blindly!',atk:1.3}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:1},{id:'spirit_draught',chance:.5}],desc:'The guardian of the upper maze: it guards the passage and can be subdued, not only slain.'},
+  /* ---- Volume 2 road bounties (gameplay; the Red Lantern shadow and anchor are from V2 comic 015) ---- */
+  red_lantern_shadow:{n:'Red Lantern Shadow',icon:'🏮',hp:150,atk:11,mag:10,def:7,spd:11,xp:150,gold:80,traits:['magic','layered'],
+    moves:[{n:'Tangled Threads',pow:1.1},{n:'Spirit Drain',pow:.7,spell:true,fx:[{k:'drain',v:.25}]},{n:'Red Core Pulse',pow:.6,spell:true,all:true}],drops:[],desc:'A faceless shadow of tangled black threads around a pulsing red core. Its outer layer reacts to spiritual energy and halves the damage it takes; expose the core (cleansing powder, a strip or a diagnosis) or wait for the layer to crack (round 3).'},
+  corrupted_anchor:{n:'Corrupted Anchor',icon:'🔻',hp:70,atk:4,mag:8,def:8,spd:4,xp:60,gold:30,traits:['magic'],
+    moves:[{n:'Black Filament',pow:.5,spell:true}],drops:[],desc:'The corrupted anchor buried beneath the road that feeds the shadow.'},
+  road_shade:{n:'Road Shade',icon:'👤',hp:80,atk:11,mag:10,def:6,spd:10,xp:40,gold:20,traits:['magic'],
+    moves:[{n:'Chill Touch',pow:1,spell:true},{n:'Thread Snare',pow:.7,fx:[{k:'slow',d:2}]}],drops:[{id:'imp_ash',chance:.4}],desc:'A smaller road disturbance: a flicker of cold that follows travellers after dark.'},
   imp:{n:'Imp',icon:'👺',hp:60,atk:10,mag:11,def:5,spd:13,xp:32,gold:15,traits:['magic'],
     moves:[{n:'Claw',pow:1},{n:'Hex Spark',pow:1.2,spell:true}],drops:[{id:'imp_ash',chance:.5}],desc:'A lesser demon that clings to the sick.'},
   /* STORY (chapter 13): the imp afflicting Wang Xi'er */
   afflicting_imp:{n:'The Afflicting Imp',icon:'😈',boss:true,hp:260,atk:12,mag:14,def:7,spd:11,xp:120,gold:60,traits:['magic'],
     moves:[{n:'Fever Claw',pow:1.1},{n:'Hex Spark',pow:1.2,spell:true},{n:'Sickening Cackle',pow:.7,spell:true,fx:[{k:'slow',d:2}]}],
     phases:[{at:.5,msg:'The imp shrieks and clings tighter to its host!',atk:1.2}],drops:[{id:'imp_ash',chance:1}],desc:'A small, spiteful imp that fed on Wang Xi\'er\'s fever.'},
+  /* ---- Volume 8 (comic 005): the thread-driven puppet in the Linzhou workshop ---- */
+  thread_puppet:{n:'Thread-Driven Puppet',icon:'🪆',boss:true,hp:520,atk:23,mag:10,def:15,spd:9,xp:260,gold:140,traits:['layered'],
+    moves:[{n:'Jointed Strike',pow:1.4},{n:'Lunge',pow:1.2},{n:'Thread Snap',pow:.8,spell:true,fx:[{k:'bind',d:1}]}],
+    phases:[{at:.5,msg:'A second thread draws taut: the puppet\'s movements sharpen!',atk:1.25}],drops:[{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.4}],desc:'A wooden-and-metal body shaped to imitate a human, driven by a spiritual thread from an unseen hand. The thread layer halves damage until it is stripped or cut away.'},
+  /* ---- Volume 10 (comic 011): the guardian beneath the sanctuary hall ---- */
+  sanctuary_guardian:{n:'Sanctuary Guardian',icon:'🗿',boss:true,hp:640,atk:24,mag:10,def:17,spd:7,xp:300,gold:150,traits:['layered'],
+    moves:[{n:'Bronze Fist',pow:1.5},{n:'Floor Formation Sweep',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Shoulder Charge',pow:1.2}],
+    phases:[{at:.5,msg:'The guardian\'s core brightens along the floor formation: it moves faster!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A wood-and-bronze guardian older than the mechanism above. It wakes when the floor formation is activated and is not hunting anyone. Its outer plates halve damage until stripped.'},
+  /* ---- Volume 10 (comics 013, 016, 017): the sanctuary's lower archive ---- */
+  broken_figure:{n:'Broken Impression Figure',icon:'🪆',hp:130,atk:15,mag:6,def:10,spd:10,xp:62,gold:30,traits:['magic'],
+    moves:[{n:'Step, Turn, Thrust',pow:1.1},{n:'Cord Snap',pow:.7,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.25}],desc:'A wooden figure on cords that repeats a fragment of someone\'s movement. It does not think; it repeats.'},
+  archive_warden:{n:'Corded Warden',icon:'🗿',boss:true,hp:700,atk:25,mag:12,def:18,spd:7,xp:340,gold:170,traits:['layered'],
+    moves:[{n:'Double Slam',pow:1.5},{n:'Hall Shift',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Drawn Energy',pow:1.2,spell:true}],
+    phases:[{at:.5,msg:'The warden pulls energy from the wall to compensate: its movements sharpen!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'A larger guardian wired to the walls of the lower archive, running on a command that was forced out of position. Its outer plating halves damage until stripped.'},
+  /* ---- Volume 10 finale and Volume 11 (the Thousand-Mile Frontier) ---- */
+  fused_guardian:{n:'Fused Guardian',icon:'🗿',boss:true,hp:740,atk:26,mag:14,def:18,spd:7,xp:360,gold:180,traits:['layered'],
+    moves:[{n:'Many-Limbed Strike',pow:1.5},{n:'Chamber Shift',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Drawn Channel',pow:1.2,spell:true}],
+    phases:[{at:.5,msg:'The fused guardian draws on every channel: it rebuilds itself and strikes harder!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.5}],desc:'Countless constructs and overlapping impressions fused into one body beneath the central regulator. Its outer layer halves damage until stripped.'},
+  frontier_raider:{n:'Frontier Raider',icon:'🗡️',hp:115,atk:16,mag:0,def:9,spd:11,xp:56,gold:28,
+    moves:[{n:'Organised Strike',pow:1.1},{n:'Shield Push',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Part of a well-equipped, organised group that holds the high ground in a smoking valley.'},
+  stonehide_beast:{n:'Stonehide Beast',icon:'🦎',elite:true,hp:280,atk:21,mag:0,def:16,spd:7,xp:115,gold:58,traits:['layered'],
+    moves:[{n:'Stone Shoulder',pow:1.4},{n:'Rubble Kick',pow:.9,all:true}],drops:[{id:'ice_crystal',chance:.6},{id:'wolf_pelt',chance:.5}],desc:'A territorial beast with stone-like hide that guards a quarry entrance. Its armour halves damage until it shifts or is stripped.'},
+  crimson_sovereign:{n:'Crimson-Horned Sovereign',icon:'👹',boss:true,hp:720,atk:26,mag:14,def:17,spd:9,xp:380,gold:190,traits:['layered'],
+    moves:[{n:'Horn Impale',pow:1.5},{n:'Crimson Storm',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Chaos Charge',pow:1.3}],
+    phases:[{at:.5,msg:'The crimson storm swells: the Sovereign feeds on chaos and strikes harder!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A crimson-horned beast that feeds on chaos and arrives like a harbinger of disaster. Its crimson hide halves damage until stripped.'},
+  mountain_devourer:{n:'Mountain Devourer',icon:'🐉',boss:true,hp:780,atk:27,mag:15,def:19,spd:7,xp:400,gold:200,traits:['layered'],
+    moves:[{n:'Mountain-Shaking Strike',pow:1.5},{n:'Dark Crystal Surge',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Maw',pow:1.3}],
+    phases:[{at:.5,msg:'The Devourer draws harder on the spring\'s current: its armour thickens and its blows grow heavier!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A colossal spirit beast with a body like a moving mountain, drawn by the unstable spring. Its core is armoured in stone and dark crystals; the layered shell halves damage until stripped, and cutting its link to the spring weakens it.'},
+  spirit_wolf:{n:'Spirit Wolf',icon:'🐺',hp:95,atk:16,mag:0,def:7,spd:15,xp:44,gold:20,
+    moves:[{n:'Slope Pounce',pow:1.2},{n:'Pack Snap',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.5}],desc:'Territorial wolves of the Thousand-Mile Frontier, bold on a slope and quick to circle.'},
+  horned_ravager:{n:'Horned Ravager',icon:'🦬',boss:true,hp:600,atk:24,mag:6,def:15,spd:9,xp:280,gold:150,
+    moves:[{n:'Horn Charge',pow:1.6},{n:'Ground Slam',pow:.9,all:true,fx:[{k:'slow',d:1}]},{n:'Rampage',pow:1.3}],
+    phases:[{at:.5,msg:'The Horned Ravager overcommits to its charge, enraged!',atk:1.25}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:.7},{id:'moonlit_tonic',chance:.5}],desc:'A massive spirit beast that rules a stretch of the Shattered Ridge. Its aggression is territorial.'},
+  ravine_beast:{n:'Ravine Beast',icon:'🐗',elite:true,hp:260,atk:21,mag:0,def:13,spd:9,xp:110,gold:55,
+    moves:[{n:'Den Charge',pow:1.5},{n:'Rock Hurl',pow:.9,all:true}],drops:[{id:'wolf_pelt',chance:.8},{id:'frost_herb',chance:.5}],desc:'A spirit beast defending its den in a narrow ravine.'},
+  pineback_behemoth:{n:'Winter Guardian Beast',icon:'❄️',boss:true,hp:680,atk:25,mag:6,def:19,spd:6,xp:330,gold:170,traits:['layered'],
+    moves:[{n:'Mountain Crush',pow:1.5},{n:'Winter Breath',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Thunderous Roar',pow:1.3}],
+    phases:[{at:.5,msg:'The guardian roars and the pass shakes: its blows grow heavier!',atk:1.25}],drops:[{id:'wolf_pelt',chance:1},{id:'ice_crystal',chance:.8},{id:'spirit_draught',chance:.5}],desc:'A guardian beast awakened by intruders, its body like a mountain and its breath like a winter storm. Its armour halves damage until stripped.'},
+  /* ---- Volume 12: Duanlu Gorge ---- */
+  lesser_demon:{n:'Lesser Demon',icon:'👹',hp:110,atk:17,mag:9,def:8,spd:12,xp:56,gold:26,traits:['magic'],
+    moves:[{n:'Rending Claw',pow:1.1},{n:'Blood Mist',pow:.8,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.3}],desc:'A lesser demon of the Qingluo River. It attacks from different directions and does not seem to answer to one master.'},
+  crimson_stranger:{n:'The Crimson Stranger',icon:'🩸',boss:true,overwhelm:true,hp:780,atk:27,mag:21,def:16,spd:11,xp:420,gold:210,traits:['magic','layered'],
+    moves:[{n:'Blood-Mist Claw',pow:1.4},{n:'Crimson-Black Blast',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Gaze',pow:1.2,spell:true,fx:[{k:'silence',d:1}]}],
+    phases:[{at:.5,msg:'The stranger\'s calm is gone: crimson-black energy surges around him!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon in human form who hunts for spiritual power. He covets the blood moon, the celestial lineage and the sealed bloodline. His aura halves damage until stripped.'},
+  /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
+  hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
+    moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
+  hired_captain:{n:'Hired Captain',icon:'⚔️',elite:true,hp:200,atk:18,mag:4,def:12,spd:11,xp:100,gold:60,
+    moves:[{n:'Formation Order',pow:.6,all:true},{n:'Cleaving Blow',pow:1.4}],drops:[{id:'moonlit_tonic',chance:.4}],desc:'Held the formation together. Knows an intermediary, a meeting place, and nothing more.'},
+  masked_principal:{n:'Masked Principal',icon:'🎭',elite:true,hp:220,atk:17,mag:6,def:12,spd:12,xp:150,gold:90,
+    moves:[{n:'Mask-Breaker',pow:1.3},{n:'Mirrored Stance',pow:1,fx:[{k:'slow',d:1}]},{n:'Final Cut',pow:1.3}],drops:[{id:'moonlit_tonic',chance:.6}],desc:'One of those who led the attack on the master\'s estate. Bound to silence about whoever hired them.'},
   /* Wilds boss (not a story event) */
   frost_warden:{n:'Frost Warden',icon:'❄️',boss:true,hp:420,atk:20,mag:18,def:13,spd:9,xp:200,gold:120,traits:['magic'],
     moves:[{n:'Winter Blade',pow:1.2},{n:'Hailstorm',pow:.9,spell:true,all:true,fx:[{k:'slow',d:2}]},{n:'Frozen Gaze',pow:1,spell:true,fx:[{k:'bind',d:1}]}],
     phases:[{at:.5,msg:'The temple chills: the Warden\'s eyes turn white.',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'moonlit_tonic',chance:.5}],desc:'A guardian of the Ice Temple. Wilds challenge, not part of the story.'},
 };
 function mkEnemy(key, lv){
-  const e = ENEMIES[key], m = 1 + (lv-1)*0.12, x = 1 + (lv-1)*0.08;
+  /* Enemy scaling steepens past the early levels so Volume 1's whole range (Lv 1-40) stays a fight: heroes grow faster than a straight line.
+     hp: 1 + 0.12*(lv-1) + 0.003*(lv-1)^2 ; attack stats: 1 + 0.12*(lv-1) + 0.004*(lv-1)^2 ; def: 1 + 0.13*(lv-1) (kept linear, like hero ATK, so high-level elites stay hittable); xp/gold follow hp. */
+  const e = ENEMIES[key], d = lv-1, mh = 1 + d*0.12 + d*d*0.003, ma = 1 + d*0.12 + d*d*0.004, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
   return { key, name:e.n, icon:e.icon, boss:!!e.boss, elite:!!e.elite, traits:e.traits||[], moves:e.moves, drops:e.drops||[],
-    hp:Math.round(e.hp*m), mhp:Math.round(e.hp*m), mp:0, mmp:0,
-    atk:Math.round(e.atk*m), mag:Math.round(e.mag*m), def:Math.round(e.def*m), spd:Math.round(e.spd*(1+(lv-1)*.02)),
-    xp:Math.round(e.xp*x), gold:Math.round(e.gold*x), phases:e.phases ? e.phases.map(p => Object.assign({}, p)) : null };
+    hp:Math.round(e.hp*mh), mhp:Math.round(e.hp*mh), mp:0, mmp:0,
+    atk:Math.round(e.atk*ma), mag:Math.round(e.mag*ma), def:Math.round(e.def*md), spd:Math.round(e.spd*(1+d*.02)),
+    xp:Math.round(e.xp*x), gold:Math.round(e.gold*x), overwhelm:!!e.overwhelm, phases:e.phases ? e.phases.map(p => Object.assign({}, p)) : null };
 }
 
 /* ---- items ---- */
@@ -46,13 +154,15 @@ const ITEMS = {
   wolf_pelt:{n:'Wolf Pelt',icon:'🧶',type:'material'}, frost_herb:{n:'Frost Herb',icon:'🌿',type:'material'},
   moon_petal:{n:'Moon Petal',icon:'🌸',type:'material'}, ice_crystal:{n:'Ice Crystal',icon:'💎',type:'material'},
   imp_ash:{n:'Imp Ash',icon:'🌫️',type:'material'}, rift_shard:{n:'Rift Shard',icon:'🔹',type:'material'},
+  winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
+  corrupted_fragment:{n:'Corrupted Fragment',icon:'🖤',type:'quest'}, departure_record:{n:'Torn Departure Record',icon:'📜',type:'quest'}, ward_silk:{n:'Ward Silk',icon:'🧶',type:'material'},
   herbal_tonic:{n:'Herbal Tonic',icon:'🍵',type:'consumable'}, moonlit_tonic:{n:'Moonlit Tonic',icon:'🌙',type:'consumable'},
   spirit_draught:{n:'Spirit Draught',icon:'🧪',type:'consumable'}, cleansing_salt:{n:'Cleansing Salt',icon:'🧂',type:'consumable'},
 };
 const USE = {
   herbal_tonic:{hp:60}, moonlit_tonic:{hp:180, mp:30}, spirit_draught:{mp:60}, cleansing_salt:{hp:30, cleanse:true},
 };
-const useText = u => [u.hp?'+'+u.hp+' HP':'', u.mp?'+'+u.mp+' MP':'', u.cleanse?'cleanses':''].filter(Boolean).join(', ');
+const useText = u => [u.hp?'+'+u.hp+' HP':'', u.mp?'+'+u.mp+' MP':'', u.heat?'−'+u.heat+' heat':'', u.cleanse?'cleanses':''].filter(Boolean).join(', ');
 const SHOP = { herbal_tonic:25, moonlit_tonic:80, spirit_draught:60, cleansing_salt:40 };   // sold at the Crimson Fairy
 const RECIPES = [
   {out:'herbal_tonic', need:{frost_herb:3}, label:'3 Frost Herb'},
@@ -64,16 +174,40 @@ function addItems(list){ list.forEach(d => G.inv[d.id] = (G.inv[d.id]||0) + (d.q
 /* ---- Wilds zones. unlock = chapter that must be complete. Foes are level (party average + off). ---- */
 const ZONES = [
   {id:'forest', n:'Muxue Forest', icon:'🌲', unlock:1, off:0, pool:['frost_wolf','snowcap_boar','moon_wisp'], boss:null, desc:'Where Xiyu went to find what shook the island.'},
-  {id:'stream', n:'The Moonlit Stream', icon:'💧', unlock:6, off:1, pool:['ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The stream beside the Crimson Fairy.'},
-  {id:'chambers', n:'The Hidden Chambers', icon:'🗝️', unlock:15, off:2, pool:['ward_sentinel','imp','moon_wisp'], boss:null, desc:'Secret vaults beneath the Crimson Fairy.'},
-  {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:3, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
-  {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:3, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
-  {id:'temple', n:'The Ice Temple', icon:'🏯', unlock:18, off:4, pool:['ice_golem','ward_sentinel','rift_wraith'], boss:'frost_warden', desc:'The hidden temple of ice.'},
+  {id:'stream', n:'The Moonlit Stream', icon:'💧', unlock:6, off:0, pool:['ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The stream beside the Crimson Fairy.'},
+  {id:'chambers', n:'The Hidden Chambers', icon:'🗝️', unlock:15, off:1, pool:['ward_sentinel','imp','moon_wisp'], boss:null, desc:'Secret vaults beneath the Crimson Fairy.'},
+  {id:'rift', n:'The Rift Waters', icon:'🌀', unlock:16, off:1, pool:['rift_wraith','ice_sprite','imp'], boss:null, desc:'The water where the gates opened.'},
+  {id:'steps', n:'The Icy Mountain Steps', icon:'🏔️', unlock:17, off:1, pool:['frost_wolf','ice_golem','rift_wraith'], boss:null, desc:'Narrow ice steps toward the sound of chains.'},
+  {id:'temple', n:'Ice Temple · Level 1', icon:'🏯', unlock:18, off:1, pool:['ice_golem','ward_sentinel','frost_stalker'], boss:'frost_warden', desc:'The upper temple of ice.'},
+  {id:'maze', n:'Ice Temple · Level 2: Sealed Maze', icon:'🧩', unlock:24, off:2, pool:['icicle_snare','maze_wraith','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'The Monster Arena', desc:'Trapped corridors, puzzles and powerful foes. Opens after chapter 24 (the maze and the horned beasts).'},
+  {id:'trial', n:'Ice Temple · Commanders\' Trial Ground', icon:'⚔️', unlock:117, off:1, pool:['sparring_construct','ward_sentinel','frost_stalker'], boss:['horned_beast','horned_beast'], bossName:'Trial Rounds', desc:'The temple guard\'s drill yard, run by the commanders for those staying in the temple. Sparring constructs, and Trial Rounds in the arena that each get harder.'},
+  {id:'slopes', n:'The Xuancang Slopes', icon:'⛰️', unlock:117, off:1, pool:['frost_wolf','snowfield_ram','ridge_yeti','ice_golem'], boss:null, desc:'The open mountainside above the temple: wolves, rams and ridge giants. A short walk out and back, no commander required.'},
+  {id:'estate', n:'The Ruined Estate Grounds', icon:'🏚️', unlock:239, off:0, pool:['moon_wisp','rift_wraith','ward_sentinel'], boss:null, desc:'The overgrown grounds around Xiao Tian\'s old home: lingering spirits and the odd guardian construct. Wilds only, not a story location.'},
+  {id:'northpass', n:'The Northern Mountain Pass', icon:'🌲', unlock:264, off:1, pool:['snowfield_ram','ridge_yeti','frost_wolf','hired_fighter'], boss:null, desc:'The narrow pass beyond the trading town: mountain beasts and the odd hired blade. Wilds only, not a story location.'},
+  {id:'archivepass', n:'The Archive Roads', icon:'📜', unlock:288, off:1, pool:['hired_fighter','ward_sentinel','moon_wisp','frost_wolf'], boss:null, desc:'The inland roads and pine forest between the city archive and the sanctuary: wandering hired blades, old guardian constructs and lingering spirits. Wilds only, not a story location.'},
+  {id:'lantern', n:'The Lantern Hills', icon:'🏮', unlock:286, off:1, pool:['rift_wraith','moon_wisp','sparring_construct','snowfield_ram'], boss:null, desc:'The wooded hills where the first paper figure walked: restless spirits and stray constructs. Wilds only, not a story location.'},
+  {id:'stream9', n:'The Hollow Stream', icon:'💧', unlock:304, off:1, pool:['ice_sprite','glacier_crab','moon_wisp','rift_wraith'], boss:null, desc:'The stream, ridge hollow and abandoned platform of the village in Volume 9: water spirits and lingering lights. Wilds only, not a story location.'},
+  {id:'cloudsteps', n:'The Cloud Steps', icon:'☁️', unlock:335, off:1, pool:['ward_sentinel','sparring_construct','moon_wisp','rift_wraith'], boss:null, desc:'The old stairs and grounds around the Mountain Sanctuary: preserved constructs and lingering spirits. Wilds only, not a story location.'},
+  {id:'frontier', n:'The Thousand-Mile Frontier', icon:'🛤️', unlock:354, off:1, pool:['spirit_wolf','frost_wolf','snowfield_ram','ridge_yeti'], boss:null, desc:'The trade roads and mountain trails around the Thousand-Mile Waystation: spirit wolves and wandering beasts. Wilds only, not a story location.'},
+  {id:'shattered', n:'The Shattered Ridge', icon:'⛰️', unlock:358, off:2, pool:['spirit_wolf','ravine_beast','snowfield_ram','ridge_yeti'], boss:null, desc:'The steep ridge beyond the checkpoint, where territorial beasts hold the high ground. Wilds only, not a story location.'},
+  {id:'qingluo', n:'The Qingluo River', icon:'🌊', unlock:393, off:1, pool:['lesser_demon','ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The river road between the mountain basin and the coast: lesser demons on the banks and spirits on the water. Wilds only, not a story location.'},
+  {id:'echoes', n:'The Corridor of Echoes', icon:'🌫️', unlock:413, off:2, pool:['rift_wraith','maze_wraith','moon_wisp','ward_sentinel'], boss:null, desc:'The edges of the spatial passage to Yilong: echoes that wear familiar voices, and the constructs that guard the anchors. Wilds only, not a story location.'},
+  {id:'yilongedge', n:'The Yilong Outskirts', icon:'🏮', unlock:425, off:1, pool:['lesser_demon','moon_wisp','ward_sentinel','rift_wraith'], boss:null, desc:'The roads and fields around Yilong city: lesser demons and lingering spirits near the old wards. Wilds only, not a story location.'},
+  {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
-const zoneOpen = z => G.ch >= z.unlock;
+const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;
 
 /* ---- loot ---- */
 const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'cleansing_salt',qty:[2,2]}]},
+               thread_puppet:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               sanctuary_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               archive_warden:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               fused_guardian:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               horned_ravager:{guaranteed:[{id:'wolf_pelt',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               pineback_behemoth:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               crimson_sovereign:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               mountain_devourer:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               crimson_stranger:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;
@@ -86,7 +220,7 @@ function rollLoot(table, first){
 /* ---- consumables ---- */
 function useConsumable(id, k){
   const u = USE[k]; if(!u || !(G.inv[k] > 0)) return false;
-  G.inv[k]--; healUnit(id, u.hp, u.mp); save(); return true;
+  G.inv[k]--; healUnit(id, u.hp, u.mp); if(u.heat) G.heat = Math.max(0, (G.heat||0) - u.heat); save(); return true;
 }
 function brew(out){
   const r = RECIPES.find(x => x.out===out); if(!r) return 'Unknown recipe.';

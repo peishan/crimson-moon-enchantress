@@ -33,6 +33,8 @@ const CHARACTERS = {
    {id:'crimson_moon',n:'Crimson Moon',icon:'🌙',mp:9,kind:'magic',tgt:'foes',pow:1.0,fx:[{k:'slow',d:2}],req:{lvl:3},sig:true,desc:'The Blood Moon\'s light washes over every foe, bruising and slowing them.'},
    {id:'illusion_veil',n:'Illusion Veil',icon:'🪭',mp:7,kind:'support',tgt:'foe',fx:[{k:'charm',d:2}],req:{lvl:6},sig:true,desc:'A veil of enchantment: the foe is charmed and loses its turns.'},
    {id:'meteor_shower',n:'Meteor Shower',icon:'☄️',mp:16,kind:'magic',tgt:'foes',pow:1.9,fx:[{k:'burn',d:2}],req:{lvl:10},sig:true,desc:'Fire rains from the sky onto every enemy.'},
+   {id:'soulbound_moonfire',n:'Linked Moonfire',icon:'🔥',mp:14,kind:'magic',tgt:'foes',pow:1.5,fx:[{k:'burn',d:2}],withAlly:'dongyue',boost:1.35,req:{att:3,flag:'soul_bond'},desc:'Fire carried on the ancient bond-spell that links them (not a permanent soul bond): stronger while Dongyue fights beside her.'},
+   {id:'eclipse_barrage',n:'Eclipse Barrage',icon:'🌑',mp:28,kind:'magic',tgt:'foes',pow:2.8,fx:[{k:'burn',d:3},{k:'slow',d:2}],req:{lvl:32},desc:'PLACEHOLDER (gameplay). A late-game blast of eclipse fire and frost-dark light across every foe.'},
    {id:'blood_moon_surge',n:'Blood Moon Surge',icon:'🩸',mp:0,kind:'support',tgt:'self',once:true,fx:[{k:'state',id:'bloodmoon',d:4}],req:{lvl:20},desc:'The eclipse she was born beneath answers her: MAG +30% and spells cost half for 4 turns. Once per battle.'},
   ]},
  dongyue:{
@@ -48,9 +50,13 @@ const CHARACTERS = {
    {id:'guardian_ward',n:'Guardian Ward',icon:'🛡️',mp:8,kind:'support',tgt:'ally',fx:[{k:'shield',v:.25,d:3},{k:'buff',stat:'def',m:1.25,d:3}],req:{lvl:4},sig:true,desc:'A barrier of light around one ally, and DEF up.'},
    {id:'restoration',n:'Restoration',icon:'✨',mp:14,kind:'heal',tgt:'allies',pow:.8,fx:[{k:'cleanse'}],req:{lvl:9},sig:true,desc:'Heals the whole party and clears ailments.'},
    {id:'spirit_expulsion',n:'Spirit Expulsion',icon:'👁️',mp:9,kind:'magic',tgt:'foe',pow:1.2,antiMagic:2.2,req:{lvl:8,flag:'imp_expelled'},desc:'Learned by driving the imp out of Wang Xi\'er (Chapter 13). Devastating against imps and spirits.'},
-   {id:'soul_link',n:'Soul Link',icon:'💞',mp:12,kind:'support',tgt:'ally',fx:[{k:'regen',v:.08,d:3},{k:'buff',stat:'mag',m:1.25,d:3},{k:'cleanse'}],req:{lvl:12,flag:'soul_bond'},desc:'The bond of Chapter 20: he lends an ally his strength. Steady regeneration, MAG up, ailments cleared.'},
+   {id:'cooling_blessing',n:'Cooling Blessing',icon:'🌬️',mp:10,kind:'support',tgt:'ally',fx:[{k:'cool',v:30},{k:'regen',v:.06,d:3},{k:'cleanse'}],req:{att:2,flag:'soul_bond'},desc:'A blessing that cools the curse\'s heat (30), steadies an ally and clears ailments.'},
+   {id:'soul_link',n:'Shared Strength',icon:'💞',mp:12,kind:'support',tgt:'ally',fx:[{k:'regen',v:.08,d:3},{k:'buff',stat:'mag',m:1.25,d:3},{k:'cleanse'}],req:{lvl:12,flag:'soul_bond'},desc:'The bond-spell of Chapter 20 lets him lend an ally his strength (it is not a permanent soul bond). Steady regeneration, MAG up, ailments cleared.'},
+   {id:'radiant_sanctuary',n:'Radiant Sanctuary',icon:'🌟',mp:26,kind:'heal',tgt:'allies',pow:1.5,fx:[{k:'shield',v:.2,d:3},{k:'cleanse'}],req:{lvl:30},desc:'PLACEHOLDER (gameplay). A sanctuary of light: heals the whole party, shields them and clears ailments.'},
    {id:'ancient_rite',n:'Ancient Healing Rite',icon:'📜',mp:22,kind:'heal',tgt:'allyDown',pow:1.4,fx:[{k:'revive'}],req:{lvl:16,flag:'ancient_rite'},desc:'The ancient incantation he used to save Xiyu (Chapter 18): raises a fallen ally.'},
-  ]},
+  ],
+  magicRes:'Natural Magic Resistance: highly resistant to ordinary offensive magic (fireballs, offensive wards) and to ordinary charms and silences, but not immune. An extremely powerful demonic attack can overcome it, and a non-damaging illusion can take effect while he is drunk.',
+  passive:'Natural Magic Resistance (see magicRes).'},
  yaxing:{
   n:'Ya\'Xing', zh:'亚星', icon:'⚓', title:'The Steady Sailor',
   cls:'Ranger / Navigator', role:'Ranged Damage · Utility', combat:'Archer and trapper',
@@ -63,7 +69,14 @@ const CHARACTERS = {
    {id:'binding_trap',n:'Binding Trap',icon:'🪤',mp:6,kind:'phys',tgt:'foe',pow:.6,fx:[{k:'bind',d:2}],req:{lvl:4},sig:true,desc:'A snare that holds the foe in place.'},
    {id:'eagle_eye',n:'Eagle Eye',icon:'🦅',mp:5,kind:'support',tgt:'self',fx:[{k:'crit',d:3},{k:'analyze'}],req:{lvl:7},sig:true,desc:'A scout\'s focus: guaranteed crits for 3 turns, and reveals an enemy.'},
    {id:'survival_instinct',n:'Survival Instinct',icon:'🧭',mp:11,kind:'support',tgt:'allies',fx:[{k:'regen',v:.05,d:3},{k:'cleanse'}],req:{lvl:12},sig:true,desc:'Practical know-how: the party recovers steadily and shakes off ailments.'},
+   {id:'arrow_storm',n:'Arrow Storm',icon:'🌧️',mp:24,kind:'phys',tgt:'foes',pow:1.9,req:{lvl:28},desc:'PLACEHOLDER (gameplay). A storm of arrows and knives on every enemy.'},
    {id:'knife_volley',n:'Knife Volley',icon:'🔪',mp:10,kind:'phys',tgt:'foes',pow:1.1,req:{lvl:16},desc:'A fan of throwing knives that hits every enemy.'},
+   /* From the author's new sheet (he rejoins in a new outfit after the Ice Temple rest): a sword adept with new magical skills; resilient from being a test subject */
+   {id:'swift_blade',n:'Swift Blade',icon:'🌀',mp:4,kind:'phys',tgt:'foe',pow:1.6,fx:[{k:'crit',d:1,self:true}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Agile sword strikes with high mobility: strong single-target damage and a chance to follow up.'},
+   {id:'flowing_momentum',n:'Flowing Momentum',icon:'💨',mp:7,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.35,d:3},{k:'buff',stat:'atk',m:1.2,d:3}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Momentum and positioning: faster and hitting harder for a few turns.'},
+   {id:'mark_of_insight',n:'Mark of Insight',icon:'🪷',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3},{k:'strip'}],req:{flag:'yaxing_rejoined'},sig:true,desc:'Identifies weak points and exposes vulnerabilities: effective against guarded or layered targets.'},
+   {id:'sky_step',n:'Sky Step',icon:'🕊️',mp:6,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.5,d:2},{k:'crit',d:2}],req:{flag:'yaxing_rejoined'},desc:'Enhanced movement. (Reaching high places and crossing gaps for exploration routes is not built yet.)'},
+   {id:'enduring_will',n:'Enduring Will',icon:'🧿',mp:10,kind:'support',tgt:'self',fx:[{k:'cleanse'},{k:'ward',d:4},{k:'buff',stat:'def',m:1.2,d:4}],req:{flag:'yaxing_rejoined'},sig:true,desc:'High resilience, from what was done to him: clears debuffs, resists new ones for a few turns and keeps him fighting despite injuries.'},
   ]},
  xiaotian:{
   n:'Xiao Tian', zh:'萧天', icon:'🍃', title:'The Silent Blade',
@@ -77,6 +90,7 @@ const CHARACTERS = {
    {id:'heaven_step',n:'Heaven Step',icon:'🌬️',mp:5,kind:'support',tgt:'self',fx:[{k:'buff',stat:'spd',m:1.3,d:3},{k:'buff',stat:'eva',m:1.5,d:3}],req:{lvl:4},sig:true,desc:'Light-footed: SPD up and much harder to hit.'},
    {id:'counter_surge',n:'Counter Surge',icon:'🔁',mp:7,kind:'support',tgt:'self',fx:[{k:'oath',d:2}],req:{lvl:8},sig:true,desc:'Draws attacks and strikes back at whoever lands a blow.'},
    {id:'lotus_burst',n:'Lotus Burst',icon:'🪷',mp:14,kind:'phys',tgt:'foes',pow:1.6,req:{lvl:13},sig:true,desc:'A blossoming burst of force hitting every enemy.'},
+   {id:'thousand_petals',n:'Thousand Petals',icon:'🌸',mp:26,kind:'phys',tgt:'foes',pow:2.2,req:{lvl:30},desc:'PLACEHOLDER (gameplay). A thousand strikes in one breath, hitting every enemy.'},
    {id:'silent_edge',n:'Silent Edge',icon:'🗡️',mp:10,kind:'phys',tgt:'foe',pow:2.3,crit:true,req:{lvl:18},desc:'The short blade, drawn without a sound. Always a critical hit.'},
   ]},
  yan:{
@@ -88,10 +102,130 @@ const CHARACTERS = {
   base:{hp:90,mp:50,atk:6,mag:16,def:9,spd:8}, grow:{hp:8.5,mp:4.5,atk:.6,mag:2.3,def:1.1,spd:.7},
   skills:[
    {id:'ice_shard',n:'Ice Shard',icon:'🧊',mp:4,kind:'magic',tgt:'foe',pow:1.5,req:{lvl:1},desc:'A lance of ice.'},
-   {id:'frost_domain',n:'Frost Domain',icon:'❄️',mp:11,kind:'magic',tgt:'foes',pow:.9,fx:[{k:'slow',d:3}],req:{lvl:16},sig:true,desc:'Freezes the ground itself: every foe takes frost damage and is slowed.'},
-   {id:'sealing_chains',n:'Sealing Chains',icon:'⛓️',mp:9,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2},{k:'silence',d:2}],req:{lvl:18},sig:true,desc:'Ancient chains bind and silence a single foe.'},
-   {id:'time_ward',n:'Time Ward',icon:'⏳',mp:13,kind:'support',tgt:'allies',fx:[{k:'shield',v:.2,d:3},{k:'buff',stat:'spd',m:1.2,d:3}],req:{lvl:22},sig:true,desc:'Time itself shields the party: a barrier and SPD up.'},
-   {id:'celestial_art',n:'Celestial Art',icon:'🌌',mp:22,kind:'magic',tgt:'foes',pow:2.1,fx:[{k:'slow',d:2}],req:{lvl:26},sig:true,desc:'Ancient magic of the heavens, striking every foe.'},
+   {id:'frost_domain',n:'Frost Domain',icon:'❄️',mp:11,kind:'magic',tgt:'foes',pow:.9,fx:[{k:'slow',d:3}],req:{lvl:28},sig:true,desc:'Freezes the ground itself: every foe takes frost damage and is slowed.'},
+   {id:'sealing_chains',n:'Sealing Chains',icon:'⛓️',mp:9,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2},{k:'silence',d:2}],req:{lvl:31},sig:true,desc:'Ancient chains bind and silence a single foe.'},
+   {id:'time_ward',n:'Time Ward',icon:'⏳',mp:13,kind:'support',tgt:'allies',fx:[{k:'shield',v:.2,d:3},{k:'buff',stat:'spd',m:1.2,d:3}],req:{lvl:34},sig:true,desc:'Time itself shields the party: a barrier and SPD up.'},
+   {id:'celestial_art',n:'Celestial Art',icon:'🌌',mp:22,kind:'magic',tgt:'foes',pow:2.1,fx:[{k:'slow',d:2}],req:{lvl:38},sig:true,desc:'Ancient magic of the heavens, striking every foe.'},
   ]},
+ /* ===== VOLUME 2 PARTY MEMBERS (not joinable in Volume 1; joining chapters to be decided by the author) =====
+    Cangyuan joins at V2 comic 007 (chapter 46, about Lv 46), Xining at V2 comic 014 (chapter 53, about Lv 53). Skill unlock levels are
+    spread from each join over Volume 2: PLACEHOLDERS to retune as more chapters arrive. Class design from the author's brief. */
+ cangyuan:{
+  vol2:true, n:'Shen Cangyuan', zh:'沈沧渊', icon:'🧵', title:'Keeper of Forbidden Knowledge',
+  cls:'Forbidden Spirit Weaver', role:'Control · Arcane Support · Debuffer', combat:'Spirit-thread controller',
+  elements:'Spirit Threads · Forbidden Arts · Dark Crimson',
+  identity:'A mystic cultivator, spirit weaver and keeper of forbidden knowledge. Calm, perceptive and unafraid of Xiyu\'s nature, he seeks the truth behind Yan\'s corruption and the secrets of the Blood Moon. He does not overpower enemies: he changes how their powers behave, binds their movements and creates openings.',
+  quote:'You burn with a light the world fears. Let me be the one who understands its shape.',
+  base:{hp:86,mp:48,atk:7,mag:13,def:8,spd:12}, grow:{hp:8.8,mp:4.4,atk:.7,mag:2.0,def:1,spd:.9},
+  skills:[
+   {id:'spirit_thread',n:'Spirit Thread',icon:'🧵',mp:3,kind:'magic',tgt:'foe',pow:1.1,fx:[{k:'thread',v:1}],req:{lvl:46},sig:true,desc:'Fine spiritual threads strike for moderate magic damage and mark the target Threadbound (stacks): control effects on a Threadbound foe last longer and are harder to resist, even for bosses.'},
+   {id:'binding_seal',n:'Binding Seal',icon:'🔏',mp:8,kind:'magic',tgt:'foe',pow:.6,fx:[{k:'bind',d:2},{k:'slow',d:3}],req:{lvl:46},sig:true,desc:'A spiritual seal immobilises a foe. Strong enemies shrug off the full bind but are always slowed (reduced speed and casting).'},
+   {id:'inverted_meridian',n:'Inverted Meridian',icon:'🌀',mp:12,kind:'magic',tgt:'foe',pow:.8,fx:[{k:'silence',d:2},{k:'strip'},{k:'strain',v:.10,self:true}],req:{lvl:48},sig:true,desc:'FORBIDDEN. Redirects a foe\'s unstable spiritual energy: interrupts its spells (silence) and shatters its barrier and buffs. Cost: the strain damages his own channels (10% HP, growing with each use this battle).'},
+   {id:'steady_the_current',n:'Inverted Meridian: Steady',icon:'🪢',mp:10,kind:'support',tgt:'ally',fx:[{k:'cool',v:40},{k:'cleanse'},{k:'strain',v:.10,self:true}],req:{lvl:48},desc:'FORBIDDEN. Turns the technique inward to stabilise an ally\'s dangerous power: cools 40 heat (Xiyu\'s curse) and clears ailments. Same strain cost.'},
+   {id:'crimson_resonance',n:'Crimson Resonance',icon:'🌹',mp:20,kind:'magic',tgt:'foes',pow:1.6,needAlly:'xiyu',res:true,withAlly:'xiyu',boost:1.35,fx:[{k:'link',d:3},{k:'heatup',v:8}],req:{lvl:50},sig:true,desc:'COMBINATION with Xiyu. He weaves a formation around her spell, striking and linking every foe for enormous damage. Unstable: it adds heat to Xiyu (much more if she is already burning).'},
+   {id:'formation_breaker',n:'Thread-Breaker Formation',icon:'🔗',mp:22,kind:'magic',tgt:'foe',pow:2.0,needAlly:'xiyu',res:true,withAlly:'xiyu',boost:1.3,fx:[{k:'strip'},{k:'thread',v:2}],req:{lvl:52,res:3},sig:true,desc:'COMBINATION with Xiyu (needs Crimson Thread Resonance 3). His weaving holds a structure open while her crimson spell breaks it: strips a foe\'s barrier, layer and enhancements, and marks it Threadbound ×2.'},
+   {id:'ten_thousand_threads',n:'Ten Thousand Threads Formation',icon:'🕸️',mp:24,kind:'magic',tgt:'foes',pow:.9,fx:[{k:'link',d:4},{k:'thread',v:1},{k:'slow',d:2}],req:{lvl:54},sig:true,desc:'ULTIMATE. A wide formation links the enemy group: damage and control applied to one linked foe spreads to the others. Strong against groups, weak against a lone boss (nothing to link).'},
+  ],
+  passive:'Resonance of Two Currents: with Xiyu in the fight, Cangyuan redirects some of her spell energy. Her heat gain is reduced by 25% and each spell she casts has a 35% chance to echo through his threads for extra damage. It does not make her corruption harmless.'},
+ xining:{
+  vol2:true, n:'Lu Xining', zh:'陆惜宁', icon:'🌿', title:'Compassionate Physician',
+  cls:'Spirit Physician', role:'Healer · Cleanser · Support', combat:'Physician',
+  elements:'Healing Arts · Herbal Medicine · Spirit Diagnosis',
+  identity:'A gentle and intelligent physician with a kind heart and quiet strength. She saved Dongyue\'s life and later became an important companion in the party. Behind her calm smile lies a woman who has also known loss, yet continues to care for others.',
+  quote:'I only wish to heal what still hurts... even if I cannot heal myself.',
+  base:{hp:80,mp:46,atk:4,mag:12,def:7,spd:11}, grow:{hp:8.2,mp:4.2,atk:.4,mag:1.9,def:.9,spd:.8},
+  skills:[
+   {id:'gentle_meridian',n:'Gentle Meridian',icon:'💧',mp:5,kind:'heal',tgt:'ally',pow:.7,fx:[{k:'regen',v:.06,d:3}],req:{lvl:53},sig:true,desc:'Restorative energy into one ally: a heal, then recovery over a few turns. Best used before an injury becomes critical.'},
+   {id:'clear_spirit',n:'Clear Spirit',icon:'🍃',mp:6,kind:'support',tgt:'ally',fx:[{k:'cleanse1'}],req:{lvl:53},sig:true,desc:'Removes one ordinary poison, minor curse or debilitating status. Severe curses need investigation, special ingredients, or a specialist such as Cangyuan.'},
+   {id:'physicians_insight',n:'Physician\'s Insight',icon:'🔍',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:55},sig:true,clue:true,desc:'Diagnosis: reveals an enemy\'s weakness and hidden injuries (it takes 15% more damage for 3 turns). Outside combat it can unlock clues about the deaths and the spreading corruption (story hooks to be added).'},
+   {id:'herb_pouch',n:'Herb Pouch',icon:'🧺',mp:0,kind:'heal',tgt:'ally',pow:.55,item:'frost_herb',req:{lvl:53},desc:'Herbs, bandages and needles: a modest heal that needs no mana but uses one Frost Herb. Her answer to running dry.'},
+   {id:'quiet_sanctuary',n:'Quiet Sanctuary',icon:'🕊️',mp:16,kind:'heal',tgt:'allies',pow:.9,needAlly:'dongyue',withAlly:'dongyue',boost:1.3,fx:[{k:'shield',v:.15,d:3}],req:{lvl:57},sig:true,desc:'COMBINATION with Dongyue. He guards her while she heals the whole party and shields them, better when he trusts her assessment. (Passive: with Dongyue standing, Xining takes 20% less damage.)'},
+   {id:'diagnosis_and_severance',n:'Diagnosis and Severance',icon:'✂️',mp:18,kind:'magic',tgt:'foe',pow:1.1,needAlly:'cangyuan',withAlly:'cangyuan',boost:1.3,fx:[{k:'analyze'},{k:'strip'},{k:'bind',d:2}],req:{lvl:58},sig:true,desc:'COMBINATION with Cangyuan. She identifies the structure of a curse or disturbance; he isolates and binds it: strips the foe\'s barrier and buffs, exposes it and binds it.'},
+   {id:'sanctuary_still_waters',n:'Sanctuary of Still Waters',icon:'🌊',mp:26,kind:'heal',tgt:'allies',pow:.8,fx:[{k:'regen',v:.07,d:4},{k:'ward',d:4},{k:'cleanse'},{k:'buff',stat:'def',m:.7,d:4,self:true}],req:{lvl:61},sig:true,desc:'ULTIMATE. A protective healing field: the party heals over time and resists status effects (70%). It needs her concentration: her own DEF drops while it holds.'},
+  ],
+  passive:'A Physician\'s Resolve: repeated treatments become more efficient (each heal this battle cuts her healing MP costs by 5%, up to 30%), and she can heal with herbs when her mana is gone (Herb Pouch).'},
+ /* ===== VOLUME 6 GUEST (author's sheet): a temporary story-required guest, not a core party member. He joins at the first chapter of Volume 6 (VOL6_START)
+    for the demon-capture arc; GUESTS in core.js holds the window (end chapter not set yet: the author will give it). He returns as a guest in Volume 13 during the demon-hunting arc (author), not built yet. */
+ suliechen:{
+  vol2:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
+  cls:'Demon Slayer / Tracker', role:'Control · Restraint · Support', combat:'Capture specialist',
+  elements:'Ice · Restraint · Sealing',
+  identity:'A wandering demon slayer who tracks and captures demons across remote regions. He believes some demons should not be killed, as their death can bring greater disasters. His reasons remain unclear, and he keeps his past private. He travels independently, but is willing to cooperate with the party when their goals align.',
+  quote:'Some truths should be captured, not destroyed.',
+  base:{hp:84,mp:40,atk:11,mag:9,def:8,spd:13}, grow:{hp:8.6,mp:3.6,atk:1.3,mag:1.1,def:1,spd:1},
+  skills:[
+   {id:'frost_trace',n:'Frost Trace',icon:'🗡️',mp:0,kind:'phys',tgt:'foe',pow:1.0,fx:[{k:'slow',d:1}],req:{lvl:1},sig:true,desc:'A swift sword strike imbued with cold energy. Deals damage and may slow the target.'},
+   {id:'sealing_talismans',n:'Sealing Talismans',icon:'📜',mp:7,kind:'magic',tgt:'foe',pow:.7,fx:[{k:'bind',d:2}],req:{lvl:1},sig:true,desc:'Binding talismans thrown from range. A good chance to bind the target (strong enemies may resist).'},
+   {id:'binding_net',n:'Binding Net',icon:'⛓️',mp:10,kind:'phys',tgt:'foe',pow:.5,fx:[{k:'bind',d:3}],req:{lvl:1},sig:true,desc:'Capture chains or a net immobilise a target for longer than the talismans.'},
+   {id:'silent_veil',n:'Silent Veil',icon:'🌫️',mp:12,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'def',m:1.25,d:3},{k:'ward',d:3}],req:{lvl:1},desc:'Hides the party\'s presence: allies take less damage for a few turns and resist status effects. (Out of battle it has no effect yet.)'},
+   {id:'subdue_not_slay',n:'Subdue, Not Slay',icon:'🕸️',mp:14,kind:'support',tgt:'foe',hpBelow:.35,fx:[{k:'subdue'}],req:{lvl:1},sig:true,desc:'UNIQUE. Subdues a weakened enemy instead of killing it: it is captured alive and leaves the fight (bosses cannot be captured, only bound). Captured foes give their drops twice and +25% XP when the battle is won. Only usable on a foe at 35% HP or below.'},
+  ],
+  passive:'Restraint: the bind and slow effects he applies last one turn longer. He does not take the killing blow if he can avoid it.'},
+ /* ===== VOLUME 4 GUEST: HOKO (author: Scout / Explorer). A western explorer of Luiterra, freed in Volume 1; guides the party through the Ice Temple. Temporary guest (extra seat, GUESTS in core.js). ===== */
+ hoko:{
+  vol2:true, guest:true, n:'Hoko', zh:'', icon:'🧭', title:'Explorer of Luiterra',
+  cls:'Scout / Explorer (Guest)', role:'Utility · Support · Mid-defence', combat:'Scout and mechanism reader',
+  elements:'Routes · Mechanisms · Openings',
+  identity:'A blond western explorer who knows the Ice Temple\'s corridors from an earlier visit. Relaxed and dry-humoured, he reads routes and old mechanisms, spots weak points and creates the opening for others to strike. He is a guide, not a permanent companion.',
+  quote:'I\'ll create an opening. When it turns, attack the core.',
+  base:{hp:82,mp:36,atk:10,mag:8,def:10,spd:13}, grow:{hp:8.4,mp:3.2,atk:1.1,mag:1.0,def:1.2,spd:1.0},
+  skills:[
+   {id:'hoko_strike',n:'Explorer\'s Strike',icon:'🗡️',mp:0,kind:'phys',tgt:'foe',pow:1.0,req:{lvl:1},sig:true,desc:'A practical strike from a traveller used to rough roads.'},
+   {id:'mark_weak_point',n:'Mark the Weak Point',icon:'🎯',mp:6,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:1},sig:true,desc:'Reads a foe\'s structure and marks where it is weak: it takes 15% more damage for 3 turns.'},
+   {id:'create_opening',n:'Create an Opening',icon:'🧭',mp:9,kind:'phys',tgt:'foe',pow:.6,fx:[{k:'slow',d:2},{k:'strip'}],req:{lvl:1},sig:true,desc:'He draws the foe\'s guard open: it is slowed and loses its barrier and buffs.'},
+   {id:'scouts_lead',n:'Scout\'s Lead',icon:'🌬️',mp:11,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'spd',m:1.2,d:3},{k:'crit',d:2}],req:{lvl:1},desc:'He calls the route: the party moves faster and sees openings (crits) for a couple of turns.'},
+   {id:'read_mechanism',n:'Read the Mechanism',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},desc:'Reads a construct or trap: reveals it and strips its barrier. (Out of battle it opens nothing yet.)'},
+  ],
+  passive:'Knows the Way: he is always the first to notice a changed corridor. Temporary guest: leaves when the Ice Temple arc ends.'},
+ /* ===== YAN (晏), the Volume 6 watcher and guide (author's sheet). Not playable yet: he joins in Volume 7 (join chapter not decided), The caretaker of Xiyu's base will be a member of the Muxue extended cast, to be established by the author (not Xiao Yan). Different character from Muxue Yan (岩; id 'yan'). The sheet wrote his name 颜: the author says that is wrong; the game uses 晏. ===== */
+ yanwatcher:{
+  vol2:true, n:'Xiao Yan', zh:'晏', icon:'🧭', title:'Former Keeper of the Transit Network',
+  cls:'Wayfinder (机关行者)', role:'Support · Control · Utility', combat:'Mechanism specialist',
+  elements:'Earth · Structure · Utility',
+  identity:'A former keeper of the ancient transit network, skilled in maintaining and operating forgotten mechanisms. Practical, observant and cautious, he sees risks others miss. He is not used to relying on others, but on the journey he slowly learns to share the burden and walk toward a future of his own choosing.',
+  quote:'I used to keep the roads open for others. Now... I\'m learning to walk one of my own.',
+  base:{hp:84,mp:42,atk:9,mag:10,def:10,spd:12}, grow:{hp:8.5,mp:3.8,atk:1.1,mag:1.3,def:1.2,spd:1.0},
+  skills:[
+   {id:'mechanism_operation',n:'Mechanism Operation',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'},{k:'slow',d:1}],req:{lvl:1},sig:true,desc:'Operates an ancient mechanism or disables a construct: analysed, stripped of its barrier and slowed.'},
+   {id:'traverse',n:'Traverse',icon:'🪢',mp:8,kind:'support',tgt:'allies',fx:[{k:'buff',stat:'spd',m:1.2,d:3},{k:'ward',d:2}],req:{lvl:1},sig:true,desc:'Sets ropes, anchors and temporary footholds: the party moves faster and resists being knocked off balance. (Outside battle, crossing difficult terrain is not built yet.)'},
+   {id:'structural_reinforcement',n:'Structural Reinforcement',icon:'🧱',mp:12,kind:'support',tgt:'allies',fx:[{k:'shield',v:.12,d:3},{k:'buff',stat:'def',m:1.2,d:3}],req:{lvl:1},sig:true,desc:'Temporarily stabilises weak structures and creates safe zones: the party gains a barrier and more defence.'},
+   {id:'terrain_manipulation',n:'Terrain Manipulation',icon:'⛰️',mp:13,kind:'phys',tgt:'foes',pow:.8,fx:[{k:'slow',d:2}],req:{lvl:1},sig:true,desc:'Raises stone barriers or drops rockfalls: damages and slows every foe.'},
+   {id:'field_reconnaissance',n:'Field Reconnaissance',icon:'🔭',mp:6,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:1},sig:true,desc:'Reveals weak points and hidden traps: the foe takes 15% more damage. (Revealing hidden paths on the map is not built yet.)'},
+   {id:'precise_strike',n:'Precise Strike',icon:'🗡️',mp:4,kind:'phys',tgt:'foe',pow:1.3,fx:[{k:'expose',d:2}],req:{lvl:1},sig:true,desc:'A controlled, efficient close-range strike aimed at opening weak points, not raw power.'},
+  ],
+  passive:'Wayfinder (sheet passives, not all built): Route Planning (fewer ambushes, better movement in unfamiliar areas) · Wayfinder\'s Eye (senses the direction of connected routes in the transit network) · Steady Presence (calm; resists cold, fatigue and disorientation) · Companion\'s Path (unlocks extra dialogue and exploration routes with the party). These are story and exploration effects and are not built yet.'},
+
+ /* ===== VOLUME 12 BETA GUEST: YUN LONG (author). A dragon cultivator and field investigator who joins while Xining recovers. Shared Taoist techniques from Yun He plus powers of his dragon nature. Unlocks at Volume 12 chapter 25 (YUNLONG_CH in core.js). Portrait is a placeholder. ===== */
+ yunlong:{
+  vol2:true, guest:true, n:'Yun Long', zh:'云龙', icon:'🐉', title:'Dragon Disciple',
+  cls:'Dragon Cultivator / Field Investigator (Guest)', role:'Support · Healing · Detection', combat:'Dragon-powered field specialist',
+  elements:'Dragon qi · Water · Taoist technique',
+  identity:'A dragon cultivator who investigates in the field. A brilliant, disciplined disciple of Yun He, born in Yunling; calm, loyal and formidable in combat, he wields the power of the azure dragon and assists in medical research, protection and field support. Often quiet, but deeply observant and dependable. He bears a forehead mark. He learned shared Taoist techniques under Yun He and has powers of his own from his dragon nature and past life. He joins the party as a guest while Xining recovers.',
+  quote:'Something is hiding here. I can feel it in the air.',
+  base:{hp:86,mp:40,atk:10,mag:11,def:9,spd:12}, grow:{hp:8.6,mp:3.6,atk:1.1,mag:1.5,def:1.1,spd:1.0},
+  skills:[
+   {id:'dragon_talon',n:'Dragon-Talon Strike',icon:'🐉',mp:0,kind:'phys',tgt:'foe',pow:1.0,req:{lvl:1},sig:true,desc:'A plain strike with dragon-qi behind it.'},
+   {id:'azure_dragon_breath',n:'Azure Dragon Breath',icon:'💧',mp:12,kind:'heal',tgt:'ally',pow:.9,fx:[{k:'buff',stat:'def',m:1.2,d:3}],req:{lvl:1},sig:true,desc:'Restores an ally\'s HP and grants temporary defence (+20% DEF for 3 turns). A little weaker than a dedicated healer.'},
+   {id:'dragons_insight',n:'Dragon\'s Insight',icon:'👁️',mp:8,kind:'support',tgt:'foes',fx:[{k:'sense'}],req:{lvl:1},sig:true,desc:'Detects hidden spiritual traces and supernatural presences: reveals every foe\'s stats and marks magical or layered foes as exposed (+15% damage taken). (Out of battle it detects nothing yet.)'},
+   {id:'dragons_suppression',n:'Dragon\'s Suppression',icon:'🔇',mp:13,kind:'magic',tgt:'foe',pow:.6,antiMagic:1.5,fx:[{k:'quell',nb:true},{k:'silence',d:1}],req:{lvl:1},sig:true,desc:'Releases dragon qi to weaken or interrupt a supernatural enemy: hits magical foes harder, silences it for a turn and cuts its spell damage by 40% for 3 turns (bosses can resist the silence).'},
+   {id:'scales_hidden_dragon',n:'Scales of the Hidden Dragon',icon:'🛡️',mp:10,kind:'support',tgt:'ally',fx:[{k:'shield',v:.22,d:3}],req:{lvl:1},sig:true,desc:'Raises a barrier of dragon scales on one ally that absorbs 22% of their max HP in damage.'},
+  ],
+  passive:'Past life and dragon nature: sensitive to hidden spiritual traces. Temporary beta guest: tested in Volume 12; his kit is first-pass and may be trimmed if he is too versatile for one seat.'},
+ /* ===== FUTURE GUEST: YUN HE 云和 (author). Yun Long\'s shifu and Xining\'s master: Taoist healer and fate reader. Guest in the volume after Volume 12 (chapter not decided: not in JOIN_CH yet). Portrait is a placeholder. ===== */
+ yunhe:{
+  vol2:true, guest:true, n:'Yun He', zh:'云和', icon:'🧵', title:'Healer · Celestial Siming',
+  cls:'Taoist Healer / Fate Reader (Guest)', role:'Tactical Support · Healing · Control', combat:'Predictive tactician',
+  elements:'Fate · Amulets · Taoist healing',
+  identity:'Xining\'s master and Yun Long\'s shifu, born in Yunling, with sanctuaries at Yunling and Yilong. The disciple of Ming Huairen (Dongyue\'s grandfather), whom Dongyue calls Brother A\'He. A compassionate healer with a calm and perceptive mind, known for gentle guidance, deep medical knowledge and an unwavering sense of responsibility. A Taoist healer who divines with amulets, quells demons and reads fate. Precise and predictive where Yun Long is a dragon-powered field specialist.',
+  quote:'Every action has a thread. Find it before it pulls.',
+  base:{hp:80,mp:48,atk:7,mag:13,def:8,spd:11}, grow:{hp:8.0,mp:4.4,atk:.8,mag:1.8,def:1.0,spd:.9},
+  skills:[
+   {id:'amulet_strike',n:'Amulet Strike',icon:'📜',mp:0,kind:'magic',tgt:'foe',pow:.9,req:{lvl:1},sig:true,desc:'A thrown talisman that bursts on impact.'},
+   {id:'fate_thread',n:'Fate Thread · 命运之丝',icon:'🧵',mp:8,kind:'support',tgt:'foe',fx:[{k:'fate'}],req:{lvl:1},sig:true,desc:'SIGNATURE. Reads a foe\'s fate and marks its next action (3 turns). Ordinary foes: you see the exact move and its target. Elites: only the kind of action and its target, and it costs 3 more MP. Bosses: only the kind of action. While a foe is marked, if its action is interrupted, evaded or braced against, it is exposed and takes bonus damage (8% of max HP, 3% for bosses). The read stays on the foe while it lasts.'},
+   {id:'severed_possibility',n:'Severed Possibility · 断缘',icon:'✂️',mp:10,kind:'support',tgt:'foe',needMark:true,fx:[{k:'sever'}],req:{lvl:1},sig:true,desc:'Cuts a marked foe\'s next action. Ordinary foes: lose their next turn. Elites: 60% chance. Bosses: 30% chance and only weakens the action to its weakest move. Needs a Fate Thread mark.'},
+   {id:'taoist_healing_seal',n:'Taoist Healing Seal · 道医符',icon:'☯️',mp:11,kind:'heal',tgt:'ally',pow:1.1,fx:[{k:'cleanse1'},{k:'cool',v:12}],req:{lvl:1},sig:true,desc:'Restores HP, clears one ordinary status and stabilises disrupted spiritual energy (eases Xiyu\'s heat).'},
+   {id:'demon_quelling_talisman',n:'Demon-Quelling Talisman · 镇邪符',icon:'🔇',mp:12,kind:'magic',tgt:'foe',pow:.5,antiMagic:1.5,fx:[{k:'quell'}],req:{lvl:1},sig:true,desc:'Restrains a supernatural enemy (2 turns bound; bosses can resist) and cuts its spell damage by 40% for 3 turns. A non-supernatural foe is only weakened, not bound.'},
+  ],
+  passive:'Reads Fate: always sees how a marked foe is about to act. Not yet recruited: his chapter is the next volume after Volume 12 (not decided).'},
 };
 const ROSTER = Object.keys(CHARACTERS);

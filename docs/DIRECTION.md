@@ -39,3 +39,9 @@ Two main arcs: **clear Dongyue's mother's name**, and the **demon-hunting arc** 
 ## Volume 13: Xiyu sets up a Yilong base (author)
 In Volume 13 Xiyu also establishes a **Yilong base**, like the Muxue base (opened at chapter 409 with its mirror-array link). BUILT (see docs/BASE_ART.md): the second base opens at chapter 429 (Volume 13 comic 005). Suggested build when the chapter arrives: a second hub in `scripts/base.js` (a base list instead of one hub, each with its own Hall, a shared Quest Board and Bounties, and a Comms line), `BASE_OPEN_CH` per base, and a `yilong_base_established` flag. Art needed: the Muxue list in docs/BASE_ART.md repeated for Yilong (four banners, an unlock splash, optional icons and a caretaker or keeper portrait).
 Note: Yun He's Yilong sanctuary is a separate place (free rest only); the Yilong base is Xiyu's own.
+
+## Xining's path (author)
+Her recovery comes first, then the birth, then her postpartum recovery and taking care of the child. Yun Long holds her place in the active party meanwhile; she returns in Volume 14 or 15 (not decided). Do not return her to the party before her recovery arc says so, and do not skip the birth or the postpartum stage.
+
+## The boy in Volume 12 comic 038 (author)
+He is deliberately **unnamed**: a secret to be revealed much later. The text names him nowhere and links him to no one (not Ming Huairen's family, not anyone with a silver streak). Do not guess or hint at his identity in chapters, hooks or banter.

@@ -1694,7 +1694,7 @@ const CH_RITUAL = { 22:14, 23:11, 24:11, 25:10, 28:7 };   // 25: "Ten days left"
 const RITUAL_DONE_CH = 32;   // provisional: from the hook list (ch31 phase 1, ch32 phase 2 completed); ch33 is "After the Ritual"
 
 /* Heroes who stop being available when a chapter completes. */
-const CH_AWAY = { 407:{ xining:'Recovering from the Duanlu Gorge blast under Yun He\'s care (at Yilong, then Zhan Manor). She cannot fight or heal until her meridians recover; she is expected back in Volume 14 or 15 (not decided). Yun Long takes her place in the active party until then.' }, 24:{ xiaotian:'Separated from Xiyu and Dongyue in the temple (their fate is unknown).', yaxing:'Separated from Xiyu and Dongyue in the temple (their fate is unknown).' },
+const CH_AWAY = { 407:{ xining:'Recovering from the Duanlu Gorge blast under Yun He\'s care (at Yilong, then Zhan Manor). She cannot fight or heal until her meridians recover; she is expected back in Volume 14 or 15 (not decided). Yun Long takes her place in the active party until then. Her path (author): recovery first, then the birth, then postpartum recovery and caring for the child.' }, 24:{ xiaotian:'Separated from Xiyu and Dongyue in the temple (their fate is unknown).', yaxing:'Separated from Xiyu and Dongyue in the temple (their fate is unknown).' },
                   39:{ yaxing:'His mind was damaged by the bull demons\' experiments. He stays at the Ice Temple to recover under Muxue Yan\'s care.' },
                   126:{ yaxing:'Found chained in a hidden chamber of the Ice Temple, very weak. He needs a day of rest before he can travel.' } };
 const CH_BACK = { 34:['xiaotian','yaxing'] };   // ch34: "They are recuperating in the rooms"

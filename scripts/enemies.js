@@ -124,7 +124,7 @@ const ENEMIES = {
   /* ---- Volume 12: Duanlu Gorge ---- */
   lesser_demon:{n:'Lesser Demon',icon:'👹',hp:110,atk:17,mag:9,def:8,spd:12,xp:56,gold:26,traits:['magic'],
     moves:[{n:'Rending Claw',pow:1.1},{n:'Blood Mist',pow:.8,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'rift_shard',chance:.3}],desc:'A lesser demon of the Qingluo River. It attacks from different directions and does not seem to answer to one master.'},
-  crimson_stranger:{n:'The Crimson Stranger',icon:'🩸',boss:true,hp:780,atk:27,mag:21,def:16,spd:11,xp:420,gold:210,traits:['magic','layered'],
+  crimson_stranger:{n:'The Crimson Stranger',icon:'🩸',boss:true,overwhelm:true,hp:780,atk:27,mag:21,def:16,spd:11,xp:420,gold:210,traits:['magic','layered'],
     moves:[{n:'Blood-Mist Claw',pow:1.4},{n:'Crimson-Black Blast',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Gaze',pow:1.2,spell:true,fx:[{k:'silence',d:1}]}],
     phases:[{at:.5,msg:'The stranger\'s calm is gone: crimson-black energy surges around him!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon in human form who hunts for spiritual power. He covets the blood moon, the celestial lineage and the sealed bloodline. His aura halves damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
@@ -146,7 +146,7 @@ function mkEnemy(key, lv){
   return { key, name:e.n, icon:e.icon, boss:!!e.boss, elite:!!e.elite, traits:e.traits||[], moves:e.moves, drops:e.drops||[],
     hp:Math.round(e.hp*mh), mhp:Math.round(e.hp*mh), mp:0, mmp:0,
     atk:Math.round(e.atk*ma), mag:Math.round(e.mag*ma), def:Math.round(e.def*md), spd:Math.round(e.spd*(1+d*.02)),
-    xp:Math.round(e.xp*x), gold:Math.round(e.gold*x), phases:e.phases ? e.phases.map(p => Object.assign({}, p)) : null };
+    xp:Math.round(e.xp*x), gold:Math.round(e.gold*x), overwhelm:!!e.overwhelm, phases:e.phases ? e.phases.map(p => Object.assign({}, p)) : null };
 }
 
 /* ---- items ---- */

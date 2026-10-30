@@ -54,7 +54,9 @@ const CHARACTERS = {
    {id:'soul_link',n:'Shared Strength',icon:'💞',mp:12,kind:'support',tgt:'ally',fx:[{k:'regen',v:.08,d:3},{k:'buff',stat:'mag',m:1.25,d:3},{k:'cleanse'}],req:{lvl:12,flag:'soul_bond'},desc:'The bond-spell of Chapter 20 lets him lend an ally his strength (it is not a permanent soul bond). Steady regeneration, MAG up, ailments cleared.'},
    {id:'radiant_sanctuary',n:'Radiant Sanctuary',icon:'🌟',mp:26,kind:'heal',tgt:'allies',pow:1.5,fx:[{k:'shield',v:.2,d:3},{k:'cleanse'}],req:{lvl:30},desc:'PLACEHOLDER (gameplay). A sanctuary of light: heals the whole party, shields them and clears ailments.'},
    {id:'ancient_rite',n:'Ancient Healing Rite',icon:'📜',mp:22,kind:'heal',tgt:'allyDown',pow:1.4,fx:[{k:'revive'}],req:{lvl:16,flag:'ancient_rite'},desc:'The ancient incantation he used to save Xiyu (Chapter 18): raises a fallen ally.'},
-  ]},
+  ],
+  magicRes:'Natural Magic Resistance: highly resistant to ordinary offensive magic (fireballs, offensive wards) and to ordinary charms and silences, but not immune. An extremely powerful demonic attack can overcome it, and a non-damaging illusion can take effect while he is drunk.',
+  passive:'Natural Magic Resistance (see magicRes).'},
  yaxing:{
   n:'Ya\'Xing', zh:'亚星', icon:'⚓', title:'The Steady Sailor',
   cls:'Ranger / Navigator', role:'Ranged Damage · Utility', combat:'Archer and trapper',
@@ -175,7 +177,7 @@ const CHARACTERS = {
    {id:'read_mechanism',n:'Read the Mechanism',icon:'⚙️',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},desc:'Reads a construct or trap: reveals it and strips its barrier. (Out of battle it opens nothing yet.)'},
   ],
   passive:'Knows the Way: he is always the first to notice a changed corridor. Temporary guest: leaves when the Ice Temple arc ends.'},
- /* ===== YAN (晏), the Volume 6 watcher and guide (author's sheet). Not playable yet: he joins in Volume 7 (join chapter not decided), and later becomes the caretaker of Xiyu's base. Different character from Muxue Yan (岩; id 'yan'). The sheet wrote his name 颜: the author says that is wrong; the game uses 晏. ===== */
+ /* ===== YAN (晏), the Volume 6 watcher and guide (author's sheet). Not playable yet: he joins in Volume 7 (join chapter not decided), The caretaker of Xiyu's base will be a member of the Muxue extended cast, to be established by the author (not Xiao Yan). Different character from Muxue Yan (岩; id 'yan'). The sheet wrote his name 颜: the author says that is wrong; the game uses 晏. ===== */
  yanwatcher:{
   vol2:true, n:'Xiao Yan', zh:'晏', icon:'🧭', title:'Former Keeper of the Transit Network',
   cls:'Wayfinder (机关行者)', role:'Support · Control · Utility', combat:'Mechanism specialist',

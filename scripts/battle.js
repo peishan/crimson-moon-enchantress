@@ -13,7 +13,7 @@ function mkAlly(id, persist){
     hp:Math.max(hp,1), mhp:s.hp, mp, mmp:s.mp, atk:s.atk, mag:s.mag, def:s.def, spd:s.spd,
     st:{}, bf:[], state:null, used:{}, dead:false, guard:false, strain:0, treats:0,
     heat: id==='xiyu' ? (G.heat||0) : 0, glow: id==='xiyu' && (G.afterglow||0)>0,
-    resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow, mpRed: gearFx(id).mpRed, discRes: gearFx(id).discRes, fxPlus: gearFx(id).fxPlus };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
+    innateRes: id==='dongyue' ? .7 : 0, drunk: false, resMagic: (id==='yaxing' && G.flags.yaxing_rejoined ? .15 : 0) + gearFx(id).magRed, resPhys: gearFx(id).physRed, noSlow: !!gearFx(id).noSlow, mpRed: gearFx(id).mpRed, discRes: gearFx(id).discRes, fxPlus: gearFx(id).fxPlus };   // Ya'Xing's Spell Resistance (reduces, never immunity) + gear
 }
 function mkFoeUnit(key, lv, i, x){
   x = x || {};
@@ -127,7 +127,11 @@ function strike(src, tgt, s, opts){
   raw -= eff(tgt,'def') * (magic ? .35 : .6);
   let d = Math.max(1, Math.round(raw));
   if(s.antiMagic && tgt.traits.includes('magic')) d = Math.round(d*s.antiMagic);
-  if(tgt.ally){ const rs = magic ? tgt.resMagic : tgt.resPhys; if(rs) d = Math.max(1, Math.round(d*(1-rs))); }   // spell resistance / physical guard
+  if(tgt.ally){ const rs = magic ? tgt.resMagic : tgt.resPhys; if(rs) d = Math.max(1, Math.round(d*(1-rs))); }
+  if(tgt.ally && magic && tgt.innateRes){   // Dongyue's natural resistance: relative to the strength of the attack (docs/MAGIC_RULES.md)
+    if(src.overwhelm){ if(!B.overwhelmSeen){ B.overwhelmSeen = true; blog('  '+src.name+'\'s power overwhelms '+tgt.name+'\'s natural resistance to magic.','bad'); } }
+    else { d = Math.max(1, Math.round(d*(1-tgt.innateRes))); if(!B.resistSeen){ B.resistSeen = true; blog('  '+tgt.name+'\'s natural resistance turns most of the spell aside.','good'); } }
+  }   // spell resistance / physical guard
   if(tgt.st.expose) d = Math.round(d*1.15);   // Physician's Insight
   if(src.st && src.st.quell && magic) d = Math.max(1, Math.round(d*.6));   // Demon-quelling: the foe's spells weakened
   if(tgt.st.layer) d = Math.round(d*.5);       // the shadow's outer layer
@@ -151,6 +155,7 @@ function applyFx(src, tgt, fx){
     case 'burn': case 'slow': case 'bind': case 'charm': case 'silence':
       if(tgt.ally && tgt.st.ward && Math.random()<.7){ blog('  '+tgt.name+' is protected by Still Waters.','good'); return; }
       if(tgt.ally && fx.k==='slow' && tgt.noSlow){ blog('  '+tgt.name+' holds steady.','good'); return; }
+      if(tgt.ally && tgt.innateRes && (fx.k==='charm' || fx.k==='silence') && !tgt.drunk && !(src && src.overwhelm)){ blog('  '+tgt.name+'\'s natural resistance shrugs off the illusion.','good'); return; }   // a non-damaging illusion is normally resisted when sober
       if(tgt.ally && (tgt.resMagic||tgt.discRes) && (fx.k==='silence'||fx.k==='charm') && Math.random() < (tgt.resMagic||0)*2 + (tgt.discRes||0)){ blog('  '+tgt.name+' resists the spell.','good'); return; }
       const th = (tgt.st.thread && tgt.st.thread.n) || 0;
       if(tgt.boss && (fx.k==='bind'||fx.k==='charm') && Math.random() < Math.max(.1, .5 - .15*th)){ blog('  '+tgt.name+' resists!'); return; }

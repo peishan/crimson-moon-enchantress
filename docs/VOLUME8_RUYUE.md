@@ -39,7 +39,7 @@ Ideas that fit what the game already has (all optional, none confirmed):
 Tribute is the system this game was adapted from. It has ~60 scripts; Crimson Moon has about 25. These Tribute systems have **no counterpart** in Crimson Moon (checked by search): skill trees and bond trees, evolutions, auto-battle, skirmish mode, echo rematches, deeds, chronicle, banter/overheard/moments, local regard and reputation, standing and judgments, whisper ledger, timed events, passages, homes/estates/residents, daily/AFK rewards, material codex, growth abilities, world map and travel, register marks, route reconstruction.
 
 Fit for a Volume 8 puppetry/Ruyue storyline, without clue investigation (the author does not want it):
-- **Homes, estates, residents (base.js, estates.js, residents.js):** the natural model for Xiyu's base, which Xiao Yan is meant to look after. Still unbuilt.
+- **Homes, estates, residents (base.js, estates.js, residents.js):** the natural model for Xiyu's base (its caretaker will be a Muxue extended-cast member the author establishes). Still unbuilt.
 - **Banter, overheard, moments (banter.js, overheard.js):** quiet party exchanges, romance and comic relief, no puzzles. Good for Xiyu and Cangyuan scenes and for keeping the party warm while a darker thread grows.
 - **Timed events (timed.js):** letters or visits that arrive as game days pass; a way to deliver puppetry hints without a chapter.
 - **Standing and judgments (standing.js), local regard (regard.js):** how witnesses and places judge the party's choices; fits the "witnesses" the author prefers.

@@ -77,6 +77,7 @@ function rSheet(id){
   return `<div class="panel sheet"><div class="sh"><img src="${portrait(id)}"><div><h3>${c.icon} ${c.n} <span class="sm">${c.zh}</span></h3><div>${c.title}</div><div class="sm">${c.cls}</div><div class="sm">${c.role}</div>
     <div class="sm">Lv ${u.lv}</div>${bar(u.xp,xpToNext(u.lv,id),'xp')}<div class="sm">XP ${u.xp}/${xpToNext(u.lv,id)}</div></div></div>
    <div class="sm" style="margin:6px 0">${c.identity}</div><div class="sm" style="font-style:italic;color:var(--gold)">“${c.quote}”</div>
+   ${c.magicRes ? `<div class="sm" style="margin-top:6px">🛡️ ${c.magicRes}</div>` : ''}
    <div class="sm" style="margin-top:6px">${gateLine(id)} · Elements: ${c.elements}</div>
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}

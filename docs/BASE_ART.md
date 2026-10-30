@@ -18,10 +18,10 @@ The panel shows them cropped to a wide strip (about 3:1 at the top), so keep fac
 `comms_crystal`, `contract_scroll`, `bounty_poster`, `rest_bed`, and five renown badges (Newcomer, Known, Trusted, Respected, Renowned) as `renown_0` to `renown_4`. Three contract-type icons (`kill`, `sweep`, `collect`) if you want them on the cards.
 
 ## 4. Keeper and staff portraits (optional) — 512x512 WebP, same style as `assets/party/`
-- Sister Qing (the Crimson Fairy's staff from Volume 1) as the hall's keeper.
+- Sister Qing (the Crimson Fairy's staff from Volume 1), a candidate for the caretaker role if the author chooses her; otherwise the hall's keeper.
 - A board clerk / notice keeper.
 - A messenger (human or a paper bird) for the Comms page.
-When Xiao Yan becomes the caretaker (planned, not built), a counter pose of him.
+When the caretaker is established (a member of the Muxue extended cast, chosen by the author), a counter-pose portrait of them.
 
 ## 5. Later, if the base grows (residents and wings, from the Tribute estates system)
 Wing rooms at 1024x576 (kitchen, herb garden, training yard, library, guest room) and resident portraits at 512x512. Nothing in the game needs these yet.

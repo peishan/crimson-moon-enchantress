@@ -565,3 +565,8 @@ Comic numbers are Volume 11 "Chapter" numbers (game chapter = number + 352). Onl
 - **New canon to confirm:** Xining's hair is naturally silver and she dyes it dark (011); she has a hidden protection (023-024) that the text does not explain; the stranger sees Xiyu's bloodline, Cangyuan's resonance and Dongyue's celestial trace (020).
 - **For the author:** (1) The pages say the destination is **Yunling** while earlier you called it Yilong; the text uses Yunling. (2) 021 repeats 020's panel "A Warning in Polite Words" as a second panel 4. (3) 022's caption says Xiyu and Cangyuan fight "despite their injuries" though no earlier panel shows them hurt; kept as written. (4) 022-024 call a character "Yan" in captions; the text uses Xiao Yan. (5) 007's panel labels name Xining, Dongyue and Cangyuan in coloured tags; the labels match the art. (6) The base opens at 408 ("Back to Muxue") per your note about preparing for the journey; say if it should open earlier or at the Yunling departure.
 - **Muxue base (guild hub) built:** see docs/BASE_ART.md for the art list.
+
+## Magic rules, tavern-night canon and caretaker correction (see docs/MAGIC_RULES.md)
+- Built Dongyue's natural magic resistance (relative, not absolute) and a per-foe `overwhelm` flag; chapters 406-407 now mention the demon overcoming his resistance and the party needing all eight.
+- Recorded the tavern-night canon and the rule that Xining's notebook (Volume 12 comic 032) never mentions Xiyu's illusion; Dongyue does not learn it from the notebook.
+- Corrected "Xiao Yan as caretaker" everywhere; the caretaker is a Muxue extended-cast member to be established.

@@ -7,7 +7,7 @@
    Xiyu's communication: she keeps a line open to Muxue, so postings can be refreshed from anywhere, once per game day, without
    passing a day (the Quest Board's "Ask around" still passes a day).
    Art slots (all optional, fall back to an icon): assets/base/exterior.webp, hall.webp, board.webp, bounty.webp, comms.webp. See docs/BASE_ART.md.
-   Not built yet: residents, wings and Xiao Yan as caretaker (see the Tribute estates and residents systems), base upgrades.
+   Not built yet: residents, wings and a caretaker (a Muxue extended-cast member the author will establish) (see the Tribute estates and residents systems), base upgrades.
    ===================================================================== */
 const BASE_OPEN_CH = 408;
 const baseOpen = () => G.ch >= BASE_OPEN_CH;

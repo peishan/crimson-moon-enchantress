@@ -145,7 +145,7 @@ const CHARACTERS = {
   ],
   passive:'A Physician\'s Resolve: repeated treatments become more efficient (each heal this battle cuts her healing MP costs by 5%, up to 30%), and she can heal with herbs when her mana is gone (Herb Pouch).'},
  /* ===== VOLUME 6 GUEST (author's sheet): a temporary story-required guest, not a core party member. He joins at the first chapter of Volume 6 (VOL6_START)
-    for the demon-capture arc; GUESTS in core.js holds the window (end chapter not set yet: the author will give it). Later returns (e.g. Volume 8 at Yilong) are planned, not built. */
+    for the demon-capture arc; GUESTS in core.js holds the window (end chapter not set yet: the author will give it). He returns as a guest in Volume 13 during the demon-hunting arc (author), not built yet. */
  suliechen:{
   vol2:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
   cls:'Demon Slayer / Tracker', role:'Control · Restraint · Support', combat:'Capture specialist',

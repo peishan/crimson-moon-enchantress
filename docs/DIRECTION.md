@@ -32,3 +32,6 @@ Their bond is brotherly only; it is not romantic. Each may later be paired with 
 
 ## Quiet Moments (built as a surprise; contents intentionally not listed here)
 - `scripts/banter.js`: 15 short party exchanges, shown after a rest (one per rest, each only once) when the companions in it are with the party and the chapter is reached. Pairings follow the theme; Xiao Tian and Ya'Xing are brothers only. The author asked to discover them while playing as a regular player, so the lines are not summarised in docs or chat.
+
+## Volume 13 plan (author)
+Two main arcs: **clear Dongyue's mother's name**, and the **demon-hunting arc** (Su Liechen joins as a guest here). **Yun He has two bases: Yilong (his sanctuary) and Yunling (the town where the party meets Yun Long).** The game lets the party rest free at both once reached (chapters 410 and 415).

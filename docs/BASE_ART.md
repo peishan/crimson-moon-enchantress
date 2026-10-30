@@ -1,6 +1,6 @@
 # Muxue Base (guild hub): art asset list
 
-The hub is built and working (tab **🏠 Muxue Base**, `scripts/base.js`). It opens after chapter 408 (`BASE_OPEN_CH`), replaces the separate Quest Board and Bounties tabs, and gathers: Hall (free rest, party, work summary), Quest Board, Bounties, and Comms (Xiyu's line to Muxue: refresh postings once a day without passing a day). Every image below is optional: a missing file falls back to an icon, so you can add them one at a time. Put files in `assets/base/` (create the folder) as WebP.
+The hub is built and working (tab **🏠 Muxue Base**, `scripts/base.js`). It opens after chapter 409 (`BASE_OPEN_CH`; Volume 12 comic 025, where Xiyu formally establishes the base), replaces the separate Quest Board and Bounties tabs, and gathers: Hall (free rest, party, work summary), Quest Board, Bounties, and Comms (Xiyu's line to Muxue: refresh postings once a day without passing a day). Every image below is optional: a missing file falls back to an icon, so you can add them one at a time. Put files in `assets/base/` (create the folder) as WebP.
 
 ## 1. Hub banners (used now) — 1024x576 WebP, subject centred
 The panel shows them cropped to a wide strip (about 3:1 at the top), so keep faces and key props in the middle band.
@@ -9,7 +9,7 @@ The panel shows them cropped to a wide strip (about 3:1 at the top), so keep fac
 | `hall.webp` | The base's main hall: warm lanterns, a long counter, plum blossoms outside, the Crimson Fairy's feel | Hall tab header |
 | `board.webp` | The contract wall: notice boards covered in scrolls, wax seals | Quest Board header |
 | `bounty.webp` | The bounty wall: wanted-style posters of beasts and demons | Bounties header |
-| `comms.webp` | Xiyu's communication: a scrying mirror / spirit crystal on a lacquer table, paper messenger birds | Comms header |
+| `comms.webp` | Xiyu's communication: the **mirror array** from comic 025 (a large round mirror glowing blue with talisman rings), with paper messenger birds | Comms header |
 
 ## 2. Unlock moment (not wired yet) — 1024x1536 WebP
 - `exterior.webp`: the Muxue base from outside (gate, courtyard, lanterns, snow and blossoms), the party arriving. Reserved for a "The Muxue Base opens" splash in the style of the volume covers when chapter 408 is completed.

@@ -6471,6 +6471,123 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"409": [
+{
+"id": "xiyu_establishes_her_base_with_a_mirror_array_and_takes_the_chests_contents",
+"d": "Xiyu formally establishes her base on Muxue Island with a mirror-array link for news of her father, and takes the inheritance chest's weapon, books and keepsakes with her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"410": [
+{
+"id": "yun_long_treats_xining_with_his_dragon_life_force_and_joins_the_party",
+"d": "At Yunling Yun Long treats Xining with what looks like acupuncture but is his own dragon life force, which Xiyu and Cangyuan see through; he says she must reach Yun He within seven days and joins the party to guide a spatial route",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"411": [
+{
+"id": "spatial_passage_to_yun_he_day_one",
+"d": "Yun Long opens a spatial passage with a Bagua disc, compass and talismans; the passage distorts distance and an anchor is disturbed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"412": [
+{
+"id": "first_spatial_anchor_damaged_by_residue_and_restored",
+"d": "The first spatial anchor stone is cracked and full of spiritual residue absorbed by nearby plants; Yun Long stabilises it as illusory corridors appear",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"413": [
+{
+"id": "corridor_of_echoes_and_dongyue_refuses_the_voice",
+"d": "The passage echoes familiar voices and memories; Dongyue hears Xining calling and does not follow, and the party takes the narrow real path",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"414": [
+{
+"id": "spatial_passage_ends_and_the_party_walks_the_last_three_days",
+"d": "The party leaves the spatial passage at its final anchor and walks the mountain road toward Yun He with three days left",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"415": [
+{
+"id": "yun_he_found_and_xining_is_pregnant",
+"d": "At Yun He's sanctuary Dongyue is reunited with his childhood friend Yun He (\"Brother A'He\"), who finds Xining about five or six lunar months pregnant with mother and child both in danger",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"416": [
+{
+"id": "dongyue_reads_the_notebook_and_learns_he_is_the_father",
+"d": "Dongyue reads Xining's notebook entry of the tavern night, which records only her own experience, and learns he is the child's father; his own memories of the night remain fragmentary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"417": [
+{
+"id": "first_stage_of_xinings_treatment",
+"d": "Yun He clears part of the demonic residue from Xining with Dongyue steadying the circulation; the plant from the damaged anchor helps draw out the contamination",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"418": [
+{
+"id": "xining_dreams_of_being_a_white_bird_reborn_as_a_human",
+"d": "Xining dreams of asking to be reborn, becoming a white bird with sealed powers tended by a boy, and then a human; Yun He says memories of previous existences may surface as the soul recovers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"419": [
+{
+"id": "xining_wakes_in_yun_hes_sanctuary_in_yilong",
+"d": "Xining wakes in Yun He's sanctuary in Yilong with fragments of the gorge and of a bird, a boy's hands and a garden; she must not use healing abilities yet",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"420": [
+{
+"id": "dongyue_and_xining_speak_about_the_child",
+"d": "Dongyue tells Xining he has read her notebook and knows about the child, and says the child is theirs and he is happy",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"421": [
+{
+"id": "second_stage_of_treatment_and_rest_for_two_days",
+"d": "The second stage of treatment removes more contamination while Yun He contains a reacting wisp of dark energy; Xining must rest at least two days and not use healing magic",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -191,6 +191,7 @@ const ZONES = [
   {id:'frontier', n:'The Thousand-Mile Frontier', icon:'🛤️', unlock:354, off:1, pool:['spirit_wolf','frost_wolf','snowfield_ram','ridge_yeti'], boss:null, desc:'The trade roads and mountain trails around the Thousand-Mile Waystation: spirit wolves and wandering beasts. Wilds only, not a story location.'},
   {id:'shattered', n:'The Shattered Ridge', icon:'⛰️', unlock:358, off:2, pool:['spirit_wolf','ravine_beast','snowfield_ram','ridge_yeti'], boss:null, desc:'The steep ridge beyond the checkpoint, where territorial beasts hold the high ground. Wilds only, not a story location.'},
   {id:'qingluo', n:'The Qingluo River', icon:'🌊', unlock:393, off:1, pool:['lesser_demon','ice_sprite','glacier_crab','moon_wisp'], boss:null, desc:'The river road between the mountain basin and the coast: lesser demons on the banks and spirits on the water. Wilds only, not a story location.'},
+  {id:'echoes', n:'The Corridor of Echoes', icon:'🌫️', unlock:413, off:2, pool:['rift_wraith','maze_wraith','moon_wisp','ward_sentinel'], boss:null, desc:'The edges of the spatial passage to Yilong: echoes that wear familiar voices, and the constructs that guard the anchors. Wilds only, not a story location.'},
   {id:'depths', n:'Ice Temple · Level 3: Underground', icon:'⛏️', unlock:24, off:2, pool:['cave_crawler','hoard_mimic','maze_wraith'], boss:null, desc:'The underground level below the maze (ch24).'},
 ];
 const zoneOpen = z => z.unlock!==null && G.ch >= z.unlock;

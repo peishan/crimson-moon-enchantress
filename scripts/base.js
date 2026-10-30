@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — THE MUXUE BASE (guild hub)
    Xiyu's base in Muxue, kept as a hub: one tab that gathers the Quest Board (contracts), the Bounties and Xiyu's communication line,
-   plus free rest and a view of the party. Opens when the party turns back toward Muxue to prepare for the journey north
+   plus free rest and a view of the party. Opens when Xiyu formally establishes her base at Muxue (Volume 12 comic 025, chapter 409)
    (BASE_OPEN_CH, change this one number if the author wants another chapter). Once open it replaces the separate Quest Board and
    Bounties tabs; both still run the same systems (scripts/board.js, scripts/bounties.js).
    Xiyu's communication: she keeps a line open to Muxue, so postings can be refreshed from anywhere, once per game day, without
@@ -9,7 +9,7 @@
    Art slots (all optional, fall back to an icon): assets/base/exterior.webp, hall.webp, board.webp, bounty.webp, comms.webp. See docs/BASE_ART.md.
    Not built yet: residents, wings and a caretaker (a Muxue extended-cast member the author will establish) (see the Tribute estates and residents systems), base upgrades.
    ===================================================================== */
-const BASE_OPEN_CH = 408;
+const BASE_OPEN_CH = 409;   // Volume 12 comic 025: Xiyu formally establishes her base and the mirror-array link
 const baseOpen = () => G.ch >= BASE_OPEN_CH;
 const BASE_SECTIONS = [['hall','🏠 Hall'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['comms','📨 Comms']];
 let baseSection = 'hall';

@@ -6588,6 +6588,33 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"422": [
+{
+"id": "xining_dreams_the_bird_and_the_boy_again_and_wakes_to_yun_he",
+"d": "Xining dreams again of a little white bird tended by a boy through the seasons, and wakes to Yun He; memories return through feelings before words",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"423": [
+{
+"id": "dongyue_accepts_fatherhood_and_commissions_gifts_for_the_child",
+"d": "Yun He says Xining and the child are stable but fragile; Dongyue commissions a soft cloth, a small rabbit and a bell at the Yilong market and hopes the child has Xining's eyes or his silver hair",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"424": [
+{
+"id": "xining_out_of_immediate_danger_and_the_party_heads_for_zhan_manor",
+"d": "Xining is out of immediate danger; Yun He is the disciple of Dongyue's grandfather Ming Huairen; Xining tells Dongyue she heard him say he loved her, and the party prepares to travel to Zhan Manor, Dongyue's family estate, ending Volume 12",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

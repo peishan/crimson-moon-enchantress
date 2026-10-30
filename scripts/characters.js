@@ -197,10 +197,10 @@ const CHARACTERS = {
 
  /* ===== VOLUME 12 BETA GUEST: YUN LONG (author). A dragon cultivator and field investigator who joins while Xining recovers. Shared Taoist techniques from Yun He plus powers of his dragon nature. Unlocks at Volume 12 chapter 25 (YUNLONG_CH in core.js). Portrait is a placeholder. ===== */
  yunlong:{
-  vol2:true, guest:true, n:'Yun Long', zh:'云龙', icon:'🐉', title:'Dragon Cultivator',
+  vol2:true, guest:true, n:'Yun Long', zh:'云龙', icon:'🐉', title:'Dragon Disciple',
   cls:'Dragon Cultivator / Field Investigator (Guest)', role:'Support · Healing · Detection', combat:'Dragon-powered field specialist',
   elements:'Dragon qi · Water · Taoist technique',
-  identity:'A dragon cultivator who investigates in the field. He learned shared Taoist techniques under Yun He and has powers of his own from his dragon nature and past life. He joins the party as a guest while Xining recovers.',
+  identity:'A dragon cultivator who investigates in the field. A brilliant, disciplined disciple of Yun He, born in Yunling; calm, loyal and formidable in combat, he wields the power of the azure dragon and assists in medical research, protection and field support. Often quiet, but deeply observant and dependable. He bears a forehead mark. He learned shared Taoist techniques under Yun He and has powers of his own from his dragon nature and past life. He joins the party as a guest while Xining recovers.',
   quote:'Something is hiding here. I can feel it in the air.',
   base:{hp:86,mp:40,atk:10,mag:11,def:9,spd:12}, grow:{hp:8.6,mp:3.6,atk:1.1,mag:1.5,def:1.1,spd:1.0},
   skills:[
@@ -213,10 +213,10 @@ const CHARACTERS = {
   passive:'Past life and dragon nature: sensitive to hidden spiritual traces. Temporary beta guest: tested in Volume 12; his kit is first-pass and may be trimmed if he is too versatile for one seat.'},
  /* ===== FUTURE GUEST: YUN HE 云和 (author). Yun Long\'s shifu and Xining\'s master: Taoist healer and fate reader. Guest in the volume after Volume 12 (chapter not decided: not in JOIN_CH yet). Portrait is a placeholder. ===== */
  yunhe:{
-  vol2:true, guest:true, n:'Yun He', zh:'云和', icon:'🧵', title:'Taoist Healer · Fate Reader',
+  vol2:true, guest:true, n:'Yun He', zh:'云和', icon:'🧵', title:'Healer · Celestial Siming',
   cls:'Taoist Healer / Fate Reader (Guest)', role:'Tactical Support · Healing · Control', combat:'Predictive tactician',
   elements:'Fate · Amulets · Taoist healing',
-  identity:'Xining\'s master and Yun Long\'s shifu. A Taoist healer who divines with amulets, quells demons and reads fate. Precise and predictive where Yun Long is a dragon-powered field specialist.',
+  identity:'Xining\'s master and Yun Long\'s shifu, born in Yunling, with sanctuaries at Yunling and Yilong. The disciple of Ming Huairen (Dongyue\'s grandfather), whom Dongyue calls Brother A\'He. A compassionate healer with a calm and perceptive mind, known for gentle guidance, deep medical knowledge and an unwavering sense of responsibility. A Taoist healer who divines with amulets, quells demons and reads fate. Precise and predictive where Yun Long is a dragon-powered field specialist.',
   quote:'Every action has a thread. Find it before it pulls.',
   base:{hp:80,mp:48,atk:7,mag:13,def:8,spd:11}, grow:{hp:8.0,mp:4.4,atk:.8,mag:1.8,def:1.0,spd:.9},
   skills:[

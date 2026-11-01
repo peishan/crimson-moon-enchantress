@@ -6741,6 +6741,132 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"439": [
+{
+"id": "two_households_describe_a_practitioner_who_worked_alone_without_ordinary_medicine",
+"d": "A second household describes a practitioner who asked everyone to step away and used no ordinary medicine; a shared technique is possible but does not show a shared hand and does not connect Ming Yue",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"440": [
+{
+"id": "abu_says_the_method_is_not_entirely_foreign_and_was_changed",
+"d": "A'Bu's acquaintance recognises parts of the practice: not entirely foreign, someone has changed it deliberately or from fragments; A'Bu warns Xiyu not to reproduce it, and a messenger disappears behind a closed gate at night",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"441": [
+{
+"id": "dongyue_visits_ming_yue_at_the_yamen_and_she_will_not_explain",
+"d": "Dongyue visits Ming Yue at the yamen; she says she did not do what they claim, urges him to stay out of it and does not explain why she kept him sheltered",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"442": [
+{
+"id": "dongyue_remembers_a_childhood_of_closed_doors_and_hidden_silver_hair",
+"d": "Dongyue recalls a childhood behind closed doors with silver strands in his hair that dye could not permanently hide, and wonders what his mother was protecting him from",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"443": [
+{
+"id": "abu_proposes_an_altered_foundation_hypothesis",
+"d": "A'Bu proposes that the foundation of one discipline may have been altered to serve another, calls it a hypothesis only, and says the practitioner may have had incomplete knowledge; the party agrees not to accuse anyone yet",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"444": [
+{
+"id": "xining_and_ming_yue_meet_as_healers_at_the_yamen",
+"d": "Xining and Yun He visit Ming Yue at the yamen; Ming Yue is struck by Xining's caution and calls Yun He her father's disciple",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"445": [
+{
+"id": "ming_yue_cannot_place_xining_and_the_testimony_sequence_changed",
+"d": "Ming Yue cannot place where she met Xining and a fleeting image of her at Zhan Manor will not resolve; the preserved record puts the healer's arrival after the illness progressed, where the original witness put it before",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"446": [
+{
+"id": "transfer_ledger_shows_the_original_testimony_once_existed",
+"d": "The transfer ledger shows the supporting papers moved together and the original testimony is not in the archive inventory; a margin notation reads Q.S. with a date in the fourth month",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"447": [
+{
+"id": "a_travelling_practitioner_beyond_yilong_and_two_separate_trails",
+"d": "A'Bu's contacts report a travelling practitioner who used an unfamiliar technique and left patients who improved quickly or worsened; the party keeps this trail separate from the missing testimony",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"448": [
+{
+"id": "three_discrepancies_in_the_chain_of_custody_submitted_to_the_magistrate",
+"d": "The notation names an old administrative office, not a person; three discrepancies (no original, no recorded destination, no signature) are submitted to the magistrate for a chain-of-custody review",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"449": [
+{
+"id": "ming_yue_cleared_and_released",
+"d": "The magistrate formally clears Ming Yue because the first family says they never accused her and the original testimony is missing; she goes home while the inquiry into the records continues separately",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"450": [
+{
+"id": "dongyue_and_xining_formally_engaged",
+"d": "Dongyue and Xining are formally engaged beneath the lanterns of Zhan Manor; Ming Yue welcomes Xining and recalls stepping over a ceremonial fire at her own threshold days earlier",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"451": [
+{
+"id": "reports_of_demon_activity_beyond_yilong_at_the_peaceful_morning_after",
+"d": "The morning after the engagement the household rests, then reports arrive of unusual demon activity beyond Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"452": [
+{
+"id": "demon_hunters_report_an_organised_force_and_the_party_leaves_yilong",
+"d": "Su Liechen's demon hunters report an organised demon force attacking a village on the western route; Xining and Yun He stay at Zhan Manor and the party, with Yun Long, leaves Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

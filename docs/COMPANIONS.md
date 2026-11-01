@@ -68,3 +68,6 @@ Dongyue + Xining (Healers in step, +6%), Dongyue + Xiao Tian (Sworn brothers, +5
 
 ## Update (author): Su Liechen and Volume 13
 Su Liechen joins as a **guest in Volume 13**, during the demon-hunting arc (not at Yilong in Volume 12). Volume 13 has two main arcs: (1) clearing Dongyue's mother's name, and (2) the demon-hunting arc. Chapters not decided yet; no code added beyond the notes (add him to `GUESTS` when the chapter exists).
+
+## Update: Su Liechen joins as a guest at Volume 14 comic 001 (chapter 453)
+He arrives at the pavilion on the western route ("Hey, guys! I've been looking for you everywhere!"), having sent the anonymous letter, and travels with the party for the demon-hunting arc. Built as a guest (`GUESTS.suliechen`, `JOIN_CH.suliechen = 453`, window open-ended until the author sets an end chapter; extra seat). His kit (Subdue, Not Slay and the binding skills) is unchanged. His Volume 14 page design (long dark hair, blue headband, pale scarf, sword) differs from the current portrait asset; send a new portrait if you want it updated.

@@ -6867,6 +6867,69 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"453": [
+{
+"id": "su_liechen_arrives_and_says_someone_is_stirring_trouble_on_the_western_route",
+"d": "Su Liechen, who sent the anonymous letter, joins the party at a pavilion and says several caravans were attacked in the past month by demons with unusual behaviour, and that the incidents form a clear trail with someone deliberately stirring trouble",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"454": [
+{
+"id": "first_attacked_caravan_with_more_than_one_presence_and_a_human_survivor",
+"d": "The wrecked caravan carries spiritual residue from more than one presence and human tracks lead away, so someone survived",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"455": [
+{
+"id": "survivor_says_the_demon_watched_and_chose_its_victims",
+"d": "An injured survivor says the demon watched and chose carefully, ignoring one man who begged and attacking one who fought, and looked back at him before leaving",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"456": [
+{
+"id": "the_demon_breaks_a_formation_it_understood_and_returns_to_check_the_survivor",
+"d": "A shadow demon tears through Liechen's talisman formation, which it seemed to understand, and later came back to check that the survivor was still there",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"457": [
+{
+"id": "settlement_where_asking_about_disappearances_makes_people_missing",
+"d": "In a silent trading settlement an elderly woman warns that those who ask about the disappearances tend to go missing, and says people have stopped counting how many",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"458": [
+{
+"id": "a_porter_seen_alive_being_led_away_and_an_unusual_route_mark",
+"d": "A traveller saw a porter alive after the attack, being led by a non-human figure into the western woods; a token from the family bears an unusual route mark matching the damaged caravan goods",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"459": [
+{
+"id": "abandoned_resting_station_where_captives_were_restrained_and_moved_north",
+"d": "At an abandoned resting station on a forgotten route the party finds posts used to restrain several people and their belongings, with tracks heading toward the old northern road",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

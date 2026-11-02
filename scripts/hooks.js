@@ -6930,6 +6930,60 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"461": [
+{
+"id": "watchtower_is_a_prison_with_captives_brought_in_alive",
+"d": "From a ridge the party sees guards taking captives alive into a ruined watchtower and finds a maintenance passage on the less guarded northern side that leads to a barred cell",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"462": [
+{
+"id": "prisoners_found_and_a_chained_door_sealed_below",
+"d": "Prisoners say others were taken downstairs; a chained door sealed below is avoided by the guards and an old prisoner says something inside breathes",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"463": [
+{
+"id": "a_guard_says_they_were_paid_to_transport_and_fear_the_lower_level",
+"d": "A captured guard says they were paid through an intermediary to transport people, were told never to open the lower level, and that those who go down do not return",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"464": [
+{
+"id": "ledger_of_transports_matches_the_disappearances_and_names_other_stations",
+"d": "A ledger of transports matches reported disappearances and names a northern branch station and a western depot; one person sent to the tower's lower level has no return recorded",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"465": [
+{
+"id": "second_transfer_station_abandoned_with_a_warning_left_behind",
+"d": "A second transfer station was left in a hurry with damaged records and a note warning not to let the watchtower open its lowest chamber",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"466": [
+{
+"id": "lowest_chamber_formation_built_to_contain_something_that_has_escaped",
+"d": "The party opens the old seal beneath the added chains and finds a formation designed to contain something and cut it off from outside energy; claw marks show that whatever was held there escaped",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -6984,6 +6984,249 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"467": [
+{
+"id": "watchtower_chamber_drew_energy_from_captives_and_its_mechanism_was_altered",
+"d": "The lowest chamber gathered energy from living captives through a network of positions toward a central platform; the mechanism was altered from containing to drawing energy in, by someone unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"468": [
+{
+"id": "a_traveller_who_escaped_says_the_demon_spoke_politely_then_drained_a_man",
+"d": "A wounded traveller who escaped says the creature asked questions almost politely and then drained a man who refused to answer; a shadow on the ridge shows it is testing the hunters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"469": [
+{
+"id": "corrupted_beast_bound_not_killed_and_a_marker_older_than_the_watchtower",
+"d": "The party binds a corrupted beast whose meridians were forced rather than killing it, and finds a marker showing the mountain route was used long before the watchtower",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"470": [
+{
+"id": "the_mountain_demon_appears_and_says_it_takes_what_it_needs",
+"d": "The demon of the mountain appears, calls its victims a necessary arrangement, replenishes energy from its surroundings, and says the hunters should learn what it is to lose something first",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"471": [
+{
+"id": "liechen_recalls_the_earth_link_drain_and_says_only_for_now",
+"d": "Liechen recalls the Earth-Link Drain from an old family hunting manual and says only that he has read about something similar",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"472": [
+{
+"id": "plan_to_sever_the_demons_connections_on_the_eastern_ridge",
+"d": "Liechen's family manual suggests severing the demon's energy connections; the party plans a formation on the eastern ridge, and he says he learned from those who came before him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"473": [
+{
+"id": "demon_recognises_the_hunters_technique_and_says_ask_the_people_who_taught_you",
+"d": "The demon recognises the restraint technique and says it once met a hunter who used it, and tells Liechen to ask the people who taught him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"474": [
+{
+"id": "shrine_where_life_force_was_taken_directly_from_living_beings",
+"d": "At a silent shrine life force was drawn directly from living victims in repeated sessions through a formation whose purpose had been deliberately changed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"475": [
+{
+"id": "a_hunter_once_spared_the_demon_on_condition_it_stop_consuming_others",
+"d": "A hidden record says a hunter once spared the demon on condition that it abandon consuming others; the final pages are missing and Liechen sees his own tradition in it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"476": [
+{
+"id": "watchtower_and_shrine_share_one_restraint_formation_altered_to_collect_energy",
+"d": "The shrine and the watchtower share one restraint formation; the watchtower version reverses the channels to collect life force; the two seals do not match, so the hunter who spared the demon and those who altered the formation may be unconnected",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"477": [
+{
+"id": "captives_saved_and_the_extraction_ritual_ruined_but_the_demon_escapes",
+"d": "The party saves captives at an underground extraction site and ruins the ritual; Liechen's chains hold for the first time before the demon escapes as the chamber collapses",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"478": [
+{
+"id": "the_hunter_who_spared_the_demon_was_liechens_mother",
+"d": "A lotus crest matching Liechen's pendant falls from the record's wrapping, and he tells the party the hunter who spared the demon was his mother",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"479": [
+{
+"id": "liechen_was_a_prince_and_his_mother_a_queen_and_demon_hunter",
+"d": "Liechen tells the party his mother was the queen of a small kingdom and a demon hunter, that his father remarried and other princes came, and that he left the palace to live by his own choices",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"480": [
+{
+"id": "the_mercy_his_mother_gave_and_the_demon_broke",
+"d": "His mother subdued the demon and spared it on condition that it never take another life; it returned to consuming life force and broke the promise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"481": [
+{
+"id": "his_mother_died_destroying_the_demons_body_in_a_final_restraint_formation",
+"d": "His mother went to end the demon, was followed in secret by her young son, drew the demon into a final restraint formation and shattered its body, and died of her wounds",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"482": [
+{
+"id": "plan_to_isolate_and_destroy_the_demons_core_so_it_cannot_regenerate",
+"d": "The party concludes the demon's core survived dormant and rebuilt its form, and plans to sever its life-force channels, isolate the core and destroy it completely",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"483": [
+{
+"id": "a_pulsing_core_beneath_the_mountain_fed_by_four_added_channels",
+"d": "Beneath a secluded ridge the party finds the demon's core fed by four energy channels that someone added to a containment formation; the first channel is severed under Xiao Yan's direction",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"484": [
+{
+"id": "the_four_channels_severed_and_the_demons_core_exposed",
+"d": "The party severs the remaining channels while holding the demon off and the core is fully exposed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"485": [
+{
+"id": "liechen_seals_and_shatters_the_demons_core_with_his_mothers_restraint",
+"d": "Liechen completes his mother's restraint formation, seals the demon's core and shatters it; the demon, stripped of strength, shows regret for the first time, and the party confirms the core can never rebuild itself",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"486": [
+{
+"id": "the_rescued_go_home_and_liechen_rests",
+"d": "With the demon's core destroyed the rescued victims are reunited with their families and Liechen lets himself rest",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"487": [
+{
+"id": "liechen_chooses_to_carry_his_mothers_legacy_without_following_every_trail",
+"d": "Liechen reads his mother's records, keeps a few, preserves the rest for future hunters, and chooses to keep hunting because he believes in what she taught him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"488": [
+{
+"id": "a_sealed_letter_from_a_neighbouring_settlement_and_liechen_travels_on",
+"d": "A village elder hands Liechen a sealed letter about disappearances and spiritual disturbances along a distant road with abandoned waystations, and Liechen decides to keep travelling with the party for the time being",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"489": [
+{
+"id": "a_quiet_settlement_where_travellers_and_residents_vanished_and_no_bodies_were_found",
+"d": "A quiet settlement reports several travellers and two residents vanished in a month with no bodies found; witnesses disagree about strange lights versus bandits; Yun Long finds a faint disturbance unlike the destroyed core and an old waystation is missing from the local records",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"490": [
+{
+"id": "the_abandoned_waystation_was_used_recently_and_hides_a_passage",
+"d": "An abandoned waystation shows recent occupation and a missing resident's pendant; Xiao Yan opens a hidden passage into the hillside whose layered residue shows no sign of the life-force technique",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"491": [
+{
+"id": "human_built_passage_a_holding_room_and_a_warning_not_to_follow_beyond_the_river",
+"d": "The hidden passage is built with mechanical, non-magical barriers; a holding room contains restraints and clothing, a compass-and-arrows symbol that matches no known mark, and a note: \"Do not follow beyond the river\"",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"492": [
+{
+"id": "a_hidden_river_crossing_used_to_move_people",
+"d": "A concealed river crossing shows footprints and cart marks of people carried and led, a travel token of a missing traveller, a watcher on the far bank, and a lantern-less boat heading downstream",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"493": [
+{
+"id": "hidden_valley_outpost_run_by_people_holds_captives",
+"d": "A hidden valley outpost with a disciplined watch rotation holds captives; there is no trace of the previous demon's technique, so it is organised by people, and another boat with covered cargo approaches",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -48,6 +48,9 @@ chapterOf(383).battle = [{key:'mountain_devourer'}];   // chapter 031: the Mount
 chapterOf(399).battle = [{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'}];   // Volume 12 chapter 015: the landing
 chapterOf(405).battle = [{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'},{key:'lesser_demon'}];   // chapter 021: the gorge closes
 chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'lesser_demon'}];   // chapter 023: the demon in the gorge
+chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
+chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
+chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 
 const chapterDone = n => n <= G.ch;

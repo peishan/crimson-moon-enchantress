@@ -150,7 +150,7 @@ const CHARACTERS = {
   vol2:true, n:'Su Liechen', zh:'苏烈尘', icon:'🗡️', title:'Demon Slayer · Tracker',
   cls:'Demon Slayer / Tracker', role:'Control · Restraint · Support', combat:'Capture specialist',
   elements:'Ice · Restraint · Sealing',
-  identity:'A wandering demon slayer who tracks and captures demons across remote regions. He believes some demons should not be killed, as their death can bring greater disasters. His reasons remain unclear, and he keeps his past private. He travels independently, but is willing to cooperate with the party when their goals align.',
+  identity:'A wandering demon slayer who tracks and captures demons across remote regions. He believes some demons should not be killed, as their death can bring greater disasters. His reasons come from his mother, a queen of a small kingdom who was also a demon hunter and spared a demon at a cost (Volume 14); he left the palace by his own choice and carries her legacy. He travels independently, but is willing to cooperate with the party when their goals align.',
   quote:'Some truths should be captured, not destroyed.',
   base:{hp:84,mp:40,atk:11,mag:9,def:8,spd:13}, grow:{hp:8.6,mp:3.6,atk:1.3,mag:1.1,def:1,spd:1},
   skills:[

@@ -127,6 +127,14 @@ const ENEMIES = {
   crimson_stranger:{n:'The Crimson Stranger',icon:'🩸',boss:true,overwhelm:true,hp:780,atk:27,mag:21,def:16,spd:11,xp:420,gold:210,traits:['magic','layered'],
     moves:[{n:'Blood-Mist Claw',pow:1.4},{n:'Crimson-Black Blast',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Devouring Gaze',pow:1.2,spell:true,fx:[{k:'silence',d:1}]}],
     phases:[{at:.5,msg:'The stranger\'s calm is gone: crimson-black energy surges around him!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon in human form who hunts for spiritual power. He covets the blood moon, the celestial lineage and the sealed bloodline. His aura halves damage until stripped.'},
+  /* ---- Volume 14: the mountain demon arc ---- */
+  corrupted_beast:{n:'Corrupted Beast',icon:'🐺',elite:true,hp:250,atk:20,mag:6,def:12,spd:12,xp:110,gold:55,traits:['magic'],
+    moves:[{n:'Unstable Lunge',pow:1.4},{n:'Violet Surge',pow:.9,spell:true,fx:[{k:'slow',d:1}]}],drops:[{id:'wolf_pelt',chance:.6},{id:'rift_shard',chance:.3}],desc:'A mountain beast whose meridians were forced by the demon. It does not act of its own will; Liechen binds it rather than kill it.'},
+  hooded_attendant:{n:'Hooded Attendant',icon:'🥷',hp:105,atk:16,mag:0,def:9,spd:11,xp:60,gold:30,
+    moves:[{n:'Anchor Guard',pow:1.1},{n:'Shield Push',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'A hooded figure guarding an extraction formation. Who they serve is not known.'},
+  mountain_demon:{n:'The Mountain Demon',icon:'😈',boss:true,hp:820,atk:27,mag:19,def:16,spd:11,xp:440,gold:220,traits:['magic','layered'],
+    moves:[{n:'Life-Drain Reach',pow:1.4,spell:true,fx:[{k:'drain',v:.2}]},{n:'Surging Channels',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Claw of the Mountain',pow:1.3}],
+    phases:[{at:.5,msg:'The demon pours its remaining power into the last channel: its blows grow heavier!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon that consumed life force to grow, was spared once by Su Liechen\'s mother and returned to its old methods. While its channels feed it, its aura halves damage until stripped.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},
@@ -209,6 +217,7 @@ const LOOT = { afflicting_imp:{guaranteed:[{id:'imp_ash',qty:[2,3]}],rolls:[{id:
                crimson_sovereign:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                mountain_devourer:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                crimson_stranger:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
+               mountain_demon:{guaranteed:[{id:'rift_shard',qty:[1,2]}],rolls:[{id:'moonlit_tonic',chance:.5}],firstClear:[{id:'spirit_draught',qty:[1,1]}]},
                frost_warden:{guaranteed:[{id:'ice_crystal',qty:[2,3]}],rolls:[{id:'moonlit_tonic',chance:.5},{id:'spirit_draught',chance:.4}],firstClear:[{id:'rift_shard',qty:[2,2]}]} };
 function rollLoot(table, first){
   const out = []; if(!table) return out;

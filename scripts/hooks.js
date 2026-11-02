@@ -7227,6 +7227,132 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"494": [
+{
+"id": "first_captives_rescued_and_a_ledger_shows_transfers_in_stages",
+"d": "The party rescues the first exhausted captives at the river outpost and finds a ledger of names, dates and destination marks with several entries crossed out: some captives were moved earlier",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"495": [
+{
+"id": "captives_sorted_into_three_groups_and_a_route_to_a_western_main_site",
+"d": "The ledger sorts captives into three groups by constitution, spiritual sensitivity and physical resilience, includes names from at least three other regions and traces a route to a western Main Site",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"496": [
+{
+"id": "a_convoy_with_the_organisations_mark_on_the_old_road",
+"d": "On an old overgrown road the party finds a cart with the organisation's mark, an empty makeshift enclosure with restraints, two watchers on a ridge and a convoy of covered wagons",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"497": [
+{
+"id": "selection_register_copied_from_a_compound_and_a_hidden_superior",
+"d": "Xiao Yan copies a selection register with criteria such as spiritual sensitivity, physical constitution, special aptitude and rare bloodline indicators; a senior officer admits people are chosen for valuable qualities and someone above him gives the real orders",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"498": [
+{
+"id": "three_destination_marks_and_an_authorisation_name_that_never_travels",
+"d": "Three destination marks (holding, assessment, restricted deeper stage) and a name that appears only on authorisation entries point to a supervisor who does not travel with the captives; a seal variation hints at another branch",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"499": [
+{
+"id": "the_old_mountain_station_is_an_examination_site",
+"d": "A rebuilt old mountain station contains examination rooms where captives are assessed individually for traits recorded in the register; no trace of the demon's technique is found and a second group arrives with a sealed authorisation document",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"500": [
+{
+"id": "proof_of_a_central_authority_above_the_mountain_station",
+"d": "A dispatch record names a central authority only by a coded designation, a copied route order points to a destination beyond the mountains, and the party escapes after a guard discovers a missing document",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"501": [
+{
+"id": "all_routes_converge_on_one_compound_beyond_the_mountains",
+"d": "The transfer marks overlaid on a regional map show the stations feed one central route; the party reaches a ridge above the compound where all routes converge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"502": [
+{
+"id": "the_network_supplies_people_with_rare_abilities_to_wealthy_patrons",
+"d": "A worker reveals the network supplies people with rare abilities to wealthy patrons and private organisations as guards, scouts, healers or test subjects; well-dressed visitors are received by senior officials",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"503": [
+{
+"id": "the_central_register_names_five_clients_and_records_harm",
+"d": "In the central register Xiao Yan finds selection, assessment, transfer and client records naming five clients and showing injuries and procedures continued despite risk; an alarm sounds and the facility director takes charge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"504": [
+{
+"id": "director_qiao_defends_resource_development_and_flees",
+"d": "Director Qiao defends the network as resource development, admits powerful patrons ordered it and that others will reopen it while there is demand, and flees as Cangyuan and Xiyu find the main holding building",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"505": [
+{
+"id": "captives_freed_and_director_qiao_cut_off_at_the_outer_gate",
+"d": "The captives are freed while Xiao Tian and Ya'Xing hold back the guards and Xiao Yan and Hoko open trapped locks; Liechen cuts Director Qiao off at the outer gate and refuses any bargain",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"506": [
+{
+"id": "director_and_evidence_handed_to_the_authorities_and_the_names_remembered",
+"d": "The director and the evidence are handed to the local authorities who agree to a wider inquiry into other branches and clients; Liechen sets the selection register beside the list of the rescued and says their names will not be forgotten",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"507": [
+{
+"id": "liechen_asks_to_join_the_party_and_is_accepted_by_everyone",
+"d": "Liechen formally asks to join the party and everyone, led by Dongyue, accepts him; Xiyu says they share the goal of seeking the truth and protecting the innocent",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

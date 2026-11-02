@@ -71,3 +71,6 @@ Su Liechen joins as a **guest in Volume 13**, during the demon-hunting arc (not 
 
 ## Update: Su Liechen joins as a guest at Volume 14 comic 001 (chapter 453)
 He arrives at the pavilion on the western route ("Hey, guys! I've been looking for you everywhere!"), having sent the anonymous letter, and travels with the party for the demon-hunting arc. Built as a guest (`GUESTS.suliechen`, `JOIN_CH.suliechen = 453`, window open-ended until the author sets an end chapter; extra seat). His kit (Subdue, Not Slay and the binding skills) is unchanged. His Volume 14 page design (long dark hair, blue headband, pale scarf, sword) differs from the current portrait asset; send a new portrait if you want it updated.
+
+## Update: Su Liechen becomes a full member at Volume 14 comic 055 (chapter 507)
+He formally asks to join and the whole party accepts him. From chapter 507 (flag `liechen_joins_party_permanently`) the guest rule stops applying to him (`GUESTS.suliechen.permFlag` in core.js): he takes a normal party seat instead of an extra guest seat and no longer has a guest window. Before 507 he stays a guest.

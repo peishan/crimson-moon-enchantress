@@ -135,6 +135,8 @@ const ENEMIES = {
   mountain_demon:{n:'The Mountain Demon',icon:'😈',boss:true,hp:820,atk:27,mag:19,def:16,spd:11,xp:440,gold:220,traits:['magic','layered'],
     moves:[{n:'Life-Drain Reach',pow:1.4,spell:true,fx:[{k:'drain',v:.2}]},{n:'Surging Channels',pow:.9,spell:true,all:true,fx:[{k:'slow',d:1}]},{n:'Claw of the Mountain',pow:1.3}],
     phases:[{at:.5,msg:'The demon pours its remaining power into the last channel: its blows grow heavier!',atk:1.25}],drops:[{id:'ice_crystal',chance:1},{id:'rift_shard',chance:1},{id:'spirit_draught',chance:.6}],desc:'A demon that consumed life force to grow, was spared once by Su Liechen\'s mother and returned to its old methods. While its channels feed it, its aura halves damage until stripped.'},
+  director_qiao:{n:'Director Qiao',icon:'🧑‍⚖️',elite:true,hp:320,atk:21,mag:0,def:14,spd:10,xp:140,gold:90,
+    moves:[{n:'Cold Command',pow:1.2},{n:'Guard\'s Cover',pow:.8,fx:[{k:'slow',d:1}]},{n:'Last Resort',pow:1.5}],drops:[{id:'moonlit_tonic',chance:.6}],desc:'The director of the selection network\'s central facility. A calm administrator who calls his trade resource development and answers to patrons the party has not yet named.'},
   /* ---- Volume 7 confrontation (prototype; the hired fighters who attacked the estate) ---- */
   hired_fighter:{n:'Hired Fighter',icon:'🗡️',hp:120,atk:15,mag:0,def:9,spd:10,xp:60,gold:30,
     moves:[{n:'Coordinated Strike',pow:1.1},{n:'Shield Rush',pow:.8,fx:[{k:'slow',d:1}]}],drops:[{id:'herbal_tonic',chance:.3}],desc:'Paid to attack the estate and bound by contract to say nothing.'},

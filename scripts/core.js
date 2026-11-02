@@ -11,7 +11,7 @@ const CFG = { SAVE_KEY:'crimson_moon_v1', START_LEVEL:1 };
 const YUNLONG_CH = 385 + 25;   // Volume 12 chapter 26 (author, moved from 25); Volume 12 starts at chapter 385. Beta guest; change this one constant if the chapter moves.
 const JOIN_CH  = { suliechen:453, yunlong:YUNLONG_CH, yanwatcher:238, hoko:119, xiyu:1, dongyue:11, xiaotian:14, yaxing:15, cangyuan:46, xining:53 };   // Volume 2: cangyuan = V2 comic 007, xining = V2 comic 014 (author)   // ya'xing: ch15 confirmed by the author. Yan does NOT join in Volume 1 (scripts 021-039: he stays at the Ice Temple)   // ya'xing: ch15 confirmed by the author
 const INTRO_CH = { yunlong:YUNLONG_CH, yanwatcher:226, hoko:119, suliechen:133, xiyu:1, dongyue:2, yaxing:2, xiaotian:2, yan:17, cangyuan:41 };   // cangyuan first appears in V2 comic 002
-const NO_JOIN_YET = { yunhe:'Xining\'s master and Yun Long\'s shifu, a Taoist healer and fate reader with two bases, Yilong and Yunling. He appears as a guest in the next volume after Volume 12; the chapter is not decided yet.', yanwatcher:'Travels with the party only in the story text for now. He becomes a playable member in Volume 7 (the chapter is not decided yet), (he is not the caretaker of Xiyu\'s base; that will be a Muxue extended-cast member).', suliechen:'Met briefly in Volume 4 (comic 017). He joins as a guest at Volume 14 comic 001 (chapter 453) and becomes a full party member at comic 055 (chapter 507).', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
+const NO_JOIN_YET = { qiumin:'Dongyue\'s younger sister, a provincial examination graduate (秀才) of the Zhan family. She joins the travelling group in Volume 15; the chapter is not decided yet.', yunhe:'Xining\'s master and Yun Long\'s shifu, a Taoist healer and fate reader with two bases, Yilong and Yunling. He appears as a guest in the next volume after Volume 12; the chapter is not decided yet.', yanwatcher:'Travels with the party only in the story text for now. He becomes a playable member in Volume 7 (the chapter is not decided yet), (he is not the caretaker of Xiyu\'s base; that will be a Muxue extended-cast member).', suliechen:'Met briefly in Volume 4 (comic 017). He joins as a guest at Volume 14 comic 001 (chapter 453) and becomes a full party member at comic 055 (chapter 507).', yan:'Not joinable in Volume 1: he stays at the Ice Temple (ch39). His role in Volume 2 is not written yet.' };
 
 /* ---------- CHAPTER LEVEL GATES (Crimson Tide style: gate:{type:'level', value, label}) ----------
    Milestone chapters stay locked until the party's AVERAGE level reaches a target: every recruitment
@@ -64,7 +64,12 @@ const isRecruited = id => G.party.includes(id);
 const profileKnown = id => isRecruited(id) || (INTRO_CH[id]!==undefined && G.ch >= INTRO_CH[id]);
 /* Portraits: a story variant is used once its hook has fired; a missing variant file falls back to the base portrait (see index.html).
    assets/party/xiyu_unveiled.webp (veil removed, ch33) · xiyu_wed.webp and dongyue_wed.webp (after the wedding, ch35) · yaxing_injured.webp (after ch36). */
+/* Variant portraits that really exist in assets/party/. The _wed, _unveiled and _injured files were planned but never uploaded, so they are off until added here (a missing file shows a broken image). */
+const PORTRAIT_VARIANTS = ['yaxing_new'];
 function portraitVariant(id){
+  const v = portraitVariantRaw(id); return v && PORTRAIT_VARIANTS.includes(id+v) ? v : '';
+}
+function portraitVariantRaw(id){
   if(!G || !G.hooks) return '';
   if(id==='xiyu') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : hook('xiyu_veil_removed') ? '_unveiled' : '';
   if(id==='dongyue') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : '';
@@ -95,7 +100,7 @@ const XP_TABLES = {
   support:{a:44, b:24, c:1.3},     // Dongyue: battle cleric
   scholar:{a:46, b:25, c:1.35},    // Yan: ancient sage
 };
-const XP_CLASS = { yunlong:'standard', yunhe:'support', xiyu:'standard', dongyue:'support', yaxing:'ranger', hoko:'ranger', yanwatcher:'support', suliechen:'fighter', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
+const XP_CLASS = { qiumin:'support', yunlong:'standard', yunhe:'support', xiyu:'standard', dongyue:'support', yaxing:'ranger', hoko:'ranger', yanwatcher:'support', suliechen:'fighter', xiaotian:'fighter', yan:'scholar', cangyuan:'scholar', xining:'support' };
 const xpToNext = (lv, id) => { const t = XP_TABLES[XP_CLASS[id] || 'standard']; return Math.round(t.a + lv*t.b + lv*lv*t.c); };
 /* Story XP for chapter n on the standard curve, so the story-only level after n chapters is 1 + n*STORY_PACE (continuous cumulative curve). */
 const cumXp = L => 40*(L-1) + 11*(L-1)*L + .2*(L-1)*L*(2*L-1);

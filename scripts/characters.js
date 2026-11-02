@@ -227,5 +227,23 @@ const CHARACTERS = {
    {id:'demon_quelling_talisman',n:'Demon-Quelling Talisman · 镇邪符',icon:'🔇',mp:12,kind:'magic',tgt:'foe',pow:.5,antiMagic:1.5,fx:[{k:'quell'}],req:{lvl:1},sig:true,desc:'Restrains a supernatural enemy (2 turns bound; bosses can resist) and cuts its spell damage by 40% for 3 turns. A non-supernatural foe is only weakened, not bound.'},
   ],
   passive:'Reads Fate: always sees how a marked foe is about to act. Not yet recruited: his chapter is the next volume after Volume 12 (not decided).'},
+
+ /* ===== QIUMIN 秋敏 (author's sheet, for Volume 15; join chapter not decided). Dongyue's younger sister of the Zhan family, a provincial examination graduate (秀才) travelling home to share it. Hidden until INTRO_CH/JOIN_CH are set in core.js. ===== */
+ qiumin:{
+  vol2:true, n:'Qiumin', zh:'秋敏', icon:'🍁', title:'Scholar of the Zhan Family',
+  cls:'Scholar / Tactical Support', role:'Analysis · Support · Persuasion', combat:'Scholar and tactician',
+  elements:'Records · Reasoning · Autumn',
+  identity:'Dongyue\'s younger sister. She recently earned the title of 秀才 in the provincial examination and is travelling home to share her achievement. Curious, thoughtful and eager to understand the world beyond her studies. Independent-minded and ambitious, warm and unexpectedly talkative with kindred spirits, observant and articulate; proud of her scholarship but open to new perspectives, and still learning how the wider world works. Weapon: none (brush, books and a sharp mind). Theme colour: autumn amber.',
+  quote:'The world is larger than the page, and I intend to read it.',
+  base:{hp:74,mp:46,atk:7,mag:12,def:7,spd:11}, grow:{hp:7.4,mp:4.2,atk:.7,mag:1.7,def:.8,spd:.9},
+  skills:[
+   {id:'brush_strike',n:'Brush and Fan',icon:'🖌️',mp:0,kind:'phys',tgt:'foe',pow:.8,req:{lvl:1},sig:true,desc:'A quick strike with the brush case or a closed fan. She is no fighter; this is a last resort.'},
+   {id:'classical_insight',n:'Classical Insight',icon:'📖',mp:7,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'expose',d:3}],req:{lvl:1},sig:true,desc:'Reads old inscriptions, classical texts and historical references to find what a foe is weak to: it takes 15% more damage for 3 turns. (Reading inscriptions out of battle is not built yet.)'},
+   {id:'record_examination',n:'Record Examination',icon:'📜',mp:8,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},sig:true,desc:'Spots the inconsistency in a foe\'s defences as she would in a ledger: analysed and stripped of its barrier and buffs. (Checking documents out of battle is not built yet.)'},
+   {id:'scholarly_reasoning',n:'Scholarly Reasoning',icon:'🧭',mp:12,kind:'support',tgt:'allies',fx:[{k:'crit',d:2},{k:'buff',stat:'mag',m:1.15,d:3}],req:{lvl:1},sig:true,desc:'Connects the clues and gives the party a plan: the allies see openings (crits) and fight a little sharper for a few turns.'},
+   {id:'local_knowledge',n:'Local Knowledge',icon:'🏮',mp:6,kind:'support',tgt:'allies',fx:[{k:'ward',d:3}],req:{lvl:1},sig:true,desc:'Customs, etiquette and official conventions: the party is harder to unsettle for a few turns. (Social uses outside battle are not built yet.)'},
+   {id:'measured_persuasion',n:'Measured Persuasion',icon:'🪭',mp:10,kind:'support',tgt:'foe',fx:[{k:'charm',d:1}],req:{lvl:1},sig:true,desc:'Careful conversation can stop an opponent in its tracks: a chance to make an ordinary foe lose a turn (bosses can resist).'},
+  ],
+  passive:'Provincial Examination Graduate: not yet recruited; she joins in Volume 15 (chapter not decided).'},
 };
 const ROSTER = Object.keys(CHARACTERS);

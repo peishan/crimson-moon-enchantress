@@ -74,3 +74,6 @@ He arrives at the pavilion on the western route ("Hey, guys! I've been looking f
 
 ## Update: Su Liechen becomes a full member at Volume 14 comic 055 (chapter 507)
 He formally asks to join and the whole party accepts him. From chapter 507 (flag `liechen_joins_party_permanently`) the guest rule stops applying to him (`GUESTS.suliechen.permFlag` in core.js): he takes a normal party seat instead of an extra guest seat and no longer has a guest window. Before 507 he stays a guest.
+
+## Qiumin (秋敏), Volume 15 companion (built, hidden)
+Dongyue's younger sister of the Zhan family, a provincial examination graduate (秀才). Character data, a 512px portrait (`assets/party/qiumin.webp`, cropped from the author's sheet) and the full sheet (`assets/cast/qiumin_sheet.webp`, with four expressions) are in. Kit: Brush and Fan (basic), Classical Insight, Record Examination, Scholarly Reasoning, Local Knowledge, Measured Persuasion. She has no join chapter yet, so she stays hidden; set `JOIN_CH.qiumin` and `INTRO_CH.qiumin` when the chapter is chosen. The sheet says no weapon, while the author's note lists martial arts; only a minimal strike was built.

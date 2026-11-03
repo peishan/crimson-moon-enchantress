@@ -652,3 +652,4 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 ## Author decisions on Volume 15
 - Xiyu, Cangyuan and Liechen do travel with the expedition (chapters 523-524 list them); Xining stays at the manor after the wedding.
 - **Page convention:** because the party is large and panels are tight, each page shows only the characters relevant to that chapter. Absence from a panel does not mean absence from the party; I will no longer flag it.
+- **Author decision:** Xining, Yun Long and Yun He stay at Yilong to prepare for Xining's birth. Yun Long leaves the active party at chapter 522 (CH_AWAY; guest window ends at 521); Yun He is not recruited. Xining's path is unchanged (birth, then postpartum recovery, then child care).

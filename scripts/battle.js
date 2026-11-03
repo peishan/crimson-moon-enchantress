@@ -327,7 +327,15 @@ function finishWin(){
 /* ---------- lead battles (prototype): one hero is the protagonist; the others support ---------- */
 function leadFoes(list, ids){
   const base = B.foes ? B.foes.length : 0;
-  return list.filter(f => !(f.skipIf && (ids||B.allies.map(a => a.id)).includes(f.skipIf))).map((f,i) => mkFoeUnit(f.key, f.lv, base+i, f));
+  return list.filter(f => !(f.skipIf && (ids||B.allies.map(a => a.id)).includes(f.skipIf))).map((f,i) => scaleFoe(mkFoeUnit(f.key, f.lv, base+i, f)));
+}
+/* No party cap: enemies scale with the size of the fielded party (beyond four) and with the chosen difficulty. Bosses and elites scale more than fodder. */
+const DIFFS = { easy:{n:'Easy', hp:.8, atk:.9}, normal:{n:'Normal', hp:1, atk:1}, hard:{n:'Hard', hp:1.3, atk:1.12} };
+function scaleFoe(u){
+  const extra = Math.max(0, (B && B.allies ? B.allies.length : 4) - 4), d = DIFFS[(G && G.diff) || 'normal'] || DIFFS.normal;
+  const big = u.boss ? 1.6 : u.elite ? 1.25 : 1, hpM = (1 + .14*extra*big) * d.hp, atM = (1 + .04*extra*big) * d.atk;
+  u.hp = u.mhp = Math.round(u.mhp*hpM); u.atk = Math.round(u.atk*atM); u.mag = Math.round(u.mag*atM);
+  return u;
 }
 function leadBlessing(){
   const l = B.allies.find(a => a.id===B.lead), x = B.allies.find(a => a.id==='xining' && !a.dead);

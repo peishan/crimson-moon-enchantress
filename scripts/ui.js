@@ -43,7 +43,7 @@ function rParty(){
   const roster = ROSTER.filter(id => !CHARACTERS[id].vol2 || isRecruited(id) || profileKnown(id)).map(id => {
     const c = CHARACTERS[id], rec = isRecruited(id), known = profileKnown(id);
     return `<div class="rc ${sel===id?'sel':''} ${rec||known?'':'lock'}" onclick="sel='${id}';render()"><img src="${portrait(id)}"><div><b>${known?first(id):'???'}</b><div class="sm">${rec?'Lv'+U(id).lv:known?'Not in party':'Unknown'}</div></div></div>`; }).join('');
-  return `<h2>Party</h2>${flashHtml()}<div class="sm">Active (${activeCount()}${activeSlots()>=99?'':'/'+activeSlots()}) — everyone ticked as active fights; there is no seat limit after the four protagonists travel together.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
+  return `<h2>Party</h2>${flashHtml()}${diffHtml()}<div class="sm">Active (${activeCount()}${activeSlots()>=99?'':'/'+activeSlots()}) — everyone ticked as active fights; there is no seat limit after the four protagonists travel together.</div><div class="slots">${slots}</div><div class="rcs">${roster}</div>${rSheet(sel)}`;
 }
 function bondsHtml(){
   const dongyue = hook('dongyue_vows_lifelong_devotion'), cang = G.party.includes('cangyuan'), L = resLv();
@@ -332,3 +332,7 @@ window.addEventListener('load', () => {
     p.style.left = Math.random()*100+'%'; p.style.animationDuration = (7+Math.random()*7)+'s'; p.style.animationDelay = (-Math.random()*12)+'s';
     p.style.transform = 'scale('+(.6+Math.random()*.9)+')'; L.appendChild(p); }
 });
+
+/* Difficulty: foes scale with party size and this setting (no party cap). */
+function diffHtml(){ const cur = G.diff || 'normal';
+  return `<div class="panel"><div class="sm">Difficulty (enemies also grow with party size): ${Object.keys(DIFFS).map(k => `<button class="${k===cur?'pri':''}" onclick="G.diff='${k}';save();render()">${DIFFS[k].n}</button>`).join(' ')}</div></div>`; }

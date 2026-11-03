@@ -645,3 +645,6 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 - **Also saved:** the "Main Cast Outfit Upgrades" sheet (Volume 8 city chapter travel attire) as `assets/cast/outfit_upgrades_v8.webp` (reference only, not wired in).
 - **Headless test:** chapters 460-524 complete without errors, Qiumin joins at 522, comic pages load, Journal/Party/People render.
 - **For the author:** (1) Xining stays at the manor (recovering and pregnant); she is married to Dongyue at 518 but still away from the active party. (2) 016-017 show only Qiumin, Ya'Xing, Dongyue, Xiao Tian, Hoko and Xiao Yan on the road; Xiyu, Cangyuan, Liechen are not shown, so please confirm who travels. (3) 004 calls Qiumin by name before Ya'Xing connects it to Dongyue's family; I kept it as drawn. (4) Next page to upload: Volume 15 comic 018 (chapter 525). Volume 15 cover not yet received.
+
+## Volume 15 comic 013 replaced with the fixed page
+- The corrected "What Happened at Sea" (chapter 520) is installed. Its closing table scene now shows one blonde Hoko only.

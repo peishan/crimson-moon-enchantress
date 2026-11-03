@@ -245,7 +245,7 @@ const CHARACTERS = {
    {id:'clear_insight',n:'Clear Insight',icon:'🔮',mp:9,kind:'support',tgt:'foes',fx:[{k:'sense'}],req:{flag:'qiumin_clear_insight'},sig:true,desc:'LATENT (locked until her chapter): her mother\'s family gift of spiritual discernment. Resonance Reading senses whether a formation, talisman or foe is active, damaged or incomplete: it reveals every foe and exposes supernatural or layered ones. Clear Mind (passive, not built): unusual resistance to confusion and deceptive illusions. It supports her scholarship; it does not replace research.'},
    {id:'measured_persuasion',n:'Measured Persuasion',icon:'🪭',mp:10,kind:'support',tgt:'foe',fx:[{k:'charm',d:1}],req:{lvl:1},sig:true,desc:'Careful conversation can stop an opponent in its tracks: a chance to make an ordinary foe lose a turn (bosses can resist).'},
   ],
-  passive:'Provincial Examination Graduate: not yet recruited; she joins in Volume 15 (chapter not decided). Latent Clear Insight stays locked until its chapter (flag qiumin_clear_insight).'},
+  passive:'Provincial Examination Graduate: joins the party in Volume 15, comic 015 (chapter 522). Latent Clear Insight stays locked until its chapter (flag qiumin_clear_insight).'},
 
  /* ===== ZHAN DONGLIN 展东霖 (author's family sheet): Dongyue's younger brother, 23. Family aide and trade escort, a merchant's son trained in martial arts who survived the attack on his father's ship. A persistent ally and the Yilong base caretaker; may join a mission occasionally. Hidden until INTRO_CH/JOIN_CH are set; no chapter shows him yet. His maternal gift (Protective Vitality) is latent and locked. ===== */
  donglin:{

@@ -6931,6 +6931,29 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"460": [
+{
+"id": "old_northern_road_tracks_erased_but_wagon_marks_beside_it",
+"d": "The tracks along the old northern road were erased, but wagon marks beside it show it carried something heavy, or several people",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "rune_waymarker_points_to_an_old_watchtower",
+"d": "A rune waymarker older than the trade routes shows the northern branch leads to an old watchtower",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "smoke_and_guarded_wagon_at_the_watchtower",
+"d": "Fresh smoke and a guarded wagon show the watchtower is occupied",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "461": [
 {
 "id": "watchtower_is_a_prison_with_captives_brought_in_alive",
@@ -7349,6 +7372,187 @@ const HOOKS = {
 {
 "id": "liechen_asks_to_join_the_party_and_is_accepted_by_everyone",
 "d": "Liechen formally asks to join the party and everyone, led by Dongyue, accepts him; Xiyu says they share the goal of seeking the truth and protecting the innocent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"508": [
+{
+"id": "yihai_overdue_nearly_four_months",
+"d": "Yihai has not returned from his voyage after nearly four months",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xining_dyes_her_hair_black",
+"d": "Xining dyes her hair black because some strands are changing colour",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"509": [
+{
+"id": "qiumin_and_yaxing_meet_at_a_tavern",
+"d": "Ya'Xing pays for a scholar's tea at a tavern and discovers the scholar is a young woman named Zhan Qiumin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"510": [
+{
+"id": "qiumin_and_yaxing_spend_days_in_town",
+"d": "Qiumin and Ya'Xing explore markets, temples and old maps over several days",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"511": [
+{
+"id": "qiumin_revealed_as_dongyues_sister",
+"d": "Ya'Xing learns his new friend Qiumin is Dongyue's younger sister; Qiumin meets Xining",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"512": [
+{
+"id": "wedding_date_chosen_and_yaxing_made_coordinator",
+"d": "Ming Yue chooses the wedding date seven days away and Ya'Xing is made wedding coordinator",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_and_cangyuan_want_to_choose_it_together",
+"d": "Xiyu and Cangyuan agree that when they marry it should be because they both choose it, consciously and wholeheartedly",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"513": [
+{
+"id": "betrothal_gift_found_in_yihais_study",
+"d": "Qiumin finds a betrothal gift Yihai accepted on her behalf and never mentioned",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"514": [
+{
+"id": "qiumin_will_return_the_pendant",
+"d": "Qiumin will courteously return the jade pendant and explain to her father herself; Ming Yue and Xining stand with her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"515": [
+{
+"id": "ya_xing_and_qiumin_run_the_preparations",
+"d": "Ya'Xing and Qiumin work well together on the wedding preparations",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"516": [
+{
+"id": "accidental_kiss_on_the_boat",
+"d": "A wave rocks the boat and Ya'Xing and Qiumin share an accidental kiss",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"517": [
+{
+"id": "both_distracted_and_neither_speaks",
+"d": "Both are distracted by the kiss; Ya'Xing decides not to ask her before the wedding",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"518": [
+{
+"id": "dongyue_and_xining_wed",
+"d": "Zhan Dongyue and Lu Xining are married at the manor",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "qiumin_doubts_if_yaxing_feels_the_same",
+"d": "Qiumin imagines a future with Ya'Xing and wonders if he feels the same",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"519": [
+{
+"id": "donglin_returns_wounded_without_yihai",
+"d": "Donglin returns wounded and without Yihai after the wedding; the ship was attacked",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"520": [
+{
+"id": "attackers_took_yihai_not_the_cargo",
+"d": "The attackers were organised, knew the route, searched for Yihai and took him rather than the cargo",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_may_have_known_the_voyage",
+"d": "Someone may have known the voyage ahead of time",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"521": [
+{
+"id": "departure_date_does_not_match_the_port_entry",
+"d": "The recorded departure date does not match the port entry; the ship left later than scheduled",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"522": [
+{
+"id": "qiumin_joins_the_search_on_conditions",
+"d": "Qiumin joins the search for her father; Dongyue agrees on conditions: follow arrangements, avoid risks, retreat when told",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"523": [
+{
+"id": "party_sets_out_for_the_coast",
+"d": "The party leaves Yilong for the coast to compare harbour records and the navigators' guild",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"524": [
+{
+"id": "harbour_register_and_commercial_dates_disagree",
+"d": "At Linghai the harbour register and the commercial documents give different departure dates for the same shipment",
 "t": "event",
 "p": false,
 "s": "art"

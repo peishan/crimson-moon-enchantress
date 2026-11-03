@@ -636,3 +636,4 @@ Comic numbers are Volume 11 "Chapter" numbers (game chapter = number + 352). Onl
 
 ## Dongyue's family sheet
 Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropped from it; the existing Ming Yue and Zhan Yihai cards were kept), Donglin's party portrait, and the family notes in docs/ZHAN_FAMILY.md, including the latent-powers rules and the planned comic 015 hint scene. Next to upload: Volume 14 comic 008 (still missing; chapter 460 is a placeholder), then Volume 15 comic 001 (game chapter 508).
+- **Planning note added:** docs/LATE_GAME_PLAN.md (the artifact as the turning point, immortality plus a subtle shared bond, the revised late-game sequence with the royal revelations after it, and the "nobody is required to remain" payoff). Nothing built.

@@ -77,3 +77,6 @@ He formally asks to join and the whole party accepts him. From chapter 507 (flag
 
 ## Qiumin (秋敏), Volume 15 companion (built, hidden)
 Dongyue's younger sister of the Zhan family, a provincial examination graduate (秀才). Character data, a 512px portrait (`assets/party/qiumin.webp`, cropped from the author's sheet) and the full sheet (`assets/cast/qiumin_sheet.webp`, with four expressions) are in. Kit: Brush and Fan (basic), Classical Insight, Record Examination, Scholarly Reasoning, Local Knowledge, Measured Persuasion. She has no join chapter yet, so she stays hidden; set `JOIN_CH.qiumin` and `INTRO_CH.qiumin` when the chapter is chosen. The sheet says no weapon, while the author's note lists martial arts; only a minimal strike was built.
+
+## Zhan Donglin (built, hidden) and the family sheet
+Donglin (23, Dongyue's younger brother, trade escort, Yilong base caretaker, persistent ally) is built as a hidden character with a guardian kit (Escort Blade, Steady Stance, Hold the Line) and two locked latent skills. Qiumin gained a locked latent skill, Clear Insight. See docs/ZHAN_FAMILY.md. Qiumin's first sheet (autumn amber, maple) and the family sheet's Qiumin (lavender robe) differ in outfit; the portrait already installed stays, as the author said she is "as we built her earlier".

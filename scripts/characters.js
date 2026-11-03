@@ -242,8 +242,26 @@ const CHARACTERS = {
    {id:'record_examination',n:'Record Examination',icon:'📜',mp:8,kind:'support',tgt:'foe',fx:[{k:'analyze'},{k:'strip'}],req:{lvl:1},sig:true,desc:'Spots the inconsistency in a foe\'s defences as she would in a ledger: analysed and stripped of its barrier and buffs. (Checking documents out of battle is not built yet.)'},
    {id:'scholarly_reasoning',n:'Scholarly Reasoning',icon:'🧭',mp:12,kind:'support',tgt:'allies',fx:[{k:'crit',d:2},{k:'buff',stat:'mag',m:1.15,d:3}],req:{lvl:1},sig:true,desc:'Connects the clues and gives the party a plan: the allies see openings (crits) and fight a little sharper for a few turns.'},
    {id:'local_knowledge',n:'Local Knowledge',icon:'🏮',mp:6,kind:'support',tgt:'allies',fx:[{k:'ward',d:3}],req:{lvl:1},sig:true,desc:'Customs, etiquette and official conventions: the party is harder to unsettle for a few turns. (Social uses outside battle are not built yet.)'},
+   {id:'clear_insight',n:'Clear Insight',icon:'🔮',mp:9,kind:'support',tgt:'foes',fx:[{k:'sense'}],req:{flag:'qiumin_clear_insight'},sig:true,desc:'LATENT (locked until her chapter): her mother\'s family gift of spiritual discernment. Resonance Reading senses whether a formation, talisman or foe is active, damaged or incomplete: it reveals every foe and exposes supernatural or layered ones. Clear Mind (passive, not built): unusual resistance to confusion and deceptive illusions. It supports her scholarship; it does not replace research.'},
    {id:'measured_persuasion',n:'Measured Persuasion',icon:'🪭',mp:10,kind:'support',tgt:'foe',fx:[{k:'charm',d:1}],req:{lvl:1},sig:true,desc:'Careful conversation can stop an opponent in its tracks: a chance to make an ordinary foe lose a turn (bosses can resist).'},
   ],
-  passive:'Provincial Examination Graduate: not yet recruited; she joins in Volume 15 (chapter not decided).'},
+  passive:'Provincial Examination Graduate: not yet recruited; she joins in Volume 15 (chapter not decided). Latent Clear Insight stays locked until its chapter (flag qiumin_clear_insight).'},
+
+ /* ===== ZHAN DONGLIN 展东霖 (author's family sheet): Dongyue's younger brother, 23. Family aide and trade escort, a merchant's son trained in martial arts who survived the attack on his father's ship. A persistent ally and the Yilong base caretaker; may join a mission occasionally. Hidden until INTRO_CH/JOIN_CH are set; no chapter shows him yet. His maternal gift (Protective Vitality) is latent and locked. ===== */
+ donglin:{
+  vol2:true, guest:true, n:'Zhan Donglin', zh:'展东霖', icon:'🛡️', title:'Aide of the Zhan Family',
+  cls:'Trade Escort / Guardian (Ally)', role:'Defence · Protection · Escort', combat:'Martial guardian',
+  elements:'Vitality · Steadiness · Protection',
+  identity:'Dongyue\'s younger brother. Earnest, courageous, loyal and dependable; he strives to live up to his family\'s expectations. A merchant\'s son trained in martial arts who survived a terrible maritime attack on his father\'s ship; the caretaker of Xiyu\'s Yilong base and a trained ally who may occasionally join a mission. He inherited a limited, defensive expression of the Ming family\'s life-force gifts, still dormant.',
+  quote:'If something has to be held, I can hold it.',
+  base:{hp:92,mp:28,atk:11,mag:3,def:12,spd:10}, grow:{hp:9.2,mp:2.4,atk:1.2,mag:.4,def:1.3,spd:.9},
+  skills:[
+   {id:'escort_blade',n:'Escort Blade',icon:'🗡️',mp:0,kind:'phys',tgt:'foe',pow:1.0,req:{lvl:1},sig:true,desc:'A plain, well-drilled strike from a trade escort.'},
+   {id:'steady_stance',n:'Steady Stance',icon:'🧱',mp:6,kind:'support',tgt:'self',fx:[{k:'buff',stat:'def',m:1.3,d:3}],req:{lvl:1},sig:true,desc:'He plants himself and takes the hits: his DEF rises for 3 turns.'},
+   {id:'hold_the_line',n:'Hold the Line',icon:'🔁',mp:9,kind:'support',tgt:'self',fx:[{k:'oath',d:3}],req:{lvl:1},sig:true,desc:'He draws the foes\' attacks onto himself, and strikes back at whoever lands a hit on him.'},
+   {id:'steady_breath',n:'Steady Breath',icon:'🌬️',mp:7,kind:'support',tgt:'self',fx:[{k:'regen',v:.06,d:3},{k:'cleanse'}],req:{flag:'donglin_protective_vitality'},desc:'LATENT (locked until the story unlocks it): he regulates his qi and resists exhaustion. Regenerates and clears ailments.'},
+   {id:'protective_pulse',n:'Protective Pulse',icon:'💠',mp:11,kind:'support',tgt:'ally',fx:[{k:'shield',v:.22,d:3}],req:{flag:'donglin_protective_vitality'},desc:'LATENT: he briefly reinforces another person\'s physical stability so they can withstand an injury. A barrier of 22% of their max HP. (Vitality Sense, noticing a failing body before symptoms show, is a story ability and is not built.)'},
+  ],
+  passive:'Protective Vitality (latent): defensive, never offensive; a small part of Ming Yue\'s restorative potential. Not a healer. Persistent ally, not a permanent member.'},
 };
 const ROSTER = Object.keys(CHARACTERS);

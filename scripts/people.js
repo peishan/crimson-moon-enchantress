@@ -25,6 +25,8 @@ const PEOPLE = [
   {id:'xiao_bai',      n:'Xiao Bai',      zh:'小白',     role:'Spirit Companion',      intro:99},
   {id:'zhan_yihai',    n:'Zhan Yihai',    zh:'展逸海',   role:'Dongyue\'s Father',     intro:99},
   {id:'ming_yue',      n:'Ming Yue',      zh:'明月',     role:'Dongyue\'s Mother · Healer of Zhan Manor', intro:425},
+  {id:'zhan_donglin',  n:'Zhan Donglin',  zh:'展东霖',   role:'Dongyue\'s Younger Brother',  intro:99},
+  {id:'zhan_qiumin',   n:'Zhan Qiumin',   zh:'展秋敏',   role:'Dongyue\'s Younger Sister',   intro:99},
   {id:'ao_yun',        n:'Ao Yun',        zh:'敖云',     role:'Beloved of Muxue Yan',  intro:99},
   // portraits still to be generated (assets/cast/people/<id>.webp); until then a placeholder is shown. Chinese names to be confirmed.
   {id:'hoko',          n:'Hoko',          zh:'',         role:'Explorer of Luiterra',  intro:26, todo:true},

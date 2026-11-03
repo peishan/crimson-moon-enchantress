@@ -530,6 +530,13 @@ V2H={
  522:[('qiumin_joins_the_search_on_conditions', 'Qiumin joins the search for her father; Dongyue agrees on conditions: follow arrangements, avoid risks, retreat when told', 'event')],
  523:[('party_sets_out_for_the_coast', "The party leaves Yilong for the coast to compare harbour records and the navigators' guild", 'event')],
  524:[('harbour_register_and_commercial_dates_disagree', 'At Linghai the harbour register and the commercial documents give different departure dates for the same shipment', 'event')],
+ 525:[('original_harbour_entry_matches_merchant_documents', 'The original harbour register entry matches the merchant documents; the copied register gives a different date', 'event')],
+ 526:[('boatyard_lead_from_a_dockworker', 'A dockworker mentions a former crewman who assisted merchant vessels and visits a small boatyard near the eastern quay', 'event')],
+ 527:[('cargo_rearranged_before_departure', "An old sailor remembers a merchant ship whose cargo arrangements changed shortly before it left, and a man speaking with harbour workers; not confirmed as Yihai's ship", 'event')],
+ 528:[('qiumin_describes_her_father', 'Qiumin describes Yihai as strict, disciplined and always travelling, and wonders if he loved the sea', 'event')],
+ 529:[('family_business_began_with_ming_yues_dowry', "The Zhan family business began with Ming Yue's dowry and Yihai built it up", 'event')],
+ 530:[('yaxing_was_a_servant_as_a_child', "Ya'Xing was a servant in a wealthy household from a very young age; after his first master died he was taken into a ship owner's household", 'event')],
+ 531:[('yaxing_earned_his_freedom_at_sixteen_or_seventeen', "Ya'Xing earned his freedom at about sixteen or seventeen and then worked as hired help on ships and at ports", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

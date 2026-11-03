@@ -7557,6 +7557,69 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"525": [
+{
+"id": "original_harbour_entry_matches_merchant_documents",
+"d": "The original harbour register entry matches the merchant documents; the copied register gives a different date",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"526": [
+{
+"id": "boatyard_lead_from_a_dockworker",
+"d": "A dockworker mentions a former crewman who assisted merchant vessels and visits a small boatyard near the eastern quay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"527": [
+{
+"id": "cargo_rearranged_before_departure",
+"d": "An old sailor remembers a merchant ship whose cargo arrangements changed shortly before it left, and a man speaking with harbour workers; not confirmed as Yihai's ship",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"528": [
+{
+"id": "qiumin_describes_her_father",
+"d": "Qiumin describes Yihai as strict, disciplined and always travelling, and wonders if he loved the sea",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"529": [
+{
+"id": "family_business_began_with_ming_yues_dowry",
+"d": "The Zhan family business began with Ming Yue's dowry and Yihai built it up",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"530": [
+{
+"id": "yaxing_was_a_servant_as_a_child",
+"d": "Ya'Xing was a servant in a wealthy household from a very young age; after his first master died he was taken into a ship owner's household",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"531": [
+{
+"id": "yaxing_earned_his_freedom_at_sixteen_or_seventeen",
+"d": "Ya'Xing earned his freedom at about sixteen or seventeen and then worked as hired help on ships and at ports",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

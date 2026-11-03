@@ -1993,11 +1993,11 @@ const CHAPTER_DESIGN = {
  523:{title:'The Road to the Coast', book:'—', loc:'Yilong, the city gate',
   sum:'VOLUME 15, COMIC 016. The expedition leaves Yilong at dawn: Dongyue sees Qiumin off with a reminder of what they discussed. Qiumin has packed books and writing materials; Xiao Tian and Hoko plan a supply stop in a village before midday. Ya\'Xing: much of a journey is simply walking from one place to another; she says her books never mentioned that. The old commercial records suggest secondary routes that may no longer be usable: they will follow the main road and then turn towards the coast. At the port they will compare harbour records and the navigators\' guild with the documents found at home. At last they see the sea. "We\'ll reach the coast soon."',
   events:['The party leaves Yilong for the coast.','Plan: harbour records, merchants and shipping, the navigators\' guild.'],
-  chars:['qiumin','yaxing','dongyue','xiaotian','hoko','yanwatcher'], intro:[], unlocks:['Story: heading for the coast']},
+  chars:['qiumin','yaxing','dongyue','xiaotian','hoko','yanwatcher','xiyu','cangyuan','suliechen'], intro:[], unlocks:['Story: heading for the coast']},
  524:{title:'Where the Ships Depart', book:'—', loc:'Linghai, a coastal port',
   sum:'VOLUME 15, COMIC 017. In the trading port of Linghai Qiumin and Ya\'Xing visit the harbour offices while Dongyue and Xiao Yan check the merchant registrations and the navigators\' accounts. Ya\'Xing is at ease on the coast ("The sea has its own order"). An official shows them incomplete older registers and a copied record: the harbour register and the commercial documents give different departure dates for the same shipment. They agree to establish the actual departure window and narrow down which vessels were travelling along this stretch of coast. "A voyage leaves more than a ship\'s wake behind it..."',
   events:['Linghai: the harbour register and commercial documents disagree on the date.','Qiumin and Ya\'Xing work the harbour offices.'],
-  chars:['qiumin','yaxing','dongyue','yanwatcher'], intro:[], unlocks:['Story: a discrepancy in the harbour records']}
+  chars:['qiumin','yaxing','dongyue','yanwatcher','xiyu','cangyuan','suliechen'], intro:[], unlocks:['Story: a discrepancy in the harbour records']}
 };
 
 /* Bond with Xiyu gained when a chapter completes (points; BOND_LEVELS in characters.js).

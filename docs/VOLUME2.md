@@ -648,3 +648,7 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Volume 15 comic 013 replaced with the fixed page
 - The corrected "What Happened at Sea" (chapter 520) is installed. Its closing table scene now shows one blonde Hoko only.
+
+## Author decisions on Volume 15
+- Xiyu, Cangyuan and Liechen do travel with the expedition (chapters 523-524 list them); Xining stays at the manor after the wedding.
+- **Page convention:** because the party is large and panels are tight, each page shows only the characters relevant to that chapter. Absence from a panel does not mean absence from the party; I will no longer flag it.

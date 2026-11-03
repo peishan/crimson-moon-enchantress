@@ -537,6 +537,18 @@ V2H={
  529:[('family_business_began_with_ming_yues_dowry', "The Zhan family business began with Ming Yue's dowry and Yihai built it up", 'event')],
  530:[('yaxing_was_a_servant_as_a_child', "Ya'Xing was a servant in a wealthy household from a very young age; after his first master died he was taken into a ship owner's household", 'event')],
  531:[('yaxing_earned_his_freedom_at_sixteen_or_seventeen', "Ya'Xing earned his freedom at about sixteen or seventeen and then worked as hired help on ships and at ports", 'event')],
+ 532:[('sanggui_trading_house_in_yihais_records', "Yihai's name appears in old records tied to Sanggui and the Sanggui Trading House", 'event')],
+ 533:[('qiumin_sees_her_mother_as_a_builder_of_the_household', 'Qiumin recognises her mother helped build the household as much as her father', 'event')],
+ 534:[('passage_booked_to_sanggui', 'The party books passage to Sanggui on a merchant ship', 'event')],
+ 535:[('pei_zhaowen_named_in_sanggui_transactions', 'The name Pei Zhaowen appears beside many Sanggui Trading House transactions', 'event')],
+ 536:[('supervisor_knows_pei_zhaowen_only_from_letters', 'The former supervisor knew Pei Zhaowen only from correspondence; no link to Yihai', 'event')],
+ 537:[('similar_cargo_is_not_proof', 'Similar goods are common; the party needs a specific connection', 'event')],
+ 538:[('tide_decides_which_transfers_were_possible', 'Tide and boat size decide which cargo transfers were physically possible', 'event')],
+ 539:[('haize_and_lu_cheng_lead', 'The vessel Haize and its handling agent Lu Cheng, now at a small western storage yard, are a concrete lead', 'event')],
+ 540:[('lu_cheng_moved_to_linhai_town', 'Lu Cheng left for another coastal settlement; his last address is Linhai Town', 'event')],
+ 541:[('group_reunites_in_yilong', 'The group reunites in Yilong; the records point to one network and the next route is by Shattered Ridge', 'event')],
+ 542:[('qiumin_and_yaxing_share_ambitions', "Qiumin and Ya'Xing share their ambitions by the river", 'event')],
+ 543:[('scarf_and_journal_exchanged', "Qiumin gives Ya'Xing a knitted scarf and he gives her his journal", 'event'), ('volume_15_ends_investigation_continues', 'Volume 15 ends with the search for Yihai continuing into Volume 16', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

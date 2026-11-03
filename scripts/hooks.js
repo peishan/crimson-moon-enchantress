@@ -7620,6 +7620,121 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"532": [
+{
+"id": "sanggui_trading_house_in_yihais_records",
+"d": "Yihai's name appears in old records tied to Sanggui and the Sanggui Trading House",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"533": [
+{
+"id": "qiumin_sees_her_mother_as_a_builder_of_the_household",
+"d": "Qiumin recognises her mother helped build the household as much as her father",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"534": [
+{
+"id": "passage_booked_to_sanggui",
+"d": "The party books passage to Sanggui on a merchant ship",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"535": [
+{
+"id": "pei_zhaowen_named_in_sanggui_transactions",
+"d": "The name Pei Zhaowen appears beside many Sanggui Trading House transactions",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"536": [
+{
+"id": "supervisor_knows_pei_zhaowen_only_from_letters",
+"d": "The former supervisor knew Pei Zhaowen only from correspondence; no link to Yihai",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"537": [
+{
+"id": "similar_cargo_is_not_proof",
+"d": "Similar goods are common; the party needs a specific connection",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"538": [
+{
+"id": "tide_decides_which_transfers_were_possible",
+"d": "Tide and boat size decide which cargo transfers were physically possible",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"539": [
+{
+"id": "haize_and_lu_cheng_lead",
+"d": "The vessel Haize and its handling agent Lu Cheng, now at a small western storage yard, are a concrete lead",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"540": [
+{
+"id": "lu_cheng_moved_to_linhai_town",
+"d": "Lu Cheng left for another coastal settlement; his last address is Linhai Town",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"541": [
+{
+"id": "group_reunites_in_yilong",
+"d": "The group reunites in Yilong; the records point to one network and the next route is by Shattered Ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"542": [
+{
+"id": "qiumin_and_yaxing_share_ambitions",
+"d": "Qiumin and Ya'Xing share their ambitions by the river",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"543": [
+{
+"id": "scarf_and_journal_exchanged",
+"d": "Qiumin gives Ya'Xing a knitted scarf and he gives her his journal",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_15_ends_investigation_continues",
+"d": "Volume 15 ends with the search for Yihai continuing into Volume 16",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

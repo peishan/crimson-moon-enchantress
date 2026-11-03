@@ -268,7 +268,7 @@ function lockReason(id){
   if(guestHere(id)) return GUESTS[id].why + ' He travels with the party until the arc ends.';
   if(canonLocked() && CANON_PARTY.includes(id)) return 'Canon party: the four protagonists travel together.';
   const r = ARC_REQUIRED.find(x => x.id === id && G.ch >= x.from && G.ch <= x.to);
-  return r ? (r.why || 'This arc needs them present.') : '';
+  return r ? (r.why || 'This arc needs them present.') : (canonLocked() && G.party.includes(id) ? 'Everyone fights together: the group faces demons, not bandits.' : '');
 }
 const partyLocked = id => !!lockReason(id);
 /* Ya'Xing rejoins after one GAME day of rest (story time, never real time): the day after the chapter where he is found (YX_REST_CH), or at once via the Party screen's rest button. */

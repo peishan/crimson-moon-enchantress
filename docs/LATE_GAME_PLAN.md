@@ -47,3 +47,6 @@ Everyone has an alternative: Liechen a kingdom, Ya'Xing a tribe and inheritance,
 2. Does immortality include Xiyu's curse and Xiyu-Cangyuan's past-life bond, or are they separate threads?
 3. Is the immortality reversible, and does it stop ageing from the moment of exposure?
 4. Do the mortal family members (Ming Yue, Yihai, Donglin, Qiumin) learn of it, and how do they react?
+
+## Muxue Yan (author note)
+The Muxue clan leadership change (V16 comic 001) does not resolve Muxue Yan. What happened to him is a late-game discovery; until then only rumours and unverified reports may appear (chapters, network, hearsay).

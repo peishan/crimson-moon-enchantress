@@ -25,13 +25,13 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 543;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, VOL16_START = 544, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 558;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
 const INTER_NAME = {yx:'Ya\'Xing Interlude', xc:'Xiyu & Cangyuan Interlude'};   // Volume 3 (The Roots of What Remains): comic n = chapter 78+n; comics 001-038 = chapters 79-116
-const volOf = n => n >= VOL15_START ? 15 : n >= VOL14_START ? 14 : n >= VOL13_START ? 13 : n >= VOL12_START ? 12 : n >= VOL11_START ? 11 : n >= VOL10_START ? 10 : n >= VOL9_START ? 9 : n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
-const vnum = n => n >= VOL15_START ? n - (VOL15_START-1) : n >= VOL14_START ? n - (VOL14_START-1) : n >= VOL13_START ? n - (VOL13_START-1) : n >= VOL12_START ? n - (VOL12_START-1) : n >= VOL11_START ? n - (VOL11_START-1) : n >= VOL10_START ? n - (VOL10_START-1) : n >= VOL9_START ? n - (VOL9_START-1) : n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
+const volOf = n => n >= VOL16_START ? 16 : n >= VOL15_START ? 15 : n >= VOL14_START ? 14 : n >= VOL13_START ? 13 : n >= VOL12_START ? 12 : n >= VOL11_START ? 11 : n >= VOL10_START ? 10 : n >= VOL9_START ? 9 : n >= VOL8_START ? 8 : n >= VOL7_START ? 7 : n >= VOL6_START ? 6 : n >= VOL5_START ? 5 : n >= VOL4_START ? 4 : n >= VOL3_START ? 3 : n >= VOL2_START ? 2 : 1;
+const vnum = n => n >= VOL16_START ? n - (VOL16_START-1) : n >= VOL15_START ? n - (VOL15_START-1) : n >= VOL14_START ? n - (VOL14_START-1) : n >= VOL13_START ? n - (VOL13_START-1) : n >= VOL12_START ? n - (VOL12_START-1) : n >= VOL11_START ? n - (VOL11_START-1) : n >= VOL10_START ? n - (VOL10_START-1) : n >= VOL9_START ? n - (VOL9_START-1) : n >= VOL8_START ? n - (VOL8_START-1) : n >= VOL7_START ? n - (VOL7_START-1) : n >= VOL6_START ? n - (VOL6_START-1) : n >= XC_START ? n - (XC_START-1) : n >= YX_START ? n - (YX_START-1) : n >= VOL5_START ? n - (VOL5_START-1) : n >= VOL4_START ? n - (VOL4_START-1) : n >= VOL3_START ? n - (VOL3_START-1) : n >= VOL2_START ? n - (VOL2_START-1) : n;   // Volume 4: comic n = chapter 116+n
 const chName = n => interOf(n) ? INTER_NAME[interOf(n)]+' · Chapter '+vnum(n) : volOf(n) > 1 ? 'Volume '+volOf(n)+' · Chapter '+vnum(n) : 'Chapter '+n;
 const chShort = n => interOf(n) ? (interOf(n)==='yx'?'YX':'XC')+'·'+vnum(n) : volOf(n) > 1 ? 'V'+volOf(n)+'·'+vnum(n) : 'Ch.'+n;
 const STORY_PACE = 1;
@@ -65,7 +65,7 @@ const profileKnown = id => isRecruited(id) || (INTRO_CH[id]!==undefined && G.ch 
 /* Portraits: a story variant is used once its hook has fired; a missing variant file falls back to the base portrait (see index.html).
    assets/party/xiyu_unveiled.webp (veil removed, ch33) · xiyu_wed.webp and dongyue_wed.webp (after the wedding, ch35) · yaxing_injured.webp (after ch36). */
 /* Variant portraits that really exist in assets/party/. The _wed, _unveiled and _injured files were planned but never uploaded, so they are off until added here (a missing file shows a broken image). */
-const PORTRAIT_VARIANTS = ['yaxing_new'];
+const PORTRAIT_VARIANTS = ['yaxing_new','cangyuan_new'];
 function portraitVariant(id){
   const v = portraitVariantRaw(id); return v && PORTRAIT_VARIANTS.includes(id+v) ? v : '';
 }
@@ -73,6 +73,7 @@ function portraitVariantRaw(id){
   if(!G || !G.hooks) return '';
   if(id==='xiyu') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : hook('xiyu_veil_removed') ? '_unveiled' : '';
   if(id==='dongyue') return hook('dongyue_vows_lifelong_devotion') ? '_wed' : '';
+  if(id==='cangyuan') return G.ch >= 541 ? '_new' : '';   // fur-collared travelling coat (Volume 15+ outfit sheet)
   if(id==='yaxing') return G.flags.yaxing_rejoined ? '_new' : hook('ya_xing_bull_demon_injuries_revealed') ? '_injured' : '';
   return '';
 }

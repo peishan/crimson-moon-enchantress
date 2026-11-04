@@ -7735,6 +7735,141 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"544": [
+{
+"id": "muxue_clan_new_leader_and_yan_rumoured_dead",
+"d": "The Muxue clan has appointed a new leader and rumours say Muxue Yan has died; Xiyu doubts it is the whole truth and will return to investigate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"545": [
+{
+"id": "puppetry_questions_reviewed",
+"d": "Cangyuan reviews the mechanical puppet and the paper figure: two methods, a maker and a controller who may be different people",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"546": [
+{
+"id": "liechen_contains_a_maddened_hill_beast",
+"d": "Liechen binds a corrupted hill spirit beast instead of killing it and leaves a containment seal",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"547": [
+{
+"id": "qiumin_reads_yaxings_journal_part_one",
+"d": "Qiumin reads Ya'Xing's journal: the experiments, the unexplained changes and the second capture",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"548": [
+{
+"id": "yaxings_journal_skyshard_and_intruders",
+"d": "The journal records the Skyshard, the apprehended intruders, and Liechen staying behind when the portal to Xiao Yan's world opened",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"549": [
+{
+"id": "dongyue_writes_to_xining_and_ming_yue",
+"d": "Dongyue writes to Xining and to his mother and sends the letters toward Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"550": [
+{
+"id": "qiumin_and_yaxing_compare_ways_of_noticing",
+"d": "Qiumin and Ya'Xing compare how they observe; her fingers rest against his hand",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"551": [
+{
+"id": "innkeeper_and_merchants_both_partly_right",
+"d": "The innkeeper and the merchants disagree about the eastern road; both were partly right",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"552": [
+{
+"id": "linhai_town_chosen_as_the_next_destination",
+"d": "The group meets at Xiao Tian's estate and chooses Linhai Town as a lead, not an answer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"553": [
+{
+"id": "arrival_at_linhai_town",
+"d": "The group arrives at Linhai Town and turns to the old freight registers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"554": [
+{
+"id": "western_temporary_warehouse_possible_match",
+"d": "The freight registers show herbs and tools held at the Western Temporary Warehouse: a possible match",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"555": [
+{
+"id": "old_master_chen_the_former_supervisor",
+"d": "Old Master Chen, the warehouse's former supervisor, kept personal copies of dispatch records",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"556": [
+{
+"id": "wantong_escort_agency_collected_the_cargo",
+"d": "Wantong Escort Agency collected the cargo on the twelfth by land; the destination is in supplementary register No. 472",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"557": [
+{
+"id": "dispatch_register_confirms_departure",
+"d": "The dispatch register confirms the cargo left for the Western City District; the next transfer went through an intermediary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"558": [
+{
+"id": "register_472b_may_survive_in_the_records_store",
+"d": "The reference is No. 472-B; it may survive in the former records store or be lost",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

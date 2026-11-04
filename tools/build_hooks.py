@@ -549,6 +549,21 @@ V2H={
  541:[('group_reunites_in_yilong', 'The group reunites in Yilong; the records point to one network and the next route is by Shattered Ridge', 'event')],
  542:[('qiumin_and_yaxing_share_ambitions', "Qiumin and Ya'Xing share their ambitions by the river", 'event')],
  543:[('scarf_and_journal_exchanged', "Qiumin gives Ya'Xing a knitted scarf and he gives her his journal", 'event'), ('volume_15_ends_investigation_continues', 'Volume 15 ends with the search for Yihai continuing into Volume 16', 'event')],
+ 544:[('muxue_clan_new_leader_and_yan_rumoured_dead', 'The Muxue clan has appointed a new leader and rumours say Muxue Yan has died; Xiyu doubts it is the whole truth and will return to investigate', 'event')],
+ 545:[('puppetry_questions_reviewed', 'Cangyuan reviews the mechanical puppet and the paper figure: two methods, a maker and a controller who may be different people', 'event')],
+ 546:[('liechen_contains_a_maddened_hill_beast', 'Liechen binds a corrupted hill spirit beast instead of killing it and leaves a containment seal', 'event')],
+ 547:[('qiumin_reads_yaxings_journal_part_one', "Qiumin reads Ya'Xing's journal: the experiments, the unexplained changes and the second capture", 'event')],
+ 548:[('yaxings_journal_skyshard_and_intruders', "The journal records the Skyshard, the apprehended intruders, and Liechen staying behind when the portal to Xiao Yan's world opened", 'event')],
+ 549:[('dongyue_writes_to_xining_and_ming_yue', 'Dongyue writes to Xining and to his mother and sends the letters toward Yilong', 'event')],
+ 550:[('qiumin_and_yaxing_compare_ways_of_noticing', "Qiumin and Ya'Xing compare how they observe; her fingers rest against his hand", 'event')],
+ 551:[('innkeeper_and_merchants_both_partly_right', 'The innkeeper and the merchants disagree about the eastern road; both were partly right', 'event')],
+ 552:[('linhai_town_chosen_as_the_next_destination', "The group meets at Xiao Tian's estate and chooses Linhai Town as a lead, not an answer", 'event')],
+ 553:[('arrival_at_linhai_town', 'The group arrives at Linhai Town and turns to the old freight registers', 'event')],
+ 554:[('western_temporary_warehouse_possible_match', 'The freight registers show herbs and tools held at the Western Temporary Warehouse: a possible match', 'event')],
+ 555:[('old_master_chen_the_former_supervisor', "Old Master Chen, the warehouse's former supervisor, kept personal copies of dispatch records", 'event')],
+ 556:[('wantong_escort_agency_collected_the_cargo', 'Wantong Escort Agency collected the cargo on the twelfth by land; the destination is in supplementary register No. 472', 'event')],
+ 557:[('dispatch_register_confirms_departure', 'The dispatch register confirms the cargo left for the Western City District; the next transfer went through an intermediary', 'event')],
+ 558:[('register_472b_may_survive_in_the_records_store', 'The reference is No. 472-B; it may survive in the former records store or be lost', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

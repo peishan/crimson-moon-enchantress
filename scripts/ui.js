@@ -299,11 +299,31 @@ function rInventory(){
   const shop = Object.keys(SHOP).map(k => `<div class="ev"><div><b>${ITEMS[k].icon} ${ITEMS[k].n}</b><div class="sm">${useText(USE[k])}</div></div><button ${G.gold>=SHOP[k]?'':'disabled'} onclick="act(()=>buyItem('${k}')?'Bought '+ITEMS['${k}'].n:'Not enough gold')">${SHOP[k]}g</button></div>`).join('');
   return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
 }
+let bestFilter = 'all';
+function bestZoneOf(k){ return ZONES.find(z => z.pool.includes(k) || [].concat(z.boss||[]).includes(k)); }
+function bestNetTargets(k){ return (typeof INVESTIGATIONS !== 'undefined' ? INVESTIGATIONS.filter(i => i.keys.includes(k)) : []); }
+function bestEntry(k){
+  const e = ENEMIES[k], n = G.bestiary[k], z = bestZoneOf(k), net = bestNetTargets(k);
+  if(!n) return `<div class="card lock"><span class="big">❔</span><div class="fl"><b>???</b><div class="sm">Undiscovered${z && zoneOpen(z) ? ' · rumoured in '+z.icon+' '+z.n : ''}</div></div></div>`;
+  const tr = (e.traits||[]).map(t => ({magic:'🔮 magic', layered:'🛡️ layered'}[t] || t)).join(' · ');
+  const drops = (e.drops||[]).map(d => n >= 3 ? (ITEMS[d.id] ? ITEMS[d.id].icon+' '+ITEMS[d.id].n : d.id)+' ('+Math.round(d.chance*100)+'%)' : (ITEMS[d.id] ? ITEMS[d.id].icon : '❔')).join(', ');
+  return `<div class="card" style="cursor:default"><span class="big">${e.icon}</span><div class="fl"><b>${e.n}</b>
+    <div class="sm">${e.boss?'boss · ':e.elite?'elite · ':''}HP ${e.hp} · ATK ${e.atk} · MAG ${e.mag} · DEF ${e.def} · SPD ${e.spd} · defeated ${n}</div>
+    ${tr ? `<div class="sm">${tr}</div>` : ''}<div class="sm">${e.desc||''}</div>
+    ${drops ? `<div class="sm">🎁 Drops: ${drops}${n<3?' (defeat it 3 times to learn the rates)':''}</div>` : ''}
+    ${z && zoneOpen(z) ? `<div class="sm">📍 Found: ${z.icon} ${z.n}</div>` : ''}
+    ${net.filter(invOpen).length ? `<div class="sm">📡 Carries leads for: ${net.filter(invOpen).map(i => i.icon+' '+i.n).join(', ')}</div>` : ''}</div></div>`;
+}
 function rBestiary(){
   const keys = Object.keys(ENEMIES), found = keys.filter(k => G.bestiary[k]).length;
-  return `<h2>Bestiary</h2><div class="sm">${found} / ${keys.length} discovered</div>`+keys.map(k => { const e = ENEMIES[k], n = G.bestiary[k];
-    return n ? `<div class="card" style="cursor:default"><span class="big">${e.icon}</span><div class="fl"><b>${e.n}</b><div class="sm">${e.boss?'boss · ':e.elite?'elite · ':''}HP ${e.hp} · defeated ${n}</div><div class="sm">${e.desc}</div></div></div>`
-             : `<div class="card lock"><span class="big">❔</span><div class="fl"><b>???</b><div class="sm">Undiscovered</div></div></div>`; }).join('');
+  const filt = [['all','All'],['found','Discovered'],['net','📡 Network targets']];
+  let list = keys;
+  if(bestFilter === 'found') list = keys.filter(k => G.bestiary[k]);
+  if(bestFilter === 'net') list = keys.filter(k => bestNetTargets(k).some(invOpen));
+  const groups = {}; list.forEach(k => { const z = bestZoneOf(k), g = z ? (zoneOpen(z) || G.bestiary[k] ? z.icon+' '+z.n : '🔒 Unknown regions') : '📖 Story and special foes'; (groups[g] = groups[g] || []).push(k); });
+  return `<h2>Bestiary</h2><div class="sm">${found} / ${keys.length} discovered</div>
+    <div class="row" style="margin:6px 0">${filt.map(([k,l]) => `<button class="${bestFilter===k?'pri':''}" onclick="bestFilter='${k}';render()">${l}</button>`).join('')}</div>`+
+    Object.keys(groups).map(g => `<h4>${g}</h4>`+groups[g].map(bestEntry).join('')).join('') || '<div class="sm">Nothing here yet.</div>';
 }
 
 /* ---------------- DEV ---------------- */

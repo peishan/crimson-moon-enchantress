@@ -320,6 +320,7 @@ function finishWin(){
   if(spec.onWin) B.rewards.msgs = B.rewards.msgs.concat(spec.onWin() || []);
   if(typeof personalOnWin === 'function') personalOnWin(act);   // field proficiency and shared danger
   if(typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
+  if(typeof networkOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(networkOnWin(foes, spec.zone));   // Xiyu's investigation network: hunting adds progress and leads
   save();
 }
 

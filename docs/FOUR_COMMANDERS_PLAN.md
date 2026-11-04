@@ -14,7 +14,7 @@ Decision: the Four Commanders should NOT become the main plot of Volume 20. They
 
 ## 3. Gameplay: spiritual allies
 The four jewels become collectible quest items. Restoring each commander could unlock:
-- A spiritual companion.
+- A spiritual companion (a summoned support in battle, not a playable member).
 - A unique combat support ability.
 - Special cultivation knowledge.
 - Optional dialogue or lore.
@@ -34,4 +34,7 @@ This keeps the Four Commanders as worldbuilding without forcing another large my
 ## Open questions (for the author, later)
 1. Which volumes hold each commander, and which existing commander characters (from the Ice Temple) are the four?
 2. Should the jewels appear as items only once a commander's volume is reached, or be findable early?
-3. Should restored commanders be playable companions or summoned supports?
+3. ~~Playable companions or summoned supports?~~ **Decided: summoned supports** (not playable party members).
+
+## Timing
+Decided: this is left until AFTER Muxue Yan's later arc. Until then, only the subtle foreshadowing (section 1) is used, if at all.

@@ -684,3 +684,5 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Planning: the Four Commanders
 - Added docs/FOUR_COMMANDERS_PLAN.md (optional distributed mystery and collection element, not the Volume 20 main plot). Planning only, nothing built; three open questions listed there.
+
+- Four Commanders: decided summoned supports (not playable) and postponed until after Muxue Yan's later arc. Muxue leadership change noted in docs/NETWORK.md as the hook for the "Where is Muxue Yan?" investigation's milestone text.

@@ -669,3 +669,4 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Xiyu's informant network and bestiary (side system)
 - Built the 📡 Network section (docs/NETWORK.md): daily check-in, hunting in relevant zones, lead drops, milestone rewards, three investigations (Muxue Yan, the demon network, the missing voyage) with neutral report text, and a regrouped, filterable Bestiary. This is an optional side loop: the story chapters stay text, events and hooks (my earlier "no clue board" note applied to the story pages, not to this system). Headless test: check-ins, the 50% informant cap, hunting, completion flags, UI and bestiary all work.
+- Network extended: check-in now pays gold/items and brings one rumour or hearsay; 7 optional side cases (non-canon minor mysteries opened by rumours); rumour mill list. See docs/NETWORK.md.

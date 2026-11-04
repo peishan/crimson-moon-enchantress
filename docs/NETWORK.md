@@ -9,3 +9,9 @@ A new section, **📡 Network**, in the Bases tab (any open base). Code: `script
 - **No new canon:** report lines are deliberately neutral. To give a milestone real content (or add an investigation), edit its entry in `INVESTIGATIONS`; nothing else needs to change.
 - **Bestiary** (📕): grouped by region, with filters (All, Discovered, 📡 Network targets); entries show stats, traits, drops (rates unlock after three defeats), where found and which investigations the monster carries leads for.
 - Save data: `G.net` (created on first use; old saves are fine).
+
+## Rumours, daily rewards and side cases
+- **Check-in reward:** every daily check-in pays gold (15-35 plus a little for the chapter) and 40% of the time an item.
+- **Rumour mill:** each check-in also brings ONE rumour or piece of hearsay (table `RUMOURS`, 23 entries). Most are flavour only (`hearsay`). A few carry `inv` (+1% to a main investigation, marked unverified). `rumour` entries with `open` open a side case.
+- **Side cases** (table `CASES`, 7 so far): small non-canon mysteries (the lantern that will not go out, the peddler's mule, the Hollow Stream's whispers, the singing Cloud Steps, the quiet caravan guard, the tax collector's ledger, the late echo). They are hidden until a rumour opens them, then work like investigations (check-in rumours to 50%, hunting and leads for the rest) and end with a short solved story. They never touch the story or flags except `net_<id>_complete`.
+- Add more by appending to `CASES` and `RUMOURS`; no other code changes needed.

@@ -564,6 +564,10 @@ V2H={
  556:[('wantong_escort_agency_collected_the_cargo', 'Wantong Escort Agency collected the cargo on the twelfth by land; the destination is in supplementary register No. 472', 'event')],
  557:[('dispatch_register_confirms_departure', 'The dispatch register confirms the cargo left for the Western City District; the next transfer went through an intermediary', 'event')],
  558:[('register_472b_may_survive_in_the_records_store', 'The reference is No. 472-B; it may survive in the former records store or be lost', 'event')],
+ 559:[('register_472b_shows_a_second_transfer', 'Register 472-B shows the cargo transferred again to the Eastern Canal Forwarding Station, with no recipient recorded', 'event')],
+ 560:[('qinghe_vessel_collected_the_cargo', 'The forwarding station records show the vessel Qinghe collected the cargo combined with cloth', 'event')],
+ 561:[('qinghe_former_owner_was_the_gu_family', "The Qinghe's former owner was the Gu family; its logbook might record unusual landings", 'event')],
+ 562:[('qinghe_unloaded_at_willowbank_pier', "The Qinghe's logbook records it unloaded at Willowbank Pier on the thirteenth and went upstream", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

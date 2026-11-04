@@ -7870,6 +7870,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"559": [
+{
+"id": "register_472b_shows_a_second_transfer",
+"d": "Register 472-B shows the cargo transferred again to the Eastern Canal Forwarding Station, with no recipient recorded",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"560": [
+{
+"id": "qinghe_vessel_collected_the_cargo",
+"d": "The forwarding station records show the vessel Qinghe collected the cargo combined with cloth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"561": [
+{
+"id": "qinghe_former_owner_was_the_gu_family",
+"d": "The Qinghe's former owner was the Gu family; its logbook might record unusual landings",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"562": [
+{
+"id": "qinghe_unloaded_at_willowbank_pier",
+"d": "The Qinghe's logbook records it unloaded at Willowbank Pier on the thirteenth and went upstream",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

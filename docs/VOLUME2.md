@@ -681,3 +681,6 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 - 016 The Missing Register (559) · 017 The Eastern Canal Station (560) · 018 The Vessel's Route (561) · 019 The Gu Family's Records (562).
 - **Story:** register 472-B survives and shows a second transfer to the Eastern Canal Forwarding Station (recipient torn away); the station's loading records name the vessel Qinghe; an old boatman names its former owners, the Gu family; their logbook shows the Qinghe unloaded at Willowbank Pier on the thirteenth and went upstream. Story text, events and hooks only. Flags `register_472b_found`, `qinghe_vessel_named`, `willowbank_pier_found`; 4 hooks.
 - **For the author:** the date is the twelfth of the third month throughout (Wantong collected it on the twelfth in 013-014, and the forwarding register in 016 and the logbook in 019 also say the twelfth); consistent. Next page: Volume 16 comic 020 (chapter 563).
+
+## Planning: the Four Commanders
+- Added docs/FOUR_COMMANDERS_PLAN.md (optional distributed mystery and collection element, not the Volume 20 main plot). Planning only, nothing built; three open questions listed there.

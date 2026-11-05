@@ -8524,6 +8524,140 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"613": [
+{
+"id": "green_sashed_visitor_remembered_by_xiao_tian",
+"d": "Xiao Tian remembers a man in a green sash speaking with his father at the estate",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gu_yanzhou_likely_poisoned_before_the_fall",
+"d": "Yanzhou's illness was probably a poisoning; the threat to the Gu family began before the household fell",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"614": [
+{
+"id": "moonlit_misunderstanding_at_the_inlet",
+"d": "Ya'Xing stumbles on Qiumin bathing at night; a comic misunderstanding ends with her inviting him to stay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"615": [
+{
+"id": "xiyu_advises_qiumin_on_intimacy",
+"d": "Xiyu advises Qiumin that readiness, honesty and freely given consent matter and that nothing should be rushed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"616": [
+{
+"id": "missing_heir_named_gu_huaijin",
+"d": "The missing Gu heir is named Gu Huaijin; his mother secretly sent him away before the family fell",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_passage_below_the_ancestral_hall",
+"d": "A hidden passage below the ancestral hall leads to a sealed door with a bloodline lock",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"617": [
+{
+"id": "inscription_sealed_until_the_proper_descendant_returns",
+"d": "The inscription says the chamber stays sealed until the proper descendant returns; energy is still active inside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"618": [
+{
+"id": "yihai_stays_outside_and_liechen_goes_in",
+"d": "Yihai stays outside the chamber; Liechen goes in with the party",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"619": [
+{
+"id": "xiao_tian_blood_recognised_as_gu_lineage",
+"d": "The mechanism rejects Ya'Xing's blood and recognises Xiao Tian's as the Gu lineage; a golden light envelops everyone inside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"620": [
+{
+"id": "ancestral_light_protects_against_ordinary_death",
+"d": "Everyone in the chamber feels something settle inside; the inscription says those who receive the ancestral light shall not easily be claimed by the ordinary passage of death (protection, not invulnerability; incomplete)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"621": [
+{
+"id": "gu_artefact_spent_after_one_use",
+"d": "The artefact will not respond again; it was meant to be used once",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hokos_hair_changed_after_the_light",
+"d": "Hoko notices his hair looks different after the light",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"622": [
+{
+"id": "masked_pursuers_ambush_the_party",
+"d": "The group that captured and tortured Yihai ambushes the party outside the Gu estate and is captured alive",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "organisation_believed_the_gu_line_extinct",
+"d": "Their organisation believed the Gu family had no surviving heir; the awakened inheritance changes its plans",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"623": [
+{
+"id": "prisoners_to_yilong_and_xiao_tian_keeps_searching",
+"d": "The prisoners go to Yilong for questioning; Xiao Tian keeps searching for his birth name",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_19_ends",
+"d": "Volume 19 ends",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

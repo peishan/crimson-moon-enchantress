@@ -618,6 +618,17 @@ V2H={
  610:[('servant_left_the_gu_estate_when_the_heir_vanished', 'The archives show a household servant left the Gu estate around the time the heir disappeared, destination unknown', 'event'), ('old_han_the_former_harbour_supervisor', 'Old Han remembers the commotion when the child vanished and a household attendant who settled outside the eastern district', 'event')],
  611:[('yanzhou_asked_about_a_visitor', 'The former attendant recalls Yanzhou repeatedly asking whether anyone had seen a particular visitor before the disappearance', 'event')],
  612:[('crestless_carriage_with_a_dark_green_sash', 'A shop owner remembers a crestless carriage whose driver wore a dark green sash', 'event'), ('yaxing_still_holding_qiumins_hand', "Ya'Xing and Qiumin are still holding hands after leaving the crowd", 'event')],
+ 613:[('green_sashed_visitor_remembered_by_xiao_tian', 'Xiao Tian remembers a man in a green sash speaking with his father at the estate', 'event'), ('gu_yanzhou_likely_poisoned_before_the_fall', "Yanzhou's illness was probably a poisoning; the threat to the Gu family began before the household fell", 'event')],
+ 614:[('moonlit_misunderstanding_at_the_inlet', "Ya'Xing stumbles on Qiumin bathing at night; a comic misunderstanding ends with her inviting him to stay", 'event')],
+ 615:[('xiyu_advises_qiumin_on_intimacy', 'Xiyu advises Qiumin that readiness, honesty and freely given consent matter and that nothing should be rushed', 'event')],
+ 616:[('missing_heir_named_gu_huaijin', 'The missing Gu heir is named Gu Huaijin; his mother secretly sent him away before the family fell', 'event'), ('hidden_passage_below_the_ancestral_hall', 'A hidden passage below the ancestral hall leads to a sealed door with a bloodline lock', 'event')],
+ 617:[('inscription_sealed_until_the_proper_descendant_returns', 'The inscription says the chamber stays sealed until the proper descendant returns; energy is still active inside', 'event')],
+ 618:[('yihai_stays_outside_and_liechen_goes_in', 'Yihai stays outside the chamber; Liechen goes in with the party', 'event')],
+ 619:[('xiao_tian_blood_recognised_as_gu_lineage', "The mechanism rejects Ya'Xing's blood and recognises Xiao Tian's as the Gu lineage; a golden light envelops everyone inside", 'event')],
+ 620:[('ancestral_light_protects_against_ordinary_death', 'Everyone in the chamber feels something settle inside; the inscription says those who receive the ancestral light shall not easily be claimed by the ordinary passage of death (protection, not invulnerability; incomplete)', 'event')],
+ 621:[('gu_artefact_spent_after_one_use', 'The artefact will not respond again; it was meant to be used once', 'event'), ('hokos_hair_changed_after_the_light', 'Hoko notices his hair looks different after the light', 'event')],
+ 622:[('masked_pursuers_ambush_the_party', 'The group that captured and tortured Yihai ambushes the party outside the Gu estate and is captured alive', 'event'), ('organisation_believed_the_gu_line_extinct', 'Their organisation believed the Gu family had no surviving heir; the awakened inheritance changes its plans', 'event')],
+ 623:[('prisoners_to_yilong_and_xiao_tian_keeps_searching', 'The prisoners go to Yilong for questioning; Xiao Tian keeps searching for his birth name', 'event'), ('volume_19_ends', 'Volume 19 ends', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

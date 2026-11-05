@@ -7906,6 +7906,129 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"563": [
+{
+"id": "qinghe_unloaded_at_willowbank_and_some_went_by_riverboat",
+"d": "The Qinghe unloaded crates at Willowbank Pier; some went on a smaller riverboat and some may have been stored",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"564": [
+{
+"id": "keeper_remembers_more_than_he_says",
+"d": "The Willowbank warehouse keeper confirms a separate collection but will not give details",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"565": [
+{
+"id": "eighteen_crates_collected_under_a_separate_arrangement",
+"d": "Eighteen crates were collected separately by a collector with armed escorts",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "couple_misunderstanding_at_willowbank",
+"d": "A vendor mistakes Ya'Xing and Qiumin for a couple and Qiumin is flustered",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"567": [
+{
+"id": "boatman_and_ferryman_accounts_may_both_be_true",
+"d": "The cargo may have been divided between river and western road",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "stranger_warns_the_party_at_the_teahouse",
+"d": "A stranger warns the party to stop asking about old cargo",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"568": [
+{
+"id": "ambush_at_willowbank",
+"d": "Armed men ambush the party; Ya'Xing shields Qiumin and draws the Skyshard",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "qiumin_latent_ability_awakens_blooming_veils",
+"d": "Qiumin's latent ability awakens as blooming veils of light that bind and disarm the attackers",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "qiumin_realises_she_loves_yaxing",
+"d": "Qiumin realises she is in love with Ya'Xing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"569": [
+{
+"id": "hidden_track_guarded_by_the_attackers",
+"d": "The attackers were guarding a hidden cart track with a marking like the ferryman described",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"570": [
+{
+"id": "heavy_carts_on_the_old_inland_road",
+"d": "Loaded carts with unusual escorts took the old inland road towards a settlement beyond the ridge",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"572": [
+{
+"id": "familiar_mark_and_a_forwarding_contact_near_yilong",
+"d": "The registration mark resembles an earlier trading contact; the goods were forwarded to a contact near Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_doubts_qiumin_would_consider_him",
+"d": "Ya'Xing thinks Qiumin would not consider someone like him and pushes the thought aside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"573": [
+{
+"id": "return_to_yilong_to_follow_the_forwarding_contact",
+"d": "The group decides to return to Yilong to follow the forwarding contact",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "qiumin_kisses_the_sleeping_yaxing",
+"d": "Qiumin kisses the sleeping Ya'Xing; he believes he dreamed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

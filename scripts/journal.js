@@ -51,6 +51,7 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(568).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 16 comic 025: the Willowbank ambush (battle added by the game)
 chapterOf(505).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'director_qiao'}];   // Volume 14 comic 053: the central facility (battle added by the game; the pages show the guard clashes)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
 

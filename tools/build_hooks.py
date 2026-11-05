@@ -568,6 +568,15 @@ V2H={
  560:[('qinghe_vessel_collected_the_cargo', 'The forwarding station records show the vessel Qinghe collected the cargo combined with cloth', 'event')],
  561:[('qinghe_former_owner_was_the_gu_family', "The Qinghe's former owner was the Gu family; its logbook might record unusual landings", 'event')],
  562:[('qinghe_unloaded_at_willowbank_pier', "The Qinghe's logbook records it unloaded at Willowbank Pier on the thirteenth and went upstream", 'event')],
+ 563:[('qinghe_unloaded_at_willowbank_and_some_went_by_riverboat', 'The Qinghe unloaded crates at Willowbank Pier; some went on a smaller riverboat and some may have been stored', 'event')],
+ 564:[('keeper_remembers_more_than_he_says', 'The Willowbank warehouse keeper confirms a separate collection but will not give details', 'event')],
+ 565:[('eighteen_crates_collected_under_a_separate_arrangement', 'Eighteen crates were collected separately by a collector with armed escorts', 'event'), ('couple_misunderstanding_at_willowbank', "A vendor mistakes Ya'Xing and Qiumin for a couple and Qiumin is flustered", 'event')],
+ 567:[('boatman_and_ferryman_accounts_may_both_be_true', 'The cargo may have been divided between river and western road', 'event'), ('stranger_warns_the_party_at_the_teahouse', 'A stranger warns the party to stop asking about old cargo', 'event')],
+ 568:[('ambush_at_willowbank', "Armed men ambush the party; Ya'Xing shields Qiumin and draws the Skyshard", 'event'), ('qiumin_latent_ability_awakens_blooming_veils', "Qiumin's latent ability awakens as blooming veils of light that bind and disarm the attackers", 'event'), ('qiumin_realises_she_loves_yaxing', "Qiumin realises she is in love with Ya'Xing", 'event')],
+ 569:[('hidden_track_guarded_by_the_attackers', 'The attackers were guarding a hidden cart track with a marking like the ferryman described', 'event')],
+ 570:[('heavy_carts_on_the_old_inland_road', 'Loaded carts with unusual escorts took the old inland road towards a settlement beyond the ridge', 'event')],
+ 572:[('familiar_mark_and_a_forwarding_contact_near_yilong', 'The registration mark resembles an earlier trading contact; the goods were forwarded to a contact near Yilong', 'event'), ('yaxing_doubts_qiumin_would_consider_him', "Ya'Xing thinks Qiumin would not consider someone like him and pushes the thought aside", 'event')],
+ 573:[('return_to_yilong_to_follow_the_forwarding_contact', 'The group decides to return to Yilong to follow the forwarding contact', 'event'), ('qiumin_kisses_the_sleeping_yaxing', "Qiumin kisses the sleeping Ya'Xing; he believes he dreamed it", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

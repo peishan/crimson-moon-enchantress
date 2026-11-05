@@ -8337,6 +8337,129 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"600": [
+{
+"id": "yihai_remembers_gu_yanzhou_like_family",
+"d": "Yihai visited Gu Yanzhou so often his household treated him like family; the Gu child disappeared in a turbulent time",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"601": [
+{
+"id": "dongyue_captains_the_ship_and_yaxing_is_first_officer",
+"d": "Dongyue takes command of the vessel with Yihai advising and Ya'Xing as first officer; Donglin stays in Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_interrogated_and_abandoned_to_die",
+"d": "Yihai's captors clouded his mind, questioned him and abandoned him to die",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"602": [
+{
+"id": "squall_in_puying_waters",
+"d": "A squall strikes in Puying waters; Qiumin and Ya'Xing kiss and Xiao Tian sees",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "unnatural_stillness_and_a_glowing_ring_of_water",
+"d": "After the squall the sea falls still and a glowing ring of water draws the ship on",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"603": [
+{
+"id": "ship_carried_between_two_skies",
+"d": "The ship is carried by a hidden current between two skies to an unknown shore",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"604": [
+{
+"id": "lunareth_in_dragonvale_reached",
+"d": "The party reaches Lunareth in Dragonvale, another world; Jade, Devon and Levi meet them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"605": [
+{
+"id": "the_two_parties_compare_worlds_and_find_the_sage",
+"d": "Neither party knows the other's world; they find the Sage in the old district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"606": [
+{
+"id": "sage_names_xiyu_and_dongyue_heritage",
+"d": "The Sage tells Xiyu she has a divine inheritance from a celestial mother and Dongyue is a soul returned from the heavens",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sage_foretells_an_inheritance_in_sanggui",
+"d": "An ancient inheritance awaits in Sanggui: for some the years may cease to take their toll, for others a road beyond mortality",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sage_gives_the_compass_between_worlds",
+"d": "The Sage entrusts them with a compass that finds passages between worlds and responds to Dongyue",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"607": [
+{
+"id": "returned_to_their_own_world",
+"d": "The compass guides the ship back to their own world and Sanggui",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_unsure_whether_gu_yanzhou_is_his_father",
+"d": "Xiao Tian cannot be certain whether Gu Yanzhou is his father",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"608": [
+{
+"id": "gu_estate_reached_in_sanggui",
+"d": "The party reaches Sanggui and the old Gu estate; Xiao Tian recognises its gates",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "liechen_follows_demonic_energy_in_sanggui",
+"d": "Liechen senses demonic energy in Sanggui and follows it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

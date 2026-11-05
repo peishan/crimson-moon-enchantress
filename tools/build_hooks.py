@@ -605,6 +605,15 @@ V2H={
  598:[('qiumin_settles_the_returned_engagement_gift', "Qiumin and the young master debate marriage and part on good terms; she says she wanted Ya'Xing beside her", 'event')],
  571:[('merchant_saw_a_convoy_on_the_old_transfer_road', 'A merchant remembers a convoy that avoided the main markets, refused to explain its cargo and took the old transfer road through the hills', 'event'), ('yaxing_carries_a_tired_qiumin', "Ya'Xing carries a tired Qiumin and everyone but Dongyue notices", 'event')],
  599:[('dongyue_says_farewell_to_xining_before_the_birth', 'Dongyue says farewell to Xining; the birth of their daughter is getting closer and her treatment is in its final phase', 'event'), ('party_sets_out_for_sanggui_by_ship', "Yihai, Dongyue, Qiumin, Ya'Xing and the party set out for Sanggui by ship with Donglin", 'event')],
+ 600:[('yihai_remembers_gu_yanzhou_like_family', 'Yihai visited Gu Yanzhou so often his household treated him like family; the Gu child disappeared in a turbulent time', 'event')],
+ 601:[('dongyue_captains_the_ship_and_yaxing_is_first_officer', "Dongyue takes command of the vessel with Yihai advising and Ya'Xing as first officer; Donglin stays in Yilong", 'event'), ('yihai_interrogated_and_abandoned_to_die', "Yihai's captors clouded his mind, questioned him and abandoned him to die", 'event')],
+ 602:[('squall_in_puying_waters', "A squall strikes in Puying waters; Qiumin and Ya'Xing kiss and Xiao Tian sees", 'event'), ('unnatural_stillness_and_a_glowing_ring_of_water', 'After the squall the sea falls still and a glowing ring of water draws the ship on', 'event')],
+ 603:[('ship_carried_between_two_skies', 'The ship is carried by a hidden current between two skies to an unknown shore', 'event')],
+ 604:[('lunareth_in_dragonvale_reached', 'The party reaches Lunareth in Dragonvale, another world; Jade, Devon and Levi meet them', 'event')],
+ 605:[('the_two_parties_compare_worlds_and_find_the_sage', "Neither party knows the other's world; they find the Sage in the old district", 'event')],
+ 606:[('sage_names_xiyu_and_dongyue_heritage', 'The Sage tells Xiyu she has a divine inheritance from a celestial mother and Dongyue is a soul returned from the heavens', 'event'), ('sage_foretells_an_inheritance_in_sanggui', 'An ancient inheritance awaits in Sanggui: for some the years may cease to take their toll, for others a road beyond mortality', 'event'), ('sage_gives_the_compass_between_worlds', 'The Sage entrusts them with a compass that finds passages between worlds and responds to Dongyue', 'event')],
+ 607:[('returned_to_their_own_world', 'The compass guides the ship back to their own world and Sanggui', 'event'), ('xiao_tian_unsure_whether_gu_yanzhou_is_his_father', 'Xiao Tian cannot be certain whether Gu Yanzhou is his father', 'event')],
+ 608:[('gu_estate_reached_in_sanggui', 'The party reaches Sanggui and the old Gu estate; Xiao Tian recognises its gates', 'event'), ('liechen_follows_demonic_energy_in_sanggui', 'Liechen senses demonic energy in Sanggui and follows it', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

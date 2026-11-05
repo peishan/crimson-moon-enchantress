@@ -329,7 +329,7 @@ function rBestiary(){
 
 /* ---------------- DEV ---------------- */
 function rDev(){
-  return `<h2>Dev tools</h2><div class="panel"><div class="sm">Jump the save to a story point (recruits, flags, levels):</div>
+  return `<h2>Dev tools</h2>${devExportPanel()}<div class="panel"><div class="sm">Jump the save to a story point (recruits, flags, levels):</div>
    <input id="devch" type="number" min="0" max="${LAST_CHAPTER}" value="${G.ch}"><button onclick="devSetChapter(+$('devch').value);toast('Story set');render()">Set chapter</button></div>
    <div class="panel"><div class="row"><button onclick="gainXp(500);save();render()">+500 XP (all)</button><button onclick="gainXp(5000);save();render()">+5000 XP</button>
    <button onclick="G.party.forEach(i=>addBond(i,60));save();render()">+60 bond</button><button onclick="G.gold+=500;save();render()">+500 gold</button>

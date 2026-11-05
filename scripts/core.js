@@ -25,7 +25,7 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, VOL16_START = 544, VOL17_START = 574, VOL18_START = 586, VOL19_START = 598, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 608;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, VOL16_START = 544, VOL17_START = 574, VOL18_START = 586, VOL19_START = 598, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 612;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
@@ -56,6 +56,7 @@ function load(){
     G.ch = skipRemoved(G.ch);   // old saves inside removed chapters (108-115, 142-167)
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]); enforceParty();
+    if(G.flags.sage_compass_between_worlds && !G.inv.sage_compass) G.inv.sage_compass = 1;   // saves made before the compass became an item
     return true;
   }catch(e){ return false; }
 }

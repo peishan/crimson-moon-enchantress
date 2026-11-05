@@ -8460,6 +8460,70 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"609": [
+{
+"id": "gu_estate_main_hall_searched",
+"d": "The party searches the Gu estate: insignia, genealogy, ledgers and incomplete letters; someone has handled a shelf since the family disappeared",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gu_genealogy_records_a_son_who_disappeared",
+"d": "The Gu genealogy records Yanzhou's son and that he disappeared some years afterwards, with no later entry",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_demonic_trace_in_the_estate",
+"d": "Xiao Yan finds an old, faint demonic trace: someone once used the estate for a purpose that may not be finished",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"610": [
+{
+"id": "servant_left_the_gu_estate_when_the_heir_vanished",
+"d": "The archives show a household servant left the Gu estate around the time the heir disappeared, destination unknown",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_han_the_former_harbour_supervisor",
+"d": "Old Han remembers the commotion when the child vanished and a household attendant who settled outside the eastern district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"611": [
+{
+"id": "yanzhou_asked_about_a_visitor",
+"d": "The former attendant recalls Yanzhou repeatedly asking whether anyone had seen a particular visitor before the disappearance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"612": [
+{
+"id": "crestless_carriage_with_a_dark_green_sash",
+"d": "A shop owner remembers a crestless carriage whose driver wore a dark green sash",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_still_holding_qiumins_hand",
+"d": "Ya'Xing and Qiumin are still holding hands after leaving the crowd",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

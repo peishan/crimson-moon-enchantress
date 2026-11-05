@@ -23,7 +23,7 @@ const openBases = () => BASES.filter(baseIsOpen);
 const baseOpen = () => openBases().length > 0;
 const baseById = id => BASES.find(b => b.id === id);
 let baseSel = 'muxue', baseSection = 'hall';
-const BASE_SECTIONS = [['hall','🏠 Hall'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['comms','📨 Comms'],['network','📡 Network']];
+const BASE_SECTIONS = [['hall','🏠 Hall'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['comms','📨 Comms'],['network','📡 Network'],['fleet','⛵ Fleet']];
 const baseArt = (b, k, icon) => artOrIcon('assets/base/'+b.art+k+'.webp', icon, 'baseimg');
 function curBase(){ const ob = openBases(); return ob.find(b => b.id === baseSel) || ob[ob.length-1] || BASES[0]; }
 
@@ -40,11 +40,12 @@ function baseSelect(id){ baseSel = id; baseSection = 'hall'; render(); window.sc
 function rBase(){
   const ob = openBases(), b = curBase();
   const pick = ob.length > 1 ? `<div class="row" style="margin:6px 0">${ob.map(x => `<button class="${x.id===b.id?'pri':''}" onclick="baseSelect('${x.id}')">${x.icon} ${x.n}</button>`).join('')}</div>` : '';
-  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
+  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.filter(([k]) => k!=='fleet' || (typeof fleetOpen==='function' && fleetOpen())).map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
   let body = '';
   if(baseSection === 'board') body = `<div class="panel">${baseArt(b,'board','📋')}<div class="sm">The contract wall of the ${b.n}. Contracts and bounties are shared by all of Xiyu's bases.</div></div>` + rBoard().replace('<h2>Quest Board</h2>','');
   else if(baseSection === 'bounties') body = `<div class="panel">${baseArt(b,'bounty','📜')}<div class="sm">The bounty wall of the ${b.n}.</div></div>` + rBounties().replace('<h2>Bounties</h2>','');
   else if(baseSection === 'network') body = rNetwork();
+  else if(baseSection === 'fleet') body = rFleet();
   else if(baseSection === 'comms'){
     const done = BD().done, tier = RENOWN_TIERS[renownTier()][1];
     body = `<div class="panel">${baseArt(b,'comms','📨')}<h3>📨 Xiyu's communication</h3>

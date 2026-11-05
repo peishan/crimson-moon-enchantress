@@ -603,6 +603,8 @@ V2H={
  596:[('yihai_will_guide_them_to_sanggui_once_recovered', 'Yihai will guide the party to the Gu estate once he has recovered', 'event'), ('yaxing_doubts_qiumin_would_choose_him', "Ya'Xing privately doubts Qiumin would choose someone like him", 'event')],
  597:[('yihai_returns_to_ming_yue', 'Yihai is reunited with Ming Yue at Zhan Manor', 'event'), ('volume_18_ends_with_sanggui_waiting', 'Volume 18 ends with the Gu estate in Sanggui waiting until Yihai recovers', 'event')],
  598:[('qiumin_settles_the_returned_engagement_gift', "Qiumin and the young master debate marriage and part on good terms; she says she wanted Ya'Xing beside her", 'event')],
+ 571:[('merchant_saw_a_convoy_on_the_old_transfer_road', 'A merchant remembers a convoy that avoided the main markets, refused to explain its cargo and took the old transfer road through the hills', 'event'), ('yaxing_carries_a_tired_qiumin', "Ya'Xing carries a tired Qiumin and everyone but Dongyue notices", 'event')],
+ 599:[('dongyue_says_farewell_to_xining_before_the_birth', 'Dongyue says farewell to Xining; the birth of their daughter is getting closer and her treatment is in its final phase', 'event'), ('party_sets_out_for_sanggui_by_ship', "Yihai, Dongyue, Qiumin, Ya'Xing and the party set out for Sanggui by ship with Donglin", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

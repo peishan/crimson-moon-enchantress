@@ -595,6 +595,14 @@ V2H={
  588:[('yihai_found_alive_in_a_hidden_room', 'Zhan Yihai is found alive but barely conscious in a hidden room; someone kept him there deliberately', 'event')],
  589:[('yihai_vital_energy_stabilised', "Dongyue stabilises Yihai's vital energy", 'event')],
  590:[('yihai_wakes_briefly', 'Yihai wakes briefly and drifts off again; the party takes turns keeping watch', 'event')],
+ 591:[('yihai_mind_manipulated_in_xiao_tians_pattern', "Hoko finds Yihai's mind was manipulated like Xiao Tian's: memory suppression, confusion and a disrupted sense of time", 'event')],
+ 592:[('yihai_memory_fragments_return', "Fragments of Yihai's memory return; he should not be forced to remember", 'event'), ('yaxing_frees_a_trapped_rabbit', "Ya'Xing gently frees a trapped rabbit", 'event')],
+ 593:[('yihai_recalls_an_old_friend_from_the_northern_frontier', 'Yihai recalls an old friend from a northern frontier journey who saved his life more than once', 'event')],
+ 594:[('gu_yanzhou_of_sanggui_named', 'Yihai names his old friend Gu Yanzhou of the old Gu family of Sanggui; the estate has a hidden chamber only the bloodline can open', 'event')],
+ 595:[('gu_family_once_lost_a_young_son', 'The Gu family once lost a young son who was never found', 'event'), ('yaxing_wonders_about_his_origins', "Ya'Xing wonders about his own origins; nothing connects him to the Gu family", 'event')],
+ 596:[('yihai_will_guide_them_to_sanggui_once_recovered', 'Yihai will guide the party to the Gu estate once he has recovered', 'event'), ('yaxing_doubts_qiumin_would_choose_him', "Ya'Xing privately doubts Qiumin would choose someone like him", 'event')],
+ 597:[('yihai_returns_to_ming_yue', 'Yihai is reunited with Ming Yue at Zhan Manor', 'event'), ('volume_18_ends_with_sanggui_waiting', 'Volume 18 ends with the Gu estate in Sanggui waiting until Yihai recovers', 'event')],
+ 598:[('qiumin_settles_the_returned_engagement_gift', "Qiumin and the young master debate marriage and part on good terms; she says she wanted Ya'Xing beside her", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

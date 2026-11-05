@@ -8205,6 +8205,106 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"591": [
+{
+"id": "yihai_mind_manipulated_in_xiao_tians_pattern",
+"d": "Hoko finds Yihai's mind was manipulated like Xiao Tian's: memory suppression, confusion and a disrupted sense of time",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"592": [
+{
+"id": "yihai_memory_fragments_return",
+"d": "Fragments of Yihai's memory return; he should not be forced to remember",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_frees_a_trapped_rabbit",
+"d": "Ya'Xing gently frees a trapped rabbit",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"593": [
+{
+"id": "yihai_recalls_an_old_friend_from_the_northern_frontier",
+"d": "Yihai recalls an old friend from a northern frontier journey who saved his life more than once",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"594": [
+{
+"id": "gu_yanzhou_of_sanggui_named",
+"d": "Yihai names his old friend Gu Yanzhou of the old Gu family of Sanggui; the estate has a hidden chamber only the bloodline can open",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"595": [
+{
+"id": "gu_family_once_lost_a_young_son",
+"d": "The Gu family once lost a young son who was never found",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_wonders_about_his_origins",
+"d": "Ya'Xing wonders about his own origins; nothing connects him to the Gu family",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"596": [
+{
+"id": "yihai_will_guide_them_to_sanggui_once_recovered",
+"d": "Yihai will guide the party to the Gu estate once he has recovered",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_doubts_qiumin_would_choose_him",
+"d": "Ya'Xing privately doubts Qiumin would choose someone like him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"597": [
+{
+"id": "yihai_returns_to_ming_yue",
+"d": "Yihai is reunited with Ming Yue at Zhan Manor",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_18_ends_with_sanggui_waiting",
+"d": "Volume 18 ends with the Gu estate in Sanggui waiting until Yihai recovers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"598": [
+{
+"id": "qiumin_settles_the_returned_engagement_gift",
+"d": "Qiumin and the young master debate marriage and part on good terms; she says she wanted Ya'Xing beside her",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

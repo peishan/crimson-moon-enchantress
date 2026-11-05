@@ -7941,6 +7941,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"566": [
+{
+"id": "man_in_dark_travelling_clothes_oversaw_the_transfer",
+"d": "A former boatman says a man in dark travelling clothes, not part of the crew, oversaw the transfer and gave the orders",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "567": [
 {
 "id": "boatman_and_ferryman_accounts_may_both_be_true",
@@ -8025,6 +8034,173 @@ const HOOKS = {
 {
 "id": "qiumin_kisses_the_sleeping_yaxing",
 "d": "Qiumin kisses the sleeping Ya'Xing; he believes he dreamed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"574": [
+{
+"id": "qiumin_confides_in_xiyu_about_yaxing",
+"d": "Qiumin tells Xiyu how she feels about Ya'Xing; Xiyu advises her to show she chooses him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"575": [
+{
+"id": "qiumin_believes_her_power_is_innate",
+"d": "Qiumin believes the power that awoke at Willowbank is her innate ability; Xiyu says it may be a family inheritance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_kissed_cangyuan_first",
+"d": "Xiyu reveals she kissed Cangyuan first",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"576": [
+{
+"id": "afflicted_villagers_with_suppressed_energy",
+"d": "Villagers near Yilong suffer suppressed spiritual energy and strange markings; three cases are linked",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"577": [
+{
+"id": "paper_figure_delivered_by_a_stranger",
+"d": "A stranger left a binding paper figure at the second patient's home; the party catches it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"578": [
+{
+"id": "paper_figure_connected_to_a_hidden_source",
+"d": "The paper figure is connected to a hidden source that withdraws when the binding is cut",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"579": [
+{
+"id": "abandoned_workshop_and_the_name_ruyue",
+"d": "An abandoned paper craftsmen's workshop is in recent use; the name Ruyue is found on its papers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"580": [
+{
+"id": "ruyue_bought_special_paper_and_visited_a_shrine",
+"d": "A woman named Ruyue bought large amounts of special paper and visited an old shrine beyond the eastern road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"581": [
+{
+"id": "mechanical_wooden_sentinel_with_a_magical_core",
+"d": "A hidden door leads to a mechanical wooden sentinel with a magical core, made with a different technique",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"582": [
+{
+"id": "two_techniques_in_one_operation",
+"d": "Paper binding and mechanical joints with a core were used in one operation; a plaque points near the old southern road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"583": [
+{
+"id": "hooded_practitioner_at_the_southern_storehouse",
+"d": "A hooded practitioner confronts the party at a storehouse producing construct parts and the room collapses",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"584": [
+{
+"id": "bindings_on_the_villagers_broken",
+"d": "Xiyu and Dongyue sever the bindings draining the afflicted villagers; a note names an eastern storehouse",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"585": [
+{
+"id": "eastern_storehouse_cleared_but_the_organisation_remains",
+"d": "The eastern storehouse is cleared and records secured; whoever directs the operation is still unknown",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_17_ends",
+"d": "Volume 17 ends: one shadow uncovered, but not the hand that cast it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"586": [
+{
+"id": "shipment_recorded_twice_second_entry_points_to_a_quiet_district",
+"d": "The shipment was recorded twice; the second entry points to a quiet warehouse district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"587": [
+{
+"id": "hidden_entrance_in_an_ordinary_warehouse",
+"d": "Crates conceal an entrance to a room below a maintained warehouse",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"588": [
+{
+"id": "yihai_found_alive_in_a_hidden_room",
+"d": "Zhan Yihai is found alive but barely conscious in a hidden room; someone kept him there deliberately",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"589": [
+{
+"id": "yihai_vital_energy_stabilised",
+"d": "Dongyue stabilises Yihai's vital energy",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"590": [
+{
+"id": "yihai_wakes_briefly",
+"d": "Yihai wakes briefly and drifts off again; the party takes turns keeping watch",
 "t": "event",
 "p": false,
 "s": "art"

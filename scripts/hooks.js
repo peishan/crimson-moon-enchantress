@@ -8812,6 +8812,162 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"638": [
+{
+"id": "xiyu_requests_the_original_records_and_the_coffin",
+"d": "Xiyu formally requests the original death account and permission to examine Muxue Yan's coffin",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "investigation_squad_formed",
+"d": "The squad goes to Lingchuan without Dongyue (with Xining and Yunshu) and Liechen (hunting demons)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"639": [
+{
+"id": "lingchuan_the_present_muxue_administration",
+"d": "Lingchuan is the Muxue clan's present administrative region; the Ice Temple was its historic headquarters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"640": [
+{
+"id": "xiyu_meets_muxue_zhiyuan",
+"d": "Xiyu meets clan leader Muxue Zhiyuan, who admits the records are incomplete; she asks for permission to examine her father's coffin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"641": [
+{
+"id": "coffin_request_needs_custodian_and_preservation_approval",
+"d": "Zhiyuan cannot immediately grant the coffin request; archive custodians and preservation authorities must approve",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"642": [
+{
+"id": "coffin_held_in_a_preservation_chamber",
+"d": "The coffin is held in a preservation chamber under memorial custodians; Xiyu will be present at the verification",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"643": [
+{
+"id": "original_transfer_record_missing",
+"d": "The original transfer record of the coffin is missing; only a reference survives",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"644": [
+{
+"id": "coffin_opened_with_cangyuan_beside_xiyu",
+"d": "The original transfer record is found, the examination is authorised and the coffin is opened",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"645": [
+{
+"id": "muxue_yan_remains_show_spiritual_damage_before_burial",
+"d": "Muxue Yan's remains are preserved but show damaged spiritual pathways and an unusual dark residue from before preservation, not mentioned in the official summary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"646": [
+{
+"id": "damage_predates_preservation_cause_unknown",
+"d": "The examination confirms the damage predates preservation but not its cause or timing; the original medical assessment is still missing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"647": [
+{
+"id": "squad_leaves_lingchuan_with_authorised_records",
+"d": "The squad leaves Lingchuan with copies of the authorised records; Zhiyuan keeps the request open",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"648": [
+{
+"id": "cangyuan_comforts_xiyu_after_lingchuan",
+"d": "Cangyuan comforts Xiyu: she does not have to carry every unanswered question tonight",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"649": [
+{
+"id": "the_squad_comforts_xiyu",
+"d": "Xiao Tian, Qiumin, Ya'Xing, Hoko and Xiao Yan comfort Xiyu in their own ways",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"650": [
+{
+"id": "squad_returns_to_yilong_medical_assessment_still_missing",
+"d": "The squad returns to Yilong; the original medical assessment is still missing and Xiyu will keep searching",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_20_ends",
+"d": "Volume 20 ends",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"652": [
+{
+"id": "xiyu_studies_the_bloodline_foundation",
+"d": "Xiyu begins studying the first manual of her inheritance, The Bloodline Foundation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "four_commanders_records_inconsistent",
+"d": "Ya'Xing finds inconsistencies in the records of the Four Commanders",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"653": [
+{
+"id": "four_commanders_fifth_figure_and_the_central_structure_omission",
+"d": "Records mention a fifth beside the Four Commanders and a later copy omits the phrase central structure; Ya'Xing will check the Ice Temple originals",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

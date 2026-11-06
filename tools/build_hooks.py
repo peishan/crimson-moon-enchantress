@@ -643,6 +643,21 @@ V2H={
  635:[('muxue_yan_death_record_lacks_detail', "The accepted record of Muxue Yan's death has no detailed witness statement, description of his final days, or medical or research record", 'event'), ('muxue_yan_was_composed_at_a_research_meeting_before_his_reported_death', 'A former associate remembers Muxue Yan composed at a research meeting not long before his reported death', 'event')],
  636:[('muxue_yan_declared_dead_months_ago', 'The former administration declared Muxue Yan deceased several months ago and nobody told Xiyu', 'event')],
  637:[('original_death_account_under_restricted_access', 'The original death account and supporting records are under restricted access; Xiyu keeps her request active', 'event')],
+ 638:[('xiyu_requests_the_original_records_and_the_coffin', "Xiyu formally requests the original death account and permission to examine Muxue Yan's coffin", 'event'), ('investigation_squad_formed', 'The squad goes to Lingchuan without Dongyue (with Xining and Yunshu) and Liechen (hunting demons)', 'event')],
+ 639:[('lingchuan_the_present_muxue_administration', "Lingchuan is the Muxue clan's present administrative region; the Ice Temple was its historic headquarters", 'event')],
+ 640:[('xiyu_meets_muxue_zhiyuan', "Xiyu meets clan leader Muxue Zhiyuan, who admits the records are incomplete; she asks for permission to examine her father's coffin", 'event')],
+ 641:[('coffin_request_needs_custodian_and_preservation_approval', 'Zhiyuan cannot immediately grant the coffin request; archive custodians and preservation authorities must approve', 'event')],
+ 642:[('coffin_held_in_a_preservation_chamber', 'The coffin is held in a preservation chamber under memorial custodians; Xiyu will be present at the verification', 'event')],
+ 643:[('original_transfer_record_missing', 'The original transfer record of the coffin is missing; only a reference survives', 'event')],
+ 644:[('coffin_opened_with_cangyuan_beside_xiyu', 'The original transfer record is found, the examination is authorised and the coffin is opened', 'event')],
+ 645:[('muxue_yan_remains_show_spiritual_damage_before_burial', "Muxue Yan's remains are preserved but show damaged spiritual pathways and an unusual dark residue from before preservation, not mentioned in the official summary", 'event')],
+ 646:[('damage_predates_preservation_cause_unknown', 'The examination confirms the damage predates preservation but not its cause or timing; the original medical assessment is still missing', 'event')],
+ 647:[('squad_leaves_lingchuan_with_authorised_records', 'The squad leaves Lingchuan with copies of the authorised records; Zhiyuan keeps the request open', 'event')],
+ 648:[('cangyuan_comforts_xiyu_after_lingchuan', 'Cangyuan comforts Xiyu: she does not have to carry every unanswered question tonight', 'event')],
+ 649:[('the_squad_comforts_xiyu', "Xiao Tian, Qiumin, Ya'Xing, Hoko and Xiao Yan comfort Xiyu in their own ways", 'event')],
+ 650:[('squad_returns_to_yilong_medical_assessment_still_missing', 'The squad returns to Yilong; the original medical assessment is still missing and Xiyu will keep searching', 'event'), ('volume_20_ends', 'Volume 20 ends', 'event')],
+ 652:[('xiyu_studies_the_bloodline_foundation', 'Xiyu begins studying the first manual of her inheritance, The Bloodline Foundation', 'event'), ('four_commanders_records_inconsistent', "Ya'Xing finds inconsistencies in the records of the Four Commanders", 'event')],
+ 653:[('four_commanders_fifth_figure_and_the_central_structure_omission', "Records mention a fifth beside the Four Commanders and a later copy omits the phrase central structure; Ya'Xing will check the Ice Temple originals", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

@@ -156,10 +156,10 @@ function networkOnWin(foes, zone){
 }
 const zoneNames = ids => ids.map(z => { const zz = zoneById(z); return zz ? (zoneOpen(zz) ? zz.icon+' '+zz.n : '🔒 ???') : ''; }).join(', ');
 function invCard(i){
-  const N = NET(), p = invProg(i), capNote = p >= NET_CHECKIN_CAP && p < 100 ? ' · informants have given all they can: hunt for the rest' : '';
+  const N = NET(), p = invProg(i), squad = (i.id==='yan' && G.ch>=638 && G.ch<650) ? '<div class="sm">🧭 Investigation squad at Lingchuan: Xiyu, Cangyuan, Xiao Tian, Hoko, Xiao Yan, Ya\'Xing and Qiumin (Dongyue, Xining and Liechen stayed behind).</div>' : '', capNote = p >= NET_CHECKIN_CAP && p < 100 ? ' · informants have given all they can: hunt for the rest' : '';
   return `<div class="panel"><b>${i.icon} ${i.n}</b> <span class="sm">${p}%${p>=100?' · complete':''}</span>
     <div class="bar"><div style="width:${p}%;height:8px;background:#c33;border-radius:4px"></div></div>
-    <div class="sm">${i.desc}${capNote}</div>
+    <div class="sm">${i.desc}${capNote}</div>${squad}
     ${p<100 ? `<div class="sm">📍 Hunt in: ${zoneNames(i.zones)}</div>
     <div class="sm">🐾 Clue-bearers: ${i.keys.map(k => ENEMIES[k] ? ENEMIES[k].icon+' '+ENEMIES[k].n : k).join(', ')} · leads found: ${N.clues[i.id]||0}</div>` : ''}
     ${(N.seen[i.id]!==undefined) ? `<div class="sm" style="margin-top:4px">📝 Latest report: ${i.reports[N.seen[i.id]]}</div>` : ''}

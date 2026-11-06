@@ -57,3 +57,9 @@ Why Muxue Yan was connected to this inheritance for Xiyu, and how much he knew a
 - Existing Xiyu kit already has a Thread-Breaker formation skill; new skills (Moonlit Perception as a sense/analyse support, Moonveil as a shield, Crimson Threads as a bind, Crimson Crescent as a formation-piercing strike, Celestial Convergence later) should unlock by flags set in specific chapters, like Qiumin's.
 - Feiyue as a quest item (like the Sage's Compass) or equipment (docs/EQUIPMENT.md system); sword stages as three flags.
 - Open for the author: which Volume 21 chapters set each stage; whether Feiyue is equippable gear or a story item.
+
+## Reference sheet (author-generated)
+Saved as `assets/cast/xiyu_inheritance_sheet.webp` (not yet in the Cast tab: add it when the inheritance is revealed in Volume 21, chapter 001, so it does not spoil earlier chapters).
+- **Game implementation reference (from the sheet):** main weapon Feiyue Jian 绯月剑; owner Muxue Xiyu; category exclusive main weapon, story-locked; **unlock Volume 21, Chapter 001, "When the Road Falls Quiet"**; role balanced (offence, control, support); mastery and techniques unlock through story progression.
+- **Visual proposals only (not lore):** the sword's dimensions (about 100 cm, blade about 77 cm), the "unknown ancient celestial metal" and decorative details. Canon points are the ancestral origin and indestructibility. The sheet also says the sword requires attunement to the Muxue bloodline.
+- Volume 21 chapter 001 is titled "When the Road Falls Quiet" (from the sheet). Not yet received.

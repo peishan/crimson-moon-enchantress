@@ -747,3 +747,4 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Planning: Xiyu's Muxue inheritance
 - Added docs/XIYU_INHERITANCE_PLAN.md (the Codex of three manuals, the sword Feiyue Jian, the forefathers' letter, staged development from Volume 21, corrected origin: an ancestral Muxue legacy, not left by Muxue Yan). Planning only, nothing built.
+- Muxue Inheritance reference sheet saved (assets/cast/xiyu_inheritance_sheet.webp, not yet shown in the game); unlock and weapon details recorded in docs/XIYU_INHERITANCE_PLAN.md.

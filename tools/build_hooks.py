@@ -658,6 +658,7 @@ V2H={
  650:[('squad_returns_to_yilong_medical_assessment_still_missing', 'The squad returns to Yilong; the original medical assessment is still missing and Xiyu will keep searching', 'event'), ('volume_20_ends', 'Volume 20 ends', 'event')],
  652:[('xiyu_studies_the_bloodline_foundation', 'Xiyu begins studying the first manual of her inheritance, The Bloodline Foundation', 'event'), ('four_commanders_records_inconsistent', "Ya'Xing finds inconsistencies in the records of the Four Commanders", 'event')],
  653:[('four_commanders_fifth_figure_and_the_central_structure_omission', "Records mention a fifth beside the Four Commanders and a later copy omits the phrase central structure; Ya'Xing will check the Ice Temple originals", 'event')],
+ 651:[('xiyu_opens_her_muxue_inheritance', 'Xiyu opens her inheritance: three manuals, a letter from her forefathers and the sword Feiyue, preserved by her ancestors across generations', 'event'), ('feiyue_responds_to_xiyus_bloodline', "Feiyue, the Crimson Moon Sword, responds to Xiyu's bloodline", 'event'), ('first_manual_teaches_understanding_not_spells', 'The Bloodline Foundation teaches Xiyu to understand, control and refine the foundation of her power', 'event'), ('cangyuan_chose_to_walk_beside_xiyu', 'Cangyuan tells Xiyu he chose to walk beside her and has not changed his mind', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

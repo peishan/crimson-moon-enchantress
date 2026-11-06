@@ -207,6 +207,7 @@ const CAST_SHEETS = [
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:208},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},
   {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
+  {id:'inherit', n:'Xiyu\'s Muxue Inheritance', sub:'Feiyue Jian, the Muxue Inheritance Codex and the letter from her forefathers', img:'assets/cast/xiyu_inheritance_sheet.webp', ch:651},
   {id:'outfitalt18', n:'Alternative Outfit Reference (Volume 18)', sub:'Travel / investigation attire, alternative set: the main cast', img:'assets/cast/outfit_alt_v18.webp', ch:586},
   {id:'outfit15', n:'Main Cast Outfit Reference (Volume 15+)', sub:'Standard travelling attire: Xiyu, Cangyuan, Dongyue, Qiumin, Ya\'Xing, Xiao Tian, Xiao Yan, Hoko and Liechen', img:'assets/cast/outfit_main_v15.webp', ch:543},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)

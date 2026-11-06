@@ -56,7 +56,8 @@ function load(){
     G.ch = skipRemoved(G.ch);   // old saves inside removed chapters (108-115, 142-167)
     ROSTER.forEach(id => { G.units[id] = G.units[id] || { lv:1, xp:0, bp:0 }; });
     G.active = (G.active||['xiyu']).filter(id => G.party.includes(id) && !G.away[id]); enforceParty();
-    if(G.flags.sage_compass_between_worlds && !G.inv.sage_compass) G.inv.sage_compass = 1;   // saves made before the compass became an item
+    if(G.flags.sage_compass_between_worlds && !G.inv.sage_compass) G.inv.sage_compass = 1;
+    if(G.flags.xiyu_inheritance_opened){ if(!G.inv.feiyue_jian) G.inv.feiyue_jian = 1; if(!G.inv.muxue_codex) G.inv.muxue_codex = 1; }   // saves made before the compass became an item
     return true;
   }catch(e){ return false; }
 }

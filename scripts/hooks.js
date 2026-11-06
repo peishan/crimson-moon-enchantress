@@ -8944,6 +8944,36 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"651": [
+{
+"id": "xiyu_opens_her_muxue_inheritance",
+"d": "Xiyu opens her inheritance: three manuals, a letter from her forefathers and the sword Feiyue, preserved by her ancestors across generations",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "feiyue_responds_to_xiyus_bloodline",
+"d": "Feiyue, the Crimson Moon Sword, responds to Xiyu's bloodline",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_manual_teaches_understanding_not_spells",
+"d": "The Bloodline Foundation teaches Xiyu to understand, control and refine the foundation of her power",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_chose_to_walk_beside_xiyu",
+"d": "Cangyuan tells Xiyu he chose to walk beside her and has not changed his mind",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "652": [
 {
 "id": "xiyu_studies_the_bloodline_foundation",

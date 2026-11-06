@@ -113,7 +113,7 @@ function applyStoryStates(n){
   return msgs;
 }
 const CH_GEAR = { 129:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
-const CH_ITEMS = { 606:[{id:'sage_compass',qty:1}], 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
+const CH_ITEMS = { 651:[{id:'feiyue_jian',qty:1},{id:'muxue_codex',qty:1}], 606:[{id:'sage_compass',qty:1}], 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
 /* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
 function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
 

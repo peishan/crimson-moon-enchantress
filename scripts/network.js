@@ -87,6 +87,7 @@ const RUMOURS = [
   {t:'Dock gossip says a ship went quiet near the coast road and no one in the harbour office will say which. (Unverified.)', kind:'hearsay', inv:'yihai', min:519},
   {t:'A hunter says the demon sightings on the western road come in threes, and always near water. (Unverified.)', kind:'hearsay', inv:'demons', min:452},
   {t:'Northern traders say the Muxue clan has a new leader, and nobody will say what became of the old one. (Unverified.)', kind:'hearsay', inv:'yan', min:544},
+  {t:'Northern traders say the new Muxue leader is a young researcher and that several old clan contacts have gone quiet. (Unverified.)', kind:'hearsay', inv:'yan', min:633},
   {t:'Pilgrims say a lantern on the hill road burns day and night and seems to move when nobody is watching.', kind:'rumour', open:'c_lantern'},
   {t:'A peddler on the northern pass is loudly accusing everyone of stealing his mule.', kind:'rumour', open:'c_mule'},
   {t:'Villagers say the Hollow Stream murmurs after dark, almost like singing.', kind:'rumour', open:'c_stream'},

@@ -629,6 +629,20 @@ V2H={
  621:[('gu_artefact_spent_after_one_use', 'The artefact will not respond again; it was meant to be used once', 'event'), ('hokos_hair_changed_after_the_light', 'Hoko notices his hair looks different after the light', 'event')],
  622:[('masked_pursuers_ambush_the_party', 'The group that captured and tortured Yihai ambushes the party outside the Gu estate and is captured alive', 'event'), ('organisation_believed_the_gu_line_extinct', 'Their organisation believed the Gu family had no surviving heir; the awakened inheritance changes its plans', 'event')],
  623:[('prisoners_to_yilong_and_xiao_tian_keeps_searching', 'The prisoners go to Yilong for questioning; Xiao Tian keeps searching for his birth name', 'event'), ('volume_19_ends', 'Volume 19 ends', 'event')],
+ 624:[('party_returns_to_yilong_and_yihai_is_welcomed_home', "The party returns to Yilong and Yihai is welcomed home; Ming Yue is still unaware of Xining's pregnancy", 'event'), ('yun_he_master_asks_to_meet', "Yun He's master has heard about the Gu chamber and asks to meet everyone", 'event')],
+ 625:[('ming_huairen_questions_the_nine', 'Ming Huairen learns the light covered nine people and spared Yihai, who was outside, and warns against reckless tests of their protection', 'event')],
+ 626:[('siming_cannot_explain_the_gu_inheritance', "Yun He: the Siming cannot explain the Gu inheritance and cannot read Xiyu's or Dongyue's fates; the light may have linked the nine", 'event')],
+ 627:[('family_prepares_for_the_baby', 'The family prepares for the baby while Ming Yue still does not know of the pregnancy', 'event')],
+ 628:[('ming_yue_learns_of_xinings_pregnancy_and_delivers_the_baby', 'Ming Yue learns of the pregnancy and delivers the baby herself', 'event'), ('zhan_yunshu_born', 'Zhan Yunshu is born, a healthy daughter; the name means clouds unfolding across the sky', 'event')],
+ 629:[('yunshu_silver_hair_and_fast_growth', 'Yunshu has silver hair and is growing unusually quickly; the family will observe her', 'event'), ('xining_has_no_known_family_and_dyes_her_hair', 'Xining says she grew up without parents or relatives and admits dyeing her hair for her own reasons', 'event')],
+ 630:[('no_visible_change_after_the_light', 'Nobody reports a demonstrable change after the ancestral light; recognition and consequence may be separate things', 'event')],
+ 631:[('xiao_tian_and_yaxing_spar', "Xiao Tian and Ya'Xing spar; Xiao Tian's cultivation still refuses to cooperate", 'event')],
+ 632:[('ice_temple_and_muxue_record_exchange', 'An old exchange of records between the Ice Temple and the Muxue clan is found and a copy will go to Xiyu', 'event')],
+ 633:[('muxue_zhiyuan_named_as_the_new_leader', 'The new Muxue clan leader is Muxue Zhiyuan, 24, a researcher; old contacts have gone silent or been replaced', 'event')],
+ 634:[('xiyu_requests_appointment_records', "Xiyu requests the clan's appointment records, the reorganisation details and Zhiyuan's research archives", 'event')],
+ 635:[('muxue_yan_death_record_lacks_detail', "The accepted record of Muxue Yan's death has no detailed witness statement, description of his final days, or medical or research record", 'event'), ('muxue_yan_was_composed_at_a_research_meeting_before_his_reported_death', 'A former associate remembers Muxue Yan composed at a research meeting not long before his reported death', 'event')],
+ 636:[('muxue_yan_declared_dead_months_ago', 'The former administration declared Muxue Yan deceased several months ago and nobody told Xiyu', 'event')],
+ 637:[('original_death_account_under_restricted_access', 'The original death account and supporting records are under restricted access; Xiyu keeps her request active', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

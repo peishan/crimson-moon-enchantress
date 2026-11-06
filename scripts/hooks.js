@@ -8658,6 +8658,160 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"624": [
+{
+"id": "party_returns_to_yilong_and_yihai_is_welcomed_home",
+"d": "The party returns to Yilong and Yihai is welcomed home; Ming Yue is still unaware of Xining's pregnancy",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yun_he_master_asks_to_meet",
+"d": "Yun He's master has heard about the Gu chamber and asks to meet everyone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"625": [
+{
+"id": "ming_huairen_questions_the_nine",
+"d": "Ming Huairen learns the light covered nine people and spared Yihai, who was outside, and warns against reckless tests of their protection",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"626": [
+{
+"id": "siming_cannot_explain_the_gu_inheritance",
+"d": "Yun He: the Siming cannot explain the Gu inheritance and cannot read Xiyu's or Dongyue's fates; the light may have linked the nine",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"627": [
+{
+"id": "family_prepares_for_the_baby",
+"d": "The family prepares for the baby while Ming Yue still does not know of the pregnancy",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"628": [
+{
+"id": "ming_yue_learns_of_xinings_pregnancy_and_delivers_the_baby",
+"d": "Ming Yue learns of the pregnancy and delivers the baby herself",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "zhan_yunshu_born",
+"d": "Zhan Yunshu is born, a healthy daughter; the name means clouds unfolding across the sky",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"629": [
+{
+"id": "yunshu_silver_hair_and_fast_growth",
+"d": "Yunshu has silver hair and is growing unusually quickly; the family will observe her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xining_has_no_known_family_and_dyes_her_hair",
+"d": "Xining says she grew up without parents or relatives and admits dyeing her hair for her own reasons",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"630": [
+{
+"id": "no_visible_change_after_the_light",
+"d": "Nobody reports a demonstrable change after the ancestral light; recognition and consequence may be separate things",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"631": [
+{
+"id": "xiao_tian_and_yaxing_spar",
+"d": "Xiao Tian and Ya'Xing spar; Xiao Tian's cultivation still refuses to cooperate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"632": [
+{
+"id": "ice_temple_and_muxue_record_exchange",
+"d": "An old exchange of records between the Ice Temple and the Muxue clan is found and a copy will go to Xiyu",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"633": [
+{
+"id": "muxue_zhiyuan_named_as_the_new_leader",
+"d": "The new Muxue clan leader is Muxue Zhiyuan, 24, a researcher; old contacts have gone silent or been replaced",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"634": [
+{
+"id": "xiyu_requests_appointment_records",
+"d": "Xiyu requests the clan's appointment records, the reorganisation details and Zhiyuan's research archives",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"635": [
+{
+"id": "muxue_yan_death_record_lacks_detail",
+"d": "The accepted record of Muxue Yan's death has no detailed witness statement, description of his final days, or medical or research record",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "muxue_yan_was_composed_at_a_research_meeting_before_his_reported_death",
+"d": "A former associate remembers Muxue Yan composed at a research meeting not long before his reported death",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"636": [
+{
+"id": "muxue_yan_declared_dead_months_ago",
+"d": "The former administration declared Muxue Yan deceased several months ago and nobody told Xiyu",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"637": [
+{
+"id": "original_death_account_under_restricted_access",
+"d": "The original death account and supporting records are under restricted access; Xiyu keeps her request active",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

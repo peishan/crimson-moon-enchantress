@@ -228,6 +228,23 @@ const CHARACTERS = {
   ],
   passive:'Reads Fate: always sees how a marked foe is about to act. Not yet recruited: his chapter is the next volume after Volume 12 (not decided).'},
 
+ /* ===== ZHILEI 望舒芝湄 (author's sheet; recruitment chapter not decided). New rebirth with no memories, only her name; guided by her journal ("Go to the Ice Temple") and the Moon-Echo Bell. Hidden until INTRO_CH/JOIN_CH are set in core.js. ===== */
+ zhilei:{
+  vol2:true, n:'Zhilei', zh:'望舒芝湄', icon:'🔔', title:'Resonance Adept',
+  cls:'Resonance Adept / Support', role:'Sound · Relic · Support', combat:'Support caster',
+  elements:'Sound · Resonance · Moonlight',
+  identity:'Wangshu Zhilei (望舒芝湄), apparently twenty or twenty-one, independent and newly reborn with no memories of her previous life; she remembers only her name. She is guided by a personal journal she does not remember writing, which carries one clear instruction: go to the Ice Temple. She carries the Moon-Echo Bell (月回铃), a silver bell that responds to subtle spiritual resonance; its connection to her past is unknown. Her origin, her link to the Ice Temple and the reason for her rebirth remain a mystery.',
+  quote:'I may have forgotten who I was... but somewhere within me, there is still a reason to go forward.',
+  base:{hp:78,mp:52,atk:6,mag:13,def:7,spd:11}, grow:{hp:7.6,mp:4.4,atk:.6,mag:1.8,def:.8,spd:.9},
+  skills:[
+   {id:'moon_chime',n:'Moon Chime',icon:'🔔',mp:0,kind:'magic',tgt:'foe',pow:.7,req:{lvl:1},sig:true,desc:'A sharp note from the Moon-Echo Bell. She is no fighter; this is a last resort.'},
+   {id:'sound_resonance',n:'Sound Resonance · 清音共鸣',icon:'🎶',mp:9,kind:'heal',tgt:'ally',pow:.9,fx:[{k:'cleanse1'}],req:{lvl:1},sig:true,desc:'Tonal resonance that soothes emotions, steadies the mind and dispels a minor curse or mental interference: heals one ally and clears one ordinary status.'},
+   {id:'relic_sense',n:'Relic Sense · 灵物感应',icon:'🪷',mp:9,kind:'support',tgt:'foes',fx:[{k:'sense'}],req:{lvl:1},sig:true,desc:'A heightened sensitivity to relics, seals and spiritual constructs and their lingering traces: reveals every foe and exposes supernatural or layered ones.'},
+   {id:'harmonic_ward',n:'Harmonic Ward · 和鸣护御',icon:'🛡️',mp:13,kind:'support',tgt:'allies',fx:[{k:'ward',d:3},{k:'shield',v:.1,d:3}],req:{lvl:1},sig:true,desc:'A protective resonance field that mitigates harm and steadies the whole party for a few turns.'},
+   {id:'disrupting_chime',n:'Disrupting Chime · 琅鸣断律',icon:'🔕',mp:12,kind:'magic',tgt:'foe',pow:.5,antiMagic:1.5,fx:[{k:'quell'}],req:{lvl:1},sig:true,desc:'Specific sound frequencies interrupt an enemy technique and weaken spiritual constructs or bound artefacts (such as puppetry): restrains a supernatural enemy and cuts its spellcasting (bosses can resist).'},
+  ],
+  passive:'Reborn without memories: remembers only her name. Her recruitment chapter has not been decided; her journal and the Moon-Echo Bell are story items to be introduced in her chapters.'},
+
  /* ===== QIUMIN 秋敏 (author's sheet, for Volume 15; join chapter not decided). Dongyue's younger sister of the Zhan family, a provincial examination graduate (秀才) travelling home to share it. Hidden until INTRO_CH/JOIN_CH are set in core.js. ===== */
  qiumin:{
   vol2:true, n:'Qiumin', zh:'秋敏', icon:'🍁', title:'Scholar of the Zhan Family',

@@ -82,7 +82,7 @@ function rSheet(id){
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
    ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div>${id==='yaxing'&&yxResting()?`<div class="sm" style="margin-top:4px">He needs a day's rest before he can travel (a game day: it passes with the next chapter, or now).</div><button class="pri" onclick="act(()=>yxRest())">🛏️ Let him rest a day</button>`:''}</div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
-   ${id==='xiyu'?curseHtml()+bondsHtml():''}
+   ${id==='xiyu'?curseHtml()+bondsHtml():''}${(id==='yaxing'||id==='qiumin') && typeof yqHtml==='function' ? yqHtml() : ''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>${equipHtml(id)}${id==='yanwatcher' && typeof ledgerHtml==='function' ? ledgerHtml() : ''}
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
@@ -207,7 +207,10 @@ const CAST_SHEETS = [
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:208},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},
   {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
-  {id:'zhilei', n:'Wangshu Zhilei', sub:'Resonance Adept: the Moon-Echo Bell and a journal that says Go to the Ice Temple', img:'assets/cast/zhilei_sheet.webp', ch:null},   // set ch to her recruitment chapter
+  {id:'zhilei', n:'Wangshu Zhilei', sub:'Resonance Adept: the Moon-Echo Bell and a journal that says Go to the Ice Temple', img:'assets/cast/zhilei_sheet.webp', ch:660},
+  {id:'dxy', n:'Dongyue, Xining and Yunshu', sub:'After the birth: a family beneath the Yilong blossoms', img:'assets/events/dongyue_xining_yunshu.webp', ch:629},
+  {id:'yqsplash', n:'Ya\'Xing and Qiumin', sub:'The night they chose, at the Ice Temple', img:'assets/events/yaxing_qiumin.webp', ch:664},
+  {id:'party21', n:'Ice Temple Traveling Party (Volume 21+)', sub:'Investigation team: Xiyu, Cangyuan, Ya\'Xing, Qiumin, Xiao Tian, Xiao Yan, Hoko, Zhilei and Yun Long (expedition guide)', img:'assets/cast/ice_temple_party_v21.webp', ch:660},
   {id:'inherit', n:'Xiyu\'s Muxue Inheritance', sub:'Feiyue Jian, the Muxue Inheritance Codex and the letter from her forefathers', img:'assets/cast/xiyu_inheritance_sheet.webp', ch:651},
   {id:'outfitalt18', n:'Alternative Outfit Reference (Volume 18)', sub:'Travel / investigation attire, alternative set: the main cast', img:'assets/cast/outfit_alt_v18.webp', ch:586},
   {id:'outfit15', n:'Main Cast Outfit Reference (Volume 15+)', sub:'Standard travelling attire: Xiyu, Cangyuan, Dongyue, Qiumin, Ya\'Xing, Xiao Tian, Xiao Yan, Hoko and Liechen', img:'assets/cast/outfit_main_v15.webp', ch:543},
@@ -298,10 +301,10 @@ function rInventory(){
   if(!G.party.includes(itemHero)) itemHero = 'xiyu';
   const pick = `<div class="sm" style="margin:6px 0">Use on:</div><div class="row">${G.party.map(id=>`<button class="${itemHero===id?'pri':''}" onclick="itemHero='${id}';render()">${first(id)} ${curHp(id)}/${statsOf(id).hp}</button>`).join('')}</div>`;
   const rows = ids.length ? ids.map(k => { const i = ITEMS[k], us = USE[k];
-    return `<div class="card" style="cursor:default"><span class="big">${i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div>${i.desc?`<div class="sm">${i.desc}</div>`:''}</div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
+    return `<div class="card" style="cursor:default"><span class="big">${i.img?`<img src="${i.img}" alt="" style="width:44px;height:auto;vertical-align:middle">`:i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div>${i.desc?`<div class="sm">${i.desc}</div>`:''}</div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
   const brews = RECIPES.map(r => `<div class="ev"><div><b>${ITEMS[r.out].icon} ${ITEMS[r.out].n}</b><div class="sm">${r.label}</div></div><button onclick="act(()=>brew('${r.out}'))">Brew</button></div>`).join('');
   const shop = Object.keys(SHOP).map(k => `<div class="ev"><div><b>${ITEMS[k].icon} ${ITEMS[k].n}</b><div class="sm">${useText(USE[k])}</div></div><button ${G.gold>=SHOP[k]?'':'disabled'} onclick="act(()=>buyItem('${k}')?'Bought '+ITEMS['${k}'].n:'Not enough gold')">${SHOP[k]}g</button></div>`).join('');
-  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
+  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${typeof tokenPanel==='function'?tokenPanel():''}${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
 }
 let bestFilter = 'all';
 function bestZoneOf(k){ return ZONES.find(z => z.pool.includes(k) || [].concat(z.boss||[]).includes(k)); }

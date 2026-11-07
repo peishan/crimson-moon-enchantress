@@ -23,6 +23,15 @@ const relUnderstanding = u => u < 15 ? 'Little understood' : u < 40 ? 'Beginning
 
 /* Story beats that move a relationship when a chapter completes (small, deliberate; conversations do the rest). [a, b, {t,a,u}] */
 const REL_CH = {
+  654:[['qiumin','yaxing',{t:3,u:2,a:3}]],
+  655:[['xiyu','xiaotian',{t:1,u:1}]],
+  656:[['qiumin','yaxing',{t:2,u:2,a:1}]],
+  658:[['xiyu','cangyuan',{t:1,u:1}]],
+  662:[['xiyu','cangyuan',{t:2,u:2,a:1}],['xiaotian','zhilei',{t:1}]],
+  663:[['qiumin','yaxing',{t:3,u:3,a:3}]],
+  664:[['qiumin','yaxing',{t:5,u:2,a:5}]],
+  665:[['qiumin','yaxing',{t:2,a:2}]],
+  668:[['qiumin','yaxing',{t:2,u:2,a:1}]],
   651:[['xiyu','cangyuan',{t:3,u:2,a:2}]],
   644:[['xiyu','cangyuan',{t:2,u:2,a:1}]],
   648:[['xiyu','cangyuan',{t:3,u:3,a:3}]],

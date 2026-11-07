@@ -8998,6 +8998,190 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"654": [
+{
+"id": "yaxing_and_qiumin_take_an_afternoon_away_from_books",
+"d": "Ya'Xing and Qiumin take an afternoon for themselves; he no longer wants to keep standing at a distance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"655": [
+{
+"id": "inherited_abilities_are_a_foundation_not_a_shortcut",
+"d": "The group compares changes after the Gu artefact: inherited abilities give a foundation but do not replace experience, discipline or understanding",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tians_cultivation_still_will_not_cooperate",
+"d": "Xiao Tian tries to circulate spiritual energy through his cultivation technique and fails again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"656": [
+{
+"id": "ya_xings_books_clothes_and_sword_came_from_the_four_commanders",
+"d": "Ya'Xing's books, clothing and Skyshard came from the Four Commanders; the scarf is Qiumin's",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_disagree_about_the_four_positions",
+"d": "The records disagree about the four positions and mention a central position in one copy only",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"657": [
+{
+"id": "group_decides_to_return_to_the_ice_temple",
+"d": "The group decides to return to the Ice Temple; Dongyue stays with Xining and Yunshu; Yun Long will guide them to Yunling",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"658": [
+{
+"id": "journey_from_yilong_to_yunling",
+"d": "The party travels from Yilong to Yunling by the established passage, guided by Yun Long",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"659": [
+{
+"id": "wangshu_zhilei_wakes_without_memories",
+"d": "Wangshu Zhilei wakes on Muxue Island with no memories, a journal naming her and the Moon-Echo Bell, and an instruction to go to the Ice Temple",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"660": [
+{
+"id": "zhilei_joins_the_expedition_and_the_bell_pulses",
+"d": "Zhilei joins the expedition to the Ice Temple and the Moon-Echo Bell disperses a hostile disturbance at sea",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "wangshu_zhilei_joins_the_party",
+"d": "Wangshu Zhilei joins the party",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"661": [
+{
+"id": "ice_temple_access_token_received",
+"d": "Xiyu receives the Ice Temple Access Token: two-way teleportation for Xiyu and her travelling group to the Ice Temple and back to where they last departed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ao_yuns_glass_coffin_is_empty",
+"d": "Ao Yun's glass coffin at the Ice Temple is empty and the Moon-Echo Bell chimes with sadness",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"662": [
+{
+"id": "no_sign_of_forced_entry_at_ao_yuns_chamber",
+"d": "There is no sign of forced entry at Ao Yun's resting place; whoever acted knew the formation or nobody entered",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_investigation_divided_among_the_party",
+"d": "The group divides the Ice Temple investigation among themselves",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"663": [
+{
+"id": "yaxing_and_qiumin_promise_to_tell_each_other_what_they_want",
+"d": "Ya'Xing and Qiumin agree to tell each other what they want instead of guessing; a kiss in the courtyard",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"664": [
+{
+"id": "yaxing_and_qiumin_choose_each_other_at_the_ice_temple",
+"d": "Ya'Xing and Qiumin spend the night together by choice, with no obligation and no promise about the future",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"665": [
+{
+"id": "yaxing_privately_hopes_to_ask_qiumin_one_day",
+"d": "Ya'Xing privately hopes to ask Qiumin to build a life with him one day, properly and unhurried",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "central_fifth_position_discrepancy",
+"d": "Ya'Xing and Qiumin find a discrepancy regarding the central fifth position",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"666": [
+{
+"id": "sealed_cabinet_resonates_with_the_moon_echo_bell",
+"d": "A sealed cabinet in the lower archives makes the bell vibrate: a sense of separation and an unfinished farewell",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "scroll_cut_cleanly_before_the_central_position",
+"d": "A scroll about the Four Commanders ends abruptly with a clean edge before a reference to the central position",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"667": [
+{
+"id": "second_commanders_gate_found_in_a_ruin_hall",
+"d": "A gate marked with the second Commander's dragon symbol is found; its barrier is active and something inside is slowly awakening",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"668": [
+{
+"id": "skyshard_resonates_with_the_second_gate",
+"d": "Skyshard resonates with the second Commander's gate at the same frequency; recognition is not authority",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

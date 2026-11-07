@@ -113,7 +113,7 @@ function applyStoryStates(n){
   return msgs;
 }
 const CH_GEAR = { 129:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
-const CH_ITEMS = { 651:[{id:'feiyue_jian',qty:1},{id:'muxue_codex',qty:1}], 606:[{id:'sage_compass',qty:1}], 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
+const CH_ITEMS = { 661:[{id:'ice_temple_token',qty:1}], 651:[{id:'feiyue_jian',qty:1},{id:'muxue_codex',qty:1}], 606:[{id:'sage_compass',qty:1}], 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
 /* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
 function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
 
@@ -125,7 +125,8 @@ function devSetChapter(n){
   if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
   G.ch = skipRemoved(n);
   enforceParty();
-  if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash
+  if(n >= 78) relationshipUnlock();
+  if(n >= 664 && typeof yqUnlock === 'function') yqUnlock();   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
   if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));

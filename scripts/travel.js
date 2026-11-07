@@ -33,3 +33,10 @@ function tokenPanel(){
     <div style="margin-top:6px"><button class="pri" onclick="act(useToken)">${at ? '↩️ Return to '+(back||'where we left') : '❄️ Travel to the Ice Temple'}</button>
     ${at ? `<button onclick="showTab('inns')">🍵 Rest here (free)</button><button onclick="showTab('training')">🥋 Training</button>` : ''}</div></div>`;
 }
+
+/* the story puts the party at the Ice Temple when the token is given (chapter 661); old saves and the dev jump catch up too */
+function arriveIceTemple(){
+  if(!G || (G.travel && G.travel.at)) return;
+  const d = (typeof CHAPTER_DESIGN !== 'undefined') && CHAPTER_DESIGN[660];
+  G.travel = {at:'ice_temple', back:{ch:660, loc:(d && d.loc) || 'Muxue Harbour'}};
+}

@@ -36,7 +36,7 @@ function tokenPanel(){
 
 /* the story puts the party at the Ice Temple when the token is given (chapter 661); old saves and the dev jump catch up too */
 function arriveIceTemple(){
-  if(!G || (G.travel && G.travel.at)) return;
+  if(!G || (G.travel && G.travel.at) || G.ch >= 675) return;   // the party leaves the temple in chapter 675
   const d = (typeof CHAPTER_DESIGN !== 'undefined') && CHAPTER_DESIGN[660];
   G.travel = {at:'ice_temple', back:{ch:660, loc:(d && d.loc) || 'Muxue Harbour'}};
 }

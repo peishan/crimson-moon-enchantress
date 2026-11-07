@@ -11,7 +11,7 @@ const SHIPS = [
    status:'Left behind', cls:'Expedition / combat-ready ship',
    desc:'The main vessel used by Zhan Dongyue: a large, sturdy multi-deck ship for long-distance travel, exploration and expeditions, with a dragon figurehead and crimson sails bearing the Zhan dragon banner. A reinforced hull and long-range design suit harsh routes (the Ice Temple, for one). It sailed to Muxue Island in the Volume 1 flashback (the water pulled it and the compass jerked) and was left behind. It can be activated by a member of the Zhan family: Dongyue, Donglin, Qiumin or Yihai.',
    crew:['Unattended (activation: Zhan family)'], tags:['Zhan activation mechanism','Reinforced hull','Long-range'],
-   statusFrom:[{ch:660, status:'In use: carrying the Ice Temple expedition', port:'Muxue Harbour to the Ice Temple', note:'Zhilei boards at Muxue Harbour; a spiritual disturbance at sea.'},{ch:661, status:'Moored near the Ice Temple', port:'The Ice Temple', note:'Arrived with the expedition.'}],
+   statusFrom:[{ch:660, status:'In use: carrying the Ice Temple expedition', port:'Muxue Harbour to the Ice Temple', note:'Zhilei boards at Muxue Harbour; a spiritual disturbance at sea.'},{ch:661, status:'Moored near the Ice Temple', port:'The Ice Temple', note:'Arrived with the expedition.'},{ch:675, status:'Moored at Muxue Harbour', port:'Muxue Harbour', note:'Qiumin activated it for the voyage home; left at the island once the party reached Yilong.'}],
    areas:'Command Deck (navigation and activation) · Main Cabin (planning and discussion) · Passenger Quarters (travelling party)'},
   {id:'zhan', n:'Yihai\'s Merchant Ship', icon:'⛵', open:599, owner:'Zhan Yihai', port:'Yilong harbour',
    status:'Sailing with the party', cls:'Merchant / trade ship',

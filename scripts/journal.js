@@ -51,6 +51,7 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(671).battle = [{key:'ward_sentinel'},{key:'sparring_construct'},{key:'ward_sentinel'},{key:'sparring_construct'}];   // Volume 21 comic 021: the hidden corridor of stone guardians (battle added by the game)
 chapterOf(622).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 19 comic 024: the ambush outside the Gu estate (battle added by the game)
 chapterOf(581).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 17 comic 008: the wooden sentinel (battle added by the game)
 chapterOf(585).battle = [{key:'ward_sentinel'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 17 comic 012: the eastern storehouse (battle added by the game)
@@ -91,6 +92,7 @@ function completeChapter(n){
   giveChapterGear(n).forEach(m => msgs.push(m));
   if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
   if(n === 661 && typeof arriveIceTemple === 'function') arriveIceTemple();
+  if(n === 675){ G.travel = {at:null, back:null}; if(typeof shrineUnlock === 'function') shrineUnlock().forEach(x => msgs.push(x)); }
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
@@ -128,7 +130,8 @@ function devSetChapter(n){
   enforceParty();
   if(n >= 78) relationshipUnlock();
   if(n >= 664 && typeof yqUnlock === 'function') yqUnlock();
-  if(n >= 661 && typeof arriveIceTemple === 'function') arriveIceTemple();   // the dev jump skips the finale splash
+  if(n >= 661 && n < 675 && typeof arriveIceTemple === 'function') arriveIceTemple();
+  if(n >= 675){ G.travel = G.travel || {at:null, back:null}; G.travel.at = null; }   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
   if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));

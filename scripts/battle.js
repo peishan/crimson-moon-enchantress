@@ -55,6 +55,7 @@ function startBattle(spec){
   if(!(pairA && cg) && B.allies.some(a => a.syn && a.syn.comrade > 0)) blog('🤝 Comradeship: allies who trust each other fight a little better together.','sys');
   if(resLv()>=2 && B.allies.some(a => a.id==='xiyu') && B.allies.some(a => a.id==='cangyuan')){   // resonance awareness: limited, only severe disturbances
     B.foes.filter(f => f.st.layer || f.traits.includes('corrupt')).forEach(f => { f.known = true; blog('🌹 Crimson Thread: a severe disturbance in '+f.name+'.','sys'); }); }
+  if(typeof commanderAid === 'function') commanderAid();   // the Four Commanders' limited help (Dark Shrines)
   advance();
 }
 

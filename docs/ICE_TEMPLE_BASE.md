@@ -10,3 +10,9 @@
 - Shared with the other bases: Quest Board, Bounties, Comms, Network, Fleet.
 
 **Open for the author:** whether storage should also hold equipment or only items; whether the traders should later stock new goods by chapter; names for the Ice Temple Base artwork (optional art folder `assets/base/icetemple/` with hall, board, bounty, comms images, like the other bases).
+
+## Update (author decisions)
+- **Kitchen and traders:** the Ice Temple's central kitchen feeds the party for free once a day (HP only). The traders' hot meals (HP) and drinks (MP) are charged options. Food restores HP, drinks restore MP; items: Preserved Rations, Temple Dumplings (HP); Moon Tea, Warming Wine, Highland Tea, Frost Plum Wine (MP).
+- **New goods by chapter:** the stock table in scripts/icetemple.js lists the first chapter each good is sold (some wait for chapters not yet built, e.g. Ginseng Broth and Frost Plum Wine at 700).
+- **Storage now holds equipment** too (spare unworn gear; stored gear cannot be worn until taken out).
+- **🕯️ Dark Shrines** section added (see docs/FOUR_COMMANDERS_PLAN.md).

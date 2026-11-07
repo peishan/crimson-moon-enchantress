@@ -40,7 +40,7 @@ function baseSelect(id){ baseSel = id; baseSection = 'hall'; render(); window.sc
 function rBase(){
   const ob = openBases(), b = curBase();
   const pick = ob.length > 1 ? `<div class="row" style="margin:6px 0">${ob.map(x => `<button class="${x.id===b.id?'pri':''}" onclick="baseSelect('${x.id}')">${x.icon} ${x.n}</button>`).join('')}</div>` : '';
-  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.filter(([k]) => (k!=='fleet' || (typeof fleetOpen==='function' && fleetOpen())) && (k!=='travel' || (typeof hasToken==='function' && hasToken())) && (typeof BASE_ONLY==='undefined' || !BASE_ONLY[k] || BASE_ONLY[k]===b.id)).map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
+  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.filter(([k]) => (k!=='fleet' || (typeof fleetOpen==='function' && fleetOpen())) && (k!=='travel' || (typeof hasToken==='function' && hasToken())) && (typeof BASE_ONLY==='undefined' || !BASE_ONLY[k] || BASE_ONLY[k]===b.id) && (k!=='shrines' || (typeof shrinesOpen==='function' && shrinesOpen()))).map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
   let body = '';
   if(baseSection === 'board') body = `<div class="panel">${baseArt(b,'board','📋')}<div class="sm">The contract wall of the ${b.n}. Contracts and bounties are shared by all of Xiyu's bases.</div></div>` + rBoard().replace('<h2>Quest Board</h2>','');
   else if(baseSection === 'bounties') body = `<div class="panel">${baseArt(b,'bounty','📜')}<div class="sm">The bounty wall of the ${b.n}.</div></div>` + rBounties().replace('<h2>Bounties</h2>','');

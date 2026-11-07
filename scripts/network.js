@@ -138,6 +138,7 @@ function netCheckIn(){
     msgs.push('💬 '+(r.kind==='rumour' ? 'Rumour' : 'Hearsay')+': '+r.t);
     if(r.inv && invById(r.inv) && invOpen(invById(r.inv))) invAdd(invById(r.inv), 1, msgs);
     if(r.open && !N.cases[r.open]){ N.cases[r.open] = true; msgs.push('🔎 New side case opened: '+invById(r.open).n+' (not part of the story).'); netLog('new case: '+invById(r.open).n); } }
+  if(typeof shrineOnCheckIn === 'function') shrineOnCheckIn(msgs);
   msgs.unshift('📡 The network reports in. Day\'s takings: '+rw+'.');
   netLog('daily check-in'); return msgs;
 }

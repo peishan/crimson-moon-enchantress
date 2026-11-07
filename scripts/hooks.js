@@ -9182,6 +9182,90 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"669": [
+{
+"id": "fifth_position_has_no_emblem_and_an_inscription",
+"d": "The four directional positions carry a mountain, bird, dragon and flame; the fifth has no emblem and its inscription reads: the four may return, the fifth must choose",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "five_channels_beneath_the_central_floor",
+"d": "Five channels run beneath the central floor; the fifth has no visible activation point",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"670": [
+{
+"id": "bell_senses_an_impression_left_behind",
+"d": "Zhilei's bell senses an impression left behind in the central chamber, while the threads around the formation end abruptly as if severed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"671": [
+{
+"id": "hidden_corridor_of_stone_guardians",
+"d": "A hidden corridor of stone guardians is a separate defensive system that may once have tested those entering the deeper temple",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"672": [
+{
+"id": "medallion_in_the_ice_and_a_farewell_impression",
+"d": "A medallion is found half buried in frost; the bell hears urgency, sadness and a farewell, and the energy gathered around the object rather than coming from it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"673": [
+{
+"id": "commanders_possibly_separated_not_killed",
+"d": "The evidence does not establish whether the Four Commanders were separated, killed or alive; the four positions maintained different parts of a larger arrangement",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"674": [
+{
+"id": "yaxing_misses_the_four_commanders",
+"d": "Ya'Xing tells Qiumin how much the Four Commanders meant to him; she tells him he has her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_comforts_zhilei_about_memory",
+"d": "Xiyu tells Zhilei she can still decide what kind of life she wants from here",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"675": [
+{
+"id": "qiumin_activates_dongyues_ship",
+"d": "Qiumin, a Zhan family member, activates Dongyue's expedition ship; the party sails home",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_21_ends",
+"d": "Volume 21 ends: the Ice Temple search is paused, not ended",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

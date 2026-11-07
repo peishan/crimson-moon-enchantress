@@ -674,6 +674,13 @@ V2H={
  666:[('sealed_cabinet_resonates_with_the_moon_echo_bell', 'A sealed cabinet in the lower archives makes the bell vibrate: a sense of separation and an unfinished farewell', 'event'), ('scroll_cut_cleanly_before_the_central_position', 'A scroll about the Four Commanders ends abruptly with a clean edge before a reference to the central position', 'event')],
  667:[('second_commanders_gate_found_in_a_ruin_hall', "A gate marked with the second Commander's dragon symbol is found; its barrier is active and something inside is slowly awakening", 'event')],
  668:[('skyshard_resonates_with_the_second_gate', "Skyshard resonates with the second Commander's gate at the same frequency; recognition is not authority", 'event')],
+ 669:[('fifth_position_has_no_emblem_and_an_inscription', 'The four directional positions carry a mountain, bird, dragon and flame; the fifth has no emblem and its inscription reads: the four may return, the fifth must choose', 'event'), ('five_channels_beneath_the_central_floor', 'Five channels run beneath the central floor; the fifth has no visible activation point', 'event')],
+ 670:[('bell_senses_an_impression_left_behind', "Zhilei's bell senses an impression left behind in the central chamber, while the threads around the formation end abruptly as if severed", 'event')],
+ 671:[('hidden_corridor_of_stone_guardians', 'A hidden corridor of stone guardians is a separate defensive system that may once have tested those entering the deeper temple', 'event')],
+ 672:[('medallion_in_the_ice_and_a_farewell_impression', 'A medallion is found half buried in frost; the bell hears urgency, sadness and a farewell, and the energy gathered around the object rather than coming from it', 'event')],
+ 673:[('commanders_possibly_separated_not_killed', 'The evidence does not establish whether the Four Commanders were separated, killed or alive; the four positions maintained different parts of a larger arrangement', 'event')],
+ 674:[('yaxing_misses_the_four_commanders', "Ya'Xing tells Qiumin how much the Four Commanders meant to him; she tells him he has her", 'event'), ('xiyu_comforts_zhilei_about_memory', 'Xiyu tells Zhilei she can still decide what kind of life she wants from here', 'event')],
+ 675:[('qiumin_activates_dongyues_ship', "Qiumin, a Zhan family member, activates Dongyue's expedition ship; the party sails home", 'event'), ('volume_21_ends', 'Volume 21 ends: the Ice Temple search is paused, not ended', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

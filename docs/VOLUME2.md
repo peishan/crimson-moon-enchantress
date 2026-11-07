@@ -769,3 +769,4 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 ## Planning: Yihai as permanent non-combat Shipmaster (Volume 22)
 - Added docs/YIHAI_CREW_PLAN.md (role, specialties, chapter moments for Volume 22, continuity safeguards about Xiao Tian's father, Ya'Xing's and Liechen's origins, the comedy beat). Planning only, nothing built.
 - Yihai crew mechanics (no combat slot, non-combat, downtime in Yilong) and the secret Ya'Xing and Qiumin relationship boundaries recorded in docs/YIHAI_CREW_PLAN.md. Planning only.
+- Cangyuan knows about Ya'Xing and Qiumin by guessing from their reactions (author), recorded in docs/YIHAI_CREW_PLAN.md.

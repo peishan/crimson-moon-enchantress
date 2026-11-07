@@ -52,4 +52,4 @@ Volume 22 comic moments proposed (replacing the earlier list where they overlap)
 
 **Save for much later:** Dongyue learns only when Qiumin announces she wants to marry Ya'Xing ("And Father knows?" "Not yet." "YOU'RE TELLING ME BEFORE FATHER?!"). **Marriage is a future storyline, not a Volume 22 event.** The romance stays a long-running family comedy rather than resolving.
 
-Existing text note: earlier chapters already show Xiyu being told about the relationship (V17 comic 001) and Xiao Tian witnessing the storm kiss (V19 comic 004); this plan is consistent with that. Chapters through 653 show nobody telling Cangyuan outright, so his knowledge is taken as established off-page.
+Existing text note: earlier chapters already show Xiyu being told about the relationship (V17 comic 001) and Xiao Tian witnessing the storm kiss (V19 comic 004); this plan is consistent with that. **Author decision:** Cangyuan was not told; he guesses it from their reactions (quiet observation, no announcement). Chapters through 653 never show him learning it, so it happens off-page unless a later chapter shows the moment.

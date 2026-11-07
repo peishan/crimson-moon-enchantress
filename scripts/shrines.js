@@ -23,17 +23,22 @@ const FRAG_TYPES = {
   spirit:{n:'Spirit Fragment', icon:'✨', d:'holds the core spiritual presence'},
   power:{n:'Power Fragment', icon:'⚡', d:'retains a portion of former authority or ability'},
 };
+/* Proposed world-map distribution (author, conceptual: the world's compass layout is not locked). stage 1-5 = availability tier (Early, Expanding, Mid, Late, Final);
+   grp = region group on the Dark Shrines screen. The Ice Temple itself is NOT a shrine; Silent Snow lies in a distant northern region. */
+const SHRINE_GROUPS = {north:'Northern region', west:'Western and central regions', east:'Eastern region', south:'Southern region', unknown:'Uncharted region'};
+const STAGE_NAMES = {1:'First discoveries', 2:'Expanding investigation', 3:'Deeper exploration', 4:'Advanced exploration', 5:'Final discovery'};
+const STAGE_NEEDS = {1:0, 2:1, 3:3, 4:6, 5:8};   // shrines cleared before a lead can reveal a shrine of that stage
 const SHRINES = [
-  {id:'hollow_mountain', n:'Shrine of the Hollow Mountain', icon:'⛰️', region:'Mountain region', off:1, guard:['shrine_warden','ancient_sentinel'], desc:'A ruined shrine hidden inside a mountain cavern. Its walls are covered in old spiritual restraints.'},
-  {id:'withered_roots', n:'Shrine of Withered Roots', icon:'🌳', region:'Forest region', off:1, guard:['soulbound_guardian','demonic_beast'], desc:'An abandoned forest sanctuary where corrupted roots have grown around the central altar.'},
-  {id:'still_water', n:'Shrine Beneath the Still Water', icon:'💧', region:'Underground region', off:2, guard:['soulbound_guardian','shrine_warden'], desc:'A submerged shrine accessible through an underground lake. Its guardians remain active beneath the water.'},
-  {id:'dying_sun', n:'Shrine of the Dying Sun', icon:'🌅', region:'Desert region', off:2, guard:['shadow_cultivator','ancient_sentinel'], desc:'A buried desert sanctuary whose seals react to sunlight and celestial conditions.'},
-  {id:'broken_precipice', n:'Shrine at the Broken Precipice', icon:'🏔️', region:'Cliff region', off:2, guard:['ancient_sentinel','demonic_beast'], desc:'A cliffside shrine accessible by a dangerous mountain path, protected by ancient sentinels.'},
-  {id:'silent_snow', n:'Shrine of the Silent Snow', icon:'❄️', region:'Snow region', off:1, guard:['shrine_warden','soulbound_guardian'], desc:'A forgotten sanctuary beneath a frozen valley. Its spiritual energy has become unnaturally cold.'},
-  {id:'drowned_veil', n:'Shrine of the Drowned Veil', icon:'🌫️', region:'Marsh region', off:2, guard:['demonic_beast','shadow_cultivator'], desc:'A shrine surrounded by poisonous marshland and illusionary spiritual mists.'},
-  {id:'old_city', n:'Shrine Beneath the Old City', icon:'🏚️', region:'Ruins region', off:2, guard:['shadow_cultivator','shrine_warden'], desc:'A concealed ritual chamber beneath an abandoned settlement. Its entrance is hidden behind an ordinary ruin.'},
-  {id:'broken_bridge', n:'Shrine of the Broken Bridge', icon:'🌉', region:'Remote region', off:3, guard:['soulbound_guardian','ancient_sentinel'], desc:'A remote sanctuary connected by broken bridges and unstable spiritual pathways.'},
-  {id:'nameless', n:'The Nameless Shrine', icon:'🕳️', region:'Hidden region', off:3, guard:['shrine_warden','soulbound_guardian','shadow_cultivator','demonic_beast','ancient_sentinel'], desc:'A sealed site absent from surviving maps. It may be the oldest shrine in the network.'},
+  {id:'hollow_mountain', n:'Shrine of the Hollow Mountain', icon:'⛰️', region:'Shattered Ridge', where:'Northern mountain range', grp:'north', stage:2, off:1, guard:['shrine_warden','ancient_sentinel'], desc:'A ruined shrine hidden inside a mountain cavern. Its walls are covered in old spiritual restraints.'},
+  {id:'withered_roots', n:'Shrine of Withered Roots', icon:'🌳', region:'Yunling outskirts', where:'Western forest region', grp:'west', stage:1, off:1, guard:['soulbound_guardian','demonic_beast'], desc:'An abandoned forest sanctuary where corrupted roots have grown around the central altar.'},
+  {id:'still_water', n:'Shrine Beneath the Still Water', icon:'💧', region:'Puying', where:'Offshore underground lake and cavern system (a ship is needed)', grp:'south', stage:3, off:2, guard:['soulbound_guardian','shrine_warden'], desc:'A submerged shrine accessible through an underground lake. Its guardians remain active beneath the water.'},
+  {id:'dying_sun', n:'Shrine of the Dying Sun', icon:'🌅', region:'Western frontier', where:'Far western desert', grp:'west', stage:4, off:2, guard:['shadow_cultivator','ancient_sentinel'], desc:'A buried desert sanctuary whose seals react to sunlight and celestial conditions.'},
+  {id:'broken_precipice', n:'Shrine at the Broken Precipice', icon:'🏔️', region:'Mountain frontier', where:'Eastern highlands', grp:'east', stage:3, off:2, guard:['ancient_sentinel','demonic_beast'], desc:'A cliffside shrine accessible by a dangerous mountain path, protected by ancient sentinels.'},
+  {id:'silent_snow', n:'Shrine of the Silent Snow', icon:'❄️', region:'Distant northern mountains', where:'Far north, separate from the Ice Temple itself', grp:'north', stage:4, off:2, guard:['shrine_warden','soulbound_guardian'], desc:'A forgotten sanctuary beneath a frozen valley. Its spiritual energy has become unnaturally cold.'},
+  {id:'drowned_veil', n:'Shrine of the Drowned Veil', icon:'🌫️', region:'Southern wetlands', where:'Southern marshlands', grp:'south', stage:3, off:2, guard:['demonic_beast','shadow_cultivator'], desc:'A shrine surrounded by poisonous marshland and illusionary spiritual mists.'},
+  {id:'old_city', n:'Shrine Beneath the Old City', icon:'🏚️', region:'Sanggui outskirts', where:'Abandoned settlement above ancient ruins', grp:'west', stage:2, off:1, guard:['shadow_cultivator','shrine_warden'], desc:'A concealed ritual chamber beneath an abandoned settlement. Its entrance is hidden behind an ordinary ruin.'},
+  {id:'broken_bridge', n:'Shrine of the Broken Bridge', icon:'🌉', region:'Yilong frontier', where:'Remote gorge along an old travel route', grp:'east', stage:1, off:1, guard:['soulbound_guardian','ancient_sentinel'], desc:'A remote sanctuary connected by broken bridges and unstable spiritual pathways.'},
+  {id:'nameless', n:'The Nameless Shrine', icon:'🕳️', region:'Unknown region', where:'Hidden outside ordinary maps; its position is concealed until enough clues are gathered', grp:'unknown', stage:5, off:3, guard:['shrine_warden','soulbound_guardian','shadow_cultivator','demonic_beast','ancient_sentinel'], desc:'A sealed site absent from surviving maps. It may be the oldest shrine in the network.'},
 ];
 Object.assign(ENEMIES, {
   shrine_warden:{n:'Shrine Warden',icon:'🛡️',hp:150,atk:18,mag:0,def:11,spd:9,xp:70,gold:34,moves:[{n:'Warden\'s Strike',pow:1.1},{n:'Seal Slam',pow:.8,fx:[{k:'slow',d:2}]}],drops:[{id:'ice_crystal',chance:.35}],desc:'A former protector of the shrine, corrupted by its spiritual energy.'},
@@ -52,7 +57,7 @@ function SH(){
     CMDS.forEach(c => { Object.keys(FRAG_TYPES).forEach(t => frags.push({fid:'f'+(n++), cmd:c.id, type:t})); if(Math.random() < .5){ const ts = Object.keys(FRAG_TYPES); frags.push({fid:'f'+(n++), cmd:c.id, type:ts[Math.floor(Math.random()*ts.length)]}); } });
     const shuf = a => { for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; };
     shuf(frags); const order = shuf(SHRINES.map(s => s.id)), by = {}; order.forEach(id => by[id] = []);
-    frags.forEach((f, i) => by[i < order.length ? order[i] : order[Math.floor(Math.random()*order.length)]].push(f));
+    frags.forEach(f => by[order[Math.floor(Math.random()*order.length)]].push(f));   // independent of the map: a shrine may hold zero, one or several fragments (clues and guardians only)
     G.shrines = {gen:true, order, frags:by, found:{}, cleared:{}, pool:[], rec:{}, extra:{}};
   }
   return G.shrines;
@@ -60,10 +65,17 @@ function SH(){
 const fragTotal = cmd => { const s = SH(); let n = 0; Object.keys(s.frags).forEach(id => s.frags[id].forEach(f => { if(f.cmd === cmd) n++; })); return n; };
 const fragHave = cmd => SH().pool.filter(f => f.cmd === cmd).length;
 const fragIdent = cmd => SH().pool.filter(f => f.cmd === cmd && f.ident).length;
+const shrinesCleared = () => Object.keys(SH().cleared).length;
 function shrineDiscover(msgs){
-  const s = SH(), next = s.order.find(id => !s.found[id]); if(!next) return false;
-  s.found[next] = true; const sh = shrineById(next);
-  msgs.push('🕯️ A lead reaches Xiyu\'s network: '+sh.n+' ('+sh.region+'). Concealed sites like this hold the Four Commanders\' scattered soul fragments.'); return true;
+  const s = SH(), c = shrinesCleared();
+  const cands = SHRINES.filter(sh => !s.found[sh.id] && c >= STAGE_NEEDS[sh.stage]);
+  if(!cands.length) return false;
+  const st = Math.min.apply(null, cands.map(x => x.stage)), pool = cands.filter(x => x.stage === st), sh = pool[Math.floor(Math.random()*pool.length)];
+  s.found[sh.id] = true;
+  msgs.push(sh.id === 'nameless'
+    ? '🕯️ Enough clues from the earlier shrines line up: a site missing from every map. The Nameless Shrine (position now known to Xiyu).'
+    : '🕯️ A lead reaches Xiyu\'s network: '+sh.n+' ('+sh.region+', '+sh.where.toLowerCase()+'). Concealed sites like this hold the Four Commanders\' scattered soul fragments.');
+  return true;
 }
 function shrineUnlock(){ const msgs = ['🕯️ Reports begin to reach Xiyu through her network: concealed ritual sites, far from any clan base, that the temple\'s records and the bell hint at. (Dark Shrines: Bases > Ice Temple Base > Dark Shrines.)']; shrineDiscover(msgs); save(); return msgs; }
 function shrineOnCheckIn(msgs){ if(shrinesOpen() && Math.random() < .3) shrineDiscover(msgs); }
@@ -86,7 +98,8 @@ function shrineWin(id){
   s.cleared[id] = true;
   const got = s.frags[id] || [];
   got.forEach(f => s.pool.push({fid:f.fid, shrine:id, cmd:f.cmd, type:f.type, ident:false}));
-  if(got.length) msgs.push('💠 Recovered '+got.length+' soul fragment'+(got.length>1?'s':'')+' (unidentified). Study them in the Ice Library to learn whom they belong to.'); else msgs.push('The chamber holds no fragment.');
+  const left = SHRINES.filter(x => !s.cleared[x.id]).length; if(!got.length) msgs.push('The chamber holds only guardians and old seals, but the carvings add to the party\'s clues.');
+  if(got.length) msgs.push('💠 Recovered '+got.length+' soul fragment'+(got.length>1?'s':'')+' (unidentified). Study them in the Ice Library to learn whom they belong to.'); 
   const inv = (typeof invById === 'function') && invById('commanders'); if(inv) invAdd(inv, 4, msgs);
   G.gold += 60 + 4*(avgPartyLv()%50); save(); return msgs;
 }
@@ -147,10 +160,13 @@ function rShrines(){
   if(!shrinesOpen()) return '<div class="panel"><div class="sm">Not open yet.</div></div>';
   const s = SH(), res = resonance(), here = typeof iceHere === 'function' && iceHere();
   const found = SHRINES.filter(sh => s.found[sh.id]), hidden = SHRINES.length - found.length;
-  const shr = found.map(sh => { const cl = s.cleared[sh.id];
-    return `<div class="card ${cl?'':''}" style="cursor:default"><span class="big">${sh.icon}</span><div class="fl"><b>${sh.n}</b> <span class="sm">${sh.region}</span><div class="sm">${sh.desc}</div>
+  const card = sh => { const cl = s.cleared[sh.id], known = s.found[sh.id];
+    if(!known) return '';
+    return `<div class="card" style="cursor:default"><span class="big">${sh.icon}</span><div class="fl"><b>${sh.n}</b> <span class="sm">${sh.region} · ${sh.where} · ${STAGE_NAMES[sh.stage]}</span><div class="sm">${sh.desc}</div>
       <div class="sm">Guardians: ${sh.guard.map(k => ENEMIES[k].icon+' '+ENEMIES[k].n).join(', ')}</div>
-      ${cl ? '<div class="sm">✅ Seals silent: its fragments are recovered.</div>' : `<button class="pri" onclick="enterShrine('${sh.id}')">⚔️ Enter the shrine</button>`}</div></div>`; }).join('');
+      ${cl ? '<div class="sm">✅ Seals silent: searched.</div>' : `<button class="pri" onclick="enterShrine('${sh.id}')">⚔️ Enter the shrine</button>`}</div></div>`; };
+  const shr = Object.keys(SHRINE_GROUPS).map(g => { const list = SHRINES.filter(sh => sh.grp === g); const k = list.filter(sh => s.found[sh.id]);
+    return `<h4>${SHRINE_GROUPS[g]} (${k.length}/${list.length} found)</h4>${k.length ? k.map(card).join('') : '<div class="sm">'+(g==='unknown' ? 'Its position is concealed until enough clues from the other shrines are gathered ('+STAGE_NEEDS[5]+' shrines searched).' : 'Nothing found here yet.')+'</div>'}`; }).join('');
   const poolRows = s.pool.map(f => { if(f.ident){ const t = FRAG_TYPES[f.type], c = cmdById(f.cmd); return `<div class="sm">${t.icon} ${t.n} · ${c.n} (${c.sym})</div>`; }
     const r = res[f.fid]; return `<div class="sm">💠 Unidentified fragment · ${r.size>=3 ? 'a clearer spiritual image (group '+r.tag+')' : r.size===2 ? 'a faint resonance (group '+r.tag+')' : 'no resonance yet'}</div>`; }).join('');
   const un = s.pool.filter(f => !f.ident).length, doneStudy = G.bondDay && G.bondDay.frag === G.day;
@@ -158,8 +174,8 @@ function rShrines(){
     return `<div class="panel"><b>${c.sym} ${c.n}</b> <span class="sm">${st ? (st==='complete' ? '· presence complete' : '· presence stable (partial)') : '· no presence'}</span>
       <div class="sm">Fragments: ${hv} recovered, ${id} identified${st==='complete' ? '' : ' (the full count is not known until all are found)'}${st==='complete' ? ' of '+fragTotal(c.id) : ''}. Help: ${c.aid}${st ? ' (+'+(st==='complete'?6:3)+'%)' : ''}.</div>
       ${here ? `<button onclick="act(()=>doStabilise('${c.id}'))">🕯️ Stabilise the presence</button>` : ''}</div>`; }).join('');
-  return `<div class="panel"><b>🕯️ The Dark Shrines</b><div class="sm">Concealed ritual sites, far from any clan base, where the Four Commanders' souls were divided and kept. This is a side investigation: it explains nothing about why they vanished. Fragments are damaged parts of a soul, not power-ups. The party never raids current clan bases, and the clan administration is not alerted by this work. Shrines found: ${found.length}/${SHRINES.length}${hidden ? ' · '+hidden+' still hidden (check in at the network for leads)' : ''}.</div></div>
-    <h4>Known shrines</h4>${shr || '<div class="sm">No shrine is known yet. Daily network check-ins may bring a lead.</div>'}
+  return `<div class="panel"><b>🕯️ The Dark Shrines</b><div class="sm">Concealed ritual sites, far from any clan base, where the Four Commanders' souls were divided and kept. This is a side investigation: it explains nothing about why they vanished. Fragments are damaged parts of a soul, not power-ups. The party never raids current clan bases, and the clan administration is not alerted by this work. Shrines found: ${found.length}/${SHRINES.length} · searched: ${shrinesCleared()}${hidden ? ' · '+hidden+' still hidden: network check-ins bring leads, and later shrines need clues from earlier ones' : ''}. A shrine may hold several fragments, one, or none; fragments of one Commander lie in distant regions.</div></div>
+    ${shr}
     <h4>Soul fragments (${s.pool.length})</h4>${poolRows || '<div class="sm">None recovered yet.</div>'}
     ${un ? `<div class="panel"><div class="sm">Study one fragment a day in the Ice Library: same-Commander fragments resonate with each other (two a faint resonance, three or more a clearer image).</div><button class="pri" ${doneStudy||!here?'disabled':''} onclick="act(doStudyFragment)">🔍 Study a fragment ${doneStudy?'(done today)':!here?'(at the Ice Temple)':''}</button></div>` : ''}
     <h4>The Four Commanders</h4>${cmds}

@@ -47,3 +47,19 @@ Decided: this is left until AFTER Muxue Yan's later arc. Until then, only the su
 - **Loop:** a lead reveals a shrine (the first at chapter 675, then daily network check-ins) -> fight its two-stage guardian battle -> recover its fragments unidentified -> study one a day in the Ice Library (same-Commander fragments resonate: faint with two, a clearer image with three) -> stabilise a Commander's presence (3+ identified incl. the spirit fragment = partial; every fragment = complete) -> limited help: a small battle blessing (North: DEF; South: ATK and MAG; East: SPD; West: gentle regeneration; +3% partial, +6% complete) and one word of counsel a day for a little XP.
 - **Safeguards (kept):** no raids on current Muxue clan bases; routine work does not alert Zhiyuan; recovering fragments does not resurrect anyone; no truth about the disappearance or Muxue Yan's actions is revealed (counsel lines are neutral).
 - **Open for the author:** the Commanders' personal names and which symbol is which direction (I used North Mountain, South Flame, East Dragon, West Bird from the temple floor); real world-map regions for the ten shrines; whether cleared shrines should be revisitable; whether the counsel lines should carry real lore later.
+
+## Update: world-map distribution of the Dark Shrines (author proposal, built; conceptual, the compass layout is not locked)
+Principles locked: the shrines are spread across the wider world (not around Muxue); they are independent hidden ritual sites, not current Muxue clan bases; the ten are the initial design pool (more possible later); the Commanders' fragments are mixed across them; Zhiyuan is not automatically informed when Xiyu's group attacks one; the Nameless Shrine's position stays hidden until late. **The Ice Temple is not a Dark Shrine.**
+| Shrine | Region | Placement | Tier |
+| --- | --- | --- | --- |
+| Hollow Mountain | Shattered Ridge | Northern mountain range | 2 Expanding |
+| Withered Roots | Yunling outskirts | Western forest | 1 First |
+| Beneath the Still Water | Puying | Offshore underground lake and caverns | 3 Deeper |
+| Dying Sun | Western frontier | Far western desert | 4 Advanced |
+| Broken Precipice | Mountain frontier | Eastern highlands | 3 Deeper |
+| Silent Snow | Distant northern mountains | Far north (separate from the Ice Temple) | 4 Advanced |
+| Drowned Veil | Southern wetlands | Southern marshlands | 3 Deeper |
+| Beneath the Old City | Sanggui outskirts | Abandoned settlement above ruins | 2 Expanding |
+| Broken Bridge | Yilong frontier | Remote gorge on an old route | 1 First |
+| Nameless Shrine | Unknown | Outside ordinary maps | 5 Final |
+Groups on the screen: North (2), West and central (3), East (2), South (2), Uncharted (1). **Unlock** combines story and play, not distance: a lead can reveal a shrine of a tier only after enough shrines are searched (tier 2 after 1, tier 3 after 3, tier 4 after 6, the Nameless Shrine after 8), and within a tier the order is random. **Fragments are independent of the map**: a shrine may hold none, one or several (some hold only guardians and clues), and one Commander's fragments lie in distant regions. Left open on purpose: whether Muxue Yan built all ten shrines or repurposed older ritual sites (the author prefers a network of old sites he exploited and modified, so the world feels older than the antagonist's plans).

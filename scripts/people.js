@@ -32,6 +32,6 @@ const PEOPLE = [
   {id:'hoko',          n:'Hoko',          zh:'',         role:'Explorer of Luiterra',  intro:26, todo:true},
   {id:'anong',         n:'Anong',         zh:'',         role:'Captured Rebel',        intro:34, todo:true},
   {id:'yamon',         n:'Yamon',         zh:'',         role:'Captured Rebel',        intro:34, todo:true},
-  {id:'commander_west',n:'Commander West',zh:'',         role:'Commander',             intro:34, todo:true},
+  {id:'commander_west',n:'Yan Chixiao (Commander West)',zh:'燕赤霄',         role:'Commander of the West',             intro:34, todo:true},
 ];
 const personKnown = p => G.ch >= p.intro;

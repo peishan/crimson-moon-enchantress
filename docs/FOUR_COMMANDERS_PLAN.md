@@ -63,3 +63,12 @@ Principles locked: the shrines are spread across the wider world (not around Mux
 | Broken Bridge | Yilong frontier | Remote gorge on an old route | 1 First |
 | Nameless Shrine | Unknown | Outside ordinary maps | 5 Final |
 Groups on the screen: North (2), West and central (3), East (2), South (2), Uncharted (1). **Unlock** combines story and play, not distance: a lead can reveal a shrine of a tier only after enough shrines are searched (tier 2 after 1, tier 3 after 3, tier 4 after 6, the Nameless Shrine after 8), and within a tier the order is random. **Fragments are independent of the map**: a shrine may hold none, one or several (some hold only guardians and clues), and one Commander's fragments lie in distant regions. Left open on purpose: whether Muxue Yan built all ten shrines or repurposed older ritual sites (the author prefers a network of old sites he exploited and modified, so the world feels older than the antagonist's plans).
+
+## The Four Commanders' names (established in the TLALINAD character records)
+| Direction | Commander | Chinese | Symbol on the temple floor |
+| --- | --- | --- | --- |
+| North | Bai Xuancheng | 白玄承 | Mountain |
+| South | Yan Lingzhao | 燕凌昭 | Flame |
+| East | Lin Qingheng | 林清衡 | Dragon |
+| West | Yan Chixiao | 燕赤霄 | Bird |
+The Dark Shrines screen and the People card for "Commander West" (now Yan Chixiao 燕赤霄) use these names. The symbol-to-direction pairing is still my reading of the Volume 6 text; Yan Lingzhao and Yan Chixiao share the surname Yan (not read as a relation, nor as a link to Muxue Yan or Xiao Yan).

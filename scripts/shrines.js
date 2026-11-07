@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — THE DARK SHRINES (Four Commanders side system)
    A gameplay side system, NOT a main-story arc. Unlocked at the end of Volume 21 (chapter 675), where the story only mentions Xiyu receiving reports.
-   Concealed ritual sites (a pool of ten, expandable) hold SOUL FRAGMENTS of the Four Commanders (North Mountain, South Flame, East Dragon, West Bird).
+   Concealed ritual sites (a pool of ten, expandable) hold SOUL FRAGMENTS of the Four Commanders (Bai Xuancheng North, Yan Lingzhao South, Lin Qingheng East, Yan Chixiao West).
    Per save, 16-20 fragments are dealt at random across the shrines (each Commander has a memory, will, spirit and power fragment, and some a fifth);
    the four Commanders themselves never change. Loop: a lead (the first at chapter 675, then daily check-ins in Xiyu's network) reveals a shrine ->
    fight its guardians -> recover its fragments (unidentified) -> study them in the Ice Library (resonance hints, then identification) ->
@@ -12,10 +12,10 @@
    ===================================================================== */
 const SHRINE_UNLOCK_CH = 675;
 const CMDS = [
-  {id:'north', n:'Commander of the North', sym:'⛰️ Mountain', aid:'Mountain: the party\'s DEF'},
-  {id:'south', n:'Commander of the South', sym:'🔥 Flame', aid:'Flame: the party\'s ATK and MAG'},
-  {id:'east',  n:'Commander of the East',  sym:'🐉 Dragon', aid:'Dragon: the party\'s SPD'},
-  {id:'west',  n:'Commander of the West',  sym:'🕊️ Bird', aid:'Bird: a gentle regeneration at the start of battle'},
+  {id:'north', n:'Bai Xuancheng 白玄承', dir:'North', title:'Commander of the North', sym:'⛰️ Mountain', aid:'Mountain: the party\'s DEF'},
+  {id:'south', n:'Yan Lingzhao 燕凌昭', dir:'South', title:'Commander of the South', sym:'🔥 Flame', aid:'Flame: the party\'s ATK and MAG'},
+  {id:'east',  n:'Lin Qingheng 林清衡',  dir:'East', title:'Commander of the East',  sym:'🐉 Dragon', aid:'Dragon: the party\'s SPD'},
+  {id:'west',  n:'Yan Chixiao 燕赤霄',  dir:'West', title:'Commander of the West',  sym:'🕊️ Bird', aid:'Bird: a gentle regeneration at the start of battle'},
 ];
 const FRAG_TYPES = {
   memory:{n:'Memory Fragment', icon:'📜', d:'retains impressions, memories or knowledge'},
@@ -116,7 +116,7 @@ function doStudyFragment(){
   const un = s.pool.filter(f => !f.ident); if(!un.length) return ['There is no unidentified fragment to study.'];
   const res = resonance(); un.sort((a,b) => (res[b.fid].size - res[a.fid].size) + (Math.random()-.5)*.5);
   const f = un[0]; f.ident = true; G.bondDay.frag = G.day; const c = cmdById(f.cmd), t = FRAG_TYPES[f.type];
-  const out = ['🔍 After a day of study the party reads the fragment\'s signature: a '+t.icon+' '+t.n+' of the '+c.n+' ('+c.sym+').'];
+  const out = ['🔍 After a day of study the party reads the fragment\'s signature: a '+t.icon+' '+t.n+' of the '+c.n+' ('+c.title+', '+c.sym+').'];
   if(fragIdent(f.cmd) >= 3 && SH().pool.some(x => x.cmd === f.cmd && x.type === 'spirit' && x.ident) && !s.rec[f.cmd]) out.push('✦ Enough of the '+c.n+'\'s soul is identified to attempt to stabilise a presence.');
   save(); return out;
 }
@@ -171,7 +171,7 @@ function rShrines(){
     const r = res[f.fid]; return `<div class="sm">💠 Unidentified fragment · ${r.size>=3 ? 'a clearer spiritual image (group '+r.tag+')' : r.size===2 ? 'a faint resonance (group '+r.tag+')' : 'no resonance yet'}</div>`; }).join('');
   const un = s.pool.filter(f => !f.ident).length, doneStudy = G.bondDay && G.bondDay.frag === G.day;
   const cmds = CMDS.map(c => { const hv = fragHave(c.id), id = fragIdent(c.id), st = s.rec[c.id];
-    return `<div class="panel"><b>${c.sym} ${c.n}</b> <span class="sm">${st ? (st==='complete' ? '· presence complete' : '· presence stable (partial)') : '· no presence'}</span>
+    return `<div class="panel"><b>${c.sym} ${c.n}</b> <span class="sm">${c.title}</span> <span class="sm">${st ? (st==='complete' ? '· presence complete' : '· presence stable (partial)') : '· no presence'}</span>
       <div class="sm">Fragments: ${hv} recovered, ${id} identified${st==='complete' ? '' : ' (the full count is not known until all are found)'}${st==='complete' ? ' of '+fragTotal(c.id) : ''}. Help: ${c.aid}${st ? ' (+'+(st==='complete'?6:3)+'%)' : ''}.</div>
       ${here ? `<button onclick="act(()=>doStabilise('${c.id}'))">🕯️ Stabilise the presence</button>` : ''}</div>`; }).join('');
   return `<div class="panel"><b>🕯️ The Dark Shrines</b><div class="sm">Concealed ritual sites, far from any clan base, where the Four Commanders' souls were divided and kept. This is a side investigation: it explains nothing about why they vanished. Fragments are damaged parts of a soul, not power-ups. The party never raids current clan bases, and the clan administration is not alerted by this work. Shrines found: ${found.length}/${SHRINES.length} · searched: ${shrinesCleared()}${hidden ? ' · '+hidden+' still hidden: network check-ins bring leads, and later shrines need clues from earlier ones' : ''}. A shrine may hold several fragments, one, or none; fragments of one Commander lie in distant regions.</div></div>

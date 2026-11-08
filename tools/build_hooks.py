@@ -703,6 +703,10 @@ V2H={
  696:[('yihai_writes_the_account_and_the_letters', 'Yihai keeps the account to observations, not explanations (not a portal), and will send letters to relevant merchants', 'event')],
  697:[('zhilei_does_not_have_to_find_every_answer_alone', 'Zhilei studies her journal and Cangyuan tells her silence is not an absence of meaning', 'event')],
  698:[('yihai_calls_yaxing_an_excellent_husband', "Yihai tells Ya'Xing he would make an excellent husband while Xiao Tian chokes on his tea; Yihai is oblivious", 'event')],
+ 685:[('unfamiliar_coastline_matches_no_chart', "An unfamiliar coastline matches none of Yihai's charts or Ya'Xing's comparisons; the mechanism, compass and bell raise no alarm", 'event')],
+ 698:[('qiumin_hears_yihai_praise_yaxing_as_a_husband', "Yihai praises Ya'Xing as an excellent husband in front of Qiumin; they trade a quiet exchange while Xiao Tian coughs", 'event')],
+ 699:[('voyage_sorted_into_confirmed_and_unresolved', 'The group sorts the voyage into confirmed observations and six unresolved questions; Yihai refuses to present any theory as established fact', 'event')],
+ 700:[('yihai_becomes_permanent_shipmaster', 'Yihai decides to continue with the expedition as permanent Shipmaster and Captain, Navigator, PR and Diplomatic Representative and merchant-network liaison (non-combatant)', 'state'), ('volume_22_ends', 'Volume 22 ends: a voyage remembered, a crew united', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

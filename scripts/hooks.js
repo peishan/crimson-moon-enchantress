@@ -9376,6 +9376,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"685": [
+{
+"id": "unfamiliar_coastline_matches_no_chart",
+"d": "An unfamiliar coastline matches none of Yihai's charts or Ya'Xing's comparisons; the mechanism, compass and bell raise no alarm",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "686": [
 {
 "id": "unnamed_shore_and_a_manufactured_component",
@@ -9493,8 +9502,33 @@ const HOOKS = {
 ],
 "698": [
 {
-"id": "yihai_calls_yaxing_an_excellent_husband",
-"d": "Yihai tells Ya'Xing he would make an excellent husband while Xiao Tian chokes on his tea; Yihai is oblivious",
+"id": "qiumin_hears_yihai_praise_yaxing_as_a_husband",
+"d": "Yihai praises Ya'Xing as an excellent husband in front of Qiumin; they trade a quiet exchange while Xiao Tian coughs",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"699": [
+{
+"id": "voyage_sorted_into_confirmed_and_unresolved",
+"d": "The group sorts the voyage into confirmed observations and six unresolved questions; Yihai refuses to present any theory as established fact",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"700": [
+{
+"id": "yihai_becomes_permanent_shipmaster",
+"d": "Yihai decides to continue with the expedition as permanent Shipmaster and Captain, Navigator, PR and Diplomatic Representative and merchant-network liaison (non-combatant)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_22_ends",
+"d": "Volume 22 ends: a voyage remembered, a crew united",
 "t": "event",
 "p": false,
 "s": "art"

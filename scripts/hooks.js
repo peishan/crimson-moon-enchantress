@@ -9366,6 +9366,139 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"684": [
+{
+"id": "coastline_that_should_not_be_there",
+"d": "The coastline ahead does not match the charts or Hoko's memory, though the compass and mechanism are normal; the bell is quiet",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"686": [
+{
+"id": "unnamed_shore_and_a_manufactured_component",
+"d": "The expedition anchors on an unnamed shore and Hoko finds a weathered manufactured component; someone may have visited before",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"687": [
+{
+"id": "traces_of_another_voyage_on_the_shore",
+"d": "More components, an old overgrown path inland and an old campsite show someone visited the shore before the expedition",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"688": [
+{
+"id": "current_turns_against_the_ship",
+"d": "A current running against the wind drives the ship toward rocks; Captain Yihai steers with the current to safety",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_lost_memories_in_the_torment",
+"d": "Narration: since the torment he endured, Yihai has forgotten many things, including a marriage arrangement he once made for Qiumin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"689": [
+{
+"id": "currents_and_disturbance_shift_together",
+"d": "The current changes again and Zhilei and Cangyuan sense a faint disturbance that shifts with the waters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"690": [
+{
+"id": "opening_between_the_mountains_appears_and_fades",
+"d": "An opening between the mountains appears and fades; Cangyuan calls it a spatial disturbance, not a stable barrier",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"691": [
+{
+"id": "expedition_turns_back",
+"d": "The expedition decides to discontinue the exploration and find a safe route home",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"692": [
+{
+"id": "position_unknown_but_records_consistent",
+"d": "The ship's position cannot be identified but its records, mechanism and compass are consistent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"693": [
+{
+"id": "light_beyond_the_mist",
+"d": "A light beyond a dense mist matches no known landmark; Yihai adjusts the course cautiously toward it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"694": [
+{
+"id": "ship_unaffected_by_the_sea_changes",
+"d": "The ship's internal magical pattern stays consistent while the sea and spiritual atmosphere change",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"695": [
+{
+"id": "back_in_familiar_waters",
+"d": "The mist thins and the mountains match the eastern coastal records: the expedition is back in familiar waters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"696": [
+{
+"id": "yihai_writes_the_account_and_the_letters",
+"d": "Yihai keeps the account to observations, not explanations (not a portal), and will send letters to relevant merchants",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"697": [
+{
+"id": "zhilei_does_not_have_to_find_every_answer_alone",
+"d": "Zhilei studies her journal and Cangyuan tells her silence is not an absence of meaning",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"698": [
+{
+"id": "yihai_calls_yaxing_an_excellent_husband",
+"d": "Yihai tells Ya'Xing he would make an excellent husband while Xiao Tian chokes on his tea; Yihai is oblivious",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

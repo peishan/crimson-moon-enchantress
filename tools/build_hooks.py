@@ -689,6 +689,20 @@ V2H={
  681:[('xiao_yan_tells_zhilei_the_bell_resonates_with_its_user', "Xiao Yan tells Zhilei that the Moon-Echo Bell resonates with its user's mind and spirit; she feels closer to something she has lost", 'event')],
  682:[('the_ship_casts_off_from_yilong', 'Yihai inspects the merchant ship and commands the departure; the expedition sails to investigate the crossing', 'event')],
  683:[('life_aboard_yihais_ship', "The expedition settles into life aboard Yihai's merchant ship under Captain Yihai", 'event'), ('yihai_oblivious_to_yaxing_and_qiumin', "Yihai thinks Ya'Xing is a dependable companion keeping Qiumin company; Hoko and Xiao Tian have noticed", 'event'), ('zhileis_bell_resonates_more_clearly_at_sea', "Zhilei's bell responds more clearly at sea and she feels a faint pull like a distant memory", 'event')],
+ 684:[('coastline_that_should_not_be_there', "The coastline ahead does not match the charts or Hoko's memory, though the compass and mechanism are normal; the bell is quiet", 'event')],
+ 686:[('unnamed_shore_and_a_manufactured_component', 'The expedition anchors on an unnamed shore and Hoko finds a weathered manufactured component; someone may have visited before', 'event')],
+ 687:[('traces_of_another_voyage_on_the_shore', 'More components, an old overgrown path inland and an old campsite show someone visited the shore before the expedition', 'event')],
+ 688:[('current_turns_against_the_ship', 'A current running against the wind drives the ship toward rocks; Captain Yihai steers with the current to safety', 'event'), ('yihai_lost_memories_in_the_torment', 'Narration: since the torment he endured, Yihai has forgotten many things, including a marriage arrangement he once made for Qiumin', 'event')],
+ 689:[('currents_and_disturbance_shift_together', 'The current changes again and Zhilei and Cangyuan sense a faint disturbance that shifts with the waters', 'event')],
+ 690:[('opening_between_the_mountains_appears_and_fades', 'An opening between the mountains appears and fades; Cangyuan calls it a spatial disturbance, not a stable barrier', 'event')],
+ 691:[('expedition_turns_back', 'The expedition decides to discontinue the exploration and find a safe route home', 'event')],
+ 692:[('position_unknown_but_records_consistent', "The ship's position cannot be identified but its records, mechanism and compass are consistent", 'event')],
+ 693:[('light_beyond_the_mist', 'A light beyond a dense mist matches no known landmark; Yihai adjusts the course cautiously toward it', 'event')],
+ 694:[('ship_unaffected_by_the_sea_changes', "The ship's internal magical pattern stays consistent while the sea and spiritual atmosphere change", 'event')],
+ 695:[('back_in_familiar_waters', 'The mist thins and the mountains match the eastern coastal records: the expedition is back in familiar waters', 'event')],
+ 696:[('yihai_writes_the_account_and_the_letters', 'Yihai keeps the account to observations, not explanations (not a portal), and will send letters to relevant merchants', 'event')],
+ 697:[('zhilei_does_not_have_to_find_every_answer_alone', 'Zhilei studies her journal and Cangyuan tells her silence is not an absence of meaning', 'event')],
+ 698:[('yihai_calls_yaxing_an_excellent_husband', "Yihai tells Ya'Xing he would make an excellent husband while Xiao Tian chokes on his tea; Yihai is oblivious", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

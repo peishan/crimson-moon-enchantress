@@ -681,6 +681,14 @@ V2H={
  673:[('commanders_possibly_separated_not_killed', 'The evidence does not establish whether the Four Commanders were separated, killed or alive; the four positions maintained different parts of a larger arrangement', 'event')],
  674:[('yaxing_misses_the_four_commanders', "Ya'Xing tells Qiumin how much the Four Commanders meant to him; she tells him he has her", 'event'), ('xiyu_comforts_zhilei_about_memory', 'Xiyu tells Zhilei she can still decide what kind of life she wants from here', 'event')],
  675:[('qiumin_activates_dongyues_ship', "Qiumin, a Zhan family member, activates Dongyue's expedition ship; the party sails home", 'event'), ('volume_21_ends', 'Volume 21 ends: the Ice Temple search is paused, not ended', 'event')],
+ 676:[('expedition_welcomed_home_to_yilong', 'The expedition is welcomed home to Yilong; Yunshu has grown again', 'event'), ('group_decides_to_investigate_the_crossing_voyage', 'Yihai and the group decide to investigate the voyage that carried them to an unknown shore', 'event')],
+ 677:[('no_chart_matches_the_unknown_coast', 'No chart matches the mountain outlines of the unknown coast; the mechanism and compass appear normal', 'event')],
+ 678:[('yihai_writes_to_his_coastal_contacts', "Yihai writes to merchants, shipmasters and students of unusual sea routes; Ya'Xing prepares a list of the voyage's details for comparison", 'event')],
+ 679:[('crossing_left_no_trace_in_the_activation_record', "The ordinary voyages have consistent entries but the crossing has no matching change in the ship's activation record", 'event')],
+ 680:[('donglin_keeps_the_estate_while_yihai_travels', 'Donglin takes charge of the estate; Dongyue stays with Xining and Yunshu; Xiyu leaves instructions with her base members', 'event'), ('yihai_would_trust_yaxing_with_important_matters', "Yihai says he would gladly trust Ya'Xing with important matters", 'event')],
+ 681:[('xiao_yan_tells_zhilei_the_bell_resonates_with_its_user', "Xiao Yan tells Zhilei that the Moon-Echo Bell resonates with its user's mind and spirit; she feels closer to something she has lost", 'event')],
+ 682:[('the_ship_casts_off_from_yilong', 'Yihai inspects the merchant ship and commands the departure; the expedition sails to investigate the crossing', 'event')],
+ 683:[('life_aboard_yihais_ship', "The expedition settles into life aboard Yihai's merchant ship under Captain Yihai", 'event'), ('yihai_oblivious_to_yaxing_and_qiumin', "Yihai thinks Ya'Xing is a dependable companion keeping Qiumin company; Hoko and Xiao Tian have noticed", 'event'), ('zhileis_bell_resonates_more_clearly_at_sea', "Zhilei's bell responds more clearly at sea and she feels a faint pull like a distant memory", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

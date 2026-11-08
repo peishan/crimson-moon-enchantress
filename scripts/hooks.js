@@ -9266,6 +9266,106 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"676": [
+{
+"id": "expedition_welcomed_home_to_yilong",
+"d": "The expedition is welcomed home to Yilong; Yunshu has grown again",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "group_decides_to_investigate_the_crossing_voyage",
+"d": "Yihai and the group decide to investigate the voyage that carried them to an unknown shore",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"677": [
+{
+"id": "no_chart_matches_the_unknown_coast",
+"d": "No chart matches the mountain outlines of the unknown coast; the mechanism and compass appear normal",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"678": [
+{
+"id": "yihai_writes_to_his_coastal_contacts",
+"d": "Yihai writes to merchants, shipmasters and students of unusual sea routes; Ya'Xing prepares a list of the voyage's details for comparison",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"679": [
+{
+"id": "crossing_left_no_trace_in_the_activation_record",
+"d": "The ordinary voyages have consistent entries but the crossing has no matching change in the ship's activation record",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"680": [
+{
+"id": "donglin_keeps_the_estate_while_yihai_travels",
+"d": "Donglin takes charge of the estate; Dongyue stays with Xining and Yunshu; Xiyu leaves instructions with her base members",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_would_trust_yaxing_with_important_matters",
+"d": "Yihai says he would gladly trust Ya'Xing with important matters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"681": [
+{
+"id": "xiao_yan_tells_zhilei_the_bell_resonates_with_its_user",
+"d": "Xiao Yan tells Zhilei that the Moon-Echo Bell resonates with its user's mind and spirit; she feels closer to something she has lost",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"682": [
+{
+"id": "the_ship_casts_off_from_yilong",
+"d": "Yihai inspects the merchant ship and commands the departure; the expedition sails to investigate the crossing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"683": [
+{
+"id": "life_aboard_yihais_ship",
+"d": "The expedition settles into life aboard Yihai's merchant ship under Captain Yihai",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_oblivious_to_yaxing_and_qiumin",
+"d": "Yihai thinks Ya'Xing is a dependable companion keeping Qiumin company; Hoko and Xiao Tian have noticed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "zhileis_bell_resonates_more_clearly_at_sea",
+"d": "Zhilei's bell responds more clearly at sea and she feels a faint pull like a distant memory",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

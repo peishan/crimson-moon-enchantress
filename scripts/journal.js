@@ -51,6 +51,7 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(721).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 23 comic 021: the counterfeit workshop (battle added by the game)
 chapterOf(671).battle = [{key:'ward_sentinel'},{key:'sparring_construct'},{key:'ward_sentinel'},{key:'sparring_construct'}];   // Volume 21 comic 021: the hidden corridor of stone guardians (battle added by the game)
 chapterOf(622).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 19 comic 024: the ambush outside the Gu estate (battle added by the game)
 chapterOf(581).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 17 comic 008: the wooden sentinel (battle added by the game)

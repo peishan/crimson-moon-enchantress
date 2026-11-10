@@ -9533,6 +9533,200 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"701": [
+{
+"id": "violet_base_message_delivered_to_xiyu",
+"d": "A messenger brings Xiyu a note from her Violet Base; nothing urgent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"702": [
+{
+"id": "merchant_complaint_about_the_disputed_shipment",
+"d": "A merchant files a formal complaint: delivered spiritual materials do not match the records; a verification entry does not match its account",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"704": [
+{
+"id": "merchant_saw_crates_replaced_at_the_halfway_stop",
+"d": "A frightened merchant saw the intermediary's people replace crates at the halfway stop and was threatened into silence; the party promises protection",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"705": [
+{
+"id": "yihai_promises_only_an_honest_investigation",
+"d": "Yihai answers worried merchants with an honest investigation, not a convenient promise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"706": [
+{
+"id": "external_spiritual_influence_on_the_samples",
+"d": "The samples carry an external spiritual influence that altered how the energy circulates; the Moon-Echo Bell reacts faintly to it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"707": [
+{
+"id": "donglin_narrows_the_suspensions",
+"d": "Donglin limits the suspensions to the disputed partners and the intermediary's shipments and takes responsibility for the decision",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"708": [
+{
+"id": "second_merchant_withdraws_and_records_are_missing",
+"d": "A second merchant withdraws; the intermediary appears in both the shipment and the transfer record, whose entries are inconsistent or missing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"709": [
+{
+"id": "station_register_shows_eleven_containers_not_twelve",
+"d": "Yilong Trading Station records eleven containers where the Zhan record lists twelve; a worker saw a second cart and a transfer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"710": [
+{
+"id": "intermediary_priced_materials_28_to_30_percent_below_market",
+"d": "The intermediary offered spiritual materials 28-30% below the market rate with short delivery times",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"711": [
+{
+"id": "xiyu_and_cangyuan_walk_under_the_lanterns",
+"d": "Xiyu and Cangyuan agree they need not choose between a home and the road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"713": [
+{
+"id": "verification_mark_proved_counterfeit",
+"d": "The verification mark is shown to be a counterfeit with spiritual residue; who made it is not established",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"714": [
+{
+"id": "yihai_praises_yaxing_to_qiumins_blushes",
+"d": "Yihai praises Ya'Xing as someone any respectable family would value while Qiumin and Xiao Tian struggle to keep straight faces",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"715": [
+{
+"id": "competing_broker_acquired_abandoned_contracts",
+"d": "A competing broker acquired some of the abandoned contracts; the same name keeps appearing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_and_qiumin_attend_the_opera",
+"d": "Ya'Xing and Qiumin slip away to an opera in secret",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"716": [
+{
+"id": "ma_shiyuan_refuses_to_open_his_records",
+"d": "The rival broker Ma Shiyuan refuses to open his records or accept an independent review",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"717": [
+{
+"id": "ledger_stolen_from_the_records_room",
+"d": "The transaction ledger is stolen from the records room; two intruders carrying only copies are caught and say they were hired through an intermediary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"718": [
+{
+"id": "donglin_learns_responsibility_is_not_personal_failure",
+"d": "Yihai tells Donglin responsibility does not mean every misfortune is a personal failure; the records are secured",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"720": [
+{
+"id": "yihai_refuses_the_brokers_settlement",
+"d": "Yihai refuses the rival broker's offer of compensation in exchange for ending the investigation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"721": [
+{
+"id": "counterfeit_workshop_found_and_secured",
+"d": "The counterfeit workshop is found; its operators are stopped and the equipment and surviving materials secured",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"722": [
+{
+"id": "merchants_assembly_accepts_the_marks_were_falsified",
+"d": "The assembly accepts the marks were deliberately falsified; who commissioned the operation is not yet conclusively identified",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"723": [
+{
+"id": "independent_review_exposes_the_brokers_network",
+"d": "The independent review finds the rival broker's network funded the counterfeit workshop; his intermediary arrangements are suspended",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_23_ends",
+"d": "Volume 23 ends: the Zhan family's good name is defended by facing the truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -713,7 +713,7 @@ V2H={
  705:[('yihai_promises_only_an_honest_investigation', 'Yihai answers worried merchants with an honest investigation, not a convenient promise', 'event')],
  706:[('external_spiritual_influence_on_the_samples', 'The samples carry an external spiritual influence that altered how the energy circulates; the Moon-Echo Bell reacts faintly to it', 'event')],
  707:[('donglin_narrows_the_suspensions', "Donglin limits the suspensions to the disputed partners and the intermediary's shipments and takes responsibility for the decision", 'event')],
- 708:[('second_merchant_withdraws_and_records_are_missing', 'A second merchant withdraws; the intermediary appears in both the shipment and the transfer record, whose entries are inconsistent or missing', 'event')],
+ 708:[('second_merchant_withdraws_over_rumour','A second merchant withdraws from an unrelated agreement because of the rumours, not the goods; Donglin lets him go without pressure','event'), ('intermediary_transfer_entries_missing_around_the_shipment','Several of the intermediary\'s transfer entries are missing, concentrated around the period the disputed cargo moved; the documentation names only the intermediary\'s trading office','event')],
  709:[('station_register_shows_eleven_containers_not_twelve', 'Yilong Trading Station records eleven containers where the Zhan record lists twelve; a worker saw a second cart and a transfer', 'event')],
  710:[('intermediary_priced_materials_28_to_30_percent_below_market', 'The intermediary offered spiritual materials 28-30% below the market rate with short delivery times', 'event')],
  711:[('xiyu_and_cangyuan_walk_under_the_lanterns', 'Xiyu and Cangyuan agree they need not choose between a home and the road', 'event')],

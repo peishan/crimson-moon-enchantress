@@ -9599,8 +9599,15 @@ const HOOKS = {
 ],
 "708": [
 {
-"id": "second_merchant_withdraws_and_records_are_missing",
-"d": "A second merchant withdraws; the intermediary appears in both the shipment and the transfer record, whose entries are inconsistent or missing",
+"id": "second_merchant_withdraws_over_rumour",
+"d": "A second merchant withdraws from an unrelated agreement because of the rumours, not the goods; Donglin lets him go without pressure",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "intermediary_transfer_entries_missing_around_the_shipment",
+"d": "Several of the intermediary's transfer entries are missing, concentrated around the period the disputed cargo moved; the documentation names only the intermediary's trading office",
 "t": "event",
 "p": false,
 "s": "art"

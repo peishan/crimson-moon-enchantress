@@ -9845,6 +9845,79 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"731": [
+{
+"id": "entity_knows_zhileis_name",
+"d": "The sealed entity calls Zhilei by name and tries to draw her to it alone; she refuses and the group stands with her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "prison_cannot_hold_forever_five_anchors_failing",
+"d": "An inscription: the prison cannot hold forever and the five anchors have already begun to fail; the shrine is one anchor of a greater formation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"732": [
+{
+"id": "villagers_alive_beyond_a_barrier",
+"d": "Zhilei confirms genuine human spiritual traces beyond a barrier: the missing villagers are alive and the entity has not told the whole truth",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "offerings_to_the_anchors_stopped_decades_ago",
+"d": "Tablets record offerings that sustained the five anchors; the entries stop several decades ago",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"733": [
+{
+"id": "shrine_collapses_first_anchor_fallen",
+"d": "The shrine collapses and the entrance is sealed; the bell shows the first anchor has fallen from its proper place",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_crosshair_mark_appears",
+"d": "A new red crosshair mark appears on the boundary stone; the same symbol is in an old village record that ends abruptly",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"734": [
+{
+"id": "second_trace_in_the_eastern_ravine",
+"d": "Stone guardians guard a barrier route in an eastern ravine; a fragment of the symbol is found and releases a strand of red light deeper into the mountain",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"735": [
+{
+"id": "year_463_expedition_record",
+"d": "An Expedition Record from Year 463 shows an earlier party began repairing the five anchors and left it unfinished",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "great_sealed_doorway_beneath_the_mountain",
+"d": "A massive stone doorway with a central seal far larger than any they had seen is revealed beneath the mountain",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

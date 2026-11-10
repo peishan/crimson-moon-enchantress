@@ -737,6 +737,11 @@ V2H={
  728:[('village_elder_and_the_old_mountain_shrine', 'The Village Elder describes disappearances concentrated around the old mountain shrine, a place of sealing, not worship; a bell rings three times after sunset', 'event')],
  729:[('shrine_guardian_construct_destroyed', "The shrine's guardian construct is destroyed, but only the outer seal is disturbed and something beneath is beginning to awaken", 'event')],
  730:[('voice_beneath_the_shrine_calls_the_resonance_bearer', 'A hidden stair opens beneath the broken seal and a voice calls: Resonance bearer... come closer', 'event')],
+ 731:[('entity_knows_zhileis_name', 'The sealed entity calls Zhilei by name and tries to draw her to it alone; she refuses and the group stands with her', 'event'), ('prison_cannot_hold_forever_five_anchors_failing', 'An inscription: the prison cannot hold forever and the five anchors have already begun to fail; the shrine is one anchor of a greater formation', 'event')],
+ 732:[('villagers_alive_beyond_a_barrier', 'Zhilei confirms genuine human spiritual traces beyond a barrier: the missing villagers are alive and the entity has not told the whole truth', 'event'), ('offerings_to_the_anchors_stopped_decades_ago', 'Tablets record offerings that sustained the five anchors; the entries stop several decades ago', 'event')],
+ 733:[('shrine_collapses_first_anchor_fallen', 'The shrine collapses and the entrance is sealed; the bell shows the first anchor has fallen from its proper place', 'event'), ('red_crosshair_mark_appears', 'A new red crosshair mark appears on the boundary stone; the same symbol is in an old village record that ends abruptly', 'event')],
+ 734:[('second_trace_in_the_eastern_ravine', 'Stone guardians guard a barrier route in an eastern ravine; a fragment of the symbol is found and releases a strand of red light deeper into the mountain', 'event')],
+ 735:[('year_463_expedition_record', 'An Expedition Record from Year 463 shows an earlier party began repairing the five anchors and left it unfinished', 'event'), ('great_sealed_doorway_beneath_the_mountain', 'A massive stone doorway with a central seal far larger than any they had seen is revealed beneath the mountain', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

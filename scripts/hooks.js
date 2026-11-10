@@ -9717,6 +9717,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"719": [
+{
+"id": "counterfeit_marks_share_a_common_preparation_method",
+"d": "Three verification marks share a common preparation method and uneven edges, suggesting the same workshop; the false verification was prepared in advance to make altered goods look legitimate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "720": [
 {
 "id": "yihai_refuses_the_brokers_settlement",

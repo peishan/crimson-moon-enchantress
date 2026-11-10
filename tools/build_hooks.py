@@ -729,6 +729,7 @@ V2H={
  723:[('independent_review_exposes_the_brokers_network', "The independent review finds the rival broker's network funded the counterfeit workshop; his intermediary arrangements are suspended", 'event'), ('volume_23_ends', "Volume 23 ends: the Zhan family's good name is defended by facing the truth", 'event')],
  703:[('copied_signature_and_inconsistent_verification_entries', "Ya'Xing finds a signature that appears copied and verification notations that differ between the agreement and delivery records", 'event')],
  712:[('warehouse_witness_sheltered_by_the_zhan_family', 'A warehouse worker who saw two men speak with the receiving clerk is sheltered by the Zhan family without revealing his name', 'event'), ('second_cart_came_through_the_service_entrance', 'The second cart came through the service entrance near the eastern storage yard; the gate records are needed', 'event')],
+ 719:[('counterfeit_marks_share_a_common_preparation_method','Three verification marks share a common preparation method and uneven edges, suggesting the same workshop; the false verification was prepared in advance to make altered goods look legitimate','event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

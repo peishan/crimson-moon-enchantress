@@ -9552,6 +9552,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"703": [
+{
+"id": "copied_signature_and_inconsistent_verification_entries",
+"d": "Ya'Xing finds a signature that appears copied and verification notations that differ between the agreement and delivery records",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "704": [
 {
 "id": "merchant_saw_crates_replaced_at_the_halfway_stop",
@@ -9619,6 +9628,22 @@ const HOOKS = {
 {
 "id": "xiyu_and_cangyuan_walk_under_the_lanterns",
 "d": "Xiyu and Cangyuan agree they need not choose between a home and the road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"712": [
+{
+"id": "warehouse_witness_sheltered_by_the_zhan_family",
+"d": "A warehouse worker who saw two men speak with the receiving clerk is sheltered by the Zhan family without revealing his name",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_cart_came_through_the_service_entrance",
+"d": "The second cart came through the service entrance near the eastern storage yard; the gate records are needed",
 "t": "event",
 "p": false,
 "s": "art"

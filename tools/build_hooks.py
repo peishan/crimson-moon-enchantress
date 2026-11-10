@@ -742,6 +742,7 @@ V2H={
  733:[('shrine_collapses_first_anchor_fallen', 'The shrine collapses and the entrance is sealed; the bell shows the first anchor has fallen from its proper place', 'event'), ('red_crosshair_mark_appears', 'A new red crosshair mark appears on the boundary stone; the same symbol is in an old village record that ends abruptly', 'event')],
  734:[('second_trace_in_the_eastern_ravine', 'Stone guardians guard a barrier route in an eastern ravine; a fragment of the symbol is found and releases a strand of red light deeper into the mountain', 'event')],
  735:[('year_463_expedition_record', 'An Expedition Record from Year 463 shows an earlier party began repairing the five anchors and left it unfinished', 'event'), ('great_sealed_doorway_beneath_the_mountain', 'A massive stone doorway with a central seal far larger than any they had seen is revealed beneath the mountain', 'event')],
+ 736:[('five_anchor_plates_resonate_and_the_groups_reunite', 'Following the rhythm of the Moon-Echo Bell the five anchor plates resonate in sequence and the barrier between the two groups turns transparent', 'event'), ('restored_the_prison_endures_broken_the_way_opens', 'The inscription: when the five are restored the prison shall endure; when the five are broken the way shall open', 'event'), ('prison_door_begins_to_open', 'A line of red light appears down the centre of the great door: the prison is beginning to open', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

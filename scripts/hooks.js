@@ -9768,6 +9768,83 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"724": [
+{
+"id": "ming_yue_approves_qiumin_and_yaxing",
+"d": "Ming Yue tells Qiumin she has no objection to her and Ya'Xing: her worth never depended on a mark, a ceremony or what others say",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_praises_yaxing_and_does_not_understand",
+"d": "Yihai praises Ya'Xing as a sensible young man and does not grasp what Ming Yue means; she quietly mourns what he no longer remembers of how he used to love her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"725": [
+{
+"id": "wounded_traveller_brings_a_warning_from_beyond_the_pass",
+"d": "A wounded traveller from a mountain settlement beyond the eastern pass warns of disappearances, fog, and returned villagers who repeat that the shrine must remain silent",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dark_slab_with_a_forced_open_seal",
+"d": "He carries a dark slab with a distorted red seal found outside the old mountain shrine; the lines look forced apart from within",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"726": [
+{
+"id": "expedition_of_eight_departs_for_the_eastern_pass",
+"d": "Xiyu, Cangyuan, Qiumin, Ya'Xing, Xiao Tian, Xiao Yan, Hoko and Zhilei leave Yilong; Dongyue, Yihai and Donglin stay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"727": [
+{
+"id": "corrupted_spirit_beasts_herd_the_party",
+"d": "Corrupted spirit beasts attack and herd the party toward the eastern side of the road, then withdraw as if called back; a red-eyed shadow watches",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"728": [
+{
+"id": "village_elder_and_the_old_mountain_shrine",
+"d": "The Village Elder describes disappearances concentrated around the old mountain shrine, a place of sealing, not worship; a bell rings three times after sunset",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"729": [
+{
+"id": "shrine_guardian_construct_destroyed",
+"d": "The shrine's guardian construct is destroyed, but only the outer seal is disturbed and something beneath is beginning to awaken",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"730": [
+{
+"id": "voice_beneath_the_shrine_calls_the_resonance_bearer",
+"d": "A hidden stair opens beneath the broken seal and a voice calls: Resonance bearer... come closer",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

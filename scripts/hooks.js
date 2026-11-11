@@ -10092,6 +10092,85 @@ const HOOKS = {
 "t": "event",
 "p": false,
 "s": "art"
+},
+{
+"id": "foreign_energy_purged_from_the_third_anchor",
+"d": "The group purges a foreign energy attached to the third anchor without harming the forest; the guardian says they helped it remember its own strength",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"750": [
+{
+"id": "third_keeper_stayed_to_protect_the_forest",
+"d": "The third keeper did not abandon the forest: they stayed to protect it as dark energy spread from beyond",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"751": [
+{
+"id": "foreign_root_entwined_with_the_third_anchor",
+"d": "A blackened root that does not belong to the forest has entwined itself with the third anchor; severing it carelessly may kill the forest's heart",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"752": [
+{
+"id": "you_carry_the_keepers_mark",
+"d": "A shadowed figure tells Xiao Tian he carries the keeper's mark but does not remember what he inherited, and to ask the first keeper what they chose to hide",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"753": [
+{
+"id": "watchtower_of_the_fourth_anchor",
+"d": "The fourth anchor's mark points to an ancient watchtower with no living guardian; a figure watches the party approach",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"754": [
+{
+"id": "fourth_keeper_chose_to_remain",
+"d": "A cloaked figure says the fourth keeper did not disappear but chose to remain, guarding something far more dangerous than the anchor",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"755": [
+{
+"id": "fourth_keepers_attendant_and_the_duty",
+"d": "The fourth keeper's former attendant says the keeper entered the inner seal willingly and that the keepers left a duty someone must decide whether to inherit",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"756": [
+{
+"id": "sixth_symbol_at_the_centre_of_the_anchors",
+"d": "Xiao Tian's token reveals a sixth symbol at the centre of the anchor map; the inner seal is weakening",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"757": [
+{
+"id": "central_seal_final_safeguard_and_the_choice",
+"d": "The sixth symbol is the first keeper's final safeguard; the voice offers a choice: preserve the prison and sacrifice what remains, or open the way",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ]
 };

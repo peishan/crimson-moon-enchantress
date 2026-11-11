@@ -755,7 +755,15 @@ V2H={
  746:[('mountain_trial_is_restoration', "The mountain's trial is restoration: the group returns the pillars to their places and the mountain symbol appears on Xiao Tian's hand", 'event')],
  747:[('one_who_bears_the_token_must_choose_to_remember', "In the mountain's memory hall Xiao Tian sees a figure with an identical token; the guardian says the one who bears the token must choose whether to remember", 'event')],
  748:[('third_anchor_drained_by_the_roots', 'The third anchor is a crystal in an ancient tree whose roots are draining it; the forest guardian demands proof of intent', 'event')],
- 749:[('save_the_heart_without_harming_the_roots', 'The forest guardian is itself being hurt by the corruption and asks the party to save the heart without harming the roots', 'event')],
+ 749:[('save_the_heart_without_harming_the_roots', 'The forest guardian is itself being hurt by the corruption and asks the party to save the heart without harming the roots', 'event'), ('foreign_energy_purged_from_the_third_anchor','The group purges a foreign energy attached to the third anchor without harming the forest; the guardian says they helped it remember its own strength','event')],
+ 750:[('third_keeper_stayed_to_protect_the_forest', 'The third keeper did not abandon the forest: they stayed to protect it as dark energy spread from beyond', 'event')],
+ 751:[('foreign_root_entwined_with_the_third_anchor', "A blackened root that does not belong to the forest has entwined itself with the third anchor; severing it carelessly may kill the forest's heart", 'event')],
+ 752:[('you_carry_the_keepers_mark', "A shadowed figure tells Xiao Tian he carries the keeper's mark but does not remember what he inherited, and to ask the first keeper what they chose to hide", 'event')],
+ 753:[('watchtower_of_the_fourth_anchor', "The fourth anchor's mark points to an ancient watchtower with no living guardian; a figure watches the party approach", 'event')],
+ 754:[('fourth_keeper_chose_to_remain', 'A cloaked figure says the fourth keeper did not disappear but chose to remain, guarding something far more dangerous than the anchor', 'event')],
+ 755:[('fourth_keepers_attendant_and_the_duty', "The fourth keeper's former attendant says the keeper entered the inner seal willingly and that the keepers left a duty someone must decide whether to inherit", 'event')],
+ 756:[('sixth_symbol_at_the_centre_of_the_anchors', "Xiao Tian's token reveals a sixth symbol at the centre of the anchor map; the inner seal is weakening", 'event')],
+ 757:[('central_seal_final_safeguard_and_the_choice', "The sixth symbol is the first keeper's final safeguard; the voice offers a choice: preserve the prison and sacrifice what remains, or open the way", 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

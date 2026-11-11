@@ -212,6 +212,8 @@ const CAST_SHEETS = [
   {id:'dxy', n:'Dongyue, Xining and Yunshu', sub:'After the birth: a family beneath the Yilong blossoms', img:'assets/events/dongyue_xining_yunshu.webp', ch:629},
   {id:'yqsplash', n:'Ya\'Xing and Qiumin', sub:'The night they chose, at the Ice Temple', img:'assets/events/yaxing_qiumin.webp', ch:664},
   {id:'party21', n:'Ice Temple Traveling Party (Volume 21+)', sub:'Investigation team: Xiyu, Cangyuan, Ya\'Xing, Qiumin, Xiao Tian, Xiao Yan, Hoko, Zhilei and Yun Long (expedition guide)', img:'assets/cast/ice_temple_party_v21.webp', ch:660},
+  {id:'splash2', n:'Title Art · The Crimson Moon\'s Enchantress', sub:'The game\'s title screen: the cast beneath the crimson moon', img:'assets/splash.webp', ch:0},
+  {id:'splash1', n:'Original Title Art', sub:'The first title screen', img:'assets/cast/splash_original.webp', ch:0},
   {id:'inherit', n:'Xiyu\'s Muxue Inheritance', sub:'Feiyue Jian, the Muxue Inheritance Codex and the letter from her forefathers', img:'assets/cast/xiyu_inheritance_sheet.webp', ch:651},
   {id:'outfitalt18', n:'Alternative Outfit Reference (Volume 18)', sub:'Travel / investigation attire, alternative set: the main cast', img:'assets/cast/outfit_alt_v18.webp', ch:586},
   {id:'outfit15', n:'Main Cast Outfit Reference (Volume 15+)', sub:'Standard travelling attire: Xiyu, Cangyuan, Dongyue, Qiumin, Ya\'Xing, Xiao Tian, Xiao Yan, Hoko and Liechen', img:'assets/cast/outfit_main_v15.webp', ch:543},

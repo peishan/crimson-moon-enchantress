@@ -10015,6 +10015,13 @@ const HOOKS = {
 "t": "event",
 "p": false,
 "s": "art"
+},
+{
+"id": "find_the_chamber_of_the_first_keeper",
+"d": "The keeper asks Xiao Tian only to discover whether he can bear the choice, and tells the party to find the chamber of the first keeper, where the truth of how the balance was broken lies",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ]
 };

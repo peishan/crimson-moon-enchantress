@@ -10023,6 +10023,76 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"743": [
+{
+"id": "first_keeper_became_the_boundary",
+"d": "The first keeper did not die: the first keeper became the boundary; the balance was broken by the keeper's choice, not the prisoner's escape",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gallery_of_former_keepers",
+"d": "A gallery of former keepers records that some served willingly and others were appointed after the previous keeper vanished",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"744": [
+{
+"id": "repair_the_five_outer_anchors_first",
+"d": "The voice that is now the boundary says the five outer anchors must be repaired before the inner seal can be reached",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"745": [
+{
+"id": "second_anchor_in_the_mountain_sanctuary",
+"d": "The second anchor is found in an old mountain sanctuary, still active but badly cracked; its guardian forbids any successor to touch it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"746": [
+{
+"id": "mountain_trial_is_restoration",
+"d": "The mountain's trial is restoration: the group returns the pillars to their places and the mountain symbol appears on Xiao Tian's hand",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"747": [
+{
+"id": "one_who_bears_the_token_must_choose_to_remember",
+"d": "In the mountain's memory hall Xiao Tian sees a figure with an identical token; the guardian says the one who bears the token must choose whether to remember",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"748": [
+{
+"id": "third_anchor_drained_by_the_roots",
+"d": "The third anchor is a crystal in an ancient tree whose roots are draining it; the forest guardian demands proof of intent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"749": [
+{
+"id": "save_the_heart_without_harming_the_roots",
+"d": "The forest guardian is itself being hurt by the corruption and asks the party to save the heart without harming the roots",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

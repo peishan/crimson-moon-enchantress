@@ -51,6 +51,7 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(745).battle = [{key:'ward_sentinel'},{key:'ancient_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 022: the stone guardians of the second anchor (battle added by the game)
 chapterOf(734).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 011: the stone guardians of the ravine (battle added by the game)
 chapterOf(727).battle = [{key:'demonic_beast'},{key:'demonic_beast'},{key:'demonic_beast'}];   // Volume 24 comic 004: the corrupted spirit beasts (battle added by the game)
 chapterOf(729).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 006: the shrine's guardian construct (battle added by the game)

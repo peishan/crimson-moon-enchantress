@@ -7941,6 +7941,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"566": [
+{
+"id": "man_in_dark_travelling_clothes_oversaw_the_transfer",
+"d": "A former boatman says a man in dark travelling clothes, not part of the crew, oversaw the transfer and gave the orders",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "567": [
 {
 "id": "boatman_and_ferryman_accounts_may_both_be_true",
@@ -7998,6 +8007,22 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"571": [
+{
+"id": "merchant_saw_a_convoy_on_the_old_transfer_road",
+"d": "A merchant remembers a convoy that avoided the main markets, refused to explain its cargo and took the old transfer road through the hills",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_carries_a_tired_qiumin",
+"d": "Ya'Xing carries a tired Qiumin and everyone but Dongyue notices",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "572": [
 {
 "id": "familiar_mark_and_a_forwarding_contact_near_yilong",
@@ -8025,6 +8050,1975 @@ const HOOKS = {
 {
 "id": "qiumin_kisses_the_sleeping_yaxing",
 "d": "Qiumin kisses the sleeping Ya'Xing; he believes he dreamed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"574": [
+{
+"id": "qiumin_confides_in_xiyu_about_yaxing",
+"d": "Qiumin tells Xiyu how she feels about Ya'Xing; Xiyu advises her to show she chooses him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"575": [
+{
+"id": "qiumin_believes_her_power_is_innate",
+"d": "Qiumin believes the power that awoke at Willowbank is her innate ability; Xiyu says it may be a family inheritance",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_kissed_cangyuan_first",
+"d": "Xiyu reveals she kissed Cangyuan first",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"576": [
+{
+"id": "afflicted_villagers_with_suppressed_energy",
+"d": "Villagers near Yilong suffer suppressed spiritual energy and strange markings; three cases are linked",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"577": [
+{
+"id": "paper_figure_delivered_by_a_stranger",
+"d": "A stranger left a binding paper figure at the second patient's home; the party catches it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"578": [
+{
+"id": "paper_figure_connected_to_a_hidden_source",
+"d": "The paper figure is connected to a hidden source that withdraws when the binding is cut",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"579": [
+{
+"id": "abandoned_workshop_and_the_name_ruyue",
+"d": "An abandoned paper craftsmen's workshop is in recent use; the name Ruyue is found on its papers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"580": [
+{
+"id": "ruyue_bought_special_paper_and_visited_a_shrine",
+"d": "A woman named Ruyue bought large amounts of special paper and visited an old shrine beyond the eastern road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"581": [
+{
+"id": "mechanical_wooden_sentinel_with_a_magical_core",
+"d": "A hidden door leads to a mechanical wooden sentinel with a magical core, made with a different technique",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"582": [
+{
+"id": "two_techniques_in_one_operation",
+"d": "Paper binding and mechanical joints with a core were used in one operation; a plaque points near the old southern road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"583": [
+{
+"id": "hooded_practitioner_at_the_southern_storehouse",
+"d": "A hooded practitioner confronts the party at a storehouse producing construct parts and the room collapses",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"584": [
+{
+"id": "bindings_on_the_villagers_broken",
+"d": "Xiyu and Dongyue sever the bindings draining the afflicted villagers; a note names an eastern storehouse",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"585": [
+{
+"id": "eastern_storehouse_cleared_but_the_organisation_remains",
+"d": "The eastern storehouse is cleared and records secured; whoever directs the operation is still unknown",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_17_ends",
+"d": "Volume 17 ends: one shadow uncovered, but not the hand that cast it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"586": [
+{
+"id": "shipment_recorded_twice_second_entry_points_to_a_quiet_district",
+"d": "The shipment was recorded twice; the second entry points to a quiet warehouse district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"587": [
+{
+"id": "hidden_entrance_in_an_ordinary_warehouse",
+"d": "Crates conceal an entrance to a room below a maintained warehouse",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"588": [
+{
+"id": "yihai_found_alive_in_a_hidden_room",
+"d": "Zhan Yihai is found alive but barely conscious in a hidden room; someone kept him there deliberately",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"589": [
+{
+"id": "yihai_vital_energy_stabilised",
+"d": "Dongyue stabilises Yihai's vital energy",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"590": [
+{
+"id": "yihai_wakes_briefly",
+"d": "Yihai wakes briefly and drifts off again; the party takes turns keeping watch",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"591": [
+{
+"id": "yihai_mind_manipulated_in_xiao_tians_pattern",
+"d": "Hoko finds Yihai's mind was manipulated like Xiao Tian's: memory suppression, confusion and a disrupted sense of time",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"592": [
+{
+"id": "yihai_memory_fragments_return",
+"d": "Fragments of Yihai's memory return; he should not be forced to remember",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_frees_a_trapped_rabbit",
+"d": "Ya'Xing gently frees a trapped rabbit",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"593": [
+{
+"id": "yihai_recalls_an_old_friend_from_the_northern_frontier",
+"d": "Yihai recalls an old friend from a northern frontier journey who saved his life more than once",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"594": [
+{
+"id": "gu_yanzhou_of_sanggui_named",
+"d": "Yihai names his old friend Gu Yanzhou of the old Gu family of Sanggui; the estate has a hidden chamber only the bloodline can open",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"595": [
+{
+"id": "gu_family_once_lost_a_young_son",
+"d": "The Gu family once lost a young son who was never found",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_wonders_about_his_origins",
+"d": "Ya'Xing wonders about his own origins; nothing connects him to the Gu family",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"596": [
+{
+"id": "yihai_will_guide_them_to_sanggui_once_recovered",
+"d": "Yihai will guide the party to the Gu estate once he has recovered",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_doubts_qiumin_would_choose_him",
+"d": "Ya'Xing privately doubts Qiumin would choose someone like him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"597": [
+{
+"id": "yihai_returns_to_ming_yue",
+"d": "Yihai is reunited with Ming Yue at Zhan Manor",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_18_ends_with_sanggui_waiting",
+"d": "Volume 18 ends with the Gu estate in Sanggui waiting until Yihai recovers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"598": [
+{
+"id": "qiumin_settles_the_returned_engagement_gift",
+"d": "Qiumin and the young master debate marriage and part on good terms; she says she wanted Ya'Xing beside her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"599": [
+{
+"id": "dongyue_says_farewell_to_xining_before_the_birth",
+"d": "Dongyue says farewell to Xining; the birth of their daughter is getting closer and her treatment is in its final phase",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "party_sets_out_for_sanggui_by_ship",
+"d": "Yihai, Dongyue, Qiumin, Ya'Xing and the party set out for Sanggui by ship with Donglin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"600": [
+{
+"id": "yihai_remembers_gu_yanzhou_like_family",
+"d": "Yihai visited Gu Yanzhou so often his household treated him like family; the Gu child disappeared in a turbulent time",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"601": [
+{
+"id": "dongyue_captains_the_ship_and_yaxing_is_first_officer",
+"d": "Dongyue takes command of the vessel with Yihai advising and Ya'Xing as first officer; Donglin stays in Yilong",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_interrogated_and_abandoned_to_die",
+"d": "Yihai's captors clouded his mind, questioned him and abandoned him to die",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"602": [
+{
+"id": "squall_in_puying_waters",
+"d": "A squall strikes in Puying waters; Qiumin and Ya'Xing kiss and Xiao Tian sees",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "unnatural_stillness_and_a_glowing_ring_of_water",
+"d": "After the squall the sea falls still and a glowing ring of water draws the ship on",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"603": [
+{
+"id": "ship_carried_between_two_skies",
+"d": "The ship is carried by a hidden current between two skies to an unknown shore",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"604": [
+{
+"id": "lunareth_in_dragonvale_reached",
+"d": "The party reaches Lunareth in Dragonvale, another world; Jade, Devon and Levi meet them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"605": [
+{
+"id": "the_two_parties_compare_worlds_and_find_the_sage",
+"d": "Neither party knows the other's world; they find the Sage in the old district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"606": [
+{
+"id": "sage_names_xiyu_and_dongyue_heritage",
+"d": "The Sage tells Xiyu she has a divine inheritance from a celestial mother and Dongyue is a soul returned from the heavens",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sage_foretells_an_inheritance_in_sanggui",
+"d": "An ancient inheritance awaits in Sanggui: for some the years may cease to take their toll, for others a road beyond mortality",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "sage_gives_the_compass_between_worlds",
+"d": "The Sage entrusts them with a compass that finds passages between worlds and responds to Dongyue",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"607": [
+{
+"id": "returned_to_their_own_world",
+"d": "The compass guides the ship back to their own world and Sanggui",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tian_unsure_whether_gu_yanzhou_is_his_father",
+"d": "Xiao Tian cannot be certain whether Gu Yanzhou is his father",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"608": [
+{
+"id": "gu_estate_reached_in_sanggui",
+"d": "The party reaches Sanggui and the old Gu estate; Xiao Tian recognises its gates",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "liechen_follows_demonic_energy_in_sanggui",
+"d": "Liechen senses demonic energy in Sanggui and follows it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"609": [
+{
+"id": "gu_estate_main_hall_searched",
+"d": "The party searches the Gu estate: insignia, genealogy, ledgers and incomplete letters; someone has handled a shelf since the family disappeared",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gu_genealogy_records_a_son_who_disappeared",
+"d": "The Gu genealogy records Yanzhou's son and that he disappeared some years afterwards, with no later entry",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_demonic_trace_in_the_estate",
+"d": "Xiao Yan finds an old, faint demonic trace: someone once used the estate for a purpose that may not be finished",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"610": [
+{
+"id": "servant_left_the_gu_estate_when_the_heir_vanished",
+"d": "The archives show a household servant left the Gu estate around the time the heir disappeared, destination unknown",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "old_han_the_former_harbour_supervisor",
+"d": "Old Han remembers the commotion when the child vanished and a household attendant who settled outside the eastern district",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"611": [
+{
+"id": "yanzhou_asked_about_a_visitor",
+"d": "The former attendant recalls Yanzhou repeatedly asking whether anyone had seen a particular visitor before the disappearance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"612": [
+{
+"id": "crestless_carriage_with_a_dark_green_sash",
+"d": "A shop owner remembers a crestless carriage whose driver wore a dark green sash",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_still_holding_qiumins_hand",
+"d": "Ya'Xing and Qiumin are still holding hands after leaving the crowd",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"613": [
+{
+"id": "green_sashed_visitor_remembered_by_xiao_tian",
+"d": "Xiao Tian remembers a man in a green sash speaking with his father at the estate",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gu_yanzhou_likely_poisoned_before_the_fall",
+"d": "Yanzhou's illness was probably a poisoning; the threat to the Gu family began before the household fell",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"614": [
+{
+"id": "moonlit_misunderstanding_at_the_inlet",
+"d": "Ya'Xing stumbles on Qiumin bathing at night; a comic misunderstanding ends with her inviting him to stay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"615": [
+{
+"id": "xiyu_advises_qiumin_on_intimacy",
+"d": "Xiyu advises Qiumin that readiness, honesty and freely given consent matter and that nothing should be rushed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"616": [
+{
+"id": "missing_heir_named_gu_huaijin",
+"d": "The missing Gu heir is named Gu Huaijin; his mother secretly sent him away before the family fell",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hidden_passage_below_the_ancestral_hall",
+"d": "A hidden passage below the ancestral hall leads to a sealed door with a bloodline lock",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"617": [
+{
+"id": "inscription_sealed_until_the_proper_descendant_returns",
+"d": "The inscription says the chamber stays sealed until the proper descendant returns; energy is still active inside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"618": [
+{
+"id": "yihai_stays_outside_and_liechen_goes_in",
+"d": "Yihai stays outside the chamber; Liechen goes in with the party",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"619": [
+{
+"id": "xiao_tian_blood_recognised_as_gu_lineage",
+"d": "The mechanism rejects Ya'Xing's blood and recognises Xiao Tian's as the Gu lineage; a golden light envelops everyone inside",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"620": [
+{
+"id": "ancestral_light_protects_against_ordinary_death",
+"d": "Everyone in the chamber feels something settle inside; the inscription says those who receive the ancestral light shall not easily be claimed by the ordinary passage of death (protection, not invulnerability; incomplete)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"621": [
+{
+"id": "gu_artefact_spent_after_one_use",
+"d": "The artefact will not respond again; it was meant to be used once",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "hokos_hair_changed_after_the_light",
+"d": "Hoko notices his hair looks different after the light",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"622": [
+{
+"id": "masked_pursuers_ambush_the_party",
+"d": "The group that captured and tortured Yihai ambushes the party outside the Gu estate and is captured alive",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "organisation_believed_the_gu_line_extinct",
+"d": "Their organisation believed the Gu family had no surviving heir; the awakened inheritance changes its plans",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"623": [
+{
+"id": "prisoners_to_yilong_and_xiao_tian_keeps_searching",
+"d": "The prisoners go to Yilong for questioning; Xiao Tian keeps searching for his birth name",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_19_ends",
+"d": "Volume 19 ends",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"624": [
+{
+"id": "party_returns_to_yilong_and_yihai_is_welcomed_home",
+"d": "The party returns to Yilong and Yihai is welcomed home; Ming Yue is still unaware of Xining's pregnancy",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yun_he_master_asks_to_meet",
+"d": "Yun He's master has heard about the Gu chamber and asks to meet everyone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"625": [
+{
+"id": "ming_huairen_questions_the_nine",
+"d": "Ming Huairen learns the light covered nine people and spared Yihai, who was outside, and warns against reckless tests of their protection",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"626": [
+{
+"id": "siming_cannot_explain_the_gu_inheritance",
+"d": "Yun He: the Siming cannot explain the Gu inheritance and cannot read Xiyu's or Dongyue's fates; the light may have linked the nine",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"627": [
+{
+"id": "family_prepares_for_the_baby",
+"d": "The family prepares for the baby while Ming Yue still does not know of the pregnancy",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"628": [
+{
+"id": "ming_yue_learns_of_xinings_pregnancy_and_delivers_the_baby",
+"d": "Ming Yue learns of the pregnancy and delivers the baby herself",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "zhan_yunshu_born",
+"d": "Zhan Yunshu is born, a healthy daughter; the name means clouds unfolding across the sky",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"629": [
+{
+"id": "yunshu_silver_hair_and_fast_growth",
+"d": "Yunshu has silver hair and is growing unusually quickly; the family will observe her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xining_has_no_known_family_and_dyes_her_hair",
+"d": "Xining says she grew up without parents or relatives and admits dyeing her hair for her own reasons",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"630": [
+{
+"id": "no_visible_change_after_the_light",
+"d": "Nobody reports a demonstrable change after the ancestral light; recognition and consequence may be separate things",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"631": [
+{
+"id": "xiao_tian_and_yaxing_spar",
+"d": "Xiao Tian and Ya'Xing spar; Xiao Tian's cultivation still refuses to cooperate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"632": [
+{
+"id": "ice_temple_and_muxue_record_exchange",
+"d": "An old exchange of records between the Ice Temple and the Muxue clan is found and a copy will go to Xiyu",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"633": [
+{
+"id": "muxue_zhiyuan_named_as_the_new_leader",
+"d": "The new Muxue clan leader is Muxue Zhiyuan, 24, a researcher; old contacts have gone silent or been replaced",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"634": [
+{
+"id": "xiyu_requests_appointment_records",
+"d": "Xiyu requests the clan's appointment records, the reorganisation details and Zhiyuan's research archives",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"635": [
+{
+"id": "muxue_yan_death_record_lacks_detail",
+"d": "The accepted record of Muxue Yan's death has no detailed witness statement, description of his final days, or medical or research record",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "muxue_yan_was_composed_at_a_research_meeting_before_his_reported_death",
+"d": "A former associate remembers Muxue Yan composed at a research meeting not long before his reported death",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"636": [
+{
+"id": "muxue_yan_declared_dead_months_ago",
+"d": "The former administration declared Muxue Yan deceased several months ago and nobody told Xiyu",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"637": [
+{
+"id": "original_death_account_under_restricted_access",
+"d": "The original death account and supporting records are under restricted access; Xiyu keeps her request active",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"638": [
+{
+"id": "xiyu_requests_the_original_records_and_the_coffin",
+"d": "Xiyu formally requests the original death account and permission to examine Muxue Yan's coffin",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "investigation_squad_formed",
+"d": "The squad goes to Lingchuan without Dongyue (with Xining and Yunshu) and Liechen (hunting demons)",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"639": [
+{
+"id": "lingchuan_the_present_muxue_administration",
+"d": "Lingchuan is the Muxue clan's present administrative region; the Ice Temple was its historic headquarters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"640": [
+{
+"id": "xiyu_meets_muxue_zhiyuan",
+"d": "Xiyu meets clan leader Muxue Zhiyuan, who admits the records are incomplete; she asks for permission to examine her father's coffin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"641": [
+{
+"id": "coffin_request_needs_custodian_and_preservation_approval",
+"d": "Zhiyuan cannot immediately grant the coffin request; archive custodians and preservation authorities must approve",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"642": [
+{
+"id": "coffin_held_in_a_preservation_chamber",
+"d": "The coffin is held in a preservation chamber under memorial custodians; Xiyu will be present at the verification",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"643": [
+{
+"id": "original_transfer_record_missing",
+"d": "The original transfer record of the coffin is missing; only a reference survives",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"644": [
+{
+"id": "coffin_opened_with_cangyuan_beside_xiyu",
+"d": "The original transfer record is found, the examination is authorised and the coffin is opened",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"645": [
+{
+"id": "muxue_yan_remains_show_spiritual_damage_before_burial",
+"d": "Muxue Yan's remains are preserved but show damaged spiritual pathways and an unusual dark residue from before preservation, not mentioned in the official summary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"646": [
+{
+"id": "damage_predates_preservation_cause_unknown",
+"d": "The examination confirms the damage predates preservation but not its cause or timing; the original medical assessment is still missing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"647": [
+{
+"id": "squad_leaves_lingchuan_with_authorised_records",
+"d": "The squad leaves Lingchuan with copies of the authorised records; Zhiyuan keeps the request open",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"648": [
+{
+"id": "cangyuan_comforts_xiyu_after_lingchuan",
+"d": "Cangyuan comforts Xiyu: she does not have to carry every unanswered question tonight",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"649": [
+{
+"id": "the_squad_comforts_xiyu",
+"d": "Xiao Tian, Qiumin, Ya'Xing, Hoko and Xiao Yan comfort Xiyu in their own ways",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"650": [
+{
+"id": "squad_returns_to_yilong_medical_assessment_still_missing",
+"d": "The squad returns to Yilong; the original medical assessment is still missing and Xiyu will keep searching",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_20_ends",
+"d": "Volume 20 ends",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"651": [
+{
+"id": "xiyu_opens_her_muxue_inheritance",
+"d": "Xiyu opens her inheritance: three manuals, a letter from her forefathers and the sword Feiyue, preserved by her ancestors across generations",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "feiyue_responds_to_xiyus_bloodline",
+"d": "Feiyue, the Crimson Moon Sword, responds to Xiyu's bloodline",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "first_manual_teaches_understanding_not_spells",
+"d": "The Bloodline Foundation teaches Xiyu to understand, control and refine the foundation of her power",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "cangyuan_chose_to_walk_beside_xiyu",
+"d": "Cangyuan tells Xiyu he chose to walk beside her and has not changed his mind",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"652": [
+{
+"id": "xiyu_studies_the_bloodline_foundation",
+"d": "Xiyu begins studying the first manual of her inheritance, The Bloodline Foundation",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "four_commanders_records_inconsistent",
+"d": "Ya'Xing finds inconsistencies in the records of the Four Commanders",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"653": [
+{
+"id": "four_commanders_fifth_figure_and_the_central_structure_omission",
+"d": "Records mention a fifth beside the Four Commanders and a later copy omits the phrase central structure; Ya'Xing will check the Ice Temple originals",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"654": [
+{
+"id": "yaxing_and_qiumin_take_an_afternoon_away_from_books",
+"d": "Ya'Xing and Qiumin take an afternoon for themselves; he no longer wants to keep standing at a distance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"655": [
+{
+"id": "inherited_abilities_are_a_foundation_not_a_shortcut",
+"d": "The group compares changes after the Gu artefact: inherited abilities give a foundation but do not replace experience, discipline or understanding",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiao_tians_cultivation_still_will_not_cooperate",
+"d": "Xiao Tian tries to circulate spiritual energy through his cultivation technique and fails again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"656": [
+{
+"id": "ya_xings_books_clothes_and_sword_came_from_the_four_commanders",
+"d": "Ya'Xing's books, clothing and Skyshard came from the Four Commanders; the scarf is Qiumin's",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "records_disagree_about_the_four_positions",
+"d": "The records disagree about the four positions and mention a central position in one copy only",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"657": [
+{
+"id": "group_decides_to_return_to_the_ice_temple",
+"d": "The group decides to return to the Ice Temple; Dongyue stays with Xining and Yunshu; Yun Long will guide them to Yunling",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"658": [
+{
+"id": "journey_from_yilong_to_yunling",
+"d": "The party travels from Yilong to Yunling by the established passage, guided by Yun Long",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"659": [
+{
+"id": "wangshu_zhilei_wakes_without_memories",
+"d": "Wangshu Zhilei wakes on Muxue Island with no memories, a journal naming her and the Moon-Echo Bell, and an instruction to go to the Ice Temple",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"660": [
+{
+"id": "zhilei_joins_the_expedition_and_the_bell_pulses",
+"d": "Zhilei joins the expedition to the Ice Temple and the Moon-Echo Bell disperses a hostile disturbance at sea",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "wangshu_zhilei_joins_the_party",
+"d": "Wangshu Zhilei joins the party",
+"t": "state",
+"p": false,
+"s": "art"
+}
+],
+"661": [
+{
+"id": "ice_temple_access_token_received",
+"d": "Xiyu receives the Ice Temple Access Token: two-way teleportation for Xiyu and her travelling group to the Ice Temple and back to where they last departed",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "ao_yuns_glass_coffin_is_empty",
+"d": "Ao Yun's glass coffin at the Ice Temple is empty and the Moon-Echo Bell chimes with sadness",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"662": [
+{
+"id": "no_sign_of_forced_entry_at_ao_yuns_chamber",
+"d": "There is no sign of forced entry at Ao Yun's resting place; whoever acted knew the formation or nobody entered",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "ice_temple_investigation_divided_among_the_party",
+"d": "The group divides the Ice Temple investigation among themselves",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"663": [
+{
+"id": "yaxing_and_qiumin_promise_to_tell_each_other_what_they_want",
+"d": "Ya'Xing and Qiumin agree to tell each other what they want instead of guessing; a kiss in the courtyard",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"664": [
+{
+"id": "yaxing_and_qiumin_choose_each_other_at_the_ice_temple",
+"d": "Ya'Xing and Qiumin spend the night together by choice, with no obligation and no promise about the future",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"665": [
+{
+"id": "yaxing_privately_hopes_to_ask_qiumin_one_day",
+"d": "Ya'Xing privately hopes to ask Qiumin to build a life with him one day, properly and unhurried",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "central_fifth_position_discrepancy",
+"d": "Ya'Xing and Qiumin find a discrepancy regarding the central fifth position",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"666": [
+{
+"id": "sealed_cabinet_resonates_with_the_moon_echo_bell",
+"d": "A sealed cabinet in the lower archives makes the bell vibrate: a sense of separation and an unfinished farewell",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "scroll_cut_cleanly_before_the_central_position",
+"d": "A scroll about the Four Commanders ends abruptly with a clean edge before a reference to the central position",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"667": [
+{
+"id": "second_commanders_gate_found_in_a_ruin_hall",
+"d": "A gate marked with the second Commander's dragon symbol is found; its barrier is active and something inside is slowly awakening",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"668": [
+{
+"id": "skyshard_resonates_with_the_second_gate",
+"d": "Skyshard resonates with the second Commander's gate at the same frequency; recognition is not authority",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"669": [
+{
+"id": "fifth_position_has_no_emblem_and_an_inscription",
+"d": "The four directional positions carry a mountain, bird, dragon and flame; the fifth has no emblem and its inscription reads: the four may return, the fifth must choose",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "five_channels_beneath_the_central_floor",
+"d": "Five channels run beneath the central floor; the fifth has no visible activation point",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"670": [
+{
+"id": "bell_senses_an_impression_left_behind",
+"d": "Zhilei's bell senses an impression left behind in the central chamber, while the threads around the formation end abruptly as if severed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"671": [
+{
+"id": "hidden_corridor_of_stone_guardians",
+"d": "A hidden corridor of stone guardians is a separate defensive system that may once have tested those entering the deeper temple",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"672": [
+{
+"id": "medallion_in_the_ice_and_a_farewell_impression",
+"d": "A medallion is found half buried in frost; the bell hears urgency, sadness and a farewell, and the energy gathered around the object rather than coming from it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"673": [
+{
+"id": "commanders_possibly_separated_not_killed",
+"d": "The evidence does not establish whether the Four Commanders were separated, killed or alive; the four positions maintained different parts of a larger arrangement",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"674": [
+{
+"id": "yaxing_misses_the_four_commanders",
+"d": "Ya'Xing tells Qiumin how much the Four Commanders meant to him; she tells him he has her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "xiyu_comforts_zhilei_about_memory",
+"d": "Xiyu tells Zhilei she can still decide what kind of life she wants from here",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"675": [
+{
+"id": "qiumin_activates_dongyues_ship",
+"d": "Qiumin, a Zhan family member, activates Dongyue's expedition ship; the party sails home",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_21_ends",
+"d": "Volume 21 ends: the Ice Temple search is paused, not ended",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"676": [
+{
+"id": "expedition_welcomed_home_to_yilong",
+"d": "The expedition is welcomed home to Yilong; Yunshu has grown again",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "group_decides_to_investigate_the_crossing_voyage",
+"d": "Yihai and the group decide to investigate the voyage that carried them to an unknown shore",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"677": [
+{
+"id": "no_chart_matches_the_unknown_coast",
+"d": "No chart matches the mountain outlines of the unknown coast; the mechanism and compass appear normal",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"678": [
+{
+"id": "yihai_writes_to_his_coastal_contacts",
+"d": "Yihai writes to merchants, shipmasters and students of unusual sea routes; Ya'Xing prepares a list of the voyage's details for comparison",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"679": [
+{
+"id": "crossing_left_no_trace_in_the_activation_record",
+"d": "The ordinary voyages have consistent entries but the crossing has no matching change in the ship's activation record",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"680": [
+{
+"id": "donglin_keeps_the_estate_while_yihai_travels",
+"d": "Donglin takes charge of the estate; Dongyue stays with Xining and Yunshu; Xiyu leaves instructions with her base members",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_would_trust_yaxing_with_important_matters",
+"d": "Yihai says he would gladly trust Ya'Xing with important matters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"681": [
+{
+"id": "xiao_yan_tells_zhilei_the_bell_resonates_with_its_user",
+"d": "Xiao Yan tells Zhilei that the Moon-Echo Bell resonates with its user's mind and spirit; she feels closer to something she has lost",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"682": [
+{
+"id": "the_ship_casts_off_from_yilong",
+"d": "Yihai inspects the merchant ship and commands the departure; the expedition sails to investigate the crossing",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"683": [
+{
+"id": "life_aboard_yihais_ship",
+"d": "The expedition settles into life aboard Yihai's merchant ship under Captain Yihai",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_oblivious_to_yaxing_and_qiumin",
+"d": "Yihai thinks Ya'Xing is a dependable companion keeping Qiumin company; Hoko and Xiao Tian have noticed",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "zhileis_bell_resonates_more_clearly_at_sea",
+"d": "Zhilei's bell responds more clearly at sea and she feels a faint pull like a distant memory",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"684": [
+{
+"id": "coastline_that_should_not_be_there",
+"d": "The coastline ahead does not match the charts or Hoko's memory, though the compass and mechanism are normal; the bell is quiet",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"685": [
+{
+"id": "unfamiliar_coastline_matches_no_chart",
+"d": "An unfamiliar coastline matches none of Yihai's charts or Ya'Xing's comparisons; the mechanism, compass and bell raise no alarm",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"686": [
+{
+"id": "unnamed_shore_and_a_manufactured_component",
+"d": "The expedition anchors on an unnamed shore and Hoko finds a weathered manufactured component; someone may have visited before",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"687": [
+{
+"id": "traces_of_another_voyage_on_the_shore",
+"d": "More components, an old overgrown path inland and an old campsite show someone visited the shore before the expedition",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"688": [
+{
+"id": "current_turns_against_the_ship",
+"d": "A current running against the wind drives the ship toward rocks; Captain Yihai steers with the current to safety",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_lost_memories_in_the_torment",
+"d": "Narration: since the torment he endured, Yihai has forgotten many things, including a marriage arrangement he once made for Qiumin",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"689": [
+{
+"id": "currents_and_disturbance_shift_together",
+"d": "The current changes again and Zhilei and Cangyuan sense a faint disturbance that shifts with the waters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"690": [
+{
+"id": "opening_between_the_mountains_appears_and_fades",
+"d": "An opening between the mountains appears and fades; Cangyuan calls it a spatial disturbance, not a stable barrier",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"691": [
+{
+"id": "expedition_turns_back",
+"d": "The expedition decides to discontinue the exploration and find a safe route home",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"692": [
+{
+"id": "position_unknown_but_records_consistent",
+"d": "The ship's position cannot be identified but its records, mechanism and compass are consistent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"693": [
+{
+"id": "light_beyond_the_mist",
+"d": "A light beyond a dense mist matches no known landmark; Yihai adjusts the course cautiously toward it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"694": [
+{
+"id": "ship_unaffected_by_the_sea_changes",
+"d": "The ship's internal magical pattern stays consistent while the sea and spiritual atmosphere change",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"695": [
+{
+"id": "back_in_familiar_waters",
+"d": "The mist thins and the mountains match the eastern coastal records: the expedition is back in familiar waters",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"696": [
+{
+"id": "yihai_writes_the_account_and_the_letters",
+"d": "Yihai keeps the account to observations, not explanations (not a portal), and will send letters to relevant merchants",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"697": [
+{
+"id": "zhilei_does_not_have_to_find_every_answer_alone",
+"d": "Zhilei studies her journal and Cangyuan tells her silence is not an absence of meaning",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"698": [
+{
+"id": "qiumin_hears_yihai_praise_yaxing_as_a_husband",
+"d": "Yihai praises Ya'Xing as an excellent husband in front of Qiumin; they trade a quiet exchange while Xiao Tian coughs",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"699": [
+{
+"id": "voyage_sorted_into_confirmed_and_unresolved",
+"d": "The group sorts the voyage into confirmed observations and six unresolved questions; Yihai refuses to present any theory as established fact",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"700": [
+{
+"id": "yihai_becomes_permanent_shipmaster",
+"d": "Yihai decides to continue with the expedition as permanent Shipmaster and Captain, Navigator, PR and Diplomatic Representative and merchant-network liaison (non-combatant)",
+"t": "state",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_22_ends",
+"d": "Volume 22 ends: a voyage remembered, a crew united",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"701": [
+{
+"id": "violet_base_message_delivered_to_xiyu",
+"d": "A messenger brings Xiyu a note from her Violet Base; nothing urgent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"702": [
+{
+"id": "merchant_complaint_about_the_disputed_shipment",
+"d": "A merchant files a formal complaint: delivered spiritual materials do not match the records; a verification entry does not match its account",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"703": [
+{
+"id": "copied_signature_and_inconsistent_verification_entries",
+"d": "Ya'Xing finds a signature that appears copied and verification notations that differ between the agreement and delivery records",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"704": [
+{
+"id": "merchant_saw_crates_replaced_at_the_halfway_stop",
+"d": "A frightened merchant saw the intermediary's people replace crates at the halfway stop and was threatened into silence; the party promises protection",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"705": [
+{
+"id": "yihai_promises_only_an_honest_investigation",
+"d": "Yihai answers worried merchants with an honest investigation, not a convenient promise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"706": [
+{
+"id": "external_spiritual_influence_on_the_samples",
+"d": "The samples carry an external spiritual influence that altered how the energy circulates; the Moon-Echo Bell reacts faintly to it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"707": [
+{
+"id": "donglin_narrows_the_suspensions",
+"d": "Donglin limits the suspensions to the disputed partners and the intermediary's shipments and takes responsibility for the decision",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"708": [
+{
+"id": "second_merchant_withdraws_over_rumour",
+"d": "A second merchant withdraws from an unrelated agreement because of the rumours, not the goods; Donglin lets him go without pressure",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "intermediary_transfer_entries_missing_around_the_shipment",
+"d": "Several of the intermediary's transfer entries are missing, concentrated around the period the disputed cargo moved; the documentation names only the intermediary's trading office",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"709": [
+{
+"id": "station_register_shows_eleven_containers_not_twelve",
+"d": "Yilong Trading Station records eleven containers where the Zhan record lists twelve; a worker saw a second cart and a transfer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"710": [
+{
+"id": "intermediary_priced_materials_28_to_30_percent_below_market",
+"d": "The intermediary offered spiritual materials 28-30% below the market rate with short delivery times",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"711": [
+{
+"id": "xiyu_and_cangyuan_walk_under_the_lanterns",
+"d": "Xiyu and Cangyuan agree they need not choose between a home and the road",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"712": [
+{
+"id": "warehouse_witness_sheltered_by_the_zhan_family",
+"d": "A warehouse worker who saw two men speak with the receiving clerk is sheltered by the Zhan family without revealing his name",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "second_cart_came_through_the_service_entrance",
+"d": "The second cart came through the service entrance near the eastern storage yard; the gate records are needed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"713": [
+{
+"id": "verification_mark_proved_counterfeit",
+"d": "The verification mark is shown to be a counterfeit with spiritual residue; who made it is not established",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"714": [
+{
+"id": "yihai_praises_yaxing_to_qiumins_blushes",
+"d": "Yihai praises Ya'Xing as someone any respectable family would value while Qiumin and Xiao Tian struggle to keep straight faces",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"715": [
+{
+"id": "competing_broker_acquired_abandoned_contracts",
+"d": "A competing broker acquired some of the abandoned contracts; the same name keeps appearing",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yaxing_and_qiumin_attend_the_opera",
+"d": "Ya'Xing and Qiumin slip away to an opera in secret",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"716": [
+{
+"id": "ma_shiyuan_refuses_to_open_his_records",
+"d": "The rival broker Ma Shiyuan refuses to open his records or accept an independent review",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"717": [
+{
+"id": "ledger_stolen_from_the_records_room",
+"d": "The transaction ledger is stolen from the records room; two intruders carrying only copies are caught and say they were hired through an intermediary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"718": [
+{
+"id": "donglin_learns_responsibility_is_not_personal_failure",
+"d": "Yihai tells Donglin responsibility does not mean every misfortune is a personal failure; the records are secured",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"719": [
+{
+"id": "counterfeit_marks_share_a_common_preparation_method",
+"d": "Three verification marks share a common preparation method and uneven edges, suggesting the same workshop; the false verification was prepared in advance to make altered goods look legitimate",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"720": [
+{
+"id": "yihai_refuses_the_brokers_settlement",
+"d": "Yihai refuses the rival broker's offer of compensation in exchange for ending the investigation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"721": [
+{
+"id": "counterfeit_workshop_found_and_secured",
+"d": "The counterfeit workshop is found; its operators are stopped and the equipment and surviving materials secured",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"722": [
+{
+"id": "merchants_assembly_accepts_the_marks_were_falsified",
+"d": "The assembly accepts the marks were deliberately falsified; who commissioned the operation is not yet conclusively identified",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"723": [
+{
+"id": "independent_review_exposes_the_brokers_network",
+"d": "The independent review finds the rival broker's network funded the counterfeit workshop; his intermediary arrangements are suspended",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "volume_23_ends",
+"d": "Volume 23 ends: the Zhan family's good name is defended by facing the truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"724": [
+{
+"id": "ming_yue_approves_qiumin_and_yaxing",
+"d": "Ming Yue tells Qiumin she has no objection to her and Ya'Xing: her worth never depended on a mark, a ceremony or what others say",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "yihai_praises_yaxing_and_does_not_understand",
+"d": "Yihai praises Ya'Xing as a sensible young man and does not grasp what Ming Yue means; she quietly mourns what he no longer remembers of how he used to love her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"725": [
+{
+"id": "wounded_traveller_brings_a_warning_from_beyond_the_pass",
+"d": "A wounded traveller from a mountain settlement beyond the eastern pass warns of disappearances, fog, and returned villagers who repeat that the shrine must remain silent",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "dark_slab_with_a_forced_open_seal",
+"d": "He carries a dark slab with a distorted red seal found outside the old mountain shrine; the lines look forced apart from within",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"726": [
+{
+"id": "expedition_of_eight_departs_for_the_eastern_pass",
+"d": "Xiyu, Cangyuan, Qiumin, Ya'Xing, Xiao Tian, Xiao Yan, Hoko and Zhilei leave Yilong; Dongyue, Yihai and Donglin stay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"727": [
+{
+"id": "corrupted_spirit_beasts_herd_the_party",
+"d": "Corrupted spirit beasts attack and herd the party toward the eastern side of the road, then withdraw as if called back; a red-eyed shadow watches",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"728": [
+{
+"id": "village_elder_and_the_old_mountain_shrine",
+"d": "The Village Elder describes disappearances concentrated around the old mountain shrine, a place of sealing, not worship; a bell rings three times after sunset",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"729": [
+{
+"id": "shrine_guardian_construct_destroyed",
+"d": "The shrine's guardian construct is destroyed, but only the outer seal is disturbed and something beneath is beginning to awaken",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"730": [
+{
+"id": "voice_beneath_the_shrine_calls_the_resonance_bearer",
+"d": "A hidden stair opens beneath the broken seal and a voice calls: Resonance bearer... come closer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"731": [
+{
+"id": "entity_knows_zhileis_name",
+"d": "The sealed entity calls Zhilei by name and tries to draw her to it alone; she refuses and the group stands with her",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "prison_cannot_hold_forever_five_anchors_failing",
+"d": "An inscription: the prison cannot hold forever and the five anchors have already begun to fail; the shrine is one anchor of a greater formation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"732": [
+{
+"id": "villagers_alive_beyond_a_barrier",
+"d": "Zhilei confirms genuine human spiritual traces beyond a barrier: the missing villagers are alive and the entity has not told the whole truth",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "offerings_to_the_anchors_stopped_decades_ago",
+"d": "Tablets record offerings that sustained the five anchors; the entries stop several decades ago",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"733": [
+{
+"id": "shrine_collapses_first_anchor_fallen",
+"d": "The shrine collapses and the entrance is sealed; the bell shows the first anchor has fallen from its proper place",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "red_crosshair_mark_appears",
+"d": "A new red crosshair mark appears on the boundary stone; the same symbol is in an old village record that ends abruptly",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"734": [
+{
+"id": "second_trace_in_the_eastern_ravine",
+"d": "Stone guardians guard a barrier route in an eastern ravine; a fragment of the symbol is found and releases a strand of red light deeper into the mountain",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"735": [
+{
+"id": "year_463_expedition_record",
+"d": "An Expedition Record from Year 463 shows an earlier party began repairing the five anchors and left it unfinished",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "great_sealed_doorway_beneath_the_mountain",
+"d": "A massive stone doorway with a central seal far larger than any they had seen is revealed beneath the mountain",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"736": [
+{
+"id": "five_anchor_plates_resonate_and_the_groups_reunite",
+"d": "Following the rhythm of the Moon-Echo Bell the five anchor plates resonate in sequence and the barrier between the two groups turns transparent",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "restored_the_prison_endures_broken_the_way_opens",
+"d": "The inscription: when the five are restored the prison shall endure; when the five are broken the way shall open",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "prison_door_begins_to_open",
+"d": "A line of red light appears down the centre of the great door: the prison is beginning to open",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"737": [
+{
+"id": "prisoners_warn_do_not_let_it_out",
+"d": "A shadowed hand emerges from the door and the trapped villagers beg the party not to let it out",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"738": [
+{
+"id": "two_seals_outer_prison_and_inner_boundary",
+"d": "Ya'Xing finds a second, inner boundary behind the five-anchor outer seal; a far greater presence lies deeper",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "voice_claims_they_sealed_the_wrong_thing",
+"d": "The voice shows the original expedition and claims they sealed the wrong thing; warning or deception is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"739": [
+{
+"id": "keeper_must_remain_between_the_two",
+"d": "A hidden observation chamber records that the keeper must remain between the two seals; the former keeper says to find the successor before attempting restoration",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"740": [
+{
+"id": "keepers_bronze_token_found",
+"d": "Xiao Tian finds the keeper's bronze token with two interlocking circles; an archway reads: only the one who remembers may pass",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"741": [
+{
+"id": "the_path_remembers_xiao_tian",
+"d": "In the corridor of memory the keeper's image turns to Xiao Tian: you may not remember the path, but the path remembers you",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "crystal_bell_in_the_inner_chamber",
+"d": "A crystal bell rests at the centre of a vast inner chamber that may be the origin of the Moon-Echo Bell",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"742": [
+{
+"id": "seal_remembers_the_one_who_stood_before_it",
+"d": "The keeper says the seal remembers the one who once stood before it, and that what Xiao Tian has forgotten is his own to recover",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "without_a_successor_the_inner_boundary_is_unprotected",
+"d": "Without a successor the outer anchors will keep failing and the inner boundary, which holds a far older presence, will be left unprotected",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "find_the_chamber_of_the_first_keeper",
+"d": "The keeper asks Xiao Tian only to discover whether he can bear the choice, and tells the party to find the chamber of the first keeper, where the truth of how the balance was broken lies",
 "t": "event",
 "p": false,
 "s": "art"

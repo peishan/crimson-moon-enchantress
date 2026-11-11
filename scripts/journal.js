@@ -51,6 +51,14 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(734).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 011: the stone guardians of the ravine (battle added by the game)
+chapterOf(727).battle = [{key:'demonic_beast'},{key:'demonic_beast'},{key:'demonic_beast'}];   // Volume 24 comic 004: the corrupted spirit beasts (battle added by the game)
+chapterOf(729).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 006: the shrine's guardian construct (battle added by the game)
+chapterOf(721).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 23 comic 021: the counterfeit workshop (battle added by the game)
+chapterOf(671).battle = [{key:'ward_sentinel'},{key:'sparring_construct'},{key:'ward_sentinel'},{key:'sparring_construct'}];   // Volume 21 comic 021: the hidden corridor of stone guardians (battle added by the game)
+chapterOf(622).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 19 comic 024: the ambush outside the Gu estate (battle added by the game)
+chapterOf(581).battle = [{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 17 comic 008: the wooden sentinel (battle added by the game)
+chapterOf(585).battle = [{key:'ward_sentinel'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 17 comic 012: the eastern storehouse (battle added by the game)
 chapterOf(568).battle = [{key:'hired_fighter'},{key:'hired_fighter'},{key:'hired_fighter'}];   // Volume 16 comic 025: the Willowbank ambush (battle added by the game)
 chapterOf(505).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'director_qiao'}];   // Volume 14 comic 053: the central facility (battle added by the game; the pages show the guard clashes)
 const SOLO = { 13:['dongyue','xiaotian','yaxing'] };
@@ -87,6 +95,8 @@ function completeChapter(n){
   enforceParty();
   giveChapterGear(n).forEach(m => msgs.push(m));
   if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
+  if(n === 661 && typeof arriveIceTemple === 'function') arriveIceTemple();
+  if(n === 675){ G.travel = {at:null, back:null}; if(typeof shrineUnlock === 'function') shrineUnlock().forEach(x => msgs.push(x)); }
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
@@ -110,7 +120,7 @@ function applyStoryStates(n){
   return msgs;
 }
 const CH_GEAR = { 129:['healers_scripture'], 130:['crimson_moon_hairpin','celestial_compass','spiritweave_bracers','bracers_xiaotian','skyshard','wayfinders_key'] };   // Volume 4 equipment (author); chapters are placeholders until the rebuilt Ice Temple arc settles
-const CH_ITEMS = { 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
+const CH_ITEMS = { 661:[{id:'ice_temple_token',qty:1}], 651:[{id:'feiyue_jian',qty:1},{id:'muxue_codex',qty:1}], 606:[{id:'sage_compass',qty:1}], 24:[{id:'winter_cloaks',qty:1},{id:'ice_staff',qty:1},{id:'higher_spellbooks',qty:1}] };   // (ch26: Hoko, not the party, unlocks the platform with the white key)
 /* Mark a chapter's hooks as fired. An event hook that already fired is never fired again. */
 function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(!G.hooks[h.id]) G.hooks[h.id] = n; }); }
 
@@ -122,7 +132,10 @@ function devSetChapter(n){
   if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
   G.ch = skipRemoved(n);
   enforceParty();
-  if(n >= 78) relationshipUnlock();   // the dev jump skips the finale splash
+  if(n >= 78) relationshipUnlock();
+  if(n >= 664 && typeof yqUnlock === 'function') yqUnlock();
+  if(n >= 661 && n < 675 && typeof arriveIceTemple === 'function') arriveIceTemple();
+  if(n >= 675){ G.travel = G.travel || {at:null, back:null}; G.travel.at = null; }   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
   if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));

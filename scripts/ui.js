@@ -3,6 +3,7 @@
    ===================================================================== */
 const TABS = [['journal','📖 Journal'],['base','🏠 Bases'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Training'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
+const NPC_NAMES = {yihai:'🚢 Zhan Yihai', mingyue:'🌸 Ming Yue', yunhe:'🌿 Yun He', yunlong:'🌿 Yun Long'};
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
 const STAT_NAME = {hp:'HP',mp:'MP',atk:'ATK',mag:'MAG',def:'DEF',spd:'SPD'};
@@ -82,7 +83,7 @@ function rSheet(id){
    ${id!=='xiyu'?`<div class="sm" style="margin-top:6px">💞 Bond with Xiyu: ${bl}/5 ${nextB?`(${u.bp}/${nextB})`:'(max)'} · +${bl*2}% stats</div>${bar(u.bp,nextB||u.bp||1,'bond')}`
      :`<div class="sm" style="margin-top:6px">💞 Party bond: ${bl}/5 (average companion bond)</div>`}
    ${isAway(id)?`<div class="panel bad"><b>⚓ Staying behind</b><div class="sm">${G.away[id]}</div>${id==='yaxing'&&yxResting()?`<div class="sm" style="margin-top:4px">He needs a day's rest before he can travel (a game day: it passes with the next chapter, or now).</div><button class="pri" onclick="act(()=>yxRest())">🛏️ Let him rest a day</button>`:''}</div>`:id==='xiyu'?'<div class="sm">Xiyu always leads the party.</div>':`<button ${inAct&&partyLocked(id)?'disabled':''} onclick="toggleActive('${id}');render()">${inAct?'Remove from active party':'Add to active party'}</button>${inAct&&partyLocked(id)?`<div class="sm">🔒 ${lockReason(id)}</div>`:''}`}
-   ${id==='xiyu'?curseHtml()+bondsHtml():''}
+   ${id==='xiyu'?curseHtml()+bondsHtml():''}${(id==='yaxing'||id==='qiumin') && typeof yqHtml==='function' ? yqHtml() : ''}
    <h4>Condition</h4><div class="sm">❤️ HP ${curHp(id)}/${st.hp} · 🔷 MP ${curMp(id)}/${st.mp}</div>${bar(curHp(id),st.hp,'hp')}${bar(curMp(id),st.mp,'mpb')}
    <h4>Stats</h4><div class="stg">${stats}</div>${equipHtml(id)}${id==='yanwatcher' && typeof ledgerHtml==='function' ? ledgerHtml() : ''}
    <h4>Skills &amp; level gates</h4>${skills}</div>`;
@@ -108,7 +109,7 @@ function rGates(){
 /* ---------------- JOURNAL ---------------- */
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.filter(c => !c.removed).map(c => (c.n===VOL16_START ? `<h4>Volume 16 · The Road Ahead</h4>` : c.n===VOL15_START ? `<h4>Volume 15 · The Missing Voyage</h4>` : c.n===VOL14_START ? `<h4>Volume 14 · The Demon Hunter\'s Trail</h4>` : c.n===VOL13_START ? `<h4>Volume 13 · The Witch of Zhan Manor</h4>` : c.n===VOL12_START ? `<h4>Volume 12 · A Healer's Journey</h4>` : c.n===VOL11_START ? `<h4>Volume 11 · The Thousand-Mile Frontier</h4>` : c.n===VOL10_START ? `<h4>Volume 10 · The Sanctuary of Silent Strings</h4>` : c.n===VOL9_START ? `<h4>Volume 9 · A Season Between Journeys</h4>` : c.n===VOL8_START ? `<h4>Volume 8 · The Strings of a Forgotten Promise</h4>` : c.n===VOL7_START ? `<h4>Volume 7 · The Ruins That Remember</h4>` : c.n===VOL6_START ? `<h4>Volume 6 · The Unknown World</h4>` : c.n===XC_START ? `<h4>Interlude · Xiyu &amp; Cangyuan</h4>` : c.n===YX_START ? `<h4>Interlude · Ya'Xing</h4>` : c.n===VOL5_START ? `<h4>Volume 5 · The Ice Temple: The Truth Left Behind</h4>` : c.n===VOL4_START ? `<h4>Volume 4 · The Ice Temple</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
+  const rows = CHAPTERS.filter(c => !c.removed).map(c => (c.n===VOL24_START ? `<h4>Volume 24 · (title to be confirmed)</h4>` : c.n===VOL23_START ? `<h4>Volume 23 · The Price of a Good Name</h4>` : c.n===VOL22_START ? `<h4>Volume 22 · The Voyage Remembered</h4>` : c.n===VOL21_START ? `<h4>Volume 21 · Beneath the Frozen Archives</h4>` : c.n===VOL20_START ? `<h4>Volume 20 · The Muxue Legacy</h4>` : c.n===VOL19_START ? `<h4>Volume 19 · Xiao Tian\'s Hidden Legacy</h4>` : c.n===VOL18_START ? `<h4>Volume 18 · Yihai\'s Rescue</h4>` : c.n===VOL17_START ? `<h4>Volume 17 · The Shadows of Yilong</h4>` : c.n===VOL16_START ? `<h4>Volume 16 · The Hidden Tracks</h4>` : c.n===VOL15_START ? `<h4>Volume 15 · The Missing Voyage</h4>` : c.n===VOL14_START ? `<h4>Volume 14 · The Demon Hunter\'s Trail</h4>` : c.n===VOL13_START ? `<h4>Volume 13 · The Witch of Zhan Manor</h4>` : c.n===VOL12_START ? `<h4>Volume 12 · A Healer's Journey</h4>` : c.n===VOL11_START ? `<h4>Volume 11 · The Thousand-Mile Frontier</h4>` : c.n===VOL10_START ? `<h4>Volume 10 · The Sanctuary of Silent Strings</h4>` : c.n===VOL9_START ? `<h4>Volume 9 · A Season Between Journeys</h4>` : c.n===VOL8_START ? `<h4>Volume 8 · The Strings of a Forgotten Promise</h4>` : c.n===VOL7_START ? `<h4>Volume 7 · The Ruins That Remember</h4>` : c.n===VOL6_START ? `<h4>Volume 6 · The Unknown World</h4>` : c.n===XC_START ? `<h4>Interlude · Xiyu &amp; Cangyuan</h4>` : c.n===YX_START ? `<h4>Interlude · Ya'Xing</h4>` : c.n===VOL5_START ? `<h4>Volume 5 · The Ice Temple: The Truth Left Behind</h4>` : c.n===VOL4_START ? `<h4>Volume 4 · The Ice Temple</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
     const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>
@@ -144,7 +145,7 @@ function rChapter(n){
    <div class="panel"><div class="sm">📍 ${d.loc}${volOf(n)===1?' · Book chapter '+d.book:''}</div><div style="margin:6px 0">${d.sum}</div>
     <button class="pri" onclick="openStory(${n})">📖 ${G.read[n]?'Read again':'Read story'}</button>
     <details><summary class="sm">Key events · introduced · opens</summary>${d.events.length?'<h4>Key events</h4>'+li(d.events):''}${d.intro.length?'<h4>Introduced</h4>'+li(d.intro):''}${d.unlocks.length?'<h4>Opens</h4>'+li(d.unlocks.map(x=>'✅ '+x)):''}
-    <div class="sm" style="margin-top:6px">On the page: ${d.chars.map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')}</div>${hooksHtml(n)}</details></div>${flashHtml()}${foot}${nextChapterBtn(n)}`;
+    <div class="sm" style="margin-top:6px">On the page: ${d.chars.map(id=>CHARACTERS[id] ? CHARACTERS[id].icon+' '+first(id) : (NPC_NAMES[id]||id)).join(' · ')}</div>${hooksHtml(n)}</details></div>${flashHtml()}${foot}${nextChapterBtn(n)}`;
 }
 function hooksHtml(n){
   const hs = HOOKS[n]||[]; if(!hs.length) return '';
@@ -207,6 +208,14 @@ const CAST_SHEETS = [
   {id:'xci', n:'Xiyu & Cangyuan Interlude', sub:'The past had shaped them. It would not choose their future.', img:'assets/cast/xc_interlude.webp', ch:208},
   {id:'suliechen', n:'Su Liechen', sub:'Demon slayer and tracker: "Some truths should be captured, not destroyed."', img:'assets/cast/suliechen.webp', ch:133},
   {id:'yxsheet', n:'Ya\'Xing · New Outfit', sub:'"I\'ll keep going. This time, I\'m not alone."', img:'assets/cast/yaxing_sheet.webp', ch:140},
+  {id:'zhilei', n:'Wangshu Zhilei', sub:'Resonance Adept: the Moon-Echo Bell and a journal that says Go to the Ice Temple', img:'assets/cast/zhilei_sheet.webp', ch:660},
+  {id:'dxy', n:'Dongyue, Xining and Yunshu', sub:'After the birth: a family beneath the Yilong blossoms', img:'assets/events/dongyue_xining_yunshu.webp', ch:629},
+  {id:'yqsplash', n:'Ya\'Xing and Qiumin', sub:'The night they chose, at the Ice Temple', img:'assets/events/yaxing_qiumin.webp', ch:664},
+  {id:'party21', n:'Ice Temple Traveling Party (Volume 21+)', sub:'Investigation team: Xiyu, Cangyuan, Ya\'Xing, Qiumin, Xiao Tian, Xiao Yan, Hoko, Zhilei and Yun Long (expedition guide)', img:'assets/cast/ice_temple_party_v21.webp', ch:660},
+  {id:'splash2', n:'Title Art · The Crimson Moon\'s Enchantress', sub:'The game\'s title screen: the cast beneath the crimson moon', img:'assets/splash.webp', ch:0},
+  {id:'splash1', n:'Original Title Art', sub:'The first title screen', img:'assets/cast/splash_original.webp', ch:0},
+  {id:'inherit', n:'Xiyu\'s Muxue Inheritance', sub:'Feiyue Jian, the Muxue Inheritance Codex and the letter from her forefathers', img:'assets/cast/xiyu_inheritance_sheet.webp', ch:651},
+  {id:'outfitalt18', n:'Alternative Outfit Reference (Volume 18)', sub:'Travel / investigation attire, alternative set: the main cast', img:'assets/cast/outfit_alt_v18.webp', ch:586},
   {id:'outfit15', n:'Main Cast Outfit Reference (Volume 15+)', sub:'Standard travelling attire: Xiyu, Cangyuan, Dongyue, Qiumin, Ya\'Xing, Xiao Tian, Xiao Yan, Hoko and Liechen', img:'assets/cast/outfit_main_v15.webp', ch:543},
   {id:'vol2',    n:'Volume 2 Cast', sub:'Shen Cangyuan and Lu Xining', img:'assets/cast/volume2.webp', ch:53},   // unlocks when Xining joins (V2 comic 014)
 ];
@@ -270,7 +279,9 @@ function rBattle(){
     else if(m==='skills') act = skillList(u).map(s=>`<button class="skb" ${s.usable?'':'disabled'} onclick="pickSkill('${s.id}')">${s.icon} ${s.n} <small>${s.cost?s.cost+'MP':''} ${s.note}</small></button>`).join('') + `<button onclick="B.ui={mode:'menu'};render()">◀ Back</button>`;
     else act = `<div class="sm">Choose a target</div><button onclick="B.ui={mode:'menu'};render()">◀ Cancel</button>`;
   }
-  return `<div class="foes">${foes}</div><div class="log">${log}</div><div class="allies">${allies}</div><div class="acts">${act}</div>`;
+  if(typeof autoSchedule === 'function') autoSchedule();
+  const auto = (typeof autoButton === 'function' && !B.over) ? `<div class="row" style="margin:4px 0">${autoButton()}${autoOn() ? '<span class="sm"> The party acts by itself; tap to take over.</span>' : ''}</div>` : '';
+  return `<div class="foes">${foes}</div><div class="log">${log}</div><div class="allies">${allies}</div>${auto}<div class="acts">${autoOn() && !B.over ? '' : act}</div>`;
 }
 function doAttack(){ B.ui={mode:'target',kind:'attack',sid:null,cands:alive(B.foes)}; render(); }
 function pickSkill(sid){
@@ -295,10 +306,10 @@ function rInventory(){
   if(!G.party.includes(itemHero)) itemHero = 'xiyu';
   const pick = `<div class="sm" style="margin:6px 0">Use on:</div><div class="row">${G.party.map(id=>`<button class="${itemHero===id?'pri':''}" onclick="itemHero='${id}';render()">${first(id)} ${curHp(id)}/${statsOf(id).hp}</button>`).join('')}</div>`;
   const rows = ids.length ? ids.map(k => { const i = ITEMS[k], us = USE[k];
-    return `<div class="card" style="cursor:default"><span class="big">${i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div></div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
+    return `<div class="card" style="cursor:default"><span class="big">${i.img?`<img src="${i.img}" alt="" style="width:44px;height:auto;vertical-align:middle">`:i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div>${i.desc?`<div class="sm">${i.desc}</div>`:''}</div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
   const brews = RECIPES.map(r => `<div class="ev"><div><b>${ITEMS[r.out].icon} ${ITEMS[r.out].n}</b><div class="sm">${r.label}</div></div><button onclick="act(()=>brew('${r.out}'))">Brew</button></div>`).join('');
   const shop = Object.keys(SHOP).map(k => `<div class="ev"><div><b>${ITEMS[k].icon} ${ITEMS[k].n}</b><div class="sm">${useText(USE[k])}</div></div><button ${G.gold>=SHOP[k]?'':'disabled'} onclick="act(()=>buyItem('${k}')?'Bought '+ITEMS['${k}'].n:'Not enough gold')">${SHOP[k]}g</button></div>`).join('');
-  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
+  return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${typeof tokenPanel==='function'?tokenPanel():''}${pick}${rows}<h4>Brew</h4>${brews}<h4>Crimson Fairy shop</h4>${shop}${smithsHtml()}`;
 }
 let bestFilter = 'all';
 function bestZoneOf(k){ return ZONES.find(z => z.pool.includes(k) || [].concat(z.boss||[]).includes(k)); }

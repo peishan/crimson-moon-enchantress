@@ -23,7 +23,7 @@ const openBases = () => BASES.filter(baseIsOpen);
 const baseOpen = () => openBases().length > 0;
 const baseById = id => BASES.find(b => b.id === id);
 let baseSel = 'muxue', baseSection = 'hall';
-const BASE_SECTIONS = [['hall','🏠 Hall'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['comms','📨 Comms'],['network','📡 Network']];
+const BASE_SECTIONS = [['hall','🏠 Hall'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['comms','📨 Comms'],['network','📡 Network'],['fleet','⛵ Fleet'],['travel','❄️ Token']];
 const baseArt = (b, k, icon) => artOrIcon('assets/base/'+b.art+k+'.webp', icon, 'baseimg');
 function curBase(){ const ob = openBases(); return ob.find(b => b.id === baseSel) || ob[ob.length-1] || BASES[0]; }
 
@@ -40,11 +40,14 @@ function baseSelect(id){ baseSel = id; baseSection = 'hall'; render(); window.sc
 function rBase(){
   const ob = openBases(), b = curBase();
   const pick = ob.length > 1 ? `<div class="row" style="margin:6px 0">${ob.map(x => `<button class="${x.id===b.id?'pri':''}" onclick="baseSelect('${x.id}')">${x.icon} ${x.n}</button>`).join('')}</div>` : '';
-  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
+  const nav = `<div class="row" style="margin:6px 0">${BASE_SECTIONS.filter(([k]) => (k!=='fleet' || (typeof fleetOpen==='function' && fleetOpen())) && (k!=='travel' || (typeof hasToken==='function' && hasToken())) && (typeof BASE_ONLY==='undefined' || !BASE_ONLY[k] || BASE_ONLY[k]===b.id) && (k!=='shrines' || (typeof shrinesOpen==='function' && shrinesOpen()))).map(([k,l]) => `<button class="${baseSection===k?'pri':''}" onclick="baseTabTo('${k}')">${l}</button>`).join('')}</div>`;
   let body = '';
   if(baseSection === 'board') body = `<div class="panel">${baseArt(b,'board','📋')}<div class="sm">The contract wall of the ${b.n}. Contracts and bounties are shared by all of Xiyu's bases.</div></div>` + rBoard().replace('<h2>Quest Board</h2>','');
   else if(baseSection === 'bounties') body = `<div class="panel">${baseArt(b,'bounty','📜')}<div class="sm">The bounty wall of the ${b.n}.</div></div>` + rBounties().replace('<h2>Bounties</h2>','');
   else if(baseSection === 'network') body = rNetwork();
+  else if(baseSection === 'fleet') body = rFleet();
+  else if(baseSection === 'travel') body = tokenPanel();
+  else if(typeof BASE_ONLY!=='undefined' && BASE_ONLY[baseSection] && BASE_ONLY[baseSection]===b.id) body = rIceSection(baseSection);
   else if(baseSection === 'comms'){
     const done = BD().done, tier = RENOWN_TIERS[renownTier()][1];
     body = `<div class="panel">${baseArt(b,'comms','📨')}<h3>📨 Xiyu's communication</h3>
@@ -57,7 +60,7 @@ function rBase(){
     const left = Math.max(0, BOUNTY_REFRESH_DAYS - (G.day - BD().bounties.day));
     body = `<div class="panel">${baseArt(b,'hall',b.icon)}<h3>${b.icon} The ${b.n}</h3>
       <div class="sm">${b.hall} Day ${G.day} · ${timeLabel()}</div>
-      <div style="margin-top:6px"><button class="pri" onclick="act(()=>restAt('${b.rest}'))">🛏️ Rest (free)</button><button onclick="baseTabTo('comms')">📨 Send word</button><button onclick="baseTabTo('network')">📡 Network</button></div></div>
+      ${b.id==='icetemple' ? (typeof atIceTemple==='function' && atIceTemple() ? '<div class="sm">📍 The party is at the Ice Temple.</div>' : '<div class="sm">📍 The party is away from the Ice Temple (use the token).</div>') : ''}<div style="margin-top:6px">${b.rest ? `<button class="pri" onclick="act(()=>restAt('${b.rest}'))">🛏️ Rest (free)</button>` : ''}<button onclick="baseTabTo('comms')">📨 Send word</button><button onclick="baseTabTo('network')">📡 Network</button></div></div>
       <div class="panel"><b>📋 Work on the board</b><div class="sm">${BD().active.length} contract(s) accepted · ${ready ? ready+' ready to turn in · ' : ''}${BD().bounties.list.filter(x=>!x.done).length} bounty target(s) open (new in ${left||'a moment'} ${left===1?'day':'days'}).</div>
       <div style="margin-top:6px"><button onclick="baseTabTo('board')">📋 Quest Board</button><button onclick="baseTabTo('bounties')">📜 Bounties</button></div></div>
       <div class="panel"><b>👥 With the party</b><div class="sm">${G.active.map(id => CHARACTERS[id].icon+' '+first(id)+' Lv'+U(id).lv).join(' · ') || 'Xiyu'}</div>

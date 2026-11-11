@@ -81,7 +81,7 @@ const SMITHS = [
 function buyGear(smithId, id){
   const sm = SMITHS.find(s => s.id===smithId), g = GEAR[id];
   if(!sm || !sm.open() || !g || !sm.stock.includes(id)) return ['That is not for sale.'];
-  if(GR().owned[id]) return ['You already own the '+g.n+'.'];
+  if(GR().owned[id] || (G.gearStash||{})[id]) return ['You already own the '+g.n+'.'];
   if(G.gold < g.price) return ['The '+g.n+' costs '+g.price+' gold.'];
   G.gold -= g.price; GR().owned[id] = true; save();
   return ['🛒 Bought the '+g.n+' (-'+g.price+'g). Equip it from a hero\'s Party page.'];

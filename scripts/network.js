@@ -87,6 +87,8 @@ const RUMOURS = [
   {t:'Dock gossip says a ship went quiet near the coast road and no one in the harbour office will say which. (Unverified.)', kind:'hearsay', inv:'yihai', min:519},
   {t:'A hunter says the demon sightings on the western road come in threes, and always near water. (Unverified.)', kind:'hearsay', inv:'demons', min:452},
   {t:'Northern traders say the Muxue clan has a new leader, and nobody will say what became of the old one. (Unverified.)', kind:'hearsay', inv:'yan', min:544},
+  {t:'Northern traders say the new Muxue leader is a young researcher and that several old clan contacts have gone quiet. (Unverified.)', kind:'hearsay', inv:'yan', min:633},
+  {t:'A harbour clerk says a Yilong merchant has been writing to old shipmasters about routes that no longer appear on any chart. (Unverified.)', kind:'hearsay', min:678},
   {t:'Pilgrims say a lantern on the hill road burns day and night and seems to move when nobody is watching.', kind:'rumour', open:'c_lantern'},
   {t:'A peddler on the northern pass is loudly accusing everyone of stealing his mule.', kind:'rumour', open:'c_mule'},
   {t:'Villagers say the Hollow Stream murmurs after dark, almost like singing.', kind:'rumour', open:'c_stream'},
@@ -137,6 +139,8 @@ function netCheckIn(){
     msgs.push('💬 '+(r.kind==='rumour' ? 'Rumour' : 'Hearsay')+': '+r.t);
     if(r.inv && invById(r.inv) && invOpen(invById(r.inv))) invAdd(invById(r.inv), 1, msgs);
     if(r.open && !N.cases[r.open]){ N.cases[r.open] = true; msgs.push('🔎 New side case opened: '+invById(r.open).n+' (not part of the story).'); netLog('new case: '+invById(r.open).n); } }
+  if(typeof shrineOnCheckIn === 'function') shrineOnCheckIn(msgs);
+  if(typeof violetOnCheckIn === 'function') violetOnCheckIn(msgs);
   msgs.unshift('📡 The network reports in. Day\'s takings: '+rw+'.');
   netLog('daily check-in'); return msgs;
 }
@@ -155,10 +159,10 @@ function networkOnWin(foes, zone){
 }
 const zoneNames = ids => ids.map(z => { const zz = zoneById(z); return zz ? (zoneOpen(zz) ? zz.icon+' '+zz.n : '🔒 ???') : ''; }).join(', ');
 function invCard(i){
-  const N = NET(), p = invProg(i), capNote = p >= NET_CHECKIN_CAP && p < 100 ? ' · informants have given all they can: hunt for the rest' : '';
+  const N = NET(), p = invProg(i), squad = (i.id==='yan' && G.ch>=638 && G.ch<650) ? '<div class="sm">🧭 Investigation squad at Lingchuan: Xiyu, Cangyuan, Xiao Tian, Hoko, Xiao Yan, Ya\'Xing and Qiumin (Dongyue, Xining and Liechen stayed behind).</div>' : '', capNote = p >= NET_CHECKIN_CAP && p < 100 ? ' · informants have given all they can: hunt for the rest' : '';
   return `<div class="panel"><b>${i.icon} ${i.n}</b> <span class="sm">${p}%${p>=100?' · complete':''}</span>
     <div class="bar"><div style="width:${p}%;height:8px;background:#c33;border-radius:4px"></div></div>
-    <div class="sm">${i.desc}${capNote}</div>
+    <div class="sm">${i.desc}${capNote}</div>${squad}
     ${p<100 ? `<div class="sm">📍 Hunt in: ${zoneNames(i.zones)}</div>
     <div class="sm">🐾 Clue-bearers: ${i.keys.map(k => ENEMIES[k] ? ENEMIES[k].icon+' '+ENEMIES[k].n : k).join(', ')} · leads found: ${N.clues[i.id]||0}</div>` : ''}
     ${(N.seen[i.id]!==undefined) ? `<div class="sm" style="margin-top:4px">📝 Latest report: ${i.reports[N.seen[i.id]]}</div>` : ''}

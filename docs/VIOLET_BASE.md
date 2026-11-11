@@ -1,0 +1,9 @@
+# Xiyu's Violet Base
+
+Source: Volume 22 comic 005 (chapter 680), Xiyu: "I'll leave instructions with my Violet base members. If we need to contact you, they'll come to the Zhan Manor to deliver the message." So the Violet Base is an established part of Xiyu's network, not a base she creates for the story; it should feel like an organisation she has built over time. Its location is not stated and is not invented.
+
+**Personnel (proposals, not locked canon):** Zi Lan 紫兰 (Base Keeper, overall administration) · Lin Yue 林月 (Intelligence Officer) · Su He 苏禾 (Quartermaster: supplies and finances) · Bai Zhi 白芷 (Medical Keeper) · Qing Luo 青萝 (Messenger Coordinator: communications) · Feng Rui 风蕊 (Field Operative: outside assignments). Founder and Principal: Muxue Xiyu (owner, ultimate authority). Members are loyal to Xiyu personally; not necessarily combatants. Individual personalities and histories wait until each is introduced.
+
+**Built (scripts/violet.js), from chapter 680:** a fourth base in the Bases tab (🪻 Violet Base) with a hall, a Staff page (organisation chart and member cards, no portraits yet) and **Standing Orders**: Xiyu can leave instructions with the Base Keeper before travelling; the base keeps working without her and each daily Network check-in brings a small result from the chosen focus (intelligence: +2% to open investigations; supplies: gold; medical: a tonic or herb; messengers: a better chance of rumours and shrine leads; field: gold and sometimes a material). Urgent messages are shown as delivered to the Zhan Manor in Yilong. No story is revealed and nothing is resolved. The base has no rest bed (it is not stated to be a place the party stays). Shared with the other bases: Quest Board, Bounties, Comms, Network, Fleet.
+
+**Open for the author:** where the Violet Base stands; whether members get portraits or People cards; whether a member should appear in a chapter or message the party with real news.

@@ -152,7 +152,12 @@ const ENEMIES = {
 function mkEnemy(key, lv){
   /* Enemy scaling steepens past the early levels so Volume 1's whole range (Lv 1-40) stays a fight: heroes grow faster than a straight line.
      hp: 1 + 0.12*(lv-1) + 0.003*(lv-1)^2 ; attack stats: 1 + 0.12*(lv-1) + 0.004*(lv-1)^2 ; def: 1 + 0.13*(lv-1) (kept linear, like hero ATK, so high-level elites stay hittable); xp/gold follow hp. */
-  const e = ENEMIES[key], d = lv-1, mh = 1 + d*0.12 + d*d*0.003, ma = 1 + d*0.12 + d*d*0.004, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
+  /* Past level 41 the steep curve is replaced by a straight line with the heroes' own growth rate (about +2% of the level-41 value per level), so a fight at
+     level 400 or 700 is as fair as the same fight at level 41. Before this fix the squared term made every enemy unbeatable from roughly level 250 on
+     (at level 450 an ordinary foe hit for five times a hero's HP). */
+  const CURVE_CAP = 40;
+  const e = ENEMIES[key], d = lv-1, dc = Math.min(d, CURVE_CAP), tail = 1 + Math.max(0, d-CURVE_CAP)*0.02,
+        mh = (1 + dc*0.12 + dc*dc*0.003) * tail, ma = (1 + dc*0.12 + dc*dc*0.004) * tail, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
   return { key, name:e.n, icon:e.icon, boss:!!e.boss, elite:!!e.elite, traits:e.traits||[], moves:e.moves, drops:e.drops||[],
     hp:Math.round(e.hp*mh), mhp:Math.round(e.hp*mh), mp:0, mmp:0,
     atk:Math.round(e.atk*ma), mag:Math.round(e.mag*ma), def:Math.round(e.def*md), spd:Math.round(e.spd*(1+d*.02)),
@@ -165,7 +170,7 @@ const ITEMS = {
   moon_petal:{n:'Moon Petal',icon:'🌸',type:'material'}, ice_crystal:{n:'Ice Crystal',icon:'💎',type:'material'},
   imp_ash:{n:'Imp Ash',icon:'🌫️',type:'material'}, rift_shard:{n:'Rift Shard',icon:'🔹',type:'material'},
   winter_cloaks:{n:'Winter Cloaks',icon:'🧥',type:'quest'}, ice_staff:{n:'Ice Staff',icon:'🪄',type:'quest'}, higher_spellbooks:{n:'Higher-level Spellbooks',icon:'📘',type:'quest'},
-  corrupted_fragment:{n:'Corrupted Fragment',icon:'🖤',type:'quest'}, departure_record:{n:'Torn Departure Record',icon:'📜',type:'quest'}, ward_silk:{n:'Ward Silk',icon:'🧶',type:'material'},
+  corrupted_fragment:{n:'Corrupted Fragment',icon:'🖤',type:'quest'}, departure_record:{n:'Torn Departure Record',icon:'📜',type:'quest'}, ice_temple_token:{n:'Ice Temple Access Token',icon:'❄️',img:'assets/items_token_icon.webp',type:'quest',desc:'Given on Muxue Zhiyuan\'s instructions. A two-way teleportation token for Xiyu and her travelling group: it takes them to the Ice Temple and back to the place from which they last departed, and gives access to the Ice Temple library, research and training grounds. It does not grant access to other Muxue clan bases. Use it from the Items or Bases tab.'}, feiyue_jian:{n:'Feiyue Jian (the Crimson Moon Sword)',icon:'🗡️',type:'quest',desc:'An ancient straight sword of the Muxue ancestors: silver-white blade with a fine crimson line, a crescent-moon guard. It cannot be destroyed by ordinary physical, elemental or magical means, but its wielder is not invincible. It recognises Xiyu\'s bloodline; its deeper stages (Moonlight Edge, Celestial Release) are not yet awakened. Story item: no stats yet.'}, muxue_codex:{n:'The Muxue Inheritance Codex',icon:'📚',type:'quest',desc:'Three manuals preserved by Xiyu\'s forefathers: The Bloodline Foundation (understanding her power), The Crimson Moon Arts (techniques) and The Celestial Cultivation Scripture (long-term cultivation), with a letter from her forefathers. Only the first is being studied. Story item: no skills unlocked yet.'}, sage_compass:{n:'The Sage\'s Compass',icon:'🧭',type:'quest',desc:'A compass made to recognise passages between worlds, given by the Sage of Lunareth. It responds to Dongyue and guided the ship home from Dragonvale. It will not carry anyone across; it only finds the way.'}, ward_silk:{n:'Ward Silk',icon:'🧶',type:'material'},
   herbal_tonic:{n:'Herbal Tonic',icon:'🍵',type:'consumable'}, moonlit_tonic:{n:'Moonlit Tonic',icon:'🌙',type:'consumable'},
   spirit_draught:{n:'Spirit Draught',icon:'🧪',type:'consumable'}, cleansing_salt:{n:'Cleansing Salt',icon:'🧂',type:'consumable'},
 };

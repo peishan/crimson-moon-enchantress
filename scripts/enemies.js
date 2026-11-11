@@ -152,7 +152,12 @@ const ENEMIES = {
 function mkEnemy(key, lv){
   /* Enemy scaling steepens past the early levels so Volume 1's whole range (Lv 1-40) stays a fight: heroes grow faster than a straight line.
      hp: 1 + 0.12*(lv-1) + 0.003*(lv-1)^2 ; attack stats: 1 + 0.12*(lv-1) + 0.004*(lv-1)^2 ; def: 1 + 0.13*(lv-1) (kept linear, like hero ATK, so high-level elites stay hittable); xp/gold follow hp. */
-  const e = ENEMIES[key], d = lv-1, mh = 1 + d*0.12 + d*d*0.003, ma = 1 + d*0.12 + d*d*0.004, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
+  /* Past level 41 the steep curve is replaced by a straight line with the heroes' own growth rate (about +2% of the level-41 value per level), so a fight at
+     level 400 or 700 is as fair as the same fight at level 41. Before this fix the squared term made every enemy unbeatable from roughly level 250 on
+     (at level 450 an ordinary foe hit for five times a hero's HP). */
+  const CURVE_CAP = 40;
+  const e = ENEMIES[key], d = lv-1, dc = Math.min(d, CURVE_CAP), tail = 1 + Math.max(0, d-CURVE_CAP)*0.02,
+        mh = (1 + dc*0.12 + dc*dc*0.003) * tail, ma = (1 + dc*0.12 + dc*dc*0.004) * tail, md = 1 + d*0.13, x = Math.max(1, mh*0.85);
   return { key, name:e.n, icon:e.icon, boss:!!e.boss, elite:!!e.elite, traits:e.traits||[], moves:e.moves, drops:e.drops||[],
     hp:Math.round(e.hp*mh), mhp:Math.round(e.hp*mh), mp:0, mmp:0,
     atk:Math.round(e.atk*ma), mag:Math.round(e.mag*ma), def:Math.round(e.def*md), spd:Math.round(e.spd*(1+d*.02)),

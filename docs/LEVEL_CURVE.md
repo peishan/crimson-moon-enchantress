@@ -43,3 +43,6 @@ Wilds foes are the party's average level plus a zone offset (0 to +2). Simulated
 Three levels from the author's map: Level 1 Upper Temple (15 places), Level 2 Sealed Maze (6), Level 3 Underground Chamber (5). Room names are the map labels only.
 Rooms are found as the scripts reach them: entrance, corridor and the Xiyu & Dongyue chamber (ch 18), Ice Library (24), frozen maze (26), casket chamber / Ao Yun's Resting Place (27, provisional), Audience Hall as the Red Assembly Hall (34, provisional), hidden passage and Enchanted Bath Chamber (37), departure portal (39). The rest stay "not scheduled".
 Level 2 and 3 hunting zones (Horned Beasts arena, traps, mimics) are gameplay filler: Level 2 opens after ch 26 (provisional), Level 3 is unscheduled.
+
+## Update: enemy curve past level 41
+Enemy HP and attack follow the original curve (with the squared term) up to level 41, then grow at +2% of the level-41 value per level, matching hero growth. Before this, enemies outgrew heroes without limit and fights became unwinnable from about level 250. See scripts/enemies.js `mkEnemy`.

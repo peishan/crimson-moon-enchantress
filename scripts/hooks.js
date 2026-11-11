@@ -9941,6 +9941,81 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"737": [
+{
+"id": "prisoners_warn_do_not_let_it_out",
+"d": "A shadowed hand emerges from the door and the trapped villagers beg the party not to let it out",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"738": [
+{
+"id": "two_seals_outer_prison_and_inner_boundary",
+"d": "Ya'Xing finds a second, inner boundary behind the five-anchor outer seal; a far greater presence lies deeper",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "voice_claims_they_sealed_the_wrong_thing",
+"d": "The voice shows the original expedition and claims they sealed the wrong thing; warning or deception is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"739": [
+{
+"id": "keeper_must_remain_between_the_two",
+"d": "A hidden observation chamber records that the keeper must remain between the two seals; the former keeper says to find the successor before attempting restoration",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"740": [
+{
+"id": "keepers_bronze_token_found",
+"d": "Xiao Tian finds the keeper's bronze token with two interlocking circles; an archway reads: only the one who remembers may pass",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"741": [
+{
+"id": "the_path_remembers_xiao_tian",
+"d": "In the corridor of memory the keeper's image turns to Xiao Tian: you may not remember the path, but the path remembers you",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "crystal_bell_in_the_inner_chamber",
+"d": "A crystal bell rests at the centre of a vast inner chamber that may be the origin of the Moon-Echo Bell",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"742": [
+{
+"id": "seal_remembers_the_one_who_stood_before_it",
+"d": "The keeper says the seal remembers the one who once stood before it, and that what Xiao Tian has forgotten is his own to recover",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "without_a_successor_the_inner_boundary_is_unprotected",
+"d": "Without a successor the outer anchors will keep failing and the inner boundary, which holds a far older presence, will be left unprotected",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

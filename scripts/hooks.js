@@ -10172,6 +10172,67 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"758": [
+{
+"id": "central_seal_stabilised_with_the_keepers_weapon",
+"d": "The group stabilises the central seal for a time with the ancient weapon on the keeper's seat, without activating the sixth symbol",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"759": [
+{
+"id": "fifth_anchor_in_the_sanctuary_of_the_keepers",
+"d": "The fifth anchor lies in the Sanctuary of the Keepers, protected only by a trial of intentions; the attendant gives Xiao Tian a golden fragment of the first keeper",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"760": [
+{
+"id": "power_may_open_the_way_only_understanding_may_pass",
+"d": "The bronze token and the golden fragment open the final gate: power may open the way, only understanding may let you pass",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"761": [
+{
+"id": "memory_is_not_a_command",
+"d": "In the hall of mirrors the group faces choices that might have been and understands that memory is not a command",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"762": [
+{
+"id": "five_anchors_are_a_system_of_balance",
+"d": "The fifth keeper: the anchors were never a permanent seal but a system of balance each generation must understand; Xiao Tian will not inherit the duty before knowing the truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"763": [
+{
+"id": "prison_contains_the_consequence_not_the_cause",
+"d": "The five keepers contained a presence whose original purpose was erased; the prison was built to contain the consequence, not the cause",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_has_come_to_ask_what_happened_to_me",
+"d": "A cracked crystal holds what remains of the presence, and a sorrowful voice says someone has at last come to ask what happened to it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

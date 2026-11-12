@@ -764,6 +764,12 @@ V2H={
  755:[('fourth_keepers_attendant_and_the_duty', "The fourth keeper's former attendant says the keeper entered the inner seal willingly and that the keepers left a duty someone must decide whether to inherit", 'event')],
  756:[('sixth_symbol_at_the_centre_of_the_anchors', "Xiao Tian's token reveals a sixth symbol at the centre of the anchor map; the inner seal is weakening", 'event')],
  757:[('central_seal_final_safeguard_and_the_choice', "The sixth symbol is the first keeper's final safeguard; the voice offers a choice: preserve the prison and sacrifice what remains, or open the way", 'event')],
+ 758:[('central_seal_stabilised_with_the_keepers_weapon', "The group stabilises the central seal for a time with the ancient weapon on the keeper's seat, without activating the sixth symbol", 'event')],
+ 759:[('fifth_anchor_in_the_sanctuary_of_the_keepers', 'The fifth anchor lies in the Sanctuary of the Keepers, protected only by a trial of intentions; the attendant gives Xiao Tian a golden fragment of the first keeper', 'event')],
+ 760:[('power_may_open_the_way_only_understanding_may_pass', 'The bronze token and the golden fragment open the final gate: power may open the way, only understanding may let you pass', 'event')],
+ 761:[('memory_is_not_a_command', 'In the hall of mirrors the group faces choices that might have been and understands that memory is not a command', 'event')],
+ 762:[('five_anchors_are_a_system_of_balance', 'The fifth keeper: the anchors were never a permanent seal but a system of balance each generation must understand; Xiao Tian will not inherit the duty before knowing the truth', 'event')],
+ 763:[('prison_contains_the_consequence_not_the_cause', 'The five keepers contained a presence whose original purpose was erased; the prison was built to contain the consequence, not the cause', 'event'), ('someone_has_come_to_ask_what_happened_to_me', 'A cracked crystal holds what remains of the presence, and a sorrowful voice says someone has at last come to ask what happened to it', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

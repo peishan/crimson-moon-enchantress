@@ -87,7 +87,8 @@ const portrait = id => 'assets/party/'+id+portraitVariant(id)+'.webp';
 function gateLv(){   // mean level of the real party members
   return G.party.length ? Math.round(G.party.reduce((a,id) => a + U(id).lv, 0)/G.party.length) : 1;
 }
-const chapterGate = n => GATE_CHAPTERS.includes(n) ? { lv:Math.max(1, Math.round(n*GATE_RATIO)) } : null;
+/* Battle chapters are gated at their enemies' fixed level (journal.js battleGate); the listed story gates keep the chapter-number rule. Whichever is higher applies. */
+const chapterGate = n => { const s = GATE_CHAPTERS.includes(n) ? { lv:Math.max(1, Math.round(n*GATE_RATIO)) } : null, b = (typeof battleGate === 'function') ? battleGate(n) : null; return s && b ? (b.lv > s.lv ? b : s) : (s || b); };
 function chapterLevelLock(n){   // '' when open
   if(!G || n <= G.ch) return '';
   const g = chapterGate(n); if(!g) return '';

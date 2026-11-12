@@ -97,12 +97,15 @@ function rGates(){
   const chRows = GATE_CHAPTERS.map(n => { const g = chapterGate(n), why = chapterLevelLock(n);
     const joins = recruitsAtChapter(n).filter(id=>id!=='xiyu').map(first), extra = n===13?'battle':n===20?'milestone':n===39?'Volume 1 finale':'';
     return `<tr><td><b>${chShort(n)}</b><div class="sm">${CHAPTERS[n-1]?CHAPTERS[n-1].title:'not scripted yet'}</div></td><td>Avg Lv ${g.lv}</td><td>${[joins.length?'joins: '+joins.join(', '):'',extra].filter(Boolean).join(' · ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
+  const btRows = CHAPTERS.filter(c => (c.battle || c.lead) && !c.removed).map(c => { const n = c.n, lv = battleLevel(n), why = chapterLevelLock(n);
+    return `<tr><td><b>${chShort(n)}</b><div class="sm">${c.title}</div></td><td>Lv ${lv}</td><td>${(c.battle||[]).map(f => ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(', ')}</td><td>${n<=G.ch?'<span class="gate open">✔ done</span>':why?'<span class="gate shut">'+why+'</span>':'<span class="gate open">open</span>'}</td></tr>`; }).join('');
   const skRows = ROSTER.map(id => `<tr><td><b>${first(id)}</b></td><td>${skillsOf(id).map(s => `${s.icon} ${s.n.replace(/ \(.*/,'')} <span class="gate ${s.ok?'open':'shut'}">${s.req.lvl?'Lv'+s.req.lvl:''}${s.req.flag?'+story':''}</span>`).join('<br>')}</td></tr>`).join('');
   return `<h2>Level gates</h2><div class="sm">Where each party member is gated, from the chapter breakdown. Details: docs/CHAPTER_GATES.md. Your party average is <b>Lv ${gateLv()}</b>.</div>
    <h4>Party members</h4><div class="panel"><table class="gtbl"><tr><th>Hero</th><th>Joins</th><th>Profile</th><th>Gate</th><th></th></tr>${joinRows}</table>
      <div class="sm" style="margin-top:6px">A new member arrives at (party average − 1). Muxue Yan does not join in Volume 1 (he stays at the Ice Temple); Ya'Xing stays behind after ch39.</div></div>
    <h4>Chapter level gates</h4><div class="panel"><table class="gtbl"><tr><th>Chapter</th><th>Needs</th><th>Why</th><th></th></tr>${chRows}</table>
      <div class="sm" style="margin-top:6px">Gated chapters stay locked until the average level of the party is reached. Wilds fights and training give the XP to catch up.</div></div>
+   <h4>Battle chapters (fixed enemy levels)</h4><div class="panel"><div class="sm">Story enemies no longer follow your level. Each battle chapter has a fixed enemy level and needs your party average to reach it; out-levelling a boss makes it easier.</div><table class="gtbl"><tr><th>Chapter</th><th>Enemy level and gate</th><th>Enemies</th><th></th></tr>${btRows}</table></div>
    <h4>Skill gates</h4><div class="panel"><table class="gtbl">${skRows}</table></div>`;
 }
 
@@ -134,6 +137,7 @@ function rChapter(n){
   if(c.battle){
     foot = `<div class="panel"><b>⚔️ Battle</b><div class="sm">${c.battle.map(f=>ENEMIES[f.key].icon+' '+ENEMIES[f.key].n).join(' · ')}</div>
       <div class="sm">Fighting: ${fighterIds(n).map(id=>CHARACTERS[id].icon+' '+first(id)).join(' · ')} (Lv ${fightersLv(n)} average)</div>
+      <div class="sm">Enemy level: <b>Lv ${battleLevel(n)}</b> (fixed). ${fightersLv(n) >= battleLevel(n) ? 'Your fighters are '+(fightersLv(n)-battleLevel(n))+' level'+(fightersLv(n)-battleLevel(n)===1?'':'s')+' above it.' : 'Your fighters are below it: train in the Wilds first.'}</div>
       <button class="pri" onclick="chapterFight(${n})">${done?'Replay battle':'Begin battle'}</button></div>`;
   } else if(c.quest && !done){
     foot = `<div class="panel"><b>🔎 Investigation chapter</b><div class="sm">This chapter is completed by finishing the investigation: The Portrait Without a Face.</div>${G.ch>=58?`<button class="pri" onclick="showTab('bounties')">Open the investigation</button>`:'<div class="sm">Complete the previous chapter first.</div>'}</div>`;

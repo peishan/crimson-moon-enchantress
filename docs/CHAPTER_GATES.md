@@ -71,3 +71,12 @@ Ch 30 note: two panels of its earlier image wrongly showed Dongyue with black ha
 4. **Muxue Yan in Volume 2** — does he join, and where?
 5. **Which casket/chamber is Ao Yun's Resting Place** on the map (matched provisionally to the ch 27 casket chamber).
 6. Gate strictness (avg level = chapter) and the amount of story XP are first-pass.
+
+## Update: fixed enemy levels for story battles (author decision)
+- **Before:** story enemies fought at the party's own average level, so levelling up never made a boss easier.
+- **Now:** every story battle chapter has a **fixed enemy level**, `battleLevel(n) = round(n x 0.6)` (`BATTLE_LV_RATIO` in scripts/journal.js; `BATTLE_LV` can override single chapters), and the chapter is **level-gated at the same number** (party average must reach it). Example: the Waystation Guardian (chapter 186) is level 112; a story-only party arrives at about level 186.
+- The existing story gates (chapters 11, 13, 14, 15, 20, 39, 46, 53, 54, 78: gate = chapter number) are unchanged; where a chapter has both, the higher applies.
+- The chapter screen shows the enemy level and how far above or below it your fighters are; the Gates tab lists every battle chapter with its level.
+- **Dark Shrines** also use fixed levels now: 405 plus 15 per tier (420, 435, 450, 465, 480).
+- Wilds zones, the Trial Ground and the Training Room still follow the party's level (they are for training).
+- **How 0.6 was chosen (scripted play, story-only party, 3 runs per battle, 51 battles):** auto battle with skills 153/153; a party that only attacks and heals 132/153 (at 0.9: 85/153; at 0.75: 105/153; at 0.5: 143/153); attack-only 76/153. The Volume 24 guardian fights (727, 729, 734, 745) still need skills because Ancient Sentinels have high defence.

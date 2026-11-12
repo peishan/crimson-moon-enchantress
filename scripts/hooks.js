@@ -10331,6 +10331,85 @@ const HOOKS = {
 "t": "event",
 "p": false,
 "s": "art"
+},
+{
+"id": "door_entrusted_to_the_one_they_forgot",
+"d": "A door bearing none of the five keeper marks says the truth was entrusted to the one the keepers forgot, and waits for the right key",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"775": [
+{
+"id": "first_keeper_rewrote_the_record_and_a_sixth_figure",
+"d": "The first keeper secretly compiled a separate record: a sixth person stood among the keepers and the record names only five",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"776": [
+{
+"id": "hall_older_than_the_five_anchors",
+"d": "A hall older than the five-anchor sanctuary shows a ritual of uniting, not sealing; something later turned unity into separation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"777": [
+{
+"id": "five_streams_once_a_single_flow",
+"d": "The five streams were once a single flow and the anchors were created later by a deliberate choice; the central figure's face is erased again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"778": [
+{
+"id": "presence_remembers_someone_who_stayed",
+"d": "The presence remembers someone beside it who carried no light and stayed when the others left; one remained beyond the boundary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"779": [
+{
+"id": "silver_white_hand_mark",
+"d": "The second figure reached toward the presence from outside the light; a silver-white open-hand mark appears beneath the mural and the central sentence of the record has been scraped away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"780": [
+{
+"id": "keepers_disagreed_five_keepers_one_consequence",
+"d": "The five keepers could not agree on what to do with the presence; the anchors may be a compromise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"781": [
+{
+"id": "two_proposals_return_or_preserve",
+"d": "The keepers made two proposals, return what was taken or preserve what remains; neither would destroy the presence and neither could be carried alone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"782": [
+{
+"id": "first_keeper_accepted_the_burden_but_not_the_right_to_forget",
+"d": "A solitary keeper accepted responsibility for the outcome; the presence says someone should have asked it",
+"t": "event",
+"p": false,
+"s": "art"
 }
 ]
 };

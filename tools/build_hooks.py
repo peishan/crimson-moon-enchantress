@@ -780,7 +780,15 @@ V2H={
  771:[('erased_records_and_another_archive', "Stone tablets record the sanctuary's original purpose, guardians and lineage, with entries deliberately erased and a reference to another archive", 'event')],
  772:[('name_erased_by_design_to_cut_its_place_from_the_world', "The presence's name was erased by design, from the records and from the crystal, to cut its place from the world", 'event')],
  773:[('fifth_keeper_awake_and_the_choice_between_preservation_and_devastation', "The presence warns the fifth keeper has awakened and the balance will break; whether it brings preservation or devastation depends on the party's choice", 'event')],
- 774:[('older_passage_with_a_fragment_of_the_keeper_mark', 'A hidden passage older than the crystal chamber holds a fragment of the keeper mark and leads to a hall of sealed archives', 'event')],
+ 774:[('older_passage_with_a_fragment_of_the_keeper_mark', 'A hidden passage older than the crystal chamber holds a fragment of the keeper mark and leads to a hall of sealed archives', 'event'), ('door_entrusted_to_the_one_they_forgot','A door bearing none of the five keeper marks says the truth was entrusted to the one the keepers forgot, and waits for the right key','event')],
+ 775:[('first_keeper_rewrote_the_record_and_a_sixth_figure', 'The first keeper secretly compiled a separate record: a sixth person stood among the keepers and the record names only five', 'event')],
+ 776:[('hall_older_than_the_five_anchors', 'A hall older than the five-anchor sanctuary shows a ritual of uniting, not sealing; something later turned unity into separation', 'event')],
+ 777:[('five_streams_once_a_single_flow', "The five streams were once a single flow and the anchors were created later by a deliberate choice; the central figure's face is erased again", 'event')],
+ 778:[('presence_remembers_someone_who_stayed', 'The presence remembers someone beside it who carried no light and stayed when the others left; one remained beyond the boundary', 'event')],
+ 779:[('silver_white_hand_mark', 'The second figure reached toward the presence from outside the light; a silver-white open-hand mark appears beneath the mural and the central sentence of the record has been scraped away', 'event')],
+ 780:[('keepers_disagreed_five_keepers_one_consequence', 'The five keepers could not agree on what to do with the presence; the anchors may be a compromise', 'event')],
+ 781:[('two_proposals_return_or_preserve', 'The keepers made two proposals, return what was taken or preserve what remains; neither would destroy the presence and neither could be carried alone', 'event')],
+ 782:[('first_keeper_accepted_the_burden_but_not_the_right_to_forget', 'A solitary keeper accepted responsibility for the outcome; the presence says someone should have asked it', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

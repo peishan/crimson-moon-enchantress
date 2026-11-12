@@ -770,6 +770,17 @@ V2H={
  761:[('memory_is_not_a_command', 'In the hall of mirrors the group faces choices that might have been and understands that memory is not a command', 'event')],
  762:[('five_anchors_are_a_system_of_balance', 'The fifth keeper: the anchors were never a permanent seal but a system of balance each generation must understand; Xiao Tian will not inherit the duty before knowing the truth', 'event')],
  763:[('prison_contains_the_consequence_not_the_cause', 'The five keepers contained a presence whose original purpose was erased; the prison was built to contain the consequence, not the cause', 'event'), ('someone_has_come_to_ask_what_happened_to_me', 'A cracked crystal holds what remains of the presence, and a sorrowful voice says someone has at last come to ask what happened to it', 'event')],
+ 764:[('presence_says_it_was_contained_and_remembers_five_lights', 'The presence says it was the one who was contained, cannot reach its own name, and remembers five lights and someone who left', 'event')],
+ 765:[('crystal_preserves_what_remains_of_the_presence', 'The crystal is preserving what remains of the presence as well as imprisoning it; damaging it could destroy more than the prison', 'event')],
+ 766:[('five_streams_correct_an_imbalance_and_a_sixth_pattern_appears', 'The five streams have different patterns and constantly correct an imbalance; a faint sixth pattern appears beneath the platform and the presence says the sixth has awakened', 'event')],
+ 767:[('boundary_loosening_gradually', 'The five streams fall out of harmony and the boundary loosens gradually; the presence says it may be the beginning of its release', 'event')],
+ 768:[('presence_remembers_a_place_of_light_and_two_figures', 'The presence remembers a place of light, people who knew it, and two figures reaching for each other', 'event')],
+ 769:[('older_mark_appears_and_the_presence_is_not_struggling', 'An unfamiliar character older than the five keeper marks appears on the crystal; for the first time the presence is not struggling against the prison', 'event')],
+ 770:[('keepers_testament_do_not_mistake_what_we_preserved_for_what_we_feared', 'A sealed testament says: if you have found this, the boundary has begun to fail; do not mistake what we preserved for what we feared', 'event')],
+ 771:[('erased_records_and_another_archive', "Stone tablets record the sanctuary's original purpose, guardians and lineage, with entries deliberately erased and a reference to another archive", 'event')],
+ 772:[('name_erased_by_design_to_cut_its_place_from_the_world', "The presence's name was erased by design, from the records and from the crystal, to cut its place from the world", 'event')],
+ 773:[('fifth_keeper_awake_and_the_choice_between_preservation_and_devastation', "The presence warns the fifth keeper has awakened and the balance will break; whether it brings preservation or devastation depends on the party's choice", 'event')],
+ 774:[('older_passage_with_a_fragment_of_the_keeper_mark', 'A hidden passage older than the crystal chamber holds a fragment of the keeper mark and leads to a hall of sealed archives', 'event')],
 }
 for n,lst in V2H.items():
     H[n]=[{'id':i,'d':d,'t':t,'p':False,'s':'art'} for i,d,t in lst]

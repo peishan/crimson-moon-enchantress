@@ -869,3 +869,6 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Keep hunting (Wilds battles continue automatically)
 - New **🔁 Keep hunting** toggle on the battle screen during an ordinary Wilds hunt (scripts/autobattle.js). After a victory the next hunt in the same area starts by itself after about a second; with Auto battle also on, the party farms an area unattended. It stops by itself when someone has fallen, the party's average HP is under 35%, after a defeat, after 50 hunts in a row, or when it is switched off. Not offered for bosses, trial rounds, story battles or shrines. Setting saved as `G.chain`. Headless test: six hunts chained in 40 seconds, stops on toggle, stops on low HP with a message, and no button outside Wilds hunts.
+
+## New look: Nunito and a jade-and-ink theme
+- The UI no longer shares Tribute's design: **Nunito** replaces Cinzel and Crimson Text everywhere, and the gold-on-plum palette is replaced by **moonlit jade and silver on deep ink-teal** (crimson and blossom pink stay as accents; the --gold* CSS variable names now hold jade). Changes are in styles.css, the theme colour in index.html and manifest.webmanifest. Original stylesheet kept in git history. Check: title, party, journal and battle screens render with the new colours and font.

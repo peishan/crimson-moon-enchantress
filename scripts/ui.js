@@ -284,7 +284,9 @@ function rBattle(){
     else act = `<div class="sm">Choose a target</div><button onclick="B.ui={mode:'menu'};render()">◀ Cancel</button>`;
   }
   if(typeof autoSchedule === 'function') autoSchedule();
-  const auto = (typeof autoButton === 'function' && !B.over) ? `<div class="row" style="margin:4px 0">${autoButton()}${autoOn() ? '<span class="sm"> The party acts by itself; tap to take over.</span>' : ''}</div>` : '';
+  if(typeof chainSchedule === 'function') chainSchedule();
+  const chainBtn = typeof chainButton === 'function' ? chainButton() : '';
+  const auto = (typeof autoButton === 'function' && (!B.over || chainBtn)) ? `<div class="row" style="margin:4px 0">${B.over ? '' : autoButton()}${chainBtn}${autoOn() && !B.over ? '<span class="sm"> The party acts by itself; tap to take over.</span>' : ''}${B.over==='win' && chainBtn && chainOn() ? '<span class="sm"> Next hunt starts in a moment; tap to stop.</span>' : ''}</div>` : '';
   return `<div class="foes">${foes}</div><div class="log">${log}</div><div class="allies">${allies}</div>${auto}<div class="acts">${autoOn() && !B.over ? '' : act}</div>`;
 }
 function doAttack(){ B.ui={mode:'target',kind:'attack',sid:null,cands:alive(B.foes)}; render(); }

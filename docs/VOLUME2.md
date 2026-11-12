@@ -866,3 +866,9 @@ Installed the sheet, cast-card portraits for Zhan Donglin and Zhan Qiumin (cropp
 
 ## Fixed enemy levels for story battles and level gates (author decision)
 - Story enemies no longer follow the party's level: each battle chapter has a fixed enemy level (60% of the chapter number) and is gated at that level. Waystation Guardian (186): level 112 instead of about 186. Dark Shrines: fixed 420-480 by tier. Wilds and training still scale. See docs/CHAPTER_GATES.md for how 0.6 was chosen. Scripted auto battle now wins all 51 story battles (153/153) and all five tested shrines.
+
+## Keep hunting (Wilds battles continue automatically)
+- New **🔁 Keep hunting** toggle on the battle screen during an ordinary Wilds hunt (scripts/autobattle.js). After a victory the next hunt in the same area starts by itself after about a second; with Auto battle also on, the party farms an area unattended. It stops by itself when someone has fallen, the party's average HP is under 35%, after a defeat, after 50 hunts in a row, or when it is switched off. Not offered for bosses, trial rounds, story battles or shrines. Setting saved as `G.chain`. Headless test: six hunts chained in 40 seconds, stops on toggle, stops on low HP with a message, and no button outside Wilds hunts.
+
+## New look: Nunito and a jade-and-ink theme
+- The UI no longer shares Tribute's design: **Nunito** replaces Cinzel and Crimson Text everywhere, and the gold-on-plum palette is replaced by **rose and plum on deep violet** (replaced the first jade attempt at the author's request; crimson and blossom pink stay as accents; the --gold* CSS variable names now hold rose). Changes are in styles.css, the theme colour in index.html and manifest.webmanifest. Original stylesheet kept in git history. Check: title, party, journal and battle screens render with the new colours and font.

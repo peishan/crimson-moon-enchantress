@@ -80,9 +80,11 @@ function shrineDiscover(msgs){
 function shrineUnlock(){ const msgs = ['🕯️ Reports begin to reach Xiyu through her network: concealed ritual sites, far from any clan base, that the temple\'s records and the bell hint at. (Dark Shrines: Bases > Ice Temple Base > Dark Shrines.)']; shrineDiscover(msgs); save(); return msgs; }
 function shrineOnCheckIn(msgs){ if(shrinesOpen() && Math.random() < .3) shrineDiscover(msgs); }
 
+/* Fixed levels (author: bosses no longer follow the party): a shrine's guardians sit at the story-battle level of the unlock chapter plus 15 per tier. */
+const shrineLevel = sh => Math.max(1, Math.round(SHRINE_UNLOCK_CH * (typeof BATTLE_LV_RATIO !== 'undefined' ? BATTLE_LV_RATIO : .6)) + 15*sh.stage);
 function enterShrine(id){
   const s = SH(), sh = shrineById(id); if(!sh || !s.found[id] || s.cleared[id]) return;
-  const lv = Math.max(1, avgPartyLv() + sh.off), pick = () => sh.guard[Math.floor(Math.random()*sh.guard.length)];
+  const lv = shrineLevel(sh), pick = () => sh.guard[Math.floor(Math.random()*sh.guard.length)];
   const normal = k => ({key:k, lv:Math.max(1, lv + Math.floor(Math.random()*3) - 1)});
   const n1 = Math.min(4, 2 + Math.floor(G.active.length/4));
   const first = Array.from({length:n1}, () => normal(pick()));
@@ -163,7 +165,7 @@ function rShrines(){
   const card = sh => { const cl = s.cleared[sh.id], known = s.found[sh.id];
     if(!known) return '';
     return `<div class="card" style="cursor:default"><span class="big">${sh.icon}</span><div class="fl"><b>${sh.n}</b> <span class="sm">${sh.region} · ${sh.where} · ${STAGE_NAMES[sh.stage]}</span><div class="sm">${sh.desc}</div>
-      <div class="sm">Guardians: ${sh.guard.map(k => ENEMIES[k].icon+' '+ENEMIES[k].n).join(', ')}</div>
+      <div class="sm">Guardians (fixed Lv ${shrineLevel(sh)}): ${sh.guard.map(k => ENEMIES[k].icon+' '+ENEMIES[k].n).join(', ')}</div>
       ${cl ? '<div class="sm">✅ Seals silent: searched.</div>' : `<button class="pri" onclick="enterShrine('${sh.id}')">⚔️ Enter the shrine</button>`}</div></div>`; };
   const shr = Object.keys(SHRINE_GROUPS).map(g => { const list = SHRINES.filter(sh => sh.grp === g); const k = list.filter(sh => s.found[sh.id]);
     return `<h4>${SHRINE_GROUPS[g]} (${k.length}/${list.length} found)</h4>${k.length ? k.map(card).join('') : '<div class="sm">'+(g==='unknown' ? 'Its position is concealed until enough clues from the other shrines are gathered ('+STAGE_NEEDS[5]+' shrines searched).' : 'Nothing found here yet.')+'</div>'}`; }).join('');

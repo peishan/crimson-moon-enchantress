@@ -51,6 +51,7 @@ chapterOf(407).battle = [{key:'crimson_stranger'},{key:'lesser_demon'},{key:'les
 chapterOf(469).battle = [{key:'corrupted_beast'}];   // Volume 14 comic 017: the corrupted beast in the fog
 chapterOf(477).battle = [{key:'hooded_attendant'},{key:'hooded_attendant'},{key:'hooded_attendant'}];   // comic 025: the extraction site
 chapterOf(484).battle = [{key:'mountain_demon'}];   // comic 032: the four channels
+chapterOf(745).battle = [{key:'ward_sentinel'},{key:'ancient_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 022: the stone guardians of the second anchor (battle added by the game)
 chapterOf(734).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 011: the stone guardians of the ravine (battle added by the game)
 chapterOf(727).battle = [{key:'demonic_beast'},{key:'demonic_beast'},{key:'demonic_beast'}];   // Volume 24 comic 004: the corrupted spirit beasts (battle added by the game)
 chapterOf(729).battle = [{key:'ancient_sentinel'},{key:'ward_sentinel'}];   // Volume 24 comic 006: the shrine's guardian construct (battle added by the game)
@@ -71,8 +72,15 @@ function fightersLv(n){
   const ids = fighterIds(n).filter(id => G.party.includes(id));
   return ids.length ? Math.round(ids.reduce((a,id) => a + U(id).lv, 0)/ids.length) : avgPartyLv();
 }
+/* STORY BATTLES HAVE FIXED LEVELS (author): the enemies of chapter n no longer follow the party's level. Their level is battleLevel(n) and the chapter
+   is level-gated at the same number (core.js chapterGate), so a party that out-levels a boss finds it easier and an under-levelled party is told to train first.
+   A story-only player (one level per chapter) arrives at chapter n at about level n, so BATTLE_LV_RATIO < 1 leaves a margin. BATTLE_LV overrides single chapters. */
+let BATTLE_LV_RATIO = 0.6;   // tuned by scripted play: at 0.6 a party that only attacks and heals wins most story battles; with skills it is comfortable
+const BATTLE_LV = {};
+const battleLevel = n => Math.max(1, BATTLE_LV[n] !== undefined ? BATTLE_LV[n] : Math.round(n*BATTLE_LV_RATIO));
+const battleGate = n => { const c = n>=1 && n<=LAST_CHAPTER ? chapterOf(n) : null; return c && (c.battle || c.lead) ? { lv:battleLevel(n), battle:true } : null; };
 function battleSpecFor(n){
-  const c = chapterOf(n), lv = Math.max(1, fightersLv(n));
+  const c = chapterOf(n), lv = battleLevel(n);
   if(c.lead) return v7ConfrontationSpec(lv, { rewards:true, chapter:n, firstClear:!chapterDone(n), onWin:() => completeChapter(n) });
   return { foes:c.battle.map(f => ({key:f.key, lv})), allies:SOLO[n], rewards:true, chapter:n, firstClear:!chapterDone(n),
            onWin: () => completeChapter(n) };

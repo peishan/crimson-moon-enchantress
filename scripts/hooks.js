@@ -10023,6 +10023,216 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"743": [
+{
+"id": "first_keeper_became_the_boundary",
+"d": "The first keeper did not die: the first keeper became the boundary; the balance was broken by the keeper's choice, not the prisoner's escape",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "gallery_of_former_keepers",
+"d": "A gallery of former keepers records that some served willingly and others were appointed after the previous keeper vanished",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"744": [
+{
+"id": "repair_the_five_outer_anchors_first",
+"d": "The voice that is now the boundary says the five outer anchors must be repaired before the inner seal can be reached",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"745": [
+{
+"id": "second_anchor_in_the_mountain_sanctuary",
+"d": "The second anchor is found in an old mountain sanctuary, still active but badly cracked; its guardian forbids any successor to touch it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"746": [
+{
+"id": "mountain_trial_is_restoration",
+"d": "The mountain's trial is restoration: the group returns the pillars to their places and the mountain symbol appears on Xiao Tian's hand",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"747": [
+{
+"id": "one_who_bears_the_token_must_choose_to_remember",
+"d": "In the mountain's memory hall Xiao Tian sees a figure with an identical token; the guardian says the one who bears the token must choose whether to remember",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"748": [
+{
+"id": "third_anchor_drained_by_the_roots",
+"d": "The third anchor is a crystal in an ancient tree whose roots are draining it; the forest guardian demands proof of intent",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"749": [
+{
+"id": "save_the_heart_without_harming_the_roots",
+"d": "The forest guardian is itself being hurt by the corruption and asks the party to save the heart without harming the roots",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "foreign_energy_purged_from_the_third_anchor",
+"d": "The group purges a foreign energy attached to the third anchor without harming the forest; the guardian says they helped it remember its own strength",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"750": [
+{
+"id": "third_keeper_stayed_to_protect_the_forest",
+"d": "The third keeper did not abandon the forest: they stayed to protect it as dark energy spread from beyond",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"751": [
+{
+"id": "foreign_root_entwined_with_the_third_anchor",
+"d": "A blackened root that does not belong to the forest has entwined itself with the third anchor; severing it carelessly may kill the forest's heart",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"752": [
+{
+"id": "you_carry_the_keepers_mark",
+"d": "A shadowed figure tells Xiao Tian he carries the keeper's mark but does not remember what he inherited, and to ask the first keeper what they chose to hide",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"753": [
+{
+"id": "watchtower_of_the_fourth_anchor",
+"d": "The fourth anchor's mark points to an ancient watchtower with no living guardian; a figure watches the party approach",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"754": [
+{
+"id": "fourth_keeper_chose_to_remain",
+"d": "A cloaked figure says the fourth keeper did not disappear but chose to remain, guarding something far more dangerous than the anchor",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"755": [
+{
+"id": "fourth_keepers_attendant_and_the_duty",
+"d": "The fourth keeper's former attendant says the keeper entered the inner seal willingly and that the keepers left a duty someone must decide whether to inherit",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"756": [
+{
+"id": "sixth_symbol_at_the_centre_of_the_anchors",
+"d": "Xiao Tian's token reveals a sixth symbol at the centre of the anchor map; the inner seal is weakening",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"757": [
+{
+"id": "central_seal_final_safeguard_and_the_choice",
+"d": "The sixth symbol is the first keeper's final safeguard; the voice offers a choice: preserve the prison and sacrifice what remains, or open the way",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"758": [
+{
+"id": "central_seal_stabilised_with_the_keepers_weapon",
+"d": "The group stabilises the central seal for a time with the ancient weapon on the keeper's seat, without activating the sixth symbol",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"759": [
+{
+"id": "fifth_anchor_in_the_sanctuary_of_the_keepers",
+"d": "The fifth anchor lies in the Sanctuary of the Keepers, protected only by a trial of intentions; the attendant gives Xiao Tian a golden fragment of the first keeper",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"760": [
+{
+"id": "power_may_open_the_way_only_understanding_may_pass",
+"d": "The bronze token and the golden fragment open the final gate: power may open the way, only understanding may let you pass",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"761": [
+{
+"id": "memory_is_not_a_command",
+"d": "In the hall of mirrors the group faces choices that might have been and understands that memory is not a command",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"762": [
+{
+"id": "five_anchors_are_a_system_of_balance",
+"d": "The fifth keeper: the anchors were never a permanent seal but a system of balance each generation must understand; Xiao Tian will not inherit the duty before knowing the truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"763": [
+{
+"id": "prison_contains_the_consequence_not_the_cause",
+"d": "The five keepers contained a presence whose original purpose was erased; the prison was built to contain the consequence, not the cause",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "someone_has_come_to_ask_what_happened_to_me",
+"d": "A cracked crystal holds what remains of the presence, and a sorrowful voice says someone has at last come to ask what happened to it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -25,7 +25,7 @@ const GATE_CHAPTERS = [11, 13, 14, 15, 20, 39, 46, 53, 54, 78];   // 53 = Xining
 const VOLUME1_CHAPTERS = 39;
 /* VOLUME 2 uses internal chapter numbers 40+ so the level curve, gates, hooks and saves just keep counting: Vol 2 comic 001 = chapter 40.
    Art: assets/comics/v2/chNN.webp (NN = the Volume 2 comic number). Built so far: V2 comics 001-009 and 015 (010-014 are placeholders so the story can reach 015). */
-const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, VOL16_START = 544, VOL17_START = 574, VOL18_START = 586, VOL19_START = 598, VOL20_START = 624, VOL21_START = 651, VOL22_START = 676, VOL23_START = 701, VOL24_START = 724, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 742;
+const VOL2_START = 40, VOL3_START = 79, VOL4_START = 117, VOL5_START = 169, YX_START = 199, XC_START = 204, VOL6_START = 209, VOL7_START = 238, VOL8_START = 268, VOL9_START = 302, VOL10_START = 331, VOL11_START = 353, VOL12_START = 385, VOL13_START = 425, VOL14_START = 453, VOL15_START = 508, VOL16_START = 544, VOL17_START = 574, VOL18_START = 586, VOL19_START = 598, VOL20_START = 624, VOL21_START = 651, VOL22_START = 676, VOL23_START = 701, VOL24_START = 724, V3_END_CH = 107, V3_LAST_OLD_CH = 116, V4_END_CH = 141, V4_LAST_OLD_CH = 168, LAST_CHAPTER = 763;
 const skipRemoved = n => (n > V3_END_CH && n < V3_LAST_OLD_CH) ? V3_LAST_OLD_CH : (n > V4_END_CH && n < V4_LAST_OLD_CH) ? V4_LAST_OLD_CH : n;
    // Volume 5 side stories (Interludes) follow the finale: Ya'Xing 194-198, Xiyu & Cangyuan from 199
 const interOf = n => n >= VOL6_START ? null : n >= XC_START ? 'xc' : n >= YX_START ? 'yx' : null;
@@ -87,7 +87,8 @@ const portrait = id => 'assets/party/'+id+portraitVariant(id)+'.webp';
 function gateLv(){   // mean level of the real party members
   return G.party.length ? Math.round(G.party.reduce((a,id) => a + U(id).lv, 0)/G.party.length) : 1;
 }
-const chapterGate = n => GATE_CHAPTERS.includes(n) ? { lv:Math.max(1, Math.round(n*GATE_RATIO)) } : null;
+/* Battle chapters are gated at their enemies' fixed level (journal.js battleGate); the listed story gates keep the chapter-number rule. Whichever is higher applies. */
+const chapterGate = n => { const s = GATE_CHAPTERS.includes(n) ? { lv:Math.max(1, Math.round(n*GATE_RATIO)) } : null, b = (typeof battleGate === 'function') ? battleGate(n) : null; return s && b ? (b.lv > s.lv ? b : s) : (s || b); };
 function chapterLevelLock(n){   // '' when open
   if(!G || n <= G.ch) return '';
   const g = chapterGate(n); if(!g) return '';

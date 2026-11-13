@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['base','🏠 Bases'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Simulation'],
+const TABS = [['journal','📖 Journal'],['rewards','🎁 Rewards'],['base','🏠 Bases'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Simulation'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 const NPC_NAMES = {yihai:'🚢 Zhan Yihai', mingyue:'🌸 Ming Yue', yunhe:'🌿 Yun He', yunlong:'🌿 Yun Long'};
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
@@ -25,8 +25,8 @@ function render(){
   if(typeof renderTracker === 'function') renderTracker();
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='base' || baseOpen()) && (k!=='bounties' || (bountyBoardOpen() && !baseOpen())) && (k!=='confidants' || relationsOpen()) && (k!=='board' || (boardOpen() && !baseOpen())) && (k!=='herbal' || herbalOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, base:rBase, party:rParty, gates:rGates, wilds:rWilds, inns:rInns, herbal:rHerbalism, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='base' || baseOpen()) && (k!=='bounties' || (bountyBoardOpen() && !baseOpen())) && (k!=='confidants' || relationsOpen()) && (k!=='board' || (boardOpen() && !baseOpen())) && (k!=='herbal' || herbalOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}${k==='rewards' && rewardsReady() ? ' 🔴' : ''}</button>`).join('');
+  const R = { journal:rJournal, rewards:rRewards, base:rBase, party:rParty, gates:rGates, wilds:rWilds, inns:rInns, herbal:rHerbalism, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 

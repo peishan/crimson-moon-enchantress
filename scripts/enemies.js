@@ -246,6 +246,6 @@ function brew(out){
   return 'Brewed '+ITEMS[out].icon+' '+ITEMS[out].n+'.';
 }
 function buyItem(k){
-  const p = SHOP[k]; if(!p || G.gold < p) return false;
+  const p = SHOP[k] && shopPrice(k); if(!p || G.gold < p || !shopOpen()) return false;
   G.gold -= p; G.inv[k] = (G.inv[k]||0)+1; save(); return true;
 }

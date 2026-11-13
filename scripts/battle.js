@@ -303,11 +303,12 @@ function battleUseItem(u, k, t){
 function finishWin(){
   const foes = B.foes, spec = B.spec;
   let xp = 0, gold = 0; const drops = [];
-  foes.forEach(f => { xp += f.xp; gold += f.gold; f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); G.bestiary[f.key] = (G.bestiary[f.key]||0)+1; });
+  foes.forEach(f => { xp += f.xp; gold += f.gold; f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); if(!spec.sim) G.bestiary[f.key] = (G.bestiary[f.key]||0)+1; });
   const caught = foes.filter(f => f.subdued && !f.boss);   // Su Liechen's Subdue, Not Slay: captured alive, drops rolled twice
   caught.forEach(f => { f.drops.forEach(d => { if(Math.random()<d.chance) drops.push({id:d.id,qty:1}); }); xp += Math.round(f.xp*.25); });
   const boss = foes.find(f => f.boss);
-  if(boss) rollLoot(LOOT[boss.key], spec.firstClear).forEach(d => drops.push(d));
+  if(spec.sim){ drops.length = 0; xp = Math.round(xp*SIM_XP); gold = Math.round(gold*SIM_GOLD); }
+  else if(boss) rollLoot(LOOT[boss.key], spec.firstClear).forEach(d => drops.push(d));
   if(typeof fieldGoldMult === 'function') gold = Math.round(gold * fieldGoldMult(B.allies));   // Xiao Tian's field proficiency
   B.rewards = { xp, gold, drops, msgs:[], real:!!spec.rewards };
   if(caught.length) blog('🕸️ Captured alive: '+caught.map(f => f.name).join(', ')+' (extra drops and XP).','good');
@@ -320,8 +321,8 @@ function finishWin(){
   G.gold += gold; addItems(drops); G.wins = (G.wins||0)+1;
   if(spec.onWin) B.rewards.msgs = B.rewards.msgs.concat(spec.onWin() || []);
   if(typeof personalOnWin === 'function') personalOnWin(act);   // field proficiency and shared danger
-  if(typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
-  if(typeof networkOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(networkOnWin(foes, spec.zone));   // Xiyu's investigation network: hunting adds progress and leads
+  if(!spec.sim && typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
+  if(!spec.sim && typeof networkOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(networkOnWin(foes, spec.zone));   // Xiyu's investigation network: hunting adds progress and leads
   save();
 }
 

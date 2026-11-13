@@ -84,6 +84,7 @@ function shrineOnCheckIn(msgs){ if(shrinesOpen() && Math.random() < .3) shrineDi
 const shrineLevel = sh => Math.max(1, Math.round(SHRINE_UNLOCK_CH * (typeof BATTLE_LV_RATIO !== 'undefined' ? BATTLE_LV_RATIO : .6)) + 15*sh.stage);
 function enterShrine(id){
   const s = SH(), sh = shrineById(id); if(!sh || !s.found[id] || s.cleared[id]) return;
+  if(where() !== 'world'){ flash = ['The shrines lie out in the world. The party is at '+WHERE_NAME[where()]+'.']; render(); return; }
   const lv = shrineLevel(sh), pick = () => sh.guard[Math.floor(Math.random()*sh.guard.length)];
   const normal = k => ({key:k, lv:Math.max(1, lv + Math.floor(Math.random()*3) - 1)});
   const n1 = Math.min(4, 2 + Math.floor(G.active.length/4));

@@ -65,7 +65,7 @@ function mkContract(tpl){
 function boardList(){
   const b = BD(); if(b.list.day === G.day && b.list.items.length) return b.list.items;
   const taken = new Set(BD().active.map(q => q.tpl)), tier = renownTier();
-  const pool = CONTRACTS.filter(t => !taken.has(t.id) && t.tier <= tier && (!t.zone || zoneOpen(zoneById(t.zone))));
+  const pool = CONTRACTS.filter(t => !taken.has(t.id) && t.tier <= tier && (!t.zone || zoneHere(zoneById(t.zone))));
   b.list = { day:G.day, items:pool.sort(() => Math.random()-.5).slice(0, BOARD_SIZE).map(mkContract) };
   return b.list.items;
 }
@@ -92,7 +92,7 @@ function turnInContract(i){
 
 /* bounty board: targets from open zones, refreshed every BOUNTY_REFRESH_DAYS days; pays out on its own when you finish the hunt */
 function bountyKeys(){
-  const keys = new Set(); ZONES.filter(zoneOpen).forEach(z => { z.pool.forEach(k => keys.add(k)); });
+  const keys = new Set(); ZONES.filter(zoneHere).forEach(z => { z.pool.forEach(k => keys.add(k)); });
   return Array.from(keys).filter(k => ENEMIES[k] && !ENEMIES[k].boss);
 }
 function refreshBountyBoard(force){

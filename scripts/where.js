@@ -48,16 +48,17 @@ const shopTitle = () => where() === 'world' ? 'Road peddler (a little dearer)' :
 function travelTo(dest){
   const w = where();
   if(dest === w) return ['The party is already there.'];
+  const mark = k => { G.visitedWhere = G.visitedWhere || {}; if(!G.visitedWhere[k]){ G.visitedWhere[k] = 1; if(typeof chronicle === 'function') chronicle(k === 'boat' ? 'Sailed Xiyu\'s boat home across the water.' : 'First crossing by the Ice Temple token.', k === 'boat' ? '⛵' : '❄️'); } };
   if(!(G.inv && G.inv.ice_temple_token)) return ['They have no way back yet.'];
   if(dest === 'icetemple'){
-    if(w === 'world'){ G.travel = G.travel || {at:null, back:null}; G.travel.back = {ch:G.ch, loc:hereLabel()}; G.travel.at = 'ice_temple'; G.where = 'icetemple'; save();
+    if(w === 'world'){ G.travel = G.travel || {at:null, back:null}; G.travel.back = {ch:G.ch, loc:hereLabel()}; G.travel.at = 'ice_temple'; G.where = 'icetemple'; mark('icetemple'); save();
       return ['❄️ The token glows and the party arrives at the Ice Temple. (Last departed from: '+G.travel.back.loc+'.)']; }
     advanceTime(5); G.where = 'icetemple'; if(G.travel) G.travel.at = 'ice_temple'; save();
     return ['⛵ Xiyu\'s boat crosses from Muxue to the Ice Temple landing. About five hours pass: '+timeLabel()+'.'];
   }
   if(dest === 'muxue'){
     if(w !== 'icetemple') return ['From out in the world the party must first use the token to reach the Ice Temple, then take the boat.'];
-    advanceTime(5); G.where = 'muxue'; if(G.travel) G.travel.at = null; save();
+    advanceTime(5); G.where = 'muxue'; if(G.travel) G.travel.at = null; mark('boat'); save();
     return ['⛵ Xiyu\'s boat crosses from the Ice Temple landing to Muxue. About five hours pass: '+timeLabel()+'. The Crimson Fairy is in sight.'];
   }
   if(dest === 'world'){

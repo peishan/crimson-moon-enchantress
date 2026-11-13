@@ -98,7 +98,7 @@ function enterShrine(id){
 function shrineWin(id){
   const s = SH(), sh = shrineById(id), msgs = ['🕯️ The seals of '+sh.n+' fall silent.'];
   if(s.cleared[id]) return msgs;
-  s.cleared[id] = true;
+  s.cleared[id] = true; if(typeof chronicle === 'function') chronicle('Cleared the shrine '+(shrineById(id)||{n:'of the Dark Shrines'}).n+'.', '⛩️');
   const got = s.frags[id] || [];
   got.forEach(f => s.pool.push({fid:f.fid, shrine:id, cmd:f.cmd, type:f.type, ident:false}));
   const left = SHRINES.filter(x => !s.cleared[x.id]).length; if(!got.length) msgs.push('The chamber holds only guardians and old seals, but the carvings add to the party\'s clues.');

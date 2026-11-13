@@ -895,3 +895,7 @@ After the time portal (chapter 169) Xiyu's party is no longer on Muxue Island, s
 - **The Crimson Fairy** (free bed and shop) is only reachable on Muxue. In the world the party pays at the Wayside Inn and buys from a road peddler (+25%).
 - **Travel**: the token links world and Ice Temple; Xiyu's boat links Ice Temple and Muxue (5 hours). From Muxue to the world, or the reverse, goes through the Ice Temple. Shrines require the world.
 - **Simulation tab** (was Training): areas the party is not standing in can be conjured: beasts and lesser bosses of any opened area, 50% XP, 25% gold, no drops, herbs, bestiary or board progress. The sandbox Training Room is still below. Ice Temple sparring and services still require being at the Ice Temple.
+
+## Skirmish, Echoes, Deeds and Chronicle (from Tribute's design)
+
+scripts/extras.js. **Skirmish** tab: random mixed fights from every area within reach (location system), Normal/Hard/Brutal tiers and a win streak; Keep hunting chains skirmishes. **Echoes** (same tab): a beaten Wilds boss can be met again a few levels higher for its loot, two zone materials and gold. **Deeds & Chronicle** tab: 57 reward-free deeds (unearned show ???) and a permanent log (volumes, bosses, shrines, travel, echoes, deeds). The quest tracker already existed.

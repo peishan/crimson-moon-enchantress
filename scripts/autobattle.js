@@ -54,7 +54,7 @@ const autoButton = () => `<button class="${autoOn()?'pri':''}" onclick="autoTogg
 const CHAIN_MIN_HP = .35, CHAIN_MAX = 50;
 let chainTimer = null, chainCount = 0;
 const chainOn = () => !!(G && G.chain);
-const chainable = () => !!(B && B.spec && B.spec.zone);
+const chainable = () => !!(B && B.spec && (B.spec.zone || B.spec.skirm));
 function chainToggle(){ G.chain = !G.chain; if(!G.chain){ clearTimeout(chainTimer); chainTimer = null; chainCount = 0; } save(); render(); }
 function chainStopReason(){
   if(B.allies.some(a => a.dead)) return 'someone has fallen';
@@ -67,9 +67,9 @@ function chainStopReason(){
 function chainNext(){
   chainTimer = null;
   if(!B || B.over !== 'win' || !chainOn() || !chainable() || tab !== 'battle') return;
-  const zone = B.spec.zone, why = chainStopReason();
+  const zone = B.spec.zone, B0skirm = !!B.spec.skirm, why = chainStopReason();
   if(why){ chainCount = 0; flash = ['🔁 Keep hunting stopped: '+why+'. Rest, then hunt again.']; battleDone(); return; }
-  chainCount++; battleDone(); wildFight(zone);
+  chainCount++; battleDone(); if(B0skirm){ origin = 'skirmish'; if(startSkirmish()) tab = 'battle'; render(); } else wildFight(zone);
 }
 /* called from rBattle */
 function chainSchedule(){

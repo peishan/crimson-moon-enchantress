@@ -110,14 +110,21 @@ function rGates(){
 }
 
 /* ---------------- JOURNAL ---------------- */
+let jOpenVol = {};   // which finished or future volumes are unfolded in the journal
 function rJournal(){
   if(openCh!==null) return rChapter(openCh);
-  const rows = CHAPTERS.filter(c => !c.removed).map(c => (c.n===VOL25_START ? `<h4>Volume 25 · The One Who Was Forgotten</h4>` : c.n===VOL24_START ? `<h4>Volume 24 · The Fifth Position</h4>` : c.n===VOL23_START ? `<h4>Volume 23 · The Price of a Good Name</h4>` : c.n===VOL22_START ? `<h4>Volume 22 · The Voyage Remembered</h4>` : c.n===VOL21_START ? `<h4>Volume 21 · Beneath the Frozen Archives</h4>` : c.n===VOL20_START ? `<h4>Volume 20 · The Muxue Legacy</h4>` : c.n===VOL19_START ? `<h4>Volume 19 · Xiao Tian\'s Hidden Legacy</h4>` : c.n===VOL18_START ? `<h4>Volume 18 · Yihai\'s Rescue</h4>` : c.n===VOL17_START ? `<h4>Volume 17 · The Shadows of Yilong</h4>` : c.n===VOL16_START ? `<h4>Volume 16 · The Hidden Tracks</h4>` : c.n===VOL15_START ? `<h4>Volume 15 · The Missing Voyage</h4>` : c.n===VOL14_START ? `<h4>Volume 14 · The Demon Hunter\'s Trail</h4>` : c.n===VOL13_START ? `<h4>Volume 13 · The Witch of Zhan Manor</h4>` : c.n===VOL12_START ? `<h4>Volume 12 · A Healer's Journey</h4>` : c.n===VOL11_START ? `<h4>Volume 11 · The Thousand-Mile Frontier</h4>` : c.n===VOL10_START ? `<h4>Volume 10 · The Sanctuary of Silent Strings</h4>` : c.n===VOL9_START ? `<h4>Volume 9 · A Season Between Journeys</h4>` : c.n===VOL8_START ? `<h4>Volume 8 · The Strings of a Forgotten Promise</h4>` : c.n===VOL7_START ? `<h4>Volume 7 · The Ruins That Remember</h4>` : c.n===VOL6_START ? `<h4>Volume 6 · The Unknown World</h4>` : c.n===XC_START ? `<h4>Interlude · Xiyu &amp; Cangyuan</h4>` : c.n===YX_START ? `<h4>Interlude · Ya'Xing</h4>` : c.n===VOL5_START ? `<h4>Volume 5 · The Ice Temple: The Truth Left Behind</h4>` : c.n===VOL4_START ? `<h4>Volume 4 · The Ice Temple</h4>` : c.n===VOL3_START ? `<h4>Volume 3 · The Roots of What Remains</h4>` : c.n===VOL2_START ? `<h4>Volume 2 · The Island That No Longer Feels Like Home</h4>` : c.n===1 ? `<h4>Volume 1 · The Long Awaited Love Is Not a Dream</h4>` : '') + (() => {
-    const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
+  const row = c => { const done = chapterDone(c.n), avail = chapterAvailable(c.n), next = c.n===G.ch+1, lock = next ? chapterLevelLock(c.n) : '';
     const joins = recruitsAtChapter(c.n).filter(id=>id!=='xiyu').map(first);
     return `<div class="card ${avail?'':'lock'} ${next?'cur':''}" onclick="${avail?`openChapter(${c.n})`:''}"><div class="fl"><b>${vnum(c.n)}. ${avail||next?c.title:'???'}</b>
-      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${c.pending?' · ⚠️ script pending':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; })()).join('');
-  return `<h2>Chapter Journal</h2><div class="sm">Chapters unlock in order. Each gives story XP; some also need an average party level.</div>${ritualPanel()}${rows}`;
+      <div class="sm">${done?'✔ Complete':avail?'Available':lock?lock:'Locked'}${c.battle?' · ⚔️ battle':''}${c.pending?' · ⚠️ script pending':''}${joins.length?' · ★ '+joins.join(', ')+' joins':''}</div></div></div>`; };
+  const groups = [];
+  CHAPTERS.filter(c => !c.removed).forEach(c => { const v = volOf(c.n); let g = groups[groups.length-1]; if(!g || g.v !== v){ g = {v, list:[]}; groups.push(g); } g.list.push(c); });
+  const rows = groups.map(g => {
+    const allDone = g.list.every(c => chapterDone(c.n)), ahead = !allDone && g.list[0].n > G.ch+1, open = (!allDone && !ahead) || !!jOpenVol[g.v];
+    const first = vnum(g.list[0].n), last = vnum(g.list[g.list.length-1].n), done = g.list.filter(c => chapterDone(c.n)).length;
+    const head = `<div class="card jarc" onclick="jOpenVol[${g.v}]=!jOpenVol[${g.v}];render()"><div class="fl"><b>${allDone || ahead ? (open?'▾':'▸') : '📖'} ${ahead ? '🔒 ' : ''}Volume ${g.v} · ${(typeof VOL_NAMES!=='undefined' && VOL_NAMES[g.v]) || ''}</b><div class="sm">${g.list.length} chapters · ${allDone ? '✔ all complete' : ahead ? 'not reached yet' : done+'/'+g.list.length+' complete'}</div></div></div>`;
+    return head + (open ? g.list.map(row).join('') : ''); }).join('');
+  return `<h2>Chapter Journal</h2><div class="sm">Chapters unlock in order. Each gives story XP; some also need an average party level. Finished and future volumes fold away: tap one to open it.</div>${ritualPanel()}${rows}`;
 }
 function openChapter(n){ openCh = n; render(); if(!G.read[n] && !chapterDone(n)) openStory(n); }
 function closeChapter(){ openCh = null; render(); }

@@ -137,6 +137,7 @@ const iceAwayPanel = () => `<div class="panel"><b>❄️ The party is not at the
 function rIceSection(k){
   if(k === 'shrines') return rShrines();
   if(k.indexOf('violet') === 0 && typeof rVioletSection === 'function') return rVioletSection(k);
+  if((k.indexOf('yilong_') === 0 || k.indexOf('muxue_') === 0) && typeof rHouseSection === 'function') return rHouseSection(k);
   if(!iceHere()) return iceAwayPanel();
   if(k === 'market'){
     const kdone = G.bondDay && G.bondDay.kitchen === G.day;

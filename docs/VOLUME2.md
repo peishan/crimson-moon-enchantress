@@ -899,3 +899,7 @@ After the time portal (chapter 169) Xiyu's party is no longer on Muxue Island, s
 ## Skirmish, Echoes, Deeds and Chronicle (from Tribute's design)
 
 scripts/extras.js. **Skirmish** tab: random mixed fights from every area within reach (location system), Normal/Hard/Brutal tiers and a win streak; Keep hunting chains skirmishes. **Echoes** (same tab): a beaten Wilds boss can be met again a few levels higher for its loot, two zone materials and gold. **Deeds & Chronicle** tab: 57 reward-free deeds (unearned show ???) and a permanent log (volumes, bosses, shrines, travel, echoes, deeds). The quest tracker already existed.
+
+## Yilong base = Violet Base; guests; Muxue staff
+
+The Yilong base (opens chapter 429) and the Violet Base are one place: Xiyu's operational base with hired staff (Zi Lan, Lin Yue, Su He, Bai Zhi, Qing Luo, Feng Rui), standing orders from 429. It is separate from the Zhan Manor. **Guests** may reside (4 rooms) with nothing required of either side: no fee, upkeep or favours; they arrive at the daily check-in and leave on their own or when you say goodbye (`addGuest()` for story guests). **Zhan Donglin** is shown as caretaker from Volume 15 (chapter 508, provisional). **Muxue base / Crimson Fairy** has a Staff tab (scripts/households.js, `MUXUE_STAFF`), seeded with Sister Qing only: the author's list of people who work for Xiyu goes in that table. Income from Muxue Yan's inheritance is left for later.

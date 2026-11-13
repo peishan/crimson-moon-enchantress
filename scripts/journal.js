@@ -104,7 +104,8 @@ function completeChapter(n){
   giveChapterGear(n).forEach(m => msgs.push(m));
   if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
   if(n === 661 && typeof arriveIceTemple === 'function') arriveIceTemple();
-  if(n === 675){ G.travel = {at:null, back:null}; if(typeof shrineUnlock === 'function') shrineUnlock().forEach(x => msgs.push(x)); }
+  if(n === LEAVE_CH) G.where = 'world';
+  if(n === 675){ G.travel = {at:null, back:null}; G.where = 'world'; if(typeof shrineUnlock === 'function') shrineUnlock().forEach(x => msgs.push(x)); }
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });
   G.day++;   // story time passes between chapters
   if(n === YX_REST_CH) G.yxRest = G.day;   // Ya'Xing needs one more game day of rest before he can party (core.js yxCheck)
@@ -134,7 +135,7 @@ function setHooks(n){ G.hooks = G.hooks || {}; (HOOKS[n]||[]).forEach(h => { if(
 
 // DEV: jump the save to "story at chapter n" (recruits, flags, levels, ritual, away heroes)
 function devSetChapter(n){
-  G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
+  G.where = undefined; G.ch = 0; G.flags = {}; G.read = {}; G.party = ['xiyu']; G.active = ['xiyu']; G.ritual = {left:null, done:false}; G.away = {}; G.hooks = {}; G.rel = {}; G.convo = {}; G.xt = {wins:0}; G.shared = {}; G.board = {active:[], list:{day:0, items:[]}, bounties:{day:0, list:[]}, done:0, renown:0};
   for(let i=1;i<=n;i++){ G.ch = i; recruitsAtChapter(i).forEach(id => recruit(id)); (CH_FLAGS[i]||[]).forEach(f => G.flags[f]=true); applyStoryStates(i); setHooks(i); relStory(i); }
   for(let i=1;i<=n;i++) giveChapterGear(i, true);
   if(n >= YX_REST_CH && G.away.yaxing) G.yxRest = G.day;
@@ -143,7 +144,7 @@ function devSetChapter(n){
   if(n >= 78) relationshipUnlock();
   if(n >= 664 && typeof yqUnlock === 'function') yqUnlock();
   if(n >= 661 && n < 675 && typeof arriveIceTemple === 'function') arriveIceTemple();
-  if(n >= 675){ G.travel = G.travel || {at:null, back:null}; G.travel.at = null; }   // the dev jump skips the finale splash
+  if(n >= 675){ G.travel = G.travel || {at:null, back:null}; G.travel.at = null; G.where = 'world'; }   // the dev jump skips the finale splash
   G.bounty = {red:{stage: n>=54 ? 5 : 0}, rep:{day:0, done:[]}, count:0}; G.quest = {ward:{}};
   if(n>=59){ ['gallery','record','seal','safe'].forEach(k => G.quest.ward[k] = true); G.flags.portrait_gallery_examined = G.flags.departure_record_fragment_found = G.flags.cangyuan_past_clue_found = true; G.flags.second_door_open = false; G.flags.ruyue_identity_confirmed = false; }
   const target = Math.max(1, Math.round(1 + n*STORY_PACE));

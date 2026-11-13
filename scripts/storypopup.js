@@ -15,7 +15,7 @@ async function comicPages(n){
   if(PAGE_CACHE[n]) return PAGE_CACHE[n];
   const pages = [];
   for(let i=1;i<=40;i++){
-    const src = (n>=VOL24_START ? 'assets/comics/v24/ch'+pad2(vnum(n)) : n>=VOL23_START ? 'assets/comics/v23/ch'+pad2(vnum(n)) : n>=VOL22_START ? 'assets/comics/v22/ch'+pad2(vnum(n)) : n>=VOL21_START ? 'assets/comics/v21/ch'+pad2(vnum(n)) : n>=VOL20_START ? 'assets/comics/v20/ch'+pad2(vnum(n)) : n>=VOL19_START ? 'assets/comics/v19/ch'+pad2(vnum(n)) : n>=VOL18_START ? 'assets/comics/v18/ch'+pad2(vnum(n)) : n>=VOL17_START ? 'assets/comics/v17/ch'+pad2(vnum(n)) : n>=VOL16_START ? 'assets/comics/v16/ch'+pad2(vnum(n)) : n>=VOL15_START ? 'assets/comics/v15/ch'+pad2(vnum(n)) : n>=VOL14_START ? 'assets/comics/v14/ch'+pad2(vnum(n)) : n>=VOL13_START ? 'assets/comics/v13/ch'+pad2(vnum(n)) : n>=VOL12_START ? 'assets/comics/v12/ch'+pad2(vnum(n)) : n>=VOL11_START ? 'assets/comics/v11/ch'+pad2(vnum(n)) : n>=VOL10_START ? 'assets/comics/v10/ch'+pad2(vnum(n)) : n>=VOL9_START ? 'assets/comics/v9/ch'+pad2(vnum(n)) : n>=VOL8_START ? 'assets/comics/v8/ch'+pad2(vnum(n)) : n>=VOL7_START ? 'assets/comics/v7/ch'+pad2(vnum(n)) : n>=VOL6_START ? 'assets/comics/v6/ch'+pad2(vnum(n)) : n>=XC_START ? 'assets/comics/i2/ch'+pad2(vnum(n)) : n>=YX_START ? 'assets/comics/i1/ch'+pad2(vnum(n)) : n>=VOL5_START ? 'assets/comics/v5/ch'+pad2(vnum(n)) : n>=VOL4_START ? 'assets/comics/v4/ch'+pad2(vnum(n)) : n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
+    const src = (n>=VOL25_START ? 'assets/comics/v25/ch'+pad2(vnum(n)) : n>=VOL24_START ? 'assets/comics/v24/ch'+pad2(vnum(n)) : n>=VOL23_START ? 'assets/comics/v23/ch'+pad2(vnum(n)) : n>=VOL22_START ? 'assets/comics/v22/ch'+pad2(vnum(n)) : n>=VOL21_START ? 'assets/comics/v21/ch'+pad2(vnum(n)) : n>=VOL20_START ? 'assets/comics/v20/ch'+pad2(vnum(n)) : n>=VOL19_START ? 'assets/comics/v19/ch'+pad2(vnum(n)) : n>=VOL18_START ? 'assets/comics/v18/ch'+pad2(vnum(n)) : n>=VOL17_START ? 'assets/comics/v17/ch'+pad2(vnum(n)) : n>=VOL16_START ? 'assets/comics/v16/ch'+pad2(vnum(n)) : n>=VOL15_START ? 'assets/comics/v15/ch'+pad2(vnum(n)) : n>=VOL14_START ? 'assets/comics/v14/ch'+pad2(vnum(n)) : n>=VOL13_START ? 'assets/comics/v13/ch'+pad2(vnum(n)) : n>=VOL12_START ? 'assets/comics/v12/ch'+pad2(vnum(n)) : n>=VOL11_START ? 'assets/comics/v11/ch'+pad2(vnum(n)) : n>=VOL10_START ? 'assets/comics/v10/ch'+pad2(vnum(n)) : n>=VOL9_START ? 'assets/comics/v9/ch'+pad2(vnum(n)) : n>=VOL8_START ? 'assets/comics/v8/ch'+pad2(vnum(n)) : n>=VOL7_START ? 'assets/comics/v7/ch'+pad2(vnum(n)) : n>=VOL6_START ? 'assets/comics/v6/ch'+pad2(vnum(n)) : n>=XC_START ? 'assets/comics/i2/ch'+pad2(vnum(n)) : n>=YX_START ? 'assets/comics/i1/ch'+pad2(vnum(n)) : n>=VOL5_START ? 'assets/comics/v5/ch'+pad2(vnum(n)) : n>=VOL4_START ? 'assets/comics/v4/ch'+pad2(vnum(n)) : n>=VOL3_START ? 'assets/comics/v3/ch'+pad2(vnum(n)) : n>=VOL2_START ? 'assets/comics/v2/ch'+pad2(vnum(n)) : 'assets/comics/ch'+pad2(n))+(i>1?'_'+i:'')+'.webp';
     if(!(await probeImage(src))) break;
     pages.push(src);
   }
@@ -76,8 +76,8 @@ function drawStory(){
     body = '<div class="story-end"><p class="sm">Loading…</p></div>';
   } else if(S.mode==='read' && S.i < total){
     const u = S.units[S.i];
-    body = u.art ? `<div class="story-page"><img src="${u.art}" alt="${c.title}, page ${S.i+1}"></div>` : `<div class="story-text">${sceneHtml(u.scene)}</div>`;
-    bar = `<button ${S.i?'':'disabled'} onclick="storyGo(-1)">◀ Back</button><button class="pri" onclick="storyGo(1)">${S.i===total-1?'Finish':'Next ▶'}</button>`;
+    body = u.art ? `<div class="story-page"><img src="${u.art}" alt="${c.title}, page ${S.i+1}" onclick="zoomOpen(this.src)" style="cursor:zoom-in"></div>` : `<div class="story-text">${sceneHtml(u.scene)}</div>`;
+    bar = `<button ${S.i?'':'disabled'} onclick="storyGo(-1)">◀ Back</button>${u.art?`<button onclick="zoomOpen('${u.art}')" style="min-width:0">🔍 Zoom</button>`:''}<button class="pri" onclick="storyGo(1)">${S.i===total-1?'Finish':'Next ▶'}</button>`;
     if(S.units[S.i+1] && S.units[S.i+1].art){ const pre = new Image(); pre.src = S.units[S.i+1].art; }
   } else if(S.mode==='read'){
     const done = chapterDone(S.n);
@@ -101,6 +101,7 @@ function drawStory(){
 
 /* keyboard + swipe */
 document.addEventListener('keydown', ev => {
+  if(ZV){ if(ev.key==='Escape') zoomClose(); return; }
   if(!S) return;
   if(ev.key==='Escape') closeStory();
   else if(ev.key==='ArrowRight' || ev.key===' ') { ev.preventDefault(); storyGo(1); }
@@ -109,7 +110,33 @@ document.addEventListener('keydown', ev => {
 let _tx = null, _ty = null;
 document.addEventListener('touchstart', ev => { if(S && S.mode==='read'){ _tx = ev.touches[0].clientX; _ty = ev.touches[0].clientY; } }, {passive:true});
 document.addEventListener('touchend', ev => {
-  if(!S || _tx===null) return;
+  if(!S || _tx===null || ZV) return;
   const dx = ev.changedTouches[0].clientX - _tx, dy = ev.changedTouches[0].clientY - _ty; _tx = _ty = null;
   if(Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy)*1.6) storyGo(dx < 0 ? 1 : -1);
 }, {passive:true});
+
+/* ---------- ZOOM VIEWER: any comic page, full screen, scroll both ways; − / + change the size (kept between pages) ---------- */
+let ZV = null, ZV_Z = 2;
+const ZV_STEPS = [1, 1.5, 2, 2.5, 3, 4];
+try{ const z = +localStorage.getItem('crimson_zoom'); if(ZV_STEPS.includes(z)) ZV_Z = z; }catch(e){}
+function zoomOpen(src){
+  ZV = src;
+  let el = document.getElementById('zoomv');
+  if(!el){ el = document.createElement('div'); el.id = 'zoomv'; document.body.appendChild(el); }
+  zoomDraw(); el.scrollTop = 0; el.scrollLeft = 0;
+}
+function zoomDraw(){
+  const el = document.getElementById('zoomv'); if(!el || !ZV) return;
+  el.className = 'on';
+  el.innerHTML = `<div class="zoombar"><button onclick="zoomStep(-1)" ${ZV_Z<=ZV_STEPS[0]?'disabled':''}>−</button><span>${Math.round(ZV_Z*100)}%</span><button onclick="zoomStep(1)" ${ZV_Z>=ZV_STEPS[ZV_STEPS.length-1]?'disabled':''}>+</button><button class="pri" onclick="zoomClose()">✕ Close</button></div><img src="${ZV}" alt="" style="width:${ZV_Z*100}vw">`;
+}
+function zoomStep(d){
+  const el = document.getElementById('zoomv'), i = Math.max(0, Math.min(ZV_STEPS.length-1, ZV_STEPS.indexOf(ZV_Z) + d)), old = ZV_Z;
+  const fx = el.scrollWidth ? (el.scrollLeft + el.clientWidth/2) / el.scrollWidth : .5, fy = el.scrollHeight ? (el.scrollTop + el.clientHeight/2) / el.scrollHeight : 0;
+  ZV_Z = ZV_STEPS[i]; try{ localStorage.setItem('crimson_zoom', ZV_Z); }catch(e){}
+  if(ZV_Z === old) return;
+  zoomDraw();
+  const im = el.querySelector('img'), fix = () => { el.scrollLeft = fx*el.scrollWidth - el.clientWidth/2; el.scrollTop = fy*el.scrollHeight - el.clientHeight/2; };
+  if(im.complete) fix(); else im.onload = fix;
+}
+function zoomClose(){ ZV = null; const el = document.getElementById('zoomv'); if(el){ el.className = ''; el.innerHTML = ''; } }

@@ -56,7 +56,7 @@ const pouch = () => Object.keys(ITEMS).filter(k => ITEMS[k].type === 'herb');
 
 /* ---------- gathering ---------- */
 function gatherAt(spotId){
-  const s = GATHER_SPOTS.find(x => x.id === spotId); if(!s || !s.open()) return null;
+  const s = GATHER_SPOTS.find(x => x.id === spotId); if(!s || !spotHere(s)) return null;
   if(!herbalReady()) return {msgs:['Xining must be with the party to gather.'], got:[]};
   const lv = herbLv(), n = 2 + (lv >= 3 ? 1 : 0) + rint([0,1]), per = periodOf(G.time === undefined ? 8 : G.time)[1];
   const table = s.herbs.map(([id,w,when]) => [id, w * (when && when === per ? 2 : 1)]), total = table.reduce((a,[,w]) => a + w, 0), got = {};
@@ -102,7 +102,7 @@ function drawHerbModal(){
   let body = '';
   if(!herbalReady()){ body = '<div class="sm">Xining must be with the party for any herbalism.</div>'; }
   else if(HM.mode === 'gather'){
-    const per = periodOf(G.time === undefined ? 8 : G.time), spots = GATHER_SPOTS.filter(s => s.open()).map(s => {
+    const per = periodOf(G.time === undefined ? 8 : G.time), spots = GATHER_SPOTS.filter(spotHere).map(s => {
       const night = s.herbs.some(h => h[2]), hint = night ? ' · night blooms' : '';
       return `<div class="card" style="cursor:default"><span class="big">${s.icon}</span><div class="fl"><b>${s.n}</b><div class="sm">${s.herbs.map(h => ITEMS[h[0]].icon+' '+ITEMS[h[0]].n).join(', ')}${hint}</div></div><button class="pri" onclick="HM.result=(gatherAt('${s.id}')||{msgs:[]}).msgs;drawHerbModal()">Gather</button></div>`; }).join('');
     body = `<div class="sm">It is ${per[2]} ${per[1]}. Each trip takes ${GATHER_HOURS} hours (the day does not change). Herbs that bloom at night come easier after dark.</div>${spots}`;

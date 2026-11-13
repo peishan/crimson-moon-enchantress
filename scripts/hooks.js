@@ -10233,6 +10233,184 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"764": [
+{
+"id": "presence_says_it_was_contained_and_remembers_five_lights",
+"d": "The presence says it was the one who was contained, cannot reach its own name, and remembers five lights and someone who left",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"765": [
+{
+"id": "crystal_preserves_what_remains_of_the_presence",
+"d": "The crystal is preserving what remains of the presence as well as imprisoning it; damaging it could destroy more than the prison",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"766": [
+{
+"id": "five_streams_correct_an_imbalance_and_a_sixth_pattern_appears",
+"d": "The five streams have different patterns and constantly correct an imbalance; a faint sixth pattern appears beneath the platform and the presence says the sixth has awakened",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"767": [
+{
+"id": "boundary_loosening_gradually",
+"d": "The five streams fall out of harmony and the boundary loosens gradually; the presence says it may be the beginning of its release",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"768": [
+{
+"id": "presence_remembers_a_place_of_light_and_two_figures",
+"d": "The presence remembers a place of light, people who knew it, and two figures reaching for each other",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"769": [
+{
+"id": "older_mark_appears_and_the_presence_is_not_struggling",
+"d": "An unfamiliar character older than the five keeper marks appears on the crystal; for the first time the presence is not struggling against the prison",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"770": [
+{
+"id": "keepers_testament_do_not_mistake_what_we_preserved_for_what_we_feared",
+"d": "A sealed testament says: if you have found this, the boundary has begun to fail; do not mistake what we preserved for what we feared",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"771": [
+{
+"id": "erased_records_and_another_archive",
+"d": "Stone tablets record the sanctuary's original purpose, guardians and lineage, with entries deliberately erased and a reference to another archive",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"772": [
+{
+"id": "name_erased_by_design_to_cut_its_place_from_the_world",
+"d": "The presence's name was erased by design, from the records and from the crystal, to cut its place from the world",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"773": [
+{
+"id": "fifth_keeper_awake_and_the_choice_between_preservation_and_devastation",
+"d": "The presence warns the fifth keeper has awakened and the balance will break; whether it brings preservation or devastation depends on the party's choice",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"774": [
+{
+"id": "older_passage_with_a_fragment_of_the_keeper_mark",
+"d": "A hidden passage older than the crystal chamber holds a fragment of the keeper mark and leads to a hall of sealed archives",
+"t": "event",
+"p": false,
+"s": "art"
+},
+{
+"id": "door_entrusted_to_the_one_they_forgot",
+"d": "A door bearing none of the five keeper marks says the truth was entrusted to the one the keepers forgot, and waits for the right key",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"775": [
+{
+"id": "first_keeper_rewrote_the_record_and_a_sixth_figure",
+"d": "The first keeper secretly compiled a separate record: a sixth person stood among the keepers and the record names only five",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"776": [
+{
+"id": "hall_older_than_the_five_anchors",
+"d": "A hall older than the five-anchor sanctuary shows a ritual of uniting, not sealing; something later turned unity into separation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"777": [
+{
+"id": "five_streams_once_a_single_flow",
+"d": "The five streams were once a single flow and the anchors were created later by a deliberate choice; the central figure's face is erased again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"778": [
+{
+"id": "presence_remembers_someone_who_stayed",
+"d": "The presence remembers someone beside it who carried no light and stayed when the others left; one remained beyond the boundary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"779": [
+{
+"id": "silver_white_hand_mark",
+"d": "The second figure reached toward the presence from outside the light; a silver-white open-hand mark appears beneath the mural and the central sentence of the record has been scraped away",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"780": [
+{
+"id": "keepers_disagreed_five_keepers_one_consequence",
+"d": "The five keepers could not agree on what to do with the presence; the anchors may be a compromise",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"781": [
+{
+"id": "two_proposals_return_or_preserve",
+"d": "The keepers made two proposals, return what was taken or preserve what remains; neither would destroy the presence and neither could be carried alone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"782": [
+{
+"id": "first_keeper_accepted_the_burden_but_not_the_right_to_forget",
+"d": "A solitary keeper accepted responsibility for the outcome; the presence says someone should have asked it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -33,6 +33,7 @@ const mealPrice = p => 8 + Math.round(avgPartyLv()*.8);
 
 function restAt(id){
   const p = placeById(id); if(!p || !p.open()) return ['That place is not open to you yet.'];
+  if(!placeHere(p)) return ['The party is not there. They are at '+WHERE_NAME[where()]+'.'];
   const c = restPrice(p); if(G.gold < c) return ['A room at '+p.n+' costs '+c+' gold.'];
   G.gold -= c; restoreParty(); G.heat = Math.max(0, (G.heat||0) - 40); advanceTime(8); save();
   const out = ['🛏️ The party rests at '+p.n+(c ? ' (-'+c+'g)' : ' (free)')+'. HP and MP fully restored. The hours pass: '+timeLabel()+'.'];
@@ -41,7 +42,7 @@ function restAt(id){
 }
 const restAtInn = () => restAt('fairy');   // the Wilds tab's rest button
 function mealAt(id){
-  const p = placeById(id); if(!p || p.kind !== 'tavern' || !p.open()) return [];
+  const p = placeById(id); if(!p || p.kind !== 'tavern' || !placeHere(p)) return [];
   const c = mealPrice(p); if(G.gold < c) return ['A hot meal costs '+c+' gold.'];
   G.gold -= c; G.party.forEach(pid => { const s = statsOf(pid); healUnit(pid, Math.round(s.hp*.4), Math.round(s.mp*.4)); });
   G.heat = Math.max(0, (G.heat||0) - 15); advanceTime(1); if(typeof ledgerUse==='function') ledgerUse('cooking'); save();
@@ -55,12 +56,12 @@ function buyHerbAt(pid, herb){
 }
 
 function rInns(){
-  const rows = PLACES.filter(p => p.open()).map(p => {
+  const rows = PLACES.filter(placeHere).map(p => {
     const rc = restPrice(p);
     const rest = `<button class="pri" ${G.gold>=rc?'':'disabled'} onclick="act(()=>restAt('${p.id}'))">🛏️ Rest ${rc ? '('+rc+'g)' : '(free)'}</button>`;
     const meal = p.kind === 'tavern' ? `<button ${G.gold>=mealPrice(p)?'':'disabled'} onclick="act(()=>mealAt('${p.id}'))">🍲 Hot meal (${mealPrice(p)}g)</button>` : '';
     const stall = p.sells ? `<div class="sm" style="margin-top:4px">Herb stall: ${Object.keys(p.sells).map(h => `<button ${G.gold>=p.sells[h]?'':'disabled'} onclick="act(()=>buyHerbAt('${p.id}','${h}'))">${ITEMS[h].icon} ${ITEMS[h].n} ${p.sells[h]}g</button>`).join(' ')}</div>` : '';
     return `<div class="card" style="cursor:default"><span class="big">${p.icon}</span><div class="fl"><b>${p.n}</b><div class="sm">${p.note}</div><div>${rest}${meal}</div>${stall}</div></div>`; }).join('');
   return `<h2>Inns &amp; Rest</h2>${flashHtml()}<div class="sm">${timeLabel()} · Day ${G.day}. Rest is unlimited, and passes the hours of the day, not the day itself: the story day only moves with the story (and "Ask around" on the Quest Board).</div>
-    <div class="sm" style="margin:4px 0">The Crimson Fairy is Xiyu's own, and the Ice Temple's rooms are warded: both are free. Taverns charge a little and add hot meals and herb stalls.</div>${rows}`;
+    <div class="sm" style="margin:4px 0">📍 The party is at ${WHERE_NAME[where()]}; only places here are listed. The Crimson Fairy is Xiyu's own, and the Ice Temple's rooms are warded: both are free. Taverns charge a little and add hot meals and herb stalls.</div>${rows}`;
 }

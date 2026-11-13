@@ -29,8 +29,8 @@ const VIOLET_ORDERS = {
 const violetOpen = () => !!G && G.ch >= VIOLET_OPEN;
 const VIO = () => (G.violet = G.violet || {order:null, msgs:[]});
 Object.assign(BASES.find(b => b.id === 'yilong'), {n:'Yilong Base', icon:'🪻',
-  hall:'Xiyu\'s operational base in Yilong, known to her people as the Violet Base: a residence with a study, a secure communication room and the staff she has hired. It keeps running while she travels, and it is separate from the Zhan Manor. Its people are loyal to her personally; intelligence, supplies and communications matter as much to it as anything done with a sword. Guests may stay here with nothing asked of them or of her.',
-  comms:'Xiyu leaves standing orders with the Base Keeper, and the courier lines carry word both ways. Urgent messages from the base are delivered to the Zhan Manor.'});
+  hall:'Xiyu\'s operational base in Yilong, known to her people as the Violet Base: a residence with a study, a secure communication room and the staff she has hired. It keeps running while she travels, and it is separate from the Zhan Manor (Dongyue\'s residence, where the party often stays) and from Yun He\'s sanctuary. Its people are loyal to her personally; intelligence, supplies and communications matter as much to it as anything done with a sword. Guests may stay here with nothing asked of them or of her.',
+  comms:'Xiyu leaves standing orders with the Base Keeper, and the courier lines carry word both ways. Urgent messages from the base are delivered to the Zhan Manor, Dongyue\'s residence, when Xiyu is staying there.'});
 BASE_SECTIONS.push(['violet_staff','👥 Staff'],['violet_orders','📋 Standing Orders']);
 Object.assign(BASE_ONLY, {violet_staff:'yilong', violet_orders:'yilong'});
 
@@ -70,7 +70,7 @@ function rVioletSection(k){
     const v = VIO(), cur = v.order, msgs = (v.msgs||[]).map(m => `<div class="sm">✉️ Day ${m.d}: ${m.t}</div>`).join('');
     const opts = Object.keys(VIOLET_ORDERS).map(o => `<div class="ev"><div><b>${VIOLET_ORDERS[o].n}</b> <span class="sm">(${VIOLET_ORDERS[o].who})</span><div class="sm">${VIOLET_ORDERS[o].d}</div></div><button class="${cur===o?'pri':''}" onclick="act(()=>violetSetOrder('${o}'))">${cur===o?'Active':'Order'}</button></div>`).join('');
     return `<div class="panel"><b>📋 Standing orders</b><div class="sm">Before travelling, Xiyu can leave instructions with the Base Keeper. The base keeps running without her and each daily network check-in brings a small result from the chosen focus. Orders can be changed any time. ${cur ? 'Current: <b>'+VIOLET_ORDERS[cur].n+'</b>.' : 'No order is set.'}</div>${cur ? `<button onclick="act(violetClearOrder)">Withdraw the order</button>` : ''}</div>${opts}
-      <div class="panel"><b>✉️ Delivered to the Zhan Manor</b><div class="sm">Urgent messages from the base are delivered to the Zhan Manor in Yilong.</div>${msgs || '<div class="sm">No messages yet. Check in daily at the network.</div>'}</div>`;
+      <div class="panel"><b>✉️ Delivered to the Zhan Manor</b><div class="sm">Urgent messages from the base are delivered to the Zhan Manor, Dongyue\'s residence in Yilong, where the party stays as guests.</div>${msgs || '<div class="sm">No messages yet. Check in daily at the network.</div>'}</div>`;
   }
   return '';
 }

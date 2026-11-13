@@ -15,7 +15,7 @@ const BASES = [
    hall:'Xiyu\'s own hall in Muxue, the party\'s place to come back to: beds that are always free, and a board of work for the road ahead.',
    comms:'The mirror array Xiyu set up at Muxue: her people there can reach her wherever she is, with word of her father, Muxue Yan, or anything that needs her.'},
   {id:'yilong', n:'Yilong Base', icon:'🏮', open:429, rest:'yilong_base', art:'yilong/',
-   hall:'A quiet residence in Yilong with a discreet entrance, a study, a secure communication room and space for Xiyu\'s people: the party\'s own place in the city, so they need not depend on Zhan Manor.',
+   hall:'A quiet residence in Yilong with a discreet entrance, a study, a secure communication room and space for Xiyu\'s people: the party\'s own place in the city, so they need not depend on Dongyue\'s Zhan Manor or on Yun He\'s sanctuary.',
    comms:'The secure communication room, with the link Xiyu uses to reach A\'Bu and the witch doctors he writes to. Her name stays out of the inquiries.'},
 ];
 const baseIsOpen = b => G.ch >= b.open;

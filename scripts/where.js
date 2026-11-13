@@ -24,7 +24,7 @@ function inRegion(reg){
 const TEMPLE_ZONES = ['temple','maze','depths','trial'];
 const zoneRegion = z => TEMPLE_ZONES.includes(z.id) ? 'temple' : (z.unlock < LEAVE_CH ? 'island' : 'world');
 const zoneHere = z => zoneOpen(z) && inRegion(zoneRegion(z));
-const PLACE_REG = {fairy:'island', drowsy_lantern:'island', red_lantern_inn:'island', songxia_teahouse:'island', temple:'temple', yunling:'world', yilong:'world', yilong_base:'world', road_inn:'world'};
+const PLACE_REG = {fairy:'island', drowsy_lantern:'island', red_lantern_inn:'island', songxia_teahouse:'island', temple:'temple', yunling:'world', yilong:'world', zhan_manor:'world', yilong_base:'world', road_inn:'world'};
 const placeHere = p => p.open() && inRegion(PLACE_REG[p.id] || 'island');
 const SPOT_REG = {temple:'temple', road_meadow:'world', yilong_falls:'world', yilong_gardens:'world'};
 const spotHere = s => s.open() && inRegion(SPOT_REG[s.id] || 'island');

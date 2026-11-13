@@ -20,6 +20,14 @@ const BANTER = [
   {id:'all_fire', who:['xiyu','dongyue','xining','xiaotian'], ch:120, t:['Xiao Tian: "Who is cooking tonight?"','Xining: "Not Dongyue."','Dongyue: "I resent that."','Xiyu: "You put the herbs in the soup and the soup in the herbs."','Dongyue: "It was a creative arrangement."']},
   {id:'xc_crimson', who:['xiyu','cangyuan'], ch:100, t:['Cangyuan: "Your hair is tangled in the thread again."','Xiyu: "Then untangle it."','Cangyuan: "It will take a while."','Xiyu: "Good."']},
   {id:'tya_cloak', who:['xiaotian','yaxing'], ch:100, t:['Ya\'Xing: "That is my cloak."','Xiao Tian: "It was on the floor."','Ya\'Xing: "It was drying."','Xiao Tian: "Then it is nicely dry now. You are welcome."']},
+  {id:'xx_tea', who:['xiyu','xining'], ch:150, t:['Xining: "You are holding the cup but not drinking."','Xiyu: "I am thinking."','Xining: "Then think faster. It is going cold, and I made it with the good leaves."','Xiyu: "You used the good leaves on me?"','Xining: "Do not make it a speech. Drink."']},
+  {id:'xd_maps', who:['xiyu','dongyue'], ch:180, t:['Dongyue: "You have marked the same bridge three times."','Xiyu: "It keeps coming up."','Dongyue: "Bridges do that. It is their whole job."']},
+  {id:'dxt_boots', who:['dongyue','xiaotian'], ch:200, t:['Xiao Tian: "Your boots are on the wrong feet."','Dongyue: "They are not."','Xiao Tian: "Walk to the door."','Dongyue: "...Do not tell Xining."']},
+  {id:'xyx_cloak', who:['xining','yaxing'], ch:200, t:['Ya\'Xing: "That is a lot of herbs for one afternoon."','Xining: "It is a normal amount of herbs."','Ya\'Xing: "It is four sacks."','Xining: "It is a normal amount of sacks."']},
+  {id:'hy_wet', who:['hoko','yanwatcher'], ch:260, t:['Xiao Yan: "The path has a wet patch."','Hoko: "I saw it."','Xiao Yan: "You are standing in it."','Hoko: "I am testing how wet."']},
+  {id:'xh_rope', who:['xiyu','hoko'], ch:260, t:['Xiyu: "You brought the rope."','Hoko: "I always bring the rope."','Xiyu: "You brought it last time and did not use it."','Hoko: "That is how you know it works."']},
+  {id:'xc_snow', who:['xiyu','cangyuan'], ch:300, t:['Cangyuan: "It is snowing on your shoulder."','Xiyu: "It is snowing on both of us."','Cangyuan: "Mine does not count. You are the one who gets cold."','Xiyu: "Stand a little closer, then."']},
+  {id:'all_rain', who:['xiyu','dongyue','xining','xiaotian'], ch:300, t:['Xiao Tian: "I think the rain is lighter on the left."','Dongyue: "It is raining the same everywhere."','Xining: "He walked on the left all day. Let him have it."','Xiyu: "Left it is."']},
 ];
 const banterPresent = ids => ids.every(i => G.party.includes(i) && !(G.away && G.away[i]));
 function nextBanter(){

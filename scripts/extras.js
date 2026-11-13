@@ -61,6 +61,9 @@ deed('herb60', 'craft', 'The herbalist\'s pouch', '🌿', 'Sixty gathering trips
 deed('brew10', 'craft', 'A steady hand', '⚗️', 'Ten mixtures made.', () => ((G.herb||{}).made||0) >= 10);
 deed('login3', 'craft', 'Three days running', '🎁', 'A daily login streak of 3.', () => ((G.login||{}).streak||0) >= 3);
 deed('login7', 'craft', 'A full week', '🎁', 'A daily login streak of 7.', () => ((G.login||{}).streak||0) >= 7);
+deed('codex6', 'craft', 'A collector', '📔', 'Six materials in the Codex.', () => Object.keys(G.codex||{}).length >= 6);
+deed('codex16', 'craft', 'The Codex fills', '📔', 'Every material and trinket found.', () => Object.keys(G.codex||{}).length >= 16);
+deed('letters5', 'craft', 'Kept in touch', '✉️', 'Five letters received.', () => Object.keys(G.letters||{}).length >= 5);
 deed('chron50', 'craft', 'The Chronicle grows', '📜', 'Fifty entries in the Chronicle.', () => (G.chron||[]).length >= 50);
 
 function deedsCheck(){
@@ -84,8 +87,8 @@ function rDeeds(){
   return `<div class="sm">Pure recognition: no rewards, so nothing here changes the game. ${n}/${DEEDS.length} earned.</div>${cats}`;
 }
 function rDeedsTab(){
-  const tabs = [['deeds','🏆 Deeds'],['chronicle','📜 Chronicle']].map(([k,l]) => `<button class="${dView===k?'pri':''}" onclick="dView='${k}';render()">${l}</button>`).join('');
-  return `<h2>Deeds &amp; Chronicle</h2><div class="row" style="margin:4px 0 8px">${tabs}</div>${dView === 'chronicle' ? rChronicle() : rDeeds()}`;
+  const tabs = [['deeds','🏆 Deeds'],['chronicle','📜 Chronicle'],['codex','📔 Codex'],['letters','✉️ Letters']].map(([k,l]) => `<button class="${dView===k?'pri':''}" onclick="dView='${k}';render()">${l}</button>`).join('');
+  return `<h2>Deeds, Chronicle, Codex &amp; Letters</h2><div class="row" style="margin:4px 0 8px">${tabs}</div>${dView === 'chronicle' ? rChronicle() : dView === 'codex' ? rCodex() : dView === 'letters' ? rLetters() : rDeeds()}`;
 }
 
 /* ---------- skirmish ---------- */
@@ -149,4 +152,4 @@ function rSkirmish(){
 }
 
 /* ---------- wiring ---------- */
-window.addEventListener('load', () => { const r0 = render; render = function(){ r0(); try{ deedsCheck(); }catch(e){} }; });
+window.addEventListener('load', () => { const r0 = render; render = function(){ r0(); try{ deedsCheck(); timedCheck(); codexSync(); }catch(e){} }; });

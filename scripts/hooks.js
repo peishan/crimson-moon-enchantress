@@ -10411,6 +10411,87 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"783": [
+{
+"id": "the_boundary_shall_endure_until_the_forgotten_may_speak",
+"d": "The five keepers' actions became connected without agreement on their meaning, and the presence was never asked; an inscription says the boundary shall endure until the forgotten may speak for themselves, so the prison may have been temporary; Xiyu promises to listen when the presence remembers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"784": [
+{
+"id": "what_was_entrusted_to_one_was_withheld_from_another",
+"d": "A golden plate hidden beneath the tablet gives a second account signed by another keeper: the burden was accepted but the reason never agreed, and what was entrusted to one was withheld from another; the five may have decided without the whole truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"785": [
+{
+"id": "there_may_be_a_record_from_before_the_memories_were_divided",
+"d": "The five keepers each carried only part of the memory and the memories leave a dark space between them; there may be another record from before their memories were divided",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"786": [
+{
+"id": "the_presence_remembers_a_promise_to_return_before_the_prison_was_complete",
+"d": "Before the prison was completed someone reached across the boundary toward the presence and told it to wait and that they would come back; the fifth stream is missing from the image and the person may not be one of the five keepers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"787": [
+{
+"id": "someone_remained_beyond_the_boundary_and_inherited_its_watch",
+"d": "A sixth silhouette stood beyond the boundary when the five keepers left and said that even if they forget it will remain; the presence remembers feeling less alone; the keeper mark recognises the role but not the person; the one who remained inherited the boundary's watch",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"788": [
+{
+"id": "the_presence_was_blamed_before_anyone_investigated_the_first_fracture",
+"d": "An older memory shows the presence accused by a crowd after the first fracture, though its cause was never witnessed; a distant figure spoke in its defence and Xiyu promises neither to condemn nor excuse it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"789": [
+{
+"id": "the_prison_was_built_after_the_first_breaking",
+"d": "A concealed chamber beneath the archive shows a radiant structure above a vast expanse of water, far older than the prison; the presence may not have originated inside the formation and the prison was built after the first breaking",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"790": [
+{
+"id": "the_light_answered_something_beyond_the_structure",
+"d": "At the first breaking the light answered something beyond the structure and the fracture began at the centre; the presence was beneath the light and tried to answer someone calling its name; someone stood near the fracture untouched by the light",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"791": [
+{
+"id": "the_one_beside_the_fracture_warned_the_light_could_answer_again",
+"d": "A second figure beside the fracture, bearing a symbol that is not a keeper mark, tried to hold something back and warned 'Don't let it answer again'; the presence believes they were trying to protect it",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -3,7 +3,7 @@
    YILONG BASE (the Violet Base): Xiyu's operational base with hired staff (scripts/violet.js). Guests may reside here, as in Tribute's homes, with NOTHING required of
      either side: no fee, no upkeep, no mood to manage, no work asked of them. They arrive now and then, may stay as long as they like and may leave when they like.
      The host is Zi Lan, and Zhan Donglin from his arrival (caretaker). Story guests can be added with addGuest(). Rooms: 4. State: G.guests = [{n, note, day}].
-   MUXUE BASE / CRIMSON FAIRY: a list of the people who work for Xiyu there (MUXUE_STAFF). Seeded with Sister Qing only; the author's full list is added by editing the table.
+   MUXUE BASE / CRIMSON FAIRY: the people who work for Xiyu there (MUXUE_STAFF = the manor team, CRIMSON_FAIRY_STAFF = the establishment), independent of the Violet Base.
    ===================================================================== */
 const GUEST_ROOMS = 4;
 const GUEST_POOL = [
@@ -29,8 +29,21 @@ function guestsOnCheckIn(msgs){
 function guestFarewell(i){ const g = guestList().splice(i,1)[0]; save(); return g ? [g.n.split(',')[0]+' says goodbye, with thanks.'] : []; }
 function guestInvite(){ if(guestList().length >= GUEST_ROOMS) return ['Every guest room is taken.']; const n = AR(GUEST_NAMES), [job, note] = AR(GUEST_POOL); if(guestList().some(x => x.n.indexOf(n) === 0)) return ['Nobody new answers just now.']; addGuest(n+', '+job, n.split(' ')[0]+' '+note); save(); return [n+' accepts a room.']; }
 
+/* MUXUE BASE roster (author-proposed, candidate names and roles, not locked canon). Independent of the Violet Base. Muxue Island is Xiyu's domain, managed on behalf of Muxue Yan;
+   her manor is her personal headquarters. A small, capable team that keeps the island running while Xiyu and the party are away. They work for Xiyu: they are not automatically
+   Muxue clan members or employees of Muxue Yan's Ice Temple. Mu Qinghe speaks with Xiyu through her private mirror array. */
 const MUXUE_STAFF = [
-  {id:'sisterqing', n:'Sister Qing', icon:'🌸', pos:'The Crimson Fairy\'s staff', note:'Has worked at the Crimson Fairy since Volume 1. Keeps the rooms, the kitchen and the hall for Xiyu\'s party. (More staff to be added from the author\'s list; the caretaker of the Muxue base is still to be established.)'},
+  {id:'muqinghe', n:'Mu Qinghe', zh:'慕清和', icon:'🪞', pos:'Island Base Official', duty:'Oversees the manor and the island\'s administration; Xiyu\'s direct contact through the private mirror array.', manner:'Composed, discreet and highly professional: not a subordinate who needs Xiyu to supervise every small decision.'},
+  {id:'shenyuwei', n:'Shen Yuwei', zh:'沈玉微', icon:'📜', pos:'Records Officer', duty:'Keeps the island\'s records, correspondence, personnel files and archive requests.', manner:''},
+  {id:'hezhaolin', n:'He Zhaolin', zh:'何昭林', icon:'📦', pos:'Quartermaster', duty:'Manages supplies, equipment, purchasing and inventory.', manner:''},
+  {id:'luoqingzhi', n:'Luo Qingzhi', zh:'罗清芷', icon:'🍵', pos:'Household Supervisor', duty:'Oversees the manor servants, accommodation, meals and daily upkeep.', manner:''},
+  {id:'tangshuyu', n:'Tang Shuyu', zh:'唐书玉', icon:'🕊️', pos:'Intelligence Liaison', duty:'Collects reports from visitors, contacts and former associates, and passes what matters to the base official.', manner:''},
+  {id:'weichangfeng', n:'Wei Changfeng', zh:'魏长风', icon:'🛡️', pos:'Island Patrol Captain', duty:'Coordinates patrols, security and the response to threats around the island.', manner:''},
+];
+const CRIMSON_FAIRY_STAFF = [
+  {id:'sisterqing', n:'Sister Qing', icon:'🌸', pos:'Cook', duty:'Has worked at the Crimson Fairy since Volume 1.'},
+  {id:'maqi', n:'Ma Qi', icon:'🍶', pos:'Waiter', duty:'Waits the tables at the Crimson Fairy.'},
+  {id:'fairycrew', n:'The Crimson Fairy\'s other workers', icon:'🏯', pos:'Restaurant and hospitality', duty:'Restaurant operations and hospitality. Part of the island\'s wider workforce; their duties are at the establishment, not the manor.'},
 ];
 const MUXUE_STAFF_OPEN = 409;
 BASE_SECTIONS.push(['yilong_guests','🛏️ Guests'],['muxue_staff','👥 Staff']);
@@ -43,7 +56,10 @@ function rHouseSection(k){
       <div style="margin-top:6px"><button ${l.length<GUEST_ROOMS?'':'disabled'} onclick="act(guestInvite)">Offer a room</button></div></div>${rows || '<div class="sm">No guests at the moment. Travellers arrive now and then; the daily network check-in notices them.</div>'}`;
   }
   if(k === 'muxue_staff'){
-    return `<div class="panel"><b>👥 Who works for Xiyu here</b><div class="sm">The people who keep the Crimson Fairy and the Muxue base running.</div></div>` + MUXUE_STAFF.map(m => `<div class="card" style="cursor:default"><span class="big">${m.icon}</span><div class="fl"><b>${m.n}</b> <span class="sm">${m.pos}</span><div class="sm">${m.note}</div></div></div>`).join('');
+    const card = m => `<div class="card" style="cursor:default"><span class="big">${m.icon}</span><div class="fl"><b>${m.n}${m.zh ? ' '+m.zh : ''}</b> <span class="sm">${m.pos}</span><div class="sm">${m.duty}</div>${m.manner ? `<div class="sm"><i>${m.manner}</i></div>` : ''}</div></div>`;
+    return `<div class="panel"><b>🏯 Muxue Base</b><div class="sm">Muxue Island is Xiyu's domain, managed on behalf of Muxue Yan, and her manor is her personal headquarters. A small, capable team keeps the island running while Xiyu and the party are away. They work for Xiyu: they are not automatically members of the Muxue clan or employees of Muxue Yan's Ice Temple. Independent of the Violet Base. Names and roles are candidates, not locked canon.</div></div>
+      <div class="panel"><b>Organisation</b><div class="sm">Muxue Xiyu: island authority and manor owner<br>└ <b>Mu Qinghe 慕清和</b>, Island Base Official (her direct contact)<br>&nbsp;&nbsp;├ Shen Yuwei 沈玉微: Records<br>&nbsp;&nbsp;├ He Zhaolin 何昭林: Supplies<br>&nbsp;&nbsp;├ Luo Qingzhi 罗清芷: Household<br>&nbsp;&nbsp;├ Tang Shuyu 唐书玉: Intelligence<br>&nbsp;&nbsp;└ Wei Changfeng 魏长风: Security</div></div>
+      <h4>The manor</h4>${MUXUE_STAFF.map(card).join('')}<h4>The Crimson Fairy</h4>${CRIMSON_FAIRY_STAFF.map(card).join('')}`;
   }
   return '';
 }

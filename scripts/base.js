@@ -13,7 +13,7 @@
 const BASES = [
   {id:'muxue',  n:'Muxue Base',  icon:'🏯', open:409, rest:'fairy',       art:'',
    hall:'Xiyu\'s own hall in Muxue, the party\'s place to come back to: beds that are always free, and a board of work for the road ahead.',
-   comms:'The mirror array Xiyu set up at Muxue: her people there can reach her wherever she is, with word of her father, Muxue Yan, or anything that needs her.'},
+   comms:'The mirror array Xiyu set up at Muxue: Mu Qinghe, her Island Base Official, speaks with her through it wherever she is, with word of the island, her father, Muxue Yan, or anything that needs her.'},
   {id:'yilong', n:'Yilong Base', icon:'🏮', open:429, rest:'yilong_base', art:'yilong/',
    hall:'A quiet residence in Yilong with a discreet entrance, a study, a secure communication room and space for Xiyu\'s people: the party\'s own place in the city, so they need not depend on Dongyue\'s Zhan Manor or on Yun He\'s sanctuary.',
    comms:'The secure communication room, with the link Xiyu uses to reach A\'Bu and the witch doctors he writes to. Her name stays out of the inquiries.'},

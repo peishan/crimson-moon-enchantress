@@ -909,3 +909,7 @@ Yilong has three separate places: **Xiyu's own base** (Violet Base, hers, staffe
 ## Area loot, Codex, Letters, more banter (from Tribute)
 
 scripts/loot.js. Real Wilds hunts roll their area's loot (`AREA_LOOT`): 11 materials, 5 rare trinkets, all sellable; new brews (Sealing Tonic, Traveller's Ration, Lantern Balm). Conjured hunts, echoes and story fights drop none. The **Codex** (Deeds tab) fills as items are found. **Letters** arrive as story days pass (`TIMED`, 10 first-pass notes). Eight more banter lines added (draft, author to edit). The Deeds tab is now Deeds, Chronicle, Codex and Letters.
+
+## Muxue Base roster (author-proposed candidates)
+
+Independent of the Violet Base. Muxue Island is Xiyu's domain, managed for Muxue Yan; her manor is her HQ. Manor team: Mu Qinghe 慕清和 (Island Base Official, mirror-array contact), Shen Yuwei 沈玉微 (Records), He Zhaolin 何昭林 (Quartermaster), Luo Qingzhi 罗清芷 (Household), Tang Shuyu 唐书玉 (Intelligence Liaison), Wei Changfeng 魏长风 (Patrol Captain). Crimson Fairy: Sister Qing (cook), Ma Qi (waiter), other hospitality workers. They work for Xiyu, not automatically the Muxue clan or Muxue Yan's Ice Temple. Personalities to be refined; only Mu Qinghe's manner is set so far.

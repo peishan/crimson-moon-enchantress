@@ -200,6 +200,7 @@ function statsOf(id){
   const c = CHARACTERS[id], lv = U(id).lv, bm = bondMult(id), out = {};
   STATS.forEach(s => { out[s] = Math.round((c.base[s] + c.grow[s]*(lv-1)) * bm); });
   if(id==='xiyu'){ const L = attuneLv(); out.mag = Math.round(out.mag*(1+.02*L)); out.mp = Math.round(out.mp*(1+.03*L)); }
+  if(typeof cultMult === 'function'){ const cm = cultMult(id); if(cm) Object.keys(cm).forEach(k => { out[k] = Math.round(out[k]*cm[k]); }); }   // cultivation stages (cultivation.js)
   if(typeof gearStats === 'function'){ const gs = gearStats(id); Object.keys(gs).forEach(k => out[k] = Math.max(1, out[k] + gs[k])); }   // equipment (equip.js)
   return out;
 }

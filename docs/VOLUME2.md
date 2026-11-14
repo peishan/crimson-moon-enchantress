@@ -913,3 +913,9 @@ scripts/loot.js. Real Wilds hunts roll their area's loot (`AREA_LOOT`): 11 mater
 ## Muxue Base roster (author-proposed candidates)
 
 Independent of the Violet Base. Muxue Island is Xiyu's domain, managed for Muxue Yan; her manor is her HQ. Manor team: Mu Qinghe 慕清和 (Island Base Official, mirror-array contact), Shen Yuwei 沈玉微 (Records), He Zhaolin 何昭林 (Quartermaster), Luo Qingzhi 罗清芷 (Household), Tang Shuyu 唐书玉 (Intelligence Liaison), Wei Changfeng 魏长风 (Patrol Captain). Crimson Fairy: Sister Qing (cook), Ma Qi (waiter), other hospitality workers. They work for Xiyu, not automatically the Muxue clan or Muxue Yan's Ice Temple. Personalities to be refined; only Mu Qinghe's manner is set so far.
+
+## Ice Temple base: shortcut for research and training; cultivation paths
+
+The Ice Temple base stays a shortcut (via the token) for research and training. A wing inherited by Xiyu after Muxue Yan's "death", and assigned keepers, are left for later planning (chapter not decided); the temple has no Xiyu staff for now.
+
+**Cultivation paths** (scripts/cultivation.js): the daily Ice Library study now also trains cultivation for Xiyu, Cangyuan, Qiumin, Ya'Xing and Zhilei (+4 points active, +2 rest of the party; 5 stages, each opened by a story chapter cap 661/690/720/750/775; stages give lasting stat bonuses). Not eligible: Xiao Tian (bottleneck; opens with flag `xiao_tian_bottleneck_broken`), Dongyue (healer), Xining, Yun He, Yun Long (do not need it). Su Liechen undecided. Before this there was no cultivation-path system, only Xiyu's Attunement and the Cangyuan dual-cultivation resonance.

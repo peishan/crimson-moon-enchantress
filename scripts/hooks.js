@@ -10492,6 +10492,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"792": [
+{
+"id": "the_light_turned_toward_the_empty_space_and_a_second_answer_was_withheld",
+"d": "The light turned toward the empty space behind the figure who raised their hands, where the presence heard a voice; the figure beside the fracture warned 'Do not call it again' and the second answer was withheld; the presence answered because it thought someone needed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"793": [
+{
+"id": "a_voice_from_beyond_the_boundary_asked_can_you_hear_me",
+"d": "The caller called the presence home, not by name; the sixth point stretches beyond the five streams toward a distant silhouette; for the first time the party hears the voice from beyond the boundary ask 'Can you hear me?'",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"794": [
+{
+"id": "both_sides_had_been_waiting_and_the_echo_held_the_presences_own_words",
+"d": "The voice from beyond the sixth point changes from 'Can you hear me?' to 'I waited'; the presence believes he said those words himself, so the echo holds his own unanswered words and both sides had been waiting",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"795": [
+{
+"id": "the_answer_was_heard_but_never_reached_the_one_who_waited",
+"d": "The presence's unanswered question 'Why did you leave?' meets the reply 'I heard you'; the five points align with the sixth for a moment before the boundary breaks the connection; the answer never reached the one who waited",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"796": [
+{
+"id": "a_broken_doorway_separates_the_two_sides_of_the_boundary",
+"d": "The presence remembers a place without walls and a doorway broken into pieces, which he remembers closing; the boundary may have formed between two places that were once connected",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

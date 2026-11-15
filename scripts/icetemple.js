@@ -119,6 +119,7 @@ function doResearch(){
   const out = ['📚 '+RESEARCH_NOTES[Math.floor(Math.random()*RESEARCH_NOTES.length)]];
   const inv = invById('commanders'); if(inv) invAdd(inv, 2 + Math.floor(Math.random()*3), out);
   const xp = Math.max(1, Math.round(storyXp(Math.max(1, G.ch)) * .2)); gainXp(xp, G.active).forEach(m => out.push(m)); out.push('✦ Study XP +'+xp+' to the active party.');
+  if(typeof cultStudy === 'function') cultStudy(out);
   return out;
 }
 function doSpar(){
@@ -137,6 +138,7 @@ const iceAwayPanel = () => `<div class="panel"><b>❄️ The party is not at the
 function rIceSection(k){
   if(k === 'shrines') return rShrines();
   if(k.indexOf('violet') === 0 && typeof rVioletSection === 'function') return rVioletSection(k);
+  if((k.indexOf('yilong_') === 0 || k.indexOf('muxue_') === 0) && typeof rHouseSection === 'function') return rHouseSection(k);
   if(!iceHere()) return iceAwayPanel();
   if(k === 'market'){
     const kdone = G.bondDay && G.bondDay.kitchen === G.day;
@@ -152,7 +154,7 @@ function rIceSection(k){
     const inv = invById('commanders'), p = inv ? invProg(inv) : 0, done = G.bondDay && G.bondDay.research === G.day;
     return `<div class="panel"><b>📚 The Ice Library</b><div class="sm">A daily study session: the party reads and compares the temple's records and gains a little XP. It feeds the Network investigation "The Four Commanders" (${p}%). Reports are neutral: they list what the records say and decide nothing.</div>
       <button class="pri" ${done?'disabled':''} onclick="act(doResearch)">📚 Study in the Ice Library ${done?'(done today)':''}</button>
-      <div class="sm" style="margin-top:6px">See the Network section for the investigation and its leads (hunting in the temple's levels also adds to it).</div></div>`;
+      <div class="sm" style="margin-top:6px">See the Network section for the investigation and its leads (hunting in the temple's levels also adds to it).</div></div>${typeof rCultivation==='function' ? rCultivation() : ''}`;
   }
   if(k === 'training'){
     const done = G.bondDay && G.bondDay.spar === G.day;

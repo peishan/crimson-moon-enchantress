@@ -104,6 +104,7 @@ function completeChapter(n){
   giveChapterGear(n).forEach(m => msgs.push(m));
   if(typeof ledgerStory==='function') ledgerStory(n).forEach(m => msgs.push(m));
   if(n === 661 && typeof arriveIceTemple === 'function') arriveIceTemple();
+  if(typeof chronicle === 'function'){ chronicle(chName(n)+': '+chapterOf(n).title, '📖'); if(n < LAST_CHAPTER && volOf(n+1) !== volOf(n)) chronicle('Volume '+volOf(n)+' complete.', '🏆'); }
   if(n === LEAVE_CH) G.where = 'world';
   if(n === 675){ G.travel = {at:null, back:null}; G.where = 'world'; if(typeof shrineUnlock === 'function') shrineUnlock().forEach(x => msgs.push(x)); }
   (CH_ITEMS[n]||[]).forEach(d => { addItems([d]); msgs.push('Received '+ITEMS[d.id].icon+' '+ITEMS[d.id].n); });

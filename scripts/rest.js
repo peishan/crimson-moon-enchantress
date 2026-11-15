@@ -17,8 +17,9 @@ function advanceTime(h){ G.time = (((G.time === undefined ? 8 : G.time) + h) % 2
 const PLACES = [
   {id:'fairy', n:'The Crimson Fairy', icon:'🏯', kind:'home', open:() => true, note:'Xiyu\'s own inn. Her party always has beds here, free of charge.'},
   {id:'yunling', n:'Yunling (Yun He\'s base)', icon:'🌿', kind:'free', open:() => G.ch >= 410, note:'The quiet town of medicinal gardens and healing halls where Yun Long lives and Yun He keeps his second base. The party may rest here as his guests.'},
-  {id:'yilong', n:'Yilong Sanctuary (Yun He\'s base)', icon:'🏔️', kind:'free', open:() => G.ch >= 415, note:'Yun He\'s sanctuary in Yilong, among medicinal gardens, streams and waterfalls. The party may rest here as his guests.'},
-  {id:'yilong_base', n:'Xiyu\'s Yilong Residence', icon:'🏮', kind:'free', open:() => G.ch >= 429, note:'Xiyu\'s second base: a quiet residence in Yilong with a study, a secure communication room and space for her people. The party always has beds here, free of charge.'},
+  {id:'zhan_manor', n:'The Zhan Manor (Dongyue\'s residence)', icon:'🏯', kind:'free', open:() => G.ch >= 424, note:'Dongyue\'s family residence in Yilong. The party may stay here as the Zhan family\'s guests; Xiyu\'s own base is separate.'},
+  {id:'yilong', n:'Yun He\'s Sanctuary (Yilong)', icon:'🏔️', kind:'free', open:() => G.ch >= 415, note:'Yun He\'s sanctuary in Yilong, among medicinal gardens, streams and waterfalls. The party may rest here as his guests.'},
+  {id:'yilong_base', n:'Xiyu\'s Yilong Residence', icon:'🏮', kind:'free', open:() => G.ch >= 429, note:'Xiyu\'s operational base in Yilong (the Violet Base), with her hired staff, a study and a secure communication room, separate from the Zhan Manor. The party always has beds here, free of charge.'},
   {id:'temple', n:'The Ice Temple', icon:'❄️', kind:'free', open:() => G.ch >= 18, note:'The warded rooms stay warm and quiet. The party may rest here at no cost.'},
   {id:'drowsy_lantern', n:'The Drowsy Lantern', icon:'🏮', kind:'tavern', base:6, open:() => G.ch >= 40,
    note:'The tavern in Muxue town, all rice wine and low lanterns. Its rooms are upstairs.', sells:{moon_petal:12, frost_herb:8, plum_bud:12}},
@@ -35,7 +36,7 @@ function restAt(id){
   const p = placeById(id); if(!p || !p.open()) return ['That place is not open to you yet.'];
   if(!placeHere(p)) return ['The party is not there. They are at '+WHERE_NAME[where()]+'.'];
   const c = restPrice(p); if(G.gold < c) return ['A room at '+p.n+' costs '+c+' gold.'];
-  G.gold -= c; restoreParty(); G.heat = Math.max(0, (G.heat||0) - 40); advanceTime(8); save();
+  G.gold -= c; G.rests = (G.rests||0) + 1; restoreParty(); G.heat = Math.max(0, (G.heat||0) - 40); advanceTime(8); save();
   const out = ['🛏️ The party rests at '+p.n+(c ? ' (-'+c+'g)' : ' (free)')+'. HP and MP fully restored. The hours pass: '+timeLabel()+'.'];
   if(typeof nextBanter === 'function'){ const bt = nextBanter(); if(bt.length){ out.push.apply(out, bt); save(); } }
   return out;

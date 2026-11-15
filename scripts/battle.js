@@ -319,8 +319,12 @@ function finishWin(){
   B.rewards.msgs = gainXp(xp, act).concat(gainXp(Math.round(xp*.5), bench));
   act.forEach(id => { const m = addBond(id, boss ? 8 : 3); if(m) B.rewards.msgs.push(m); });
   G.gold += gold; addItems(drops); G.wins = (G.wins||0)+1;
+  if(spec.sim && typeof skirmState === 'function') skirmState().sims++;
+  if(boss && !spec.sim && !spec.echo && !G.bestiaryBossSeen) G.bestiaryBossSeen = {};
+  if(boss && !spec.sim && !spec.echo && typeof chronicle === 'function' && !G.bestiaryBossSeen[boss.key]){ G.bestiaryBossSeen[boss.key] = 1; chronicle('Defeated '+boss.name+'.', '⚔️'); }
   if(spec.onWin) B.rewards.msgs = B.rewards.msgs.concat(spec.onWin() || []);
   if(typeof personalOnWin === 'function') personalOnWin(act);   // field proficiency and shared danger
+  if(typeof areaLootOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(areaLootOnWin(spec));
   if(!spec.sim && typeof boardOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(boardOnWin(foes, spec.zone));   // quest board + bounty board progress (independent of the story)
   if(!spec.sim && typeof networkOnWin === 'function') B.rewards.msgs = B.rewards.msgs.concat(networkOnWin(foes, spec.zone));   // Xiyu's investigation network: hunting adds progress and leads
   save();

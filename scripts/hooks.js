@@ -10411,6 +10411,195 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"783": [
+{
+"id": "the_boundary_shall_endure_until_the_forgotten_may_speak",
+"d": "The five keepers' actions became connected without agreement on their meaning, and the presence was never asked; an inscription says the boundary shall endure until the forgotten may speak for themselves, so the prison may have been temporary; Xiyu promises to listen when the presence remembers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"784": [
+{
+"id": "what_was_entrusted_to_one_was_withheld_from_another",
+"d": "A golden plate hidden beneath the tablet gives a second account signed by another keeper: the burden was accepted but the reason never agreed, and what was entrusted to one was withheld from another; the five may have decided without the whole truth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"785": [
+{
+"id": "there_may_be_a_record_from_before_the_memories_were_divided",
+"d": "The five keepers each carried only part of the memory and the memories leave a dark space between them; there may be another record from before their memories were divided",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"786": [
+{
+"id": "the_presence_remembers_a_promise_to_return_before_the_prison_was_complete",
+"d": "Before the prison was completed someone reached across the boundary toward the presence and told it to wait and that they would come back; the fifth stream is missing from the image and the person may not be one of the five keepers",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"787": [
+{
+"id": "someone_remained_beyond_the_boundary_and_inherited_its_watch",
+"d": "A sixth silhouette stood beyond the boundary when the five keepers left and said that even if they forget it will remain; the presence remembers feeling less alone; the keeper mark recognises the role but not the person; the one who remained inherited the boundary's watch",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"788": [
+{
+"id": "the_presence_was_blamed_before_anyone_investigated_the_first_fracture",
+"d": "An older memory shows the presence accused by a crowd after the first fracture, though its cause was never witnessed; a distant figure spoke in its defence and Xiyu promises neither to condemn nor excuse it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"789": [
+{
+"id": "the_prison_was_built_after_the_first_breaking",
+"d": "A concealed chamber beneath the archive shows a radiant structure above a vast expanse of water, far older than the prison; the presence may not have originated inside the formation and the prison was built after the first breaking",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"790": [
+{
+"id": "the_light_answered_something_beyond_the_structure",
+"d": "At the first breaking the light answered something beyond the structure and the fracture began at the centre; the presence was beneath the light and tried to answer someone calling its name; someone stood near the fracture untouched by the light",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"791": [
+{
+"id": "the_one_beside_the_fracture_warned_the_light_could_answer_again",
+"d": "A second figure beside the fracture, bearing a symbol that is not a keeper mark, tried to hold something back and warned 'Don't let it answer again'; the presence believes they were trying to protect it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"792": [
+{
+"id": "the_light_turned_toward_the_empty_space_and_a_second_answer_was_withheld",
+"d": "The light turned toward the empty space behind the figure who raised their hands, where the presence heard a voice; the figure beside the fracture warned 'Do not call it again' and the second answer was withheld; the presence answered because it thought someone needed it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"793": [
+{
+"id": "a_voice_from_beyond_the_boundary_asked_can_you_hear_me",
+"d": "The caller called the presence home, not by name; the sixth point stretches beyond the five streams toward a distant silhouette; for the first time the party hears the voice from beyond the boundary ask 'Can you hear me?'",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"794": [
+{
+"id": "both_sides_had_been_waiting_and_the_echo_held_the_presences_own_words",
+"d": "The voice from beyond the sixth point changes from 'Can you hear me?' to 'I waited'; the presence believes he said those words himself, so the echo holds his own unanswered words and both sides had been waiting",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"795": [
+{
+"id": "the_answer_was_heard_but_never_reached_the_one_who_waited",
+"d": "The presence's unanswered question 'Why did you leave?' meets the reply 'I heard you'; the five points align with the sixth for a moment before the boundary breaks the connection; the answer never reached the one who waited",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"796": [
+{
+"id": "a_broken_doorway_separates_the_two_sides_of_the_boundary",
+"d": "The presence remembers a place without walls and a doorway broken into pieces, which he remembers closing; the boundary may have formed between two places that were once connected",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"797": [
+{
+"id": "the_doorway_was_closed_deliberately_in_the_five_stream_pattern_after_a_promise_to_return",
+"d": "The broken doorway fragments match the five-stream formation and the door was closed deliberately; before it closed someone said 'Wait for me' and 'I will come back'; the presence believed the promise and waited; Xiyu will not turn an unanswered promise into an accusation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"798": [
+{
+"id": "the_five_keepers_were_directly_involved_in_closing_the_doorway",
+"d": "The doorway closed in five stages and five figures, standing around it, closed it with their hands, becoming the boundary; one stood closer to the presence and told him not to be afraid; whether they saved him or condemned him to remain was never recorded",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"799": [
+{
+"id": "one_of_the_five_keepers_hesitated_and_tried_to_reach_back",
+"d": "At the closing one of the five keepers said 'Wait. He is still there' and reached back toward the presence, destabilising the formation, while four completed the boundary; the five did not all share the same intention and what became of that keeper is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"800": [
+{
+"id": "the_fifth_keeper_took_a_fragment_of_the_doorway_and_promised_not_to_let_him_be_erased",
+"d": "The fifth keeper remained after the other four faded, took a fragment of the doorway and said 'I cannot bring you back. But I will not let them erase you'; the presence remembers a hand against the crystal, darkness and footsteps; the fragment may be the only evidence of what happened after the doorway closed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"801": [
+{
+"id": "the_one_within_was_not_the_cause_of_the_breaking_two_roles_the_caller_and_the_answerer",
+"d": "The party finds the fragment the fifth keeper hid beneath the formation; its record says the one within was not the cause of the breaking and that the one who called must be remembered separately from the one who answered; the truth survived but was made difficult to find",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"802": [
+{
+"id": "when_the_boundary_is_restored_let_the_name_return",
+"d": "The fragment's final inscription reads 'When the boundary is restored, let the name return', so the erasure of the presence's name was never meant to be permanent; Xiyu promises to help him recover it without inventing one; the final task is to restore the boundary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"803": [
+{
+"id": "volume25_complete",
+"d": "The boundary is restored, the crystal dissolves and the forgotten man remembers his name; the record is corrected and he is freed; five questions remain unresolved (who called him, what responded beyond the doorway, who the fifth keeper was, whether they survived, why the other four believed closing the doorway was necessary)",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

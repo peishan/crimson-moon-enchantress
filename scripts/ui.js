@@ -1,7 +1,7 @@
 /* =====================================================================
    THE CRIMSON MOON'S ENCHANTRESS — UI (tabs, journal, party, wilds, battle, items, gates)
    ===================================================================== */
-const TABS = [['journal','📖 Journal'],['base','🏠 Bases'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['training','🎯 Simulation'],
+const TABS = [['journal','📖 Journal'],['rewards','🎁 Rewards'],['base','🏠 Bases'],['party','👥 Party'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['skirmish','🎲 Skirmish'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['deeds','🏆 Deeds'],['training','🎯 Simulation'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
 const NPC_NAMES = {yihai:'🚢 Zhan Yihai', mingyue:'🌸 Ming Yue', yunhe:'🌿 Yun He', yunlong:'🌿 Yun Long'};
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
@@ -25,8 +25,8 @@ function render(){
   if(typeof renderTracker === 'function') renderTracker();
   const hr = $('hrit'); if(hr){ hr.style.display = ritualActive() ? '' : 'none'; hr.textContent = '⏳ '+(G.ritual.left)+(G.ritual.left===1?' day':' days'); }
   $('nav').innerHTML = (B?`<button class="${tab==='battle'?'on':''}" onclick="showTab('battle')">⚔️ Battle</button>`:'') +
-     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='base' || baseOpen()) && (k!=='bounties' || (bountyBoardOpen() && !baseOpen())) && (k!=='confidants' || relationsOpen()) && (k!=='board' || (boardOpen() && !baseOpen())) && (k!=='herbal' || herbalOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}</button>`).join('');
-  const R = { journal:rJournal, base:rBase, party:rParty, gates:rGates, wilds:rWilds, inns:rInns, herbal:rHerbalism, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:rSave, dev:rDev }[tab] || rJournal;
+     TABS.filter(([k]) => (k!=='temple' || templeOpen()) && (k!=='base' || baseOpen()) && (k!=='bounties' || (bountyBoardOpen() && !baseOpen())) && (k!=='confidants' || relationsOpen()) && (k!=='board' || (boardOpen() && !baseOpen())) && (k!=='herbal' || herbalOpen()) && (k!=='seal' || sealOpen())).map(([k,l]) => `<button class="${tab===k?'on':''}" onclick="showTab('${k}')">${l}${k==='rewards' && rewardsReady() ? ' 🔴' : ''}</button>`).join('');
+  const R = { skirmish:rSkirmish, deeds:rDeedsTab, journal:rJournal, rewards:rRewards, base:rBase, party:rParty, gates:rGates, wilds:rWilds, inns:rInns, herbal:rHerbalism, board:rBoard, bounties:rBounties, confidants:rConfidants, temple:rTemple, seal:rSeal, cast:rCast, training:rTraining, battle:rBattle, inventory:rInventory, bestiary:rBestiary, save:() => rSave() + (typeof rMusicPanel==='function' ? rMusicPanel() : ''), dev:rDev }[tab] || rJournal;
   $('main').innerHTML = R();
 }
 
@@ -312,6 +312,7 @@ function pickItem(k){ B.ui={mode:'target',kind:'item',sid:k,cands:alive(B.allies
 function pickTarget(uid){ const u = B.ui; playerAct(u.kind, u.sid, uid); }
 function battleDone(){
   if(B && B.spec.rewards && typeof afterBattleBackup==='function') setTimeout(afterBattleBackup, 0);
+  if(B && B.spec.skirm && B.over !== 'win' && typeof skirmLost === 'function') skirmLost();
   const won = B && B.over==='win', ch = B && B.spec.chapter, msgs = B && B.rewards ? B.rewards.msgs : [];
   B = null; tab = origin; render();
   if(won && ch){ const d = CHAPTER_DESIGN[ch]; S = {n:ch, mode:'result', msgs, units:[]}; drawStory(); }
@@ -325,7 +326,7 @@ function rInventory(){
   if(!G.party.includes(itemHero)) itemHero = 'xiyu';
   const pick = `<div class="sm" style="margin:6px 0">Use on:</div><div class="row">${G.party.map(id=>`<button class="${itemHero===id?'pri':''}" onclick="itemHero='${id}';render()">${first(id)} ${curHp(id)}/${statsOf(id).hp}</button>`).join('')}</div>`;
   const rows = ids.length ? ids.map(k => { const i = ITEMS[k], us = USE[k];
-    return `<div class="card" style="cursor:default"><span class="big">${i.img?`<img src="${i.img}" alt="" style="width:44px;height:auto;vertical-align:middle">`:i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div>${i.desc?`<div class="sm">${i.desc}</div>`:''}</div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
+    return `<div class="card" style="cursor:default"><span class="big">${i.img?`<img src="${i.img}" alt="" style="width:44px;height:auto;vertical-align:middle">`:i.icon}</span><div class="fl"><b>${i.n} ×${G.inv[k]}</b><div class="sm">${i.type}${us?' · '+useText(us):''}</div>${i.desc?`<div class="sm">${i.desc}</div>`:''}</div>${us?`<button onclick="act(()=>{useConsumable(itemHero,'${k}');return 'Used '+ITEMS['${k}'].n+' on '+CHARACTERS[itemHero].n.split(' ')[0]})">Use</button>`:''}${typeof sellBtn==='function'?sellBtn(k):''}</div>`; }).join('') : '<div class="sm">Nothing yet. Hunt in the Wilds for herbs and petals.</div>';
   const brews = RECIPES.map(r => `<div class="ev"><div><b>${ITEMS[r.out].icon} ${ITEMS[r.out].n}</b><div class="sm">${r.label}</div></div><button onclick="act(()=>brew('${r.out}'))">Brew</button></div>`).join('');
   const shop = !shopOpen() ? '<div class="sm">The Ice Temple has no shop of its own; see its traders in the Bases tab.</div>' : Object.keys(SHOP).map(k => `<div class="ev"><div><b>${ITEMS[k].icon} ${ITEMS[k].n}</b><div class="sm">${useText(USE[k])}</div></div><button ${G.gold>=shopPrice(k)?'':'disabled'} onclick="act(()=>buyItem('${k}')?'Bought '+ITEMS['${k}'].n:'Not enough gold')">${shopPrice(k)}g</button></div>`).join('');
   return `<h2>Items</h2>${flashHtml()}<div class="sm">Gold: ${G.gold}</div>${typeof tokenPanel==='function'?tokenPanel():''}${pick}${rows}<h4>Brew</h4>${brews}<h4>${shopTitle()}</h4>${shop}${smithsHtml()}`;

@@ -141,6 +141,7 @@ function netCheckIn(){
     if(r.open && !N.cases[r.open]){ N.cases[r.open] = true; msgs.push('🔎 New side case opened: '+invById(r.open).n+' (not part of the story).'); netLog('new case: '+invById(r.open).n); } }
   if(typeof shrineOnCheckIn === 'function') shrineOnCheckIn(msgs);
   if(typeof violetOnCheckIn === 'function') violetOnCheckIn(msgs);
+  if(typeof guestsOnCheckIn === 'function') guestsOnCheckIn(msgs);
   msgs.unshift('📡 The network reports in. Day\'s takings: '+rw+'.');
   netLog('daily check-in'); return msgs;
 }

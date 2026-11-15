@@ -10645,6 +10645,114 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"809": [
+{
+"id": "the_sage_teaches_the_five_stages_of_cultivation_and_gives_each_companion_a_direction",
+"d": "The Sage teaches that cultivation proceeds through sensing, gathering, refining, circulating and strengthening, that there is no single right way, and sets out a direction for each of the nine companions",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"810": [
+{
+"id": "the_group_completes_its_first_cultivation_exercise_and_each_finds_a_different_flow",
+"d": "The group sense, gather and circulate spiritual energy for the first time; each experiences the flow differently according to their foundation; the Sage tells them to practise daily",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"811": [
+{
+"id": "xiyus_celestial_lunar_lineage_and_cangyuans_forbidden_spirit_weaver_foundation_named_and_the_journey_toward_the_first_boundary_begins",
+"d": "The Sage names Xiyu's foundation as the celestial and lunar lineage within her and Cangyuan's as the Forbidden Spirit Weaver foundation, and begins with stabilising the foundation: Xiyu must anchor her celestial essence so it no longer fluctuates with her emotions, Cangyuan must guide his threads rather than be guided by them",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"812": [
+{
+"id": "the_sage_teaches_that_resistance_is_the_foundation_responding_and_to_work_with_it",
+"d": "The second lesson teaches the group to guide and stabilise the flow instead of forcing it; the Sage says the resistance they feel is their foundation responding and they should work with it, not against it",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"813": [
+{
+"id": "xiyus_celestial_lunar_flow_and_cangyuans_forbidden_threads_found_to_be_complementary",
+"d": "The Sage teaches that different foundations complement rather than oppose; the celestial and lunar flow gives stability and clarity and the forbidden threads depth, control and adaptation, so Xiyu and Cangyuan can build one balanced, enduring foundation together",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"814": [
+{
+"id": "the_threads_record_experience_and_resonance_and_xiyu_and_cangyuans_threads_intertwine_more_naturally",
+"d": "The Sage teaches that spiritual threads record experience, resonance and change; Xiyu's celestial and lunar lines are clearer and Cangyuan's forbidden threads no longer turbulent, intertwining with hers; faint traces of the Gu artefact's resonance appear in one companion's threads",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"815": [
+{
+"id": "xiyu_and_cangyuan_guide_the_spiritual_current_together_with_a_rare_compatibility",
+"d": "Paired up, Xiyu and Cangyuan find that guiding the current together makes it smoother and more complete than alone; the Sage calls it a rare compatibility that may lead them to a true breakthrough sooner than the others",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"816": [
+{
+"id": "xiao_tian_cannot_cultivate_directly_and_resolves_to_seek_a_path_of_his_own",
+"d": "Xiao Tian can read and predict the spiritual current but cannot guide it himself; the Sage says his foundation may not suit direct cultivation but what he understands may open another path; he resolves to find his own",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"817": [
+{
+"id": "the_sage_names_the_natural_resonance_between_xiyus_and_cangyuans_foundations",
+"d": "The Sage explains that Xiyu's celestial elemental foundation and Cangyuan's spiritual weaving correspond with a natural resonance rare even among cultivators, enhancing stability and control and possibly letting them break through earlier than the others",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"818": [
+{
+"id": "xiyu_and_cangyuan_stand_at_the_threshold_of_the_first_boundary",
+"d": "Xiyu's foundation has stabilised and Cangyuan's threads flow in a controlled pattern; the Sage says they stand at the threshold of the first boundary and should let their energies settle rather than force a breakthrough",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"819": [
+{
+"id": "xiyu_and_cangyuan_cross_the_first_boundary_together",
+"d": "Under an autumn moon Xiyu and Cangyuan cross the first cultivation boundary together: her celestial foundation steadies, his forbidden spirit-weaver threads align into a controlled flow, their senses broaden and the resonance between them deepens",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"820": [
+{
+"id": "xiyu_and_cangyuan_return_changed_and_xiao_tian_feels_his_path_is_behind_theirs",
+"d": "After crossing the first boundary Xiyu and Cangyuan return visibly changed and the Sage says it is a foundation, not an end; Xiao Tian quietly admits his own path is behind theirs and Xiyu tells him everyone has their own pace",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

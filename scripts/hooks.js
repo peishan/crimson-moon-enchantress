@@ -10780,6 +10780,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"824": [
+{
+"id": "zhileis_cultivation_is_the_resonance_adept_path_with_the_harmonic_ward_and_construct_disruption",
+"d": "Zhilei trains her hearing and the Moon-Echo Bell, learns the Harmonic Ward, a layered resonance field protecting her allies, and learns to use sound frequencies to weaken and disrupt spiritual constructs; the Sage says her path is that of one who listens, connects and supports",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"825": [
+{
+"id": "xiao_yans_cultivation_is_the_wayfinders_senses",
+"d": "The Sage teaches Xiao Yan the wayfinder's path: heightened perception of sound, movement and terrain, instinctive movement, and reading traces such as tracks, disturbed soil and residual spiritual energy that reveal threats, movements or hidden traps",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"826": [
+{
+"id": "hokos_cultivation_is_the_travellers_resilience_a_steady_vitality_forged_by_his_journeys",
+"d": "The Sage teaches Hoko that his many journeys already forged his cultivation: endurance, adaptation to harsh environments and traveller's instincts, with a steady, resilient flow of balanced vitality that lets him recover quickly",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"827": [
+{
+"id": "the_group_learns_to_weave_its_different_cultivation_paths_into_one_supporting_formation",
+"d": "The Sage teaches the eight companions to weave their different paths into one supporting formation where each strength fills the others' limits, with set roles for each: elemental control and debuffing, spirit weaving, flexibility, control and sealing, analysis, resonance and relics, wayfinding, endurance",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"828": [
+{
+"id": "the_focused_cultivation_training_ends_and_the_group_sets_out_as_one",
+"d": "The Sage ends the group's focused training: each has strengthened their foundation and refined their path and they have learnt to weave their strengths together; cultivation continues through real journeys, and the group must now meet the road ahead as one",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

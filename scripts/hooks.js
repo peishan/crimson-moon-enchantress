@@ -10537,6 +10537,69 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"797": [
+{
+"id": "the_doorway_was_closed_deliberately_in_the_five_stream_pattern_after_a_promise_to_return",
+"d": "The broken doorway fragments match the five-stream formation and the door was closed deliberately; before it closed someone said 'Wait for me' and 'I will come back'; the presence believed the promise and waited; Xiyu will not turn an unanswered promise into an accusation",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"798": [
+{
+"id": "the_five_keepers_were_directly_involved_in_closing_the_doorway",
+"d": "The doorway closed in five stages and five figures, standing around it, closed it with their hands, becoming the boundary; one stood closer to the presence and told him not to be afraid; whether they saved him or condemned him to remain was never recorded",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"799": [
+{
+"id": "one_of_the_five_keepers_hesitated_and_tried_to_reach_back",
+"d": "At the closing one of the five keepers said 'Wait. He is still there' and reached back toward the presence, destabilising the formation, while four completed the boundary; the five did not all share the same intention and what became of that keeper is unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"800": [
+{
+"id": "the_fifth_keeper_took_a_fragment_of_the_doorway_and_promised_not_to_let_him_be_erased",
+"d": "The fifth keeper remained after the other four faded, took a fragment of the doorway and said 'I cannot bring you back. But I will not let them erase you'; the presence remembers a hand against the crystal, darkness and footsteps; the fragment may be the only evidence of what happened after the doorway closed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"801": [
+{
+"id": "the_one_within_was_not_the_cause_of_the_breaking_two_roles_the_caller_and_the_answerer",
+"d": "The party finds the fragment the fifth keeper hid beneath the formation; its record says the one within was not the cause of the breaking and that the one who called must be remembered separately from the one who answered; the truth survived but was made difficult to find",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"802": [
+{
+"id": "when_the_boundary_is_restored_let_the_name_return",
+"d": "The fragment's final inscription reads 'When the boundary is restored, let the name return', so the erasure of the presence's name was never meant to be permanent; Xiyu promises to help him recover it without inventing one; the final task is to restore the boundary",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"803": [
+{
+"id": "volume25_complete",
+"d": "The boundary is restored, the crystal dissolves and the forgotten man remembers his name; the record is corrected and he is freed; five questions remain unresolved (who called him, what responded beyond the doorway, who the fifth keeper was, whether they survived, why the other four believed closing the doorway was necessary)",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

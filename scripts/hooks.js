@@ -10666,8 +10666,8 @@ const HOOKS = {
 ],
 "811": [
 {
-"id": "xiyus_celestial_lunar_lineage_and_cangyuans_forbidden_spirit_weaver_foundation_named_and_the_journey_toward_the_first_boundary_begins",
-"d": "The Sage names Xiyu's foundation as the celestial and lunar lineage within her and Cangyuan's as the Forbidden Spirit Weaver foundation, and begins with stabilising the foundation: Xiyu must anchor her celestial essence so it no longer fluctuates with her emotions, Cangyuan must guide his threads rather than be guided by them",
+"id": "the_group_makes_its_first_contact_with_the_spiritual_current",
+"d": "Each companion makes a first, small contact with the spiritual current under the Sage's guidance; Xiao Tian cannot interact directly and records the formation instead",
 "t": "event",
 "p": false,
 "s": "art"
@@ -10749,6 +10749,33 @@ const HOOKS = {
 {
 "id": "xiyu_and_cangyuan_return_changed_and_xiao_tian_feels_his_path_is_behind_theirs",
 "d": "After crossing the first boundary Xiyu and Cangyuan return visibly changed and the Sage says it is a foundation, not an end; Xiao Tian quietly admits his own path is behind theirs and Xiyu tells him everyone has their own pace",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"821": [
+{
+"id": "xiao_tian_has_a_martial_foundation_and_will_seek_a_martial_cultivation_path",
+"d": "In the first practical trial Xiao Tian cannot circulate the current through his foundation; the Sage says his foundation is that of a martial fighter, strong, solid, active and direct, and that cultivation should strengthen it rather than replace it; Xiao Tian resolves to find that martial path",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"822": [
+{
+"id": "qiumins_cultivation_is_a_scholars_path_of_insight",
+"d": "Guided by the Sage, Qiumin finds that her cultivation is a path of insight built on study, observation and analysis rather than raw power: she senses the flow, imbalances and resonance within the formation and notices details the others missed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"823": [
+{
+"id": "yaxings_cultivation_is_the_way_of_the_adaptive_blade",
+"d": "The Sage names Ya'Xing's path the adaptive blade: cultivation that refines his awareness, endurance and responsiveness and lets spiritual energy flow with his movements, without abandoning his martial core",
 "t": "event",
 "p": false,
 "s": "art"

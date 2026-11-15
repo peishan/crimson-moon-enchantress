@@ -19,7 +19,7 @@
   <div class="ver"></div>
 </div>
 <div id="app">
-  <div id="top"><span class="brand">CRIMSON MOON</span><span class="pill" id="hch"></span><span class="pill day" id="hday"></span><span class="pill" id="hrit" style="display:none;border-color:#e88a8a;color:#e88a8a"></span><span class="pill gold" id="hgold"></span><button id="trkbtn" onclick="toggleTracker()" title="Quest log" style="display:none">📋</button><button onclick="save();toast('Saved')" title="Save">💾</button></div>
+  <div id="top"><span class="brand">CRIMSON MOON</span><span class="pill" id="hch"></span><span class="pill day" id="hday"></span><span class="pill" id="hrit" style="display:none;border-color:#e88a8a;color:#e88a8a"></span><span class="pill gold" id="hgold"></span><button id="trkbtn" onclick="toggleTracker()" title="Quest log" style="display:none">📋</button><button id="musicbtn" onclick="musicToggle()" title="Music on/off">🔊</button><button onclick="save();toast('Saved')" title="Save">💾</button></div>
   <div id="nav"></div><div id="main"></div><div class="ver"></div>
 </div>
 <div id="story" aria-modal="true"></div>
@@ -77,6 +77,7 @@ window.addEventListener("load", () => { showCacheVersion(); setTimeout(showCache
 <script src="scripts/where.js"></script>
 <script src="scripts/rewards.js"></script>
 <script src="scripts/loot.js"></script>
+<script src="scripts/music.js"></script>
 <script src="scripts/cultivation.js"></script>
 <script src="scripts/extras.js"></script>
 <script src="scripts/households.js"></script>

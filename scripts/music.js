@@ -36,7 +36,7 @@ let musArmed = false, musEl = null, musTrack = null, musForced = null, musFade =
 
 function musicScene(){
   if(musForced) return musForced;
-  if(typeof S !== 'undefined' && S && S.mode === 'read') return (S.n >= VOL25_START && S.n < VOL25_START + 40) ? 'story25' : 'story';
+  if(typeof S !== 'undefined' && S && S.mode === 'read') return (S.n >= VOL25_START && S.n < VOL26_START) ? 'story25' : 'story';
   if(typeof B !== 'undefined' && B && tab === 'battle') return 'battle';
   const w = (typeof where === 'function' && G && G.party) ? where() : 'muxue';
   if(tab === 'wilds' || tab === 'skirmish' || tab === 'herbal') return w === 'world' ? 'wilds_world' : w === 'icetemple' ? 'icetemple' : 'wilds_muxue';

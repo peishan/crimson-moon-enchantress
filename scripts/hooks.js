@@ -10600,6 +10600,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"804": [
+{
+"id": "liechen_letter_received_asking_them_to_come_to_songfeng_waystation",
+"d": "Liechen writes from his homeland asking Xiyu and everyone to come to Songfeng Waystation to discuss matters in person; the group decides to go without delay",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"805": [
+{
+"id": "liechen_reunited_with_the_group_at_songfeng_waystation_with_new_cultivation_power",
+"d": "A demon attacks Songfeng Waystation and the group subdues it with Liechen, who has returned with sharper senses, greater strength and a more refined control over spiritual energy after his last trial",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"806": [
+{
+"id": "the_sage_returns_and_the_group_agrees_to_travel_to_jingyao_guo_with_liechen",
+"d": "The Sage who guided them in Lunareth finds them at Songfeng Waystation by following the compass, says fate is converging and that he will discuss the artefact, their cultivation and the trials ahead; Liechen asks them to travel to Jingyào Guó with him and the Sage joins the journey",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"807": [
+{
+"id": "southern_route_chosen_and_word_sent_to_yilong_and_the_muxue_base",
+"d": "The group chooses the safer southern route to Jingyào Guó, divides the preparations, sends word to the others in Yilong and leaves instructions at the Muxue base",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"808": [
+{
+"id": "liechen_is_learning_the_limits_of_his_new_perception_on_the_southern_road",
+"d": "On the southern road Liechen says his new abilities let him perceive flows, traces, people, places and hidden formations more clearly but with greater responsibility; the Sage counsels him as he nears a past he chose to leave behind",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -5,7 +5,7 @@
    Zhilei: a rare, sensitive foundation. Hoko: a path from his background and resilience. Xiao Yan: perception, agility and spiritual sensitivity.
    XIAO TIAN cannot circulate the current through his foundation (816); at chapter 821 the Sage says his foundation is that of a martial fighter, and he sets out to find a MARTIAL cultivation that strengthens it (path from 821).
    Dongyue (a healer), Xining, Yun He and Yun Long do not need it.
-   POINTS: the lessons count (each of chapters 810-828 gives every cultivator 4 points, Xiyu and Cangyuan 2 more for each of 815-819, their paired work, and the person each of 821-826 is about 2 more), and the daily study in the
+   POINTS: the lessons count (each of chapters 810-836 gives every cultivator 4 points, Xiyu and Cangyuan 2 more for each of 815-819, their paired work, and the person each of 821-826 is about 2 more), and the daily study in the
    Ice Library adds 4 (active party) or 2 (rest of the party). Stage thresholds below. A stage is held back until the story opens it (CULT_CAP): stages 1-3 open at chapters 810, 812 and 814.
    Stage 4 is the FIRST BOUNDARY: Xiyu and Cangyuan cross it together at chapter 819 (flag xiyu_and_cangyuan_cross_the_first_boundary_together, which also gives them a lasting +5% on their
    path's stats); nobody else has a stage 4 or 5 until the author writes it. Each stage gives +3% to that path's stats. First-pass numbers, edit freely.
@@ -24,17 +24,17 @@ const CULT_PATHS = {
   qiumin:     {n:'The Scholar\'s Path of Insight', icon:'📖', per:{mag:.03, mp:.03}, line:'The flow comes gently, like spring water, and circulates without strain.'},
   zhilei:     {n:'The Resonance Adept\'s Path', icon:'🔔', per:{mag:.03, mp:.03}, line:'She senses the energy around her in finer detail and keeps her own circulation steadier.'},
   hoko:       {n:'The Traveller\'s Resilience', icon:'🧭', per:{hp:.03, def:.03}, line:'The restless flow settles into a steady, comfortable rhythm.'},
-  xiaotian:   {n:'The Martial Foundation', icon:'🥋', from:821, per:{atk:.03, def:.03}, line:'His martial foundation grows firmer: strong, solid, active and direct.'},
+  xiaotian:   {n:'The Martial-Formation Foundation', icon:'🥋', from:821, per:{atk:.03, def:.03}, line:'His martial foundation grows firmer: strong, solid, active and direct.'},
   yanwatcher: {n:'The Wayfinder\'s Senses', icon:'🍃', per:{spd:.03, mp:.02}, line:'His perception sharpens: movement, sound, even small changes in the energy around him.'},
 };
 const CULT_NOT = {
   dongyue:'A healer: magic scrolls do nothing for his path.',
   xining:'Does not need it.', yunhe:'Does not need it.', yunlong:'Does not need it.',
 };
-const CULT_PERSONAL = {821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko'};   // the chapters devoted to one person's path give them 2 more
+const CULT_PERSONAL = {835:'xiaotian', 821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko'};   // the chapters devoted to one person's path give them 2 more
 const cultStoryPts = id => {
   const p0 = CULT_PATHS[id]; if(p0 && p0.from && G.ch < p0.from) return 0;
-  let p = 4 * Math.max(0, Math.min(G.ch, 828) - (p0 && p0.from ? p0.from - 1 : 809));
+  let p = 4 * Math.max(0, Math.min(G.ch, 836) - (p0 && p0.from ? p0.from - 1 : 809));
   if(CULT_BOUNDARY.includes(id)) p += 2 * Math.max(0, Math.min(G.ch, 819) - 814);
   Object.keys(CULT_PERSONAL).forEach(n => { if(CULT_PERSONAL[n] === id && G.ch >= +n) p += 2; });
   return p;
@@ -46,7 +46,7 @@ const cultStageRaw = id => CULT_PTS.filter(p => cultPts(id) >= p).length;
 function cultStageCap(id){
   let cap = 0; CULT_CAP_CH.forEach((c, i) => { if(G.ch >= c && (i !== 3 || cultBoundaryCrossed(id))) cap = i + 1; });
   cap = cap >= 4 && !cultBoundaryCrossed(id) ? 3 : cap;
-  if(id === 'xiaotian' && !(G.flags && G.flags.xiao_tian_bottleneck_broken)) cap = Math.min(cap, 2);   // his bottleneck (chapters 829-832): held at stage 2 until the story breaks it
+  if(id === 'xiaotian' && !(G.flags && (G.flags.xiao_tian_bottleneck_broken || G.flags.xiao_tian_establishes_the_martial_formation_foundation_as_his_own_cultivation_path))) cap = Math.min(cap, 2);   // his bottleneck (829-832): held at stage 2 until the Martial-Formation Foundation is established (835), and the story breaks it
   return cap;
 }
 const cultStage = id => Math.min(cultStageRaw(id), cultStageCap(id));

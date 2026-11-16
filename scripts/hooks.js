@@ -10861,6 +10861,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"833": [
+{
+"id": "the_sage_proposes_the_martial_formation_foundation_for_xiao_tian",
+"d": "The Sage tells Xiao Tian he was trying to fit a path never designed for him and proposes the Martial-Formation Foundation, integrating martial techniques with formation craft, spatial control and the flow of battle energy; he feels the flow of a path that belongs to him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"834": [
+{
+"id": "xiao_tian_builds_his_martial_formation_foundation_layer_by_layer",
+"d": "Xiao Tian practises the Martial-Formation Foundation, failing at the third transition and learning from it; over several days his rhythm, formation and control of spiritual energy improve, a small step but one in which his path begins to take shape",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"835": [
+{
+"id": "xiao_tian_establishes_the_martial_formation_foundation_as_his_own_cultivation_path",
+"d": "Xiao Tian settles on the Martial-Formation Foundation as his own path, combining martial skill, formation craft and spiritual energy; the Sage says it will grow more slowly but give exceptional control, strategy and battlefield adaptability",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"836": [
+{
+"id": "volume26_complete",
+"d": "The group finishes its cultivation training under the Sage and sets out along the river route across the eastern passes toward Jingyáo Guó, Liechen's homeland, within ten days",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

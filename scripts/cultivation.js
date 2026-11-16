@@ -19,7 +19,7 @@ const CULT_BOUNDARY = ['xiyu', 'cangyuan'];
 const CULT_PATHS = {
   xiyu:       {n:'The Celestial and Lunar Lineage', icon:'🌙', per:{mag:.03, mp:.03}, line:'Her celestial essence settles like moonlight returning to its source.'},
   cangyuan:   {n:'The Forbidden Spirit Weaver Path', icon:'🧵', per:{mag:.03, spd:.02}, line:'The once-volatile threads flow in a more controlled pattern.'},
-  suliechen:  {n:'The Awakened Path', icon:'👁️', per:{atk:.02, spd:.03}, line:'His newly awakened senses grow steadier and easier to read.'},
+  suliechen:  {n:'The Hunter\'s Moving Awareness', icon:'👁️', per:{atk:.02, spd:.03}, line:'His awareness follows his breath and his footsteps, and the energy that precedes movement grows easier to feel.'},
   yaxing:     {n:'The Way of the Adaptive Blade', icon:'⚓', per:{atk:.03, spd:.02}, line:'His breathing steadies and the unusual flow within him grows stronger.'},
   qiumin:     {n:'The Scholar\'s Path of Insight', icon:'📖', per:{mag:.03, mp:.03}, line:'The flow comes gently, like spring water, and circulates without strain.'},
   zhilei:     {n:'The Resonance Adept\'s Path', icon:'🔔', per:{mag:.03, mp:.03}, line:'She senses the energy around her in finer detail and keeps her own circulation steadier.'},
@@ -31,10 +31,14 @@ const CULT_NOT = {
   dongyue:'A healer: magic scrolls do nothing for his path.',
   xining:'Does not need it.', yunhe:'Does not need it.', yunlong:'Does not need it.',
 };
-const CULT_PERSONAL = {835:'xiaotian', 821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko'};   // the chapters devoted to one person's path give them 2 more
+const CULT_PERSONAL = {835:'xiaotian', 821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko', 840:'suliechen'};   // the chapter devoted to one person's path gives them 2 more
+const CULT_SKIP = {suliechen:[812, 836]};   // Liechen left the retreat after comic 008 and was away for the lessons (he returns at 839)
+const CULT_END = {suliechen:841};            // the last chapter whose lesson counts for that person (default: 836)
 const cultStoryPts = id => {
-  const p0 = CULT_PATHS[id]; if(p0 && p0.from && G.ch < p0.from) return 0;
-  let p = 4 * Math.max(0, Math.min(G.ch, 836) - (p0 && p0.from ? p0.from - 1 : 809));
+  const p0 = CULT_PATHS[id]; if(!p0) return 0; if(p0.from && G.ch < p0.from) return 0;
+  const sk = CULT_SKIP[id], end = Math.min(G.ch, CULT_END[id] || 836);
+  let p = 0;
+  for(let n = (p0.from || 810); n <= end; n++){ if(sk && n >= sk[0] && n <= sk[1]) continue; p += 4; }
   if(CULT_BOUNDARY.includes(id)) p += 2 * Math.max(0, Math.min(G.ch, 819) - 814);
   Object.keys(CULT_PERSONAL).forEach(n => { if(CULT_PERSONAL[n] === id && G.ch >= +n) p += 2; });
   return p;

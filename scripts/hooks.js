@@ -10897,6 +10897,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"837": [
+{
+"id": "liechen_meets_shangguan_yuelan_again_at_a_pavilion_outside_the_capital",
+"d": "Liechen, staying quietly outside Jingyáo's capital and not announcing his return to the royal household, is found by Shangguan Yuelan, who heard of him through her network; he will not stay in the capital and they go to dinner with no promises made",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"838": [
+{
+"id": "liechen_and_yuelan_spend_a_night_together_at_an_inn_outside_the_capital_with_no_promises",
+"d": "Liechen and Shangguan Yuelan spend the night together at an inn outside Jingyáo's capital after years apart; no promises or decisions, and she tells him he must face the people he has been avoiding",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"839": [
+{
+"id": "liechen_rejoins_the_group_and_the_sage_resumes_his_individual_cultivation_lessons",
+"d": "The group, with the Sage, finds Liechen at an inn with Shangguan Yuelan; he apologises for vanishing, rejoins them, and the Sage says his individual cultivation lessons will resume since his progress has stagnated; Yuelan returns to her affairs in Shangguan",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"840": [
+{
+"id": "liechen_finds_the_beginning_of_a_hunters_cultivation_path_sensing_energy_while_moving",
+"d": "The Sage has Liechen demonstrate how he hunts and teaches him to sense spiritual energy while moving, letting his awareness follow his breathing, footsteps and weapon; for an instant something brushes his senses and the Sage says he has found the beginning of his path",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"841": [
+{
+"id": "liechen_and_yuelan_part_as_old_friends_at_the_shangguan_estate_with_no_promises_and_no_goodbyes",
+"d": "Liechen returns books to Shangguan Yuelan at her estate; they remember their younger days, agree that each followed their own path, and call it a proper catch-up between old friends with no promises and no goodbyes",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -3,7 +3,7 @@
    ===================================================================== */
 const TABS = [['journal','📖 Journal'],['rewards','🎁 Rewards'],['base','🏠 Bases'],['party','👥 Party'],['sage','🧙 Sage'],['gates','🔓 Gates'],['wilds','🌲 Wilds'],['skirmish','🎲 Skirmish'],['inns','🍵 Inns & Rest'],['herbal','🌿 Herbalism'],['board','📋 Quest Board'],['bounties','📜 Bounties'],['confidants','💬 Confidants'],['seal','🔎 Seal & Sites'],['temple','🏯 Temple'],['cast','🎴 Cast'],['deeds','🏆 Deeds'],['training','🎯 Simulation'],
               ['inventory','🎒 Items'],['bestiary','📕 Bestiary'],['save','💾 Save'],['dev','🛠️ Dev']];
-const NPC_NAMES = {yihai:'🚢 Zhan Yihai', mingyue:'🌸 Ming Yue', yunhe:'🌿 Yun He', yunlong:'🌿 Yun Long'};
+const NPC_NAMES = {yuelan:'🌸 Shangguan Yuelan', yihai:'🚢 Zhan Yihai', mingyue:'🌸 Ming Yue', yunhe:'🌿 Yun He', yunlong:'🌿 Yun Long'};
 let tab = 'journal', sel = 'xiyu', openCh = null, origin = 'journal', trSel = 0, trLv = 5, itemHero = 'xiyu', flash = [], castOpen = null;
 const STAT_SCALE = {hp:420,mp:200,atk:130,mag:130,def:100,spd:90};
 const STAT_NAME = {hp:'HP',mp:'MP',atk:'ATK',mag:'MAG',def:'DEF',spd:'SPD'};

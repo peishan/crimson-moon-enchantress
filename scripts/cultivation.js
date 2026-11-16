@@ -45,7 +45,9 @@ const cultBoundaryCrossed = id => CULT_BOUNDARY.includes(id) && !!(G.flags && G.
 const cultStageRaw = id => CULT_PTS.filter(p => cultPts(id) >= p).length;
 function cultStageCap(id){
   let cap = 0; CULT_CAP_CH.forEach((c, i) => { if(G.ch >= c && (i !== 3 || cultBoundaryCrossed(id))) cap = i + 1; });
-  return cap >= 4 && !cultBoundaryCrossed(id) ? 3 : cap;
+  cap = cap >= 4 && !cultBoundaryCrossed(id) ? 3 : cap;
+  if(id === 'xiaotian' && !(G.flags && G.flags.xiao_tian_bottleneck_broken)) cap = Math.min(cap, 2);   // his bottleneck (chapters 829-832): held at stage 2 until the story breaks it
+  return cap;
 }
 const cultStage = id => Math.min(cultStageRaw(id), cultStageCap(id));
 const cultEligible = id => !!CULT_PATHS[id] && G.ch >= (CULT_PATHS[id].from || 809);

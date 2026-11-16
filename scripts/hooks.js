@@ -10825,6 +10825,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"829": [
+{
+"id": "the_group_drives_back_a_pack_of_corrupted_spirit_beasts_in_its_first_real_trial",
+"d": "A few days after training the group meets a pack of corrupted spirit beasts in a valley with a spiritual disturbance and drives it back with a coordinated formation; the Sage says the trial tested how well they stand together",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"830": [
+{
+"id": "the_group_defeats_a_corrupted_alpha_beast_with_its_first_coordinated_strike",
+"d": "At dusk a larger pack of corrupted spirit beasts led by a mutated alpha returns; the group fights as a formation for the first time in a real battle and a single coordinated strike breaks the alpha's corruption and its control of the pack",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"831": [
+{
+"id": "xiao_tian_feels_he_has_a_place_in_the_group_though_his_cultivation_path_is_still_unknown",
+"d": "After the battle Xiao Tian feels behind in cultivation; the Sage and his companions tell him his martial foundation is a different starting point and the group relies on his judgement, and he finds a quiet sense of belonging while his path remains unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"832": [
+{
+"id": "xiao_tian_names_his_cultivation_bottleneck_and_the_sage_promises_to_help_him_find_a_suited_path",
+"d": "Xiao Tian admits he has reached a cultivation bottleneck again and wonders whether he is unsuited to a higher level; his companions reassure him and the Sage says a bottleneck often marks the edge of a new path and promises to help him explore one better suited to him, step by step",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

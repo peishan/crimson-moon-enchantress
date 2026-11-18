@@ -10942,6 +10942,60 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"842": [
+{
+"id": "the_group_leaves_the_shangguan_estate_for_jingyao_and_yuelan_stays_behind",
+"d": "After several days at the Shangguan estate the group sets out for Jingyáo's capital; Yuelan stays to settle her own matters, Liechen says he will make his own decisions this time, and the Sage warns that Jingyáo is a place where many powers intersect",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"843": [
+{
+"id": "the_group_reaches_the_royal_capital_of_jingyao_and_liechen_is_recognised_as_the_eldest_prince_jing_ruichen",
+"d": "The group reaches the royal capital of Jingyáo Guó; gate guards recognise Liechen as the Eldest Prince, whose name here is Jing Ruichen; Qiumin guides them through the city and he promises to delay the palace only until tomorrow",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"844": [
+{
+"id": "word_of_the_eldest_prince_jing_ruichens_return_reaches_the_palace_and_the_court_calls_on_him",
+"d": "News of Liechen's return as the Eldest Prince Jing Ruichen reaches the palace before nightfall and visitors call on him, including an older court official, a distant relative and two nobles he once shared the palace halls with; he is expected at the palace tomorrow",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"845": [
+{
+"id": "liechen_visits_his_cousin_yuelan_who_manages_the_shangguan_household_affairs",
+"d": "Liechen visits the Shangguan estate and his cousin Yuelan, who now manages many of the household affairs of the Shangguan family; both say they chose their own roads and she offers help in Jingyáo if he sends word",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"846": [
+{
+"id": "liechen_finds_his_mothers_records_as_a_demon_hunter_preserved_by_the_late_king",
+"d": "In his mother's memorial hall Liechen is shown the records the late king ordered preserved, which show his mother was a demon hunter as well as a gracious queen; he will read the rest at his own pace",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"847": [
+{
+"id": "liechen_tells_the_court_he_remains_a_hunter_and_will_not_abandon_his_path_to_meet_expectations",
+"d": "At a private reception Liechen is asked to take on more responsibilities in the palace; he says he will keep hunting dangerous creatures and respect the palace without belonging to it entirely: a prince by birth, a hunter by choice",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

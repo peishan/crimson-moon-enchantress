@@ -69,7 +69,7 @@ function checkEnd(){
   }
   if(!alive(B.foes).length && B.stages && B.stage < B.stages.length-1){ nextStage(); return false; }
   if(!alive(B.foes).length){ B.over='win'; finishWin(); return true; }
-  if(!alive(B.allies).length){ B.over='lose'; blog('The party has fallen...','bad'); persistBattle(); save(); return true; }
+  if(!alive(B.allies.filter(a => !UNKILLABLE.includes(a.id)).length ? B.allies.filter(a => !UNKILLABLE.includes(a.id)) : B.allies).length){ B.over='lose'; blog('The party has fallen...','bad'); persistBattle(); save(); return true; }
   return false;
 }
 function advance(){
@@ -103,6 +103,7 @@ function checkPhase(t){
   blog('— '+next.msg+' —','sys');
   if(next.atk){ t.atk = Math.round(t.atk*next.atk); t.mag = Math.round(t.mag*next.atk); }
 }
+const UNKILLABLE = ['yunhe','yunlong'];   // never fall in battle: they stay at 1 HP; the party is lost only when everyone else has fallen
 function hurt(t, d, ignoreShield){
   if(t.id==='xining' && t.ally && B.allies.some(a => a.id==='dongyue' && !a.dead)) d = Math.max(1, Math.round(d*.8));   // Quiet Sanctuary: Dongyue guards her
   if(!ignoreShield && t.st.shield){ const a = Math.min(t.st.shield.v, d); t.st.shield.v -= a; d -= a; if(a>0) blog('  (barrier absorbs '+a+')'); if(t.st.shield.v<=0) delete t.st.shield; }
@@ -112,6 +113,7 @@ function hurt(t, d, ignoreShield){
     if(!t.st.bind){ t.st.bind = {d:3}; blog('  '+(B.src && B.src.ally ? first(B.src.id) : 'The party')+' holds '+t.name+' in place: '+first(B.lead)+' will finish this.','good'); }
   }
   t.hp = Math.max(0, t.hp - d);
+  if(t.hp <= 0 && t.ally && UNKILLABLE.includes(t.id)){ t.hp = 1; if(!t.deathWarded){ t.deathWarded = true; blog('  '+t.name+' is struck down but cannot fall: the blow is turned aside.','good'); } }   // author: Yun He and Yun Long are unkillable in battle
   if(t.hp>0) checkPhase(t);
   if(t.hp<=0){ t.dead = true; blog(t.name+' falls!','bad'); }
   return d;

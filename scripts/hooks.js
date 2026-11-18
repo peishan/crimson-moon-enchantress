@@ -11077,6 +11077,132 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"857": [
+{
+"id": "liechen_reads_his_mothers_recorded_conversation_that_protecting_people_was_never_the_duty_of_one_person",
+"d": "Liechen reads the account his mother's retainer kept of a conversation before her last journey, in which she said responsibility must not become an excuse not to care and that protecting people was never the duty of one person; Hoko and Xiao Tian talk it over with him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"858": [
+{
+"id": "liechen_and_xiao_yan_study_the_royal_maps_and_he_begins_to_think_returning_need_not_mean_staying",
+"d": "In the royal map room Liechen and Xiao Yan examine the abandoned northern routes; he says the court expects him to take up his family's responsibilities, and Xiao Yan tells him a scout protects a settlement by travelling beyond its walls and that returning does not have to mean staying",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"859": [
+{
+"id": "liechen_and_xiao_yan_find_an_unrecorded_waymarker_on_an_old_northern_route_and_signs_of_a_spirit_beast",
+"d": "Outside the capital Liechen and Xiao Yan inspect an abandoned patrol route, find disturbed soil suggesting a large, possibly injured spirit beast, and a carved waymarker that is not on the royal map and marks an old secondary route north",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"860": [
+{
+"id": "hoko_recognises_the_waymarker_design_and_the_group_finds_an_older_non_royal_marking_at_a_roadside_shelter",
+"d": "Hoko thinks the carved waymarker resembles a mark from his earlier travels outside Jingyao Guó; at the ruined roadside shelter on the old northern route they find an older matching mark that is not a royal patrol insignia, suggesting travellers used the road before the royal maps were drawn",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"861": [
+{
+"id": "the_group_spends_a_day_in_the_capitals_market_and_liechen_remembers_good_things_about_home",
+"d": "Qiumin invites the group to the capital's market and Liechen guides them, remembering the teahouse his mother used to visit; he tells her not all his memories of home are unpleasant, and for one afternoon he has no questions to answer",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"862": [
+{
+"id": "ya_xing_tells_liechen_that_honouring_his_mother_does_not_require_becoming_exactly_who_she_was",
+"d": "Liechen and Ya'Xing talk in a courtyard about the lives they might have had; Ya'Xing says one can decide who to become and that honouring someone does not require becoming exactly who they were, and Qiumin brings tea and calls them to the garden",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"863": [
+{
+"id": "liechen_learns_to_fight_as_part_of_a_formation_by_extending_his_awareness_beyond_the_immediate_threat",
+"d": "In a group exercise Cangyuan sets up protected markers; Liechen fails the first time by watching only the nearest movement, then on the second extends his awareness to his companions and the spiritual disturbance of the markers and coordinates with Ya'Xing so the formation holds",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"864": [
+{
+"id": "xiyu_tells_liechen_he_can_honour_his_mother_without_becoming_a_copy_of_her_and_the_choice_is_his",
+"d": "In the palace garden Xiyu tells Liechen that honouring his mother does not mean becoming a copy of her, that responsibility includes deciding what he can genuinely give, and that strength is having the courage to make his own decisions; he has not decided his future in Jingyao Guó but sees the choice is his",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"865": [
+{
+"id": "liechen_reads_the_royal_archives_and_decides_the_most_meaningful_legacy_is_the_freedom_to_choose_what_comes_next",
+"d": "In the royal archives Liechen reads records in which his mother appears attending to the people who rebuilt rather than only the decrees, and tells Xiao Tian that knowing where he came from does not tell him what he should become; he asks which parts of her legacy he wants to carry forward",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"866": [
+{
+"id": "liechen_tells_the_group_he_came_seeking_answers_and_found_companions_and_they_prepare_to_leave_jingyao_guo",
+"d": "At a pavilion gathering Liechen tells his companions he came back seeking answers about the past and found people who challenge, support and see him as he is now; Xiao Yan says supplies and route should soon be settled and the next leg of the journey will be harder",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"867": [
+{
+"id": "liechen_confides_in_cangyuan_that_he_no_longer_ages_and_is_urged_not_to_decide_for_yuelan",
+"d": "Liechen tells Cangyuan that since the artifact his body no longer ages as it should and that he cannot ask Yuelan to bind her life to someone who may never grow old beside her; Cangyuan tells him deciding for her is a kindness only in name and urges him to think about what he would regret if he left without asking",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"868": [
+{
+"id": "yuelan_understands_that_liechen_has_changed_will_not_stop_him_and_may_be_carrying_his_child",
+"d": "Yuelan sees that Liechen no longer changes and has grown silent but never doubts that he cares for her; they spend a night together and she decides not to stop him if he leaves, placing a hand over her abdomen and thinking she should tell him soon, a hint that she may be expecting a child",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"869": [
+{
+"id": "liechen_decides_to_leave_jingyao_guo_and_stay_away_so_that_yuelan_may_have_the_future_she_deserves",
+"d": "Liechen tells Ya'Xing he will leave with the group and spends one last night with Yuelan, then makes his preparations before dawn, intending to stay away so that she may have the future she deserves",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"870": [
+{
+"id": "volume27_complete",
+"d": "Liechen leaves Yuelan before dawn after a last night together, believing he is sparing her a future she never chose; she wakes to find him gone, her hand over her abdomen, with something she has not told him",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

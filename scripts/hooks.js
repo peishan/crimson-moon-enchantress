@@ -10996,6 +10996,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"848": [
+{
+"id": "liechen_settles_the_dispute_over_the_unwarded_drainage_channel_and_orders_relief",
+"d": "Asked by the palace to settle a dispute between a settlement and the royal patrol after spirit-beast attacks, Liechen finds the beasts used an old drainage channel the wards never covered and the inspection route was incomplete; he orders it inspected and protected and that relief be reviewed",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"849": [
+{
+"id": "liechen_senses_spiritual_energy_through_awareness_while_moving_under_the_sages_guidance",
+"d": "In a courtyard the Sage has Liechen notice his surroundings while moving, then with his eyes closed, and then attend to the spiritual energy around him: he senses sunlight, the energy in the trees and the Sage's presence; the Sage says his path need not resemble the others' and will build on his hunter's abilities",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"850": [
+{
+"id": "liechen_comes_to_understand_his_mothers_mercy_as_the_courage_of_a_ruler",
+"d": "Liechen asks the Sage whether his mother's mercy to a demon that later killed her was wrong; the Sage says mercy is a choice born of compassion that must be held with responsibility and judgement, and Liechen comes to see her as human rather than foolish",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"851": [
+{
+"id": "liechen_tells_yuelan_he_still_loves_her_and_may_not_age_normally_after_the_artifact_and_they_choose_their_own_paths",
+"d": "Liechen tells Yuelan he never stopped loving her, that after the artifact he may not grow old as other people do, and that he will not ask her to follow him; she is the Shangguan household's only heir and neither asks the other to give up their path",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"852": [
+{
+"id": "qiumin_and_yaxing_find_the_patrol_signal_sequence_inconsistent_and_a_messenger_reassigned",
+"d": "Qiumin and Ya'Xing find that the official report and three witness accounts disagree on when a signal was raised and the patrol responded, and that the messenger named in the delivery register was reassigned the following week; they need evidence before deciding whether it was deliberate",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

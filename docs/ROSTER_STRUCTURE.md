@@ -21,3 +21,6 @@ A big encounter can field a larger expedition; a personal investigation fewer. T
 
 ## Donglin and the Yilong base
 Donglin is the Yilong base caretaker and a persistent ally; the Muxue base caretaker is still to be established by the author. No chapter shows Donglin yet, so nothing is built beyond this note and the base art list.
+
+## Yuelan (Shangguan Yuelan)
+Permanent, non-travelling ally after Volume 27 (author). Past lover and second cousin of Liechen; runs the Shangguan household and its trade network in Jingyao Guó. Not a romance route. Not built beyond the chapter pages.

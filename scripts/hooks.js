@@ -11041,6 +11041,42 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"853": [
+{
+"id": "liechen_perceives_a_faint_disturbance_before_it_reaches_him_a_small_cultivation_breakthrough",
+"d": "In the palace courtyard the Sage has Liechen perceive without reacting; on his second attempt he senses a faint disturbance before it reaches the stone beneath his feet, a small breakthrough; Xiyu and Cangyuan watch and the lessons start to become part of the path he chose",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"854": [
+{
+"id": "liechen_survives_the_welcome_banquet_and_promises_nothing_before_hearing_his_family",
+"d": "At the welcome banquet the nobles press Liechen to resume his old responsibilities and say whether he will stay; he says returning home and resuming every responsibility are not the same thing and promises nothing before hearing what his family has to say",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"855": [
+{
+"id": "liechen_tells_the_court_he_will_honour_his_mothers_stand_but_cannot_promise_to_stay_within_the_walls",
+"d": "Pressed by the court to reclaim his family's responsibilities, Liechen says his mother protected people because their lives mattered and that he cannot promise to stay within the walls while they still need help; he intends to honour what she stood for and Yuelan supports him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"856": [
+{
+"id": "an_old_servant_of_the_queen_gives_liechen_a_record_of_her_last_conversation_before_her_final_hunt",
+"d": "An elderly gentleman who served Liechen's mother tells him she never regretted her mercy, that she understood the risks but that refusing every possibility of redemption would make the world crueler, and gives him a record of a conversation with her shortly before her last journey, which Liechen has not yet read",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

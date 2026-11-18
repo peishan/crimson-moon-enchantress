@@ -31,7 +31,7 @@ const CULT_NOT = {
   dongyue:'A healer: magic scrolls do nothing for his path.',
   xining:'Does not need it.', yunhe:'Does not need it.', yunlong:'Does not need it.',
 };
-const CULT_PERSONAL = {835:'xiaotian', 821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko', 840:'suliechen', 849:'suliechen'};   // the chapter devoted to one person's path gives them 2 more
+const CULT_PERSONAL = {835:'xiaotian', 821:'xiaotian', 822:'qiumin', 823:'yaxing', 824:'zhilei', 825:'yanwatcher', 826:'hoko', 840:'suliechen', 849:'suliechen', 853:'suliechen'};   // the chapter devoted to one person's path gives them 2 more
 const CULT_SKIP = {suliechen:[812, 836]};   // Liechen left the retreat after comic 008 and was away for the lessons (he returns at 839)
 const CULT_END = {suliechen:841};            // the last chapter whose lesson counts for that person (default: 836)
 const cultStoryPts = id => {
@@ -39,7 +39,7 @@ const cultStoryPts = id => {
   const sk = CULT_SKIP[id], end = Math.min(G.ch, CULT_END[id] || 836);
   let p = 0;
   for(let n = (p0.from || 810); n <= end; n++){ if(sk && n >= sk[0] && n <= sk[1]) continue; p += 4; }
-  if(id === 'suliechen' && G.ch >= 849) p += 4;   // the Sage's courtyard lesson (849)
+  if(id === 'suliechen') p += 4 * [849, 853].filter(n => G.ch >= n).length;   // the Sage's courtyard lessons (849, 853)
   if(CULT_BOUNDARY.includes(id)) p += 2 * Math.max(0, Math.min(G.ch, 819) - 814);
   Object.keys(CULT_PERSONAL).forEach(n => { if(CULT_PERSONAL[n] === id && G.ch >= +n) p += 2; });
   return p;

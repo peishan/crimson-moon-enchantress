@@ -11305,8 +11305,71 @@ const HOOKS = {
 ],
 "882": [
 {
-"id": "the_group_plans_a_double_wedding_at_the_shrine_of_everlasting_vows_in_jingyao_guo",
+"id": "the_group_plans_a_double_wedding_at_the_shrine_of_everlasting_vows_in_liechens_mothers_kingdom",
 "d": "Ya'Xing and Qiumin announce their engagement and agree with Xiyu and Cangyuan to share one celebration; Liechen suggests the Shrine of Everlasting Vows (永誓祠) in his mother's kingdom, where he wants to learn more about her past, and the journey toward it begins",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"883": [
+{
+"id": "the_group_sets_out_for_liechens_mothers_kingdom_to_visit_the_shrine_and_learn_who_she_was",
+"d": "The group sets out for the kingdom of Liechen's mother, where the Shrine of Everlasting Vows stands; Liechen, who has not returned for a long time, wants to learn who his mother was before she was a mother and a queen, and the others will go with him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"884": [
+{
+"id": "liechen_tells_the_sage_he_wants_to_understand_the_life_his_mother_lived_before_he_was_born",
+"d": "On the mountain road toward his mother's kingdom Liechen tells the Sage he remembers her only as a child does, never having asked about the journeys she took before he was born, and says he wants to understand that life; Xiyu tells him he does not have to discover everything at once",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"885": [
+{
+"id": "liechen_finds_his_mothers_royal_emblem_in_a_riverside_settlement_and_hears_the_queen_stayed_at_a_rest_house_nearby",
+"d": "In a riverside settlement an old shopkeeper tells Liechen that the crescent-moon-and-flowers emblem is an old royal symbol from his mother's kingdom and that a queen once travelled these regions, visiting villages and staying at a rest house now marked by a stone beneath an old tree",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"886": [
+{
+"id": "the_group_finds_the_old_rest_house_marker_with_the_queens_emblem_and_learns_she_once_walked_these_roads",
+"d": "On the northern river path the group finds the stone marker and foundations of the old rest house with the crescent-moon emblem and an inscription about shelter given to travellers; it does not name the queen but shows she once walked these roads as Liechen is walking them now",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"887": [
+{
+"id": "an_old_villager_tells_liechen_his_mother_once_investigated_a_danger_on_the_mountain_road_and_refused_a_reward",
+"d": "An old man tells Liechen that his father remembered a woman of the royal household arriving with few attendants during a time when travellers vanished on the mountain road, investigating herself, ending the danger, refusing a reward and asking only that the road stay safe; nobody remembered her name or what the danger was",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"888": [
+{
+"id": "the_group_finds_warning_markers_and_a_scarred_rock_on_the_old_mountain_road_that_may_be_the_danger_liechens_mother_investigated",
+"d": "On the old mountain road the group finds warning markers with the queen's emblem, a rock scarred by what may have been a spiritual disturbance, and a ruined stone platform with an inscription about repairs after a dangerous incident; the Sage warns the traces cannot say what the creature was",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"889": [
+{
+"id": "a_village_ledger_confirms_liechens_mother_entered_the_mountain_pass_herself_as_someone_experienced_in_supernatural_threats",
+"d": "A village family's old ledger records that a woman bearing the royal emblem, experienced in confronting supernatural threats, entered the dangerous mountain pass herself and ended the danger, refusing payment; Liechen recognises his mother",
 "t": "event",
 "p": false,
 "s": "art"

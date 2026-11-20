@@ -11393,6 +11393,15 @@ const HOOKS = {
 "s": "art"
 }
 ],
+"892": [
+{
+"id": "the_register_shows_the_queens_companions_were_a_formation_scholar_and_a_physician_among_others_and_she_valued_each_for_what_they_knew",
+"d": "The surviving entries of the companion register describe, among others, someone who studied formations and spiritual disturbances and a travelling physician; a note says the queen never allowed rank to decide whose advice she heard and valued each companion for what they knew and were willing to give; names and fates remain unknown",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
 "893": [
 {
 "id": "liechen_finds_a_portrait_and_account_of_his_mother_as_an_independent_young_woman_who_travelled_before_she_became_queen",

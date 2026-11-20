@@ -11248,6 +11248,69 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"876": [
+{
+"id": "xiao_yan_guides_the_group_across_a_broken_bridge_and_liechen_walks_among_his_friends",
+"d": "On the road the group finds old tracks that are not a spirit beast and crosses a broken wooden bridge one at a time under Xiao Yan's guidance with Liechen checking the supports; Liechen finds himself walking beside his companions and no longer alone",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"877": [
+{
+"id": "the_sage_points_the_group_to_an_old_settlement_beyond_the_ridge_and_liechen_finds_warmth_in_the_present",
+"d": "At the campsite the Sage tells the group of an old settlement beyond the next ridge and Xiao Yan and Liechen will check the approach; Xiyu prefers a simple wedding, and Liechen, remembering the kingdom and the home he once imagined, finds the life he is living has its own warmth",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"878": [
+{
+"id": "the_group_finds_an_abandoned_settlement_with_an_old_formation_that_hid_it_from_spirit_beasts",
+"d": "Beyond a ridge the group finds an abandoned settlement with faded local records and an old protective formation, mostly dissipated, that once hid it from wandering spirit beasts; there are no fresh trails and they rest there, keeping watch",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"879": [
+{
+"id": "yaxing_asks_xiyu_and_cangyuan_to_help_him_propose_to_qiumin_with_a_sky_of_lights_and_they_plan_a_double_wedding",
+"d": "Ya'Xing asks Xiyu and Cangyuan to help him propose to Qiumin; they tell him they will also marry and suggest a double wedding, and plan elemental fireworks shaped into her name 秋敏",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"880": [
+{
+"id": "the_sky_display_of_qiumins_name_is_prepared_in_secret",
+"d": "Ya'Xing, Xiyu and Cangyuan prepare a display of elemental lights shaped into the characters 秋敏 in a clearing while Qiumin is absorbed in the records; she does not suspect anything and Xiyu tells him the most important words must come from his own heart",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"881": [
+{
+"id": "yaxing_proposes_to_qiumin_under_a_sky_of_lights_and_she_says_yes",
+"d": "Beneath a sky of golden lights shaped into her name, Ya'Xing asks Qiumin to marry him and she says yes; Xiyu and Cangyuan watch from the trees",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"882": [
+{
+"id": "the_group_plans_a_double_wedding_at_the_shrine_of_everlasting_vows_in_jingyao_guo",
+"d": "Ya'Xing and Qiumin announce their engagement and agree with Xiyu and Cangyuan to share one celebration; Liechen suggests the Shrine of Everlasting Vows (永誓祠) in his mother's kingdom, where he wants to learn more about her past, and the journey toward it begins",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

@@ -11374,6 +11374,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"890": [
+{
+"id": "the_group_finds_the_layered_seal_liechens_mother_left_at_the_mountain_pass_linked_to_the_spirit_veins",
+"d": "At the mountain pass the group finds the protective formation Liechen's mother strengthened after subduing the spirit beast, a layered, long-term barrier linked to the mountain's natural spirit veins, built so that others would not face the same danger again",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"891": [
+{
+"id": "a_hidden_register_of_the_people_who_accompanied_liechens_mother_on_her_journeys_is_found",
+"d": "Qiumin finds that the mountain-pass record says the queen did not act alone, and Xiao Yan finds a hidden book with her emblem that records the people who accompanied the royal traveller; Liechen wonders who they were",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"893": [
+{
+"id": "liechen_finds_a_portrait_and_account_of_his_mother_as_an_independent_young_woman_who_travelled_before_she_became_queen",
+"d": "A preserved royal account kept separately from the road records shows Liechen a portrait of his mother as a young woman and describes her as independent, observant and unwilling to stay uninvolved when people needed help, travelling beyond the palace even without the full ceremonial escort",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"894": [
+{
+"id": "the_account_names_a_remote_settlement_beyond_the_northern_mountains_the_queen_visited_after_the_mountain_pass",
+"d": "The royal account tells the group that Liechen's mother travelled to a remote settlement beyond the northern mountain range after the mountain-pass incident, and the group decides to follow the old road there and see whether anyone remembers her",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"895": [
+{
+"id": "the_group_sets_out_on_the_old_northern_road_beyond_the_mountains_with_the_queens_papers",
+"d": "The group leaves the riverside settlement on the old northern road beyond the mountain range, with Liechen carrying the papers and portrait the settlement gave him; he wants to know the rest of his mother's story",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};

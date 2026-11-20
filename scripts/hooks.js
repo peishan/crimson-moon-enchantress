@@ -11203,6 +11203,51 @@ const HOOKS = {
 "p": false,
 "s": "art"
 }
+],
+"871": [
+{
+"id": "xiyu_and_cangyuan_agree_to_marry_one_day_at_a_lake_camp",
+"d": "At a quiet lake camp Xiyu asks Cangyuan whether he wants to marry her and he says yes; they agree there is no need to rush and that they still have matters to see through, but it is a future they both want",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"872": [
+{
+"id": "dongyue_writes_to_qiumin_that_yilong_is_peaceful_and_their_mother_asks_after_her",
+"d": "A letter from Dongyue tells Qiumin that Yilong is peaceful, that their mother has asked after her and wants word sent home, and that Xining sends her greetings; Qiumin and Ya'Xing write back together",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"873": [
+{
+"id": "qiumin_and_yaxing_are_a_couple_and_xiao_tian_keeps_their_secret",
+"d": "Xiao Tian stumbles on Qiumin and Ya'Xing kissing and promises to say nothing; that night they share an intimate evening in their room and Ya'Xing begins to think about asking Qiumin to marry him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"874": [
+{
+"id": "xiao_yan_tells_zhilei_he_was_the_only_keeper_left_alive_and_zhilei_begins_to_like_him",
+"d": "Xiao Yan tells Zhilei he has no memory of his family and was alone in the Unknown World, the only one of his kind left alive, surviving on Keeper instincts; Zhilei shares her own lost past and begins to like him",
+"t": "event",
+"p": false,
+"s": "art"
+}
+],
+"875": [
+{
+"id": "liechen_is_back_with_the_group_and_watches_his_companions_build_their_futures",
+"d": "At a roadside rest Xiyu and Cangyuan plan their ceremony, Qiumin and Ya'Xing and Zhilei and Xiao Yan are close, and Liechen, back with the group, watches them without bitterness and sees that his own new path is not a lonely one",
+"t": "event",
+"p": false,
+"s": "art"
+}
 ]
 };
 const HOOK_TITLES = {"1": "The Witch Beneath Eight Moons", "2": "Title to Confirm", "3": "Title to Confirm", "4": "Title to Confirm", "5": "The Crimson Fairy", "6": "Rage", "7": "Title to Confirm", "8": "Title to Confirm", "9": "Title to Confirm", "10": "Title to Confirm", "11": "Title to Confirm", "12": "Title to Confirm", "13": "Title to Confirm", "14": "Title to Confirm", "15": "Title to Confirm", "16": "Title to Confirm", "17": "The Prisoner", "18": "Title to Confirm", "19": "Xiyu's Thoughts", "20": "A Deep Bond", "21": "Warming Up to Him", "22": "Bonded", "23": "Exploring the Ice Temple", "24": "Accepting Fate", "25": "The Frozen Passage", "26": "Teleportation", "27": "Title to Confirm", "28": "Deeply Weakened", "29": "The Price of Love", "30": "Title and Script to Confirm", "31": "The Ritual Chamber", "32": "Embracing Her Feelings", "33": "Rainbow Dream", "34": "Heinous Intent", "35": "Gratification", "36": "Xiao Tian's Memories", "37": "The Duty of a Lesser Male", "38": "Communication", "39": "Return to the Island"};
